@@ -1,6 +1,6 @@
 // Offline support: every file is cached on first visit, then served from the cache.
 // The cache name changes with the content, so a new version replaces the old one on the next online visit.
-const CACHE = 'solo-week-e36a327007';
+const CACHE = 'solo-week-ccbfafc992';
 const ASSETS = [
   "./",
   "index.html",
@@ -43,17 +43,24 @@ self.addEventListener('activate', event => {
 self.addEventListener('fetch', event => {
   const req = event.request;
   if (req.method !== 'GET' || new URL(req.url).origin !== self.location.origin) return;
-  // Cache first (works on a plane), refresh the copy in the background when online.
-  event.respondWith(
-    caches.open(CACHE).then(cache =>
-      cache.match(req, { ignoreSearch: true }).then(hit => {
-        const net = fetch(req).then(res => {
-          if (res && res.ok) cache.put(req, res.clone());
-          return res;
-        }).catch(() => null);
-        if (hit) { event.waitUntil(net); return hit; }
-        return net.then(res => res || (req.mode === 'navigate' ? cache.match('index.html') : Response.error()));
-      })
-    )
-  );
+  const url = new URL(req.url);
+  const isPage = req.mode === 'navigate' || url.pathname.endsWith('/') || url.pathname.endsWith('index.html');
+  event.respondWith(caches.open(CACHE).then(cache => {
+    const fresh = fetch(req).then(res => {
+      if (res && res.ok) cache.put(isPage ? 'index.html' : req, res.clone());
+      return res;
+    });
+    if (isPage) {
+      // The page: try the network first so updates show at once; fall back to the saved copy
+      // straight away when offline, or after 3 s on a weak connection.
+      const timeout = new Promise(resolve => setTimeout(resolve, 3000, null));
+      return Promise.race([fresh.catch(() => null), timeout]).then(res =>
+        (res && res.ok) ? res : cache.match('index.html').then(hit => hit || fresh));
+    }
+    // Fonts and icons: the saved copy first, refreshed in the background.
+    return cache.match(req, { ignoreSearch: true }).then(hit => {
+      if (hit) { event.waitUntil(fresh.catch(() => null)); return hit; }
+      return fresh;
+    });
+  }));
 });

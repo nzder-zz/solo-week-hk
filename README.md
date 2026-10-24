@@ -8,7 +8,7 @@ Ten ways to spend a solo week after Hong Kong (Sat 31 Oct → Sat 7 Nov 2026): f
 - **Android (Chrome):** menu → Install app, or Add to Home screen.
 - **Desktop (Chrome/Edge):** the install icon in the address bar.
 
-When you're online again, the copy updates itself in the background.
+When you're online, the page loads the latest version and updates the saved copy.
 
 ## Files
 - `index.html`: the whole page (data, styles and script inline).
