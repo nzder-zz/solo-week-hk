@@ -1,6 +1,6 @@
 // Offline support: every file is cached on first visit, then served from the cache.
 // The cache name changes with the content, so a new version replaces the old one on the next online visit.
-const CACHE = 'solo-week-ccbfafc992';
+const CACHE = 'solo-week-5b84f02970';
 const ASSETS = [
   "./",
   "index.html",
