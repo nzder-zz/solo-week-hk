@@ -1,0 +1,108 @@
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-top">
+      <div>
+        <p class="sub">HKG · SAT 31 OCT → FRI 6 NOV 2026 · 6 NIGHTS FOR TWO · PRIVATE ROOMS</p>
+        <h1>Departures <span>for two</span></h1>
+        <p class="lede">The week after Hong Kong, together. Seven trips with two plans each (Slow and Fuller), private rooms only, taxis shared. She flies back to Hong Kong on Friday morning for her 18:00 flight; you choose how you get home. Status checked {{CHECKED}}: Typhoon Champi damage, closures and fares. Prices marked <span class="fs fs-est">estimate</span> still need a live check.</p>
+      </div>
+    </div>
+    <div class="board-wrap">
+      <table class="board" aria-label="Departures from Hong Kong on Saturday 31 October">
+        <thead><tr><th>Time</th><th>Carrier</th><th>To</th><th>Trip</th><th>Forecast</th><th>Sky</th><th class="right">Fit</th><th class="right">For two from</th></tr></thead>
+        <tbody id="board"></tbody>
+      </table>
+    </div>
+    <p class="board-note">For two = both flights out + her flight back to HK + your flight home + 6 nights in private rooms + food + transport + activities. Click a row to jump to the trip.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><h2>Four that stand out</h2><p>Fit score weighs hiking, nature, food, culture, a relaxed pace, weather, value and ease for the two of you.</p></div>
+    <div class="picks" id="picks"></div>
+  </div>
+</section>
+
+<div class="controls" role="region" aria-label="View controls">
+  <div class="wrap">
+    <div class="ctl"><span>Plan</span><div class="seg" id="style"></div></div>
+    <div class="ctl"><span>Your way home</span><div class="seg" id="home"></div></div>
+    <div class="ctl"><span>Sort</span><div class="seg" id="sort"></div></div>
+    <div class="ctl"><span>Country</span><div class="seg" id="country"></div></div>
+  </div>
+</div>
+
+<section id="checks-sec">
+  <div class="wrap">
+    <div class="sec-head"><h2>What was checked</h2><p>Typhoon damage, openings and prices, checked {{CHECKED}}. Anything closed or damaged is kept out of the plans.</p></div>
+    <div class="checks" id="checks"></div>
+  </div>
+</section>
+
+<section id="forecast">
+  <div class="wrap">
+    <div class="sec-head"><h2>Forecast for your week</h2><p>Chance of rain each day and how cloudy it looks (the dot), averaged over the places each trip visits. From the ECMWF ensemble run fetched {{FC_CHECKED}}: recheck on 29–30 Oct.</p></div>
+    <div class="fc-card">
+      <div class="fc-legend"><span><i class="c-dry"></i>Dry</span><span><i class="c-show"></i>Showers</span><span><i class="c-wet"></i>Wet</span><span><i class="c-heavy"></i>Heavy rain likely</span><span><i class="sk sk-blue"></i>Blue sky</span><span><i class="sk sk-mixed"></i>Sun and cloud</span><span><i class="sk sk-grey"></i>Grey sky</span></div>
+      <div class="fc-wrap"><table class="fc" id="fc-table"></table></div>
+      <div class="fc-foot">
+        <p><span class="chip">Typhoon</span>Champi passed Taiwan on 23–24 Oct and has gone (see the checks above for damage). In-fa is expected to stall near the Ogasawara islands from 1 Nov; forecasters give it a low chance of reaching mainland Japan and a very low one for Taiwan. Recheck on 30 Oct.</p>
+        <p>Forecast score /5 counts 31 Oct–6 Nov at every base (dry 1 point, showers 0.7, wet 0.35, heavy rain 0). No forecast was saved for Nikko and Hakone; their days show no chip.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="compare">
+  <div class="wrap">
+    <div class="sec-head"><h2>What it costs</h2><p id="chart-sub"></p></div>
+    <div class="chart-card" id="chart">
+      <div class="legend"><span><i style="background:var(--s-flight)"></i>Flights (both out, hers back, yours home)</span><span><i style="background:var(--s-ground)"></i>On the ground (rooms, food, transport, activities)</span></div>
+      <div class="rows" id="rows"></div>
+      <div class="axis"><span></span><div class="ticks" id="ticks"></div></div>
+      <div class="tip" id="tip" hidden></div>
+      <div class="chart-foot"><span>Shares: flights paid by each of you, everything else split 50/50.</span>
+        <details class="tbl"><summary>Show as a table</summary><div class="tbl-wrap"><table class="plain" id="cost-table"></table></div></details></div>
+    </div>
+  </div>
+</section>
+
+<section id="trips-sec">
+  <div class="wrap">
+    <div class="sec-head"><h2>The trips</h2><p>Each one comes with two plans. The highlighted plan matches the choice above.</p></div>
+    <div class="trips" id="trips"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap two">
+    <div class="boxed">
+      <h4>Tickets to book</h4>
+      <p style="margin-bottom:10px">Three one-way tickets: both of you HK → destination on Sat 31 Oct (same booking), her destination → HK on Fri 6 Nov landing by about 14:30, and your way home (a single ticket, no self-transfers).</p>
+      <p style="margin-top:10px;color:var(--muted);font-size:13px">Fares were checked for one person; for two, the last seats in a fare class can cost more. Book the three together once you've chosen.</p>
+    </div>
+    <div class="boxed">
+      <h4>Things to sort this week</h4>
+      <ol style="margin:0;padding-left:18px;display:grid;gap:5px;font-size:14px">
+        <li>Pick the trip and plan together (this page, or the spreadsheet's My plan tab).</li>
+        <li>Recheck the forecast and Typhoon In-fa on Thu 29 or Fri 30 Oct.</li>
+        <li>Book the flights, then the scarce rooms first: Koyasan temple, Kumano and Kurokawa inns, Hakone ryokan, Alishan hotel, Fuji-view rooms.</li>
+        <li>Alishan Forest Railway seats sell out: book as soon as you pick the Fuller south Taiwan plan.</li>
+        <li>Ask for a double or twin when booking (Japanese business hotels often list a "semi-double").</li>
+        <li>Entry: Visit Japan Web for you; Taiwan arrival card; nothing needed for Vietnam with a French passport (45 days).</li>
+        <li>eSIMs for both of you.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head"><h2>Sources</h2><p>Fares: Google Flights (27 Oct, 1 adult) and FlightConnections schedules (28 Oct). Forecast: Open-Meteo ensembles (ECMWF, 51 runs), fetched {{FC_CHECKED}}. Room prices are typical rates, not quotes.</p></div>
+    <ul class="src" id="sources"></ul>
+  </div>
+</section>
+<footer><div class="wrap">Prices in euros. Rates used: 1 EUR = ¥177 · NT$36.5 · ₫28,967. Nothing is booked. <a href="../">The solo plan is still here.</a></div></footer>
+
+<div class="tip" id="gtip" hidden></div>

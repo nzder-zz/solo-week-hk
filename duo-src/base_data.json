@@ -1,0 +1,6355 @@
+{
+"fc_per_base": {
+"Taipei": [
+{
+"md": "10-31",
+"hi": 28,
+"lo": 22,
+"p1": 12,
+"p10": 0,
+"med": 0.2,
+"src": "E",
+"cc": 49,
+"cls": "Dry",
+"label": "Sat 31 Oct"
+},
+{
+"md": "11-01",
+"hi": 31,
+"lo": 21,
+"p1": 6,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 4,
+"cls": "Dry",
+"label": "Sun 1 Nov"
+},
+{
+"md": "11-02",
+"hi": 28,
+"lo": 21,
+"p1": 75,
+"p10": 0,
+"med": 1.2,
+"src": "E",
+"cc": 73,
+"cls": "Showers",
+"label": "Mon 2 Nov"
+},
+{
+"md": "11-03",
+"hi": 25,
+"lo": 21,
+"p1": 37,
+"p10": 0,
+"med": 0.6,
+"src": "E",
+"cc": 86,
+"cls": "Dry",
+"label": "Tue 3 Nov"
+},
+{
+"md": "11-04",
+"hi": 25,
+"lo": 20,
+"p1": 20,
+"p10": 0,
+"med": 0.2,
+"src": "E",
+"cc": 75,
+"cls": "Dry",
+"label": "Wed 4 Nov"
+},
+{
+"md": "11-05",
+"hi": 26,
+"lo": 20,
+"p1": 24,
+"p10": 2,
+"med": 0.2,
+"src": "E",
+"cc": 65,
+"cls": "Dry",
+"label": "Thu 5 Nov"
+},
+{
+"md": "11-06",
+"hi": 26,
+"lo": 20,
+"p1": 29,
+"p10": 0,
+"med": 0.4,
+"src": "E",
+"cc": 53,
+"cls": "Dry",
+"label": "Fri 6 Nov"
+},
+{
+"md": "11-07",
+"hi": 26,
+"lo": 20,
+"p1": 35,
+"p10": 6,
+"med": 0.2,
+"src": "E",
+"cc": 73,
+"cls": "Dry",
+"label": "Sat 7 Nov"
+}
+],
+"Jiufen": [
+{
+"md": "10-31",
+"hi": 25,
+"lo": 20,
+"p1": 82,
+"p10": 18,
+"med": 2.9,
+"src": "E",
+"cc": 80,
+"cls": "Showers",
+"label": "Sat 31 Oct"
+},
+{
+"md": "11-01",
+"hi": 29,
+"lo": 20,
+"p1": 35,
+"p10": 4,
+"med": 0.7,
+"src": "E",
+"cc": 18,
+"cls": "Dry",
+"label": "Sun 1 Nov"
+},
+{
+"md": "11-02",
+"hi": 26,
+"lo": 19,
+"p1": 96,
+"p10": 59,
+"med": 11.6,
+"src": "E",
+"cc": 78,
+"cls": "Heavy rain",
+"label": "Mon 2 Nov"
+},
+{
+"md": "11-03",
+"hi": 22,
+"lo": 18,
+"p1": 100,
+"p10": 45,
+"med": 9.2,
+"src": "E",
+"cc": 97,
+"cls": "Wet",
+"label": "Tue 3 Nov"
+},
+{
+"md": "11-04",
+"hi": 22,
+"lo": 18,
+"p1": 78,
+"p10": 18,
+"med": 4.6,
+"src": "E",
+"cc": 90,
+"cls": "Showers",
+"label": "Wed 4 Nov"
+},
+{
+"md": "11-05",
+"hi": 23,
+"lo": 18,
+"p1": 80,
+"p10": 20,
+"med": 4.0,
+"src": "E",
+"cc": 85,
+"cls": "Showers",
+"label": "Thu 5 Nov"
+},
+{
+"md": "11-06",
+"hi": 23,
+"lo": 18,
+"p1": 78,
+"p10": 18,
+"med": 4.4,
+"src": "E",
+"cc": 86,
+"cls": "Showers",
+"label": "Fri 6 Nov"
+},
+{
+"md": "11-07",
+"hi": 23,
+"lo": 18,
+"p1": 76,
+"p10": 24,
+"med": 3.2,
+"src": "E",
+"cc": 80,
+"cls": "Showers",
+"label": "Sat 7 Nov"
+}
+],
+"Hualien": [
+{
+"md": "10-31",
+"hi": 28,
+"lo": 22,
+"p1": 84,
+"p10": 12,
+"med": 4.3,
+"src": "E",
+"cc": 82,
+"cls": "Showers",
+"label": "Sat 31 Oct"
+},
+{
+"md": "11-01",
+"hi": 29,
+"lo": 22,
+"p1": 49,
+"p10": 24,
+"med": 0.9,
+"src": "E",
+"cc": 55,
+"cls": "Dry",
+"label": "Sun 1 Nov"
+},
+{
+"md": "11-02",
+"hi": 29,
+"lo": 22,
+"p1": 82,
+"p10": 35,
+"med": 8.3,
+"src": "E",
+"cc": 79,
+"cls": "Wet",
+"label": "Mon 2 Nov"
+},
+{
+"md": "11-03",
+"hi": 25,
+"lo": 22,
+"p1": 100,
+"p10": 86,
+"med": 20.6,
+"src": "E",
+"cc": 99,
+"cls": "Heavy rain",
+"label": "Tue 3 Nov"
+},
+{
+"md": "11-04",
+"hi": 24,
+"lo": 21,
+"p1": 96,
+"p10": 37,
+"med": 8.2,
+"src": "E",
+"cc": 97,
+"cls": "Wet",
+"label": "Wed 4 Nov"
+},
+{
+"md": "11-05",
+"hi": 24,
+"lo": 21,
+"p1": 92,
+"p10": 43,
+"med": 9.0,
+"src": "E",
+"cc": 97,
+"cls": "Wet",
+"label": "Thu 5 Nov"
+},
+{
+"md": "11-06",
+"hi": 25,
+"lo": 21,
+"p1": 80,
+"p10": 49,
+"med": 7.0,
+"src": "E",
+"cc": 95,
+"cls": "Wet",
+"label": "Fri 6 Nov"
+},
+{
+"md": "11-07",
+"hi": 25,
+"lo": 21,
+"p1": 78,
+"p10": 49,
+"med": 9.6,
+"src": "E",
+"cc": 85,
+"cls": "Wet",
+"label": "Sat 7 Nov"
+}
+],
+"Tainan": [
+{
+"md": "10-31",
+"hi": 31,
+"lo": 22,
+"p1": 0,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 14,
+"cls": "Dry",
+"label": "Sat 31 Oct"
+},
+{
+"md": "11-01",
+"hi": 32,
+"lo": 23,
+"p1": 0,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 18,
+"cls": "Dry",
+"label": "Sun 1 Nov"
+},
+{
+"md": "11-02",
+"hi": 32,
+"lo": 22,
+"p1": 4,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 41,
+"cls": "Dry",
+"label": "Mon 2 Nov"
+},
+{
+"md": "11-03",
+"hi": 31,
+"lo": 21,
+"p1": 6,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 58,
+"cls": "Dry",
+"label": "Tue 3 Nov"
+},
+{
+"md": "11-04",
+"hi": 30,
+"lo": 21,
+"p1": 22,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 38,
+"cls": "Dry",
+"label": "Wed 4 Nov"
+},
+{
+"md": "11-05",
+"hi": 30,
+"lo": 21,
+"p1": 37,
+"p10": 0,
+"med": 0.2,
+"src": "E",
+"cc": 44,
+"cls": "Dry",
+"label": "Thu 5 Nov"
+},
+{
+"md": "11-06",
+"hi": 30,
+"lo": 21,
+"p1": 22,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 26,
+"cls": "Dry",
+"label": "Fri 6 Nov"
+},
+{
+"md": "11-07",
+"hi": 30,
+"lo": 21,
+"p1": 14,
+"p10": 2,
+"med": 0.0,
+"src": "E",
+"cc": 31,
+"cls": "Dry",
+"label": "Sat 7 Nov"
+}
+],
+"Alishan": [
+{
+"md": "10-31",
+"hi": 17,
+"lo": 7,
+"p1": 80,
+"p10": 0,
+"med": 1.8,
+"src": "E",
+"cc": 64,
+"cls": "Showers",
+"label": "Sat 31 Oct"
+},
+{
+"md": "11-01",
+"hi": 18,
+"lo": 8,
+"p1": 45,
+"p10": 2,
+"med": 0.7,
+"src": "E",
+"cc": 52,
+"cls": "Dry",
+"label": "Sun 1 Nov"
+},
+{
+"md": "11-02",
+"hi": 18,
+"lo": 7,
+"p1": 37,
+"p10": 0,
+"med": 0.2,
+"src": "E",
+"cc": 65,
+"cls": "Dry",
+"label": "Mon 2 Nov"
+},
+{
+"md": "11-03",
+"hi": 17,
+"lo": 8,
+"p1": 98,
+"p10": 6,
+"med": 4.2,
+"src": "E",
+"cc": 71,
+"cls": "Showers",
+"label": "Tue 3 Nov"
+},
+{
+"md": "11-04",
+"hi": 16,
+"lo": 7,
+"p1": 96,
+"p10": 22,
+"med": 4.6,
+"src": "E",
+"cc": 74,
+"cls": "Showers",
+"label": "Wed 4 Nov"
+},
+{
+"md": "11-05",
+"hi": 15,
+"lo": 7,
+"p1": 96,
+"p10": 29,
+"med": 6.8,
+"src": "E",
+"cc": 75,
+"cls": "Wet",
+"label": "Thu 5 Nov"
+},
+{
+"md": "11-06",
+"hi": 15,
+"lo": 7,
+"p1": 92,
+"p10": 20,
+"med": 5.6,
+"src": "E",
+"cc": 70,
+"cls": "Wet",
+"label": "Fri 6 Nov"
+},
+{
+"md": "11-07",
+"hi": 16,
+"lo": 7,
+"p1": 84,
+"p10": 8,
+"med": 3.2,
+"src": "E",
+"cc": 70,
+"cls": "Showers",
+"label": "Sat 7 Nov"
+}
+],
+"Sun Moon Lake": [
+{
+"md": "10-31",
+"hi": 27,
+"lo": 15,
+"p1": 8,
+"p10": 0,
+"med": 0.2,
+"src": "E",
+"cc": 41,
+"cls": "Dry",
+"label": "Sat 31 Oct"
+},
+{
+"md": "11-01",
+"hi": 27,
+"lo": 16,
+"p1": 0,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 23,
+"cls": "Dry",
+"label": "Sun 1 Nov"
+},
+{
+"md": "11-02",
+"hi": 27,
+"lo": 15,
+"p1": 0,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 34,
+"cls": "Dry",
+"label": "Mon 2 Nov"
+},
+{
+"md": "11-03",
+"hi": 27,
+"lo": 16,
+"p1": 47,
+"p10": 2,
+"med": 0.8,
+"src": "E",
+"cc": 60,
+"cls": "Dry",
+"label": "Tue 3 Nov"
+},
+{
+"md": "11-04",
+"hi": 26,
+"lo": 16,
+"p1": 49,
+"p10": 0,
+"med": 0.8,
+"src": "E",
+"cc": 59,
+"cls": "Dry",
+"label": "Wed 4 Nov"
+},
+{
+"md": "11-05",
+"hi": 25,
+"lo": 16,
+"p1": 53,
+"p10": 4,
+"med": 1.0,
+"src": "E",
+"cc": 51,
+"cls": "Showers",
+"label": "Thu 5 Nov"
+},
+{
+"md": "11-06",
+"hi": 25,
+"lo": 15,
+"p1": 47,
+"p10": 4,
+"med": 0.8,
+"src": "E",
+"cc": 57,
+"cls": "Dry",
+"label": "Fri 6 Nov"
+},
+{
+"md": "11-07",
+"hi": 25,
+"lo": 15,
+"p1": 37,
+"p10": 4,
+"med": 0.4,
+"src": "E",
+"cc": 49,
+"cls": "Dry",
+"label": "Sat 7 Nov"
+}
+],
+"Dulan": [
+{
+"md": "10-31",
+"hi": 30,
+"lo": 21,
+"p1": 37,
+"p10": 4,
+"med": 0.4,
+"src": "E",
+"cc": 38,
+"cls": "Dry",
+"label": "Sat 31 Oct"
+},
+{
+"md": "11-01",
+"hi": 29,
+"lo": 21,
+"p1": 53,
+"p10": 16,
+"med": 1.0,
+"src": "E",
+"cc": 55,
+"cls": "Showers",
+"label": "Sun 1 Nov"
+},
+{
+"md": "11-02",
+"hi": 30,
+"lo": 21,
+"p1": 82,
+"p10": 8,
+"med": 2.4,
+"src": "E",
+"cc": 67,
+"cls": "Showers",
+"label": "Mon 2 Nov"
+},
+{
+"md": "11-03",
+"hi": 27,
+"lo": 21,
+"p1": 57,
+"p10": 2,
+"med": 1.2,
+"src": "E",
+"cc": 80,
+"cls": "Showers",
+"label": "Tue 3 Nov"
+},
+{
+"md": "11-04",
+"hi": 27,
+"lo": 20,
+"p1": 20,
+"p10": 0,
+"med": 0.2,
+"src": "E",
+"cc": 74,
+"cls": "Dry",
+"label": "Wed 4 Nov"
+},
+{
+"md": "11-05",
+"hi": 27,
+"lo": 20,
+"p1": 25,
+"p10": 2,
+"med": 0.4,
+"src": "E",
+"cc": 69,
+"cls": "Dry",
+"label": "Thu 5 Nov"
+},
+{
+"md": "11-06",
+"hi": 27,
+"lo": 20,
+"p1": 33,
+"p10": 8,
+"med": 0.4,
+"src": "E",
+"cc": 64,
+"cls": "Dry",
+"label": "Fri 6 Nov"
+},
+{
+"md": "11-07",
+"hi": 27,
+"lo": 19,
+"p1": 43,
+"p10": 2,
+"med": 0.6,
+"src": "E",
+"cc": 64,
+"cls": "Dry",
+"label": "Sat 7 Nov"
+}
+],
+"Luye": [
+{
+"md": "10-31",
+"hi": 27,
+"lo": 19,
+"p1": 37,
+"p10": 4,
+"med": 0.4,
+"src": "E",
+"cc": 38,
+"cls": "Dry",
+"label": "Sat 31 Oct"
+},
+{
+"md": "11-01",
+"hi": 27,
+"lo": 19,
+"p1": 53,
+"p10": 16,
+"med": 1.0,
+"src": "E",
+"cc": 55,
+"cls": "Showers",
+"label": "Sun 1 Nov"
+},
+{
+"md": "11-02",
+"hi": 28,
+"lo": 19,
+"p1": 82,
+"p10": 8,
+"med": 2.4,
+"src": "E",
+"cc": 67,
+"cls": "Showers",
+"label": "Mon 2 Nov"
+},
+{
+"md": "11-03",
+"hi": 25,
+"lo": 19,
+"p1": 57,
+"p10": 2,
+"med": 1.2,
+"src": "E",
+"cc": 80,
+"cls": "Showers",
+"label": "Tue 3 Nov"
+},
+{
+"md": "11-04",
+"hi": 24,
+"lo": 18,
+"p1": 20,
+"p10": 0,
+"med": 0.2,
+"src": "E",
+"cc": 74,
+"cls": "Dry",
+"label": "Wed 4 Nov"
+},
+{
+"md": "11-05",
+"hi": 25,
+"lo": 18,
+"p1": 25,
+"p10": 2,
+"med": 0.4,
+"src": "E",
+"cc": 69,
+"cls": "Dry",
+"label": "Thu 5 Nov"
+},
+{
+"md": "11-06",
+"hi": 25,
+"lo": 17,
+"p1": 33,
+"p10": 8,
+"med": 0.4,
+"src": "E",
+"cc": 64,
+"cls": "Dry",
+"label": "Fri 6 Nov"
+},
+{
+"md": "11-07",
+"hi": 25,
+"lo": 17,
+"p1": 43,
+"p10": 2,
+"med": 0.6,
+"src": "E",
+"cc": 64,
+"cls": "Dry",
+"label": "Sat 7 Nov"
+}
+],
+"Hanoi": [
+{
+"md": "10-31",
+"hi": 31,
+"lo": 24,
+"p1": 55,
+"p10": 0,
+"med": 1.1,
+"src": "E",
+"cc": 38,
+"cls": "Showers",
+"label": "Sat 31 Oct"
+},
+{
+"md": "11-01",
+"hi": 32,
+"lo": 25,
+"p1": 45,
+"p10": 0,
+"med": 0.7,
+"src": "E",
+"cc": 41,
+"cls": "Dry",
+"label": "Sun 1 Nov"
+},
+{
+"md": "11-02",
+"hi": 29,
+"lo": 23,
+"p1": 88,
+"p10": 39,
+"med": 5.2,
+"src": "E",
+"cc": 79,
+"cls": "Wet",
+"label": "Mon 2 Nov"
+},
+{
+"md": "11-03",
+"hi": 28,
+"lo": 22,
+"p1": 57,
+"p10": 4,
+"med": 1.2,
+"src": "E",
+"cc": 78,
+"cls": "Showers",
+"label": "Tue 3 Nov"
+},
+{
+"md": "11-04",
+"hi": 27,
+"lo": 22,
+"p1": 65,
+"p10": 18,
+"med": 1.8,
+"src": "E",
+"cc": 88,
+"cls": "Showers",
+"label": "Wed 4 Nov"
+},
+{
+"md": "11-05",
+"hi": 26,
+"lo": 22,
+"p1": 90,
+"p10": 33,
+"med": 5.8,
+"src": "E",
+"cc": 89,
+"cls": "Wet",
+"label": "Thu 5 Nov"
+},
+{
+"md": "11-06",
+"hi": 26,
+"lo": 21,
+"p1": 76,
+"p10": 37,
+"med": 5.4,
+"src": "E",
+"cc": 86,
+"cls": "Wet",
+"label": "Fri 6 Nov"
+},
+{
+"md": "11-07",
+"hi": 27,
+"lo": 21,
+"p1": 57,
+"p10": 31,
+"med": 2.6,
+"src": "E",
+"cc": 78,
+"cls": "Wet",
+"label": "Sat 7 Nov"
+}
+],
+"Ninh Binh": [
+{
+"md": "10-31",
+"hi": 31,
+"lo": 24,
+"p1": 61,
+"p10": 4,
+"med": 1.2,
+"src": "E",
+"cc": 44,
+"cls": "Showers",
+"label": "Sat 31 Oct"
+},
+{
+"md": "11-01",
+"hi": 31,
+"lo": 25,
+"p1": 59,
+"p10": 0,
+"med": 1.1,
+"src": "E",
+"cc": 37,
+"cls": "Showers",
+"label": "Sun 1 Nov"
+},
+{
+"md": "11-02",
+"hi": 30,
+"lo": 23,
+"p1": 82,
+"p10": 16,
+"med": 3.8,
+"src": "E",
+"cc": 75,
+"cls": "Showers",
+"label": "Mon 2 Nov"
+},
+{
+"md": "11-03",
+"hi": 28,
+"lo": 22,
+"p1": 63,
+"p10": 18,
+"med": 1.6,
+"src": "E",
+"cc": 77,
+"cls": "Showers",
+"label": "Tue 3 Nov"
+},
+{
+"md": "11-04",
+"hi": 27,
+"lo": 22,
+"p1": 88,
+"p10": 43,
+"med": 6.2,
+"src": "E",
+"cc": 90,
+"cls": "Wet",
+"label": "Wed 4 Nov"
+},
+{
+"md": "11-05",
+"hi": 26,
+"lo": 22,
+"p1": 88,
+"p10": 59,
+"med": 13.0,
+"src": "E",
+"cc": 91,
+"cls": "Heavy rain",
+"label": "Thu 5 Nov"
+},
+{
+"md": "11-06",
+"hi": 27,
+"lo": 21,
+"p1": 82,
+"p10": 45,
+"med": 6.6,
+"src": "E",
+"cc": 83,
+"cls": "Wet",
+"label": "Fri 6 Nov"
+},
+{
+"md": "11-07",
+"hi": 27,
+"lo": 21,
+"p1": 65,
+"p10": 31,
+"med": 2.6,
+"src": "E",
+"cc": 83,
+"cls": "Wet",
+"label": "Sat 7 Nov"
+}
+],
+"Pu Luong": [
+{
+"md": "10-31",
+"hi": 28,
+"lo": 20,
+"p1": 61,
+"p10": 0,
+"med": 1.1,
+"src": "E",
+"cc": 50,
+"cls": "Showers",
+"label": "Sat 31 Oct"
+},
+{
+"md": "11-01",
+"hi": 29,
+"lo": 21,
+"p1": 53,
+"p10": 0,
+"med": 1.1,
+"src": "E",
+"cc": 56,
+"cls": "Showers",
+"label": "Sun 1 Nov"
+},
+{
+"md": "11-02",
+"hi": 26,
+"lo": 20,
+"p1": 98,
+"p10": 37,
+"med": 6.8,
+"src": "E",
+"cc": 83,
+"cls": "Wet",
+"label": "Mon 2 Nov"
+},
+{
+"md": "11-03",
+"hi": 25,
+"lo": 19,
+"p1": 61,
+"p10": 6,
+"med": 1.8,
+"src": "E",
+"cc": 83,
+"cls": "Showers",
+"label": "Tue 3 Nov"
+},
+{
+"md": "11-04",
+"hi": 25,
+"lo": 19,
+"p1": 80,
+"p10": 16,
+"med": 2.4,
+"src": "E",
+"cc": 96,
+"cls": "Showers",
+"label": "Wed 4 Nov"
+},
+{
+"md": "11-05",
+"hi": 23,
+"lo": 19,
+"p1": 90,
+"p10": 35,
+"med": 5.0,
+"src": "E",
+"cc": 96,
+"cls": "Wet",
+"label": "Thu 5 Nov"
+},
+{
+"md": "11-06",
+"hi": 24,
+"lo": 19,
+"p1": 78,
+"p10": 29,
+"med": 4.4,
+"src": "E",
+"cc": 89,
+"cls": "Showers",
+"label": "Fri 6 Nov"
+},
+{
+"md": "11-07",
+"hi": 24,
+"lo": 18,
+"p1": 69,
+"p10": 27,
+"med": 3.2,
+"src": "E",
+"cc": 88,
+"cls": "Showers",
+"label": "Sat 7 Nov"
+}
+],
+"Sapa": [
+{
+"md": "10-31",
+"hi": 23,
+"lo": 15,
+"p1": 39,
+"p10": 0,
+"med": 0.6,
+"src": "E",
+"cc": 42,
+"cls": "Dry",
+"label": "Sat 31 Oct"
+},
+{
+"md": "11-01",
+"hi": 24,
+"lo": 16,
+"p1": 84,
+"p10": 0,
+"med": 2.1,
+"src": "E",
+"cc": 33,
+"cls": "Showers",
+"label": "Sun 1 Nov"
+},
+{
+"md": "11-02",
+"hi": 21,
+"lo": 15,
+"p1": 96,
+"p10": 24,
+"med": 5.0,
+"src": "E",
+"cc": 77,
+"cls": "Wet",
+"label": "Mon 2 Nov"
+},
+{
+"md": "11-03",
+"hi": 21,
+"lo": 14,
+"p1": 41,
+"p10": 0,
+"med": 0.4,
+"src": "E",
+"cc": 40,
+"cls": "Dry",
+"label": "Tue 3 Nov"
+},
+{
+"md": "11-04",
+"hi": 21,
+"lo": 13,
+"p1": 33,
+"p10": 6,
+"med": 0.6,
+"src": "E",
+"cc": 31,
+"cls": "Dry",
+"label": "Wed 4 Nov"
+},
+{
+"md": "11-05",
+"hi": 21,
+"lo": 14,
+"p1": 51,
+"p10": 8,
+"med": 1.0,
+"src": "E",
+"cc": 48,
+"cls": "Showers",
+"label": "Thu 5 Nov"
+},
+{
+"md": "11-06",
+"hi": 20,
+"lo": 14,
+"p1": 71,
+"p10": 14,
+"med": 2.0,
+"src": "E",
+"cc": 66,
+"cls": "Showers",
+"label": "Fri 6 Nov"
+},
+{
+"md": "11-07",
+"hi": 19,
+"lo": 13,
+"p1": 82,
+"p10": 20,
+"med": 4.6,
+"src": "E",
+"cc": 78,
+"cls": "Showers",
+"label": "Sat 7 Nov"
+}
+],
+"Kyoto": [
+{
+"md": "10-31",
+"hi": 21,
+"lo": 11,
+"p1": 49,
+"p10": 4,
+"med": 0.9,
+"src": "E",
+"cc": 12,
+"cls": "Dry",
+"label": "Sat 31 Oct"
+},
+{
+"md": "11-01",
+"hi": 18,
+"lo": 9,
+"p1": 0,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 89,
+"cls": "Dry",
+"label": "Sun 1 Nov"
+},
+{
+"md": "11-02",
+"hi": 19,
+"lo": 11,
+"p1": 98,
+"p10": 47,
+"med": 9.8,
+"src": "E",
+"cc": 96,
+"cls": "Wet",
+"label": "Mon 2 Nov"
+},
+{
+"md": "11-03",
+"hi": 18,
+"lo": 9,
+"p1": 8,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 38,
+"cls": "Dry",
+"label": "Tue 3 Nov"
+},
+{
+"md": "11-04",
+"hi": 17,
+"lo": 8,
+"p1": 4,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 55,
+"cls": "Dry",
+"label": "Wed 4 Nov"
+},
+{
+"md": "11-05",
+"hi": 17,
+"lo": 7,
+"p1": 20,
+"p10": 12,
+"med": 0.0,
+"src": "E",
+"cc": 46,
+"cls": "Dry",
+"label": "Thu 5 Nov"
+},
+{
+"md": "11-06",
+"hi": 18,
+"lo": 8,
+"p1": 31,
+"p10": 10,
+"med": 0.0,
+"src": "E",
+"cc": 43,
+"cls": "Dry",
+"label": "Fri 6 Nov"
+},
+{
+"md": "11-07",
+"hi": 19,
+"lo": 9,
+"p1": 29,
+"p10": 6,
+"med": 0.0,
+"src": "E",
+"cc": 53,
+"cls": "Dry",
+"label": "Sat 7 Nov"
+}
+],
+"Osaka": [
+{
+"md": "10-31",
+"hi": 21,
+"lo": 12,
+"p1": 69,
+"p10": 4,
+"med": 2.4,
+"src": "E",
+"cc": 18,
+"cls": "Showers",
+"label": "Sat 31 Oct"
+},
+{
+"md": "11-01",
+"hi": 18,
+"lo": 10,
+"p1": 0,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 87,
+"cls": "Dry",
+"label": "Sun 1 Nov"
+},
+{
+"md": "11-02",
+"hi": 21,
+"lo": 12,
+"p1": 98,
+"p10": 63,
+"med": 11.4,
+"src": "E",
+"cc": 95,
+"cls": "Heavy rain",
+"label": "Mon 2 Nov"
+},
+{
+"md": "11-03",
+"hi": 18,
+"lo": 10,
+"p1": 6,
+"p10": 2,
+"med": 0.0,
+"src": "E",
+"cc": 39,
+"cls": "Dry",
+"label": "Tue 3 Nov"
+},
+{
+"md": "11-04",
+"hi": 17,
+"lo": 9,
+"p1": 4,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 44,
+"cls": "Dry",
+"label": "Wed 4 Nov"
+},
+{
+"md": "11-05",
+"hi": 17,
+"lo": 9,
+"p1": 14,
+"p10": 12,
+"med": 0.0,
+"src": "E",
+"cc": 39,
+"cls": "Dry",
+"label": "Thu 5 Nov"
+},
+{
+"md": "11-06",
+"hi": 18,
+"lo": 9,
+"p1": 24,
+"p10": 12,
+"med": 0.0,
+"src": "E",
+"cc": 43,
+"cls": "Dry",
+"label": "Fri 6 Nov"
+},
+{
+"md": "11-07",
+"hi": 19,
+"lo": 10,
+"p1": 22,
+"p10": 6,
+"med": 0.0,
+"src": "E",
+"cc": 43,
+"cls": "Dry",
+"label": "Sat 7 Nov"
+}
+],
+"Koyasan": [
+{
+"md": "10-31",
+"hi": 15,
+"lo": 7,
+"p1": 94,
+"p10": 8,
+"med": 3.6,
+"src": "E",
+"cc": 26,
+"cls": "Showers",
+"label": "Sat 31 Oct"
+},
+{
+"md": "11-01",
+"hi": 15,
+"lo": 6,
+"p1": 0,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 66,
+"cls": "Dry",
+"label": "Sun 1 Nov"
+},
+{
+"md": "11-02",
+"hi": 17,
+"lo": 7,
+"p1": 98,
+"p10": 63,
+"med": 11.0,
+"src": "E",
+"cc": 96,
+"cls": "Heavy rain",
+"label": "Mon 2 Nov"
+},
+{
+"md": "11-03",
+"hi": 13,
+"lo": 5,
+"p1": 22,
+"p10": 2,
+"med": 0.2,
+"src": "E",
+"cc": 58,
+"cls": "Dry",
+"label": "Tue 3 Nov"
+},
+{
+"md": "11-04",
+"hi": 12,
+"lo": 4,
+"p1": 10,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 61,
+"cls": "Dry",
+"label": "Wed 4 Nov"
+},
+{
+"md": "11-05",
+"hi": 12,
+"lo": 4,
+"p1": 22,
+"p10": 12,
+"med": 0.0,
+"src": "E",
+"cc": 58,
+"cls": "Dry",
+"label": "Thu 5 Nov"
+},
+{
+"md": "11-06",
+"hi": 13,
+"lo": 4,
+"p1": 33,
+"p10": 14,
+"med": 0.2,
+"src": "E",
+"cc": 51,
+"cls": "Dry",
+"label": "Fri 6 Nov"
+},
+{
+"md": "11-07",
+"hi": 15,
+"lo": 5,
+"p1": 31,
+"p10": 8,
+"med": 0.0,
+"src": "E",
+"cc": 52,
+"cls": "Dry",
+"label": "Sat 7 Nov"
+}
+],
+"Kumano Hongu": [
+{
+"md": "10-31",
+"hi": 21,
+"lo": 12,
+"p1": 75,
+"p10": 14,
+"med": 3.7,
+"src": "E",
+"cc": 7,
+"cls": "Showers",
+"label": "Sat 31 Oct"
+},
+{
+"md": "11-01",
+"hi": 21,
+"lo": 10,
+"p1": 0,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 43,
+"cls": "Dry",
+"label": "Sun 1 Nov"
+},
+{
+"md": "11-02",
+"hi": 22,
+"lo": 12,
+"p1": 96,
+"p10": 53,
+"med": 10.0,
+"src": "E",
+"cc": 95,
+"cls": "Heavy rain",
+"label": "Mon 2 Nov"
+},
+{
+"md": "11-03",
+"hi": 20,
+"lo": 10,
+"p1": 12,
+"p10": 2,
+"med": 0.0,
+"src": "E",
+"cc": 26,
+"cls": "Dry",
+"label": "Tue 3 Nov"
+},
+{
+"md": "11-04",
+"hi": 18,
+"lo": 9,
+"p1": 14,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 51,
+"cls": "Dry",
+"label": "Wed 4 Nov"
+},
+{
+"md": "11-05",
+"hi": 18,
+"lo": 9,
+"p1": 22,
+"p10": 12,
+"med": 0.0,
+"src": "E",
+"cc": 66,
+"cls": "Dry",
+"label": "Thu 5 Nov"
+},
+{
+"md": "11-06",
+"hi": 19,
+"lo": 10,
+"p1": 35,
+"p10": 18,
+"med": 0.0,
+"src": "E",
+"cc": 41,
+"cls": "Dry",
+"label": "Fri 6 Nov"
+},
+{
+"md": "11-07",
+"hi": 20,
+"lo": 10,
+"p1": 33,
+"p10": 12,
+"med": 0.0,
+"src": "E",
+"cc": 52,
+"cls": "Dry",
+"label": "Sat 7 Nov"
+}
+],
+"Kawaguchiko": [
+{
+"md": "10-31",
+"hi": 18,
+"lo": 9,
+"p1": 20,
+"p10": 0,
+"med": 0.3,
+"src": "E",
+"cc": 13,
+"cls": "Dry",
+"label": "Sat 31 Oct"
+},
+{
+"md": "11-01",
+"hi": 16,
+"lo": 8,
+"p1": 8,
+"p10": 0,
+"med": 0.2,
+"src": "E",
+"cc": 82,
+"cls": "Dry",
+"label": "Sun 1 Nov"
+},
+{
+"md": "11-02",
+"hi": 17,
+"lo": 9,
+"p1": 90,
+"p10": 39,
+"med": 5.6,
+"src": "E",
+"cc": 95,
+"cls": "Wet",
+"label": "Mon 2 Nov"
+},
+{
+"md": "11-03",
+"hi": 15,
+"lo": 8,
+"p1": 80,
+"p10": 6,
+"med": 2.8,
+"src": "E",
+"cc": 78,
+"cls": "Showers",
+"label": "Tue 3 Nov"
+},
+{
+"md": "11-04",
+"hi": 14,
+"lo": 6,
+"p1": 53,
+"p10": 4,
+"med": 1.2,
+"src": "E",
+"cc": 76,
+"cls": "Showers",
+"label": "Wed 4 Nov"
+},
+{
+"md": "11-05",
+"hi": 12,
+"lo": 5,
+"p1": 51,
+"p10": 10,
+"med": 1.0,
+"src": "E",
+"cc": 74,
+"cls": "Showers",
+"label": "Thu 5 Nov"
+},
+{
+"md": "11-06",
+"hi": 14,
+"lo": 6,
+"p1": 49,
+"p10": 18,
+"med": 0.8,
+"src": "E",
+"cc": 64,
+"cls": "Dry",
+"label": "Fri 6 Nov"
+},
+{
+"md": "11-07",
+"hi": 15,
+"lo": 7,
+"p1": 53,
+"p10": 18,
+"med": 1.0,
+"src": "E",
+"cc": 54,
+"cls": "Showers",
+"label": "Sat 7 Nov"
+}
+],
+"Tokyo": [
+{
+"md": "10-31",
+"hi": 21,
+"lo": 11,
+"p1": 16,
+"p10": 0,
+"med": 0.2,
+"src": "E",
+"cc": 16,
+"cls": "Dry",
+"label": "Sat 31 Oct"
+},
+{
+"md": "11-01",
+"hi": 18,
+"lo": 11,
+"p1": 0,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 77,
+"cls": "Dry",
+"label": "Sun 1 Nov"
+},
+{
+"md": "11-02",
+"hi": 20,
+"lo": 12,
+"p1": 55,
+"p10": 8,
+"med": 1.2,
+"src": "E",
+"cc": 87,
+"cls": "Showers",
+"label": "Mon 2 Nov"
+},
+{
+"md": "11-03",
+"hi": 18,
+"lo": 11,
+"p1": 39,
+"p10": 4,
+"med": 0.4,
+"src": "E",
+"cc": 77,
+"cls": "Dry",
+"label": "Tue 3 Nov"
+},
+{
+"md": "11-04",
+"hi": 15,
+"lo": 9,
+"p1": 41,
+"p10": 6,
+"med": 0.2,
+"src": "E",
+"cc": 84,
+"cls": "Dry",
+"label": "Wed 4 Nov"
+},
+{
+"md": "11-05",
+"hi": 15,
+"lo": 8,
+"p1": 31,
+"p10": 6,
+"med": 0.0,
+"src": "E",
+"cc": 71,
+"cls": "Dry",
+"label": "Thu 5 Nov"
+},
+{
+"md": "11-06",
+"hi": 16,
+"lo": 9,
+"p1": 39,
+"p10": 12,
+"med": 0.6,
+"src": "E",
+"cc": 60,
+"cls": "Dry",
+"label": "Fri 6 Nov"
+},
+{
+"md": "11-07",
+"hi": 17,
+"lo": 10,
+"p1": 35,
+"p10": 12,
+"med": 0.0,
+"src": "E",
+"cc": 55,
+"cls": "Dry",
+"label": "Sat 7 Nov"
+}
+],
+"Takayama": [
+{
+"md": "10-31",
+"hi": 16,
+"lo": 7,
+"p1": 100,
+"p10": 57,
+"med": 11.4,
+"src": "E",
+"cc": 42,
+"cls": "Heavy rain",
+"label": "Sat 31 Oct"
+},
+{
+"md": "11-01",
+"hi": 16,
+"lo": 5,
+"p1": 18,
+"p10": 0,
+"med": 0.2,
+"src": "E",
+"cc": 95,
+"cls": "Dry",
+"label": "Sun 1 Nov"
+},
+{
+"md": "11-02",
+"hi": 15,
+"lo": 8,
+"p1": 100,
+"p10": 80,
+"med": 17.0,
+"src": "E",
+"cc": 99,
+"cls": "Heavy rain",
+"label": "Mon 2 Nov"
+},
+{
+"md": "11-03",
+"hi": 14,
+"lo": 4,
+"p1": 45,
+"p10": 0,
+"med": 0.8,
+"src": "E",
+"cc": 54,
+"cls": "Dry",
+"label": "Tue 3 Nov"
+},
+{
+"md": "11-04",
+"hi": 13,
+"lo": 2,
+"p1": 29,
+"p10": 0,
+"med": 0.2,
+"src": "E",
+"cc": 57,
+"cls": "Dry",
+"label": "Wed 4 Nov"
+},
+{
+"md": "11-05",
+"hi": 14,
+"lo": 2,
+"p1": 25,
+"p10": 8,
+"med": 0.0,
+"src": "E",
+"cc": 53,
+"cls": "Dry",
+"label": "Thu 5 Nov"
+},
+{
+"md": "11-06",
+"hi": 15,
+"lo": 3,
+"p1": 25,
+"p10": 6,
+"med": 0.0,
+"src": "E",
+"cc": 45,
+"cls": "Dry",
+"label": "Fri 6 Nov"
+},
+{
+"md": "11-07",
+"hi": 16,
+"lo": 4,
+"p1": 33,
+"p10": 6,
+"med": 0.0,
+"src": "E",
+"cc": 51,
+"cls": "Dry",
+"label": "Sat 7 Nov"
+}
+],
+"Hirayu Onsen": [
+{
+"md": "10-31",
+"hi": 10,
+"lo": 3,
+"p1": 100,
+"p10": 59,
+"med": 10.7,
+"src": "E",
+"cc": 58,
+"cls": "Heavy rain",
+"label": "Sat 31 Oct"
+},
+{
+"md": "11-01",
+"hi": 11,
+"lo": 2,
+"p1": 14,
+"p10": 0,
+"med": 0.2,
+"src": "E",
+"cc": 96,
+"cls": "Dry",
+"label": "Sun 1 Nov"
+},
+{
+"md": "11-02",
+"hi": 11,
+"lo": 4,
+"p1": 100,
+"p10": 86,
+"med": 24.4,
+"src": "E",
+"cc": 99,
+"cls": "Heavy rain",
+"label": "Mon 2 Nov"
+},
+{
+"md": "11-03",
+"hi": 10,
+"lo": 2,
+"p1": 25,
+"p10": 2,
+"med": 0.2,
+"src": "E",
+"cc": 53,
+"cls": "Dry",
+"label": "Tue 3 Nov"
+},
+{
+"md": "11-04",
+"hi": 9,
+"lo": 0,
+"p1": 27,
+"p10": 2,
+"med": 0.0,
+"src": "E",
+"cc": 58,
+"cls": "Dry",
+"label": "Wed 4 Nov"
+},
+{
+"md": "11-05",
+"hi": 10,
+"lo": 0,
+"p1": 22,
+"p10": 6,
+"med": 0.0,
+"src": "E",
+"cc": 44,
+"cls": "Dry",
+"label": "Thu 5 Nov"
+},
+{
+"md": "11-06",
+"hi": 11,
+"lo": 2,
+"p1": 25,
+"p10": 4,
+"med": 0.0,
+"src": "E",
+"cc": 45,
+"cls": "Dry",
+"label": "Fri 6 Nov"
+},
+{
+"md": "11-07",
+"hi": 11,
+"lo": 3,
+"p1": 27,
+"p10": 4,
+"med": 0.0,
+"src": "E",
+"cc": 44,
+"cls": "Dry",
+"label": "Sat 7 Nov"
+}
+],
+"Fukuoka": [
+{
+"md": "10-31",
+"hi": 20,
+"lo": 12,
+"p1": 2,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 5,
+"cls": "Dry",
+"label": "Sat 31 Oct"
+},
+{
+"md": "11-01",
+"hi": 21,
+"lo": 11,
+"p1": 18,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 62,
+"cls": "Dry",
+"label": "Sun 1 Nov"
+},
+{
+"md": "11-02",
+"hi": 20,
+"lo": 13,
+"p1": 100,
+"p10": 71,
+"med": 15.2,
+"src": "E",
+"cc": 74,
+"cls": "Heavy rain",
+"label": "Mon 2 Nov"
+},
+{
+"md": "11-03",
+"hi": 18,
+"lo": 11,
+"p1": 6,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 42,
+"cls": "Dry",
+"label": "Tue 3 Nov"
+},
+{
+"md": "11-04",
+"hi": 17,
+"lo": 9,
+"p1": 6,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 41,
+"cls": "Dry",
+"label": "Wed 4 Nov"
+},
+{
+"md": "11-05",
+"hi": 18,
+"lo": 9,
+"p1": 4,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 22,
+"cls": "Dry",
+"label": "Thu 5 Nov"
+},
+{
+"md": "11-06",
+"hi": 19,
+"lo": 10,
+"p1": 18,
+"p10": 4,
+"med": 0.0,
+"src": "E",
+"cc": 23,
+"cls": "Dry",
+"label": "Fri 6 Nov"
+},
+{
+"md": "11-07",
+"hi": 20,
+"lo": 11,
+"p1": 27,
+"p10": 8,
+"med": 0.0,
+"src": "E",
+"cc": 49,
+"cls": "Dry",
+"label": "Sat 7 Nov"
+}
+],
+"Yufuin": [
+{
+"md": "10-31",
+"hi": 18,
+"lo": 10,
+"p1": 8,
+"p10": 0,
+"med": 0.2,
+"src": "E",
+"cc": 8,
+"cls": "Dry",
+"label": "Sat 31 Oct"
+},
+{
+"md": "11-01",
+"hi": 20,
+"lo": 10,
+"p1": 2,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 36,
+"cls": "Dry",
+"label": "Sun 1 Nov"
+},
+{
+"md": "11-02",
+"hi": 19,
+"lo": 10,
+"p1": 100,
+"p10": 51,
+"med": 10.0,
+"src": "E",
+"cc": 80,
+"cls": "Heavy rain",
+"label": "Mon 2 Nov"
+},
+{
+"md": "11-03",
+"hi": 15,
+"lo": 8,
+"p1": 22,
+"p10": 0,
+"med": 0.2,
+"src": "E",
+"cc": 48,
+"cls": "Dry",
+"label": "Tue 3 Nov"
+},
+{
+"md": "11-04",
+"hi": 14,
+"lo": 7,
+"p1": 12,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 48,
+"cls": "Dry",
+"label": "Wed 4 Nov"
+},
+{
+"md": "11-05",
+"hi": 15,
+"lo": 7,
+"p1": 12,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 36,
+"cls": "Dry",
+"label": "Thu 5 Nov"
+},
+{
+"md": "11-06",
+"hi": 17,
+"lo": 8,
+"p1": 24,
+"p10": 8,
+"med": 0.0,
+"src": "E",
+"cc": 36,
+"cls": "Dry",
+"label": "Fri 6 Nov"
+},
+{
+"md": "11-07",
+"hi": 17,
+"lo": 9,
+"p1": 29,
+"p10": 8,
+"med": 0.0,
+"src": "E",
+"cc": 56,
+"cls": "Dry",
+"label": "Sat 7 Nov"
+}
+],
+"Aso": [
+{
+"md": "10-31",
+"hi": 18,
+"lo": 8,
+"p1": 16,
+"p10": 0,
+"med": 0.2,
+"src": "E",
+"cc": 7,
+"cls": "Dry",
+"label": "Sat 31 Oct"
+},
+{
+"md": "11-01",
+"hi": 20,
+"lo": 8,
+"p1": 2,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 29,
+"cls": "Dry",
+"label": "Sun 1 Nov"
+},
+{
+"md": "11-02",
+"hi": 19,
+"lo": 9,
+"p1": 98,
+"p10": 88,
+"med": 23.2,
+"src": "E",
+"cc": 73,
+"cls": "Heavy rain",
+"label": "Mon 2 Nov"
+},
+{
+"md": "11-03",
+"hi": 16,
+"lo": 6,
+"p1": 2,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 33,
+"cls": "Dry",
+"label": "Tue 3 Nov"
+},
+{
+"md": "11-04",
+"hi": 15,
+"lo": 6,
+"p1": 6,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 36,
+"cls": "Dry",
+"label": "Wed 4 Nov"
+},
+{
+"md": "11-05",
+"hi": 16,
+"lo": 6,
+"p1": 8,
+"p10": 4,
+"med": 0.0,
+"src": "E",
+"cc": 29,
+"cls": "Dry",
+"label": "Thu 5 Nov"
+},
+{
+"md": "11-06",
+"hi": 17,
+"lo": 7,
+"p1": 18,
+"p10": 8,
+"med": 0.0,
+"src": "E",
+"cc": 29,
+"cls": "Dry",
+"label": "Fri 6 Nov"
+},
+{
+"md": "11-07",
+"hi": 17,
+"lo": 8,
+"p1": 25,
+"p10": 6,
+"med": 0.0,
+"src": "E",
+"cc": 56,
+"cls": "Dry",
+"label": "Sat 7 Nov"
+}
+],
+"Kurokawa": [
+{
+"md": "10-31",
+"hi": 17,
+"lo": 7,
+"p1": 0,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 5,
+"cls": "Dry",
+"label": "Sat 31 Oct"
+},
+{
+"md": "11-01",
+"hi": 18,
+"lo": 7,
+"p1": 2,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 26,
+"cls": "Dry",
+"label": "Sun 1 Nov"
+},
+{
+"md": "11-02",
+"hi": 18,
+"lo": 7,
+"p1": 98,
+"p10": 33,
+"med": 8.4,
+"src": "E",
+"cc": 71,
+"cls": "Wet",
+"label": "Mon 2 Nov"
+},
+{
+"md": "11-03",
+"hi": 14,
+"lo": 4,
+"p1": 0,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 25,
+"cls": "Dry",
+"label": "Tue 3 Nov"
+},
+{
+"md": "11-04",
+"hi": 13,
+"lo": 4,
+"p1": 4,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 36,
+"cls": "Dry",
+"label": "Wed 4 Nov"
+},
+{
+"md": "11-05",
+"hi": 14,
+"lo": 4,
+"p1": 12,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 29,
+"cls": "Dry",
+"label": "Thu 5 Nov"
+},
+{
+"md": "11-06",
+"hi": 15,
+"lo": 5,
+"p1": 16,
+"p10": 4,
+"med": 0.0,
+"src": "E",
+"cc": 31,
+"cls": "Dry",
+"label": "Fri 6 Nov"
+},
+{
+"md": "11-07",
+"hi": 16,
+"lo": 6,
+"p1": 27,
+"p10": 4,
+"med": 0.0,
+"src": "E",
+"cc": 55,
+"cls": "Dry",
+"label": "Sat 7 Nov"
+}
+],
+"Kuju": [
+{
+"md": "10-31",
+"hi": 15,
+"lo": 5,
+"p1": 0,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 5,
+"cls": "Dry",
+"label": "Sat 31 Oct"
+},
+{
+"md": "11-01",
+"hi": 16,
+"lo": 5,
+"p1": 2,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 26,
+"cls": "Dry",
+"label": "Sun 1 Nov"
+},
+{
+"md": "11-02",
+"hi": 16,
+"lo": 5,
+"p1": 98,
+"p10": 33,
+"med": 8.4,
+"src": "E",
+"cc": 71,
+"cls": "Wet",
+"label": "Mon 2 Nov"
+},
+{
+"md": "11-03",
+"hi": 12,
+"lo": 2,
+"p1": 0,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 25,
+"cls": "Dry",
+"label": "Tue 3 Nov"
+},
+{
+"md": "11-04",
+"hi": 11,
+"lo": 2,
+"p1": 4,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 36,
+"cls": "Dry",
+"label": "Wed 4 Nov"
+},
+{
+"md": "11-05",
+"hi": 12,
+"lo": 2,
+"p1": 12,
+"p10": 0,
+"med": 0.0,
+"src": "E",
+"cc": 29,
+"cls": "Dry",
+"label": "Thu 5 Nov"
+},
+{
+"md": "11-06",
+"hi": 13,
+"lo": 3,
+"p1": 16,
+"p10": 4,
+"med": 0.0,
+"src": "E",
+"cc": 31,
+"cls": "Dry",
+"label": "Fri 6 Nov"
+},
+{
+"md": "11-07",
+"hi": 14,
+"lo": 4,
+"p1": 27,
+"p10": 4,
+"med": 0.0,
+"src": "E",
+"cc": 55,
+"cls": "Dry",
+"label": "Sat 7 Nov"
+}
+],
+"Kanazawa": [
+{
+"md": "10-31",
+"hi": 18,
+"lo": 10,
+"p1": 100,
+"p10": 90,
+"med": 19.6,
+"src": "E",
+"cc": 52,
+"cls": "Heavy rain",
+"label": "Sat 31 Oct"
+},
+{
+"md": "11-01",
+"hi": 17,
+"lo": 9,
+"p1": 35,
+"p10": 2,
+"med": 0.2,
+"src": "E",
+"cc": 97,
+"cls": "Dry",
+"label": "Sun 1 Nov"
+},
+{
+"md": "11-02",
+"hi": 19,
+"lo": 11,
+"p1": 100,
+"p10": 88,
+"med": 21.8,
+"src": "E",
+"cc": 99,
+"cls": "Heavy rain",
+"label": "Mon 2 Nov"
+},
+{
+"md": "11-03",
+"hi": 16,
+"lo": 8,
+"p1": 82,
+"p10": 22,
+"med": 4.8,
+"src": "E",
+"cc": 66,
+"cls": "Showers",
+"label": "Tue 3 Nov"
+},
+{
+"md": "11-04",
+"hi": 14,
+"lo": 6,
+"p1": 57,
+"p10": 18,
+"med": 2.4,
+"src": "E",
+"cc": 68,
+"cls": "Showers",
+"label": "Wed 4 Nov"
+},
+{
+"md": "11-05",
+"hi": 15,
+"lo": 6,
+"p1": 45,
+"p10": 10,
+"med": 0.6,
+"src": "E",
+"cc": 51,
+"cls": "Dry",
+"label": "Thu 5 Nov"
+},
+{
+"md": "11-06",
+"hi": 17,
+"lo": 7,
+"p1": 35,
+"p10": 6,
+"med": 0.2,
+"src": "E",
+"cc": 48,
+"cls": "Dry",
+"label": "Fri 6 Nov"
+},
+{
+"md": "11-07",
+"hi": 18,
+"lo": 8,
+"p1": 45,
+"p10": 14,
+"med": 0.6,
+"src": "E",
+"cc": 53,
+"cls": "Dry",
+"label": "Sat 7 Nov"
+}
+],
+"Shirakawa-go": [
+{
+"md": "10-31",
+"hi": 15,
+"lo": 8,
+"p1": 100,
+"p10": 53,
+"med": 10.0,
+"src": "E",
+"cc": 54,
+"cls": "Heavy rain",
+"label": "Sat 31 Oct"
+},
+{
+"md": "11-01",
+"hi": 16,
+"lo": 6,
+"p1": 35,
+"p10": 0,
+"med": 0.4,
+"src": "E",
+"cc": 97,
+"cls": "Dry",
+"label": "Sun 1 Nov"
+},
+{
+"md": "11-02",
+"hi": 15,
+"lo": 9,
+"p1": 100,
+"p10": 88,
+"med": 22.6,
+"src": "E",
+"cc": 99,
+"cls": "Heavy rain",
+"label": "Mon 2 Nov"
+},
+{
+"md": "11-03",
+"hi": 14,
+"lo": 5,
+"p1": 67,
+"p10": 2,
+"med": 1.6,
+"src": "E",
+"cc": 68,
+"cls": "Showers",
+"label": "Tue 3 Nov"
+},
+{
+"md": "11-04",
+"hi": 13,
+"lo": 4,
+"p1": 47,
+"p10": 4,
+"med": 0.6,
+"src": "E",
+"cc": 77,
+"cls": "Dry",
+"label": "Wed 4 Nov"
+},
+{
+"md": "11-05",
+"hi": 15,
+"lo": 3,
+"p1": 35,
+"p10": 8,
+"med": 0.0,
+"src": "E",
+"cc": 56,
+"cls": "Dry",
+"label": "Thu 5 Nov"
+},
+{
+"md": "11-06",
+"hi": 15,
+"lo": 4,
+"p1": 31,
+"p10": 6,
+"med": 0.2,
+"src": "E",
+"cc": 54,
+"cls": "Dry",
+"label": "Fri 6 Nov"
+},
+{
+"md": "11-07",
+"hi": 16,
+"lo": 5,
+"p1": 49,
+"p10": 8,
+"med": 0.8,
+"src": "E",
+"cc": 68,
+"cls": "Dry",
+"label": "Sat 7 Nov"
+}
+],
+"Yamanaka Onsen": [
+{
+"md": "10-31",
+"hi": 18,
+"lo": 11,
+"p1": 100,
+"p10": 86,
+"med": 17.4,
+"src": "E",
+"cc": 39,
+"cls": "Heavy rain",
+"label": "Sat 31 Oct"
+},
+{
+"md": "11-01",
+"hi": 16,
+"lo": 10,
+"p1": 39,
+"p10": 2,
+"med": 0.5,
+"src": "E",
+"cc": 98,
+"cls": "Dry",
+"label": "Sun 1 Nov"
+},
+{
+"md": "11-02",
+"hi": 17,
+"lo": 11,
+"p1": 100,
+"p10": 80,
+"med": 17.0,
+"src": "E",
+"cc": 97,
+"cls": "Heavy rain",
+"label": "Mon 2 Nov"
+},
+{
+"md": "11-03",
+"hi": 15,
+"lo": 9,
+"p1": 76,
+"p10": 16,
+"med": 2.8,
+"src": "E",
+"cc": 51,
+"cls": "Showers",
+"label": "Tue 3 Nov"
+},
+{
+"md": "11-04",
+"hi": 14,
+"lo": 7,
+"p1": 63,
+"p10": 16,
+"med": 2.6,
+"src": "E",
+"cc": 62,
+"cls": "Showers",
+"label": "Wed 4 Nov"
+},
+{
+"md": "11-05",
+"hi": 15,
+"lo": 7,
+"p1": 43,
+"p10": 10,
+"med": 0.2,
+"src": "E",
+"cc": 43,
+"cls": "Dry",
+"label": "Thu 5 Nov"
+},
+{
+"md": "11-06",
+"hi": 16,
+"lo": 8,
+"p1": 35,
+"p10": 12,
+"med": 0.4,
+"src": "E",
+"cc": 45,
+"cls": "Dry",
+"label": "Fri 6 Nov"
+},
+{
+"md": "11-07",
+"hi": 17,
+"lo": 9,
+"p1": 41,
+"p10": 12,
+"med": 0.6,
+"src": "E",
+"cc": 50,
+"cls": "Dry",
+"label": "Sat 7 Nov"
+}
+],
+"Unazuki": [
+{
+"md": "10-31",
+"hi": 16,
+"lo": 9,
+"p1": 100,
+"p10": 100,
+"med": 27.3,
+"src": "E",
+"cc": 63,
+"cls": "Heavy rain",
+"label": "Sat 31 Oct"
+},
+{
+"md": "11-01",
+"hi": 16,
+"lo": 8,
+"p1": 53,
+"p10": 4,
+"med": 1.1,
+"src": "E",
+"cc": 98,
+"cls": "Showers",
+"label": "Sun 1 Nov"
+},
+{
+"md": "11-02",
+"hi": 18,
+"lo": 10,
+"p1": 100,
+"p10": 92,
+"med": 26.4,
+"src": "E",
+"cc": 100,
+"cls": "Heavy rain",
+"label": "Mon 2 Nov"
+},
+{
+"md": "11-03",
+"hi": 14,
+"lo": 7,
+"p1": 82,
+"p10": 37,
+"med": 5.8,
+"src": "E",
+"cc": 77,
+"cls": "Wet",
+"label": "Tue 3 Nov"
+},
+{
+"md": "11-04",
+"hi": 13,
+"lo": 5,
+"p1": 57,
+"p10": 25,
+"med": 2.6,
+"src": "E",
+"cc": 81,
+"cls": "Showers",
+"label": "Wed 4 Nov"
+},
+{
+"md": "11-05",
+"hi": 14,
+"lo": 5,
+"p1": 37,
+"p10": 16,
+"med": 0.2,
+"src": "E",
+"cc": 44,
+"cls": "Dry",
+"label": "Thu 5 Nov"
+},
+{
+"md": "11-06",
+"hi": 15,
+"lo": 6,
+"p1": 31,
+"p10": 4,
+"med": 0.0,
+"src": "E",
+"cc": 41,
+"cls": "Dry",
+"label": "Fri 6 Nov"
+},
+{
+"md": "11-07",
+"hi": 16,
+"lo": 7,
+"p1": 45,
+"p10": 25,
+"med": 0.4,
+"src": "E",
+"cc": 56,
+"cls": "Dry",
+"label": "Sat 7 Nov"
+}
+],
+"Murodo": [
+{
+"md": "10-31",
+"hi": 1,
+"lo": -5,
+"p1": 100,
+"p10": 86,
+"med": 21.0,
+"src": "E",
+"cc": 83,
+"cls": "Heavy rain",
+"label": "Sat 31 Oct"
+},
+{
+"md": "11-01",
+"hi": 3,
+"lo": -7,
+"p1": 35,
+"p10": 4,
+"med": 0.4,
+"src": "E",
+"cc": 95,
+"cls": "Dry",
+"label": "Sun 1 Nov"
+},
+{
+"md": "11-02",
+"hi": 3,
+"lo": -4,
+"p1": 100,
+"p10": 88,
+"med": 28.6,
+"src": "E",
+"cc": 100,
+"cls": "Heavy rain",
+"label": "Mon 2 Nov"
+},
+{
+"md": "11-03",
+"hi": 1,
+"lo": -7,
+"p1": 65,
+"p10": 12,
+"med": 2.2,
+"src": "E",
+"cc": 68,
+"cls": "Showers",
+"label": "Tue 3 Nov"
+},
+{
+"md": "11-04",
+"hi": 0,
+"lo": -9,
+"p1": 43,
+"p10": 12,
+"med": 0.6,
+"src": "E",
+"cc": 80,
+"cls": "Dry",
+"label": "Wed 4 Nov"
+},
+{
+"md": "11-05",
+"hi": 1,
+"lo": -8,
+"p1": 31,
+"p10": 10,
+"med": 0.0,
+"src": "E",
+"cc": 50,
+"cls": "Dry",
+"label": "Thu 5 Nov"
+},
+{
+"md": "11-06",
+"hi": 2,
+"lo": -7,
+"p1": 31,
+"p10": 8,
+"med": 0.0,
+"src": "E",
+"cc": 48,
+"cls": "Dry",
+"label": "Fri 6 Nov"
+},
+{
+"md": "11-07",
+"hi": 3,
+"lo": -6,
+"p1": 43,
+"p10": 14,
+"med": 0.2,
+"src": "E",
+"cc": 60,
+"cls": "Dry",
+"label": "Sat 7 Nov"
+}
+]
+},
+"fc_days": [
+{
+"md": "10-31",
+"label": "Sat 31 Oct",
+"ahead": 4
+},
+{
+"md": "11-01",
+"label": "Sun 1 Nov",
+"ahead": 5
+},
+{
+"md": "11-02",
+"label": "Mon 2 Nov",
+"ahead": 6
+},
+{
+"md": "11-03",
+"label": "Tue 3 Nov",
+"ahead": 7
+},
+{
+"md": "11-04",
+"label": "Wed 4 Nov",
+"ahead": 8
+},
+{
+"md": "11-05",
+"label": "Thu 5 Nov",
+"ahead": 9
+},
+{
+"md": "11-06",
+"label": "Fri 6 Nov",
+"ahead": 10
+},
+{
+"md": "11-07",
+"label": "Sat 7 Nov",
+"ahead": 11
+}
+],
+"fc_bands": [
+{
+"g": 0,
+"n": 3,
+"lo": 4,
+"hi": 6,
+"rough": false,
+"label": "4–6 days out"
+},
+{
+"g": 1,
+"n": 5,
+"lo": 7,
+"hi": 11,
+"rough": false,
+"label": "7–11 days out"
+}
+],
+"fc_checked": "27 Oct 2026, 12:16 Hong Kong time",
+"fc_last": "11-07",
+"climate": {
+"tw-north": {
+"weather": {
+"hi": 25,
+"lo": 19,
+"rain": "frequent drizzle",
+"note": "The north-east monsoon starts: the north coast and the east are often grey and wet (Jiufen, Keelung, Yilan, Hualien). Taipei itself is drier.",
+"score": 3,
+"sky": "often grey"
+},
+"wx_climate": 3,
+"entry": "Visa-free 90 days · online arrival card"
+},
+"tw-south": {
+"weather": {
+"hi": 28,
+"lo": 21,
+"rain": "dry in the south",
+"note": "The south is dry and sunny in Nov. Alishan about 7–17°C with afternoon fog; Sun Moon Lake mild.",
+"score": 4,
+"sky": "sunny in Tainan, foggy in the hills"
+},
+"wx_climate": 4,
+"entry": "Visa-free 90 days · online arrival card"
+},
+"tw-east": {
+"weather": {
+"hi": 27,
+"lo": 20,
+"rain": "passing showers",
+"note": "Start of the north-east monsoon: passing showers but much less rain than Hualien and the north; the sea is still about 26°C.",
+"score": 4,
+"sky": "sun and cloud"
+},
+"wx_climate": 4,
+"entry": "Visa-free 90 days · online arrival card"
+},
+"vn-north": {
+"weather": {
+"hi": 26,
+"lo": 19,
+"rain": "dry season",
+"note": "Usually the best time of year. Pu Luong 15–26°C, Sapa cooler (about 10–20°C) with morning fog.",
+"score": 5,
+"sky": "often grey and hazy"
+},
+"wx_climate": 5,
+"entry": "Visa-free 45 days for French passports (until 14 Mar 2028) · passport valid 6 months"
+},
+"jp-kansai": {
+"weather": {
+"hi": 19,
+"lo": 10,
+"rain": "mostly dry",
+"note": "Crisp and clear. Koyasan's leaves peak late Oct–early Nov; Kyoto city colours start mid-Nov.",
+"score": 4,
+"sky": "mostly blue"
+},
+"wx_climate": 4,
+"entry": "Visa-free 90 days · Visit Japan Web QR for customs"
+},
+"jp-fuji": {
+"weather": {
+"hi": 19,
+"lo": 11,
+"rain": "mostly dry",
+"note": "Tokyo mild. Takayama 2–16°C, Hirayu and Kamikochi near freezing at night; larches golden early Nov (Kamikochi closes 15 Nov). November is Fuji's clearest month.",
+"score": 4,
+"sky": "mostly blue (Fuji's clearest month)"
+},
+"wx_climate": 4,
+"entry": "Visa-free 90 days · Visit Japan Web"
+},
+"jp-kyushu": {
+"weather": {
+"hi": 20,
+"lo": 12,
+"rain": "mostly dry",
+"note": "Pleasant. Aso 5–15°C, Kuju near freezing at night.",
+"score": 4,
+"sky": "mostly blue"
+},
+"wx_climate": 4,
+"entry": "Visa-free 90 days · Visit Japan Web"
+},
+"jp-kanazawa": {
+"weather": {
+"hi": 17,
+"lo": 8,
+"rain": "frequent showers",
+"note": "Hokuriku turns wet in November as the winter monsoon starts ('forget your lunch, not your umbrella', they say in Kanazawa). Crisp between fronts; snow already at Murodo (2,450 m).",
+"score": 3,
+"sky": "often grey"
+},
+"wx_climate": 3,
+"entry": "Visa-free 90 days · Visit Japan Web"
+}
+},
+"places": [
+{
+"n": "Taipei",
+"a": [
+"Taipei"
+],
+"w": "Taiwan's capital, a relaxed city of night markets, temples and green hills.",
+"y": "Some of Asia's best street food, an MRT that goes everywhere, and hot springs and volcano hikes inside the city limits.",
+"l": "North Taiwan; the airport (TPE) is 40 min away by Airport MRT.",
+"q": "Taipei, Taiwan"
+},
+{
+"n": "Raohe night market",
+"a": [
+"Raohe night market",
+"Raohe"
+],
+"w": "One of Taipei's oldest night markets: a single long lane of stalls.",
+"y": "Famous for black-pepper buns baked in a clay oven at the entrance; easier to walk than Shilin.",
+"l": "Songshan, east Taipei, next to MRT Songshan.",
+"q": "Raohe night market, Taiwan"
+},
+{
+"n": "Yangmingshan",
+"a": [
+"Yangmingshan"
+],
+"w": "A volcanic national park on Taipei's northern edge.",
+"y": "Steaming fumaroles, silver-grass slopes in autumn, hot springs and the city's highest peaks.",
+"l": "About 50 min from central Taipei: MRT to Jiantan, then a bus up.",
+"q": "Yangmingshan, Taiwan"
+},
+{
+"n": "Qixingshan",
+"a": [
+"Qixingshan"
+],
+"w": "Taipei's highest peak (1,120 m), a dormant volcano in Yangmingshan.",
+"y": "A short, steep climb past sulphur vents to views over the city and the north coast.",
+"l": "Yangmingshan; the usual start is the Xiaoyoukeng trailhead.",
+"q": "Qixingshan, Taiwan"
+},
+{
+"n": "Xiaoyoukeng",
+"a": [
+"Xiaoyoukeng"
+],
+"w": "A fumarole field and trailhead on the side of Qixingshan.",
+"y": "Hissing yellow sulphur vents right beside the path.",
+"l": "Yangmingshan, by bus from MRT Jiantan.",
+"q": "Xiaoyoukeng, Taiwan"
+},
+{
+"n": "Beitou",
+"a": [
+"Beitou"
+],
+"w": "Taipei's hot-spring district.",
+"y": "Public outdoor baths, the steaming Thermal Valley and a Japanese-era bathhouse museum.",
+"l": "North Taipei, about 30 min by MRT from Taipei Main (Xinbeitou station).",
+"q": "Beitou, Taiwan"
+},
+{
+"n": "Thermal Valley",
+"a": [
+"Thermal Valley"
+],
+"w": "A steaming jade-green sulphur lake, also called Hell Valley.",
+"y": "Clouds of hot vapour drifting over the water.",
+"l": "Beitou, a 10-min walk from MRT Xinbeitou.",
+"q": "Thermal Valley, Taiwan"
+},
+{
+"n": "Shilin night market",
+"a": [
+"Shilin night market",
+"Shilin"
+],
+"w": "Taipei's biggest and best-known night market.",
+"y": "Giant fried chicken, oyster omelettes and a maze of food stalls.",
+"l": "Shilin, north Taipei, by MRT Jiantan.",
+"q": "Shilin night market, Taiwan"
+},
+{
+"n": "Dadaocheng",
+"a": [
+"Dadaocheng"
+],
+"w": "Taipei's 19th-century merchant quarter along Dihua Street.",
+"y": "Tea and dried-goods shops, restored shophouses turned into cafés, sunsets over the river.",
+"l": "West Taipei by the Tamsui river, near MRT Beimen.",
+"q": "Dadaocheng, Taiwan"
+},
+{
+"n": "Fu Hang Soy Milk",
+"a": [
+"Fu Hang"
+],
+"w": "Taipei's most famous breakfast counter.",
+"y": "Thick egg flatbread from a clay oven and warm soy milk; the queue moves fast.",
+"l": "Upstairs in Huashan market, next to MRT Shandao Temple.",
+"q": "Fu Hang Soy Milk, Taipei"
+},
+{
+"n": "Maokong",
+"a": [
+"Maokong"
+],
+"w": "Tea-growing hills on Taipei's southern edge.",
+"y": "A gondola over the forest, tea houses with the city below, cooler air.",
+"l": "Wenshan, south Taipei; gondola from MRT Taipei Zoo (about 25 min ride).",
+"q": "Maokong, Taiwan"
+},
+{
+"n": "Elephant Mountain",
+"a": [
+"Elephant Mountain"
+],
+"w": "A small hill with a steep stair trail (Xiangshan).",
+"y": "The classic view of Taipei 101, best at sunset.",
+"l": "Xinyi, east Taipei, from MRT Xiangshan.",
+"q": "Elephant Mountain, Taiwan"
+},
+{
+"n": "Taipei 101",
+"a": [
+"Taipei 101"
+],
+"w": "Taipei's 508 m landmark skyscraper.",
+"y": "Best seen from Elephant Mountain; observation deck on the 89th floor.",
+"l": "Xinyi, east Taipei.",
+"q": "Taipei 101, Taiwan"
+},
+{
+"n": "Linjiang Street night market",
+"a": [
+"Linjiang Street night market",
+"Linjiang Street"
+],
+"w": "A neighbourhood night market (also called Tonghua).",
+"y": "Smaller and more local than Shilin, good cheap snacks.",
+"l": "Da'an, near MRT Xinyi Anhe, 15 min from Elephant Mountain.",
+"q": "Linjiang Street night market, Taiwan"
+},
+{
+"n": "Guandu",
+"a": [
+"Guandu"
+],
+"w": "A riverside area where the Keelung and Tamsui rivers meet.",
+"y": "Start of the flat riverside bike path to Tamsui; wetlands and birds.",
+"l": "North Taipei, MRT Guandu (red line).",
+"q": "Guandu, Taiwan"
+},
+{
+"n": "Tamsui",
+"a": [
+"Tamsui"
+],
+"w": "A riverside town at the mouth of the Tamsui river.",
+"y": "Old-street snacks, colonial forts and Taipei's best sunsets over the water.",
+"l": "End of the red MRT line, about 40 min from Taipei Main.",
+"q": "Tamsui, Taiwan"
+},
+{
+"n": "Fort San Domingo",
+"a": [
+"Fort San Domingo"
+],
+"w": "A red fort first built by the Spanish (1628), later rebuilt by the Dutch and used as the British consulate.",
+"y": "Small, pretty and full of history, with a view over the river mouth.",
+"l": "Tamsui, 15 min on foot from the MRT.",
+"q": "Fort San Domingo, Taiwan"
+},
+{
+"n": "Bali (Taipei)",
+"a": [
+"Bali"
+],
+"w": "A quiet district across the river from Tamsui (not the Indonesian island).",
+"y": "Flat riverside bike path and lawns, reached by a 10-min ferry.",
+"l": "Opposite Tamsui; ferry from Tamsui pier.",
+"t": [
+"tw-north"
+],
+"q": "Bali Left Bank, New Taipei"
+},
+{
+"n": "Fisherman's Wharf",
+"a": [
+"Fisherman's Wharf"
+],
+"w": "Tamsui's old fishing harbour with a white footbridge.",
+"y": "The sunset spot at the river mouth.",
+"l": "North end of Tamsui, by bus, bike or boat from the old street.",
+"q": "Tamsui Fisherman's Wharf"
+},
+{
+"n": "Ximending",
+"a": [
+"Ximending"
+],
+"w": "Taipei's busy youth and shopping district.",
+"y": "Pedestrian streets, street food and cheap eats until late.",
+"l": "Wanhua, west-central Taipei, MRT Ximen.",
+"q": "Ximending, Taiwan"
+},
+{
+"n": "Ruifang",
+"a": [
+"Ruifang"
+],
+"w": "A small rail junction town.",
+"y": "Where you change for the Jiufen bus and the Pingxi branch line.",
+"l": "North-east coast, about 45 min by train from Taipei Main.",
+"q": "Ruifang, Taiwan"
+},
+{
+"n": "Jiufen",
+"a": [
+"Jiufen"
+],
+"w": "A former gold-mining town on a steep hillside above the sea.",
+"y": "Narrow lanes, old tea houses and red lanterns; magical once the day-trippers leave.",
+"l": "North-east coast, about 1h from Taipei (train to Ruifang, then 15 min by bus).",
+"q": "Jiufen, Taiwan"
+},
+{
+"n": "Jinguashi",
+"a": [
+"Jinguashi"
+],
+"w": "A former gold-mining village with the Gold Museum and Japanese-era houses.",
+"y": "Quieter than Jiufen; the start of the Teapot Mountain trail.",
+"l": "10 min by bus (or 40 min on foot) beyond Jiufen.",
+"q": "Jinguashi, Taiwan"
+},
+{
+"n": "Teapot Mountain",
+"a": [
+"Teapot Mountain"
+],
+"w": "A rocky ridge shaped like a teapot above Jinguashi.",
+"y": "Short but steep, a rope scramble at the top and wide views of the coast.",
+"l": "Above Jinguashi; trailhead behind the Gold Museum.",
+"q": "Teapot Mountain, Taiwan"
+},
+{
+"n": "Golden Waterfall",
+"a": [
+"Golden Waterfall"
+],
+"w": "A waterfall stained gold by minerals from the old mines.",
+"y": "Strange colours, an easy roadside stop.",
+"l": "On the road from Jinguashi down to the coast.",
+"q": "Golden Waterfall, Taiwan"
+},
+{
+"n": "Yin-Yang Sea",
+"a": [
+"Yin-Yang Sea"
+],
+"w": "A bay where mineral runoff turns the water yellow against the blue sea.",
+"y": "A striking two-colour sea seen from the coast road.",
+"l": "Below Jinguashi, on the coast at Shuinandong.",
+"q": "Yin-Yang Sea, Taiwan"
+},
+{
+"n": "Pingxi line",
+"a": [
+"Pingxi branch line",
+"Pingxi line",
+"Pingxi"
+],
+"w": "A little single-track railway up a forested valley of old coal towns.",
+"y": "Sky lanterns, waterfalls and trains rolling right through village streets.",
+"l": "Branches off at Ruifang; Shifen is 30 min down the line.",
+"q": "Pingxi line, Taiwan"
+},
+{
+"n": "Shifen",
+"a": [
+"Shifen"
+],
+"w": "A village on the Pingxi line, famous for sky lanterns.",
+"y": "The train runs down the main street; Shifen waterfall is a 20-min walk.",
+"l": "Pingxi line, about 30 min from Ruifang.",
+"q": "Shifen, Taiwan"
+},
+{
+"n": "Jingtong",
+"a": [
+"Jingtong"
+],
+"w": "The quiet end of the Pingxi line, an old coal-mining stop.",
+"y": "A wooden station and a little old street, calmer than Shifen.",
+"l": "End of the Pingxi line, about 15 min past Shifen.",
+"q": "Jingtong, Taiwan"
+},
+{
+"n": "Wanli",
+"a": [
+"Wanli"
+],
+"w": "A coastal district on Taiwan's north coast.",
+"y": "Tandem paragliding launches from the hill above the sea.",
+"l": "North coast, about 1h by bus from Taipei.",
+"q": "Wanli, Taiwan"
+},
+{
+"n": "Yehliu Geopark",
+"a": [
+"Yehliu Geopark",
+"Yehliu",
+"Queen's Head"
+],
+"w": "A cape of wind- and sea-carved rocks.",
+"y": "Mushroom rocks and the famous 'Queen's Head'.",
+"l": "Wanli, north coast, about 1h by bus from Taipei.",
+"q": "Yehliu Geopark, Taiwan"
+},
+{
+"n": "Keelung",
+"a": [
+"Keelung"
+],
+"w": "A port city north-east of Taipei.",
+"y": "Miaokou night market's seafood.",
+"l": "About 45 min by train from Taipei Main.",
+"q": "Keelung, Taiwan"
+},
+{
+"n": "Miaokou night market",
+"a": [
+"Miaokou night market",
+"Miaokou"
+],
+"w": "Keelung's famous seafood night market around an old temple.",
+"y": "Crab, oysters and tempura, lanterns overhead.",
+"l": "Central Keelung, a 10-min walk from the station.",
+"q": "Miaokou night market, Taiwan"
+},
+{
+"n": "Hualien",
+"a": [
+"Hualien"
+],
+"w": "The main town on Taiwan's east coast, between steep mountains and the Pacific.",
+"y": "Gateway to Taroko gorge, seaside bike paths and Indigenous food.",
+"l": "East coast, about 2h15 by train from Taipei.",
+"q": "Hualien, Taiwan"
+},
+{
+"n": "Qixingtan",
+"a": [
+"Qixingtan"
+],
+"w": "A long crescent of pebble beach.",
+"y": "Wide Pacific views at the end of a flat seaside bike path.",
+"l": "About 10 km north of Hualien town.",
+"q": "Qixingtan, Taiwan"
+},
+{
+"n": "Dongdamen night market",
+"a": [
+"Dongdamen night market",
+"Dongdamen"
+],
+"w": "Hualien's big night market.",
+"y": "An Indigenous food street with grilled meats, plus local snacks.",
+"l": "Central Hualien, walkable from most guesthouses.",
+"q": "Dongdamen night market, Taiwan"
+},
+{
+"n": "Hualien Cultural Creative Park",
+"a": [
+"Cultural Creative Park"
+],
+"w": "Old winery buildings turned into a creative park.",
+"y": "Cafés, small shops and exhibitions; good on a rainy day.",
+"l": "Central Hualien.",
+"q": "Hualien Cultural Creative Park, Taiwan"
+},
+{
+"n": "Taroko Gorge",
+"a": [
+"Taroko Gorge",
+"Taroko"
+],
+"w": "A marble gorge national park, Taiwan's most famous.",
+"y": "Sheer marble walls and a turquoise river; only parts are open since the 2024 earthquake.",
+"l": "About 30 min north of Hualien by taxi.",
+"q": "Taroko Gorge, Taiwan"
+},
+{
+"n": "Tianxiang",
+"a": [
+"Tianxiang"
+],
+"w": "A village and rest area deep inside Taroko gorge.",
+"y": "Temples, a suspension bridge and short walks, when the road is open.",
+"l": "About 1h up the gorge from Hualien.",
+"q": "Tianxiang, Taiwan"
+},
+{
+"n": "Dekalun trail",
+"a": [
+"Dekalun trail",
+"Dekalun"
+],
+"w": "A short stair trail in Taroko.",
+"y": "A steep climb through forest to views over the gorge mouth.",
+"l": "Near the Taroko visitor centre.",
+"q": "Dekalun Trail, Taroko"
+},
+{
+"n": "Qingshui cliffs",
+"a": [
+"Qingshui cliffs"
+],
+"w": "Sea cliffs that drop about 1,000 m straight into the Pacific.",
+"y": "One of Taiwan's most dramatic coastal views.",
+"l": "North of the Taroko entrance, about 40 min from Hualien.",
+"q": "Qingshui cliffs, Taiwan"
+},
+{
+"n": "Stone Sculpture Museum",
+"a": [
+"Stone Sculpture Museum"
+],
+"w": "Hualien's museum of marble and stone carving.",
+"y": "A dry plan B near the sea.",
+"l": "Hualien harbour area.",
+"q": "Hualien County Stone Sculpture Museum"
+},
+{
+"n": "Ruisui",
+"a": [
+"Ruisui"
+],
+"w": "A Rift Valley village known for iron-rich hot springs.",
+"y": "Rust-coloured, slightly salty water; quiet baths.",
+"l": "About 1h south of Hualien by train.",
+"q": "Ruisui, Taiwan"
+},
+{
+"n": "Liyu Lake",
+"a": [
+"Liyu Lake"
+],
+"w": "Hualien's largest lake, ringed by forested hills.",
+"y": "A flat 5 km bike loop round the water.",
+"l": "About 40 min by bus south-west of Hualien.",
+"q": "Liyu Lake, Taiwan"
+},
+{
+"n": "Pine Garden",
+"a": [
+"Pine Garden"
+],
+"w": "A 1940s Japanese army headquarters in a grove of old pines.",
+"y": "A shady terrace, a café and views over Hualien harbour.",
+"l": "A hill above Hualien port, walkable from town.",
+"q": "Pine Garden, Hualien"
+},
+{
+"n": "Dali",
+"a": [
+"Dali"
+],
+"w": "A small coastal village with a big hillside temple.",
+"y": "The south end of the Caoling Historic Trail.",
+"l": "North-east coast (Yilan), about 1h from Jiufen by bus and train.",
+"t": [
+"tw-north"
+],
+"q": "Dali Tiangong Temple, Toucheng"
+},
+{
+"n": "Caoling Historic Trail",
+"a": [
+"Caoling Historic Trail"
+],
+"w": "A Qing-dynasty path over grassy coastal hills.",
+"y": "Silver grass, grazing cattle and the Pacific below you for hours.",
+"l": "North-east coast, between Dali and the Fulong area.",
+"q": "Caoling Historic Trail, Taiwan"
+},
+{
+"n": "Fulong",
+"a": [
+"Fulong beach",
+"Fulong"
+],
+"w": "A long golden-sand beach.",
+"y": "The end point of the Caoling trail; a swim and the train back.",
+"l": "Gongliao, north-east coast, about 1h by train from Taipei.",
+"q": "Fulong Beach"
+},
+{
+"n": "Bitou Cape",
+"a": [
+"Bitou Cape"
+],
+"w": "A rocky headland with a cliff-top trail and a lighthouse.",
+"y": "A short, windswept loop with big sea views.",
+"l": "North-east coast, between Jiufen and Fulong.",
+"q": "Bitou Cape, Taiwan"
+},
+{
+"n": "Mukumugi valley",
+"a": [
+"Mukumugi valley",
+"Mukumugi"
+],
+"w": "A valley of turquoise pools in Truku Indigenous land.",
+"y": "Suspension bridges and a clear river through a small gorge; a free permit is needed.",
+"l": "About 40 min by taxi north-west of Hualien.",
+"q": "Mukumugi valley, Taiwan"
+},
+{
+"n": "Longshan Temple",
+"a": [
+"Longshan"
+],
+"w": "Taipei's best-known temple, founded in 1738.",
+"y": "Carved dragons, incense and worshippers day and night.",
+"l": "Wanhua, west Taipei, MRT Longshan Temple.",
+"q": "Longshan Temple, Taipei"
+},
+{
+"n": "Bao'an Temple",
+"a": [
+"Bao'an"
+],
+"w": "A richly decorated folk temple, restored with a UNESCO award.",
+"y": "Some of the finest temple carving and painting in Taiwan.",
+"l": "Datong, north-west Taipei, near MRT Yuanshan.",
+"q": "Bao'an Temple, Taipei"
+},
+{
+"n": "Yilan",
+"a": [
+"Yilan"
+],
+"w": "A rice-growing plain on the north-east coast.",
+"y": "Where the train first meets the sea on the way to Hualien.",
+"l": "North-east Taiwan, about 1h by train from Taipei.",
+"q": "Yilan, Taiwan"
+},
+{
+"n": "Kaohsiung",
+"a": [
+"Kaohsiung"
+],
+"w": "Taiwan's big southern port city.",
+"y": "Harbour art districts, Cijin island seafood, a relaxed feel.",
+"l": "South-west Taiwan; the airport (KHH) is 30 min away by MRT.",
+"q": "Kaohsiung, Taiwan"
+},
+{
+"n": "Tainan",
+"a": [
+"Tainan"
+],
+"w": "Taiwan's oldest city and former capital.",
+"y": "The island's food capital, hundreds of temples and old lanes.",
+"l": "South-west Taiwan, 12 min by high-speed train from Kaohsiung (Zuoying).",
+"q": "Tainan, Taiwan"
+},
+{
+"n": "Confucius Temple (Tainan)",
+"a": [
+"Confucius Temple"
+],
+"w": "Taiwan's first Confucian temple, founded in 1665.",
+"y": "Quiet red courtyards under old banyans.",
+"l": "Central Tainan.",
+"t": [
+"tw-south"
+],
+"q": "Confucius Temple (Tainan), Taiwan"
+},
+{
+"n": "Grand Mazu Temple",
+"a": [
+"Grand Mazu temple"
+],
+"w": "A temple to the sea goddess Mazu, in a former Ming prince's residence.",
+"y": "One of Tainan's most beautiful temples.",
+"l": "Central Tainan, near Chihkan Tower.",
+"q": "Grand Mazu Temple, Tainan"
+},
+{
+"n": "Shennong Street",
+"a": [
+"Shennong Street"
+],
+"w": "A short lane of old wooden houses by the old canal.",
+"y": "Lanterns, small bars and shops; lovely at night.",
+"l": "West Tainan, 10 min on foot from the centre.",
+"q": "Shennong Street, Tainan"
+},
+{
+"n": "Anping",
+"a": [
+"Anping old street",
+"Anping"
+],
+"w": "Tainan's old harbour district.",
+"y": "The Dutch Fort Zeelandia (1624), the Tree House and snack streets.",
+"l": "About 5 km west of central Tainan: bike or bus.",
+"q": "Anping, Tainan"
+},
+{
+"n": "Anping Tree House",
+"a": [
+"Tree House"
+],
+"w": "An old trading warehouse swallowed by banyan roots.",
+"y": "Walkways through the roots and branches; eerie and beautiful.",
+"l": "Anping, next to the old Tait & Co. building.",
+"q": "Anping Tree House, Taiwan"
+},
+{
+"n": "Garden night market",
+"a": [
+"Garden night market"
+],
+"w": "Tainan's biggest night market (Thu, Sat, Sun).",
+"y": "Hundreds of stalls on a huge lot.",
+"l": "North Tainan, a short taxi ride from the centre.",
+"q": "Garden Night Market, Tainan"
+},
+{
+"n": "Chihkan Tower",
+"a": [
+"Chihkan Tower"
+],
+"w": "A 1653 Dutch fort (Provintia), rebuilt with Chinese pavilions.",
+"y": "A pretty courtyard with stone turtles; a Tainan symbol.",
+"l": "Central Tainan.",
+"q": "Chihkan Tower, Taiwan"
+},
+{
+"n": "Hayashi Department Store",
+"a": [
+"Hayashi department store"
+],
+"w": "A 1932 department store from the Japanese era, restored.",
+"y": "An old lift, Taiwanese crafts and a rooftop shrine.",
+"l": "Central Tainan.",
+"q": "Hayashi Department Store, Taiwan"
+},
+{
+"n": "Golden Coast",
+"a": [
+"Golden Coast"
+],
+"w": "Tainan's long beach promenade.",
+"y": "Sunset over the Taiwan Strait.",
+"l": "South-west of Anping, about 25 min by bus from the centre.",
+"q": "Golden Coast, Tainan"
+},
+{
+"n": "Dadong night market",
+"a": [
+"Dadong night market"
+],
+"w": "A Tainan night market (Mon, Tue, Fri).",
+"y": "Local and less touristy.",
+"l": "East Tainan.",
+"q": "Dadong Night Market, Tainan"
+},
+{
+"n": "Sicao",
+"a": [
+"Sicao"
+],
+"w": "A mangrove area with a 'green tunnel' boat ride.",
+"y": "A narrow canal under arching mangroves.",
+"l": "North of Anping, about 30 min by bus from central Tainan.",
+"q": "Sicao Green Tunnel, Tainan"
+},
+{
+"n": "Sun Moon Lake",
+"a": [
+"Sun Moon Lake"
+],
+"w": "Taiwan's largest lake, at about 750 m in the central mountains.",
+"y": "Mist on the water, tea farms, a famous bike path and Thao culture.",
+"l": "Central Taiwan, about 1h40 by bus from Taichung high-speed station.",
+"q": "Sun Moon Lake, Taiwan"
+},
+{
+"n": "Shuishe",
+"a": [
+"Shuishe"
+],
+"w": "The main village on Sun Moon Lake's north shore.",
+"y": "Piers, bike rental and the start of the lakeside trails.",
+"l": "North shore of Sun Moon Lake, where the buses arrive.",
+"q": "Shuishe Pier, Sun Moon Lake"
+},
+{
+"n": "Hanbi trail",
+"a": [
+"Hanbi trail"
+],
+"w": "A short forest path at the water's edge.",
+"y": "Quiet lake views 5 min from Shuishe.",
+"l": "Next to Shuishe village.",
+"q": "Hanbitan Trail, Sun Moon Lake"
+},
+{
+"n": "Ita Thao",
+"a": [
+"Ita Thao"
+],
+"w": "The Thao people's village on the lake's east shore.",
+"y": "Indigenous food stalls, grilled boar, millet wine.",
+"l": "Across the lake from Shuishe, 10 min by boat.",
+"q": "Ita Thao, Taiwan"
+},
+{
+"n": "Ci'en Pagoda",
+"a": [
+"Ci'en pagoda"
+],
+"w": "A hilltop pagoda above the lake, built in 1971.",
+"y": "Climb it for the best view over Sun Moon Lake.",
+"l": "South shore, a short climb off the lake bike path.",
+"q": "Ci'en Pagoda, Sun Moon Lake"
+},
+{
+"n": "Yuchi",
+"a": [
+"Yuchi"
+],
+"w": "The tea township next to Sun Moon Lake.",
+"y": "Taiwan's famous black (Assam) tea and the tea research station.",
+"l": "15 min by bus from Shuishe.",
+"q": "Yuchi, Nantou"
+},
+{
+"n": "Shuishe Mountain",
+"a": [
+"Shuishe Mountain"
+],
+"w": "The highest peak around Sun Moon Lake (2,059 m).",
+"y": "A long, steep forest climb to a view over the whole lake.",
+"l": "Trailhead 15 min by taxi from Shuishe.",
+"q": "Shuishe Mountain, Nantou"
+},
+{
+"n": "Maolan trail",
+"a": [
+"Maolan trail"
+],
+"w": "A short trail through tea plantations.",
+"y": "An easy hour among tea bushes and forest.",
+"l": "By the Yuchi tea research station.",
+"q": "Maolan Mountain Trail, Yuchi"
+},
+{
+"n": "Chiayi",
+"a": [
+"Chiayi"
+],
+"w": "A city on the plains, the gateway to Alishan.",
+"y": "Start of the Alishan Forest Railway; famous turkey rice.",
+"l": "About 50 min by train north of Tainan.",
+"q": "Chiayi, Taiwan"
+},
+{
+"n": "Alishan",
+"a": [
+"Alishan"
+],
+"w": "A mountain forest area at about 2,200 m.",
+"y": "Giant ancient cypresses, sunrise over a sea of clouds, high-mountain tea.",
+"l": "About 2h30 by forest railway from Chiayi.",
+"q": "Alishan, Taiwan"
+},
+{
+"n": "Alishan Forest Railway",
+"a": [
+"Alishan Forest Railway"
+],
+"w": "A narrow-gauge mountain railway opened in 1912.",
+"y": "It climbs from tropical plains to cypress forest through spirals and tunnels.",
+"l": "From Chiayi up to Alishan.",
+"q": "Alishan Forest Railway, Taiwan"
+},
+{
+"n": "Zhushan",
+"a": [
+"Zhushan"
+],
+"w": "Alishan's sunrise viewpoint (about 2,490 m).",
+"y": "Sunrise over a sea of clouds, with Yushan on the skyline.",
+"l": "Top of Alishan: early sunrise train or a 50-min walk.",
+"q": "Zhushan Sunrise Viewing Platform, Alishan"
+},
+{
+"n": "Tashan trail",
+"a": [
+"Tashan trail"
+],
+"w": "A steep stair trail to cliffs on Tashan.",
+"y": "Views over a sea of clouds and deep valleys.",
+"l": "Alishan forest recreation area.",
+"q": "Tashan Trail, Alishan"
+},
+{
+"n": "Shuishan giant tree",
+"a": [
+"Shuishan"
+],
+"w": "A giant cypress said to be about 2,700 years old.",
+"y": "A quiet walk along an old logging rail line.",
+"l": "Alishan forest recreation area.",
+"q": "Shuishan Giant Tree, Alishan"
+},
+{
+"n": "Tataka",
+"a": [
+"Tataka"
+],
+"w": "A high pass at the edge of Yushan National Park (about 2,600 m).",
+"y": "Easy summits with views of Jade Mountain.",
+"l": "About 1h by bus from Alishan.",
+"q": "Tataka Recreation Area"
+},
+{
+"n": "Lulin Mountain",
+"a": [
+"Lulin Mountain"
+],
+"w": "An easy peak (2,845 m) near Tataka.",
+"y": "Big views of Yushan for little effort.",
+"l": "Tataka, Yushan National Park.",
+"q": "Lulin Mountain, Taiwan"
+},
+{
+"n": "Mt Linzhi",
+"a": [
+"Mt Linzhi"
+],
+"w": "A peak (2,854 m) next to Lulin Mountain.",
+"y": "Pair it with Lulin for a half-day ridge walk.",
+"l": "Tataka, Yushan National Park.",
+"q": "Linzhi Mountain, Tataka"
+},
+{
+"n": "Yushan (Jade Mountain)",
+"a": [
+"Jade Mountain",
+"Yushan"
+],
+"w": "Taiwan's highest mountain (3,952 m).",
+"y": "On the skyline from Alishan and Tataka; climbing it needs a permit.",
+"l": "Central Taiwan, east of Alishan.",
+"q": "Yushan, Taiwan"
+},
+{
+"n": "Sister Ponds",
+"a": [
+"Sister Ponds"
+],
+"w": "Two small ponds in the Alishan forest with a local legend.",
+"y": "A calm stop on the giant-tree walks.",
+"l": "Alishan forest recreation area.",
+"q": "Sister Ponds, Alishan"
+},
+{
+"n": "Taichung",
+"a": [
+"Taichung"
+],
+"w": "Taiwan's second-biggest city.",
+"y": "Where you change from the high-speed train to the Sun Moon Lake bus.",
+"l": "Central-west Taiwan, 35 min by high-speed train from Tainan.",
+"q": "Taichung, Taiwan"
+},
+{
+"n": "Zuoying",
+"a": [
+"Zuoying"
+],
+"w": "Kaohsiung's high-speed rail station.",
+"y": "Change here between the MRT and the high-speed train.",
+"l": "North Kaohsiung.",
+"q": "Zuoying HSR Station"
+},
+{
+"n": "Taitung",
+"a": [
+"Taitung"
+],
+"w": "A laid-back city on the south-east coast.",
+"y": "Indigenous culture, hot springs, and the gateway to the Rift Valley and the wild coast.",
+"l": "South-east Taiwan, about 2h15 by train from Kaohsiung.",
+"q": "Taitung, Taiwan"
+},
+{
+"n": "South Link",
+"a": [
+"South Link line",
+"South Link"
+],
+"w": "The railway and Highway 9 across Taiwan's southern mountains.",
+"y": "Sea views on one side, jungle hills on the other.",
+"l": "Between the south-west coast and Taitung.",
+"q": "South Link Highway, Taiwan"
+},
+{
+"n": "Xiaoyeliu",
+"a": [
+"Xiaoyeliu"
+],
+"w": "A stretch of coast with honeycomb and mushroom-shaped rocks.",
+"y": "Strange sandstone shapes and tide pools.",
+"l": "About 15 min north of Taitung by bus or bike.",
+"q": "Xiaoyeliu, Taiwan"
+},
+{
+"n": "Beinan valley",
+"a": [
+"Beinan River valley",
+"Beinan River",
+"Beinan river",
+"Beinan valley"
+],
+"w": "The broad valley of the Beinan river.",
+"y": "Rice fields with mountains on both sides; the way up to the Rift Valley.",
+"l": "North-west of Taitung, towards Luye.",
+"q": "Beinan River, Taitung"
+},
+{
+"n": "Luye Highland",
+"a": [
+"Luye Highland",
+"Luye"
+],
+"w": "A grassy tea plateau above the Rift Valley.",
+"y": "Paragliding, tea farms and wide views over the valley.",
+"l": "About 25 min by train north of Taitung, then 10 min by taxi up.",
+"q": "Luye Highland, Taiwan"
+},
+{
+"n": "Rift Valley",
+"a": [
+"Rift Valley"
+],
+"w": "The East Rift Valley: a long flat valley between the Central and Coastal ranges.",
+"y": "Rice fields, tea and quiet roads, mountains on both sides.",
+"l": "Runs about 180 km from Hualien to Taitung.",
+"q": "Huatung Valley, Taiwan"
+},
+{
+"n": "Chishang",
+"a": [
+"Chishang"
+],
+"w": "A Rift Valley town famous for its rice.",
+"y": "Brown Avenue, rice lunchboxes and flat bike lanes through the paddies.",
+"l": "About 1h north of Taitung by train (20 min from Luye).",
+"q": "Chishang, Taitung"
+},
+{
+"n": "Brown Avenue",
+"a": [
+"Brown Avenue"
+],
+"w": "A straight road through rice fields with no poles or wires.",
+"y": "Pure paddies and mountains, made famous by a coffee advert.",
+"l": "Just outside Chishang, by bike.",
+"q": "Brown Avenue, Chishang"
+},
+{
+"n": "Dulan",
+"a": [
+"Dulan"
+],
+"w": "An Amis village on the Pacific.",
+"y": "Artists, an old sugar factory with live music, a long black-sand beach and slow days.",
+"l": "About 25 km north of Taitung, 40 min by coastal bus.",
+"q": "Dulan, Taitung"
+},
+{
+"n": "Ruifeng night market",
+"a": [
+"Ruifeng night market"
+],
+"w": "A locals' night market in Kaohsiung.",
+"y": "Dense, cheap and busy.",
+"l": "North Kaohsiung, near MRT Kaohsiung Arena.",
+"q": "Ruifeng Night Market, Kaohsiung"
+},
+{
+"n": "Donghe",
+"a": [
+"Donghe"
+],
+"w": "A coastal village at a river mouth.",
+"y": "Famous pork buns and an old bridge over the river.",
+"l": "About 20 km north of Dulan on Highway 11.",
+"q": "Donghe, Taitung"
+},
+{
+"n": "Jiamuzi Bay",
+"a": [
+"Jiamuzi Bay",
+"Jiamuzi"
+],
+"w": "A small, empty bay with a rocky point.",
+"y": "Quiet coast for a walk, and a swim on calm days.",
+"l": "Just north of Dulan, about 30 min on foot.",
+"q": "Jiamuzi Bay, Taitung"
+},
+{
+"n": "Jialulan",
+"a": [
+"Jialulan"
+],
+"w": "A cliff-top park with driftwood art.",
+"y": "Sculptures and sea views on what was a railway spoil tip.",
+"l": "Coast road between Xiaoyeliu and Dulan, about 15 min by bus from Dulan.",
+"q": "Jialulan Recreation Area"
+},
+{
+"n": "Jinzun",
+"a": [
+"Jinzun"
+],
+"w": "A cliff-top viewpoint over a crescent bay.",
+"y": "A café on the cliff and a quiet beach below.",
+"l": "About 15 min north of Dulan by bus.",
+"q": "Jinzun Recreation Area, Taitung"
+},
+{
+"n": "Green Island",
+"a": [
+"Green Island"
+],
+"w": "A small volcanic island off Taitung.",
+"y": "Seen from Mt Dulan on a clear day.",
+"l": "About 33 km off the coast.",
+"q": "Green Island, Taiwan"
+},
+{
+"n": "Mt Dulan",
+"a": [
+"Mt Dulan"
+],
+"w": "The Amis people's sacred mountain (1,190 m).",
+"y": "A misty forest climb: the Rift Valley on one side, the Pacific on the other.",
+"l": "Right behind Dulan; trailhead 20 min by taxi.",
+"q": "Dulan Mountain, Taitung"
+},
+{
+"n": "Longtian",
+"a": [
+"Longtian"
+],
+"w": "A quiet farming village on the Luye plateau.",
+"y": "Straight lanes lined with trees, easy cycling.",
+"l": "On the Luye plateau, by bike from the B&Bs.",
+"q": "Longtian Village, Luye"
+},
+{
+"n": "Wuling green tunnel",
+"a": [
+"Wuling green tunnel"
+],
+"w": "A country road under a tunnel of trees.",
+"y": "A shady, photogenic ride.",
+"l": "Luye, north of the plateau.",
+"q": "Wuling Green Tunnel, Luye"
+},
+{
+"n": "Dapo pond",
+"a": [
+"Dapo pond"
+],
+"w": "A small lake in Chishang.",
+"y": "Mountain reflections and a flat bike lap.",
+"l": "Chishang, near the station.",
+"q": "Dapo Pond, Chishang"
+},
+{
+"n": "Hanoi",
+"a": [
+"Hanoi"
+],
+"w": "Vietnam's capital, chaotic and charming.",
+"y": "Street food on every corner, lakes and old temples.",
+"l": "North Vietnam; Noi Bai airport is about 45 min away.",
+"q": "Hanoi, Vietnam"
+},
+{
+"n": "Old Quarter",
+"a": [
+"Old Quarter"
+],
+"w": "Hanoi's tangle of old trade streets.",
+"y": "Street food, motorbikes and life on the pavements.",
+"l": "Central Hanoi, just north of Hoan Kiem lake.",
+"q": "Old Quarter, Hanoi"
+},
+{
+"n": "Hoan Kiem lake",
+"a": [
+"Hoan Kiem lake",
+"Hoan Kiem"
+],
+"w": "The lake at the heart of Hanoi.",
+"y": "Tai chi at dawn and a red bridge to a small temple.",
+"l": "Central Hanoi, next to the Old Quarter.",
+"q": "Hoan Kiem Lake, Hanoi"
+},
+{
+"n": "Temple of Literature",
+"a": [
+"Temple of Literature"
+],
+"w": "Vietnam's first university, founded in 1070.",
+"y": "Calm courtyards and ponds in the middle of the city.",
+"l": "Central Hanoi, 15 min by Grab from the Old Quarter.",
+"q": "Temple of Literature, Hanoi"
+},
+{
+"n": "West Lake",
+"a": [
+"West Lake"
+],
+"w": "Hanoi's biggest lake.",
+"y": "Lakeside cafés, Tran Quoc pagoda, a calmer side of the city.",
+"l": "North Hanoi, 15 min by Grab from the Old Quarter.",
+"q": "West Lake, Hanoi"
+},
+{
+"n": "Tran Quoc pagoda",
+"a": [
+"Tran Quoc pagoda"
+],
+"w": "Hanoi's oldest pagoda, on a small island.",
+"y": "A tall red tower on the water.",
+"l": "West Lake, north Hanoi.",
+"q": "Tran Quoc Pagoda, Hanoi"
+},
+{
+"n": "Train Street",
+"a": [
+"Train Street"
+],
+"w": "A narrow street where trains pass inches from the houses.",
+"y": "Cafés right beside the tracks.",
+"l": "Near the Old Quarter; access is sometimes restricted.",
+"q": "Train Street, Hanoi"
+},
+{
+"n": "Tam Coc",
+"a": [
+"Tam Coc"
+],
+"w": "A village in a valley of limestone peaks.",
+"y": "Rice fields between cliffs, boat rides through caves, bikes everywhere.",
+"l": "Ninh Binh province, about 2h south of Hanoi.",
+"q": "Tam Coc, Ninh Binh"
+},
+{
+"n": "Bich Dong pagoda",
+"a": [
+"Bich Dong pagoda",
+"Bich Dong"
+],
+"w": "A pagoda on three levels built into a limestone cliff.",
+"y": "Quiet temples and caves.",
+"l": "About 3 km from Tam Coc by bike.",
+"q": "Bich Dong Pagoda, Ninh Binh"
+},
+{
+"n": "Trang An",
+"a": [
+"Trang An"
+],
+"w": "A UNESCO landscape of limestone peaks and caves.",
+"y": "A 3h rowing boat through caves and past temples.",
+"l": "About 15 min by bike from Tam Coc.",
+"q": "Trang An, Ninh Binh"
+},
+{
+"n": "Hang Mua",
+"a": [
+"Hang Mua",
+"Mua Cave"
+],
+"w": "A viewpoint at the top of 500 stone steps.",
+"y": "A dragon statue on the ridge and the view over Tam Coc's rice fields.",
+"l": "About 10 min by bike from Tam Coc.",
+"q": "Hang Mua, Ninh Binh"
+},
+{
+"n": "Hoa Lu",
+"a": [
+"Hoa Lu"
+],
+"w": "Vietnam's capital in the 10th century.",
+"y": "Temples to the first kings among the limestone peaks.",
+"l": "About 6 km from Tam Coc by bike.",
+"q": "Hoa Lu Ancient Capital"
+},
+{
+"n": "Thung Nham",
+"a": [
+"Thung Nham"
+],
+"w": "A bird park with caves.",
+"y": "Storks flying home at dusk.",
+"l": "About 20 min by bike from Tam Coc.",
+"q": "Thung Nham Bird Park"
+},
+{
+"n": "Van Long",
+"a": [
+"Van Long"
+],
+"w": "A wetland nature reserve.",
+"y": "Quiet bamboo boats on still water among limestone cliffs; rare langurs.",
+"l": "About 30 min by Grab north of Tam Coc.",
+"q": "Van Long Nature Reserve"
+},
+{
+"n": "Bai Dinh",
+"a": [
+"Bai Dinh"
+],
+"w": "Vietnam's biggest Buddhist temple complex.",
+"y": "Huge halls and corridors of 500 stone arhats.",
+"l": "About 20 min by Grab from Tam Coc.",
+"q": "Bai Dinh Pagoda"
+},
+{
+"n": "Pu Luong",
+"a": [
+"Pu Luong"
+],
+"w": "A nature reserve of rice terraces and Thai villages.",
+"y": "Stilt houses, terraced valleys and very few tourists.",
+"l": "Thanh Hoa province, about 4h30 by van from Hanoi.",
+"q": "Pu Luong Nature Reserve"
+},
+{
+"n": "Kho Muong",
+"a": [
+"Kho Muong"
+],
+"w": "A small Thai village in Pu Luong.",
+"y": "Stilt houses and a cave nearby.",
+"l": "Pu Luong, a short walk from the homestays.",
+"q": "Kho Muong, Pu Luong"
+},
+{
+"n": "Hieu waterfall",
+"a": [
+"Ban Hieu",
+"Hieu waterfall"
+],
+"w": "A staircase of waterfall pools by a Thai village.",
+"y": "Swimming in clear pools.",
+"l": "Pu Luong area, about 30 min by car from the main valley.",
+"q": "Hieu Waterfall, Pu Luong"
+},
+{
+"n": "Sapa",
+"a": [
+"Sapa"
+],
+"w": "A mountain town at about 1,500 m in north-west Vietnam.",
+"y": "Rice terraces, Hmong and Dao villages, Fansipan.",
+"l": "Near the China border, about 5h30 by bus from Hanoi.",
+"q": "Sapa, Vietnam"
+},
+{
+"n": "Cat Cat village",
+"a": [
+"Cat Cat village",
+"Cat Cat"
+],
+"w": "A Black Hmong village just below Sapa.",
+"y": "A waterfall and traditional houses; touristy but close.",
+"l": "About 2 km downhill from Sapa town.",
+"q": "Cat Cat Village, Sapa"
+},
+{
+"n": "Fansipan",
+"a": [
+"Fansipan"
+],
+"w": "Indochina's highest peak (3,143 m).",
+"y": "A tough 2-day climb, or a cable car to the top.",
+"l": "Above Sapa, north-west Vietnam.",
+"q": "Fansipan, Vietnam"
+},
+{
+"n": "Tram Ton pass",
+"a": [
+"Tram Ton pass"
+],
+"w": "One of Vietnam's highest road passes (about 1,900 m).",
+"y": "The start of the Fansipan trail.",
+"l": "About 30 min by taxi from Sapa.",
+"q": "Tram Ton Pass"
+},
+{
+"n": "Ta Van",
+"a": [
+"Ta Van"
+],
+"w": "A Giay village in the Muong Hoa valley.",
+"y": "Homestays among rice terraces.",
+"l": "About 10 km from Sapa.",
+"q": "Ta Van, Sapa"
+},
+{
+"n": "Lao Chai",
+"a": [
+"Lao Chai"
+],
+"w": "A Black Hmong village in the valley.",
+"y": "Terraces and village life.",
+"l": "About 8 km from Sapa, next to Ta Van.",
+"q": "Lao Chai, Sapa"
+},
+{
+"n": "Giang Ta Chai",
+"a": [
+"Giang Ta Chai"
+],
+"w": "A Red Dao village with a bamboo forest and waterfall.",
+"y": "The quieter end of the valley.",
+"l": "Muong Hoa valley, past Ta Van.",
+"q": "Giang Ta Chai, Sapa"
+},
+{
+"n": "Muong Hoa valley",
+"a": [
+"Muong Hoa valley",
+"Muong Hoa"
+],
+"w": "The main rice-terrace valley below Sapa.",
+"y": "Terraces, ancient carved stones and villages.",
+"l": "South-east of Sapa.",
+"q": "Muong Hoa Valley"
+},
+{
+"n": "Ban Ho",
+"a": [
+"Ban Ho"
+],
+"w": "A Tay village deep in the valley.",
+"y": "River pools and few visitors.",
+"l": "About 25 km from Sapa.",
+"q": "Ban Ho, Sapa"
+},
+{
+"n": "Ninh Binh",
+"a": [
+"Ninh Binh"
+],
+"w": "A province of limestone peaks and rice fields.",
+"y": "Tam Coc, Trang An and Hoa Lu all lie here.",
+"l": "About 2h south of Hanoi.",
+"q": "Ninh Binh"
+},
+{
+"n": "Kyoto",
+"a": [
+"Kyoto"
+],
+"w": "Japan's old imperial capital.",
+"y": "Temples, gardens, wooden lanes and great food.",
+"l": "Kansai, 75 min by Haruka express from Kansai airport.",
+"q": "Kyoto, Japan"
+},
+{
+"n": "Osaka",
+"a": [
+"Osaka"
+],
+"w": "Japan's big food city.",
+"y": "Neon, street food and loud, friendly nightlife.",
+"l": "Kansai, about 40 min from Kansai airport.",
+"q": "Osaka, Japan"
+},
+{
+"n": "Namba",
+"a": [
+"Namba"
+],
+"w": "Osaka's southern hub.",
+"y": "Dotonbori's neon and food; trains to Koyasan and the airport.",
+"l": "Central-south Osaka.",
+"q": "Namba, Osaka"
+},
+{
+"n": "Dotonbori",
+"a": [
+"Dotonbori"
+],
+"w": "Osaka's neon-lit canal street.",
+"y": "Takoyaki, okonomiyaki and the giant Glico running man.",
+"l": "Namba, Osaka.",
+"q": "Dotonbori, Japan"
+},
+{
+"n": "Shinsekai",
+"a": [
+"Shinsekai"
+],
+"w": "An old retro neighbourhood under Tsutenkaku tower.",
+"y": "Kushikatsu (fried skewer) bars and old-Osaka feel.",
+"l": "South Osaka, near Namba.",
+"q": "Shinsekai, Osaka"
+},
+{
+"n": "Kuromon market",
+"a": [
+"Kuromon market"
+],
+"w": "Osaka's covered food market.",
+"y": "Seafood, grilled scallops and fruit.",
+"l": "Near Namba, Osaka.",
+"q": "Kuromon Market, Osaka"
+},
+{
+"n": "Osaka castle",
+"a": [
+"Osaka castle"
+],
+"w": "Osaka's castle in a big park.",
+"y": "Moats, huge stone walls and autumn trees.",
+"l": "Central Osaka.",
+"q": "Osaka Castle"
+},
+{
+"n": "Minoo",
+"a": [
+"Minoo"
+],
+"w": "A maple valley at the edge of Osaka.",
+"y": "A 3 km walk to a waterfall, and maple-leaf tempura.",
+"l": "North Osaka, about 30 min by train.",
+"q": "Minoo Falls"
+},
+{
+"n": "Nakazakicho",
+"a": [
+"Nakazakicho"
+],
+"w": "A pocket of old wooden houses turned into cafés.",
+"y": "Quiet lanes next to busy Umeda.",
+"l": "North Osaka, by Umeda.",
+"q": "Nakazakicho, Osaka"
+},
+{
+"n": "Fushimi Inari",
+"a": [
+"Fushimi Inari",
+"Inari"
+],
+"w": "Kyoto's shrine of thousands of red torii gates.",
+"y": "A hike up the mountain under the gates; nearly empty at dawn.",
+"l": "South Kyoto, 5 min by train from Kyoto station.",
+"t": [
+"jp-kansai"
+],
+"q": "Fushimi Inari Taisha"
+},
+{
+"n": "Higashiyama (Kyoto)",
+"a": [
+"Higashiyama"
+],
+"w": "Kyoto's old district on the eastern hills.",
+"y": "Stone lanes, temples and the classic Kyoto look.",
+"l": "East Kyoto, 15 min by bus from the station.",
+"t": [
+"jp-kansai"
+],
+"q": "Higashiyama, Kyoto"
+},
+{
+"n": "Kiyomizu-dera",
+"a": [
+"Kiyomizu-dera"
+],
+"w": "A hillside temple with a huge wooden terrace.",
+"y": "Views over Kyoto; one of the city's icons.",
+"l": "Higashiyama, east Kyoto.",
+"q": "Kiyomizu-dera, Japan"
+},
+{
+"n": "Sannenzaka",
+"a": [
+"Sannenzaka"
+],
+"w": "A stone-paved slope of old wooden shops.",
+"y": "The classic Kyoto street.",
+"l": "Below Kiyomizu-dera, east Kyoto.",
+"q": "Sannenzaka, Japan"
+},
+{
+"n": "Yasaka shrine",
+"a": [
+"Yasaka shrine"
+],
+"w": "A big shrine at the end of Gion's main street.",
+"y": "Hundreds of lanterns lit at night.",
+"l": "Gion, east Kyoto.",
+"q": "Yasaka Shrine, Kyoto"
+},
+{
+"n": "Gion",
+"a": [
+"Gion"
+],
+"w": "Kyoto's geisha district.",
+"y": "Wooden teahouses and lanes, magical at dusk.",
+"l": "East Kyoto, by the Kamo river.",
+"q": "Gion, Kyoto"
+},
+{
+"n": "Pontocho",
+"a": [
+"Pontocho"
+],
+"w": "A narrow lantern-lit alley along the river.",
+"y": "Small restaurants and bars, some with river terraces.",
+"l": "Central Kyoto, beside the Kamo river.",
+"q": "Pontocho, Kyoto"
+},
+{
+"n": "Arashiyama",
+"a": [
+"Saga-Arashiyama",
+"Arashiyama"
+],
+"w": "Kyoto's western district under wooded hills.",
+"y": "The bamboo grove, river views and temples.",
+"l": "West Kyoto, 15 min by train.",
+"q": "Arashiyama, Kyoto"
+},
+{
+"n": "Okochi-sanso",
+"a": [
+"Okochi-sanso"
+],
+"w": "The hillside villa garden of a silent-film actor.",
+"y": "Moss, maples and views; green tea included.",
+"l": "Arashiyama, at the end of the bamboo grove.",
+"q": "Okochi Sanso, Kyoto"
+},
+{
+"n": "Iwatayama",
+"a": [
+"Iwatayama"
+],
+"w": "A monkey park on a hill.",
+"y": "Wild macaques and a view over the city.",
+"l": "Arashiyama, a 20-min climb from the river.",
+"q": "Iwatayama Monkey Park"
+},
+{
+"n": "Sagano",
+"a": [
+"Sagano"
+],
+"w": "Quiet countryside temples north of Arashiyama.",
+"y": "Moss gardens and very few people.",
+"l": "North-west Kyoto, walkable from Arashiyama.",
+"q": "Sagano, Kyoto"
+},
+{
+"n": "Gio-ji",
+"a": [
+"Gio-ji"
+],
+"w": "A small temple in a moss garden.",
+"y": "A green carpet of moss under maples.",
+"l": "Sagano, west Kyoto.",
+"q": "Gio-ji, Kyoto"
+},
+{
+"n": "Otagi Nenbutsu-ji",
+"a": [
+"Otagi Nenbutsu-ji"
+],
+"w": "A temple with 1,200 stone statues.",
+"y": "Every face is different, many of them funny.",
+"l": "Far end of Sagano, west Kyoto.",
+"q": "Otagi Nenbutsu-ji, Kyoto"
+},
+{
+"n": "Nara",
+"a": [
+"Nara"
+],
+"w": "Japan's capital in the 8th century.",
+"y": "Huge temples and free-roaming deer.",
+"l": "About 45 min by train from Kyoto.",
+"q": "Nara, Japan"
+},
+{
+"n": "Todai-ji",
+"a": [
+"Todai-ji"
+],
+"w": "A temple housing a giant bronze Buddha.",
+"y": "One of the world's largest wooden buildings.",
+"l": "Nara Park.",
+"q": "Todai-ji, Nara"
+},
+{
+"n": "Wakakusa hill",
+"a": [
+"Wakakusa hill",
+"Wakakusa"
+],
+"w": "A grassy hill above Nara.",
+"y": "Views over the city and the park.",
+"l": "East edge of Nara Park.",
+"q": "Mount Wakakusa, Nara"
+},
+{
+"n": "Kasuga forest",
+"a": [
+"Kasuga primeval-forest trail",
+"Kasuga"
+],
+"w": "An ancient sacred forest behind the Kasuga shrine.",
+"y": "A quiet trail under huge trees.",
+"l": "Behind Nara Park.",
+"q": "Kasugayama Primeval Forest, Nara"
+},
+{
+"n": "Nishiki market",
+"a": [
+"Nishiki market"
+],
+"w": "Kyoto's covered food market street.",
+"y": "Pickles, sweets and grilled skewers.",
+"l": "Central Kyoto.",
+"q": "Nishiki Market, Kyoto"
+},
+{
+"n": "Kamo river",
+"a": [
+"Kamo river"
+],
+"w": "The river through central Kyoto.",
+"y": "Evening walks along the banks.",
+"l": "Central Kyoto.",
+"q": "Kamo River, Kyoto"
+},
+{
+"n": "Koyasan",
+"a": [
+"Koyasan"
+],
+"w": "A mountain-top monastery town (about 800 m), centre of Shingon Buddhism.",
+"y": "Over 100 temples: sleep in one, eat monk food, join the morning prayers.",
+"l": "Wakayama mountains, about 2h from Namba (Osaka).",
+"q": "Koyasan"
+},
+{
+"n": "Gokurakubashi",
+"a": [
+"Gokurakubashi"
+],
+"w": "The station at the foot of Koyasan.",
+"y": "Where the cable car up starts.",
+"l": "Below Koyasan.",
+"q": "Gokurakubashi Station"
+},
+{
+"n": "Danjo Garan",
+"a": [
+"Danjo Garan"
+],
+"w": "Koyasan's main temple complex.",
+"y": "A huge red pagoda and old halls.",
+"l": "Central Koyasan.",
+"q": "Danjo Garan, Koyasan"
+},
+{
+"n": "Okunoin",
+"a": [
+"Okunoin"
+],
+"w": "Japan's largest cemetery, under giant cedars.",
+"y": "Thousands of mossy graves and stone lanterns, haunting at night.",
+"l": "East end of Koyasan.",
+"q": "Okunoin, Koyasan"
+},
+{
+"n": "Daimon gate",
+"a": [
+"Daimon"
+],
+"w": "Koyasan's huge entrance gate.",
+"y": "The finish of the Choishi-michi.",
+"l": "West end of Koyasan.",
+"q": "Daimon, Koyasan"
+},
+{
+"n": "Choishi-michi",
+"a": [
+"Choishi-michi"
+],
+"w": "The old pilgrim path up to Koyasan.",
+"y": "Stone posts every 109 m for 22 km through forest and farms.",
+"l": "From Kudoyama up to Koyasan.",
+"q": "Choishi-michi"
+},
+{
+"n": "Kudoyama",
+"a": [
+"Kudoyama"
+],
+"w": "A small town at the foot of the Choishi-michi.",
+"y": "The start of the pilgrim path.",
+"l": "About 1h by train from Namba.",
+"q": "Kudoyama Station"
+},
+{
+"n": "Yatate",
+"a": [
+"Yatate"
+],
+"w": "A point about two-thirds of the way up the Choishi-michi.",
+"y": "A shorter start if it rains.",
+"l": "On the road below Koyasan.",
+"q": "Yatate, Koya"
+},
+{
+"n": "Kumano Kodo",
+"a": [
+"Kumano Kodo"
+],
+"w": "A network of 1,000-year-old pilgrimage trails (UNESCO).",
+"y": "Forest paths, old shrines and onsen villages.",
+"l": "Kii peninsula, south of Osaka.",
+"q": "Kumano Kodo, Japan"
+},
+{
+"n": "Kii-Tanabe",
+"a": [
+"Kii-Tanabe"
+],
+"w": "A coastal town, the gateway to the Kumano Kodo.",
+"y": "Buses to the Kumano Kodo trailheads.",
+"l": "Wakayama coast, about 2h50 by train from Kyoto.",
+"q": "Kii-Tanabe Station"
+},
+{
+"n": "Takijiri",
+"a": [
+"Takijiri-oji",
+"Takijiri"
+],
+"w": "The shrine and trailhead where the main Kumano Kodo route starts.",
+"y": "The official start of the walk.",
+"l": "About 40 min by bus from Kii-Tanabe.",
+"q": "Takijiri-oji"
+},
+{
+"n": "Nakahechi",
+"a": [
+"Nakahechi"
+],
+"w": "The main route of the Kumano Kodo.",
+"y": "The classic multi-day walk to Hongu.",
+"l": "Kii peninsula.",
+"q": "Kumano Kodo Nakahechi"
+},
+{
+"n": "Takahara",
+"a": [
+"Takahara"
+],
+"w": "A tiny hilltop hamlet, 'the village in the clouds'.",
+"y": "Morning mist over the mountains.",
+"l": "Kumano Kodo, a 2h walk from Takijiri.",
+"q": "Takahara, Tanabe"
+},
+{
+"n": "Chikatsuyu",
+"a": [
+"Chikatsuyu"
+],
+"w": "A village in a river valley on the Kumano Kodo.",
+"y": "A riverside onsen and a good rest stop.",
+"l": "Kumano Kodo, about 10 km from Takahara.",
+"q": "Chikatsuyu, Tanabe"
+},
+{
+"n": "Hosshinmon-oji",
+"a": [
+"Hosshinmon-oji",
+"Hosshinmon"
+],
+"w": "A shrine marking the gateway to the Hongu area.",
+"y": "The start of the loveliest last 7 km.",
+"l": "About 40 min by bus from Chikatsuyu.",
+"q": "Hosshinmon-oji"
+},
+{
+"n": "Tsugizakura",
+"a": [
+"Tsugizakura"
+],
+"w": "A shrine on the Kumano Kodo with giant old cedars.",
+"y": "One of the most beautiful spots on the trail.",
+"l": "Between Chikatsuyu and Hongu.",
+"q": "Tsugizakura-oji"
+},
+{
+"n": "Kumano Hongu Taisha",
+"a": [
+"Kumano Hongu Taisha",
+"Hongu"
+],
+"w": "One of the three grand shrines of Kumano.",
+"y": "The goal of the pilgrimage.",
+"l": "Inland Kii peninsula.",
+"q": "Kumano Hongu Taisha"
+},
+{
+"n": "Oyunohara",
+"a": [
+"Oyunohara"
+],
+"w": "The original site of the Hongu shrine.",
+"y": "Japan's largest torii gate (about 34 m tall).",
+"l": "Hongu, 5 min on foot from the shrine.",
+"q": "Oyunohara"
+},
+{
+"n": "Yunomine",
+"a": [
+"Yunomine"
+],
+"w": "A tiny hot-spring village in a narrow valley.",
+"y": "One of Japan's oldest onsen; eggs boiled in the spring.",
+"l": "10 min by bus from Hongu.",
+"q": "Yunomine Onsen"
+},
+{
+"n": "Tsuboyu",
+"a": [
+"Tsuboyu"
+],
+"w": "A tiny hot-spring hut in Yunomine.",
+"y": "The only UNESCO-listed bath you can soak in.",
+"l": "Yunomine, by the stream.",
+"q": "Tsuboyu, Yunomine"
+},
+{
+"n": "Dainichi-goe",
+"a": [
+"Dainichi-goe"
+],
+"w": "A short Kumano Kodo trail over a hill.",
+"y": "A forest walk between Yunomine and Hongu.",
+"l": "Yunomine to Hongu, 3.5 km.",
+"q": "Dainichi-goe"
+},
+{
+"n": "Kawayu Onsen",
+"a": [
+"Kawayu Onsen",
+"Kawayu"
+],
+"w": "A hot-spring village where hot water rises through the river.",
+"y": "Dig your own warm pool in the riverbed.",
+"l": "15 min by bus from Hongu.",
+"q": "Kawayu Onsen"
+},
+{
+"n": "Ukegawa",
+"a": [
+"Ukegawa"
+],
+"w": "The trailhead of the Kogumotori-goe.",
+"y": "Start of the ridge walk.",
+"l": "30 min by taxi from Yunomine.",
+"q": "Ukegawa, Kumano"
+},
+{
+"n": "Kogumotori-goe",
+"a": [
+"Kogumotori-goe"
+],
+"w": "A Kumano Kodo ridge section.",
+"y": "The Hyakken-gura view over endless ridges.",
+"l": "Between Ukegawa and Koguchi.",
+"q": "Kogumotori-goe"
+},
+{
+"n": "Koguchi",
+"a": [
+"Koguchi"
+],
+"w": "A small village at the end of the Kogumotori-goe.",
+"y": "The end of the walk.",
+"l": "40 min by taxi from Yunomine.",
+"q": "Koguchi, Shingu"
+},
+{
+"n": "Hyakken-gura",
+"a": [
+"Hyakken-gura"
+],
+"w": "A lookout on the Kogumotori-goe.",
+"y": "Ranges of peaks as far as you can see.",
+"l": "On the Kogumotori-goe.",
+"q": "Hyakken-gura"
+},
+{
+"n": "Kumano",
+"a": [
+"Kumano"
+],
+"w": "The mountainous south of the Kii peninsula, holy land of the three Kumano shrines.",
+"y": "Forested ridges, pilgrim trails and onsen villages.",
+"l": "Wakayama, about 3h south of Kyoto.",
+"q": "Kumano Kodo"
+},
+{
+"n": "Shin-Osaka",
+"a": [
+"Shin-Osaka"
+],
+"w": "Osaka's shinkansen station.",
+"y": "Change here for the Haruka express to Kansai airport.",
+"l": "North Osaka.",
+"q": "Shin-Osaka Station"
+},
+{
+"n": "Tokyo",
+"a": [
+"Tokyo"
+],
+"w": "Japan's capital.",
+"y": "Old neighbourhoods, izakaya alleys and endless energy.",
+"l": "About 1h from Narita airport.",
+"q": "Tokyo, Japan"
+},
+{
+"n": "Ueno",
+"a": [
+"Ueno"
+],
+"w": "A district with a big park and museums.",
+"y": "Museums, a market street and the Skyliner from Narita.",
+"l": "North-east Tokyo.",
+"q": "Ueno, Tokyo"
+},
+{
+"n": "Senso-ji",
+"a": [
+"Senso-ji"
+],
+"w": "Tokyo's oldest temple.",
+"y": "Empty and lovely at 7am.",
+"l": "Asakusa, north-east Tokyo.",
+"q": "Senso-ji"
+},
+{
+"n": "Asakusa",
+"a": [
+"Asakusa"
+],
+"w": "An old-Tokyo neighbourhood.",
+"y": "Senso-ji and traditional shops.",
+"l": "North-east Tokyo.",
+"q": "Asakusa, Tokyo"
+},
+{
+"n": "Yanaka",
+"a": [
+"Yanaka"
+],
+"w": "An old wooden neighbourhood that survived the war.",
+"y": "Temples, a cemetery and small shops.",
+"l": "North of Ueno, Tokyo.",
+"q": "Yanaka, Tokyo"
+},
+{
+"n": "Akihabara",
+"a": [
+"Akihabara"
+],
+"w": "Tokyo's electronics and anime district.",
+"y": "Arcades and gadgets.",
+"l": "Central Tokyo.",
+"q": "Akihabara, Japan"
+},
+{
+"n": "Yurakucho",
+"a": [
+"Yurakucho"
+],
+"w": "A district with izakaya under the railway arches.",
+"y": "Smoky, cheap and fun.",
+"l": "Central Tokyo, next to Ginza.",
+"q": "Yurakucho, Tokyo"
+},
+{
+"n": "Mt Takao",
+"a": [
+"Mt Takao",
+"Takaosanguchi"
+],
+"w": "A forested mountain (599 m) on Tokyo's edge.",
+"y": "Easy trails, a temple and Fuji views on clear days.",
+"l": "West Tokyo, about 50 min by Keio line from Shinjuku.",
+"q": "Mount Takao"
+},
+{
+"n": "Shinjuku",
+"a": [
+"Shinjuku"
+],
+"w": "Tokyo's busiest hub.",
+"y": "Neon, food alleys and the bus terminal for Fuji.",
+"l": "West Tokyo.",
+"q": "Shinjuku, Tokyo"
+},
+{
+"n": "Omoide Yokocho",
+"a": [
+"Omoide Yokocho"
+],
+"w": "A narrow alley of tiny yakitori bars.",
+"y": "Smoke, lanterns and old-Tokyo feel.",
+"l": "Next to Shinjuku station.",
+"q": "Omoide Yokocho, Japan"
+},
+{
+"n": "Golden Gai",
+"a": [
+"Golden Gai"
+],
+"w": "A maze of tiny bars.",
+"y": "Each bar seats only a handful of people.",
+"l": "East Shinjuku.",
+"q": "Golden Gai, Shinjuku"
+},
+{
+"n": "Lake Kawaguchi",
+"a": [
+"Lake Kawaguchi",
+"Kawaguchiko"
+],
+"w": "A lake town at the foot of Mt Fuji.",
+"y": "Fuji reflected in the water, onsen and bikes.",
+"l": "About 1h50 by bus from Shinjuku.",
+"q": "Kawaguchiko"
+},
+{
+"n": "Mt Fuji",
+"a": [
+"Mt Fuji",
+"Fuji"
+],
+"w": "Japan's highest mountain (3,776 m), a near-perfect volcano.",
+"y": "November is its clearest month, often with fresh snow.",
+"l": "About 100 km west of Tokyo.",
+"t": [
+"jp-fuji"
+],
+"q": "Mount Fuji"
+},
+{
+"n": "Chureito pagoda",
+"a": [
+"Chureito pagoda",
+"Chureito",
+"Shimoyoshida"
+],
+"w": "A five-storey pagoda on a hillside.",
+"y": "The classic Fuji photo, best at sunrise.",
+"l": "Shimoyoshida, 15 min by train from Kawaguchiko.",
+"q": "Chureito Pagoda"
+},
+{
+"n": "Oshino Hakkai",
+"a": [
+"Oshino Hakkai"
+],
+"w": "A village of spring-fed ponds.",
+"y": "Clear water with Fuji behind.",
+"l": "About 20 min by bus from Kawaguchiko.",
+"q": "Oshino Hakkai, Japan"
+},
+{
+"n": "Narusawa ice cave",
+"a": [
+"Narusawa ice cave"
+],
+"w": "A lava tube with ice all year.",
+"y": "A cool walk into the lava.",
+"l": "About 30 min by bus from Kawaguchiko.",
+"q": "Narusawa Ice Cave"
+},
+{
+"n": "Fugaku wind cave",
+"a": [
+"Fugaku wind cave"
+],
+"w": "A lava cave next to the ice cave.",
+"y": "Pair it with the ice cave.",
+"l": "Near Narusawa, about 30 min by bus from Kawaguchiko.",
+"q": "Fugaku Wind Cave"
+},
+{
+"n": "Aokigahara",
+"a": [
+"Aokigahara"
+],
+"w": "A dense forest on old lava.",
+"y": "Moss and silence on marked paths.",
+"l": "At the foot of Fuji, near Lake Saiko.",
+"q": "Aokigahara, Japan"
+},
+{
+"n": "Saiko Iyashi no Sato",
+"a": [
+"Saiko Iyashi no Sato"
+],
+"w": "A rebuilt village of thatched houses.",
+"y": "Crafts and Fuji views.",
+"l": "West shore of Lake Saiko.",
+"q": "Saiko Iyashi no Sato Nenba"
+},
+{
+"n": "Lake Saiko",
+"a": [
+"Lake Saiko",
+"Saiko"
+],
+"w": "A quiet lake west of Kawaguchiko.",
+"y": "Calmer and wilder than Lake Kawaguchi.",
+"l": "About 30 min by bus from Kawaguchiko.",
+"q": "Lake Saiko"
+},
+{
+"n": "Asagiri plateau",
+"a": [
+"Asagiri plateau",
+"Asagiri"
+],
+"w": "A high plateau on Fuji's west side.",
+"y": "Paragliding with Fuji right in front of you.",
+"l": "About 50 min by car from Kawaguchiko.",
+"q": "Asagiri Kogen"
+},
+{
+"n": "Kachi Kachi ropeway",
+"a": [
+"Kachi Kachi ropeway"
+],
+"w": "A short cable car up a hill by the lake.",
+"y": "Sunset over Fuji.",
+"l": "Kawaguchiko lake shore.",
+"q": "Kachi Kachi Ropeway"
+},
+{
+"n": "Mitsutoge",
+"a": [
+"Mitsutoge"
+],
+"w": "A ridge (1,785 m) north of Kawaguchiko.",
+"y": "The full Fuji view.",
+"l": "Trailhead 15 min by bus from Kawaguchiko.",
+"q": "Mitsutoge, Yamanashi"
+},
+{
+"n": "Kubota Itchiku museum",
+"a": [
+"Kubota Itchiku kimono museum",
+"Kubota Itchiku"
+],
+"w": "A museum of dyed kimono art.",
+"y": "A beautiful building and garden.",
+"l": "North shore of Lake Kawaguchi.",
+"q": "Itchiku Kubota Art Museum"
+},
+{
+"n": "Nagoya",
+"a": [
+"Nagoya"
+],
+"w": "A big city in central Japan.",
+"y": "Miso-katsu; the gateway to the Alps.",
+"l": "About 30 min by train from the airport.",
+"q": "Nagoya, Japan"
+},
+{
+"n": "Takayama",
+"a": [
+"Takayama"
+],
+"w": "An Alpine town with an old merchant quarter.",
+"y": "Sake breweries, dark wooden lanes, Hida beef.",
+"l": "About 2h20 by train from Nagoya, 50 min by bus from Shirakawa-go.",
+"q": "Takayama, Gifu"
+},
+{
+"n": "Sanmachi",
+"a": [
+"Sanmachi"
+],
+"w": "Takayama's old merchant streets.",
+"y": "Dark wooden houses and sake breweries.",
+"l": "Central Takayama.",
+"q": "Sanmachi Suji, Takayama"
+},
+{
+"n": "Takayama Jinya",
+"a": [
+"Takayama Jinya"
+],
+"w": "An old Edo-era government office.",
+"y": "The only one of its kind left in Japan.",
+"l": "Central Takayama.",
+"q": "Takayama Jinya, Japan"
+},
+{
+"n": "Miyagawa morning market",
+"a": [
+"Miyagawa morning market"
+],
+"w": "A morning market along the river.",
+"y": "Pickles, fruit and crafts.",
+"l": "Takayama old town.",
+"q": "Miyagawa morning market, Japan"
+},
+{
+"n": "Hida Folk Village",
+"a": [
+"Hida Folk Village"
+],
+"w": "An open-air museum of old farmhouses.",
+"y": "Thatched gassho houses round a pond.",
+"l": "10 min by bus from Takayama station.",
+"q": "Hida Folk Village, Japan"
+},
+{
+"n": "Hida-Furukawa",
+"a": [
+"Hida-Furukawa",
+"Furukawa"
+],
+"w": "A small canal town.",
+"y": "Carp in the canals, white storehouses, bike tours.",
+"l": "15 min by train from Takayama.",
+"q": "Hida-Furukawa"
+},
+{
+"n": "Higashiyama walking course",
+"a": [
+"Higashiyama walking course"
+],
+"w": "A trail past temples on Takayama's eastern hill.",
+"y": "Quiet temples and shrines.",
+"l": "East Takayama.",
+"q": "Higashiyama Walking Course, Takayama"
+},
+{
+"n": "Matsumoto",
+"a": [
+"Matsumoto castle",
+"Matsumoto"
+],
+"w": "A mountain city with an original black castle.",
+"y": "One of Japan's few castles still in its original form.",
+"l": "About 2h20 by bus from Takayama.",
+"q": "Matsumoto Castle"
+},
+{
+"n": "Hirayu Onsen",
+"a": [
+"Hirayu Onsen",
+"Hirayu"
+],
+"w": "A small onsen village at the foot of the Northern Alps.",
+"y": "Outdoor baths and quiet.",
+"l": "About 1h by bus from Takayama.",
+"q": "Hirayu Onsen"
+},
+{
+"n": "Kamikochi",
+"a": [
+"Kamikochi"
+],
+"w": "A high mountain valley (about 1,500 m).",
+"y": "Golden larches, a clear river and the Hotaka peaks.",
+"l": "25 min by bus from Hirayu.",
+"q": "Kamikochi, Japan"
+},
+{
+"n": "Kappa bridge",
+"a": [
+"Kappa bridge"
+],
+"w": "A footbridge at the heart of Kamikochi.",
+"y": "The classic Hotaka view.",
+"l": "Kamikochi.",
+"q": "Kappabashi, Kamikochi"
+},
+{
+"n": "Myojin",
+"a": [
+"Myojin"
+],
+"w": "A pond and shrine 3 km up the valley.",
+"y": "Quieter than the bridge area.",
+"l": "Kamikochi.",
+"q": "Myojin Pond, Kamikochi"
+},
+{
+"n": "Tokusawa",
+"a": [
+"Tokusawa"
+],
+"w": "A meadow and campsite about 7 km up the valley.",
+"y": "The end of the flat valley walk.",
+"l": "Kamikochi.",
+"q": "Tokusawa, Kamikochi"
+},
+{
+"n": "Taisho pond",
+"a": [
+"Taisho pond"
+],
+"w": "A pond formed by a 1915 eruption.",
+"y": "Dead trees still standing in the water.",
+"l": "Kamikochi, near the entrance.",
+"q": "Taisho Pond, Kamikochi"
+},
+{
+"n": "Hotaka",
+"a": [
+"Hotaka"
+],
+"w": "A group of peaks over 3,000 m.",
+"y": "The great wall above Kamikochi.",
+"l": "Northern Alps.",
+"q": "Hotaka Mountains"
+},
+{
+"n": "Shinhotaka ropeway",
+"a": [
+"Shinhotaka ropeway",
+"Shinhotaka"
+],
+"w": "A two-stage ropeway.",
+"y": "Up to 2,156 m, into snow and big views.",
+"l": "30 min by bus from Hirayu.",
+"q": "Shinhotaka Ropeway"
+},
+{
+"n": "Nishiho hut",
+"a": [
+"Nishiho hut"
+],
+"w": "A mountain hut above the ropeway.",
+"y": "A short snow walk with the Alps around you.",
+"l": "Above the ropeway's top station.",
+"q": "Nishiho Sanso"
+},
+{
+"n": "Hirayu no Mori",
+"a": [
+"Hirayu no Mori"
+],
+"w": "A big set of outdoor hot-spring baths in the forest.",
+"y": "Many pools under the trees, cheap entry.",
+"l": "Hirayu Onsen village.",
+"q": "Hirayu no Mori"
+},
+{
+"n": "Northern Alps",
+"a": [
+"Northern Alps"
+],
+"w": "Japan's highest mountain range, with peaks over 3,000 m.",
+"y": "Snowy summits above Kamikochi and Hirayu.",
+"l": "Central Honshu, between Takayama and Matsumoto.",
+"q": "Hida Mountains"
+},
+{
+"n": "Lake Shoji",
+"a": [
+"Shojiko"
+],
+"w": "The smallest and quietest of the Fuji Five Lakes.",
+"y": "Calm water and a classic Fuji view.",
+"l": "About 30 min by bus west of Kawaguchiko.",
+"q": "Lake Shoji"
+},
+{
+"n": "Higashiyama (Takayama)",
+"a": [
+"Higashiyama"
+],
+"w": "The temple district on Takayama's eastern hill.",
+"y": "Quiet temples and shrines on a walking trail.",
+"l": "East Takayama.",
+"t": [
+"jp-fuji"
+],
+"q": "Higashiyama Walking Course, Takayama"
+},
+{
+"n": "Fukuoka",
+"a": [
+"Fukuoka"
+],
+"w": "Kyushu's biggest city.",
+"y": "Yatai street stalls and Hakata ramen.",
+"l": "North Kyushu; the airport is 5 min by subway.",
+"q": "Fukuoka, Japan"
+},
+{
+"n": "Hakata",
+"a": [
+"Hakata"
+],
+"w": "Fukuoka's main station district.",
+"y": "The home of tonkotsu ramen.",
+"l": "Central Fukuoka.",
+"t": [
+"jp-kyushu"
+],
+"q": "Hakata, Fukuoka"
+},
+{
+"n": "Nakasu",
+"a": [
+"Nakasu"
+],
+"w": "An island district between two rivers.",
+"y": "Riverside yatai stalls at night.",
+"l": "Central Fukuoka.",
+"q": "Nakasu, Fukuoka"
+},
+{
+"n": "Dazaifu",
+"a": [
+"Dazaifu",
+"Tenmangu"
+],
+"w": "A shrine town south of Fukuoka.",
+"y": "The Tenmangu shrine and warm umegae-mochi cakes.",
+"l": "40 min by train from Fukuoka.",
+"q": "Dazaifu Tenmangu"
+},
+{
+"n": "Kamado shrine",
+"a": [
+"Kamado shrine"
+],
+"w": "A mountain shrine.",
+"y": "The start of the Mt Homan climb.",
+"l": "10 min by bus from Dazaifu.",
+"q": "Kamado Shrine"
+},
+{
+"n": "Mt Homan",
+"a": [
+"Mt Homan"
+],
+"w": "A sacred mountain (829 m).",
+"y": "Stone steps through forest to views.",
+"l": "Above Kamado shrine.",
+"q": "Mount Homan"
+},
+{
+"n": "Nokonoshima",
+"a": [
+"Nokonoshima"
+],
+"w": "A small island in Hakata bay.",
+"y": "A flower park and coast walks.",
+"l": "10 min by ferry from Meinohama.",
+"q": "Nokonoshima"
+},
+{
+"n": "Ohori park",
+"a": [
+"Ohori park"
+],
+"w": "A big park round a lake.",
+"y": "Castle ruins next door.",
+"l": "Central Fukuoka.",
+"q": "Ohori Park, Fukuoka"
+},
+{
+"n": "Karatsu",
+"a": [
+"Karatsu"
+],
+"w": "A castle town by the sea.",
+"y": "The Karatsu Kunchi festival.",
+"l": "1h20 by train from Fukuoka.",
+"q": "Karatsu, Japan"
+},
+{
+"n": "Karatsu Kunchi",
+"a": [
+"Karatsu Kunchi"
+],
+"w": "A festival with 14 giant lacquered floats (2–4 Nov).",
+"y": "The floats are hauled at a run through town.",
+"l": "Karatsu, 1h20 by train from Fukuoka.",
+"q": "Karatsu Shrine"
+},
+{
+"n": "Niji-no-Matsubara",
+"a": [
+"Niji-no-Matsubara"
+],
+"w": "A pine forest about 5 km long along the beach.",
+"y": "Old pines and the sea.",
+"l": "Karatsu.",
+"q": "Niji no Matsubara"
+},
+{
+"n": "Yufuin",
+"a": [
+"Yufuin"
+],
+"w": "A hot-spring town under Mt Yufu.",
+"y": "Onsen, morning mist and craft shops.",
+"l": "About 2h15 by bus from Fukuoka.",
+"q": "Yufuin, Japan"
+},
+{
+"n": "Lake Kinrin",
+"a": [
+"Lake Kinrin"
+],
+"w": "A small spring-fed lake.",
+"y": "Morning mist on the water.",
+"l": "Yufuin.",
+"q": "Lake Kinrin, Yufuin"
+},
+{
+"n": "Beppu",
+"a": [
+"Beppu"
+],
+"w": "Japan's biggest hot-spring city.",
+"y": "Steaming 'hells' and sand baths.",
+"l": "50 min by bus from Yufuin.",
+"q": "Beppu, Japan"
+},
+{
+"n": "Kannawa",
+"a": [
+"Kannawa"
+],
+"w": "Beppu's steamiest district.",
+"y": "The hells and food cooked in the steam.",
+"l": "Beppu.",
+"q": "Kannawa, Beppu"
+},
+{
+"n": "Takegawara",
+"a": [
+"Takegawara"
+],
+"w": "Beppu's historic bathhouse.",
+"y": "A hot-sand bath.",
+"l": "Central Beppu.",
+"q": "Takegawara Onsen"
+},
+{
+"n": "Aso",
+"a": [
+"Aso"
+],
+"w": "One of the world's largest volcanic calderas.",
+"y": "An active crater, green meadows and horses.",
+"l": "Central Kyushu, about 2h from Fukuoka.",
+"q": "Aso, Kumamoto"
+},
+{
+"n": "Kumamoto",
+"a": [
+"Kumamoto"
+],
+"w": "A city in central Kyushu.",
+"y": "Where you change trains for Aso.",
+"l": "35 min by shinkansen from Hakata.",
+"q": "Kumamoto, Japan"
+},
+{
+"n": "Kusasenri",
+"a": [
+"Kusasenri"
+],
+"w": "A grass meadow with a pond.",
+"y": "Horses grazing under the volcano.",
+"l": "Aso, 30 min by bus from Aso station.",
+"q": "Kusasenri, Aso"
+},
+{
+"n": "Nakadake crater",
+"a": [
+"Nakadake crater"
+],
+"w": "Aso's active crater.",
+"y": "A steaming turquoise lake; it closes on gas alerts.",
+"l": "Mt Aso.",
+"q": "Nakadake Crater, Aso"
+},
+{
+"n": "Mt Takadake",
+"a": [
+"Mt Takadake",
+"Takadake"
+],
+"w": "Aso's highest peak (1,592 m).",
+"y": "A walk along the active crater rim.",
+"l": "Mt Aso.",
+"q": "Takadake, Aso"
+},
+{
+"n": "Sensuikyo",
+"a": [
+"Sensuikyo"
+],
+"w": "A gorge on Aso's north-east side.",
+"y": "The descent route from Takadake.",
+"l": "Mt Aso.",
+"q": "Sensuikyo, Aso"
+},
+{
+"n": "Daikanbo",
+"a": [
+"Daikanbo"
+],
+"w": "A lookout on the caldera rim.",
+"y": "A view over the whole caldera.",
+"l": "North rim of Aso.",
+"q": "Daikanbo, Aso"
+},
+{
+"n": "Aso shrine",
+"a": [
+"Aso shrine"
+],
+"w": "One of Japan's oldest shrines.",
+"y": "A street of spring-water fountains.",
+"l": "Aso town.",
+"q": "Aso Shrine"
+},
+{
+"n": "Kurokawa",
+"a": [
+"Kurokawa"
+],
+"w": "A small onsen village in a forested gorge.",
+"y": "A wooden pass for three outdoor baths.",
+"l": "About 1h by bus from Aso.",
+"q": "Kurokawa Onsen"
+},
+{
+"n": "Chojabaru",
+"a": [
+"Chojabaru"
+],
+"w": "A plateau at the foot of the Kuju mountains.",
+"y": "Trailheads and wetlands.",
+"l": "About 50 min by bus from Bungo-Nakamura.",
+"q": "Chojabaru, Kokonoe"
+},
+{
+"n": "Tadewara",
+"a": [
+"Tadewara"
+],
+"w": "A highland wetland with boardwalks.",
+"y": "Pampas grass glowing in autumn.",
+"l": "Chojabaru.",
+"q": "Tadewara Wetland"
+},
+{
+"n": "Makinoto pass",
+"a": [
+"Makinoto pass"
+],
+"w": "A mountain pass and trailhead.",
+"y": "The start of the Kuju climb.",
+"l": "15 min by bus from Chojabaru.",
+"q": "Makinoto Pass"
+},
+{
+"n": "Kuju highlands",
+"a": [
+"Kuju highlands",
+"Mt Kuju",
+"Kuju"
+],
+"w": "A volcanic range, the roof of Kyushu.",
+"y": "Wide highland walks and mountain onsen.",
+"l": "Oita, about 2h from Fukuoka.",
+"q": "Kuju Mountains"
+},
+{
+"n": "Nakadake (Kuju)",
+"a": [
+"Nakadake"
+],
+"w": "The highest point on Kyushu's mainland (1,791 m).",
+"y": "Views over the whole Kuju range.",
+"l": "Kuju mountains.",
+"t": [
+"jp-kyushu"
+],
+"q": "Nakadake, Kuju"
+},
+{
+"n": "Okenoike",
+"a": [
+"Okenoike"
+],
+"w": "A crater lake.",
+"y": "A blue lake among the peaks.",
+"l": "Kuju mountains.",
+"q": "Okenoike, Kuju"
+},
+{
+"n": "Hokkein",
+"a": [
+"Hokkein"
+],
+"w": "A mountain hot spring at 1,303 m.",
+"y": "A soak on the way down.",
+"l": "Kuju mountains.",
+"q": "Hokkein Onsen"
+},
+{
+"n": "Bogatsuru",
+"a": [
+"Bogatsuru"
+],
+"w": "A high wetland basin between the Kuju peaks.",
+"y": "Quiet and open.",
+"l": "Kuju mountains.",
+"q": "Bogatsuru"
+},
+{
+"n": "Amagaike",
+"a": [
+"Amagaike"
+],
+"w": "A small upland marsh on the trail.",
+"y": "The route back down to Chojabaru.",
+"l": "Between Bogatsuru and Chojabaru.",
+"q": "Amagaike, Kuju"
+},
+{
+"n": "Mt Yufu",
+"a": [
+"Mt Yufu",
+"Yufu"
+],
+"w": "A twin-peaked volcano (1,583 m) above Yufuin.",
+"y": "The backdrop to every Yufuin view.",
+"l": "Yufuin.",
+"q": "Mount Yufu"
+},
+{
+"n": "Meinohama",
+"a": [
+"Meinohama"
+],
+"w": "A district on Fukuoka's west side.",
+"y": "The ferry terminal for Nokonoshima.",
+"l": "West Fukuoka, 25 min by bus from the centre.",
+"q": "Meinohama Ferry Terminal"
+},
+{
+"n": "Asosan-nishi",
+"a": [
+"Asosan-nishi"
+],
+"w": "The old ropeway station on Aso's west side.",
+"y": "The trailhead for Takadake.",
+"l": "Mt Aso, 30 min by bus from Aso station.",
+"q": "Asosan-nishi, Aso"
+},
+{
+"n": "Bungo-Nakamura",
+"a": [
+"Bungo-Nakamura"
+],
+"w": "A small rail station in the hills of Oita.",
+"y": "Where you leave the train for the Kuju highlands.",
+"l": "About 2h by limited express from Hakata.",
+"q": "Bungo-Nakamura Station"
+},
+{
+"n": "Kanazawa",
+"a": [
+"Kanazawa"
+],
+"w": "A castle city on the Sea of Japan coast.",
+"y": "Gardens, a geisha district and a great seafood market.",
+"l": "Ishikawa; 40 min by bus from Komatsu airport, about 3h by train from Osaka.",
+"q": "Kanazawa, Japan"
+},
+{
+"n": "Higashi Chaya",
+"a": [
+"Higashi Chaya"
+],
+"w": "Kanazawa's best-kept geisha teahouse district.",
+"y": "Wooden lanes, lovely at dusk.",
+"l": "East Kanazawa.",
+"q": "Higashi Chaya, Kanazawa"
+},
+{
+"n": "Kenrokuen",
+"a": [
+"Kenrokuen"
+],
+"w": "One of Japan's three great gardens.",
+"y": "Ponds, moss and pines with snow ropes.",
+"l": "Central Kanazawa.",
+"q": "Kenrokuen, Japan"
+},
+{
+"n": "Kanazawa castle",
+"a": [
+"Kanazawa castle"
+],
+"w": "The castle park next to Kenrokuen.",
+"y": "Rebuilt white towers and stone walls.",
+"l": "Central Kanazawa.",
+"q": "Kanazawa Castle Park"
+},
+{
+"n": "21st Century Museum",
+"a": [
+"21st Century Museum"
+],
+"w": "A round contemporary art museum.",
+"y": "The 'swimming pool' you can walk under.",
+"l": "Central Kanazawa.",
+"q": "21st Century Museum of Contemporary Art, Kanazawa"
+},
+{
+"n": "D.T. Suzuki Museum",
+"a": [
+"D.T. Suzuki Museum"
+],
+"w": "A museum to a Zen thinker.",
+"y": "A calm water-mirror garden.",
+"l": "Central Kanazawa.",
+"q": "D.T. Suzuki Museum"
+},
+{
+"n": "Katamachi",
+"a": [
+"Katamachi"
+],
+"w": "Kanazawa's bar and restaurant district.",
+"y": "Izakaya and local sake.",
+"l": "Central Kanazawa.",
+"q": "Katamachi, Kanazawa"
+},
+{
+"n": "Omicho market",
+"a": [
+"Omicho market",
+"Omicho"
+],
+"w": "Kanazawa's fish and food market.",
+"y": "Kaisen-don rice bowls piled with crab and sweet shrimp.",
+"l": "Central Kanazawa, 15 min on foot from the station.",
+"q": "Omicho Market"
+},
+{
+"n": "Nagamachi",
+"a": [
+"Nagamachi"
+],
+"w": "The old samurai district.",
+"y": "Earth walls, canals and the Nomura house garden.",
+"l": "West-central Kanazawa.",
+"q": "Nagamachi, Kanazawa"
+},
+{
+"n": "Nomura house",
+"a": [
+"Nomura house"
+],
+"w": "A samurai family house.",
+"y": "A small, beautiful garden.",
+"l": "Nagamachi.",
+"q": "Nomura Samurai House"
+},
+{
+"n": "Myoryuji (ninja temple)",
+"a": [
+"Myoryuji"
+],
+"w": "A temple full of trap doors and hidden stairs.",
+"y": "A guided tour of its tricks (book ahead).",
+"l": "Teramachi, south Kanazawa.",
+"q": "Myoryuji, Kanazawa"
+},
+{
+"n": "Higashiyama (Kanazawa)",
+"a": [
+"Higashiyama"
+],
+"w": "The district around Higashi Chaya.",
+"y": "Gold-leaf shops and workshops.",
+"l": "East Kanazawa.",
+"t": [
+"jp-kanazawa"
+],
+"q": "Higashiyama, Kanazawa"
+},
+{
+"n": "Kazuemachi",
+"a": [
+"Kazuemachi"
+],
+"w": "A short teahouse lane by the Asano river.",
+"y": "Lantern-lit and quiet.",
+"l": "East Kanazawa.",
+"q": "Kazuemachi, Kanazawa"
+},
+{
+"n": "Utatsuyama",
+"a": [
+"Utatsuyama"
+],
+"w": "A wooded hill behind Higashi Chaya.",
+"y": "A view over the city to the sea.",
+"l": "East Kanazawa.",
+"q": "Utatsuyama"
+},
+{
+"n": "Teramachi",
+"a": [
+"Teramachi"
+],
+"w": "A temple district.",
+"y": "Dozens of temples in quiet lanes.",
+"l": "South Kanazawa.",
+"q": "Teramachi, Kanazawa"
+},
+{
+"n": "Nishi Chaya",
+"a": [
+"Nishi Chaya"
+],
+"w": "A smaller teahouse district.",
+"y": "Quieter than Higashi Chaya.",
+"l": "South-west Kanazawa.",
+"q": "Nishi Chaya, Kanazawa"
+},
+{
+"n": "Shirakawa-go",
+"a": [
+"Shirakawa-go"
+],
+"w": "A mountain village of thatched farmhouses (UNESCO).",
+"y": "Steep gassho roofs; silent at night.",
+"l": "About 1h15 by bus from Kanazawa, 50 min from Takayama.",
+"q": "Shirakawa-go"
+},
+{
+"n": "Wada house",
+"a": [
+"Wada house"
+],
+"w": "The largest farmhouse open to visit.",
+"y": "Inside a working gassho house.",
+"l": "Shirakawa-go.",
+"q": "Wada House, Shirakawa"
+},
+{
+"n": "Shiroyama viewpoint",
+"a": [
+"Shiroyama viewpoint"
+],
+"w": "A lookout above Shirakawa-go.",
+"y": "The postcard view over the roofs.",
+"l": "Shirakawa-go, 15 min on foot.",
+"q": "Shiroyama Viewpoint, Shirakawa"
+},
+{
+"n": "Yamanaka Onsen",
+"a": [
+"Yamanaka Onsen",
+"Yamanaka"
+],
+"w": "A small onsen town on a river gorge.",
+"y": "A gorge walk, lacquerware and good baths.",
+"l": "About 45 min from Kanazawa (shinkansen + bus).",
+"q": "Yamanaka Onsen"
+},
+{
+"n": "Kakusenkei gorge",
+"a": [
+"Kakusenkei"
+],
+"w": "A gorge with a riverside path.",
+"y": "Maples turning over the river.",
+"l": "Yamanaka Onsen.",
+"q": "Kakusenkei Gorge"
+},
+{
+"n": "Korogi bridge",
+"a": [
+"Korogi wooden bridge",
+"Korogi bridge",
+"Korogi"
+],
+"w": "An old wooden bridge over the gorge.",
+"y": "A pretty spot on the gorge walk.",
+"l": "Yamanaka Onsen.",
+"q": "Korogi Bridge"
+},
+{
+"n": "Kiku no Yu",
+"a": [
+"Kiku no Yu"
+],
+"w": "Yamanaka's public bath.",
+"y": "A local soak in a classic bathhouse.",
+"l": "Central Yamanaka Onsen.",
+"q": "Kiku no Yu, Yamanaka"
+},
+{
+"n": "Natadera",
+"a": [
+"Natadera"
+],
+"w": "A temple with halls built into the rock.",
+"y": "Maples in a stone garden.",
+"l": "About 30 min by bus from Yamanaka.",
+"q": "Natadera"
+},
+{
+"n": "Kurobe Gorge",
+"a": [
+"Kurobe Gorge Railway",
+"Kurobe gorge",
+"Kurobe Gorge"
+],
+"w": "One of Japan's deepest gorges.",
+"y": "A little open train up the gorge through autumn colours.",
+"l": "Toyama, about 1h east of Kanazawa.",
+"q": "Kurobe Gorge Railway"
+},
+{
+"n": "Unazuki Onsen",
+"a": [
+"Unazuki Onsen",
+"Unazuki"
+],
+"w": "An onsen town at the mouth of the Kurobe gorge.",
+"y": "Hot springs and gorge views.",
+"l": "About 1h from Kanazawa (shinkansen + local line).",
+"q": "Unazuki Onsen"
+},
+{
+"n": "Yamabiko promenade",
+"a": [
+"Yamabiko promenade"
+],
+"w": "A walkway along an old railway line.",
+"y": "Gorge views and the red Shin-Yamabiko bridge.",
+"l": "Unazuki Onsen.",
+"q": "Yamabiko Promenade, Unazuki"
+},
+{
+"n": "Shin-Yamabiko bridge",
+"a": [
+"Shin-Yamabiko bridge"
+],
+"w": "A red railway bridge over the gorge.",
+"y": "The classic Kurobe photo.",
+"l": "Unazuki Onsen.",
+"q": "Shin-Yamabiko Bridge"
+},
+{
+"n": "Keyakidaira",
+"a": [
+"Keyakidaira"
+],
+"w": "The end of the gorge railway.",
+"y": "Deep in the gorge.",
+"l": "1h20 up the gorge by train from Unazuki.",
+"q": "Keyakidaira Station"
+},
+{
+"n": "Unazuki dam",
+"a": [
+"Unazuki dam"
+],
+"w": "A dam on the Kurobe river.",
+"y": "A lookout over the gorge.",
+"l": "Just above Unazuki Onsen.",
+"q": "Unazuki Dam"
+},
+{
+"n": "Tateyama",
+"a": [
+"Tateyama"
+],
+"w": "The station at the foot of the Alpine Route.",
+"y": "Where the cable car up starts.",
+"l": "About 1h by local train from Toyama.",
+"q": "Tateyama Station, Toyama"
+},
+{
+"n": "Bijodaira",
+"a": [
+"Bijodaira"
+],
+"w": "The top of the cable car, in old beech forest.",
+"y": "Where the buses up the Alpine Route start.",
+"l": "Above Tateyama.",
+"q": "Bijodaira"
+},
+{
+"n": "Alpine Route",
+"a": [
+"Alpine Route"
+],
+"w": "The Tateyama Kurobe Alpine Route over the Northern Alps.",
+"y": "Mountain roads into snow, open to 30 Nov.",
+"l": "From Tateyama (Toyama) eastwards.",
+"q": "Tateyama Kurobe Alpine Route"
+},
+{
+"n": "Murodo",
+"a": [
+"Murodo"
+],
+"w": "A high plateau at 2,450 m.",
+"y": "Snow, crater lakes and a mountain hotel.",
+"l": "Alpine Route, about 1h from Tateyama.",
+"q": "Murodo, Tateyama"
+},
+{
+"n": "Shomyo falls",
+"a": [
+"Shomyo falls"
+],
+"w": "Japan's tallest waterfall (350 m).",
+"y": "Seen from the bus road up.",
+"l": "Below Murodo.",
+"q": "Shomyo Falls"
+},
+{
+"n": "Mikurigaike",
+"a": [
+"Mikurigaike"
+],
+"w": "A deep-blue crater lake.",
+"y": "Snow around the water; Japan's highest hot spring next to it.",
+"l": "Murodo.",
+"q": "Mikurigaike"
+},
+{
+"n": "Raichozawa",
+"a": [
+"Raichozawa"
+],
+"w": "A valley below Murodo.",
+"y": "Snowy walks and mountain huts.",
+"l": "Murodo.",
+"q": "Raichozawa"
+},
+{
+"n": "Jigokudani",
+"a": [
+"Jigokudani"
+],
+"w": "A steaming volcanic valley ('hell valley').",
+"y": "Sulphur vents in the snow.",
+"l": "Murodo.",
+"q": "Jigokudani, Tateyama"
+},
+{
+"n": "Toyama",
+"a": [
+"Toyama"
+],
+"w": "A city on the Sea of Japan.",
+"y": "Where you change for the Alpine Route.",
+"l": "25 min by shinkansen from Kanazawa.",
+"q": "Toyama, Japan"
+},
+{
+"n": "Kaga-Onsen",
+"a": [
+"Kaga-Onsen"
+],
+"w": "The shinkansen station for Yamanaka Onsen.",
+"y": "Change here for the bus to Yamanaka.",
+"l": "About 15 min by shinkansen from Kanazawa.",
+"q": "Kaga-Onsen Station"
+},
+{
+"n": "Tsuruga",
+"a": [
+"Tsuruga"
+],
+"w": "A port town at the end of the Hokuriku shinkansen.",
+"y": "Change here for the Thunderbird to Osaka.",
+"l": "About 45 min by shinkansen from Kanazawa.",
+"q": "Tsuruga Station"
+},
+{
+"n": "Kurobe-Unazukionsen",
+"a": [
+"Kurobe-Unazukionsen"
+],
+"w": "The shinkansen station for the Kurobe gorge.",
+"y": "Change here to the little local line to Unazuki.",
+"l": "About 35 min by shinkansen from Kanazawa.",
+"q": "Kurobe-Unazukionsen Station"
+}
+]
+}
