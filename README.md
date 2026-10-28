@@ -19,4 +19,4 @@ When you're online, the page loads the latest version and updates the saved copy
 Prices and the forecast were checked on 22–23 Oct 2026. Nothing is booked.
 
 ## Week for two
-A separate version for the two of you (31 Oct → 6 Nov, private rooms, she flies back to HK on Friday) lives in [`duo/`](duo/), built from `duo-src/`. It works offline the same way. This solo page is unchanged.
+A separate version for the two of you (together 31 Oct → 4 Nov, then solo until 7 Nov) lives in [`duo/`](duo/), built from `duo-src/`. It works offline the same way. This solo page is unchanged.

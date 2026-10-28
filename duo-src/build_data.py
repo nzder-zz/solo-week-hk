@@ -1,7 +1,10 @@
 """Turn trips.py + fares.py + checks.py into the data the page and the spreadsheet use.
-All money in euros. Run build_all.py rather than this file directly."""
+All money in euros. Run build_all.py rather than this file directly.
+
+Shape: together Sat 31 Oct -> Wed 4 Nov (she flies back to HK on Wed evening),
+you alone Thu 5 + Fri 6, you fly home on Sat 7 Nov."""
 import json, os
-from fares import OUT, HER, HIS, HK_HOME, HIS_LABEL, FARE_STATUS
+from fares import OUT, HER, HIS, FARE_STATUS
 from trips import TRIPS
 from checks import CHECKS, CHECKED
 from places_new import PLACES_NEW
@@ -9,7 +12,8 @@ from places_new import PLACES_NEW
 HERE = os.path.dirname(os.path.abspath(__file__))
 BASE = json.load(open(os.path.join(HERE, "base_data.json")))
 
-DAYS_TOGETHER = 6          # food days for two (Sat evening .. Fri breakfast)
+DAYS_TOGETHER = 4          # food days for two (Sat evening .. Wed afternoon)
+DAYS_SOLO = 3              # your food days alone (Wed evening .. Sat)
 MISC_PP = 20               # SIM, tips, laundry, per person
 MEAL_CREDIT = 0.6          # share of a day's food covered when dinner + breakfast come with the room
 WEIGHTS = {"hike": 2, "nature": 2, "food": 2, "culture": 2, "chill": 2, "weather": 2, "value": 1.5, "ease": 1}
@@ -17,42 +21,31 @@ CRITERIA = [["hike", "Hiking"], ["nature", "Nature"], ["food", "Food"], ["cultur
             ["chill", "Relaxed pace"], ["weather", "Weather"], ["value", "Value"], ["ease", "Ease for two"]]
 POINTS = {"Dry": 1, "Showers": 0.7, "Wet": 0.35, "Heavy rain": 0}
 DATES = ["Sat 31 Oct", "Sun 1 Nov", "Mon 2 Nov", "Tue 3 Nov", "Wed 4 Nov", "Thu 5 Nov", "Fri 6 Nov", "Sat 7 Nov"]
-FOREIGN = {"JP": "Visa-free 90 days for you (French passport); fill in Visit Japan Web", "TW": "Visa-free 90 days for you; online arrival card", "VN": "Visa-free 45 days for you"}
+ENTRY = {"JP": "Visa-free 90 days for you (French passport); fill in Visit Japan Web", "TW": "Visa-free 90 days for you; online arrival card"}
 
 
-def home_options(t):
-    her = HER[t["her"]]
-    his = HIS[t["his"]]
-    sat_extra = t["solo_night"] + t["solo_food"]
-    return {
-        "fri": {"price": his["fri"]["price"], "legs": [his["fri"]],
-                "note": "Same day as her: you land in Europe on Sat 7 Nov. One ticket.", "extra": ""},
-        "sat": {"price": his["sat"]["price"] + sat_extra, "legs": [his["sat"]],
-                "extra": f"+ one night and a day on your own: about €{sat_extra} (room €{t['solo_night']}, food €{t['solo_food']})",
-                "note": "As in the solo plan: one more day there, land Sun 8 Nov."},
-        "hk": {"price": her["price"] + HK_HOME["price"], "legs": [dict(her, detail="Same flight as her: " + her["detail"]), HK_HOME],
-               "note": "Fly back together, see her off at 18:00, an evening and night with the family, home on Sat. Two tickets, but with a full day between them (no tight connection).",
-               "extra": ""},
-    }
-
-
-def plan_cost(t, p, home, homes):
-    out = 2 * OUT[t["out"]]["price"]
+def plan_cost(t, p):
+    out_pp = OUT[t["out"]]["price"]
+    out = 2 * out_pp
     her = HER[t["her"]]["price"]
-    his = homes[home]["price"]
-    rooms = sum(n["room"] for n in p["nights"])
-    meal_nights = sum(1 for n in p["nights"] if n["meals"])
-    food = 2 * t["food_day"] * DAYS_TOGETHER - 2 * MEAL_CREDIT * t["food_day"] * meal_nights
+    his = HIS[t["his"]]["price"]
+    both = [n for n in p["nights"] if not n["solo"]]
+    solo = [n for n in p["nights"] if n["solo"]]
+    rooms = sum(n["room"] for n in both)
+    food = 2 * t["food_day"] * DAYS_TOGETHER - 2 * MEAL_CREDIT * t["food_day"] * sum(1 for n in both if n["meals"])
     transport = 2 * p["transport_pp"] + p["shared"]
     activities = 2 * p["activities_pp"]
     misc = 2 * MISC_PP
+    solo_rooms = sum(n["room"] for n in solo)
+    solo_food = t["solo_food"] * DAYS_SOLO - MEAL_CREDIT * t["solo_food"] * sum(1 for n in solo if n["meals"])
+    solo_total = solo_rooms + solo_food + p["solo_transport"] + p["solo_activities"]
     flights = out + her + his
-    ground = rooms + food + transport + activities + misc
-    total = flights + ground
-    half = ground / 2
-    return {"out": out, "her": her, "his": his, "rooms": rooms, "food": food, "transport": transport,
-            "activities": activities, "misc": misc, "flights": flights, "ground": ground, "total": round(total),
-            "his_share": round(out / 2 + his + half), "her_share": round(out / 2 + her + half)}
+    together = rooms + food + transport + activities + misc
+    total = flights + together + solo_total
+    return {"out": out, "her": her, "his": his, "rooms": rooms, "food": food, "transport": transport, "activities": activities, "misc": misc,
+            "solo_rooms": solo_rooms, "solo_food": solo_food, "solo_transport": p["solo_transport"], "solo_activities": p["solo_activities"],
+            "solo": solo_total, "flights": flights, "together": together, "ground": together + solo_total, "total": round(total),
+            "his_share": round(out_pp + his + together / 2 + solo_total), "her_share": round(out_pp + her + together / 2)}
 
 
 def forecast(t):
@@ -70,13 +63,12 @@ def forecast(t):
         cls = "Dry" if pts >= 0.85 else "Showers" if pts >= 0.6 else "Wet" if pts >= 0.25 else "Heavy rain"
         days.append({"md": fd["md"], "label": fd["label"], "ahead": fd["ahead"], "cls": cls, "pts": round(pts, 2),
                      "p1": round(sum(r["p1"] for r in rows) / len(rows)), "cc": round(sum(r["cc"] for r in rows) / len(rows)),
-                     "hi": rows[0]["hi"], "lo": rows[0]["lo"], "scored": i < 7, "bases": rows})
-    scored = [d for d in days if d["scored"]]
-    score = round(sum(d["pts"] for d in scored) / len(scored) * 5 * 2) / 2
-    cc = round(sum(d["cc"] for d in scored) / len(scored))
+                     "hi": rows[0]["hi"], "lo": rows[0]["lo"], "scored": True, "bases": rows})
+    score = round(sum(d["pts"] for d in days) / len(days) * 5 * 2) / 2
+    cc = round(sum(d["cc"] for d in days) / len(days))
     word = "Mostly dry" if score >= 4.5 else "Some showers" if score >= 3.5 else "Mixed" if score >= 2.5 else "Wet"
-    wet = [d["label"] for d in scored if d["cls"] in ("Wet", "Heavy rain")]
-    show = [d["label"] for d in scored if d["cls"] == "Showers"]
+    wet = [d["label"] for d in days if d["cls"] in ("Wet", "Heavy rain")]
+    show = [d["label"] for d in days if d["cls"] == "Showers"]
     note = f"{word} for {', '.join(bases)}. "
     note += (f"Wet: {', '.join(wet)}. " if wet else "No wet day in the run. ")
     if show:
@@ -85,11 +77,16 @@ def forecast(t):
     return {"score": score, "word": word, "note": note, "bases": bases, "days": days, "per_base": per_base, "cc": cc}
 
 
+def place_key(s):
+    for cut in (" (", ",", " hotel", " guesthouse", " B&B", " ryokan", " shukubo", " minshuku", " onsen inn", " hostel", "-area"):
+        s = s.split(cut)[0]
+    return s
+
+
 def build():
     dests = []
     for t in TRIPS:
         clim = BASE["climate"][t["climate_of"]]
-        homes = home_options(t)
         fc = forecast(t)
         scores = dict(t["scores"])
         scores["weather"] = round((fc["score"] + clim["wx_climate"]) / 2 * 4) / 4
@@ -103,54 +100,41 @@ def build():
         options = []
         for p in t["plans"]:
             travel = sum(l[2] for d in p["days"] for l in d["tr"])
-            places = []
-            for n in p["nights"]:
-                key = n["place"].split(" (")[0].split(",")[0].split(" hotel")[0].split(" guesthouse")[0].split(" B&B")[0].split(" ryokan")[0].split(" shukubo")[0].split(" minshuku")[0].split(" bungalow")[0].split(" onsen inn")[0]
-                places.append(key)
-            beds = len(set(places))
-            moves = sum(1 for a, b in zip(places, places[1:]) if a != b)
-            o = {k: p[k] for k in ("style", "name", "chill", "route", "days", "nights", "transport_pp", "shared", "activities_pp")}
-            o.update(travel=travel, beds=beds, moves=moves,
-                     cost={h: plan_cost(t, p, h, homes) for h in ("fri", "sat", "hk")})
+            together_travel = sum(l[2] for d in p["days"] if d["who"] != "you" for l in d["tr"])
+            places = [place_key(n["place"]) for n in p["nights"]]
+            o = {k: p[k] for k in ("style", "name", "chill", "route", "days", "nights", "transport_pp", "shared", "activities_pp", "solo_transport", "solo_activities")}
+            o.update(travel=travel, together_travel=together_travel, beds=len(set(places[:4])), solo_beds=len(set(places[4:])),
+                     moves=sum(1 for a, b in zip(places, places[1:]) if a != b), cost=plan_cost(t, p))
             options.append(o)
-        out = dict(OUT[t["out"]])
-        her = dict(HER[t["her"]])
-        d = {k: t[k] for k in ("id", "country", "region", "cc", "short", "title", "tagline", "food_day", "solo_night", "solo_food", "solo_day",
+        d = {k: t[k] for k in ("id", "country", "region", "cc", "short", "title", "tagline", "food_day", "solo_food",
                                "transport", "crowds", "food", "hikes", "culture", "adventure", "pros", "cons", "calm")}
-        d.update(out=out, her=her, homes=homes, entry=FOREIGN[t["cc"]], weather=clim["weather"], scores=scores, fit=fit, fc=fc, options=options)
+        d.update(out=dict(OUT[t["out"]]), her=dict(HER[t["her"]]), his=dict(HIS[t["his"]]), entry=ENTRY[t["cc"]], weather=clim["weather"],
+                 scores=scores, fit=fit, fc=fc, options=options)
         dests.append(d)
 
-    by_fit = sorted(dests, key=lambda d: -d["fit"])
-    def lowest(d): return min(o["cost"]["fri"]["total"] for o in d["options"])
     picks = [
-        {"id": "tw-south", "why": "Easiest and driest", "text": "She speaks the language, Tainan is dry and warm, and Alishan's railway is running again. About half the cost of Japan."},
-        {"id": "jp-kansai", "why": "Culture + hiking, no Kyoto", "text": "Nara at dawn, a temple night at Koyasan and, in the Fuller plan, three nights on the Kumano Kodo. Book the inns today."},
-        {"id": "jp-kyushu", "why": "Bluest skies, onsen towns", "text": "The Karatsu Kunchi floats on 4 Nov and two quiet onsen towns. Her only good flight back leaves at 08:20."},
-        {"id": "jp-fuji", "why": "Tokyo + Fuji, done slowly", "text": "Old Tokyo on foot, three days by the Fuji lakes, and an onsen ryokan for the wet Monday in the Fuller plan."},
+        {"id": "tw-south", "why": "Easiest and cheapest", "text": "She speaks the language, Tainan is dry and warm. Together: Tainan and Sun Moon Lake. You: Alishan's railway, running again since 25 Oct."},
+        {"id": "jp-kansai", "why": "Best for your solo days", "text": "Nara at dawn and a temple night together, then two days walking the Kumano Kodo on your own. Book Koyasan and the Kumano inns today."},
+        {"id": "jp-kyushu", "why": "Bluest skies, her best last day", "text": "Onsen towns together and the Karatsu Kunchi floats on Wed 4 Nov before her 20:00 flight; then Kurokawa and the Kuju peaks for you."},
+        {"id": "jp-fuji", "why": "Tokyo + Fuji, done slowly", "text": "Old Tokyo on foot and two days by the Fuji lakes together; Hakone or the Mitsutoge ridge for you."},
     ]
     sources = [
         ["Live fares: Google Flights", "https://www.google.com/travel/flights", "out and Saturday-home fares: 27 Oct 2026, 1 adult"],
-        ["Flight schedules: FlightConnections", "https://www.flightconnections.com/", "her return flights and times, 28 Oct 2026"],
+        ["Flight schedules: FlightConnections", "https://www.flightconnections.com/", "her Wednesday flights, 28 Oct 2026"],
         ["Forecast: Open-Meteo ensemble API", "https://open-meteo.com/en/docs/ensemble-api", f"ECMWF 51 runs, fetched {BASE['fc_checked']}"],
     ] + [[f"{c[1]} — {c[4]}", c[5], c[2]] for c in CHECKS]
-    seen, src = set(), []
-    for s in sources:
-        if s[1] in seen and s[0].startswith(("Live", "Flight", "Forecast")) is False:
-            pass
-        src.append(s)
-        seen.add(s[1])
-    places = BASE["places"] + PLACES_NEW
     return {
-        "dests": dests, "dates": DATES, "criteria": CRITERIA, "weights": WEIGHTS, "picks": picks, "sources": src,
-        "checks": [list(c) for c in CHECKS], "checked": CHECKED, "places": places,
+        "dests": dests, "dates": DATES, "criteria": CRITERIA, "weights": WEIGHTS, "picks": picks, "sources": sources,
+        "checks": [list(c) for c in CHECKS], "checked": CHECKED, "places": BASE["places"] + PLACES_NEW,
         "fc_days": BASE["fc_days"], "fc_bands": BASE["fc_bands"], "fc_last": BASE["fc_last"], "fc_checked": BASE["fc_checked"],
-        "home_labels": HIS_LABEL, "fare_status": FARE_STATUS,
-        "params": {"days_together": DAYS_TOGETHER, "misc_pp": MISC_PP, "meal_credit": MEAL_CREDIT},
-        "fares": {"out": OUT, "her": HER, "his": HIS, "hk_home": HK_HOME},
+        "fare_status": FARE_STATUS,
+        "params": {"days_together": DAYS_TOGETHER, "days_solo": DAYS_SOLO, "misc_pp": MISC_PP, "meal_credit": MEAL_CREDIT},
+        "fares": {"out": OUT, "her": HER, "his": HIS},
     }
 
 
 if __name__ == "__main__":
     D = build()
     for d in D["dests"]:
-        print(d["id"], d["fit"], d["fc"]["score"], d["scores"]["weather"], [(o["style"], o["beds"], o["travel"], {h: o["cost"][h]["total"] for h in o["cost"]}) for o in d["options"]])
+        print(d["id"], d["fit"], d["fc"]["score"], d["scores"]["weather"],
+              [(o["style"], o["beds"], o["solo_beds"], o["travel"], o["cost"]["total"], o["cost"]["his_share"], o["cost"]["her_share"]) for o in d["options"]])

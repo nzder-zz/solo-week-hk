@@ -1,13 +1,12 @@
 (function () {
   const D = JSON.parse(document.getElementById('data').textContent);
-  const S = { style: 'Slow', sort: 'fit', country: 'All', home: 'fri' };
+  const S = { style: 'Slow', sort: 'fit', country: 'All' };
   try { const s = JSON.parse(localStorage.getItem('duoweek') || '{}'); Object.assign(S, s); } catch (e) {}
   if (!['Slow', 'Fuller'].includes(S.style)) S.style = 'Slow';
-  if (!['fri', 'sat', 'hk'].includes(S.home)) S.home = 'fri';
   const save = () => { try { localStorage.setItem('duoweek', JSON.stringify(S)); } catch (e) {} };
   const eur = n => '€' + Math.round(n).toLocaleString('en-GB');
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-  const HOME = D.home_labels;
+  const WHO = { both: 'Together', split: 'She flies tonight', you: 'You alone' };
   const fs = st => `<span class="fs fs-${st === 'est' ? 'est' : 'live'}" title="${esc(D.fare_status[st] || '')}">${st === 'est' ? 'estimate' : 'live 27 Oct'}</span>`;
 
   // ---- place notes
@@ -31,7 +30,7 @@
   const MODE = { plane: 'Flight', train: 'Train', metro: 'Metro', bus: 'Bus', van: 'Van', taxi: 'Taxi', boat: 'Boat', cable: 'Cable car' };
 
   const opt = (d, style) => d.options.find(o => o.style === style);
-  const cost = (d, o, home) => o.cost[home || S.home];
+  const cost = (d, o) => o.cost;
   const range = d => { const t = d.options.map(o => cost(d, o).total); return [Math.min(...t), Math.max(...t)]; };
 
   // ---- board
@@ -78,7 +77,6 @@
     });
   }
   seg('style', 'style', [['Slow', 'Slow'], ['Fuller', 'Fuller']]);
-  seg('home', 'home', [['fri', HOME.fri], ['sat', HOME.sat], ['hk', HOME.hk]]);
   seg('sort', 'sort', [['fit', 'Best fit'], ['cost', 'Cheapest'], ['weather', 'Best weather'], ['travel', 'Least travel']]);
   seg('country', 'country', ['All', ...new Set(D.dests.map(d => d.country))].map(c => [c, c]));
 
@@ -95,14 +93,15 @@
   // ---- chart
   const tip = document.getElementById('tip');
   function tipHtml(d, p) {
-    return `<b>${esc(d.short)} · ${S.style} · ${esc(HOME[S.home])}</b>
+    return `<b>${esc(d.short)} · ${S.style}</b>
       <div class="tl"><span>Flights out (×2)</span><span>${eur(p.out)}</span></div>
-      <div class="tl"><span>Her flight to HK</span><span>${eur(p.her)}</span></div>
-      <div class="tl"><span>Your way home</span><span>${eur(p.his)}</span></div>
-      <div class="tl"><span>Rooms (6 nights)</span><span>${eur(p.rooms)}</span></div>
-      <div class="tl"><span>Food (two)</span><span>${eur(p.food)}</span></div>
-      <div class="tl"><span>Getting around</span><span>${eur(p.transport)}</span></div>
+      <div class="tl"><span>Her flight back (Wed)</span><span>${eur(p.her)}</span></div>
+      <div class="tl"><span>Your flight home (Sat)</span><span>${eur(p.his)}</span></div>
+      <div class="tl"><span>Rooms together (4 n)</span><span>${eur(p.rooms)}</span></div>
+      <div class="tl"><span>Food together</span><span>${eur(p.food)}</span></div>
+      <div class="tl"><span>Getting around together</span><span>${eur(p.transport)}</span></div>
       <div class="tl"><span>Activities + misc</span><span>${eur(p.activities + p.misc)}</span></div>
+      <div class="tl"><span>Your days alone</span><span>${eur(p.solo)}</span></div>
       <div class="tl" style="border-top:1px solid currentColor;margin-top:3px;padding-top:3px"><span>Total for two</span><span>${eur(p.total)}</span></div>
       <div class="tl"><span>Your share · hers</span><span>${eur(p.his_share)} · ${eur(p.her_share)}</span></div>`;
   }
@@ -112,13 +111,13 @@
     const pct = v => (100 * v / max);
     const step = max > 2000 ? 1000 : 500;
     const ticks = []; for (let v = 0; v <= max; v += step) ticks.push(v);
-    document.getElementById('chart-sub').textContent = `For the two of you: ${S.style} plan · ${HOME[S.home]}. Hover or tap a bar for the split.`;
+    document.getElementById('chart-sub').textContent = `For the two of you, ${S.style} plan, including your three nights alone. Hover or tap a bar for the split.`;
     const rows = document.getElementById('rows');
     rows.innerHTML = L.map(d => {
       const o = opt(d, S.style), p = cost(d, o);
       return `<div class="row" tabindex="0" data-id="${d.id}"><div class="lbl">${esc(d.short)}<small>fit ${d.fit} · ${fmtH(o.travel)} travel</small></div>
         <div class="track"><div class="gridlines">${ticks.slice(1).map(v => `<i style="left:${pct(v)}%"></i>`).join('')}</div>
-        <div class="bar" style="width:calc(${pct(p.total)}% - 2px)"><b class="f" style="width:${100 * p.flights / p.total}%"></b><b class="g" style="width:${100 * p.ground / p.total}%"></b></div>
+        <div class="bar" style="width:calc(${pct(p.total)}% - 2px)"><b class="f" style="width:${100 * p.flights / p.total}%"></b><b class="g" style="width:${100 * p.together / p.total}%"></b><b class="s" style="width:${100 * p.solo / p.total}%"></b></div>
         <span class="val">${eur(p.total)}</span></div></div>`;
     }).join('');
     document.getElementById('ticks').innerHTML = ticks.map(v => `<span style="left:${pct(v)}%">€${v.toLocaleString('en-GB')}</span>`).join('');
@@ -136,8 +135,8 @@
       r.addEventListener('mouseenter', show); r.addEventListener('focus', show); r.addEventListener('click', show);
       r.addEventListener('mouseleave', () => tip.hidden = true); r.addEventListener('blur', () => tip.hidden = true);
     });
-    document.getElementById('cost-table').innerHTML = `<thead><tr><th>Trip</th><th class="r">Out ×2</th><th class="r">Her back</th><th class="r">You home</th><th class="r">Rooms</th><th class="r">Food</th><th class="r">Transport</th><th class="r">Act. + misc</th><th class="r">Total</th><th class="r">You · her</th></tr></thead><tbody>` +
-      L.map(d => { const p = cost(d, opt(d, S.style)); return `<tr><td>${esc(d.short)}</td><td class="r">${eur(p.out)}</td><td class="r">${eur(p.her)}</td><td class="r">${eur(p.his)}</td><td class="r">${eur(p.rooms)}</td><td class="r">${eur(p.food)}</td><td class="r">${eur(p.transport)}</td><td class="r">${eur(p.activities + p.misc)}</td><td class="r"><b>${eur(p.total)}</b></td><td class="r">${eur(p.his_share)} · ${eur(p.her_share)}</td></tr>`; }).join('') + '</tbody>';
+    document.getElementById('cost-table').innerHTML = `<thead><tr><th>Trip</th><th class="r">Out ×2</th><th class="r">Her back</th><th class="r">You home</th><th class="r">Rooms</th><th class="r">Food</th><th class="r">Transport</th><th class="r">Act. + misc</th><th class="r">You alone</th><th class="r">Total</th><th class="r">You · her</th></tr></thead><tbody>` +
+      L.map(d => { const p = cost(d, opt(d, S.style)); return `<tr><td>${esc(d.short)}</td><td class="r">${eur(p.out)}</td><td class="r">${eur(p.her)}</td><td class="r">${eur(p.his)}</td><td class="r">${eur(p.rooms)}</td><td class="r">${eur(p.food)}</td><td class="r">${eur(p.transport)}</td><td class="r">${eur(p.activities + p.misc)}</td><td class="r">${eur(p.solo)}</td><td class="r"><b>${eur(p.total)}</b></td><td class="r">${eur(p.his_share)} · ${eur(p.her_share)}</td></tr>`; }).join('') + '</tbody>';
   }
 
   // ---- forecast
@@ -158,7 +157,7 @@
   function fcGrid(L) {
     const rows = L.map(d => `<tr><th class="rowh" scope="row"><a href="#${d.id}">${esc(d.short)}</a><small>${d.fc.score}/5 · ${esc(d.fc.word)} · ${esc(SKY[skyKey(d.fc.cc)])} · temps ${esc(d.fc.bases[0])}</small></th>${
       d.fc.days.map(x => fcCell(x.cls, `${d.short} ${x.label}`, x.hi, x.lo, x.p1, !x.scored,
-        `<b>${esc(d.short)} · ${esc(x.label)}</b><div style="margin-bottom:4px">${x.ahead} days out (from ${esc(D.fc_checked)})${x.scored ? '' : ' · only if you stay'}</div>` +
+        `<b>${esc(d.short)} · ${esc(x.label)}</b><div style="margin-bottom:4px">${x.ahead} days out (from ${esc(D.fc_checked)})</div>` +
         x.bases.map(b => `<div class="tl"><span>${esc(b.name)}</span><span>${temps(b.hi, b.lo)} · ${b.p1}% · ${b.med} mm · ${b.cc}% cloud</span></div>`).join(''), x.cc)).join('')}</tr>`).join('');
     document.getElementById('fc-table').innerHTML = fcHead() + `<tbody>${rows}</tbody>`;
   }
@@ -201,15 +200,14 @@
   function dayByDay(d, o) {
     const n = {}; o.days.forEach(x => { n[x.e] = (n[x.e] || 0) + 1; });
     const sum = ['Travel', 'Easy', 'Active', 'Big day'].filter(k => n[k]).map(k => k === 'Big day' ? `${n[k]} big day${n[k] > 1 ? 's' : ''}` : `${n[k]} ${k.toLowerCase()}`).join(' · ');
-    const solo = S.home === 'sat' ? `<li class="day solo"><div class="day-when"><b>+1</b><span class="dt">${esc(D.dates[7])}</span><span class="eff eff-easy">You</span></div><div class="day-body"><div class="day-top"><h5>Your solo day</h5></div><p>${pl(d.solo_day, d.id)}</p></div><div class="day-tr tr-none"><span class="ttl">Transport</span><span class="tt">—</span></div></li>` : '';
     return `<div class="dbd-head"><h4>Day by day · ${esc(o.name)}</h4><span class="dbd-sum">${sum}</span></div>
-      <p class="wk"><span><b>${fmtH(o.travel)}</b> of transport</span><span><b>${o.beds}</b> different beds, ${o.moves} move${o.moves === 1 ? '' : 's'}</span></p>
+      <p class="wk"><span><b>${fmtH(o.together_travel)}</b> of transport together, ${fmtH(o.travel - o.together_travel)} on your own</span><span><b>${o.beds}</b> places together, <b>${o.solo_beds}</b> on your own</span></p>
       ${PLACES.length ? '<p class="pl-hint">Tap or hold an <i>underlined place</i> to see what it is, why go, and where.</p>' : ''}
-      <ol class="days">${o.days.map((x, i) => `<li class="day">
-        <div class="day-when"><b>Day ${i + 1}</b><span class="dt">${esc(D.dates[i])}</span><span class="eff eff-${EFF[x.e]}">${esc(x.e)}</span></div>
+      <ol class="days">${o.days.map((x, i) => `<li class="day ${x.who}">
+        <div class="day-when"><b>Day ${i + 1}</b><span class="dt">${esc(D.dates[i])}</span><span class="eff eff-${EFF[x.e]}">${esc(x.e)}</span><span class="who who-${x.who}">${WHO[x.who]}</span></div>
         <div class="day-body"><div class="day-top"><h5>${pl(x.t, d.id)}</h5>${wxChip(d, x.wx, i)}</div>
           <dl class="parts"><dt>Morning</dt><dd>${pl(x.am, d.id)}</dd><dt>Afternoon</dt><dd>${pl(x.pm, d.id)}</dd>${x.eve ? `<dt>Evening</dt><dd>${pl(x.eve, d.id)}</dd>` : ''}</dl>
-          <p class="day-sleep"><span class="lb">Sleep</span><span>${pl(x.sleep, d.id)}</span></p>${x.b ? `<p class="day-b"><span class="lb">If it rains</span><span>${pl(x.b, d.id)}</span></p>` : ''}</div>${trCol(x)}</li>`).join('')}${solo}</ol>`;
+          <p class="day-sleep"><span class="lb">Sleep</span><span>${pl(x.sleep, d.id)}</span></p>${x.b ? `<p class="day-b"><span class="lb">If it rains</span><span>${pl(x.b, d.id)}</span></p>` : ''}</div>${trCol(x)}</li>`).join('')}</ol>`;
   }
   function plansPanel(d) {
     const chosen = planSel[d.id] || S.style;
@@ -220,25 +218,19 @@
         <div class="mix" aria-hidden="true"><span class="c" style="width:${o.chill}%"></span><span class="a" style="width:${100 - o.chill}%"></span></div>
         <span class="mixl">${o.chill}% slow · ${100 - o.chill}% active</span>
         <ol>${o.route.map(s => `<li>${pl(s, d.id)}</li>`).join('')}</ol>
-        <p class="opt-tt"><span><b>${fmtH(o.travel)}</b> of transport</span><span><b>${o.beds}</b> different beds</span></p>
-        <p class="bd">For two: flights ${eur(p.flights)} · rooms ${eur(p.rooms)} · food ${eur(p.food)} · transport ${eur(p.transport)} · activities + misc ${eur(p.activities + p.misc)}. You ${eur(p.his_share)}, her ${eur(p.her_share)}.</p>
+        <p class="opt-tt"><span><b>${fmtH(o.together_travel)}</b> of transport together</span><span><b>${o.beds}</b> places together</span></p>
+        <p class="bd">Flights ${eur(p.flights)} · together: rooms ${eur(p.rooms)}, food ${eur(p.food)}, transport ${eur(p.transport)}, activities + misc ${eur(p.activities + p.misc)} · your days alone ${eur(p.solo)}. You ${eur(p.his_share)}, her ${eur(p.her_share)}.</p>
         <span class="opt-go">${on ? 'Day by day below ↓' : 'See it day by day'}</span></div>`;
     }).join('');
     return `<p class="pick-hint">Tap a plan to read it day by day.</p><div class="opts">${opts}</div><div class="dbd" id="dbd-${d.id}">${dayByDay(d, d.options.find(o => o.style === chosen))}</div>`;
   }
   function roomsPanel(d) {
-    return `<div class="rooms">${d.options.map(o => `<div><h4>${esc(o.style)} · ${esc(o.name)}</h4><table class="plain"><thead><tr><th>Night</th><th>Where</th><th class="r">Room for two</th></tr></thead><tbody>${
-      o.nights.map((n, i) => `<tr><td>${esc(D.dates[i])}</td><td>${pl(n.place, d.id)}${n.meals ? ' <span class="chip">dinner + breakfast</span>' : ''}</td><td class="r">${eur(n.room)}</td></tr>`).join('')
-    }<tr><td></td><td><b>6 nights</b></td><td class="r"><b>${eur(o.nights.reduce((a, n) => a + n.room, 0))}</b></td></tr></tbody></table></div>`).join('')}
-      <p class="fc-note">Typical prices for the cheapest decent private double (estimates, not quotes). Your night alone if you stay on Friday: about ${eur(d.solo_night)}.</p></div>`;
+    return `<div class="rooms">${d.options.map(o => `<div><h4>${esc(o.style)} · ${esc(o.name)}</h4><table class="plain"><thead><tr><th>Night</th><th>Where</th><th class="r">Room</th></tr></thead><tbody>${
+      o.nights.map((n, i) => `<tr><td>${esc(D.dates[i])}</td><td>${n.solo ? '<span class="who who-you">You</span> ' : ''}${pl(n.place, d.id)}${n.meals ? ' <span class="chip">dinner + breakfast</span>' : ''}</td><td class="r">${eur(n.room)}</td></tr>`).join('')
+    }<tr><td></td><td><b>4 nights together</b></td><td class="r"><b>${eur(o.cost.rooms)}</b></td></tr><tr><td></td><td><b>3 nights on your own</b></td><td class="r"><b>${eur(o.cost.solo_rooms)}</b></td></tr></tbody></table></div>`).join('')}
+      <p class="fc-note">Typical prices for the cheapest decent private double while you're together, and a hostel bed or single room on your own (estimates, not quotes).</p></div>`;
   }
-  function homePanel(d) {
-    return `<div class="homes">${['fri', 'sat', 'hk'].map(k => { const h = d.homes[k], on = k === S.home;
-      return `<div class="home ${on ? 'sel' : ''}"><div class="opt-top"><span class="chip">${esc(HOME[k])}</span><span class="opt-cost">${eur(h.price)}</span></div>
-        <ul>${h.legs.map(l => `<li><b>${esc(l.route)}</b> ${eur(l.price)} ${fs(l.status)}<small>${esc(l.detail)}</small></li>`).join('')}${h.extra ? `<li>${esc(h.extra)}</li>` : ''}</ul>
-        <p class="bd">${esc(h.note)}</p></div>`; }).join('')}</div>`;
-  }
-  function tabList() { return [['plans', '2 plans, day by day'], ['home', 'Your way home'], ['rooms', 'Rooms'], ['fc', 'Forecast'], ['todo', 'Things to do'], ['prac', 'Scores & practical']]; }
+  function tabList() { return [['plans', '2 plans, day by day'], ['rooms', 'Rooms'], ['fc', 'Forecast'], ['todo', 'Things to do'], ['prac', 'Scores & practical']]; }
   function dossier(d) {
     const sel = opt(d, S.style), sp = cost(d, sel), r = range(d);
     const tab = tabState[d.id] || 'plans';
@@ -249,7 +241,7 @@
     const prac = `<div class="prac"><div><h4>Fit score breakdown (out of 5)</h4><div style="display:grid;gap:6px">${D.criteria.map(([k, l]) => `<div class="sb"><span>${esc(l)}</span><span class="t"><b style="width:${d.scores[k] * 20}%"></b></span><span class="v">${d.scores[k]}</span></div>`).join('')}</div></div>
       <div><p><span class="k">Forecast. </span>${esc(d.fc.note)}</p><p><span class="k">Climate. </span>${esc(d.weather.note)}</p><p><span class="k">Getting around. </span>${esc(d.transport)}</p><p><span class="k">Crowds. </span>${esc(d.crowds)}</p><p><span class="k">Entry. </span>${esc(d.entry)}</p>
       <p><span class="k">Flight alternatives. </span>Out: ${esc(d.out.alt)}. Her return: ${esc(d.her.alt)}.</p></div></div>`;
-    const panels = { plans: plansPanel(d), home: homePanel(d), rooms: roomsPanel(d), fc: fcPanel(d), todo, prac };
+    const panels = { plans: plansPanel(d), rooms: roomsPanel(d), fc: fcPanel(d), todo, prac };
     return `<article class="trip" id="${d.id}">
       <div class="trip-head"><span class="cc">${d.cc}</span>
         <div><p class="eyebrow">${esc(d.country)} · ${esc(d.region)}</p><h3>${esc(d.title)}</h3><p class="tag">${esc(d.tagline)}</p></div>
@@ -257,9 +249,9 @@
           <div><span class="n">${eur(sp.total)}</span><span class="l">${S.style}, for two</span><span class="rg">you ${eur(sp.his_share)} · her ${eur(sp.her_share)}</span></div></div></div>
       <dl class="facts">
         <div><dt>Out · Sat 31 Oct · both</dt><dd><span class="price">${eur(d.out.price)}</span> each · ${esc(d.out.route)} ${fs(d.out.status)}<small>${esc(d.out.detail)}</small></dd></div>
-        <div><dt>Her · Fri 6 Nov → HK</dt><dd><span class="price">${eur(d.her.price)}</span> ${esc(d.her.route)} ${fs(d.her.status)}<small>${esc(d.her.detail)}</small></dd></div>
-        <div><dt>You · ${esc(HOME[S.home])}</dt><dd><span class="price">${eur(d.homes[S.home].price)}</span> ${esc(d.homes[S.home].legs.map(l => l.route).join(' + '))} ${d.homes[S.home].legs.some(l => l.status === 'est') ? fs('est') : fs('gf27')}<small>${esc(d.homes[S.home].note)}</small></dd></div>
-        <div><dt>Forecast 31 Oct–6 Nov</dt><dd><span class="fcw-pill c-${slug(fcCls(d.fc.score))}">${esc(d.fc.word)}</span> <span class="mono">${d.fc.score}/5</span><small><i class="sk sk-${skyKey(d.fc.cc)}"></i>${esc(SKY[skyKey(d.fc.cc)])}, ${d.fc.cc}% cloud by day</small><small>Normal for early Nov: ${d.weather.lo}–${d.weather.hi}°C, ${esc(d.weather.rain)}</small></dd></div>
+        <div><dt>Her · Wed 4 Nov → HK</dt><dd><span class="price">${eur(d.her.price)}</span> ${esc(d.her.route)} ${fs(d.her.status)}<small>${esc(d.her.detail)}</small></dd></div>
+        <div><dt>You · Sat 7 Nov → home</dt><dd><span class="price">${eur(d.his.price)}</span> ${esc(d.his.route)} ${fs(d.his.status)}<small>${esc(d.his.detail)}</small></dd></div>
+        <div><dt>Forecast 31 Oct–7 Nov</dt><dd><span class="fcw-pill c-${slug(fcCls(d.fc.score))}">${esc(d.fc.word)}</span> <span class="mono">${d.fc.score}/5</span><small><i class="sk sk-${skyKey(d.fc.cc)}"></i>${esc(SKY[skyKey(d.fc.cc)])}, ${d.fc.cc}% cloud by day</small><small>Normal for early Nov: ${d.weather.lo}–${d.weather.hi}°C, ${esc(d.weather.rain)}</small></dd></div>
       </dl>
       <div class="pc"><div class="pros"><h4>Pros</h4><ul>${d.pros.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>
         <div class="cons"><h4>Cons</h4><ul>${d.cons.map(x => `<li>${esc(x)}</li>`).join('')}</ul></div></div>

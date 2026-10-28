@@ -2,7 +2,10 @@
 # Prices in euros, per person, one way.
 # status: "gf27"  = checked live on Google Flights on 27 Oct 2026 (1 adult)
 #         "est"   = schedule checked 28 Oct 2026 (FlightConnections), price NOT yet checked live: an estimate
-# To refresh: change price/status/checked here, then run build_all.py.
+# To refresh: change price/status here, then run build_all.py.
+#
+# Shape (since 28 Oct, 23:25): together Sat 31 Oct -> Wed 4 Nov; she flies back to HK on Wed 4 Nov in the evening;
+# you stay on your own Thu 5 + Fri 6 and fly home on Sat 7 Nov (single ticket).
 
 FARE_STATUS = {
     "gf27": "Live fare, Google Flights 27 Oct",
@@ -24,62 +27,30 @@ OUT = {
               "detail": "HK Express 18:50 → 20:15, nonstop 1h25",
               "alt": "€106 at 12:45 → 14:10 (gives you the Saturday evening there)"},
     "khh_early": {"route": "HKG → KHH", "price": 106, "status": "gf27", "dep": "12:45", "carrier": "HK Express", "code": "KAOHSIUNG",
-              "detail": "HK Express 12:45 → 14:10, nonstop 1h25: reaches Dulan the same evening, saving a night in Kaohsiung",
+              "detail": "HK Express 12:45 → 14:10, nonstop 1h25: reaches Dulan the same evening",
               "alt": "€84 at 18:50 → 20:15, then a night in Kaohsiung"},
-    "han":   {"route": "HKG → HAN", "price": 94, "status": "gf27", "dep": "12:55", "carrier": "Sun PhuQuoc", "code": "HANOI",
-              "detail": "Sun PhuQuoc Airways 12:55 → 14:00, nonstop 2h05 (€67 cheaper than the first flight after 14:00)",
-              "alt": "€161 Vietnam Airlines 14:30 → 15:45 · €67 HK Express at 07:35"},
 }
 
-# Fri 6 Nov, her flight back to Hong Kong. Her own flight from HK leaves at 18:00,
-# so she should land by about 14:30 (separate tickets: she has to collect bags and check in again).
+# Wed 4 Nov, her flight back to Hong Kong in the evening.
 HER = {
-    "tokyo": {"route": "HND → HKG", "price": 220, "status": "est", "time": "09:35 → 13:50",
-              "detail": "JAL JL 29, Haneda 09:35 → HK 13:50 (leave Asakusa ~07:20 on the Keikyu line, 40 min)",
-              "alt": "ANA NH 859 08:50 → 12:55 · Cathay CX 543 10:10 → 14:25 (tighter) · cheaper: HK Express UO 857 Narita 08:00 → 11:55 (~€130, but a 06:00 Skyliner)"},
-    "kix":   {"route": "KIX → HKG", "price": 160, "status": "est", "time": "09:50 → 13:40",
-              "detail": "Hong Kong Airlines HX 617, Kansai 09:50 → HK 13:40 (Rapi:t from Namba ~07:30, 40 min)",
-              "alt": "Peach MM 63 08:05 → 11:45 (~€110, cheapest) · Cathay CX 567 09:25 → 13:00 / CX 503 09:50 → 13:35"},
-    "fuk":   {"route": "FUK → HKG", "price": 150, "status": "est", "time": "08:20 → 11:00",
-              "detail": "Greater Bay Airlines HB 383, Fukuoka 08:20 → HK 11:00 (the airport is 5 min from Hakata by subway)",
-              "alt": "The only morning nonstop. The next one, HK Express 12:55 → 15:35, leaves her only 2h25 in HK: too tight. Check HB 383 flies on Fridays."},
-    "khh":   {"route": "KHH → HKG", "price": 85, "status": "est", "time": "10:10 → 11:50",
-              "detail": "HK Express UO 131, Kaohsiung 10:10 → HK 11:50 (MRT to the airport, 20 min)",
-              "alt": "EVA BR 845 09:15 → 10:55 · Cathay CX 431 11:25 → 13:15 · China Airlines CI 933 07:50 → 09:30"},
-    "han":   {"route": "HAN → HKG", "price": 95, "status": "est", "time": "09:35 → 12:40",
-              "detail": "HK Express UO 541, Hanoi 09:35 → HK 12:40 (Grab from the Old Quarter ~45 min, leave 07:00)",
-              "alt": "Sun PhuQuoc 9G 530 09:15 → 11:55 · Vietnam Airlines VN 592 10:25 → 13:30 · Cathay CX 740 10:55 → 14:05"},
+    "tokyo": {"route": "NRT → HKG", "price": 130, "status": "est", "time": "19:00 → 23:25",
+              "detail": "HK Express UO 647, Narita 19:00 → HK 23:25 (Skyliner from Ueno ~16:30, 41 min)",
+              "alt": "Cathay CX 549 Haneda 16:00 → 20:15 (closer airport, ~€250) · Cathay CX 505 Narita 18:10 → 22:30"},
+    "kix":   {"route": "KIX → HKG", "price": 120, "status": "est", "time": "17:20 → 21:00",
+              "detail": "HK Express UO 899, Kansai 17:20 → HK 21:00 (Nankai from Namba ~15:00, 40 min)",
+              "alt": "Cathay CX 561 17:00 → 20:25 · CX 569 19:05 → 22:40 · HK Express UO 689 20:15 → 23:55"},
+    "fuk":   {"route": "FUK → HKG", "price": 130, "status": "est", "time": "20:00 → 22:40",
+              "detail": "Greater Bay Airlines HB 2397, Fukuoka 20:00 → HK 22:40 (the train from Karatsu runs straight into the airport subway, ~1h30)",
+              "alt": "HK Express UO 639 18:00 → 20:40 · Cathay CX 589 16:35 → 19:40"},
+    "khh":   {"route": "KHH → HKG", "price": 85, "status": "est", "time": "21:00 → 22:40",
+              "detail": "HK Express UO 135, Kaohsiung 21:00 → HK 22:40 (MRT to the airport, 20 min)",
+              "alt": "Cathay CX 459 19:25 → 21:10 · China Airlines CI 935 18:00 → 19:45"},
 }
 
-# Your way home: three options, every flight a single ticket (no self-transfers).
-#   fri = fly home from the destination on Fri 6 Nov (land Sat 7 Nov)
-#   sat = one more night there on your own, fly Sat 7 Nov (land Sun 8 Nov), as in the solo plan
-#   hk  = fly to HK with her on Fri, a night with the family, then HK → Paris on Sat 7 Nov
+# Sat 7 Nov, your flight home, single ticket (these are the solo plan's fares, live on 27 Oct).
 HIS = {
-    "tokyo": {
-        "fri": {"route": "NRT → BRU", "price": 571, "status": "est", "detail": "Etihad, Fri 17:20 → Sat 06:30 Brussels via Abu Dhabi, if it runs on Fridays (Saturday's was €571 on 27 Oct)"},
-        "sat": {"route": "NRT → BRU", "price": 571, "status": "gf27", "detail": "Etihad, Sat 17:20 → Sun 06:30 Brussels via Abu Dhabi"},
-    },
-    "kix": {
-        "fri": {"route": "KIX → CDG", "price": 618, "status": "est", "detail": "Cathay via HK, Fri 19:05 → Sat 07:45 Paris, if Friday's fare matches Saturday's (€618 on 27 Oct)"},
-        "sat": {"route": "KIX → CDG", "price": 618, "status": "gf27", "detail": "Cathay via HK, Sat 19:05 → Sun 07:45 Paris (1h50 in HK)"},
-    },
-    "fuk": {
-        "fri": {"route": "FUK → CDG", "price": 612, "status": "est", "detail": "Cathay via HK, Fri 16:35 → Sat 07:45 Paris, if Friday's fare matches Saturday's"},
-        "sat": {"route": "FUK → CDG", "price": 612, "status": "gf27", "detail": "Cathay via HK, Sat 16:35 → Sun 07:45 Paris"},
-    },
-    "khh": {
-        "fri": {"route": "KHH → CDG", "price": 370, "status": "est", "detail": "China Airlines + Qatar on one Qatar ticket, Fri 14:45 → Sat 06:35 Paris (2 stops), if Friday's fare matches Saturday's"},
-        "sat": {"route": "KHH → CDG", "price": 370, "status": "gf27", "detail": "China Airlines + Qatar on one Qatar ticket, Sat 14:45 → Sun 06:35 Paris (2 stops: Bangkok, Doha)"},
-    },
-    "han": {
-        "fri": {"route": "HAN → CDG", "price": 323, "status": "est", "detail": "Etihad, Fri 20:10 → Sat 06:45 Paris via Abu Dhabi, if Friday's fare matches Saturday's"},
-        "sat": {"route": "HAN → CDG", "price": 323, "status": "gf27", "detail": "Etihad, Sat 20:10 → Sun 06:45 Paris via Abu Dhabi"},
-    },
+    "tokyo": {"route": "NRT → BRU", "price": 571, "status": "gf27", "detail": "Etihad, Sat 17:20 → Sun 06:30 Brussels via Abu Dhabi"},
+    "kix":   {"route": "KIX → CDG", "price": 618, "status": "gf27", "detail": "Cathay via HK, Sat 19:05 → Sun 07:45 Paris (1h50 in HK)"},
+    "fuk":   {"route": "FUK → CDG", "price": 612, "status": "gf27", "detail": "Cathay via HK, Sat 16:35 → Sun 07:45 Paris"},
+    "khh":   {"route": "KHH → CDG", "price": 370, "status": "gf27", "detail": "China Airlines + Qatar on one Qatar ticket, Sat 14:45 → Sun 06:35 Paris (2 stops: Bangkok, Doha)"},
 }
-
-# HK -> Paris after flying back with her (the "hk" option). The flight to HK is the same as hers.
-HK_HOME = {"route": "HKG → CDG", "price": 451, "status": "gf27",
-           "detail": "Etihad, Sat 7 Nov 19:45 → Sun 06:30 Paris via Abu Dhabi (€451 on 27 Oct). If her 18:00 flight on Friday goes to Paris, you could also try for a seat on it."}
-
-HIS_LABEL = {"fri": "Fly home Fri", "sat": "Stay a night, fly Sat", "hk": "Back to HK with her"}

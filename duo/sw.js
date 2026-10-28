@@ -1,6 +1,6 @@
 // Offline support for the duo page: every file is cached on first visit, then served from the cache.
 // The cache name changes with the content, so a new version replaces the old one on the next online visit.
-const CACHE = 'duo-week-71e4c4b7be';
+const CACHE = 'duo-week-7db8625143';
 const ASSETS = [
   "./",
   "index.html",
