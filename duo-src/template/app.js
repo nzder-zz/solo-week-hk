@@ -90,7 +90,7 @@
       render();
     });
   }
-  seg('sort', 'sort', [['fit', 'Best fit'], ['cost', 'Cheapest'], ['weather', 'Best weather'], ['travel', 'Least travel']]);
+  seg('sort', 'sort', [['fit', 'Best fit'], ['cost', 'Cheapest'], ['weather', 'Best weather'], ['travel', 'Least travel together']]);
   seg('country', 'country', [['tokyo', 'Shortlist'], ['Japan', 'All Japan'], ['Taiwan', 'Taiwan'], ['All', 'Everything']]);
 
   function list() {
@@ -99,7 +99,7 @@
     if (S.sort === 'fit') L.sort((a, b) => b.fit - a.fit || c(a) - c(b));
     if (S.sort === 'cost') L.sort((a, b) => c(a) - c(b));
     if (S.sort === 'weather') L.sort((a, b) => b.scores.weather - a.scores.weather || b.fc.score - a.fc.score || a.fc.cc - b.fc.cc);
-    if (S.sort === 'travel') L.sort((a, b) => opt(a, S.style).travel - opt(b, S.style).travel || c(a) - c(b));
+    if (S.sort === 'travel') L.sort((a, b) => opt(a, S.style).together_travel - opt(b, S.style).together_travel || c(a) - c(b));
     return L;
   }
 
@@ -128,7 +128,7 @@
     const rows = document.getElementById('rows');
     rows.innerHTML = L.map(d => {
       const o = opt(d, S.style), p = cost(d, o);
-      return `<div class="row" tabindex="0" data-id="${d.id}"><div class="lbl">${esc(d.short)}<small>fit ${d.fit} · ${fmtH(o.travel)} travel</small></div>
+      return `<div class="row" tabindex="0" data-id="${d.id}"><div class="lbl">${esc(d.short)}<small>fit ${d.fit} · ${fmtH(o.together_travel)} travel together</small></div>
         <div class="track"><div class="gridlines">${ticks.slice(1).map(v => `<i style="left:${pct(v)}%"></i>`).join('')}</div>
         <div class="bar" style="width:calc(${pct(p.total)}% - 2px)"><b class="f" style="width:${100 * p.flights / p.total}%"></b><b class="g" style="width:${100 * p.together / p.total}%"></b><b class="s" style="width:${100 * p.solo / p.total}%"></b></div>
         <span class="val">${eur(p.total)}</span></div></div>`;
@@ -212,7 +212,7 @@
     const lvl = t === 0 ? 'none' : t < 90 ? 'low' : t < 180 ? 'mid' : 'high';
     return `<div class="day-tr tr-${lvl}"><span class="ttl">Transport</span><span class="tt">${t ? fmtH(t) : '0'}</span>
       <span class="ttbar" aria-hidden="true"><b style="width:${Math.min(100, 100 * t / 360)}%"></b></span>
-      ${x.tr.length ? `<ul>${x.tr.map(l => `<li><i>${MODE[l[0]]}</i> ${esc(l[1])} · <b>${fmtH(l[2])}</b></li>`).join('')}</ul>` : '<ul><li>On foot all day</li></ul>'}</div>`;
+      ${x.tr.length ? `<ul>${x.tr.map(l => `<li><i>${MODE[l[0]]}</i> ${esc(l[1])} · <b>${fmtH(l[2])}</b></li>`).join('')}${/bike/i.test(x.t) ? '<li><i>Bike</i> the rest of the day</li>' : ''}</ul>` : `<ul><li>${/bike/i.test(x.t) ? 'By bike and on foot' : 'On foot all day'}</li></ul>`}</div>`;
   }
   function dayByDay(d, o) {
     const n = {}; o.days.forEach(x => { n[x.e] = (n[x.e] || 0) + 1; });

@@ -47,22 +47,22 @@
     "Tsukiji outer market (your Saturday)"
    ],
    "hikes": [
+    "E-bike along the north shore to Oishi park (flat, 12 km return)",
     "Tenjoyama: up on foot (40 min) or by ropeway, for Fuji over the lake",
-    "Lake Saiko's shore path by the thatched village",
-    "Chureito pagoda's 398 steps at sunrise",
+    "Chureito pagoda's 398 steps at sunrise (optional)",
     "Mt Takao from Tokyo (your Thursday)"
    ],
    "culture": [
     "Senso-ji and old Asakusa at 8am",
-    "Saiko Iyashi no Sato thatched village",
+    "Oishi park and the kochia bushes",
     "Kubota Itchiku kimono museum",
     "Meiji Jingu's autumn festival (3 Nov)"
    ],
    "adventure": [
     {
-     "name": "Chureito pagoda at sunrise",
-     "price": "free",
-     "note": "Fuji behind the five-storey pagoda around 06:00; the classic photo"
+     "name": "E-bikes along the lake",
+     "price": "~¥3,000–4,000 a day each",
+     "note": "Flat north shore to Oishi park; rentals near Kawaguchiko station (book, and check they open on Sundays)"
     },
     {
      "name": "Kubota Itchiku Art Museum",
@@ -77,22 +77,22 @@
    ],
    "pros": [
     "The Fuji view, the strongest single image of the three towns",
-    "Sun 1 Nov forecast dry: the Fuji day",
+    "A flat e-bike ride along the lake on the dry Sunday",
     "Slow pace: two nights in one place",
     "Her language skills make the bus and menus easy"
    ],
    "cons": [
     "Busiest of the three on the holiday",
-    "The lake bus is slow; Fuji hides in cloud after midday",
+    "Two bus rides of 2h (there and back); Fuji hides in cloud after midday",
     "Maple light-up starts only on 7 Nov",
     "Japan prices"
    ],
-   "calm": "Two nights at Lake Kawaguchi: Fuji in the water at Oishi park in the morning, the thatched village at Saiko, an onsen at night.",
+   "calm": "Two nights at Lake Kawaguchi: an easy bike ride along the shore to Oishi park, the kimono museum, an onsen at night.",
    "group": "tokyo",
    "town": "Kawaguchiko",
    "town_card": {
     "time": "Bus from Shinjuku 1h55",
-    "best": "Mount Fuji views, a lakeside onsen, a thatched village",
+    "best": "Mount Fuji views, an easy e-bike ride along the lake, an onsen",
     "crowds": "Busy Sun and Tue (holiday) at Chureito and Oishi park; mornings are calm",
     "rain": "The Kubota Itchiku kimono museum (open daily in Nov) and an onsen",
     "room": "Lake guesthouse, private room ~€75"
@@ -680,11 +680,11 @@
        "b": null
       },
       {
-       "t": "Senso-ji at 8, bus to Fuji",
-       "e": "Travel",
+       "t": "Bus to Fuji, e-bikes round the lake",
+       "e": "Active",
        "who": "both",
-       "am": "Senso-ji and Nakamise before the crowds; metro to Shinjuku, 10:00 bus to Kawaguchiko (1h55).",
-       "pm": "Hoto lunch, then Oishi park's lakeshore and the Tenjoyama ropeway for Fuji over the lake while the sky is clear.",
+       "am": "Senso-ji and Nakamise before the crowds; metro to Shinjuku, 10:00 bus to Kawaguchiko (1h55). Leave the bags at the guesthouse.",
+       "pm": "Hoto lunch, then e-bikes from near the station (about ¥3,000–4,000 a day; book): over the bridge and along the flat north shore to Oishi park, where the kochia bushes turn red in early November and Fuji sits across the water (about 6 km each way, 2–3h with stops).",
        "eve": "Lakeside onsen, dinner in town.",
        "sleep": "Kawaguchiko guesthouse",
        "wx": "Kawaguchiko",
@@ -698,32 +698,32 @@
          "bus",
          "Shinjuku → Kawaguchiko",
          115
-        ],
-        [
-         "cable",
-         "Tenjoyama ropeway",
-         5
         ]
        ],
-       "b": null
+       "b": "Sunday is the dry day (20%), so the ride is today. If it does rain, swap it with Monday."
       },
       {
-       "t": "Thatched village and kimono",
+       "t": "Kimono museum and an onsen",
        "e": "Easy",
        "who": "both",
-       "am": "Lake bus to Saiko Iyashi no Sato, the thatched village (open daily).",
-       "pm": "The Kubota Itchiku kimono museum and its garden.",
-       "eve": "Quiet dinner; early night for the sunrise.",
+       "am": "A slow breakfast; the Tenjoyama ropeway next to the station if Fuji is out (5 min).",
+       "pm": "Lake bus to the Kubota Itchiku kimono museum and its garden (open daily in Nov).",
+       "eve": "Onsen, quiet dinner.",
        "sleep": "Kawaguchiko guesthouse",
        "wx": "Kawaguchiko",
        "tr": [
         [
+         "cable",
+         "Tenjoyama ropeway",
+         5
+        ],
+        [
          "bus",
-         "Lake loop bus",
-         60
+         "Lake bus to the museum and back",
+         40
         ]
        ],
-       "b": "Showers possible (40%): both are partly indoor; add an onsen."
+       "b": "Showers possible (40%): the museum is indoors; add the onsen."
       },
       {
        "t": "Back to Tokyo; Meiji Jingu's festival",
@@ -735,11 +735,6 @@
        "sleep": "Tokyo hotel (Ueno/Asakusa)",
        "wx": "Tokyo",
        "tr": [
-        [
-         "train",
-         "Kawaguchiko ↔ Shimoyoshida (Chureito at sunrise, optional)",
-         20
-        ],
         [
          "bus",
          "Kawaguchiko → Shinjuku",
@@ -870,14 +865,14 @@
        "solo": true
       }
      ],
-     "transport_pp": 75,
+     "transport_pp": 70,
      "shared": 0,
-     "activities_pp": 25,
+     "activities_pp": 40,
      "solo_transport": 45,
      "solo_activities": 15,
      "her_extra": 0,
-     "travel": 1000,
-     "together_travel": 715,
+     "travel": 960,
+     "together_travel": 655,
      "beds": 2,
      "solo_beds": 1,
      "moves": 2,
@@ -888,8 +883,8 @@
       "his": 571,
       "rooms": 320,
       "food": 224.0,
-      "transport": 150,
-      "activities": 50,
+      "transport": 140,
+      "activities": 80,
       "misc": 40,
       "solo_rooms": 105,
       "solo_food": 75.0,
@@ -897,11 +892,11 @@
       "solo_activities": 15,
       "solo": 240.0,
       "flights": 933,
-      "together": 784.0,
-      "ground": 1024.0,
-      "total": 1957,
-      "his_share": 1319,
-      "her_share": 638
+      "together": 804.0,
+      "ground": 1044.0,
+      "total": 1977,
+      "his_share": 1329,
+      "her_share": 648
      }
     }
    ]
@@ -913,7 +908,7 @@
    "cc": "JP",
    "short": "Tokyo + Hakone",
    "title": "Tokyo + Hakone: onsen, a crater valley and Lake Ashi",
-   "tagline": "Two nights at a hot-spring inn in the hills: an open-air museum, the ropeway over steaming vents, a boat across Lake Ashi.",
+   "tagline": "Two nights at a hot-spring inn in the hills: an open-air museum, the ropeway over steaming vents, gardens a short walk away.",
    "food_day": 28,
    "solo_food": 25,
    "transport": "Romancecar Shinjuku ↔ Hakone-Yumoto (book seats for Tue, the holiday), then the Hakone Freepass covers the Tozan train, cable car, ropeway, boat and buses.",
@@ -965,7 +960,7 @@
     "Owakudani closes in strong wind or high volcanic gas",
     "Inns are dearer than the lake guesthouses"
    ],
-   "calm": "Two nights in a small onsen inn: baths before breakfast, the sculpture park, a boat across the lake. Nothing to rush for.",
+   "calm": "Two nights in a small onsen inn: baths before breakfast, the sculpture park, Gora's gardens. Nothing to rush for, and too hilly for an easy bike ride.",
    "group": "tokyo",
    "town": "Hakone",
    "town_card": {
@@ -1586,32 +1581,22 @@
        "b": null
       },
       {
-       "t": "The Hakone loop",
+       "t": "Owakudani and Gora, close to the inn",
        "e": "Easy",
        "who": "both",
-       "am": "Cable car and ropeway over Owakudani's steaming vents (black eggs at the top); on to Togendai.",
-       "pm": "Boat across Lake Ashi to Moto-Hakone; Hakone shrine's torii in the water; the lakeside cedar avenue.",
-       "eve": "Back to the inn by bus.",
+       "am": "Cable car and ropeway up to Owakudani's steaming vents (black eggs at the top), then straight back down.",
+       "pm": "Gora park and the Hakone Museum of Art's moss garden, both a short walk from the cable car; a long soak at the inn.",
+       "eve": "Inn dinner and the baths.",
        "sleep": "Hakone onsen inn",
        "wx": "Hakone",
        "tr": [
         [
          "cable",
-         "Gora → Owakudani → Togendai",
-         40
-        ],
-        [
-         "boat",
-         "Lake Ashi",
-         25
-        ],
-        [
-         "bus",
-         "Moto-Hakone → inn",
-         40
+         "Gora → Owakudani and back",
+         50
         ]
        ],
-       "b": "Showers possible (40%): if the ropeway stops, go to the Pola Museum by bus and save the lake for Tuesday morning."
+       "b": "Showers possible (40%): if the ropeway stops, the Pola Museum (bus 15 min) or the inn's baths. Lake Ashi by boat is the optional extra if the sky is clear (+75 min)."
       },
       {
        "t": "Back to Tokyo; Meiji Jingu's festival",
@@ -1753,14 +1738,14 @@
        "solo": true
       }
      ],
-     "transport_pp": 88,
+     "transport_pp": 85,
      "shared": 0,
-     "activities_pp": 25,
+     "activities_pp": 30,
      "solo_transport": 45,
      "solo_activities": 15,
      "her_extra": 0,
-     "travel": 995,
-     "together_travel": 710,
+     "travel": 940,
+     "together_travel": 635,
      "beds": 2,
      "solo_beds": 1,
      "moves": 2,
@@ -1771,8 +1756,8 @@
       "his": 571,
       "rooms": 410,
       "food": 224.0,
-      "transport": 176,
-      "activities": 50,
+      "transport": 170,
+      "activities": 60,
       "misc": 40,
       "solo_rooms": 105,
       "solo_food": 75.0,
@@ -1780,11 +1765,11 @@
       "solo_activities": 15,
       "solo": 240.0,
       "flights": 933,
-      "together": 900.0,
-      "ground": 1140.0,
-      "total": 2073,
-      "his_share": 1377,
-      "her_share": 696
+      "together": 904.0,
+      "ground": 1144.0,
+      "total": 2077,
+      "his_share": 1379,
+      "her_share": 698
      }
     }
    ]
@@ -1796,11 +1781,11 @@
    "cc": "JP",
    "short": "Tokyo + Nikko",
    "title": "Tokyo + Nikko: gold-leaf shrines and a mountain lake",
-   "tagline": "Two nights in Nikko: the most ornate shrines in Japan in a cedar forest, then a lake and waterfall at peak autumn colour.",
+   "tagline": "Two nights in Nikko, all on foot: the most ornate shrines in Japan in a cedar forest, a riverside path of stone Jizo, autumn colour.",
    "food_day": 28,
    "solo_food": 25,
    "transport": "Tobu Limited Express from Asakusa, two minutes from the Tokyo hotel. Nikko's buses with the Tobu Nikko pass. Suica works on both.",
-   "crowds": "Iroha-zaka was at peak colour on 26 Oct and jams on weekends and holidays from 9:00: go up on Monday. The shrines are calmest at 8–9am and after 15:00.",
+   "crowds": "The shrines are calmest at 8–9am and after 15:00. Iroha-zaka (the optional lake trip) was at peak colour on 26 Oct and jams on weekends and holidays.",
    "food": [
     "Yuba (tofu skin) in every form: Nikko's dish",
     "Trout from Lake Chuzenji",
@@ -2444,8 +2429,8 @@
        "t": "Senso-ji at 8, Tobu to Nikko",
        "e": "Travel",
        "who": "both",
-       "am": "Senso-ji before the crowds; Tobu Limited Express from Asakusa at about 9:00 (1h50).",
-       "pm": "Kanmangafuchi's Jizo by the river and the Shinkyo bridge; the shrines after 15:00 when the crowds thin.",
+       "am": "Senso-ji before the crowds; Tobu Limited Express from Asakusa at about 9:00 (1h50); bus to the guesthouse near the shrines (5 min).",
+       "pm": "Kanmangafuchi's Jizo by the river and the Shinkyo bridge, on foot; the shrines after 15:00 when the crowds thin.",
        "eve": "Yuba dinner in town.",
        "sleep": "Nikko guesthouse",
        "wx": "Nikko",
@@ -2457,29 +2442,23 @@
         ],
         [
          "bus",
-         "station ↔ shrines",
-         15
+         "station → shrines",
+         5
         ]
        ],
        "b": null
       },
       {
-       "t": "Toshogu, then the lake",
+       "t": "Toshogu and the temples, on foot",
        "e": "Easy",
        "who": "both",
-       "am": "Toshogu at 9:00 opening, Taiyuin and Futarasan.",
-       "pm": "Bus up Iroha-zaka in colour to Lake Chuzenji; Kegon falls elevator; the lakeshore.",
+       "am": "Toshogu at 9:00 opening, then Taiyuin and Futarasan, all within a 10-minute walk.",
+       "pm": "Rinnoji's treasure house and garden, a café on the old cedar avenue.",
        "eve": "Town onsen.",
        "sleep": "Nikko guesthouse",
        "wx": "Nikko",
-       "tr": [
-        [
-         "bus",
-         "Nikko ↔ Lake Chuzenji",
-         100
-        ]
-       ],
-       "b": "Showers possible (40%): the shrine halls are covered; swap the lake for Rinnoji's treasure house."
+       "tr": [],
+       "b": "Showers possible (40%): the shrine halls are covered. If the sky is clear, the bus up Iroha-zaka to Lake Chuzenji and Kegon falls is the optional extra (+100 min, peak colour)."
       },
       {
        "t": "Back to Tokyo; Meiji Jingu's festival",
@@ -2621,14 +2600,14 @@
        "solo": true
       }
      ],
-     "transport_pp": 82,
+     "transport_pp": 70,
      "shared": 0,
      "activities_pp": 25,
      "solo_transport": 45,
      "solo_activities": 15,
      "her_extra": 0,
-     "travel": 985,
-     "together_travel": 700,
+     "travel": 875,
+     "together_travel": 570,
      "beds": 2,
      "solo_beds": 1,
      "moves": 2,
@@ -2639,7 +2618,7 @@
       "his": 571,
       "rooms": 294,
       "food": 224.0,
-      "transport": 164,
+      "transport": 140,
       "activities": 50,
       "misc": 40,
       "solo_rooms": 105,
@@ -2648,11 +2627,11 @@
       "solo_activities": 15,
       "solo": 240.0,
       "flights": 933,
-      "together": 772.0,
-      "ground": 1012.0,
-      "total": 1945,
-      "his_share": 1313,
-      "her_share": 632
+      "together": 748.0,
+      "ground": 988.0,
+      "total": 1921,
+      "his_share": 1301,
+      "her_share": 620
      }
     }
    ]
@@ -2663,12 +2642,12 @@
    "region": "Kanazawa, Shirakawa-go & Yamanaka Onsen",
    "cc": "JP",
    "short": "Kanazawa & around",
-   "title": "Kanazawa & around: gardens, a thatched village and an onsen ryokan",
-   "tagline": "Three nights in Kanazawa (Kenrokuen, the teahouse districts, Omicho's seafood), a day in Shirakawa-go's thatched village, a last night in a Yamanaka onsen ryokan.",
+   "title": "Kanazawa & around: gardens by bike and an onsen ryokan",
+   "tagline": "Three nights in Kanazawa (a bike-share day between the garden, the market and the samurai lanes), then a Yamanaka onsen ryokan. Shirakawa-go moves to your solo ride.",
    "food_day": 28,
    "solo_food": 25,
-   "transport": "Airport bus Komatsu ↔ Kanazawa, the loop bus in town, the Shirakawa-go bus (book), the Hokuriku shinkansen to Kaga-Onsen. She leaves on Wednesday by train to Kansai airport (no Komatsu → HK flight that day).",
-   "crowds": "Kenrokuen and Omicho fill from 10:00; Shirakawa-go is busiest at weekends and on Tue 3 Nov, so the plan goes on Monday. Yamanaka is quiet.",
+   "transport": "Airport bus Komatsu ↔ Kanazawa, Machi-nori bike-share and the city bus (one day ticket), the Hokuriku shinkansen to Kaga-Onsen. She leaves on Wednesday by train to Kansai airport (no Komatsu → HK flight that day).",
+   "crowds": "Kenrokuen and Omicho fill from 10:00, so ride there first. Yamanaka is quiet. Shirakawa-go (your solo Wednesday) is calmer on a weekday.",
    "food": [
     "Omicho market: kaisendon (seafood rice bowl), oysters, nodoguro (blackthroat seaperch)",
     "Kanazawa oden and gold-leaf ice cream",
@@ -2676,8 +2655,8 @@
     "Kaga kaiseki at the Yamanaka ryokan"
    ],
    "hikes": [
+    "Kanazawa by Machi-nori bike-share (flat, short hops)",
     "Kakusenkei gorge path, Yamanaka (1.3 km by the river)",
-    "Shirakawa-go: up to the Shiroyama viewpoint (20 min)",
     "Higashiyama walking course, Kanazawa",
     "Takayama's Higashiyama temple walk (your solo days)"
    ],
@@ -2685,7 +2664,7 @@
     "Kenrokuen, one of Japan's three great gardens",
     "Higashi Chaya and Kazue-machi teahouse districts",
     "21st Century Museum and the D.T. Suzuki Museum",
-    "Shirakawa-go's gassho farmhouses (UNESCO)"
+    "Shirakawa-go's thatched farmhouses (your solo ride)"
    ],
    "adventure": [
     {
@@ -2699,15 +2678,15 @@
      "note": "Kaga kaiseki, baths, the gorge outside"
     },
     {
-     "name": "Shirakawa-go: the Wada house",
-     "price": "¥400",
-     "note": "Inside the largest thatched farmhouse"
+     "name": "Bus + Machi-nori day ticket",
+     "price": "¥2,000 each",
+     "note": "Unlimited city buses and bike-share for a day (app ticket)"
     }
    ],
    "pros": [
-    "Japan's best-kept old city: gardens, teahouses, samurai lanes",
+    "Japan's best-kept old city, flat and easy by bike",
     "Excellent food: Omicho's seafood, Kaga cuisine",
-    "Only two beds together, all short hops",
+    "Only two beds together and under 1h of transport after the flight",
     "A ryokan night to finish"
    ],
    "cons": [
@@ -2716,13 +2695,13 @@
     "Rainiest of the shortlist (Kanazawa 60% on Sat and Mon)",
     "Your solo days need a long ride back to Tokyo on Friday"
    ],
-   "calm": "Kanazawa at its own pace (3 nights): the garden at opening time, teahouse streets, the market; then a ryokan night by Yamanaka's gorge.",
+   "calm": "Kanazawa at its own pace (3 nights): a bike between the garden, the market and the teahouses; then a ryokan night by Yamanaka's gorge.",
    "group": "kanazawa",
    "town": "Kanazawa",
    "town_card": {
     "time": "Fly HK → Komatsu (09:30), 40 min bus",
-    "best": "Gardens, teahouse streets, seafood, a thatched village, an onsen ryokan",
-    "crowds": "Kenrokuen and Omicho busy from 10:00; Shirakawa-go done on Monday, not the holiday",
+    "best": "Gardens, teahouse streets and seafood by bike-share, an onsen ryokan",
+    "crowds": "Kenrokuen and Omicho busy from 10:00: ride there early",
     "rain": "Kanazawa is used to it: museums, teahouses, the market, the ryokan",
     "room": "Kanazawa hotel ~€75; Yamanaka ryokan with dinner ~€190"
    },
@@ -2773,11 +2752,11 @@
    "fc": {
     "score": 4.0,
     "word": "Some showers",
-    "note": "Some showers for Kanazawa, Shirakawa-go, Yamanaka Onsen, Takayama, Tokyo. 31 Oct – 4 Nov (official forecasts): wet on Mon 2 Nov; showers possible on Sat 31 Oct, Tue 3 Nov. Daytime cloud 63% on average. Checked 29 Oct 2026, 13:00 Hong Kong time; recheck on 30 Oct.",
+    "note": "Some showers for Kanazawa, Yamanaka Onsen, Shirakawa-go, Takayama, Tokyo. 31 Oct – 4 Nov (official forecasts): wet on Mon 2 Nov; showers possible on Sat 31 Oct, Tue 3 Nov. Daytime cloud 63% on average. Checked 29 Oct 2026, 13:00 Hong Kong time; recheck on 30 Oct.",
     "bases": [
      "Kanazawa",
-     "Shirakawa-go",
      "Yamanaka Onsen",
+     "Shirakawa-go",
      "Takayama",
      "Tokyo"
     ],
@@ -2806,17 +2785,6 @@
         "src": "J"
        },
        {
-        "name": "Shirakawa-go",
-        "hi": 15,
-        "lo": 8,
-        "p1": 40,
-        "p10": null,
-        "med": null,
-        "cls": "Showers",
-        "cc": 80,
-        "src": "J"
-       },
-       {
         "name": "Yamanaka Onsen",
         "hi": 18,
         "lo": 11,
@@ -2825,6 +2793,17 @@
         "med": null,
         "cls": "Wet",
         "cc": 85,
+        "src": "J"
+       },
+       {
+        "name": "Shirakawa-go",
+        "hi": 15,
+        "lo": 8,
+        "p1": 40,
+        "p10": null,
+        "med": null,
+        "cls": "Showers",
+        "cc": 80,
         "src": "J"
        },
        {
@@ -2875,17 +2854,6 @@
         "src": "J"
        },
        {
-        "name": "Shirakawa-go",
-        "hi": 16,
-        "lo": 6,
-        "p1": 20,
-        "p10": null,
-        "med": null,
-        "cls": "Dry",
-        "cc": 35,
-        "src": "J"
-       },
-       {
         "name": "Yamanaka Onsen",
         "hi": 16,
         "lo": 10,
@@ -2894,6 +2862,17 @@
         "med": null,
         "cls": "Dry",
         "cc": 60,
+        "src": "J"
+       },
+       {
+        "name": "Shirakawa-go",
+        "hi": 16,
+        "lo": 6,
+        "p1": 20,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 35,
         "src": "J"
        },
        {
@@ -2944,9 +2923,9 @@
         "src": "J"
        },
        {
-        "name": "Shirakawa-go",
-        "hi": 15,
-        "lo": 9,
+        "name": "Yamanaka Onsen",
+        "hi": 17,
+        "lo": 11,
         "p1": 60,
         "p10": null,
         "med": null,
@@ -2955,9 +2934,9 @@
         "src": "J"
        },
        {
-        "name": "Yamanaka Onsen",
-        "hi": 17,
-        "lo": 11,
+        "name": "Shirakawa-go",
+        "hi": 15,
+        "lo": 9,
         "p1": 60,
         "p10": null,
         "med": null,
@@ -3013,9 +2992,9 @@
         "src": "J"
        },
        {
-        "name": "Shirakawa-go",
-        "hi": 14,
-        "lo": 5,
+        "name": "Yamanaka Onsen",
+        "hi": 15,
+        "lo": 9,
         "p1": 40,
         "p10": null,
         "med": null,
@@ -3024,9 +3003,9 @@
         "src": "J"
        },
        {
-        "name": "Yamanaka Onsen",
-        "hi": 15,
-        "lo": 9,
+        "name": "Shirakawa-go",
+        "hi": 14,
+        "lo": 5,
         "p1": 40,
         "p10": null,
         "med": null,
@@ -3082,10 +3061,10 @@
         "src": "J"
        },
        {
-        "name": "Shirakawa-go",
-        "hi": 13,
-        "lo": 4,
-        "p1": 20,
+        "name": "Yamanaka Onsen",
+        "hi": 14,
+        "lo": 7,
+        "p1": 30,
         "p10": null,
         "med": null,
         "cls": "Dry",
@@ -3093,10 +3072,10 @@
         "src": "J"
        },
        {
-        "name": "Yamanaka Onsen",
-        "hi": 14,
-        "lo": 7,
-        "p1": 30,
+        "name": "Shirakawa-go",
+        "hi": 13,
+        "lo": 4,
+        "p1": 20,
         "p10": null,
         "med": null,
         "cls": "Dry",
@@ -3151,17 +3130,6 @@
         "src": "E"
        },
        {
-        "name": "Shirakawa-go",
-        "hi": 15,
-        "lo": 3,
-        "p1": 35,
-        "p10": 8,
-        "med": 0.0,
-        "cls": "Dry",
-        "cc": 56,
-        "src": "E"
-       },
-       {
         "name": "Yamanaka Onsen",
         "hi": 15,
         "lo": 7,
@@ -3170,6 +3138,17 @@
         "med": 0.2,
         "cls": "Dry",
         "cc": 43,
+        "src": "E"
+       },
+       {
+        "name": "Shirakawa-go",
+        "hi": 15,
+        "lo": 3,
+        "p1": 35,
+        "p10": 8,
+        "med": 0.0,
+        "cls": "Dry",
+        "cc": 56,
         "src": "E"
        },
        {
@@ -3220,17 +3199,6 @@
         "src": "E"
        },
        {
-        "name": "Shirakawa-go",
-        "hi": 15,
-        "lo": 4,
-        "p1": 31,
-        "p10": 6,
-        "med": 0.2,
-        "cls": "Dry",
-        "cc": 54,
-        "src": "E"
-       },
-       {
         "name": "Yamanaka Onsen",
         "hi": 16,
         "lo": 8,
@@ -3239,6 +3207,17 @@
         "med": 0.4,
         "cls": "Dry",
         "cc": 45,
+        "src": "E"
+       },
+       {
+        "name": "Shirakawa-go",
+        "hi": 15,
+        "lo": 4,
+        "p1": 31,
+        "p10": 6,
+        "med": 0.2,
+        "cls": "Dry",
+        "cc": 54,
         "src": "E"
        },
        {
@@ -3289,17 +3268,6 @@
         "src": "E"
        },
        {
-        "name": "Shirakawa-go",
-        "hi": 16,
-        "lo": 5,
-        "p1": 49,
-        "p10": 8,
-        "med": 0.8,
-        "cls": "Dry",
-        "cc": 68,
-        "src": "E"
-       },
-       {
         "name": "Yamanaka Onsen",
         "hi": 17,
         "lo": 9,
@@ -3308,6 +3276,17 @@
         "med": 0.6,
         "cls": "Dry",
         "cc": 50,
+        "src": "E"
+       },
+       {
+        "name": "Shirakawa-go",
+        "hi": 16,
+        "lo": 5,
+        "p1": 49,
+        "p10": 8,
+        "med": 0.8,
+        "cls": "Dry",
+        "cc": 68,
         "src": "E"
        },
        {
@@ -3434,104 +3413,6 @@
        "src": "E"
       }
      ],
-     "Shirakawa-go": [
-      {
-       "md": "10-31",
-       "label": "Sat 31 Oct",
-       "p10": null,
-       "med": null,
-       "cls": "Showers",
-       "cc": 80,
-       "p1": 40,
-       "hi": 15,
-       "lo": 8,
-       "src": "J"
-      },
-      {
-       "md": "11-01",
-       "label": "Sun 1 Nov",
-       "p10": null,
-       "med": null,
-       "cls": "Dry",
-       "cc": 35,
-       "p1": 20,
-       "hi": 16,
-       "lo": 6,
-       "src": "J"
-      },
-      {
-       "md": "11-02",
-       "label": "Mon 2 Nov",
-       "p10": null,
-       "med": null,
-       "cls": "Wet",
-       "cc": 85,
-       "p1": 60,
-       "hi": 15,
-       "lo": 9,
-       "src": "J"
-      },
-      {
-       "md": "11-03",
-       "label": "Tue 3 Nov",
-       "p10": null,
-       "med": null,
-       "cls": "Showers",
-       "cc": 80,
-       "p1": 40,
-       "hi": 14,
-       "lo": 5,
-       "src": "J"
-      },
-      {
-       "md": "11-04",
-       "label": "Wed 4 Nov",
-       "p10": null,
-       "med": null,
-       "cls": "Dry",
-       "cc": 60,
-       "p1": 20,
-       "hi": 13,
-       "lo": 4,
-       "src": "J"
-      },
-      {
-       "md": "11-05",
-       "label": "Thu 5 Nov",
-       "p10": 8,
-       "med": 0.0,
-       "cls": "Dry",
-       "cc": 56,
-       "p1": 35,
-       "hi": 15,
-       "lo": 3,
-       "src": "E"
-      },
-      {
-       "md": "11-06",
-       "label": "Fri 6 Nov",
-       "p10": 6,
-       "med": 0.2,
-       "cls": "Dry",
-       "cc": 54,
-       "p1": 31,
-       "hi": 15,
-       "lo": 4,
-       "src": "E"
-      },
-      {
-       "md": "11-07",
-       "label": "Sat 7 Nov",
-       "p10": 8,
-       "med": 0.8,
-       "cls": "Dry",
-       "cc": 68,
-       "p1": 49,
-       "hi": 16,
-       "lo": 5,
-       "src": "E"
-      }
-     ],
      "Yamanaka Onsen": [
       {
        "md": "10-31",
@@ -3627,6 +3508,104 @@
        "p1": 41,
        "hi": 17,
        "lo": 9,
+       "src": "E"
+      }
+     ],
+     "Shirakawa-go": [
+      {
+       "md": "10-31",
+       "label": "Sat 31 Oct",
+       "p10": null,
+       "med": null,
+       "cls": "Showers",
+       "cc": 80,
+       "p1": 40,
+       "hi": 15,
+       "lo": 8,
+       "src": "J"
+      },
+      {
+       "md": "11-01",
+       "label": "Sun 1 Nov",
+       "p10": null,
+       "med": null,
+       "cls": "Dry",
+       "cc": 35,
+       "p1": 20,
+       "hi": 16,
+       "lo": 6,
+       "src": "J"
+      },
+      {
+       "md": "11-02",
+       "label": "Mon 2 Nov",
+       "p10": null,
+       "med": null,
+       "cls": "Wet",
+       "cc": 85,
+       "p1": 60,
+       "hi": 15,
+       "lo": 9,
+       "src": "J"
+      },
+      {
+       "md": "11-03",
+       "label": "Tue 3 Nov",
+       "p10": null,
+       "med": null,
+       "cls": "Showers",
+       "cc": 80,
+       "p1": 40,
+       "hi": 14,
+       "lo": 5,
+       "src": "J"
+      },
+      {
+       "md": "11-04",
+       "label": "Wed 4 Nov",
+       "p10": null,
+       "med": null,
+       "cls": "Dry",
+       "cc": 60,
+       "p1": 20,
+       "hi": 13,
+       "lo": 4,
+       "src": "J"
+      },
+      {
+       "md": "11-05",
+       "label": "Thu 5 Nov",
+       "p10": 8,
+       "med": 0.0,
+       "cls": "Dry",
+       "cc": 56,
+       "p1": 35,
+       "hi": 15,
+       "lo": 3,
+       "src": "E"
+      },
+      {
+       "md": "11-06",
+       "label": "Fri 6 Nov",
+       "p10": 6,
+       "med": 0.2,
+       "cls": "Dry",
+       "cc": 54,
+       "p1": 31,
+       "hi": 15,
+       "lo": 4,
+       "src": "E"
+      },
+      {
+       "md": "11-07",
+       "label": "Sat 7 Nov",
+       "p10": 8,
+       "med": 0.8,
+       "cls": "Dry",
+       "cc": 68,
+       "p1": 49,
+       "hi": 16,
+       "lo": 5,
        "src": "E"
       }
      ],
@@ -3832,12 +3811,12 @@
    "options": [
     {
      "style": "Chill",
-     "name": "Kanazawa, Shirakawa-go, a Yamanaka ryokan; Takayama on your own",
+     "name": "Kanazawa by bike, a Yamanaka ryokan; Shirakawa-go and Takayama on your own",
      "chill": 80,
      "route": [
-      "Together: 3n Kanazawa (Shirakawa-go day on Monday), 1n Yamanaka onsen ryokan",
+      "Together: 3n Kanazawa (bike day Sunday), 1n Yamanaka onsen ryokan",
       "Wed: she takes the train to Kansai airport for 17:20",
-      "You: 2n Takayama, 1n Tokyo",
+      "You: Shirakawa-go on the way, 2n Takayama, 1n Tokyo",
       "Sat: Narita 17:20"
      ],
      "days": [
@@ -3870,40 +3849,34 @@
        "b": "Rain likely on arrival (60%): Kanazawa is famous for it; the teahouses and a long dinner work in the wet."
       },
       {
-       "t": "Kenrokuen, Omicho and the samurai quarter",
+       "t": "Kanazawa by bike: garden, market, samurai lanes",
+       "e": "Active",
+       "who": "both",
+       "am": "Machi-nori bike-share (bus + bike day ticket ¥2,000 in the 'Norimasshi Kanazawa' app): Kenrokuen at 8:00 opening (maples turning), the castle park next door.",
+       "pm": "Ride to Omicho market for a seafood lunch (kaisendon), then the 21st Century Museum (open Sunday) and Nagamachi's samurai lanes. Everything is 5–10 minutes apart by bike, mostly flat.",
+       "eve": "Kazue-machi's riverside teahouses at dusk; drop the bikes at any port.",
+       "sleep": "Kanazawa hotel",
+       "wx": "Kanazawa",
+       "tr": [],
+       "b": "Sunday is the dry day (30%), so the ride is today. If it rains, the same loop by the city bus (the ticket covers both)."
+      },
+      {
+       "t": "A slow, rainy day in Kanazawa",
        "e": "Easy",
        "who": "both",
-       "am": "Kenrokuen at 8:00 opening (maples turning, peak in November), then the Kanazawa castle park next door.",
-       "pm": "Omicho market for a seafood lunch (kaisendon), the 21st Century Museum (open Sunday; closes for renovation only in May 2027).",
-       "eve": "Nagamachi's samurai lanes at dusk, then Kazue-machi's riverside teahouses.",
+       "am": "Myoryuji, the 'ninja temple' full of trap doors (guided visit, book), and the Nomura samurai house's garden.",
+       "pm": "Tea and gold-leaf sweets in a Higashi Chaya teahouse; the Kanazawa castle's long storehouse (Gojikken Nagaya) inside.",
+       "eve": "Oden in an old counter bar.",
        "sleep": "Kanazawa hotel",
        "wx": "Kanazawa",
        "tr": [
         [
          "bus",
-         "Kanazawa loop bus",
-         30
+         "City bus (same day ticket)",
+         15
         ]
        ],
-       "b": null
-      },
-      {
-       "t": "Shirakawa-go",
-       "e": "Easy",
-       "who": "both",
-       "am": "08:00 bus from Kanazawa (1h15, book it): the thatched village, the Wada house, the Shiroyama viewpoint.",
-       "pm": "Lunch of Hida beef or soba in the village; afternoon bus back.",
-       "eve": "Quiet dinner in Kanazawa.",
-       "sleep": "Kanazawa hotel",
-       "wx": "Shirakawa-go",
-       "tr": [
-        [
-         "bus",
-         "Kanazawa ↔ Shirakawa-go",
-         150
-        ]
-       ],
-       "b": "Rain likely (60%): the thatched roofs in mist are the classic view; the Wada house is the dry stop."
+       "b": "Rain likely (60%): everything today is indoors or a few minutes apart."
       },
       {
        "t": "D.T. Suzuki Museum, then a ryokan in Yamanaka",
@@ -3933,10 +3906,10 @@
        "e": "Travel",
        "who": "split",
        "am": "Bath before breakfast, the Korogi bridge in the gorge.",
-       "pm": "11:30 bus to Kaga-Onsen together. She: shinkansen to Tsuruga, Thunderbird to Shin-Osaka, Haruka to Kansai for HK Express 17:20 (lands HK 21:00). You: back to Kanazawa, bus to Takayama (about 2h15).",
+       "pm": "11:30 bus to Kaga-Onsen together. She: shinkansen to Tsuruga, Thunderbird to Shin-Osaka, Haruka to Kansai for HK Express 17:20 (lands HK 21:00). You: back to Kanazawa, bus to Shirakawa-go (1h15): the thatched village and the Wada house, then on to Takayama (50 min).",
        "eve": "You: Takayama's old town by night.",
        "sleep": "You: Takayama hostel",
-       "wx": "Takayama",
+       "wx": "Shirakawa-go",
        "tr": [
         [
          "bus",
@@ -3950,8 +3923,8 @@
         ],
         [
          "bus",
-         "Kanazawa → Takayama",
-         135
+         "Kanazawa → Shirakawa-go → Takayama",
+         125
         ]
        ],
        "b": null
@@ -4060,14 +4033,14 @@
        "solo": true
       }
      ],
-     "transport_pp": 62,
+     "transport_pp": 32,
      "shared": 0,
-     "activities_pp": 25,
-     "solo_transport": 146,
+     "activities_pp": 35,
+     "solo_transport": 150,
      "solo_activities": 15,
      "her_extra": 60,
-     "travel": 1030,
-     "together_travel": 695,
+     "travel": 855,
+     "together_travel": 345,
      "beds": 2,
      "solo_beds": 2,
      "moves": 3,
@@ -4078,20 +4051,20 @@
       "his": 571,
       "rooms": 415,
       "food": 190.4,
-      "transport": 124,
-      "activities": 50,
+      "transport": 64,
+      "activities": 70,
       "misc": 40,
       "solo_rooms": 95,
       "solo_food": 75.0,
-      "solo_transport": 146,
+      "solo_transport": 150,
       "solo_activities": 15,
-      "solo": 331.0,
+      "solo": 335.0,
       "flights": 1161,
-      "together": 819.4,
-      "ground": 1150.4,
-      "total": 2311,
-      "his_share": 1517,
-      "her_share": 795
+      "together": 779.4,
+      "ground": 1114.4,
+      "total": 2275,
+      "his_share": 1501,
+      "her_share": 775
      }
     }
    ]
@@ -4106,7 +4079,7 @@
    "tagline": "Fly straight to Kanazawa for two nights of gardens, teahouses and seafood, then the shinkansen to Tokyo for Meiji Jingu's festival and a slow last day.",
    "food_day": 28,
    "solo_food": 25,
-   "transport": "Airport bus Komatsu → Kanazawa, the loop bus, then the Hokuriku shinkansen Kanazawa → Ueno (2h30, about ¥14,400 each). Suica in Tokyo; she leaves Ueno on the Skyliner.",
+   "transport": "Airport bus Komatsu → Kanazawa, Machi-nori bike-share on Sunday, then the Hokuriku shinkansen Kanazawa → Ueno (2h30, about ¥14,400 each). Suica in Tokyo; she leaves Ueno on the Skyliner.",
    "crowds": "Kenrokuen and Omicho fill from 10:00 on Sunday. Tue 3 Nov is busy in Tokyo, which absorbs it; Meiji Jingu's festival draws a crowd from late morning.",
    "food": [
     "Omicho market: kaisendon, oysters, nodoguro",
@@ -4115,7 +4088,7 @@
     "Ekiben on the shinkansen"
    ],
    "hikes": [
-    "Higashiyama walking course, Kanazawa",
+    "Kanazawa by Machi-nori bike-share (Sunday)",
     "Yanaka and Ueno park on foot",
     "Mt Takao from Tokyo (your Thursday)",
     "Kamakura's Daibutsu hiking course (your Friday)"
@@ -4748,22 +4721,16 @@
        "b": "Rain likely on arrival (60%): Kanazawa is famous for it; the teahouses and a long dinner work in the wet."
       },
       {
-       "t": "Kenrokuen, Omicho and the samurai quarter",
-       "e": "Easy",
+       "t": "Kanazawa by bike: garden, market, samurai lanes",
+       "e": "Active",
        "who": "both",
-       "am": "Kenrokuen at 8:00 opening (maples turning, peak in November), then the Kanazawa castle park next door.",
-       "pm": "Omicho market for a seafood lunch (kaisendon), the 21st Century Museum (open Sunday; closes for renovation only in May 2027).",
-       "eve": "Nagamachi's samurai lanes at dusk, then Kazue-machi's riverside teahouses.",
+       "am": "Machi-nori bike-share (bus + bike day ticket ¥2,000 in the 'Norimasshi Kanazawa' app): Kenrokuen at 8:00 opening (maples turning), the castle park next door.",
+       "pm": "Ride to Omicho market for a seafood lunch (kaisendon), then the 21st Century Museum (open Sunday) and Nagamachi's samurai lanes. Everything is 5–10 minutes apart by bike, mostly flat.",
+       "eve": "Kazue-machi's riverside teahouses at dusk; drop the bikes at any port.",
        "sleep": "Kanazawa hotel",
        "wx": "Kanazawa",
-       "tr": [
-        [
-         "bus",
-         "Kanazawa loop bus",
-         30
-        ]
-       ],
-       "b": null
+       "tr": [],
+       "b": "Sunday is the dry day (30%), so the ride is today. If it rains, the same loop by the city bus (the ticket covers both)."
       },
       {
        "t": "Shinkansen to Tokyo, Asakusa",
@@ -4923,14 +4890,14 @@
        "solo": true
       }
      ],
-     "transport_pp": 112,
+     "transport_pp": 108,
      "shared": 0,
-     "activities_pp": 25,
+     "activities_pp": 35,
      "solo_transport": 45,
      "solo_activities": 15,
      "her_extra": 0,
-     "travel": 835,
-     "together_travel": 550,
+     "travel": 805,
+     "together_travel": 500,
      "beds": 2,
      "solo_beds": 1,
      "moves": 1,
@@ -4941,8 +4908,8 @@
       "his": 571,
       "rooms": 320,
       "food": 224.0,
-      "transport": 224,
-      "activities": 50,
+      "transport": 216,
+      "activities": 70,
       "misc": 40,
       "solo_rooms": 105,
       "solo_food": 75.0,
@@ -4950,11 +4917,11 @@
       "solo_activities": 15,
       "solo": 240.0,
       "flights": 1111,
-      "together": 858.0,
-      "ground": 1098.0,
-      "total": 2209,
-      "his_share": 1445,
-      "her_share": 764
+      "together": 870.0,
+      "ground": 1110.0,
+      "total": 2221,
+      "his_share": 1451,
+      "her_share": 770
      }
     }
    ]
@@ -4962,62 +4929,63 @@
   {
    "id": "jp-kansai",
    "country": "Japan",
-   "region": "Nara, Koyasan & Kumano",
+   "region": "Nara, Asuka & Kumano",
    "cc": "JP",
    "short": "Japan · Nara & Kumano",
-   "title": "Nara, Koyasan & the Kumano Kodo (no Kyoto)",
-   "tagline": "Nara at dawn and a night in a mountain temple together; then the Kumano Kodo pilgrim trail on your own.",
+   "title": "Nara slow, Asuka by bike & the Kumano Kodo (no Kyoto)",
+   "tagline": "Four nights in one Nara hotel: the deer and the Great Buddha at dawn, a bike day through Asuka's rice fields and ancient tombs; then the Kumano Kodo on your own.",
    "food_day": 28,
    "solo_food": 25,
-   "transport": "Trains (ICOCA card), Nankai to Koyasan, buses in Kumano (confirm times the day before). Luggage can be sent ahead by takkyubin.",
-   "crowds": "Nara park fills by 10:00; dawn and evening are empty. Koyasan and Kumano are calm, and your Kumano days are weekdays.",
+   "transport": "Limousine bus Kansai airport ↔ Nara (1h35), Kintetsu trains to Asuka (about 1h), ICOCA card. Your Kumano days: buses (confirm times the day before).",
+   "crowds": "Nara park fills by 10:00; dawn and evening are empty. Asuka is quiet even on the 3 Nov holiday. Your Kumano days are weekdays.",
    "food": [
-    "Osaka: takoyaki, kushikatsu, okonomiyaki",
-    "Nara: kakinoha-zushi (persimmon-leaf sushi), mochi",
-    "Shojin ryori: the monks' vegan dinner at Koyasan",
-    "Onsen-boiled eggs and river fish at Yunomine"
+    "Nara: kakinoha-zushi (persimmon-leaf sushi), mochi pounded at Nakatanidou",
+    "Sake tasting at Harushika in Naramachi",
+    "Miwa somen noodles",
+    "Onsen-boiled eggs and river fish at Yunomine (your solo days)"
    ],
    "hikes": [
-    "Kasuga primeval-forest trail, Nara (2h)",
-    "Kumano Kodo: Takijiri → Chikatsuyu (14 km)",
-    "Kumano Kodo: Hosshinmon-oji → Hongu Taisha (7 km)"
+    "Asuka by e-bike: Asuka-dera, Ishibutai, the Inabuchi rice terraces (about 15 km, gentle)",
+    "Kasuga primeval-forest path, Nara (1–2h)",
+    "Kumano Kodo: Takijiri → Chikatsuyu (14 km, solo)",
+    "Kumano Kodo: Hosshinmon-oji → Hongu Taisha (7 km, solo)"
    ],
    "culture": [
     "Todai-ji's Great Buddha",
     "Kasuga Taisha's 3,000 lanterns",
-    "Okunoin cemetery by lantern light",
-    "Kumano Hongu Taisha and the giant torii at Oyunohara"
+    "Asuka-dera, Japan's oldest Buddhist temple, and the Ishibutai stone tomb",
+    "Kofuku-ji's national treasure hall"
    ],
    "adventure": [
     {
-     "name": "Temple stay at Koyasan",
-     "price": "~¥28,000 for two with 2 meals",
-     "note": "Private tatami room, morning prayers, fire ceremony"
+     "name": "Asuka by e-bike",
+     "price": "~¥1,700 a day each",
+     "note": "Rentals in front of Kintetsu Asuka station, 8:30–17:00, cash"
+    },
+    {
+     "name": "Harushika sake tasting",
+     "price": "~¥1,000",
+     "note": "Five sakes and the glass to keep, in Naramachi"
     },
     {
      "name": "Bathe in Tsuboyu, Yunomine",
      "price": "¥800 per 30 min (private)",
-     "note": "The only UNESCO-listed hot spring you can bathe in"
-    },
-    {
-     "name": "Kumano stamp book",
-     "price": "free",
-     "note": "Stamp boxes at each oji shrine"
+     "note": "Your solo days: the only UNESCO-listed hot spring you can bathe in"
     }
    ],
    "pros": [
+    "One hotel for all four nights together",
     "No Kyoto, nothing missing: Nara is older and calmer",
-    "The temple night is made for two",
-    "Your solo days on the Kumano Kodo, the best walk on the list",
-    "Dry from 3 Nov on (forecast 27 Oct)"
+    "An easy bike day through the countryside",
+    "Your solo days on the Kumano Kodo, the best walk on the list"
    ],
    "cons": [
-    "Mon 2 Nov: 50% chance of rain on the Kii mountains (29 Oct forecast)",
-    "Kumano buses are infrequent",
-    "Kumano and Koyasan rooms book out: reserve today",
+    "Mon 2 Nov: 50% chance of rain (a slow day in town)",
+    "Kumano buses are infrequent (your solo days)",
+    "Kumano inns book out: reserve today",
     "Your flight home is the priciest (€618)"
    ],
-   "calm": "Nara at dawn and the Koyasan temple night together. Then the Kumano Kodo on your own, ending in the Yunomine onsen village.",
+   "calm": "Nara at dawn and dusk, when the day-trippers have gone, four nights in the same place, and one bike day through Asuka's fields.",
    "group": "other",
    "town": null,
    "town_card": null,
@@ -5055,31 +5023,30 @@
     "sky": "mostly blue"
    },
    "scores": {
-    "hike": 5,
+    "hike": 4.5,
     "nature": 4.5,
-    "food": 5,
+    "food": 4.5,
     "culture": 5,
-    "chill": 4,
+    "chill": 4.5,
     "weather": 4.25,
-    "value": 2,
-    "ease": 4
+    "value": 2.5,
+    "ease": 4.5
    },
-   "fit": 86,
+   "fit": 87,
    "fc": {
     "score": 4.5,
     "word": "Mostly dry",
-    "note": "Mostly dry for Osaka, Koyasan, Kumano Hongu. 31 Oct – 4 Nov (official forecasts): no wet day; showers possible on Mon 2 Nov. Daytime cloud 57% on average. Checked 29 Oct 2026, 13:00 Hong Kong time; recheck on 30 Oct.",
+    "note": "Mostly dry for Osaka, Kumano Hongu. 31 Oct – 4 Nov (official forecasts): no wet day; showers possible on Mon 2 Nov. Daytime cloud 56% on average. Checked 29 Oct 2026, 13:00 Hong Kong time; recheck on 30 Oct.",
     "bases": [
      "Osaka",
-     "Koyasan",
      "Kumano Hongu"
     ],
     "days": [
      {
       "cls": "Dry",
       "pts": 1.0,
-      "p1": 17,
-      "cc": 67,
+      "p1": 20,
+      "cc": 70,
       "md": "10-31",
       "label": "Sat 31 Oct",
       "ahead": 2,
@@ -5096,17 +5063,6 @@
         "med": null,
         "cls": "Dry",
         "cc": 80,
-        "src": "J"
-       },
-       {
-        "name": "Koyasan",
-        "hi": 15,
-        "lo": 7,
-        "p1": 10,
-        "p10": null,
-        "med": null,
-        "cls": "Dry",
-        "cc": 60,
         "src": "J"
        },
        {
@@ -5138,17 +5094,6 @@
         "name": "Osaka",
         "hi": 22,
         "lo": 13,
-        "p1": 20,
-        "p10": null,
-        "med": null,
-        "cls": "Dry",
-        "cc": 35,
-        "src": "J"
-       },
-       {
-        "name": "Koyasan",
-        "hi": 15,
-        "lo": 6,
         "p1": 20,
         "p10": null,
         "med": null,
@@ -5193,17 +5138,6 @@
         "src": "J"
        },
        {
-        "name": "Koyasan",
-        "hi": 17,
-        "lo": 7,
-        "p1": 50,
-        "p10": null,
-        "med": null,
-        "cls": "Showers",
-        "cc": 85,
-        "src": "J"
-       },
-       {
         "name": "Kumano Hongu",
         "hi": 22,
         "lo": 12,
@@ -5219,8 +5153,8 @@
      {
       "cls": "Dry",
       "pts": 1.0,
-      "p1": 23,
-      "cc": 43,
+      "p1": 25,
+      "cc": 48,
       "md": "11-03",
       "label": "Tue 3 Nov",
       "ahead": 5,
@@ -5240,17 +5174,6 @@
         "src": "J"
        },
        {
-        "name": "Koyasan",
-        "hi": 13,
-        "lo": 5,
-        "p1": 20,
-        "p10": null,
-        "med": null,
-        "cls": "Dry",
-        "cc": 35,
-        "src": "J"
-       },
-       {
         "name": "Kumano Hongu",
         "hi": 20,
         "lo": 10,
@@ -5266,7 +5189,7 @@
      {
       "cls": "Dry",
       "pts": 1.0,
-      "p1": 27,
+      "p1": 25,
       "cc": 60,
       "md": "11-04",
       "label": "Wed 4 Nov",
@@ -5287,17 +5210,6 @@
         "src": "J"
        },
        {
-        "name": "Koyasan",
-        "hi": 12,
-        "lo": 4,
-        "p1": 30,
-        "p10": null,
-        "med": null,
-        "cls": "Dry",
-        "cc": 60,
-        "src": "J"
-       },
-       {
         "name": "Kumano Hongu",
         "hi": 18,
         "lo": 9,
@@ -5311,10 +5223,10 @@
       ]
      },
      {
-      "cls": "Showers",
-      "pts": 0.8,
-      "p1": 38,
-      "cc": 70,
+      "cls": "Dry",
+      "pts": 0.85,
+      "p1": 32,
+      "cc": 62,
       "md": "11-05",
       "label": "Thu 5 Nov",
       "ahead": 7,
@@ -5334,17 +5246,6 @@
         "src": "E"
        },
        {
-        "name": "Koyasan",
-        "hi": 12,
-        "lo": 4,
-        "p1": 50,
-        "p10": null,
-        "med": null,
-        "cls": "Showers",
-        "cc": 85,
-        "src": "J"
-       },
-       {
         "name": "Kumano Hongu",
         "hi": 18,
         "lo": 9,
@@ -5360,8 +5261,8 @@
      {
       "cls": "Dry",
       "pts": 1.0,
-      "p1": 31,
-      "cc": 45,
+      "p1": 30,
+      "cc": 42,
       "md": "11-06",
       "label": "Fri 6 Nov",
       "ahead": 8,
@@ -5381,17 +5282,6 @@
         "src": "E"
        },
        {
-        "name": "Koyasan",
-        "hi": 13,
-        "lo": 4,
-        "p1": 33,
-        "p10": 14,
-        "med": 0.2,
-        "cls": "Dry",
-        "cc": 51,
-        "src": "E"
-       },
-       {
         "name": "Kumano Hongu",
         "hi": 19,
         "lo": 10,
@@ -5407,8 +5297,8 @@
      {
       "cls": "Dry",
       "pts": 1.0,
-      "p1": 29,
-      "cc": 49,
+      "p1": 28,
+      "cc": 48,
       "md": "11-07",
       "label": "Sat 7 Nov",
       "ahead": 9,
@@ -5425,17 +5315,6 @@
         "med": 0.0,
         "cls": "Dry",
         "cc": 43,
-        "src": "E"
-       },
-       {
-        "name": "Koyasan",
-        "hi": 15,
-        "lo": 5,
-        "p1": 31,
-        "p10": 8,
-        "med": 0.0,
-        "cls": "Dry",
-        "cc": 52,
         "src": "E"
        },
        {
@@ -5551,104 +5430,6 @@
        "src": "E"
       }
      ],
-     "Koyasan": [
-      {
-       "md": "10-31",
-       "label": "Sat 31 Oct",
-       "p10": null,
-       "med": null,
-       "cls": "Dry",
-       "cc": 60,
-       "p1": 10,
-       "hi": 15,
-       "lo": 7,
-       "src": "J"
-      },
-      {
-       "md": "11-01",
-       "label": "Sun 1 Nov",
-       "p10": null,
-       "med": null,
-       "cls": "Dry",
-       "cc": 35,
-       "p1": 20,
-       "hi": 15,
-       "lo": 6,
-       "src": "J"
-      },
-      {
-       "md": "11-02",
-       "label": "Mon 2 Nov",
-       "p10": null,
-       "med": null,
-       "cls": "Showers",
-       "cc": 85,
-       "p1": 50,
-       "hi": 17,
-       "lo": 7,
-       "src": "J"
-      },
-      {
-       "md": "11-03",
-       "label": "Tue 3 Nov",
-       "p10": null,
-       "med": null,
-       "cls": "Dry",
-       "cc": 35,
-       "p1": 20,
-       "hi": 13,
-       "lo": 5,
-       "src": "J"
-      },
-      {
-       "md": "11-04",
-       "label": "Wed 4 Nov",
-       "p10": null,
-       "med": null,
-       "cls": "Dry",
-       "cc": 60,
-       "p1": 30,
-       "hi": 12,
-       "lo": 4,
-       "src": "J"
-      },
-      {
-       "md": "11-05",
-       "label": "Thu 5 Nov",
-       "p10": null,
-       "med": null,
-       "cls": "Showers",
-       "cc": 85,
-       "p1": 50,
-       "hi": 12,
-       "lo": 4,
-       "src": "J"
-      },
-      {
-       "md": "11-06",
-       "label": "Fri 6 Nov",
-       "p10": 14,
-       "med": 0.2,
-       "cls": "Dry",
-       "cc": 51,
-       "p1": 33,
-       "hi": 13,
-       "lo": 4,
-       "src": "E"
-      },
-      {
-       "md": "11-07",
-       "label": "Sat 7 Nov",
-       "p10": 8,
-       "med": 0.0,
-       "cls": "Dry",
-       "cc": 52,
-       "p1": 31,
-       "hi": 15,
-       "lo": 5,
-       "src": "E"
-      }
-     ],
      "Kumano Hongu": [
       {
        "md": "10-31",
@@ -5748,16 +5529,16 @@
       }
      ]
     },
-    "cc": 57
+    "cc": 56
    },
    "options": [
     {
      "style": "Chill",
-     "name": "Nara, a temple night, Osaka; the Kumano Kodo on your own",
-     "chill": 70,
+     "name": "Four nights in Nara with an Asuka bike day; the Kumano Kodo on your own",
+     "chill": 80,
      "route": [
-      "Together: 2n Nara, 1n Koyasan temple, 1n Osaka",
-      "Wed: Osaka, she flies from Kansai 17:20",
+      "Together: 4n Nara (Asuka by bike on Tuesday)",
+      "Wed: bus to Kansai together, she flies 17:20",
       "You: 1n Kii-Tanabe, 1n Chikatsuyu, 1n Yunomine",
       "Sat: Kansai 19:05"
      ],
@@ -5795,7 +5576,7 @@
        "e": "Easy",
        "who": "both",
        "am": "Todai-ji at 7:30 opening; the deer, Nigatsu-do's balcony view.",
-       "pm": "Isuien garden, then Naramachi's old houses and cafés.",
+       "pm": "Kasuga Taisha's lanterns and the primeval-forest path, then Isuien garden.",
        "eve": "Kakinoha-zushi and sake in Naramachi.",
        "sleep": "Nara hotel",
        "wx": "Osaka",
@@ -5803,65 +5584,54 @@
        "b": null
       },
       {
-       "t": "Up to Koyasan",
-       "e": "Travel",
+       "t": "A slow, rainy day in Nara",
+       "e": "Easy",
        "who": "both",
-       "am": "Kintetsu + Nankai via Hashimoto (2h), cable car up.",
-       "pm": "Kongobu-ji's rock garden and the covered halls of the Danjo Garan.",
-       "eve": "Shojin dinner, then Okunoin's lanterns if the rain eases.",
-       "sleep": "Koyasan shukubo",
-       "wx": "Koyasan",
-       "tr": [
-        [
-         "train",
-         "Nara → Hashimoto → Gokurakubashi",
-         120
-        ],
-        [
-         "cable",
-         "Cable car + bus to Koyasan",
-         20
-        ]
-       ],
-       "b": "Rain is possible (50%): a temple is the right place for it."
+       "am": "Kofuku-ji's national treasure hall (open daily) and its five-storey pagoda.",
+       "pm": "Naramachi's old merchant houses, Harushika sake tasting, cafés.",
+       "eve": "Sento, then an izakaya.",
+       "sleep": "Nara hotel",
+       "wx": "Osaka",
+       "tr": [],
+       "b": "Rain likely (50%): today is all indoors or a few minutes' walk."
       },
       {
-       "t": "Morning prayers, down to Osaka",
-       "e": "Travel",
+       "t": "Asuka by bike",
+       "e": "Active",
        "who": "both",
-       "am": "06:00 fire ceremony, temple breakfast, Okunoin in daylight.",
-       "pm": "Nankai to Namba (1h50); Shitennoji.",
-       "eve": "Dotonbori and Shinsekai: kushikatsu.",
-       "sleep": "Osaka hotel (Namba)",
+       "am": "Kintetsu to Asuka (about 1h, change at Yamato-Saidaiji and Kashihara-jingu-mae); e-bikes in front of the station (~¥1,700, cash).",
+       "pm": "Asuka-dera's 1,400-year-old Buddha, the Ishibutai stone tomb, the Inabuchi rice terraces, the view from Amakashi hill (about 15 km of quiet lanes).",
+       "eve": "Back to Nara; dinner near the hotel.",
+       "sleep": "Nara hotel",
        "wx": "Osaka",
        "tr": [
         [
-         "cable",
-         "Koyasan → Gokurakubashi",
-         20
-        ],
-        [
          "train",
-         "Gokurakubashi → Namba",
-         90
+         "Nara ↔ Asuka (Kintetsu)",
+         120
         ]
        ],
-       "b": null
+       "b": "The dry day (20%), and the holiday crowds stay in Nara and Kyoto, not in Asuka."
       },
       {
-       "t": "Osaka; she flies at 17:20",
+       "t": "Kasuga's forest; bus to Kansai together",
        "e": "Travel",
        "who": "split",
-       "am": "Kuromon market and Nakazakicho's lanes together.",
-       "pm": "She takes the Nankai to Kansai ~15:00 for HK Express 17:20 (lands HK 21:00). You: Kuroshio express from Tennoji to Kii-Tanabe (2h15).",
+       "am": "A last walk in Kasuga's forest and Nara park.",
+       "pm": "13:30 limousine bus to Kansai together (1h35). She: HK Express 17:20 (lands HK 21:00). You: train to Hineno (10 min), Kuroshio express to Kii-Tanabe (1h30).",
        "eve": "You: Tanabe's izakaya street.",
        "sleep": "You: Kii-Tanabe guesthouse",
        "wx": "Osaka",
        "tr": [
         [
+         "bus",
+         "Nara → Kansai airport",
+         95
+        ],
+        [
          "train",
-         "Osaka → Kii-Tanabe",
-         135
+         "Kansai → Hineno → Kii-Tanabe",
+         100
         ]
        ],
        "b": null
@@ -5933,7 +5703,7 @@
      ],
      "nights": [
       {
-       "place": "Nara hotel double",
+       "place": "Nara hotel double (near Kintetsu-Nara)",
        "room": 68,
        "meals": false,
        "solo": false
@@ -5945,13 +5715,13 @@
        "solo": false
       },
       {
-       "place": "Koyasan shukubo, dinner + breakfast",
-       "room": 158,
-       "meals": true,
+       "place": "Nara",
+       "room": 68,
+       "meals": false,
        "solo": false
       },
       {
-       "place": "Osaka (Namba) hotel double",
+       "place": "Nara",
        "room": 68,
        "meals": false,
        "solo": false
@@ -5975,26 +5745,26 @@
        "solo": true
       }
      ],
-     "transport_pp": 60,
+     "transport_pp": 35,
      "shared": 0,
-     "activities_pp": 25,
+     "activities_pp": 30,
      "solo_transport": 84,
      "solo_activities": 10,
      "her_extra": 0,
-     "travel": 1075,
-     "together_travel": 720,
-     "beds": 3,
+     "travel": 1005,
+     "together_travel": 455,
+     "beds": 1,
      "solo_beds": 3,
-     "moves": 5,
+     "moves": 3,
      "cost": {
       "out": 228,
       "her": 120,
       "her_train": 0,
       "his": 618,
-      "rooms": 362,
-      "food": 190.4,
-      "transport": 120,
-      "activities": 50,
+      "rooms": 272,
+      "food": 224.0,
+      "transport": 70,
+      "activities": 60,
       "misc": 40,
       "solo_rooms": 200,
       "solo_food": 45.0,
@@ -6002,11 +5772,11 @@
       "solo_activities": 10,
       "solo": 339.0,
       "flights": 966,
-      "together": 762.4,
-      "ground": 1101.4,
-      "total": 2067,
-      "his_share": 1452,
-      "her_share": 615
+      "together": 666.0,
+      "ground": 1005.0,
+      "total": 1971,
+      "his_share": 1404,
+      "her_share": 567
      }
     }
    ]
@@ -6017,60 +5787,60 @@
    "region": "Fukuoka, Yufuin & Kurokawa",
    "cc": "JP",
    "short": "Japan · Kyushu",
-   "title": "Kyushu: a festival, onsen towns and volcano views",
-   "tagline": "Fukuoka's food stalls, an onsen town, and the Karatsu Kunchi floats on her last day; then Kurokawa and the Kuju peaks on your own.",
+   "title": "Kyushu: Fukuoka by the sea and Yufuin's onsen",
+   "tagline": "Fukuoka's food stalls and a bike ride through a seaside park, then two nights in Yufuin's hot springs; Kurokawa and the Kuju peaks on your own.",
    "food_day": 26,
    "solo_food": 25,
-   "transport": "Highway buses between Fukuoka, Yufuin and Kurokawa (book ahead), JR to Karatsu. Fukuoka airport is 5 min from Hakata.",
-   "crowds": "Karatsu fills for the Kunchi (2–4 Nov). Yufuin's main street is busy at midday; mornings by Lake Kinrin are empty.",
+   "transport": "JR or the ferry to Uminonakamichi, one highway bus Fukuoka → Yufuin (book ahead). She goes from Yufuin to Fukuoka airport by highway bus on Wednesday. Fukuoka airport is 5 min from Hakata.",
+   "crowds": "Yufuin's main street is busy at midday; mornings by Lake Kinrin are empty. The seaside park is busy only on weekend afternoons.",
    "food": [
     "Fukuoka: tonkotsu ramen and yatai stalls by the river",
     "Mentaiko, motsunabe",
     "Bungo beef and toriten in Oita",
-    "Kaiseki at a Kurokawa inn"
+    "Kaiseki at a Kurokawa inn (your solo days)"
    ],
    "hikes": [
-    "Mt Homan above Dazaifu (3h)",
-    "Kuju: Makinoto pass → Nakadake, Kyushu's highest (5–6h)",
+    "Uminonakamichi seaside park by bike (flat, along the sea)",
     "Lake Kinrin and Yufuin's back lanes",
-    "Nokonoshima island paths"
+    "Kuju: Makinoto pass → Nakadake, Kyushu's highest (solo)",
+    "Mt Homan above Dazaifu (solo, Friday)"
    ],
    "culture": [
-    "Karatsu Kunchi: 14 giant lacquered floats (2–4 Nov)",
-    "Dazaifu Tenmangu shrine",
-    "Kurokawa's onsen-hopping with a wooden pass",
-    "Kyushu National Museum"
+    "Fukuoka's yatai food stalls",
+    "Kushida shrine and Hakata's old temples",
+    "Yufuin's galleries and craft shops",
+    "Dazaifu Tenmangu (your Friday)"
    ],
    "adventure": [
     {
-     "name": "Karatsu Kunchi",
-     "price": "free",
-     "note": "Wed 4 Nov: the floats parade round the old town, then she flies at 20:00"
+     "name": "Uminonakamichi by bike",
+     "price": "park ¥450 + bike rental",
+     "note": "Autumn-flower festival until 15 Nov: roses, pampas grass, the flower museum"
+    },
+    {
+     "name": "Private onsen in Yufuin",
+     "price": "~¥2,000 per hour for two",
+     "note": "A family bath (kashikiri) with a view of Mt Yufu"
     },
     {
      "name": "Kurokawa onsen pass (nyuto tegata)",
      "price": "¥1,500",
-     "note": "Three outdoor baths of your choice"
-    },
-    {
-     "name": "Kuju highlands hike",
-     "price": "taxi ~¥6,000",
-     "note": "Alert level 1 (normal); Aso is at level 2, so its crater zone is closed"
+     "note": "Your solo days: three outdoor baths"
     }
    ],
    "pros": [
-    "Bluest skies in the 27 Oct forecast",
-    "The festival falls on her last day",
-    "Her flight back at 20:00 leaves the whole day",
-    "Onsen towns at their calmest"
+    "Only one bus ride together after the flight",
+    "Bluest skies of the 27 Oct forecast",
+    "A flat seaside bike ride, an onsen town",
+    "Her bus to the airport from Yufuin is direct"
    ],
    "cons": [
-    "Aso's crater zone closed (alert level 2)",
-    "Highway buses need booking",
+    "Mon 2 Nov: 60% chance of rain (the bus day)",
+    "The Karatsu Kunchi festival is dropped to save 5 hours of travel",
     "Kurokawa inns are pricey, even alone",
     "Your flight home is €612"
    ],
-   "calm": "Yufuin (2 nights together): mist on Lake Kinrin at 7am, a private onsen, the Yufu peak over the rice fields. Then Kurokawa's river gorge on your own.",
+   "calm": "Yufuin (2 nights together): mist on Lake Kinrin at 7am, a private onsen, the Yufu peak over the rice fields. Before that, an easy ride along the sea in Fukuoka.",
    "group": "other",
    "town": null,
    "town_card": null,
@@ -6089,7 +5859,7 @@
     "price": 130,
     "status": "est",
     "time": "20:00 → 22:40",
-    "detail": "Greater Bay Airlines HB 2397, Fukuoka 20:00 → HK 22:40 (the train from Karatsu runs straight into the airport subway, ~1h30)",
+    "detail": "Greater Bay Airlines HB 2397, Fukuoka 20:00 → HK 22:40. From Yufuin by highway bus to Fukuoka airport (about 1h50, ~¥3,250).",
     "alt": "HK Express UO 639 18:00 → 20:40 · Cathay CX 589 16:35 → 19:40"
    },
    "his": {
@@ -6108,14 +5878,14 @@
     "sky": "mostly blue"
    },
    "scores": {
-    "hike": 4,
+    "hike": 3.5,
     "nature": 4.5,
     "food": 5,
-    "culture": 4.5,
-    "chill": 4.5,
+    "culture": 4,
+    "chill": 5,
     "weather": 4.25,
     "value": 2.5,
-    "ease": 4
+    "ease": 4.5
    },
    "fit": 84,
    "fc": {
@@ -6993,13 +6763,13 @@
    "options": [
     {
      "style": "Chill",
-     "name": "Fukuoka, Yufuin and the Kunchi; Kurokawa and Kuju on your own",
-     "chill": 70,
+     "name": "Fukuoka with a seaside ride, two nights in Yufuin; Kurokawa and Kuju on your own",
+     "chill": 85,
      "route": [
-      "Together: 2n Fukuoka, 2n Yufuin",
-      "Wed: Karatsu Kunchi, she flies from Fukuoka 20:00",
-      "You: 1n Fukuoka, 2n Kurokawa (Kuju hike)",
-      "Sat: bus to Fukuoka airport, 16:35"
+      "Together: 2n Fukuoka (Uminonakamichi by bike), 2n Yufuin",
+      "Wed: she takes the bus to Fukuoka airport for 20:00",
+      "You: 2n Kurokawa (Kuju hike), 1n Fukuoka",
+      "Sat: Fukuoka 16:35"
      ],
      "days": [
       {
@@ -7031,28 +6801,28 @@
        "b": null
       },
       {
-       "t": "Dazaifu",
-       "e": "Easy",
+       "t": "Uminonakamichi by bike",
+       "e": "Active",
        "who": "both",
-       "am": "Train to Dazaifu (30 min): Tenmangu shrine, umegae-mochi.",
-       "pm": "Kyushu National Museum and Komyozenji's moss garden.",
-       "eve": "Ramen in Hakata.",
+       "am": "JR to Uminonakamichi (about 30 min) or the ferry from Bayside Place (20 min); bikes at the park gate.",
+       "pm": "Ride the flat paths through the seaside park: the autumn-flower festival (roses, pampas grass, the flower museum) and the beach along the Genkai sea.",
+       "eve": "Back to Hakata; ramen.",
        "sleep": "Fukuoka hotel",
        "wx": "Fukuoka",
        "tr": [
         [
          "train",
-         "Fukuoka ↔ Dazaifu",
+         "Hakata ↔ Uminonakamichi",
          60
         ]
        ],
-       "b": null
+       "b": "The dry day (30%). If it rains, Kushida shrine and Hakata's old temples on foot instead."
       },
       {
        "t": "Bus to Yufuin",
        "e": "Travel",
        "who": "both",
-       "am": "Highway bus Hakata → Yufuin (2h15).",
+       "am": "Highway bus Hakata → Yufuin (2h15, book ahead).",
        "pm": "Private onsen, then the back lanes if it stays dry.",
        "eve": "Dinner in Yufuin.",
        "sleep": "Yufuin guesthouse",
@@ -7064,63 +6834,34 @@
          135
         ]
        ],
-       "b": "Rain is possible (50–60%): a bus and an onsen."
+       "b": "Rain likely (60%): a bus and an onsen."
       },
       {
        "t": "Lake Kinrin and Yufuin slow",
        "e": "Easy",
        "who": "both",
        "am": "Lake Kinrin in the morning mist, the back lanes along the river.",
-       "pm": "Bus to Beppu's hells (50 min) or stay put.",
+       "pm": "Galleries, a café with Mt Yufu in the window, another bath.",
        "eve": "Toriten and Bungo beef.",
        "sleep": "Yufuin guesthouse",
        "wx": "Yufuin",
-       "tr": [
-        [
-         "bus",
-         "Yufuin ↔ Beppu (optional)",
-         100
-        ]
-       ],
+       "tr": [],
        "b": null
       },
       {
-       "t": "Karatsu Kunchi; she flies at 20:00",
-       "e": "Active",
+       "t": "Slow morning; she takes the bus to the airport",
+       "e": "Easy",
        "who": "split",
-       "am": "Early bus to Hakata (2h15), JR to Karatsu (1h25).",
-       "pm": "The 14 floats parade round the old town. She takes the train straight to Fukuoka airport (~1h30) for 20:00 (lands HK 22:40).",
-       "eve": "You: back to Hakata, a last yatai.",
-       "sleep": "You: Fukuoka hostel",
-       "wx": "Fukuoka",
-       "tr": [
-        [
-         "bus",
-         "Yufuin → Hakata",
-         135
-        ],
-        [
-         "train",
-         "Fukuoka → Karatsu → Fukuoka",
-         170
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Bus to Kurokawa",
-       "e": "Travel",
-       "who": "you",
-       "am": "Highway bus Fukuoka → Kurokawa (2h30).",
-       "pm": "Onsen-hopping with the wooden pass.",
-       "eve": "Minshuku dinner.",
-       "sleep": "Kurokawa-area minshuku",
+       "am": "A last bath and a slow breakfast.",
+       "pm": "She takes the highway bus to Fukuoka airport (about 1h50; check it stops at the international terminal) for Greater Bay 20:00 (lands HK 22:40). You: bus to Kurokawa (about 1h40).",
+       "eve": "You: onsen-hopping with the wooden pass.",
+       "sleep": "You: Kurokawa-area minshuku",
        "wx": "Kurokawa",
        "tr": [
         [
          "bus",
-         "Fukuoka → Kurokawa",
-         150
+         "Yufuin → Kurokawa",
+         100
         ]
        ],
        "b": null
@@ -7144,19 +6885,42 @@
        "b": null
       },
       {
-       "t": "Fly home",
+       "t": "To Fukuoka via Dazaifu",
        "e": "Travel",
        "who": "you",
-       "am": "Morning bath.",
-       "pm": "Bus Kurokawa → Fukuoka airport (about 2h30; confirm the time) by 13:30.",
-       "eve": "Cathay 16:35 via HK, land Paris Sun 07:45.",
-       "sleep": "On the plane",
-       "wx": "Kurokawa",
+       "am": "Morning bath; bus Kurokawa → Fukuoka (2h30).",
+       "pm": "Dazaifu Tenmangu and Komyozenji's moss garden (train 30 min).",
+       "eve": "A last yatai.",
+       "sleep": "Fukuoka hostel",
+       "wx": "Fukuoka",
        "tr": [
         [
          "bus",
-         "Kurokawa → Fukuoka airport",
+         "Kurokawa → Fukuoka",
          150
+        ],
+        [
+         "train",
+         "Fukuoka ↔ Dazaifu",
+         60
+        ]
+       ],
+       "b": null
+      },
+      {
+       "t": "Fly home",
+       "e": "Travel",
+       "who": "you",
+       "am": "Tenjin's coffee shops.",
+       "pm": "Subway to the airport at 14:30 (5 min).",
+       "eve": "Cathay 16:35 via HK, land Paris Sun 07:45.",
+       "sleep": "On the plane",
+       "wx": "Fukuoka",
+       "tr": [
+        [
+         "metro",
+         "Hakata → airport",
+         5
         ]
        ],
        "b": null
@@ -7188,12 +6952,6 @@
        "solo": false
       },
       {
-       "place": "Fukuoka hostel",
-       "room": 25,
-       "meals": false,
-       "solo": true
-      },
-      {
        "place": "Kurokawa-area minshuku, dinner + breakfast",
        "room": 90,
        "meals": true,
@@ -7204,40 +6962,46 @@
        "room": 90,
        "meals": true,
        "solo": true
+      },
+      {
+       "place": "Fukuoka hostel",
+       "room": 25,
+       "meals": false,
+       "solo": true
       }
      ],
-     "transport_pp": 72,
+     "transport_pp": 28,
      "shared": 0,
      "activities_pp": 20,
-     "solo_transport": 83,
+     "solo_transport": 80,
      "solo_activities": 10,
-     "her_extra": 0,
-     "travel": 1165,
-     "together_travel": 815,
+     "her_extra": 18,
+     "travel": 775,
+     "together_travel": 410,
      "beds": 2,
      "solo_beds": 2,
      "moves": 3,
      "cost": {
       "out": 246,
-      "her": 130,
-      "her_train": 0,
+      "her": 148,
+      "her_train": 18,
       "his": 612,
       "rooms": 282,
       "food": 208.0,
-      "transport": 144,
+      "transport": 56,
       "activities": 40,
       "misc": 40,
       "solo_rooms": 205,
       "solo_food": 45.0,
-      "solo_transport": 83,
+      "solo_transport": 80,
       "solo_activities": 10,
-      "solo": 343.0,
-      "flights": 988,
-      "together": 714.0,
-      "ground": 1057.0,
-      "total": 2045,
-      "his_share": 1435,
-      "her_share": 610
+      "solo": 340.0,
+      "flights": 1006,
+      "together": 626.0,
+      "ground": 966.0,
+      "total": 1972,
+      "his_share": 1388,
+      "her_share": 584
      }
     }
    ]
@@ -8281,7 +8045,7 @@
      "solo_activities": 10,
      "her_extra": 0,
      "travel": 825,
-     "together_travel": 600,
+     "together_travel": 330,
      "beds": 2,
      "solo_beds": 2,
      "moves": 3,
@@ -9338,7 +9102,7 @@
      "solo_activities": 10,
      "her_extra": 0,
      "travel": 695,
-     "together_travel": 605,
+     "together_travel": 385,
      "beds": 2,
      "solo_beds": 1,
      "moves": 2,
@@ -9424,24 +9188,24 @@
  },
  "picks": [
   {
-   "id": "jp-fuji",
-   "why": "The Fuji view",
-   "text": "Two nights by Lake Kawaguchi facing Mount Fuji. Sunday is forecast dry: the Fuji day. Busiest on the holiday."
+   "id": "jp-kanazawa",
+   "why": "Least travel together",
+   "text": "Under an hour of transport together after the flight: Kanazawa by bike-share on the dry Sunday, then a Yamanaka onsen ryokan. Shirakawa-go moves to your solo bus ride."
   },
   {
    "id": "jp-hakone",
    "why": "Easiest and most relaxing",
-   "text": "85 minutes from Shinjuku, two nights in an onsen inn, and something good to do whatever the weather."
+   "text": "85 minutes from Shinjuku, two nights in an onsen inn, gardens a short walk away. Too hilly for a bike, but nothing far."
   },
   {
-   "id": "jp-nikko",
-   "why": "Culture and autumn colour",
-   "text": "Japan's most ornate shrines, and Iroha-zaka and Lake Chuzenji at peak colour. Leaves from Asakusa, next to the hotel."
+   "id": "jp-fuji",
+   "why": "Fuji by bike",
+   "text": "An e-bike ride along Lake Kawaguchi's flat north shore on the dry Sunday, with Fuji across the water; the kimono museum and an onsen for the showery Monday."
   },
   {
-   "id": "jp-kanazawa",
-   "why": "Gardens, seafood and a ryokan",
-   "text": "Kanazawa's teahouse streets and Omicho market, Shirakawa-go's thatched village, a last night in a Yamanaka onsen ryokan. Or pair Kanazawa with Tokyo."
+   "id": "jp-kansai",
+   "why": "One hotel, a bike day",
+   "text": "Four nights in the same Nara hotel and an e-bike day through Asuka's rice terraces; the Kumano Kodo on your own afterwards."
   }
  ],
  "sources": [
@@ -9511,7 +9275,7 @@
    "warn"
   ],
   [
-   "Bus Kurokawa → Fukuoka airport — Kurokawa Onsen tourism association (where to check)",
+   "Buses Yufuin → Fukuoka airport and Yufuin → Kurokawa — Kurokawa Onsen tourism association (where to check)",
    "https://www.kurokawaonsen.or.jp/",
    "todo"
   ],
@@ -9563,7 +9327,7 @@
   [
    "Karatsu Kunchi — Japan Travel / JNTO",
    "https://ja.japantravel.com/saga/karatsu-kunchi-festival/32010",
-   "ok"
+   "warn"
   ],
   [
    "Mon 2 Nov / Tue 3 Nov — Japan Meteorological Agency weekly forecasts",
@@ -9628,6 +9392,26 @@
   [
    "Kakusenkei gorge (Yamanaka Onsen) — Weathernews",
    "https://weathernews.jp/koyo/spot/25603/",
+   "ok"
+  ],
+  [
+   "Bike rentals at Lake Kawaguchi — Banzokubiology / Fun Japan",
+   "https://www.fun-japan.jp/jp/articles/14681",
+   "warn"
+  ],
+  [
+   "Kanazawa bus + Machi-nori bike-share day ticket — Kanazawa City (Apr 2026)",
+   "https://www4.city.kanazawa.lg.jp/material/files/group/8/20260417_1dayfreeandmachinori.pdf",
+   "ok"
+  ],
+  [
+   "Asuka bike rentals — Jeepe guide",
+   "https://www.jeepe.jp/ja/articles/asuka-village-nara-guide-1226",
+   "ok"
+  ],
+  [
+   "Uminonakamichi seaside park (Fukuoka) — Resemom / park press release (18 Sep)",
+   "https://resemom.jp/release/prtimes/20260918/213979.html",
    "ok"
   ],
   [
@@ -9718,9 +9502,9 @@
   ],
   [
    "Japan",
-   "Bus Kurokawa → Fukuoka airport",
+   "Buses Yufuin → Fukuoka airport and Yufuin → Kurokawa",
    "todo",
-   "Times not confirmed (Kyushu, your Saturday). Check on the bus operator's site.",
+   "Times not confirmed (Kyushu: her Wednesday bus, your ride to Kurokawa). Check on the bus operators' sites, and that her bus stops at the international terminal.",
    "Kurokawa Onsen tourism association (where to check)",
    "https://www.kurokawaonsen.or.jp/"
   ],
@@ -9799,8 +9583,8 @@
   [
    "Japan",
    "Karatsu Kunchi",
-   "ok",
-   "Held every year on 2–4 Nov; Wed 4 Nov, her last day, is the last parade day.",
+   "warn",
+   "Held 2–4 Nov, but dropped from the Kyushu plan on 29 Oct to save about 5 hours of travel on her last day.",
    "Japan Travel / JNTO",
    "https://ja.japantravel.com/saga/karatsu-kunchi-festival/32010"
   ],
@@ -9907,6 +9691,38 @@
    "No closure reported; colour peaks around 20 Nov, so early colour only on your dates.",
    "Weathernews",
    "https://weathernews.jp/koyo/spot/25603/"
+  ],
+  [
+   "Japan",
+   "Bike rentals at Lake Kawaguchi",
+   "warn",
+   "The rental in front of the station (Fujikanko Travel, e-bike ¥3,000/day) is closed on weekends and holidays; Soranoshita (e-assist ¥4,000/day) and fujisanbike (¥3,000/day) recommend booking. Confirm Sunday opening.",
+   "Banzokubiology / Fun Japan",
+   "https://www.fun-japan.jp/jp/articles/14681"
+  ],
+  [
+   "Japan",
+   "Kanazawa bus + Machi-nori bike-share day ticket",
+   "ok",
+   "¥2,000 (trial price until 31 Mar 2027), digital only in the Norimasshi Kanazawa app.",
+   "Kanazawa City (Apr 2026)",
+   "https://www4.city.kanazawa.lg.jp/material/files/group/8/20260417_1dayfreeandmachinori.pdf"
+  ],
+  [
+   "Japan",
+   "Asuka bike rentals",
+   "ok",
+   "Several shops in front of Kintetsu Asuka station: ~¥1,200/day, e-assist ~¥1,700, 8:30–17:00, cash only. Hilly in places: take the e-bikes.",
+   "Jeepe guide",
+   "https://www.jeepe.jp/ja/articles/asuka-village-nara-guide-1226"
+  ],
+  [
+   "Japan",
+   "Uminonakamichi seaside park (Fukuoka)",
+   "ok",
+   "Autumn-flower festival 3 Oct – 15 Nov 2026; 9:30–17:00 in Nov; ¥450. Cosmos are over by November; roses, pampas grass and the flower museum are on. Bike-rental price not confirmed.",
+   "Resemom / park press release (18 Sep)",
+   "https://resemom.jp/release/prtimes/20260918/213979.html"
   ],
   [
    "All",
@@ -13890,7 +13706,7 @@
     "price": 130,
     "status": "est",
     "time": "20:00 → 22:40",
-    "detail": "Greater Bay Airlines HB 2397, Fukuoka 20:00 → HK 22:40 (the train from Karatsu runs straight into the airport subway, ~1h30)",
+    "detail": "Greater Bay Airlines HB 2397, Fukuoka 20:00 → HK 22:40. From Yufuin by highway bus to Fukuoka airport (about 1h50, ~¥3,250).",
     "alt": "HK Express UO 639 18:00 → 20:40 · Cathay CX 589 16:35 → 19:40"
    },
    "kix_kaga": {

@@ -44,7 +44,7 @@ HER = {
               "detail": "HK Express UO 899, Kansai 17:20 → HK 21:00 (Nankai from Namba ~15:00, 40 min)",
               "alt": "Cathay CX 561 17:00 → 20:25 · CX 569 19:05 → 22:40 · HK Express UO 689 20:15 → 23:55"},
     "fuk":   {"route": "FUK → HKG", "price": 130, "status": "est", "time": "20:00 → 22:40",
-              "detail": "Greater Bay Airlines HB 2397, Fukuoka 20:00 → HK 22:40 (the train from Karatsu runs straight into the airport subway, ~1h30)",
+              "detail": "Greater Bay Airlines HB 2397, Fukuoka 20:00 → HK 22:40. From Yufuin by highway bus to Fukuoka airport (about 1h50, ~¥3,250).",
               "alt": "HK Express UO 639 18:00 → 20:40 · Cathay CX 589 16:35 → 19:40"},
     "kix_kaga": {"route": "KIX → HKG", "price": 120, "status": "est", "time": "17:20 → 21:00",
               "detail": "HK Express UO 899, Kansai 17:20 → HK 21:00. From Yamanaka: bus to Kaga-Onsen, shinkansen to Tsuruga, Thunderbird to Shin-Osaka, Haruka to Kansai (about 3h30, leave by 11:30)",

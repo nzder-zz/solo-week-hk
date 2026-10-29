@@ -129,7 +129,7 @@ def build():
         options = []
         for p in t["plans"]:
             travel = sum(l[2] for d in p["days"] for l in d["tr"])
-            together_travel = sum(l[2] for d in p["days"] if d["who"] != "you" for l in d["tr"])
+            together_travel = sum(l[2] for d in p["days"] if d["who"] == "both" for l in d["tr"])
             places = [place_key(n["place"]) for n in p["nights"]]
             o = {k: p[k] for k in ("style", "name", "chill", "route", "days", "nights", "transport_pp", "shared", "activities_pp", "solo_transport", "solo_activities")}
             o["her_extra"] = p.get("her_extra", 0)
@@ -143,10 +143,10 @@ def build():
         dests.append(d)
 
     picks = [
-        {"id": "jp-fuji", "why": "The Fuji view", "text": "Two nights by Lake Kawaguchi facing Mount Fuji. Sunday is forecast dry: the Fuji day. Busiest on the holiday."},
-        {"id": "jp-hakone", "why": "Easiest and most relaxing", "text": "85 minutes from Shinjuku, two nights in an onsen inn, and something good to do whatever the weather."},
-        {"id": "jp-nikko", "why": "Culture and autumn colour", "text": "Japan's most ornate shrines, and Iroha-zaka and Lake Chuzenji at peak colour. Leaves from Asakusa, next to the hotel."},
-        {"id": "jp-kanazawa", "why": "Gardens, seafood and a ryokan", "text": "Kanazawa's teahouse streets and Omicho market, Shirakawa-go's thatched village, a last night in a Yamanaka onsen ryokan. Or pair Kanazawa with Tokyo."},
+        {"id": "jp-kanazawa", "why": "Least travel together", "text": "Under an hour of transport together after the flight: Kanazawa by bike-share on the dry Sunday, then a Yamanaka onsen ryokan. Shirakawa-go moves to your solo bus ride."},
+        {"id": "jp-hakone", "why": "Easiest and most relaxing", "text": "85 minutes from Shinjuku, two nights in an onsen inn, gardens a short walk away. Too hilly for a bike, but nothing far."},
+        {"id": "jp-fuji", "why": "Fuji by bike", "text": "An e-bike ride along Lake Kawaguchi's flat north shore on the dry Sunday, with Fuji across the water; the kimono museum and an onsen for the showery Monday."},
+        {"id": "jp-kansai", "why": "One hotel, a bike day", "text": "Four nights in the same Nara hotel and an e-bike day through Asuka's rice terraces; the Kumano Kodo on your own afterwards."},
     ]
     sources = [
         ["Live fares: Google Flights", "https://www.google.com/travel/flights", "out and Saturday-home fares: 27 Oct 2026, 1 adult"],
