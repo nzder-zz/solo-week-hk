@@ -50,6 +50,7 @@ def plan_cost(t, p):
 
 def forecast(t):
     pb = BASE["fc_per_base"]
+    last = BASE["fc_last"]
     bases = []
     for p in t["plans"]:
         for d in p["days"]:
@@ -58,22 +59,32 @@ def forecast(t):
     per_base = {b: pb[b] for b in bases}
     days = []
     for i, fd in enumerate(BASE["fc_days"]):
-        rows = [dict(name=b, **{k: x[k] for k in ("hi", "lo", "p1", "p10", "med", "cls", "cc")}) for b in bases for x in pb[b] if x["md"] == fd["md"]]
-        pts = sum(POINTS[r["cls"]] for r in rows) / len(rows)
-        cls = "Dry" if pts >= 0.85 else "Showers" if pts >= 0.6 else "Wet" if pts >= 0.25 else "Heavy rain"
-        days.append({"md": fd["md"], "label": fd["label"], "ahead": fd["ahead"], "cls": cls, "pts": round(pts, 2),
-                     "p1": round(sum(r["p1"] for r in rows) / len(rows)), "cc": round(sum(r["cc"] for r in rows) / len(rows)),
-                     "hi": rows[0]["hi"], "lo": rows[0]["lo"], "scored": True, "bases": rows})
-    score = round(sum(d["pts"] for d in days) / len(days) * 5 * 2) / 2
-    cc = round(sum(d["cc"] for d in days) / len(days))
+        rows = [dict(name=b, **{k: x.get(k) for k in ("hi", "lo", "p1", "p10", "med", "cls", "cc", "src")}) for b in bases for x in pb[b] if x["md"] == fd["md"]]
+        known = [r for r in rows if r["cls"]]
+        if known:
+            pts = sum(POINTS[r["cls"]] for r in known) / len(known)
+            cls = "Dry" if pts >= 0.85 else "Showers" if pts >= 0.6 else "Wet" if pts >= 0.25 else "Heavy rain"
+            p1s = [r["p1"] for r in known if r["p1"] is not None]
+            day = {"cls": cls, "pts": round(pts, 2), "p1": round(sum(p1s) / len(p1s)) if p1s else None,
+                   "cc": round(sum(r["cc"] for r in known) / len(known))}
+        else:
+            day = {"cls": None, "pts": None, "p1": None, "cc": None}
+        day.update(md=fd["md"], label=fd["label"], ahead=fd["ahead"], hi=rows[0]["hi"], lo=rows[0]["lo"], scored=fd["md"] <= last, bases=rows)
+        days.append(day)
+    scored = [d for d in days if d["cls"]]
+    score = round(sum(d["pts"] for d in scored) / len(scored) * 5 * 2) / 2
+    cc = round(sum(d["cc"] for d in scored) / len(scored))
     word = "Mostly dry" if score >= 4.5 else "Some showers" if score >= 3.5 else "Mixed" if score >= 2.5 else "Wet"
-    wet = [d["label"] for d in days if d["cls"] in ("Wet", "Heavy rain")]
-    show = [d["label"] for d in days if d["cls"] == "Showers"]
-    note = f"{word} for {', '.join(bases)}. "
-    note += (f"Wet: {', '.join(wet)}. " if wet else "No wet day in the run. ")
-    if show:
-        note += f"Showers: {', '.join(show)}. "
-    note += f"Daytime cloud {cc}% on average. From the run fetched {BASE['fc_checked']}; recheck on 29–30 Oct."
+    firm = [d for d in days if d["scored"] and d["cls"]]
+    wet = [d["label"] for d in firm if d["cls"] in ("Wet", "Heavy rain")]
+    show = [d["label"] for d in firm if d["cls"] == "Showers"]
+    note = f"{word} for {', '.join(bases)}. 31 Oct – 4 Nov (official forecasts): "
+    note += (f"wet on {', '.join(wet)}; " if wet else "no wet day; ")
+    note += (f"showers possible on {', '.join(show)}. " if show else "no showers forecast. ")
+    late = [d for d in days if not d["scored"] and d["cls"] in ("Wet", "Heavy rain")]
+    if late:
+        note += f"5–7 Nov (27 Oct model run, rough): wet on {', '.join(d['label'] for d in late)}. "
+    note += f"Daytime cloud {cc}% on average. Checked {BASE['fc_checked']}; recheck on 30 Oct."
     return {"score": score, "word": word, "note": note, "bases": bases, "days": days, "per_base": per_base, "cc": cc}
 
 
@@ -90,10 +101,6 @@ def build():
         fc = forecast(t)
         scores = dict(t["scores"])
         scores["weather"] = round((fc["score"] + clim["wx_climate"]) / 2 * 4) / 4
-        if t.get("fc_extra"):
-            fc["note"] = t["fc_extra"] + " " + fc["note"]
-            fc["word"] = "Tokyo only"
-            scores["weather"] = clim["wx_climate"]
         scores["value"] = t["value"]
         scores["ease"] = t["ease"]
         fit = round(100 * sum(scores[k] * w for k, w in WEIGHTS.items()) / sum(5 * w for w in WEIGHTS.values()))
@@ -121,7 +128,9 @@ def build():
     sources = [
         ["Live fares: Google Flights", "https://www.google.com/travel/flights", "out and Saturday-home fares: 27 Oct 2026, 1 adult"],
         ["Flight schedules: FlightConnections", "https://www.flightconnections.com/", "her Wednesday flights, 28 Oct 2026"],
-        ["Forecast: Open-Meteo ensemble API", "https://open-meteo.com/en/docs/ensemble-api", f"ECMWF 51 runs, fetched {BASE['fc_checked']}"],
+        ["Forecast: JMA weekly forecasts (Japan)", "https://www.jma.go.jp/bosai/forecast/", "issued 28 Oct 17:00 / 29 Oct 11:00 JST, read 29 Oct"],
+        ["Forecast: CWA one-week county forecast (Taiwan)", "https://www.cwa.gov.tw/V8/C/W/County/index.html", "read 29 Oct"],
+        ["Forecast for 5–7 Nov: Open-Meteo ensemble API", "https://open-meteo.com/en/docs/ensemble-api", "ECMWF 51 runs, fetched 27 Oct 2026"],
     ] + [[f"{c[1]} — {c[4]}", c[5], c[2]] for c in CHECKS]
     return {
         "dests": dests, "dates": DATES, "criteria": CRITERIA, "weights": WEIGHTS, "picks": picks, "sources": sources,

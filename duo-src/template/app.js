@@ -146,9 +146,12 @@
   const tips = {};
   let tipN = 0;
   const temps = (hi, lo) => hi === null || hi === undefined || hi === '' ? '—' : `${hi}°/${lo}°`;
+  const pct = p => (p === null || p === undefined) ? '—' : `${p}%`;
+  const SRC = { J: 'JMA weekly forecast', C: 'CWA weekly forecast (no rain %)', E: '27 Oct model run (rough)' };
   function fcCell(c, label, hi, lo, p1, rough, tipT, cc) {
+    if (!c) return `<td class="fc c-na" aria-label="${esc(label)}: no forecast"><em>—</em><b></b><span></span></td>`;
     const k = 't' + (tipN++); tips[k] = tipT + `<div class="tl"><span>Sky by day</span><span>${SKY[skyKey(cc)]} · ${cc}% cloud</span></div>`;
-    return `<td class="fc c-${slug(c)}${rough ? ' rough' : ''}" tabindex="0" data-k="${k}" aria-label="${esc(label)}: ${esc(c)}, ${p1}% chance of rain, ${SKY[skyKey(cc)]}"><em><i class="sk sk-${skyKey(cc)}"></i>${short(c)}</em><b>${p1}%</b><span>${temps(hi, lo)}</span></td>`;
+    return `<td class="fc c-${slug(c)}${rough ? ' rough' : ''}" tabindex="0" data-k="${k}" aria-label="${esc(label)}: ${esc(c)}, ${pct(p1)} chance of rain, ${SKY[skyKey(cc)]}"><em><i class="sk sk-${skyKey(cc)}"></i>${short(c)}</em><b>${pct(p1)}</b><span>${temps(hi, lo)}</span></td>`;
   }
   function fcHead() {
     return `<thead><tr><th></th>${D.fc_bands.map(b => `<th class="band" colspan="${b.n}">${esc(b.label)}</th>`).join('')}</tr>
@@ -157,13 +160,13 @@
   function fcGrid(L) {
     const rows = L.map(d => `<tr><th class="rowh" scope="row"><a href="#${d.id}">${esc(d.short)}</a><small>${d.fc.score}/5 · ${esc(d.fc.word)} · ${esc(SKY[skyKey(d.fc.cc)])} · temps ${esc(d.fc.bases[0])}</small></th>${
       d.fc.days.map(x => fcCell(x.cls, `${d.short} ${x.label}`, x.hi, x.lo, x.p1, !x.scored,
-        `<b>${esc(d.short)} · ${esc(x.label)}</b><div style="margin-bottom:4px">${x.ahead} days out (from ${esc(D.fc_checked)})</div>` +
-        x.bases.map(b => `<div class="tl"><span>${esc(b.name)}</span><span>${temps(b.hi, b.lo)} · ${b.p1}% · ${b.med} mm · ${b.cc}% cloud</span></div>`).join(''), x.cc)).join('')}</tr>`).join('');
+        `<b>${esc(d.short)} · ${esc(x.label)}</b><div style="margin-bottom:4px">${x.scored ? 'Official forecasts, read ' + esc(D.fc_checked) : '27 Oct model run (rough)'}</div>` +
+        x.bases.map(b => `<div class="tl"><span>${esc(b.name)}</span><span>${b.cls ? `${esc(b.cls)} · ${pct(b.p1)} · ${temps(b.hi, b.lo)}` : '—'}</span></div>`).join(''), x.cc)).join('')}</tr>`).join('');
     document.getElementById('fc-table').innerHTML = fcHead() + `<tbody>${rows}</tbody>`;
   }
   function fcPanel(d) {
     const rows = d.fc.bases.map(b => `<tr><th class="rowh" scope="row">${esc(b)}</th>${d.fc.per_base[b].map(x => fcCell(x.cls, `${b} ${x.label}`, x.hi, x.lo, x.p1, x.md > D.fc_last,
-      `<b>${esc(b)} · ${esc(x.label)}</b><div class="tl"><span>High / low</span><span>${temps(x.hi, x.lo)}</span></div><div class="tl"><span>Chance of rain</span><span>${x.p1}%</span></div><div class="tl"><span>Chance of 10 mm+</span><span>${x.p10}%</span></div><div class="tl"><span>Typical amount</span><span>${x.med} mm</span></div>`, x.cc)).join('')}</tr>`).join('');
+      `<b>${esc(b)} · ${esc(x.label)}</b><div class="tl"><span>Source</span><span>${SRC[x.src] || '—'}</span></div><div class="tl"><span>High / low</span><span>${temps(x.hi, x.lo)}</span></div><div class="tl"><span>Chance of rain</span><span>${pct(x.p1)}</span></div>${x.med !== null && x.med !== undefined ? `<div class="tl"><span>Typical amount</span><span>${x.med} mm</span></div>` : ''}`, x.cc)).join('')}</tr>`).join('');
     return `<p class="fc-note">${esc(d.fc.note)}</p><div class="fc-wrap"><table class="fc">${fcHead()}<tbody>${rows}</tbody></table></div>`;
   }
   const gtip = document.getElementById('gtip');
@@ -187,8 +190,9 @@
   function wxChip(d, wx, i) {
     if (!wx || !d.fc.per_base[wx] || !D.fc_days[i]) return '';
     const md = D.fc_days[i].md, x = d.fc.per_base[wx].find(y => y.md === md);
-    if (!x) return '';
-    return `<span class="wxchip c-${slug(x.cls)}" title="Forecast for ${esc(wx)}, from ${esc(D.fc_checked)}: ${SKY[skyKey(x.cc)]}, ${x.cc}% cloud"><i class="sk sk-${skyKey(x.cc)}"></i>${esc(wx)} · ${short(x.cls)} ${x.p1}%${x.hi !== null && x.hi !== undefined ? ` · ${x.hi}°/${x.lo}°` : ''}</span>`;
+    if (!x || !x.cls) return '';
+    const rough = md > D.fc_last;
+    return `<span class="wxchip c-${slug(x.cls)}${rough ? ' rough' : ''}" title="${esc(wx)}: ${SRC[x.src] || ''}, ${SKY[skyKey(x.cc)]}"><i class="sk sk-${skyKey(x.cc)}"></i>${esc(wx)} · ${short(x.cls)}${x.p1 !== null && x.p1 !== undefined ? ' ' + x.p1 + '%' : ''}${x.hi !== null && x.hi !== undefined ? ` · ${x.hi}°/${x.lo}°` : ''}</span>`;
   }
   function trCol(x) {
     const t = x.tr.reduce((a, l) => a + l[2], 0);

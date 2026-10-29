@@ -380,3 +380,4 @@ body { margin: 0; }
 .day.you { border-left: 3px solid var(--s-solo); }
 :root[data-theme="dark"] .who-split, :root[data-theme="dark"] .who-you { color: #F0B35A; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .who-split, :root:not([data-theme="light"]) .who-you { color: #F0B35A; } }
+td.fc.c-na { background: var(--soft); color: var(--muted); }

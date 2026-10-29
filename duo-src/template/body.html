@@ -41,13 +41,13 @@
 
 <section id="forecast">
   <div class="wrap">
-    <div class="sec-head"><h2>Forecast for your week</h2><p>Chance of rain each day and how cloudy it looks (the dot), averaged over the places each trip visits. From the ECMWF ensemble run fetched {{FC_CHECKED}}: recheck on 29–30 Oct.</p></div>
+    <div class="sec-head"><h2>Forecast for your week</h2><p>Chance of rain each day and how cloudy it looks (the dot), averaged over the places each trip visits. 31 Oct – 4 Nov: official forecasts (JMA for Japan, CWA for Taiwan), read {{FC_CHECKED}}. 5–7 Nov (dashed): the 27 Oct model run, a rough guide only. Recheck on 30 Oct.</p></div>
     <div class="fc-card">
-      <div class="fc-legend"><span><i class="c-dry"></i>Dry</span><span><i class="c-show"></i>Showers</span><span><i class="c-wet"></i>Wet</span><span><i class="c-heavy"></i>Heavy rain likely</span><span><i class="sk sk-blue"></i>Blue sky</span><span><i class="sk sk-mixed"></i>Sun and cloud</span><span><i class="sk sk-grey"></i>Grey sky</span></div>
+      <div class="fc-legend"><span><i class="c-dry"></i>Dry</span><span><i class="c-show"></i>Showers</span><span><i class="c-wet"></i>Wet</span><span><i class="c-heavy"></i>Heavy rain likely</span><span><i class="sk sk-blue"></i>Blue sky</span><span><i class="sk sk-mixed"></i>Sun and cloud</span><span><i class="sk sk-grey"></i>Grey sky</span><span><i class="rough-key"></i>Rough (older model run)</span></div>
       <div class="fc-wrap"><table class="fc" id="fc-table"></table></div>
       <div class="fc-foot">
-        <p><span class="chip">Typhoon</span>Champi passed Taiwan on 23–24 Oct and has gone (see the checks above for damage). In-fa is expected to stall near the Ogasawara islands from 1 Nov; forecasters give it a low chance of reaching mainland Japan and a very low one for Taiwan. Recheck on 30 Oct.</p>
-        <p>Forecast score /5 counts 31 Oct–7 Nov at every base (dry 1 point, showers 0.7, wet 0.35, heavy rain 0). No forecast was saved for Nikko and Hakone; their days show no chip.</p>
+        <p><span class="chip">Typhoon</span>In-fa (No. 31 in Japan, 煙花 in Taiwan) is moving west far south of Japan; it turns north near the Ogasawara islands around 1 Nov, then west again. Neither JMA nor Taiwan's weather agency expects it to affect mainland Japan or Taiwan's weather. It will send long swells onto Taiwan's east coast (Taitung, Green Island, Lanyu) and the Hengchun peninsula from 1 to 3 Nov: no swimming or rock-walking at the waterline in Dulan those days.</p>
+        <p>Taiwan's weekly forecast gives no rain percentage, so Taiwan cells show "—". Mountain places (Kawaguchiko, Koyasan, Kumano, Yufuin, Kuju, Kurokawa, Alishan, Sun Moon Lake, Luye, Hakone, Nikko) take rain from their prefecture's forecast; their temperatures come from the 27 Oct model run, or "—" where there was none. Score /5: dry 1 point, showers 0.7, wet 0.35, heavy rain 0, averaged over every base and day.</p>
       </div>
     </div>
   </div>
@@ -98,7 +98,7 @@
 
 <section>
   <div class="wrap">
-    <div class="sec-head"><h2>Sources</h2><p>Fares: Google Flights (27 Oct, 1 adult) and FlightConnections schedules (28 Oct). Forecast: Open-Meteo ensembles (ECMWF, 51 runs), fetched {{FC_CHECKED}}. Room prices are typical rates, not quotes.</p></div>
+    <div class="sec-head"><h2>Sources</h2><p>Fares: Google Flights (27 Oct, 1 adult) and FlightConnections schedules (28 Oct). Forecast: JMA and CWA weekly forecasts, read {{FC_CHECKED}}; 5–7 Nov from the Open-Meteo ECMWF ensemble of 27 Oct. Room prices are typical rates, not quotes.</p></div>
     <ul class="src" id="sources"></ul>
   </div>
 </section>

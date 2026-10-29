@@ -1,6 +1,6 @@
 # Verification log: what was checked, the result, and where. Shown on the page and in the spreadsheet.
 # status: ok = checked and fine · warn = open but with a caveat · out = closed/damaged, kept out of the plans · todo = not yet verified
-CHECKED = "28 Oct 2026"
+CHECKED = "29 Oct 2026"
 
 CHECKS = [
     # Typhoon Champi (23–24 Oct)
@@ -25,8 +25,10 @@ CHECKS = [
     ("Taiwan", "Bus 6739 Alishan ↔ Sun Moon Lake", "todo", "Listed in 2026 sources; timetable not confirmed. Used together on Tue 3 Nov in the Fuller south plan: check with the operator.",
      "NOWnews", "https://www.nownews.com/news/6794109"),
     # Typhoon In-fa
-    ("All", "Typhoon In-fa", "warn", "Expected to stall near the Ogasawara islands from 1 Nov; unlikely to reach Honshu and very unlikely to affect Taiwan. Recheck on 30 Oct.",
-     "tenki.jp (28 Oct) / China Times (28 Oct)", "https://tenki.jp/forecaster/gureweather/2026/10/28/41126.html"),
+    ("All", "Typhoon In-fa", "warn", "29 Oct: moving west far south of Japan, turning north near the Ogasawara islands around 1 Nov, then west again; no effect forecast on mainland Japan or Taiwan's weather. Recheck on 30 Oct.",
+     "Weathernews (29 Oct, 09:00 JST)", "https://weathernews.jp/news/202610/290091/"),
+    ("Taiwan", "East-coast swells from In-fa (1–3 Nov)", "warn", "Taiwan's weather agency expects long swells on the east coast (Taitung, Green Island, Lanyu) and the Hengchun peninsula from 1 to 3 Nov: no swimming or rock-walking at the waterline in Dulan.",
+     "Next Apple (29 Oct)", "https://news.nextapple.com/life/20261029/59A1E16D715E51BAA6313EE8979D0F43"),
     # Japan
     ("Japan", "Aso volcano", "warn", "Alert level 2: the zone within ~1 km of the Nakadake crater is closed. Plans avoid the crater; Kusasenri viewpoints are outside it.",
      "Japan Meteorological Agency (9 Oct)", "https://www.data.jma.go.jp/vois/data/report/volinfo/VK20261009160000_503.html"),
@@ -44,8 +46,10 @@ CHECKS = [
      "Tanabe City Kumano Tourism Bureau", "https://www.tb-kumano.jp/en/kumano-kodo/conditions/"),
     ("Japan", "Karatsu Kunchi", "ok", "Held every year on 2–4 Nov; Wed 4 Nov, her last day, is the last parade day.",
      "Japan Travel / JNTO", "https://ja.japantravel.com/saga/karatsu-kunchi-festival/32010"),
-    ("Japan", "Mon 2 Nov / Tue 3 Nov", "warn", "Heavy rain forecast on 2 Nov across Japan (27 Oct run); 3 Nov is a national holiday (Culture Day).",
-     "Open-Meteo ECMWF ensemble (27 Oct)", "https://open-meteo.com/en/docs/ensemble-api"),
+    ("Japan", "Mon 2 Nov / Tue 3 Nov", "warn", "29 Oct JMA forecasts: Mon 2 Nov cloudy with a 40–60% chance of rain (low confidence), no longer heavy rain; dry around it. Tue 3 Nov is a national holiday (Culture Day): busy at the sights.",
+     "Japan Meteorological Agency weekly forecasts", "https://www.jma.go.jp/bosai/forecast/"),
+    ("Taiwan", "Forecast for the south and east", "ok", "29 Oct CWA weekly forecast: Tainan, Chiayi, Nantou sunny with some cloud 31 Oct – 4 Nov; Taitung brief showers Mon night – Tue 3 Nov.",
+     "Central Weather Administration", "https://www.cwa.gov.tw/V8/C/W/County/index.html"),
     # Flights and prices
     ("All", "Flights out on 31 Oct", "warn", "Prices are live fares from 27 Oct for 1 person; the last 1–2 seats in a fare bucket can cost more for two. Recheck before booking.",
      "Google Flights (27 Oct)", "https://www.google.com/travel/flights"),
