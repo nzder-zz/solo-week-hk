@@ -27,6 +27,8 @@ JMA = {
     "wakayama": {"wx": [(201, 10), (101, 20), (202, 50), (101, 20), (201, 30), (202, 50)], "time": "29 Oct 11:00"},
     "fukuoka":  {"wx": [(101, 20), (201, 30), (202, 60), (201, 30), (101, 20)], "t": [(15, 23), (13, 24), (14, 22), (13, 19), (13, 20)], "time": "28 Oct 17:00"},
     "oita":     {"wx": [(100, 10), (101, 20), (202, 50), (101, 20), (101, 20), (200, 40)], "time": "29 Oct 11:00"},
+    "ishikawa": {"wx": [(203, 60), (201, 30), (202, 60), (200, 40), (201, 30)], "t": [(12, 20), (10, 19), (13, 18), (10, 16), (9, 18)], "time": "28 Oct 17:00"},
+    "gifu":     {"wx": [(200, 40), (101, 20), (202, 60), (200, 40), (201, 20)], "time": "28 Oct 17:00"},
     "kumamoto": {"wx": [(101, 20), (101, 20), (202, 50), (101, 20), (101, 20)], "time": "28 Oct 17:00"},
 }
 # CWA one-week county forecast (daytime wording), 31 Oct – 4 Nov, with (lo, hi).
@@ -43,6 +45,7 @@ BASES = {
     "Tokyo": ("J", "tokyo", True), "Kawaguchiko": ("J", "yamanashi", False), "Hakone": ("J", "kanagawa", False), "Nikko": ("J", "tochigi", False),
     "Osaka": ("J", "osaka", True), "Koyasan": ("J", "wakayama", False), "Kumano Hongu": ("J", "wakayama", False),
     "Fukuoka": ("J", "fukuoka", True), "Yufuin": ("J", "oita", False), "Kuju": ("J", "oita", False), "Kurokawa": ("J", "kumamoto", False),
+    "Kanazawa": ("J", "ishikawa", True), "Yamanaka Onsen": ("J", "ishikawa", False), "Shirakawa-go": ("J", "gifu", False), "Takayama": ("J", "gifu", False),
     "Tainan": ("C", "tainan", True), "Alishan": ("C", "chiayi", False), "Sun Moon Lake": ("C", "nantou", False),
     "Dulan": ("C", "taitung", True), "Luye": ("C", "taitung", False),
 }

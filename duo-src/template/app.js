@@ -67,9 +67,9 @@
 
   // ---- Tokyo + town
   (function () {
-    const T = D.tokyo, towns = D.dests.filter(d => d.group === 'tokyo');
+    const T = D.tokyo, towns = D.dests.filter(d => d.town_card);
     const el = document.getElementById('tokyo'); if (!el || !T) return;
-    el.innerHTML = `<div class="tk-plan"><h4>The Tokyo days (all three towns)</h4><p class="tk-stay">${pl(T.stay, 'jp-fuji')}</p>
+    el.innerHTML = `<div class="tk-plan"><h4>The Tokyo days (Kawaguchiko, Hakone, Nikko; Kanazawa + Tokyo has the same Tue and Wed)</h4><p class="tk-stay">${pl(T.stay, 'jp-fuji')}</p>
       <ol class="tk-days">${T.days.map(x => `<li><b>${esc(x.when)}</b><span>${pl(x.what, 'jp-fuji')}</span></li>`).join('')}</ol>
       <h4>Swap in</h4><ul class="tk-menu">${T.menu.map(x => `<li>${pl(x, 'jp-fuji')}</li>`).join('')}</ul><p class="tk-solo">${esc(T.solo)}</p></div>
       <div class="tk-towns">${towns.map(d => { const c = d.town_card, r = range(d); return `<a class="tk-town" href="#${d.id}">
@@ -91,10 +91,10 @@
     });
   }
   seg('sort', 'sort', [['fit', 'Best fit'], ['cost', 'Cheapest'], ['weather', 'Best weather'], ['travel', 'Least travel']]);
-  seg('country', 'country', [['tokyo', 'Tokyo + town'], ['Japan', 'All Japan'], ['Taiwan', 'Taiwan'], ['All', 'Everything']]);
+  seg('country', 'country', [['tokyo', 'Shortlist'], ['Japan', 'All Japan'], ['Taiwan', 'Taiwan'], ['All', 'Everything']]);
 
   function list() {
-    let L = D.dests.filter(d => S.country === 'All' || (S.country === 'tokyo' ? d.group === 'tokyo' : d.country === S.country));
+    let L = D.dests.filter(d => S.country === 'All' || (S.country === 'tokyo' ? (d.group === 'tokyo' || d.group === 'kanazawa') : d.country === S.country));
     const c = d => cost(d, opt(d, S.style)).total;
     if (S.sort === 'fit') L.sort((a, b) => b.fit - a.fit || c(a) - c(b));
     if (S.sort === 'cost') L.sort((a, b) => c(a) - c(b));
@@ -108,7 +108,7 @@
   function tipHtml(d, p) {
     return `<b>${esc(d.short)}</b>
       <div class="tl"><span>Flights out (×2)</span><span>${eur(p.out)}</span></div>
-      <div class="tl"><span>Her flight back (Wed)</span><span>${eur(p.her)}</span></div>
+      <div class="tl"><span>Her way back (Wed)${p.her_train ? ', incl. train' : ''}</span><span>${eur(p.her)}</span></div>
       <div class="tl"><span>Your flight home (Sat)</span><span>${eur(p.his)}</span></div>
       <div class="tl"><span>Rooms together (4 n)</span><span>${eur(p.rooms)}</span></div>
       <div class="tl"><span>Food together</span><span>${eur(p.food)}</span></div>

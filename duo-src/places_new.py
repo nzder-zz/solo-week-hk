@@ -105,3 +105,13 @@ PLACES_NEW += [
     {"n": "Yudaki falls", "a": ["Yudaki", "Akanuma"], "w": "A cascade below Lake Yunoko; Akanuma is the bus stop at the end of the Senjogahara walk.", "y": "Start and end of the flat Senjogahara boardwalk walk.", "l": "Okunikko, buses from Tobu-Nikko.", "q": "Yudaki Falls, Nikko"},
     {"n": "Hoppy street", "a": ["Hoppy street"], "w": "Asakusa's row of outdoor izakaya.", "y": "Beef stew, skewers and cheap beer on plastic stools.", "l": "West of Senso-ji.", "q": "Hoppy Street, Asakusa"},
 ]
+
+# Added 29 Oct for the Kanazawa plans
+PLACES_NEW += [
+    {"n": "Komatsu airport", "a": ["Komatsu"], "w": "The airport for Kanazawa.", "y": "HK Express flies here from Hong Kong; airport bus to Kanazawa station in 40 min.", "l": "Komatsu, 30 km south-west of Kanazawa.", "q": "Komatsu Airport"},
+    {"n": "Kazue-machi", "a": ["Kazue-machi"], "w": "A small teahouse street along the Asano river.", "y": "Quieter than Higashi Chaya, lovely when the lanterns come on.", "l": "Across the Asano river from Higashi Chaya.", "q": "Kazuemachi Chaya District, Kanazawa"},
+    {"n": "Miyagawa morning market", "a": ["Miyagawa"], "w": "Takayama's riverside morning market.", "y": "Pickles, miso, apples and Hida beef skewers, 7–12h every day.", "l": "Along the Miyagawa river in Takayama's old town.", "q": "Miyagawa Morning Market, Takayama"},
+    {"n": "Kaga-Onsen station", "a": ["Kaga-Onsen"], "w": "The shinkansen station for the Kaga hot-spring towns.", "y": "20 min from Kanazawa; buses to Yamanaka Onsen.", "l": "Kaga, Ishikawa.", "q": "Kaga-Onsen Station"},
+    {"n": "Korogi bridge", "a": ["Korogi bridge"], "w": "A cypress footbridge over the Kakusenkei gorge.", "y": "The prettiest spot on Yamanaka's gorge walk.", "l": "Upstream end of the Kakusenkei path, Yamanaka Onsen.", "q": "Korogi Bridge, Yamanaka Onsen"},
+    {"n": "Wada house", "a": ["Wada house"], "w": "The largest thatched farmhouse in Shirakawa-go.", "y": "See inside a gassho house: silkworm attic and hearth.", "l": "Ogimachi village, Shirakawa-go.", "q": "Wada House, Shirakawa-go"},
+]

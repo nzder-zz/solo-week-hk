@@ -119,8 +119,8 @@ def build_xlsx(D, path):
             "Shared taxis & cars", "Activities / person (together)", "Flight out / person", "Her flight to HK", "Your flight home", "Food together (two)",
             "Transport together", "Activities together", "Misc", "Together: total", "Your food / day (alone)", "Your rooms alone", "Your nights with meals",
             "Your food alone", "Your transport alone", "Your activities alone", "Your days alone: total", "Total for two", "Your share", "Her share",
-            "Lookup", "Out key", "Her key", "Your key"]
-    header(wp, 1, cols, [22, 36, 8] + [11] * 24 + [30, 12, 10, 10])
+            "Lookup", "Out key", "Her key", "Your key", "Her train to the airport"]
+    header(wp, 1, cols, [22, 36, 8] + [11] * 24 + [30, 12, 10, 10, 12])
     r = 2
     plan_rows = {}
     for d in D["dests"]:
@@ -134,18 +134,18 @@ def build_xlsx(D, path):
                 1: key, 2: d["title"], 3: o["style"], 4: d["food_day"],
                 5: f'=SUMIFS({RPRICE},{RKEY},A{r},{RWHO},"Together")', 6: f'=COUNTIFS({RKEY},A{r},{RWHO},"Together",{RMEAL},"Yes")',
                 7: o["transport_pp"], 8: o["shared"], 9: o["activities_pp"],
-                10: f'=INDEX({FPRICE},MATCH("OUT|"&AC{r},{FKEY},0))', 11: f'=INDEX({FPRICE},MATCH("HER|"&AD{r},{FKEY},0))',
+                10: f'=INDEX({FPRICE},MATCH("OUT|"&AC{r},{FKEY},0))', 11: f'=INDEX({FPRICE},MATCH("HER|"&AD{r},{FKEY},0))+AF{r}',
                 12: f'=INDEX({FPRICE},MATCH("HIS|"&AE{r},{FKEY},0))',
                 13: f"=2*D{r}*{DAYS}-2*{CREDIT}*D{r}*F{r}", 14: f"=2*G{r}+H{r}", 15: f"=2*I{r}", 16: f"=2*{MISC}",
                 17: f"=E{r}+M{r}+N{r}+O{r}+P{r}",
                 18: d["solo_food"], 19: f'=SUMIFS({RPRICE},{RKEY},A{r},{RWHO},"You")', 20: f'=COUNTIFS({RKEY},A{r},{RWHO},"You",{RMEAL},"Yes")',
                 21: f"=R{r}*{DSOLO}-{CREDIT}*R{r}*T{r}", 22: o["solo_transport"], 23: o["solo_activities"], 24: f"=S{r}+U{r}+V{r}+W{r}",
                 25: f"=2*J{r}+K{r}+L{r}+Q{r}+X{r}", 26: f"=J{r}+L{r}+Q{r}/2+X{r}", 27: f"=J{r}+K{r}+Q{r}/2",
-                28: f'=B{r}&" | "&C{r}', 29: out_k, 30: her_k, 31: his_k,
+                28: f'=B{r}&" | "&C{r}', 29: out_k, 30: her_k, 31: his_k, 32: o["her_extra"],
             }
             for c, v in vals.items():
-                font = BLUE if c in (4, 7, 8, 9, 18, 22, 23) else GREEN if c in (5, 6, 10, 11, 12, 19, 20) else BLACK
-                put(wp, r, c, v, font, EUR if 4 <= c <= 27 and c not in (6, 20) else None)
+                font = BLUE if c in (4, 7, 8, 9, 18, 22, 23, 32) else GREEN if c in (5, 6, 10, 11, 12, 19, 20) else BLACK
+                put(wp, r, c, v, font, EUR if (4 <= c <= 27 and c not in (6, 20)) or c == 32 else None)
             r += 1
     PL_LAST = r - 1
     rng = lambda col: f"Plans!${col}$2:${col}${PL_LAST}"
@@ -207,7 +207,7 @@ def build_xlsx(D, path):
     put(wm, 5, 1, "Row in Plans"); put(wm, 5, 2, f'=MATCH(B3&" | "&B4,{rng("AB")},0)')
     lines = [
         ("Flights out, both of you (Sat 31 Oct)", f'=2*INDEX({rng("J")},B5)'),
-        ("Her flight back to HK (Wed 4 Nov)", f'=INDEX({rng("K")},B5)'),
+        ("Her way back to HK (Wed 4 Nov, flight + any train to the airport)", f'=INDEX({rng("K")},B5)'),
         ("Your flight home (Sat 7 Nov)", f'=INDEX({rng("L")},B5)'),
         ("Rooms together, 4 nights", f'=INDEX({rng("E")},B5)'),
         ("Food together", f'=INDEX({rng("M")},B5)'),

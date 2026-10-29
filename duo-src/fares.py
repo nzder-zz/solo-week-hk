@@ -31,6 +31,10 @@ OUT = {
               "alt": "€84 at 18:50 → 20:15, then a night in Kaohsiung"},
 }
 
+OUT["kmq"] = {"route": "HKG → KMQ", "price": 205, "status": "gf27", "dep": "09:30", "carrier": "HK Express", "code": "KOMATSU KMQ",
+              "detail": "HK Express 09:30 → 14:05, nonstop 3h35 (the only nonstop; about 3 a week, believed Mon/Thu/Sat), then bus to Kanazawa 40 min. An early start: Airport Express from Central ~07:00",
+              "alt": "Or Tokyo (€116, 14:55) and the Hokuriku shinkansen to Kanazawa (2h30)"}
+
 # Wed 4 Nov, her flight back to Hong Kong in the evening.
 HER = {
     "tokyo": {"route": "NRT → HKG", "price": 130, "status": "est", "time": "19:00 → 23:25",
@@ -42,6 +46,9 @@ HER = {
     "fuk":   {"route": "FUK → HKG", "price": 130, "status": "est", "time": "20:00 → 22:40",
               "detail": "Greater Bay Airlines HB 2397, Fukuoka 20:00 → HK 22:40 (the train from Karatsu runs straight into the airport subway, ~1h30)",
               "alt": "HK Express UO 639 18:00 → 20:40 · Cathay CX 589 16:35 → 19:40"},
+    "kix_kaga": {"route": "KIX → HKG", "price": 120, "status": "est", "time": "17:20 → 21:00",
+              "detail": "HK Express UO 899, Kansai 17:20 → HK 21:00. From Yamanaka: bus to Kaga-Onsen, shinkansen to Tsuruga, Thunderbird to Shin-Osaka, Haruka to Kansai (about 3h30, leave by 11:30)",
+              "alt": "No Komatsu → HK flight on Wednesdays (HK Express flies it about 3 times a week). Or the shinkansen to Tokyo and Narita 19:00 (UO 647)"},
     "khh":   {"route": "KHH → HKG", "price": 85, "status": "est", "time": "21:00 → 22:40",
               "detail": "HK Express UO 135, Kaohsiung 21:00 → HK 22:40 (MRT to the airport, 20 min)",
               "alt": "Cathay CX 459 19:25 → 21:10 · China Airlines CI 935 18:00 → 19:45"},

@@ -401,3 +401,4 @@ td.fc.c-na { background: var(--soft); color: var(--muted); }
 .tk { grid-template-columns: 1fr; }
 .tk-towns { order: -1; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
 @media (min-width: 860px) { .tk-days { grid-template-columns: 1fr 1fr; } }
+.tk-towns { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }

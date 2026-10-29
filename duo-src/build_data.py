@@ -7,7 +7,8 @@ import json, os
 from fares import OUT, HER, HIS, FARE_STATUS
 from trips import TRIPS as OTHER_TRIPS
 from trips_tokyo import TRIPS_TOKYO
-TRIPS = TRIPS_TOKYO + OTHER_TRIPS
+from trips_kanazawa import TRIPS_KANAZAWA
+TRIPS = TRIPS_TOKYO + TRIPS_KANAZAWA + OTHER_TRIPS
 from checks import CHECKS, CHECKED
 from places_new import PLACES_NEW
 
@@ -47,7 +48,8 @@ TOKYO_PLAN = {
 def plan_cost(t, p):
     out_pp = OUT[t["out"]]["price"]
     out = 2 * out_pp
-    her = HER[t["her"]]["price"]
+    her_train = p.get("her_extra", 0)
+    her = HER[t["her"]]["price"] + her_train
     his = HIS[t["his"]]["price"]
     both = [n for n in p["nights"] if not n["solo"]]
     solo = [n for n in p["nights"] if n["solo"]]
@@ -62,7 +64,7 @@ def plan_cost(t, p):
     flights = out + her + his
     together = rooms + food + transport + activities + misc
     total = flights + together + solo_total
-    return {"out": out, "her": her, "his": his, "rooms": rooms, "food": food, "transport": transport, "activities": activities, "misc": misc,
+    return {"out": out, "her": her, "her_train": her_train, "his": his, "rooms": rooms, "food": food, "transport": transport, "activities": activities, "misc": misc,
             "solo_rooms": solo_rooms, "solo_food": solo_food, "solo_transport": p["solo_transport"], "solo_activities": p["solo_activities"],
             "solo": solo_total, "flights": flights, "together": together, "ground": together + solo_total, "total": round(total),
             "his_share": round(out_pp + his + together / 2 + solo_total), "her_share": round(out_pp + her + together / 2)}
@@ -130,6 +132,7 @@ def build():
             together_travel = sum(l[2] for d in p["days"] if d["who"] != "you" for l in d["tr"])
             places = [place_key(n["place"]) for n in p["nights"]]
             o = {k: p[k] for k in ("style", "name", "chill", "route", "days", "nights", "transport_pp", "shared", "activities_pp", "solo_transport", "solo_activities")}
+            o["her_extra"] = p.get("her_extra", 0)
             o.update(travel=travel, together_travel=together_travel, beds=len(set(places[:4])), solo_beds=len(set(places[4:])),
                      moves=sum(1 for a, b in zip(places, places[1:]) if a != b), cost=plan_cost(t, p))
             options.append(o)
@@ -143,7 +146,7 @@ def build():
         {"id": "jp-fuji", "why": "The Fuji view", "text": "Two nights by Lake Kawaguchi facing Mount Fuji. Sunday is forecast dry: the Fuji day. Busiest on the holiday."},
         {"id": "jp-hakone", "why": "Easiest and most relaxing", "text": "85 minutes from Shinjuku, two nights in an onsen inn, and something good to do whatever the weather."},
         {"id": "jp-nikko", "why": "Culture and autumn colour", "text": "Japan's most ornate shrines, and Iroha-zaka and Lake Chuzenji at peak colour. Leaves from Asakusa, next to the hotel."},
-        {"id": "jp-kansai", "why": "If you'd rather skip Tokyo", "text": "Nara and a temple night together, then the Kumano Kodo on your own. Taiwan stays on the page as the cheaper option."},
+        {"id": "jp-kanazawa", "why": "Gardens, seafood and a ryokan", "text": "Kanazawa's teahouse streets and Omicho market, Shirakawa-go's thatched village, a last night in a Yamanaka onsen ryokan. Or pair Kanazawa with Tokyo."},
     ]
     sources = [
         ["Live fares: Google Flights", "https://www.google.com/travel/flights", "out and Saturday-home fares: 27 Oct 2026, 1 adult"],

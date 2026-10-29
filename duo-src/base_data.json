@@ -1078,6 +1078,398 @@
 "src": "E"
 }
 ],
+"Kanazawa": [
+{
+"md": "10-31",
+"label": "Sat 31 Oct",
+"p10": null,
+"med": null,
+"cls": "Wet",
+"cc": 85,
+"p1": 60,
+"hi": 20,
+"lo": 12,
+"src": "J"
+},
+{
+"md": "11-01",
+"label": "Sun 1 Nov",
+"p10": null,
+"med": null,
+"cls": "Dry",
+"cc": 60,
+"p1": 30,
+"hi": 19,
+"lo": 10,
+"src": "J"
+},
+{
+"md": "11-02",
+"label": "Mon 2 Nov",
+"p10": null,
+"med": null,
+"cls": "Wet",
+"cc": 85,
+"p1": 60,
+"hi": 18,
+"lo": 13,
+"src": "J"
+},
+{
+"md": "11-03",
+"label": "Tue 3 Nov",
+"p10": null,
+"med": null,
+"cls": "Showers",
+"cc": 80,
+"p1": 40,
+"hi": 16,
+"lo": 10,
+"src": "J"
+},
+{
+"md": "11-04",
+"label": "Wed 4 Nov",
+"p10": null,
+"med": null,
+"cls": "Dry",
+"cc": 60,
+"p1": 30,
+"hi": 18,
+"lo": 9,
+"src": "J"
+},
+{
+"md": "11-05",
+"label": "Thu 5 Nov",
+"p10": 10,
+"med": 0.6,
+"cls": "Dry",
+"cc": 51,
+"p1": 45,
+"hi": 15,
+"lo": 6,
+"src": "E"
+},
+{
+"md": "11-06",
+"label": "Fri 6 Nov",
+"p10": 6,
+"med": 0.2,
+"cls": "Dry",
+"cc": 48,
+"p1": 35,
+"hi": 17,
+"lo": 7,
+"src": "E"
+},
+{
+"md": "11-07",
+"label": "Sat 7 Nov",
+"p10": 14,
+"med": 0.6,
+"cls": "Dry",
+"cc": 53,
+"p1": 45,
+"hi": 18,
+"lo": 8,
+"src": "E"
+}
+],
+"Yamanaka Onsen": [
+{
+"md": "10-31",
+"label": "Sat 31 Oct",
+"p10": null,
+"med": null,
+"cls": "Wet",
+"cc": 85,
+"p1": 60,
+"hi": 18,
+"lo": 11,
+"src": "J"
+},
+{
+"md": "11-01",
+"label": "Sun 1 Nov",
+"p10": null,
+"med": null,
+"cls": "Dry",
+"cc": 60,
+"p1": 30,
+"hi": 16,
+"lo": 10,
+"src": "J"
+},
+{
+"md": "11-02",
+"label": "Mon 2 Nov",
+"p10": null,
+"med": null,
+"cls": "Wet",
+"cc": 85,
+"p1": 60,
+"hi": 17,
+"lo": 11,
+"src": "J"
+},
+{
+"md": "11-03",
+"label": "Tue 3 Nov",
+"p10": null,
+"med": null,
+"cls": "Showers",
+"cc": 80,
+"p1": 40,
+"hi": 15,
+"lo": 9,
+"src": "J"
+},
+{
+"md": "11-04",
+"label": "Wed 4 Nov",
+"p10": null,
+"med": null,
+"cls": "Dry",
+"cc": 60,
+"p1": 30,
+"hi": 14,
+"lo": 7,
+"src": "J"
+},
+{
+"md": "11-05",
+"label": "Thu 5 Nov",
+"p10": 10,
+"med": 0.2,
+"cls": "Dry",
+"cc": 43,
+"p1": 43,
+"hi": 15,
+"lo": 7,
+"src": "E"
+},
+{
+"md": "11-06",
+"label": "Fri 6 Nov",
+"p10": 12,
+"med": 0.4,
+"cls": "Dry",
+"cc": 45,
+"p1": 35,
+"hi": 16,
+"lo": 8,
+"src": "E"
+},
+{
+"md": "11-07",
+"label": "Sat 7 Nov",
+"p10": 12,
+"med": 0.6,
+"cls": "Dry",
+"cc": 50,
+"p1": 41,
+"hi": 17,
+"lo": 9,
+"src": "E"
+}
+],
+"Shirakawa-go": [
+{
+"md": "10-31",
+"label": "Sat 31 Oct",
+"p10": null,
+"med": null,
+"cls": "Showers",
+"cc": 80,
+"p1": 40,
+"hi": 15,
+"lo": 8,
+"src": "J"
+},
+{
+"md": "11-01",
+"label": "Sun 1 Nov",
+"p10": null,
+"med": null,
+"cls": "Dry",
+"cc": 35,
+"p1": 20,
+"hi": 16,
+"lo": 6,
+"src": "J"
+},
+{
+"md": "11-02",
+"label": "Mon 2 Nov",
+"p10": null,
+"med": null,
+"cls": "Wet",
+"cc": 85,
+"p1": 60,
+"hi": 15,
+"lo": 9,
+"src": "J"
+},
+{
+"md": "11-03",
+"label": "Tue 3 Nov",
+"p10": null,
+"med": null,
+"cls": "Showers",
+"cc": 80,
+"p1": 40,
+"hi": 14,
+"lo": 5,
+"src": "J"
+},
+{
+"md": "11-04",
+"label": "Wed 4 Nov",
+"p10": null,
+"med": null,
+"cls": "Dry",
+"cc": 60,
+"p1": 20,
+"hi": 13,
+"lo": 4,
+"src": "J"
+},
+{
+"md": "11-05",
+"label": "Thu 5 Nov",
+"p10": 8,
+"med": 0.0,
+"cls": "Dry",
+"cc": 56,
+"p1": 35,
+"hi": 15,
+"lo": 3,
+"src": "E"
+},
+{
+"md": "11-06",
+"label": "Fri 6 Nov",
+"p10": 6,
+"med": 0.2,
+"cls": "Dry",
+"cc": 54,
+"p1": 31,
+"hi": 15,
+"lo": 4,
+"src": "E"
+},
+{
+"md": "11-07",
+"label": "Sat 7 Nov",
+"p10": 8,
+"med": 0.8,
+"cls": "Dry",
+"cc": 68,
+"p1": 49,
+"hi": 16,
+"lo": 5,
+"src": "E"
+}
+],
+"Takayama": [
+{
+"md": "10-31",
+"label": "Sat 31 Oct",
+"p10": null,
+"med": null,
+"cls": "Showers",
+"cc": 80,
+"p1": 40,
+"hi": 16,
+"lo": 7,
+"src": "J"
+},
+{
+"md": "11-01",
+"label": "Sun 1 Nov",
+"p10": null,
+"med": null,
+"cls": "Dry",
+"cc": 35,
+"p1": 20,
+"hi": 16,
+"lo": 5,
+"src": "J"
+},
+{
+"md": "11-02",
+"label": "Mon 2 Nov",
+"p10": null,
+"med": null,
+"cls": "Wet",
+"cc": 85,
+"p1": 60,
+"hi": 15,
+"lo": 8,
+"src": "J"
+},
+{
+"md": "11-03",
+"label": "Tue 3 Nov",
+"p10": null,
+"med": null,
+"cls": "Showers",
+"cc": 80,
+"p1": 40,
+"hi": 14,
+"lo": 4,
+"src": "J"
+},
+{
+"md": "11-04",
+"label": "Wed 4 Nov",
+"p10": null,
+"med": null,
+"cls": "Dry",
+"cc": 60,
+"p1": 20,
+"hi": 13,
+"lo": 2,
+"src": "J"
+},
+{
+"md": "11-05",
+"label": "Thu 5 Nov",
+"p10": 8,
+"med": 0.0,
+"cls": "Dry",
+"cc": 53,
+"p1": 25,
+"hi": 14,
+"lo": 2,
+"src": "E"
+},
+{
+"md": "11-06",
+"label": "Fri 6 Nov",
+"p10": 6,
+"med": 0.0,
+"cls": "Dry",
+"cc": 45,
+"p1": 25,
+"hi": 15,
+"lo": 3,
+"src": "E"
+},
+{
+"md": "11-07",
+"label": "Sat 7 Nov",
+"p10": 6,
+"med": 0.0,
+"cls": "Dry",
+"cc": 51,
+"p1": 33,
+"hi": 16,
+"lo": 4,
+"src": "E"
+}
+],
 "Tainan": [
 {
 "md": "10-31",
@@ -7992,6 +8384,8 @@
 "wakayama": "29 Oct 11:00",
 "fukuoka": "28 Oct 17:00",
 "oita": "29 Oct 11:00",
+"ishikawa": "28 Oct 17:00",
+"gifu": "28 Oct 17:00",
 "kumamoto": "28 Oct 17:00"
 }
 }
