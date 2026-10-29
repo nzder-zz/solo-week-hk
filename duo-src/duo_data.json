@@ -1,65 +1,102 @@
 {
+ "tokyo": {
+  "stay": "Stay in Ueno or Asakusa: the Skyliner from Narita stops at Ueno, the Tobu train to Nikko leaves from Asakusa, and it's the old, walkable side of Tokyo. Same hotel on Sat and Tue nights; leave the big bags there.",
+  "days": [
+   {
+    "when": "Sat 31 Oct, evening",
+    "what": "Land at Narita 20:00, Skyliner to Ueno (41 min), late ramen."
+   },
+   {
+    "when": "Sun 1 Nov, 8:00",
+    "what": "Senso-ji and Nakamise before the crowds, then the train or bus to the town."
+   },
+   {
+    "when": "Tue 3 Nov (Culture Day)",
+    "what": "Back by lunchtime. Meiji Jingu's autumn festival: martial arts, noh and gagaku, chrysanthemums, horseback archery (yabusame). Harajuku's back streets. Evening: Omoide Yokocho's yakitori alleys in Shinjuku."
+   },
+   {
+    "when": "Wed 4 Nov",
+    "what": "Yanaka's temples and old shopping street at 9, Ueno park, the Tokyo National Museum (open Wed). Ameyoko for lunch, Kappabashi. She leaves Ueno ~16:30 on the Skyliner for her 19:00 flight."
+   }
+  ],
+  "menu": [
+   "Rain plan: the Tokyo National Museum (closed Mon, open Tue holiday and Wed), or teamLab Planets (book ahead).",
+   "Food: Tsukiji outer market breakfast, Ameyoko street food, Omoide Yokocho yakitori, a kaiten-zushi in Ueno.",
+   "Evening views: the Sumida river at night with the Skytree, or Shibuya Sky at sunset (book ahead).",
+   "Missed by a day: Kanda's used-book fair ends Sun 1 Nov."
+  ],
+  "solo": "Your Thu–Fri: in the Slow plans you stay in Tokyo (Mt Takao, Kamakura); in the Fuller plans you go to the mountains (Hakone, or Kawaguchiko if you did Hakone together)."
+ },
  "dests": [
   {
    "id": "jp-fuji",
    "country": "Japan",
-   "region": "Tokyo & the Fuji lakes",
+   "region": "Tokyo + Lake Kawaguchi (Mount Fuji)",
    "cc": "JP",
-   "short": "Japan · Tokyo & Fuji",
-   "title": "Tokyo, Mount Fuji & Hakone",
-   "tagline": "Old Tokyo on foot and two days facing Fuji together; then Hakone or the Mitsutoge ridge on your own.",
+   "short": "Tokyo + Kawaguchiko",
+   "title": "Tokyo + Kawaguchiko: Mount Fuji across the lake",
+   "tagline": "Two nights by a lake facing Mount Fuji, with onsen and a thatched village, bracketed by old Tokyo and Meiji Jingu's festival.",
    "food_day": 28,
    "solo_food": 25,
-   "transport": "Trains, buses and the metro with a Suica card in your phone. Buses to the lakes from Shinjuku (book on highwaybus.com).",
-   "crowds": "Tue 3 Nov is a national holiday: Chureito and the lakes are busy by 10:00, so go early. Your solo days (Thu, Fri) are calm weekdays.",
+   "transport": "Highway bus Shinjuku ↔ Kawaguchiko (book on highwaybus.com), the lake loop buses (2-day pass ¥2,000), Suica in Tokyo.",
+   "crowds": "Sun 1 Nov and Tue 3 Nov (Culture Day) are busy at the lakes: Chureito is calm only at sunrise. The maple-corridor light-up only starts on 7 Nov.",
    "food": [
-    "Tokyo: sushi at Tsukiji outer market, ramen, izakaya under the Ueno tracks",
     "Hoto: thick miso noodles with pumpkin, the Fuji lakes dish",
-    "Hakone: black eggs from the Owakudani vents",
-    "Convenience-store breakfasts that are better than they should be"
+    "Tokyo: ramen, izakaya under the Ueno tracks, Omoide Yokocho's yakitori",
+    "Ameyoko street food",
+    "Tsukiji outer market (your Saturday)"
    ],
    "hikes": [
-    "Mitsutoge: Fuji's best face, 2h30 up from the trailhead",
-    "Tenjoyama by the ropeway, down on foot (40 min)",
-    "Mt Takao: trail 6 up, trail 1 down (3–4h)",
-    "Hakone's old Tokaido stone road, Hatajuku → Moto-Hakone (2h)"
+    "Tenjoyama: up on foot (40 min) or by ropeway, for Fuji over the lake",
+    "Lake Saiko shore and the Aokigahara forest paths (Fuller)",
+    "Chureito pagoda's 398 steps at sunrise",
+    "Mt Takao from Tokyo (your Thursday, Slow plan)"
    ],
    "culture": [
     "Senso-ji and old Asakusa at 8am",
-    "Yanaka's temples and wooden houses",
     "Saiko Iyashi no Sato thatched village",
-    "Hakone Open-Air Museum and Hakone shrine's torii in the lake"
+    "Kubota Itchiku kimono museum",
+    "Meiji Jingu's autumn festival (3 Nov)"
    ],
    "adventure": [
     {
-     "name": "Onsen ryokan night in Hakone",
-     "price": "~¥32,000 for two with dinner + breakfast",
-     "note": "Mon 2 Nov together, the likeliest day for showers (Fuller plan)"
-    },
-    {
      "name": "Chureito pagoda at sunrise",
      "price": "free",
-     "note": "398 steps; Fuji behind the pagoda around 06:00"
+     "note": "Fuji behind the five-storey pagoda around 06:00; the classic photo"
     },
     {
-     "name": "Hakone Freepass loop",
-     "price": "¥6,100 from Shinjuku",
-     "note": "Train, cable car, ropeway, boat: your solo day (Slow plan)"
+     "name": "Kubota Itchiku Art Museum",
+     "price": "¥1,300",
+     "note": "Landscape kimonos in a forest garden; open daily in Nov"
+    },
+    {
+     "name": "Meiji Jingu autumn festival",
+     "price": "free",
+     "note": "Tue 3 Nov: yabusame, martial arts, noh"
     }
    ],
    "pros": [
-    "Tokyo + Fuji: the classic, at an easy pace",
-    "Her kanji + Mandarin make menus easy",
-    "Fuji is clearest on Nov mornings",
-    "Your Saturday flight home is a live fare (€571)"
+    "The Fuji view, the strongest single image of the three towns",
+    "Sun 1 Nov forecast dry: the Fuji day",
+    "Slow pace: two nights in one place",
+    "Her language skills make the bus and menus easy"
    ],
    "cons": [
-    "Japan costs about twice Taiwan",
-    "Mon 2 Nov: cloudy, 40% chance of showers (29 Oct forecast)",
-    "Holiday crowds on Tue 3 Nov",
-    "Her flight back lands at 23:25 (an earlier Cathay costs ~€120 more)"
+    "Busiest of the three on the holiday",
+    "The lake bus is slow; Fuji hides in cloud after midday",
+    "Maple light-up starts only on 7 Nov",
+    "Japan prices"
    ],
-   "calm": "Two nights at the Fuji lakes together: Fuji in the lake at Oishi park, a shore walk at Saiko, an onsen at night. In the Fuller plan, a ryokan night in Hakone.",
+   "calm": "Two nights at Lake Kawaguchi: Fuji in the water at Oishi park in the morning, the thatched village at Saiko, an onsen at night.",
+   "group": "tokyo",
+   "town": "Kawaguchiko",
+   "town_card": {
+    "time": "Bus from Shinjuku 1h55",
+    "best": "Mount Fuji views, a lakeside onsen, a thatched village",
+    "crowds": "Busy Sun and Tue (holiday) at Chureito and Oishi park; mornings are calm",
+    "rain": "The Kubota Itchiku kimono museum (open daily in Nov) and an onsen",
+    "room": "Lake guesthouse, private room ~€75"
+   },
    "out": {
     "route": "HKG → NRT",
     "price": 116,
@@ -94,16 +131,16 @@
     "sky": "mostly blue (Fuji's clearest month)"
    },
    "scores": {
-    "hike": 4,
-    "nature": 4.5,
-    "food": 5,
-    "culture": 4.5,
-    "chill": 4,
+    "hike": 3.5,
+    "nature": 5,
+    "food": 4.5,
+    "culture": 4,
+    "chill": 4.5,
     "weather": 4.25,
-    "value": 2,
+    "value": 2.5,
     "ease": 4.5
    },
-   "fit": 83,
+   "fit": 82,
    "fc": {
     "score": 4.5,
     "word": "Mostly dry",
@@ -792,12 +829,12 @@
    "options": [
     {
      "style": "Slow",
-     "name": "Tokyo and the Fuji lakes; Hakone on your own",
-     "chill": 75,
+     "name": "Tokyo, two nights facing Fuji, Tokyo; Tokyo day trips on your own",
+     "chill": 80,
      "route": [
-      "Together: 2n Tokyo, 2n Kawaguchiko",
-      "Wed: back to Tokyo, she flies from Narita 19:00",
-      "You: 1n Tokyo, 1n Hakone, 1n Tokyo",
+      "Together: 1n Tokyo, 2n Kawaguchiko, 1n Tokyo",
+      "Wed: slow day in Tokyo, she flies from Narita 19:00",
+      "You: 3n Tokyo (Mt Takao, Kamakura)",
       "Sat: Narita 17:20"
      ],
      "days": [
@@ -807,8 +844,8 @@
        "who": "both",
        "am": "Morning with the family; Airport Express from Central around 12:30.",
        "pm": "14:55 HK Express to Narita, land 20:00.",
-       "eve": "Skyliner to Ueno (41 min), late ramen near the hotel.",
-       "sleep": "Tokyo hotel (Asakusa/Ueno)",
+       "eve": "Skyliner to Ueno (41 min), late ramen near the hotel. Leave the big bags here for Tuesday: most hotels keep them.",
+       "sleep": "Tokyo hotel (Ueno/Asakusa)",
        "wx": "Tokyo",
        "tr": [
         [
@@ -830,30 +867,12 @@
        "b": null
       },
       {
-       "t": "Old Tokyo on foot",
-       "e": "Easy",
-       "who": "both",
-       "am": "Yanaka at 9: temples, cats and the old shopping street; down through Ueno park.",
-       "pm": "Asakusa: Senso-ji, Kappabashi kitchen street, the Sumida river.",
-       "eve": "Ameyoko and the izakaya under the Ueno tracks.",
-       "sleep": "Tokyo hotel",
-       "wx": "Tokyo",
-       "tr": [
-        [
-         "metro",
-         "Ueno ↔ Asakusa",
-         20
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Bus to Lake Kawaguchi",
+       "t": "Senso-ji at 8, bus to Fuji",
        "e": "Travel",
        "who": "both",
-       "am": "Highway bus from Shinjuku (1h55).",
-       "pm": "Hoto noodles; the Kubota Itchiku kimono museum and a lakeside onsen.",
-       "eve": "Quiet dinner by the lake.",
+       "am": "Senso-ji and Nakamise before the crowds; metro to Shinjuku, 10:00 bus to Kawaguchiko (1h55).",
+       "pm": "Hoto lunch, then Oishi park's lakeshore and the Tenjoyama ropeway for Fuji over the lake while the sky is clear.",
+       "eve": "Lakeside onsen, dinner in town.",
        "sleep": "Kawaguchiko guesthouse",
        "wx": "Kawaguchiko",
        "tr": [
@@ -866,47 +885,47 @@
          "bus",
          "Shinjuku → Kawaguchiko",
          115
-        ]
-       ],
-       "b": "Showers possible (40%): the museum and onsen work either way."
-      },
-      {
-       "t": "Chureito pagoda and Lake Saiko",
-       "e": "Active",
-       "who": "both",
-       "am": "Chureito at sunrise (train 10 min), back for breakfast; Oishi park after.",
-       "pm": "Lake bus to Saiko Iyashi no Sato and the shore path.",
-       "eve": "Maple corridor lit up at night.",
-       "sleep": "Kawaguchiko guesthouse",
-       "wx": "Kawaguchiko",
-       "tr": [
-        [
-         "train",
-         "Kawaguchiko ↔ Shimoyoshida",
-         20
         ],
         [
-         "bus",
-         "Lake loop bus to Saiko",
-         60
+         "cable",
+         "Tenjoyama ropeway",
+         5
         ]
        ],
        "b": null
       },
       {
-       "t": "Tenjoyama, back to Tokyo; she flies at 19:00",
-       "e": "Travel",
-       "who": "split",
-       "am": "Tenjoyama ropeway for Fuji over the lake; bus to Shinjuku at 11:00 (2h).",
-       "pm": "Lunch and Meiji shrine's forest together; she takes the Skyliner from Ueno ~16:30 for HK Express 19:00 (lands HK 23:25).",
-       "eve": "You: check in to a hostel in Asakusa; izakaya.",
-       "sleep": "You: Tokyo hostel",
+       "t": "Thatched village and kimono",
+       "e": "Easy",
+       "who": "both",
+       "am": "Lake bus to Saiko Iyashi no Sato, the thatched village (open daily).",
+       "pm": "The Kubota Itchiku kimono museum and its garden.",
+       "eve": "Quiet dinner; early night for the sunrise.",
+       "sleep": "Kawaguchiko guesthouse",
+       "wx": "Kawaguchiko",
+       "tr": [
+        [
+         "bus",
+         "Lake loop bus",
+         60
+        ]
+       ],
+       "b": "Showers possible (40%): both are partly indoor; add an onsen."
+      },
+      {
+       "t": "Back to Tokyo; Meiji Jingu's festival",
+       "e": "Easy",
+       "who": "both",
+       "am": "Leave the lake by 09:30, before the holiday traffic home.",
+       "pm": "Meiji Jingu's autumn festival (1–3 Nov): on Culture Day there are martial-arts displays, noh and gagaku on the stage, chrysanthemums along the approach, and horseback archery (yabusame). Then Harajuku's back streets.",
+       "eve": "Omoide Yokocho's yakitori alleys under the Shinjuku tracks.",
+       "sleep": "Tokyo hotel (Ueno/Asakusa)",
        "wx": "Tokyo",
        "tr": [
         [
-         "cable",
-         "Tenjoyama ropeway",
-         5
+         "train",
+         "Kawaguchiko ↔ Shimoyoshida (Chureito at sunrise, optional)",
+         20
         ],
         [
          "bus",
@@ -919,55 +938,58 @@
          30
         ]
        ],
-       "b": null
+       "b": "Showers are unlikely (30%). If it rains, the Tokyo National Museum in Ueno is open on the holiday."
       },
       {
-       "t": "Hakone loop",
-       "e": "Active",
-       "who": "you",
-       "am": "Romancecar to Hakone-Yumoto (85 min), Tozan train to Gora.",
-       "pm": "Open-Air Museum, cable car + ropeway over Owakudani, boat across Lake Ashi.",
-       "eve": "Onsen, hostel in Hakone.",
-       "sleep": "Hakone hostel",
-       "wx": "Hakone",
+       "t": "A slow last day in Tokyo; she flies at 19:00",
+       "e": "Easy",
+       "who": "split",
+       "am": "Yanaka at 9: temples, cats and the old shopping street; down through Ueno park, the Tokyo National Museum if you like (open Wed).",
+       "pm": "Ameyoko for lunch, then Kappabashi kitchen street. She takes the Skyliner from Ueno ~16:30 for HK Express 19:00 (lands HK 23:25).",
+       "eve": "You: check in to a hostel in Asakusa; the Sumida river at night.",
+       "sleep": "You: Tokyo hostel",
+       "wx": "Tokyo",
        "tr": [
         [
-         "train",
-         "Shinjuku → Hakone-Yumoto → Gora",
-         125
-        ],
-        [
-         "cable",
-         "Gora → Owakudani → Togendai",
-         40
-        ],
-        [
-         "boat",
-         "Lake Ashi",
-         25
+         "metro",
+         "Ueno ↔ Asakusa",
+         20
         ]
        ],
        "b": null
       },
       {
-       "t": "The old Tokaido road, back to Tokyo",
-       "e": "Easy",
+       "t": "Mt Takao",
+       "e": "Active",
        "who": "you",
-       "am": "Walk the cobbled Tokaido road from Hatajuku to Moto-Hakone (2h), amazake at the old teahouse.",
-       "pm": "Bus + Romancecar back to Shinjuku.",
+       "am": "Keio line from Shinjuku to Takaosanguchi (50 min), trail 6 up past the waterfall.",
+       "pm": "Along the ridge to Shiroyama for a view of Fuji, down trail 1 via Yakuoin.",
        "eve": "Shimokitazawa's bars.",
        "sleep": "Tokyo hostel",
        "wx": "Tokyo",
        "tr": [
         [
-         "bus",
-         "Moto-Hakone → Hakone-Yumoto",
-         40
-        ],
+         "train",
+         "Tokyo ↔ Takaosanguchi",
+         110
+        ]
+       ],
+       "b": null
+      },
+      {
+       "t": "Kamakura",
+       "e": "Easy",
+       "who": "you",
+       "am": "JR to Kita-Kamakura (1h): Engaku-ji and Kencho-ji.",
+       "pm": "Daibutsu hiking course to the Great Buddha, then the beach at Yuigahama.",
+       "eve": "Back to Tokyo.",
+       "sleep": "Tokyo hostel",
+       "wx": "Tokyo",
+       "tr": [
         [
          "train",
-         "Hakone-Yumoto → Shinjuku",
-         85
+         "Tokyo ↔ Kamakura",
+         130
         ]
        ],
        "b": null
@@ -978,7 +1000,7 @@
        "who": "you",
        "am": "Tsukiji outer market breakfast.",
        "pm": "Skyliner to Narita around 14:30.",
-       "eve": "Etihad 17:20 to Brussels, land Sun 06:30; train to Lille ~1h30.",
+       "eve": "Etihad 17:20 to Brussels, land Sun 06:30; train to Lille about 1h30.",
        "sleep": "On the plane",
        "wx": "Tokyo",
        "tr": [
@@ -993,13 +1015,7 @@
      ],
      "nights": [
       {
-       "place": "Tokyo (Asakusa/Ueno), hotel double",
-       "room": 85,
-       "meals": false,
-       "solo": false
-      },
-      {
-       "place": "Tokyo",
+       "place": "Tokyo (Ueno/Asakusa) hotel double",
        "room": 85,
        "meals": false,
        "solo": false
@@ -1017,64 +1033,70 @@
        "solo": false
       },
       {
-       "place": "Tokyo hostel or capsule",
+       "place": "Tokyo (Ueno/Asakusa) hotel double",
+       "room": 85,
+       "meals": false,
+       "solo": false
+      },
+      {
+       "place": "Tokyo hostel or capsule (Asakusa)",
        "room": 35,
        "meals": false,
        "solo": true
       },
       {
-       "place": "Hakone hostel",
+       "place": "Tokyo hostel or capsule (Asakusa)",
        "room": 35,
        "meals": false,
        "solo": true
       },
       {
-       "place": "Tokyo hostel or capsule",
+       "place": "Tokyo hostel or capsule (Asakusa)",
        "room": 35,
        "meals": false,
        "solo": true
       }
      ],
      "transport_pp": 75,
-     "shared": 10,
-     "activities_pp": 20,
-     "solo_transport": 65,
-     "solo_activities": 20,
-     "travel": 1075,
+     "shared": 0,
+     "activities_pp": 25,
+     "solo_transport": 45,
+     "solo_activities": 15,
+     "travel": 1000,
      "together_travel": 715,
      "beds": 2,
-     "solo_beds": 2,
-     "moves": 4,
+     "solo_beds": 1,
+     "moves": 2,
      "cost": {
       "out": 232,
       "her": 130,
       "his": 571,
       "rooms": 320,
       "food": 224.0,
-      "transport": 160,
-      "activities": 40,
+      "transport": 150,
+      "activities": 50,
       "misc": 40,
       "solo_rooms": 105,
       "solo_food": 75.0,
-      "solo_transport": 65,
-      "solo_activities": 20,
-      "solo": 265.0,
+      "solo_transport": 45,
+      "solo_activities": 15,
+      "solo": 240.0,
       "flights": 933,
       "together": 784.0,
-      "ground": 1049.0,
-      "total": 1982,
-      "his_share": 1344,
+      "ground": 1024.0,
+      "total": 1957,
+      "his_share": 1319,
       "her_share": 638
      }
     },
     {
      "style": "Fuller",
-     "name": "Takao, a Hakone ryokan and the lakes; Mitsutoge on your own",
-     "chill": 55,
+     "name": "Tenjoyama on foot, Saiko's forest; Hakone on your own",
+     "chill": 60,
      "route": [
-      "Together: 2n Tokyo (Mt Takao), 1n Hakone ryokan, 1n Kawaguchiko",
-      "Wed: she takes the bus to Tokyo and flies from Narita 19:00",
-      "You: 2n Kawaguchiko (Mitsutoge), 1n Tokyo",
+      "Together: 1n Tokyo, 2n Kawaguchiko (Tenjoyama on foot, Saiko forest), 1n Tokyo",
+      "Wed: she flies from Narita 19:00; you take the Romancecar to Hakone",
+      "You: 3n Hakone (the loop, Mt Kintoki)",
       "Sat: Narita 17:20"
      ],
      "days": [
@@ -1082,10 +1104,10 @@
        "t": "Fly to Tokyo",
        "e": "Travel",
        "who": "both",
-       "am": "Airport Express around 12:30.",
+       "am": "Morning with the family; Airport Express from Central around 12:30.",
        "pm": "14:55 HK Express to Narita, land 20:00.",
-       "eve": "Skyliner to Ueno, ramen.",
-       "sleep": "Tokyo hotel",
+       "eve": "Skyliner to Ueno (41 min), late ramen near the hotel. Leave the big bags here for Tuesday: most hotels keep them.",
+       "sleep": "Tokyo hotel (Ueno/Asakusa)",
        "wx": "Tokyo",
        "tr": [
         [
@@ -1107,111 +1129,24 @@
        "b": null
       },
       {
-       "t": "Mt Takao",
+       "t": "Senso-ji at 8, up Tenjoyama on foot",
        "e": "Active",
        "who": "both",
-       "am": "Keio line from Shinjuku (50 min) by 8:30: trail 6 up past the waterfall to the summit (599 m).",
-       "pm": "Trail 1 down via Yakuoin temple; soba at the bottom.",
-       "eve": "Asakusa at night.",
-       "sleep": "Tokyo hotel",
-       "wx": "Tokyo",
-       "tr": [
-        [
-         "train",
-         "Tokyo ↔ Takaosanguchi",
-         110
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Romancecar to a Hakone ryokan",
-       "e": "Easy",
-       "who": "both",
-       "am": "Romancecar to Hakone-Yumoto (85 min), Tozan train up to Gora.",
-       "pm": "Hakone Open-Air Museum (indoor halls + a footbath).",
-       "eve": "Ryokan: kaiseki dinner, onsen.",
-       "sleep": "Hakone ryokan",
-       "wx": "Hakone",
-       "tr": [
-        [
-         "train",
-         "Shinjuku → Hakone-Yumoto",
-         85
-        ],
-        [
-         "train",
-         "Tozan train to Gora",
-         40
-        ]
-       ],
-       "b": "Showers possible (40%): the ropeway may stop in rain or wind, which doesn't matter today."
-      },
-      {
-       "t": "Owakudani, Lake Ashi, on to Fuji",
-       "e": "Travel",
-       "who": "both",
-       "am": "Ropeway over Owakudani, boat across Lake Ashi.",
-       "pm": "Bus Hakone → Gotemba → Kawaguchiko (about 2h).",
-       "eve": "Hoto noodles.",
+       "am": "Senso-ji before the crowds; 10:00 bus from Shinjuku to Kawaguchiko (1h55).",
+       "pm": "Walk up Tenjoyama from the lakeshore (40 min) for Fuji over the lake, ropeway down; Oishi park.",
+       "eve": "Onsen and hoto.",
        "sleep": "Kawaguchiko guesthouse",
        "wx": "Kawaguchiko",
        "tr": [
         [
-         "cable",
-         "Gora → Owakudani → Togendai",
-         40
-        ],
-        [
-         "boat",
-         "Lake Ashi",
-         25
+         "metro",
+         "Asakusa → Shinjuku",
+         30
         ],
         [
          "bus",
-         "Hakone → Kawaguchiko",
-         120
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Chureito at sunrise; she leaves at noon",
-       "e": "Easy",
-       "who": "split",
-       "am": "Chureito together at 06:00, breakfast by the lake.",
-       "pm": "She takes the bus to Shinjuku (~11:30) and the Narita Express for HK Express 19:00. You: Lake Saiko's ice caves and forest.",
-       "eve": "You: move to a hostel by the lake.",
-       "sleep": "You: Kawaguchiko hostel",
-       "wx": "Kawaguchiko",
-       "tr": [
-        [
-         "train",
-         "Kawaguchiko ↔ Shimoyoshida",
-         20
-        ],
-        [
-         "bus",
-         "Lake loop bus to Saiko",
-         60
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Mitsutoge ridge",
-       "e": "Big day",
-       "who": "you",
-       "am": "Bus or taxi to the Mitsutoge trailhead, 2h30 up to Kaiun-yama (1,785 m): the whole of Fuji.",
-       "pm": "Along the ridge to Tenjoyama and down by the ropeway (5–6h total).",
-       "eve": "Onsen.",
-       "sleep": "Kawaguchiko hostel",
-       "wx": "Kawaguchiko",
-       "tr": [
-        [
-         "taxi",
-         "Kawaguchiko → Mitsutoge trailhead",
-         15
+         "Shinjuku → Kawaguchiko",
+         115
         ],
         [
          "cable",
@@ -1222,24 +1157,116 @@
        "b": null
       },
       {
-       "t": "Back to Tokyo",
-       "e": "Travel",
-       "who": "you",
-       "am": "Oshino Hakkai's spring pools.",
-       "pm": "Bus to Shinjuku (2h).",
-       "eve": "Last night in Tokyo.",
-       "sleep": "Tokyo hostel",
-       "wx": "Tokyo",
+       "t": "Lake Saiko and the Aokigahara forest",
+       "e": "Active",
+       "who": "both",
+       "am": "Lake bus to Saiko: the lava-forest trail from the bat cave to the ice and wind caves (2h, sheltered under the trees).",
+       "pm": "Saiko Iyashi no Sato, then the Kubota Itchiku museum.",
+       "eve": "Early night for the sunrise.",
+       "sleep": "Kawaguchiko guesthouse",
+       "wx": "Kawaguchiko",
        "tr": [
         [
          "bus",
-         "Kawaguchiko ↔ Oshino",
-         40
+         "Lake loop bus",
+         70
+        ]
+       ],
+       "b": "Showers possible (40%): the forest and caves stay dry-ish; the museum is the back-up."
+      },
+      {
+       "t": "Back to Tokyo; Meiji Jingu's festival",
+       "e": "Easy",
+       "who": "both",
+       "am": "Leave the lake by 09:30, before the holiday traffic home.",
+       "pm": "Meiji Jingu's autumn festival (1–3 Nov): on Culture Day there are martial-arts displays, noh and gagaku on the stage, chrysanthemums along the approach, and horseback archery (yabusame). Then Harajuku's back streets.",
+       "eve": "Omoide Yokocho's yakitori alleys under the Shinjuku tracks.",
+       "sleep": "Tokyo hotel (Ueno/Asakusa)",
+       "wx": "Tokyo",
+       "tr": [
+        [
+         "train",
+         "Kawaguchiko ↔ Shimoyoshida (Chureito at sunrise)",
+         20
         ],
         [
          "bus",
          "Kawaguchiko → Shinjuku",
          120
+        ],
+        [
+         "metro",
+         "around Tokyo",
+         30
+        ]
+       ],
+       "b": "Showers are unlikely (30%). If it rains, the Tokyo National Museum in Ueno is open on the holiday."
+      },
+      {
+       "t": "A slow last day in Tokyo; she flies at 19:00",
+       "e": "Easy",
+       "who": "split",
+       "am": "Yanaka at 9, Ueno park; the Tokyo National Museum if you like (open Wed).",
+       "pm": "Ameyoko for lunch, Kappabashi. She takes the Skyliner from Ueno ~16:30 for HK Express 19:00. You: Romancecar from Shinjuku to Hakone (85 min).",
+       "eve": "You: onsen and dinner in Hakone.",
+       "sleep": "You: Hakone hostel",
+       "wx": "Hakone",
+       "tr": [
+        [
+         "train",
+         "Shinjuku → Hakone-Yumoto (Romancecar)",
+         85
+        ],
+        [
+         "train",
+         "Tozan train",
+         30
+        ]
+       ],
+       "b": null
+      },
+      {
+       "t": "Hakone loop",
+       "e": "Active",
+       "who": "you",
+       "am": "Tozan train up the switchbacks to Gora, cable car and ropeway over Owakudani's vents.",
+       "pm": "Boat across Lake Ashi to Moto-Hakone, Hakone shrine's torii in the water.",
+       "eve": "Onsen.",
+       "sleep": "Hakone hostel",
+       "wx": "Hakone",
+       "tr": [
+        [
+         "train",
+         "Hakone-Yumoto → Gora",
+         40
+        ],
+        [
+         "cable",
+         "Gora → Owakudani → Togendai",
+         40
+        ],
+        [
+         "boat",
+         "Lake Ashi",
+         25
+        ]
+       ],
+       "b": null
+      },
+      {
+       "t": "Mt Kintoki",
+       "e": "Big day",
+       "who": "you",
+       "am": "Bus to Kintoki-jinja-iriguchi (25 min), up to the summit (1,212 m): Fuji straight ahead (3h round trip).",
+       "pm": "Down to Sengokuhara's silver-grass fields, back by bus.",
+       "eve": "Onsen.",
+       "sleep": "Hakone hostel",
+       "wx": "Hakone",
+       "tr": [
+        [
+         "bus",
+         "Hakone ↔ Kintoki trailhead",
+         50
         ]
        ],
        "b": null
@@ -1248,16 +1275,21 @@
        "t": "Fly home",
        "e": "Travel",
        "who": "you",
-       "am": "Yanaka and Ueno park.",
-       "pm": "Skyliner to Narita around 14:30.",
+       "am": "Walk the old Tokaido stone road from Hatajuku early (1h).",
+       "pm": "Romancecar to Shinjuku, Narita Express to Narita (3h total), leave by 12:00.",
        "eve": "Etihad 17:20 to Brussels, land Sun 06:30.",
        "sleep": "On the plane",
-       "wx": "Tokyo",
+       "wx": "Hakone",
        "tr": [
         [
          "train",
-         "Ueno → Narita (Skyliner)",
-         45
+         "Hakone-Yumoto → Shinjuku",
+         85
+        ],
+        [
+         "train",
+         "Shinjuku → Narita (N'EX)",
+         90
         ]
        ],
        "b": null
@@ -1265,142 +1297,151 @@
      ],
      "nights": [
       {
-       "place": "Tokyo hotel double",
+       "place": "Tokyo (Ueno/Asakusa) hotel double",
        "room": 85,
        "meals": false,
        "solo": false
       },
       {
-       "place": "Tokyo",
-       "room": 85,
-       "meals": false,
-       "solo": false
-      },
-      {
-       "place": "Hakone ryokan, dinner + breakfast",
-       "room": 180,
-       "meals": true,
-       "solo": false
-      },
-      {
-       "place": "Kawaguchiko guesthouse",
+       "place": "Kawaguchiko guesthouse, private room",
        "room": 75,
        "meals": false,
        "solo": false
       },
       {
-       "place": "Kawaguchiko hostel",
-       "room": 30,
+       "place": "Kawaguchiko",
+       "room": 75,
+       "meals": false,
+       "solo": false
+      },
+      {
+       "place": "Tokyo (Ueno/Asakusa) hotel double",
+       "room": 85,
+       "meals": false,
+       "solo": false
+      },
+      {
+       "place": "Hakone hostel",
+       "room": 35,
        "meals": false,
        "solo": true
       },
       {
-       "place": "Kawaguchiko hostel",
-       "room": 30,
+       "place": "Hakone hostel",
+       "room": 35,
        "meals": false,
        "solo": true
       },
       {
-       "place": "Tokyo hostel or capsule",
+       "place": "Hakone hostel",
        "room": 35,
        "meals": false,
        "solo": true
       }
      ],
-     "transport_pp": 100,
+     "transport_pp": 75,
      "shared": 0,
      "activities_pp": 25,
-     "solo_transport": 55,
-     "solo_activities": 15,
-     "travel": 1040,
-     "together_travel": 815,
-     "beds": 3,
-     "solo_beds": 2,
+     "solo_transport": 75,
+     "solo_activities": 20,
+     "travel": 1150,
+     "together_travel": 820,
+     "beds": 2,
+     "solo_beds": 1,
      "moves": 3,
      "cost": {
       "out": 232,
       "her": 130,
       "his": 571,
-      "rooms": 425,
-      "food": 190.4,
-      "transport": 200,
+      "rooms": 320,
+      "food": 224.0,
+      "transport": 150,
       "activities": 50,
       "misc": 40,
-      "solo_rooms": 95,
+      "solo_rooms": 105,
       "solo_food": 75.0,
-      "solo_transport": 55,
-      "solo_activities": 15,
-      "solo": 240.0,
+      "solo_transport": 75,
+      "solo_activities": 20,
+      "solo": 275.0,
       "flights": 933,
-      "together": 905.4,
-      "ground": 1145.4,
-      "total": 2078,
-      "his_share": 1380,
-      "her_share": 699
+      "together": 784.0,
+      "ground": 1059.0,
+      "total": 1992,
+      "his_share": 1354,
+      "her_share": 638
      }
     }
    ]
   },
   {
-   "id": "jp-nikko",
+   "id": "jp-hakone",
    "country": "Japan",
-   "region": "Tokyo & Nikko",
+   "region": "Tokyo + Hakone",
    "cc": "JP",
-   "short": "Japan · Tokyo & Nikko",
-   "title": "Tokyo & Nikko: shrines, lakes and autumn colour",
-   "tagline": "Gold-leaf shrines in cedar forest and a mountain lake at peak colour together; then Tokyo's hills and Kamakura or Hakone on your own.",
+   "short": "Tokyo + Hakone",
+   "title": "Tokyo + Hakone: onsen, a crater valley and Lake Ashi",
+   "tagline": "Two nights at a hot-spring inn in the hills: an open-air museum, the ropeway over steaming vents, a boat across Lake Ashi.",
    "food_day": 28,
    "solo_food": 25,
-   "transport": "Tobu Limited Express from Asakusa (1h50) and Nikko's buses (the Nikko pass covers them). Suica works on both.",
-   "crowds": "Irohazaka and Lake Chuzenji jam on Tue 3 Nov (holiday) from 9:00 to 15:00: take the 07:00 bus up.",
+   "transport": "Romancecar Shinjuku ↔ Hakone-Yumoto (book seats for Tue, the holiday), then the Hakone Freepass covers the Tozan train, cable car, ropeway, boat and buses.",
+   "crowds": "Sun 1 Nov and Tue 3 Nov are busy on the loop; the ropeway queues at Sounzan from 10:00. Lake Ashi's colours peak in early November.",
    "food": [
-    "Yuba (tofu skin) in every form: Nikko's dish",
-    "Tokyo: sushi, tempura, izakaya",
-    "Trout from Lake Chuzenji",
-    "Kamakura: shirasu (whitebait) bowls"
+    "Kaiseki or a set dinner at the inn",
+    "Black eggs boiled in Owakudani's vents",
+    "Soba in Hakone-Yumoto",
+    "Tokyo: ramen, Ameyoko, Omoide Yokocho"
    ],
    "hikes": [
-    "Senjogahara boardwalk: Yumoto → Yudaki falls → Akanuma (3h, flat)",
-    "Lake Yunoko loop (1h)",
-    "Mt Takao from Tokyo (3–4h)",
-    "Kamakura's Daibutsu hiking course (1h30)"
+    "Old Tokaido stone road: Hatajuku → Moto-Hakone (2h, under cedars)",
+    "Mt Kintoki: Fuji straight ahead (3h round trip, Fuller)",
+    "Lake Ashi shore path to Hakone shrine",
+    "Mt Takao from Tokyo (your Thursday, Slow plan)"
    ],
    "culture": [
-    "Nikko Toshogu: carved gates, the three monkeys, the sleeping cat",
-    "Rinnoji and Taiyuin temples",
-    "Kanmangafuchi's row of stone Jizo",
-    "Kamakura's Great Buddha and Zen temples"
+    "Hakone Open-Air Museum (sculpture park, Picasso pavilion)",
+    "Hakone shrine's torii in the lake",
+    "Senso-ji and old Asakusa",
+    "Meiji Jingu's autumn festival (3 Nov)"
    ],
    "adventure": [
     {
-     "name": "Onsen inn at Nikko Yumoto",
-     "price": "~¥30,000 for two with dinner + breakfast",
-     "note": "Milky sulphur water at 1,500 m (Fuller plan)"
+     "name": "Onsen inn",
+     "price": "~¥21,000 a night for two with breakfast",
+     "note": "Private room, the inn's baths morning and night"
     },
     {
-     "name": "Kegon falls elevator",
-     "price": "¥570",
-     "note": "To a platform at the base of the 97 m fall"
+     "name": "Hakone Freepass (2 days, from Shinjuku)",
+     "price": "¥6,100 each",
+     "note": "Every train, cable car, ropeway, boat and bus in Hakone"
     },
     {
-     "name": "Toshogu at opening (9:00)",
-     "price": "¥1,600",
-     "note": "Before the tour buses"
+     "name": "Hakone Open-Air Museum",
+     "price": "¥2,000",
+     "note": "Free footbath in the grounds"
     }
    ],
    "pros": [
-    "Peak autumn colour at the lake and Irohazaka in early Nov",
-    "The most ornate shrines in Japan",
-    "Short hops: Tokyo ↔ Nikko under 2h",
-    "Easy, flat walks together"
+    "The easiest of the three: 85 min from Shinjuku",
+    "The most onsen for the money",
+    "Plenty to do whatever the weather",
+    "Lake Ashi's colours peak in early November"
    ],
    "cons": [
-    "Senjogahara's trees are just past peak",
-    "The Akechidaira ropeway is closed until Aug 2027",
-    "Holiday traffic on 3 Nov",
-    "No forecast saved for Nikko (recheck)"
+    "Fuji is only a glimpse (it shows from the ropeway and the lake on clear days)",
+    "The loop is crowded at weekends and on holidays",
+    "Owakudani closes in strong wind or high volcanic gas",
+    "Inns are dearer than the lake guesthouses"
    ],
-   "calm": "Nikko after 16:00, when the day-trippers leave: the cedar avenue, the Jizo by the river, a quiet guesthouse. In the Fuller plan, two nights by a mountain lake at Yumoto.",
+   "calm": "Two nights in a small onsen inn: baths before breakfast, the sculpture park, a boat across the lake. Nothing to rush for.",
+   "group": "tokyo",
+   "town": "Hakone",
+   "town_card": {
+    "time": "Romancecar from Shinjuku 85 min",
+    "best": "Onsen inns, a varied loop (train, cable car, ropeway, boat), art",
+    "crowds": "Busy loop on Sun and the holiday; go early, ride it on Monday",
+    "rain": "The Open-Air Museum, the Pola Museum, the inn's baths",
+    "room": "Small onsen inn, private room with breakfast ~€120"
+   },
    "out": {
     "route": "HKG → NRT",
     "price": 116,
@@ -1438,13 +1479,1363 @@
     "hike": 3.5,
     "nature": 4.5,
     "food": 4.5,
-    "culture": 5,
-    "chill": 4,
-    "weather": 4.5,
+    "culture": 4.5,
+    "chill": 5,
+    "weather": 4.25,
     "value": 2.5,
+    "ease": 5
+   },
+   "fit": 84,
+   "fc": {
+    "score": 4.5,
+    "word": "Mostly dry",
+    "note": "Mostly dry for Tokyo, Hakone, Kawaguchiko. 31 Oct – 4 Nov (official forecasts): no wet day; showers possible on Mon 2 Nov. Daytime cloud 61% on average. Checked 29 Oct 2026, 13:00 Hong Kong time; recheck on 30 Oct.",
+    "bases": [
+     "Tokyo",
+     "Hakone",
+     "Kawaguchiko"
+    ],
+    "days": [
+     {
+      "cls": "Dry",
+      "pts": 1.0,
+      "p1": 23,
+      "cc": 65,
+      "md": "10-31",
+      "label": "Sat 31 Oct",
+      "ahead": 2,
+      "hi": 24,
+      "lo": 14,
+      "scored": true,
+      "bases": [
+       {
+        "name": "Tokyo",
+        "hi": 24,
+        "lo": 14,
+        "p1": 30,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 80,
+        "src": "J"
+       },
+       {
+        "name": "Hakone",
+        "hi": null,
+        "lo": null,
+        "p1": 30,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 80,
+        "src": "J"
+       },
+       {
+        "name": "Kawaguchiko",
+        "hi": 18,
+        "lo": 9,
+        "p1": 10,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 35,
+        "src": "J"
+       }
+      ]
+     },
+     {
+      "cls": "Dry",
+      "pts": 1.0,
+      "p1": 20,
+      "cc": 35,
+      "md": "11-01",
+      "label": "Sun 1 Nov",
+      "ahead": 3,
+      "hi": 20,
+      "lo": 12,
+      "scored": true,
+      "bases": [
+       {
+        "name": "Tokyo",
+        "hi": 20,
+        "lo": 12,
+        "p1": 20,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 35,
+        "src": "J"
+       },
+       {
+        "name": "Hakone",
+        "hi": null,
+        "lo": null,
+        "p1": 20,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 35,
+        "src": "J"
+       },
+       {
+        "name": "Kawaguchiko",
+        "hi": 16,
+        "lo": 8,
+        "p1": 20,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 35,
+        "src": "J"
+       }
+      ]
+     },
+     {
+      "cls": "Showers",
+      "pts": 0.7,
+      "p1": 40,
+      "cc": 80,
+      "md": "11-02",
+      "label": "Mon 2 Nov",
+      "ahead": 4,
+      "hi": 22,
+      "lo": 15,
+      "scored": true,
+      "bases": [
+       {
+        "name": "Tokyo",
+        "hi": 22,
+        "lo": 15,
+        "p1": 40,
+        "p10": null,
+        "med": null,
+        "cls": "Showers",
+        "cc": 80,
+        "src": "J"
+       },
+       {
+        "name": "Hakone",
+        "hi": null,
+        "lo": null,
+        "p1": 40,
+        "p10": null,
+        "med": null,
+        "cls": "Showers",
+        "cc": 80,
+        "src": "J"
+       },
+       {
+        "name": "Kawaguchiko",
+        "hi": 17,
+        "lo": 9,
+        "p1": 40,
+        "p10": null,
+        "med": null,
+        "cls": "Showers",
+        "cc": 80,
+        "src": "J"
+       }
+      ]
+     },
+     {
+      "cls": "Dry",
+      "pts": 1.0,
+      "p1": 27,
+      "cc": 52,
+      "md": "11-03",
+      "label": "Tue 3 Nov",
+      "ahead": 5,
+      "hi": 20,
+      "lo": 13,
+      "scored": true,
+      "bases": [
+       {
+        "name": "Tokyo",
+        "hi": 20,
+        "lo": 13,
+        "p1": 30,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 60,
+        "src": "J"
+       },
+       {
+        "name": "Hakone",
+        "hi": null,
+        "lo": null,
+        "p1": 30,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 60,
+        "src": "J"
+       },
+       {
+        "name": "Kawaguchiko",
+        "hi": 15,
+        "lo": 8,
+        "p1": 20,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 35,
+        "src": "J"
+       }
+      ]
+     },
+     {
+      "cls": "Dry",
+      "pts": 0.9,
+      "p1": 27,
+      "cc": 60,
+      "md": "11-04",
+      "label": "Wed 4 Nov",
+      "ahead": 6,
+      "hi": 18,
+      "lo": 11,
+      "scored": true,
+      "bases": [
+       {
+        "name": "Tokyo",
+        "hi": 18,
+        "lo": 11,
+        "p1": 20,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 35,
+        "src": "J"
+       },
+       {
+        "name": "Hakone",
+        "hi": null,
+        "lo": null,
+        "p1": 30,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 60,
+        "src": "J"
+       },
+       {
+        "name": "Kawaguchiko",
+        "hi": 14,
+        "lo": 6,
+        "p1": 30,
+        "p10": null,
+        "med": null,
+        "cls": "Showers",
+        "cc": 85,
+        "src": "J"
+       }
+      ]
+     },
+     {
+      "cls": "Dry",
+      "pts": 0.85,
+      "p1": 40,
+      "cc": 78,
+      "md": "11-05",
+      "label": "Thu 5 Nov",
+      "ahead": 7,
+      "hi": 15,
+      "lo": 8,
+      "scored": false,
+      "bases": [
+       {
+        "name": "Tokyo",
+        "hi": 15,
+        "lo": 8,
+        "p1": 31,
+        "p10": 6,
+        "med": 0.0,
+        "cls": "Dry",
+        "cc": 71,
+        "src": "E"
+       },
+       {
+        "name": "Hakone",
+        "hi": null,
+        "lo": null,
+        "p1": null,
+        "p10": null,
+        "med": null,
+        "cls": null,
+        "cc": null,
+        "src": null
+       },
+       {
+        "name": "Kawaguchiko",
+        "hi": 12,
+        "lo": 5,
+        "p1": 50,
+        "p10": null,
+        "med": null,
+        "cls": "Showers",
+        "cc": 85,
+        "src": "J"
+       }
+      ]
+     },
+     {
+      "cls": "Dry",
+      "pts": 1.0,
+      "p1": 44,
+      "cc": 62,
+      "md": "11-06",
+      "label": "Fri 6 Nov",
+      "ahead": 8,
+      "hi": 16,
+      "lo": 9,
+      "scored": false,
+      "bases": [
+       {
+        "name": "Tokyo",
+        "hi": 16,
+        "lo": 9,
+        "p1": 39,
+        "p10": 12,
+        "med": 0.6,
+        "cls": "Dry",
+        "cc": 60,
+        "src": "E"
+       },
+       {
+        "name": "Hakone",
+        "hi": null,
+        "lo": null,
+        "p1": null,
+        "p10": null,
+        "med": null,
+        "cls": null,
+        "cc": null,
+        "src": null
+       },
+       {
+        "name": "Kawaguchiko",
+        "hi": 14,
+        "lo": 6,
+        "p1": 49,
+        "p10": 18,
+        "med": 0.8,
+        "cls": "Dry",
+        "cc": 64,
+        "src": "E"
+       }
+      ]
+     },
+     {
+      "cls": "Dry",
+      "pts": 0.85,
+      "p1": 44,
+      "cc": 54,
+      "md": "11-07",
+      "label": "Sat 7 Nov",
+      "ahead": 9,
+      "hi": 17,
+      "lo": 10,
+      "scored": false,
+      "bases": [
+       {
+        "name": "Tokyo",
+        "hi": 17,
+        "lo": 10,
+        "p1": 35,
+        "p10": 12,
+        "med": 0.0,
+        "cls": "Dry",
+        "cc": 55,
+        "src": "E"
+       },
+       {
+        "name": "Hakone",
+        "hi": null,
+        "lo": null,
+        "p1": null,
+        "p10": null,
+        "med": null,
+        "cls": null,
+        "cc": null,
+        "src": null
+       },
+       {
+        "name": "Kawaguchiko",
+        "hi": 15,
+        "lo": 7,
+        "p1": 53,
+        "p10": 18,
+        "med": 1.0,
+        "cls": "Showers",
+        "cc": 54,
+        "src": "E"
+       }
+      ]
+     }
+    ],
+    "per_base": {
+     "Tokyo": [
+      {
+       "md": "10-31",
+       "label": "Sat 31 Oct",
+       "p10": null,
+       "med": null,
+       "cls": "Dry",
+       "cc": 80,
+       "p1": 30,
+       "hi": 24,
+       "lo": 14,
+       "src": "J"
+      },
+      {
+       "md": "11-01",
+       "label": "Sun 1 Nov",
+       "p10": null,
+       "med": null,
+       "cls": "Dry",
+       "cc": 35,
+       "p1": 20,
+       "hi": 20,
+       "lo": 12,
+       "src": "J"
+      },
+      {
+       "md": "11-02",
+       "label": "Mon 2 Nov",
+       "p10": null,
+       "med": null,
+       "cls": "Showers",
+       "cc": 80,
+       "p1": 40,
+       "hi": 22,
+       "lo": 15,
+       "src": "J"
+      },
+      {
+       "md": "11-03",
+       "label": "Tue 3 Nov",
+       "p10": null,
+       "med": null,
+       "cls": "Dry",
+       "cc": 60,
+       "p1": 30,
+       "hi": 20,
+       "lo": 13,
+       "src": "J"
+      },
+      {
+       "md": "11-04",
+       "label": "Wed 4 Nov",
+       "p10": null,
+       "med": null,
+       "cls": "Dry",
+       "cc": 35,
+       "p1": 20,
+       "hi": 18,
+       "lo": 11,
+       "src": "J"
+      },
+      {
+       "md": "11-05",
+       "label": "Thu 5 Nov",
+       "p10": 6,
+       "med": 0.0,
+       "cls": "Dry",
+       "cc": 71,
+       "p1": 31,
+       "hi": 15,
+       "lo": 8,
+       "src": "E"
+      },
+      {
+       "md": "11-06",
+       "label": "Fri 6 Nov",
+       "p10": 12,
+       "med": 0.6,
+       "cls": "Dry",
+       "cc": 60,
+       "p1": 39,
+       "hi": 16,
+       "lo": 9,
+       "src": "E"
+      },
+      {
+       "md": "11-07",
+       "label": "Sat 7 Nov",
+       "p10": 12,
+       "med": 0.0,
+       "cls": "Dry",
+       "cc": 55,
+       "p1": 35,
+       "hi": 17,
+       "lo": 10,
+       "src": "E"
+      }
+     ],
+     "Hakone": [
+      {
+       "md": "10-31",
+       "label": "Sat 31 Oct",
+       "p10": null,
+       "med": null,
+       "cls": "Dry",
+       "cc": 80,
+       "p1": 30,
+       "hi": null,
+       "lo": null,
+       "src": "J"
+      },
+      {
+       "md": "11-01",
+       "label": "Sun 1 Nov",
+       "p10": null,
+       "med": null,
+       "cls": "Dry",
+       "cc": 35,
+       "p1": 20,
+       "hi": null,
+       "lo": null,
+       "src": "J"
+      },
+      {
+       "md": "11-02",
+       "label": "Mon 2 Nov",
+       "p10": null,
+       "med": null,
+       "cls": "Showers",
+       "cc": 80,
+       "p1": 40,
+       "hi": null,
+       "lo": null,
+       "src": "J"
+      },
+      {
+       "md": "11-03",
+       "label": "Tue 3 Nov",
+       "p10": null,
+       "med": null,
+       "cls": "Dry",
+       "cc": 60,
+       "p1": 30,
+       "hi": null,
+       "lo": null,
+       "src": "J"
+      },
+      {
+       "md": "11-04",
+       "label": "Wed 4 Nov",
+       "p10": null,
+       "med": null,
+       "cls": "Dry",
+       "cc": 60,
+       "p1": 30,
+       "hi": null,
+       "lo": null,
+       "src": "J"
+      },
+      {
+       "md": "11-05",
+       "label": "Thu 5 Nov",
+       "p10": null,
+       "med": null,
+       "cls": null,
+       "cc": null,
+       "p1": null,
+       "hi": null,
+       "lo": null,
+       "src": null
+      },
+      {
+       "md": "11-06",
+       "label": "Fri 6 Nov",
+       "p10": null,
+       "med": null,
+       "cls": null,
+       "cc": null,
+       "p1": null,
+       "hi": null,
+       "lo": null,
+       "src": null
+      },
+      {
+       "md": "11-07",
+       "label": "Sat 7 Nov",
+       "p10": null,
+       "med": null,
+       "cls": null,
+       "cc": null,
+       "p1": null,
+       "hi": null,
+       "lo": null,
+       "src": null
+      }
+     ],
+     "Kawaguchiko": [
+      {
+       "md": "10-31",
+       "label": "Sat 31 Oct",
+       "p10": null,
+       "med": null,
+       "cls": "Dry",
+       "cc": 35,
+       "p1": 10,
+       "hi": 18,
+       "lo": 9,
+       "src": "J"
+      },
+      {
+       "md": "11-01",
+       "label": "Sun 1 Nov",
+       "p10": null,
+       "med": null,
+       "cls": "Dry",
+       "cc": 35,
+       "p1": 20,
+       "hi": 16,
+       "lo": 8,
+       "src": "J"
+      },
+      {
+       "md": "11-02",
+       "label": "Mon 2 Nov",
+       "p10": null,
+       "med": null,
+       "cls": "Showers",
+       "cc": 80,
+       "p1": 40,
+       "hi": 17,
+       "lo": 9,
+       "src": "J"
+      },
+      {
+       "md": "11-03",
+       "label": "Tue 3 Nov",
+       "p10": null,
+       "med": null,
+       "cls": "Dry",
+       "cc": 35,
+       "p1": 20,
+       "hi": 15,
+       "lo": 8,
+       "src": "J"
+      },
+      {
+       "md": "11-04",
+       "label": "Wed 4 Nov",
+       "p10": null,
+       "med": null,
+       "cls": "Showers",
+       "cc": 85,
+       "p1": 30,
+       "hi": 14,
+       "lo": 6,
+       "src": "J"
+      },
+      {
+       "md": "11-05",
+       "label": "Thu 5 Nov",
+       "p10": null,
+       "med": null,
+       "cls": "Showers",
+       "cc": 85,
+       "p1": 50,
+       "hi": 12,
+       "lo": 5,
+       "src": "J"
+      },
+      {
+       "md": "11-06",
+       "label": "Fri 6 Nov",
+       "p10": 18,
+       "med": 0.8,
+       "cls": "Dry",
+       "cc": 64,
+       "p1": 49,
+       "hi": 14,
+       "lo": 6,
+       "src": "E"
+      },
+      {
+       "md": "11-07",
+       "label": "Sat 7 Nov",
+       "p10": 18,
+       "med": 1.0,
+       "cls": "Showers",
+       "cc": 54,
+       "p1": 53,
+       "hi": 15,
+       "lo": 7,
+       "src": "E"
+      }
+     ]
+    },
+    "cc": 61
+   },
+   "options": [
+    {
+     "style": "Slow",
+     "name": "Tokyo, two onsen nights in Hakone, Tokyo; Tokyo day trips on your own",
+     "chill": 85,
+     "route": [
+      "Together: 1n Tokyo, 2n Hakone onsen inn, 1n Tokyo",
+      "Wed: slow day in Tokyo, she flies from Narita 19:00",
+      "You: 3n Tokyo (Mt Takao, Kamakura)",
+      "Sat: Narita 17:20"
+     ],
+     "days": [
+      {
+       "t": "Fly to Tokyo",
+       "e": "Travel",
+       "who": "both",
+       "am": "Morning with the family; Airport Express from Central around 12:30.",
+       "pm": "14:55 HK Express to Narita, land 20:00.",
+       "eve": "Skyliner to Ueno (41 min), late ramen near the hotel. Leave the big bags here for Tuesday: most hotels keep them.",
+       "sleep": "Tokyo hotel (Ueno/Asakusa)",
+       "wx": "Tokyo",
+       "tr": [
+        [
+         "train",
+         "Central → HK airport (Airport Express)",
+         25
+        ],
+        [
+         "plane",
+         "HKG → NRT",
+         245
+        ],
+        [
+         "train",
+         "Narita → Ueno (Skyliner)",
+         45
+        ]
+       ],
+       "b": null
+      },
+      {
+       "t": "Senso-ji at 8, Romancecar to Hakone",
+       "e": "Travel",
+       "who": "both",
+       "am": "Senso-ji before the crowds; metro to Shinjuku, Romancecar to Hakone-Yumoto (85 min).",
+       "pm": "Tozan train up the switchbacks to Gora; the Hakone Open-Air Museum and its footbath.",
+       "eve": "Inn dinner and the baths.",
+       "sleep": "Hakone onsen inn",
+       "wx": "Hakone",
+       "tr": [
+        [
+         "metro",
+         "Asakusa → Shinjuku",
+         30
+        ],
+        [
+         "train",
+         "Shinjuku → Hakone-Yumoto (Romancecar)",
+         85
+        ],
+        [
+         "train",
+         "Tozan train to Gora",
+         40
+        ]
+       ],
+       "b": null
+      },
+      {
+       "t": "The Hakone loop",
+       "e": "Easy",
+       "who": "both",
+       "am": "Cable car and ropeway over Owakudani's steaming vents (black eggs at the top); on to Togendai.",
+       "pm": "Boat across Lake Ashi to Moto-Hakone; Hakone shrine's torii in the water; the lakeside cedar avenue.",
+       "eve": "Back to the inn by bus.",
+       "sleep": "Hakone onsen inn",
+       "wx": "Hakone",
+       "tr": [
+        [
+         "cable",
+         "Gora → Owakudani → Togendai",
+         40
+        ],
+        [
+         "boat",
+         "Lake Ashi",
+         25
+        ],
+        [
+         "bus",
+         "Moto-Hakone → inn",
+         40
+        ]
+       ],
+       "b": "Showers possible (40%): if the ropeway stops, go to the Pola Museum by bus and save the lake for Tuesday morning."
+      },
+      {
+       "t": "Back to Tokyo; Meiji Jingu's festival",
+       "e": "Easy",
+       "who": "both",
+       "am": "Leave Hakone by 09:30, before the holiday traffic home.",
+       "pm": "Meiji Jingu's autumn festival (1–3 Nov): on Culture Day there are martial-arts displays, noh and gagaku on the stage, chrysanthemums along the approach, and horseback archery (yabusame). Then Harajuku's back streets.",
+       "eve": "Omoide Yokocho's yakitori alleys under the Shinjuku tracks.",
+       "sleep": "Tokyo hotel (Ueno/Asakusa)",
+       "wx": "Tokyo",
+       "tr": [
+        [
+         "train",
+         "Hakone-Yumoto → Shinjuku (Romancecar)",
+         85
+        ],
+        [
+         "metro",
+         "around Tokyo",
+         30
+        ]
+       ],
+       "b": "Showers are unlikely (30%). If it rains, the Tokyo National Museum in Ueno is open on the holiday."
+      },
+      {
+       "t": "A slow last day in Tokyo; she flies at 19:00",
+       "e": "Easy",
+       "who": "split",
+       "am": "Yanaka at 9: temples, cats and the old shopping street; down through Ueno park, the Tokyo National Museum if you like (open Wed).",
+       "pm": "Ameyoko for lunch, then Kappabashi kitchen street. She takes the Skyliner from Ueno ~16:30 for HK Express 19:00 (lands HK 23:25).",
+       "eve": "You: check in to a hostel in Asakusa; the Sumida river at night.",
+       "sleep": "You: Tokyo hostel",
+       "wx": "Tokyo",
+       "tr": [
+        [
+         "metro",
+         "Ueno ↔ Asakusa",
+         20
+        ]
+       ],
+       "b": null
+      },
+      {
+       "t": "Mt Takao",
+       "e": "Active",
+       "who": "you",
+       "am": "Keio line from Shinjuku to Takaosanguchi (50 min), trail 6 up past the waterfall.",
+       "pm": "Along the ridge to Shiroyama for a view of Fuji, down trail 1 via Yakuoin.",
+       "eve": "Shimokitazawa's bars.",
+       "sleep": "Tokyo hostel",
+       "wx": "Tokyo",
+       "tr": [
+        [
+         "train",
+         "Tokyo ↔ Takaosanguchi",
+         110
+        ]
+       ],
+       "b": null
+      },
+      {
+       "t": "Kamakura",
+       "e": "Easy",
+       "who": "you",
+       "am": "JR to Kita-Kamakura (1h): Engaku-ji and Kencho-ji.",
+       "pm": "Daibutsu hiking course to the Great Buddha, then the beach at Yuigahama.",
+       "eve": "Back to Tokyo.",
+       "sleep": "Tokyo hostel",
+       "wx": "Tokyo",
+       "tr": [
+        [
+         "train",
+         "Tokyo ↔ Kamakura",
+         130
+        ]
+       ],
+       "b": null
+      },
+      {
+       "t": "Fly home",
+       "e": "Travel",
+       "who": "you",
+       "am": "Tsukiji outer market breakfast.",
+       "pm": "Skyliner to Narita around 14:30.",
+       "eve": "Etihad 17:20 to Brussels, land Sun 06:30; train to Lille about 1h30.",
+       "sleep": "On the plane",
+       "wx": "Tokyo",
+       "tr": [
+        [
+         "train",
+         "Ueno → Narita (Skyliner)",
+         45
+        ]
+       ],
+       "b": null
+      }
+     ],
+     "nights": [
+      {
+       "place": "Tokyo (Ueno/Asakusa) hotel double",
+       "room": 85,
+       "meals": false,
+       "solo": false
+      },
+      {
+       "place": "Hakone onsen inn, private room, breakfast",
+       "room": 120,
+       "meals": false,
+       "solo": false
+      },
+      {
+       "place": "Hakone onsen inn",
+       "room": 120,
+       "meals": false,
+       "solo": false
+      },
+      {
+       "place": "Tokyo (Ueno/Asakusa) hotel double",
+       "room": 85,
+       "meals": false,
+       "solo": false
+      },
+      {
+       "place": "Tokyo hostel or capsule (Asakusa)",
+       "room": 35,
+       "meals": false,
+       "solo": true
+      },
+      {
+       "place": "Tokyo hostel or capsule (Asakusa)",
+       "room": 35,
+       "meals": false,
+       "solo": true
+      },
+      {
+       "place": "Tokyo hostel or capsule (Asakusa)",
+       "room": 35,
+       "meals": false,
+       "solo": true
+      }
+     ],
+     "transport_pp": 88,
+     "shared": 0,
+     "activities_pp": 25,
+     "solo_transport": 45,
+     "solo_activities": 15,
+     "travel": 995,
+     "together_travel": 710,
+     "beds": 2,
+     "solo_beds": 1,
+     "moves": 2,
+     "cost": {
+      "out": 232,
+      "her": 130,
+      "his": 571,
+      "rooms": 410,
+      "food": 224.0,
+      "transport": 176,
+      "activities": 50,
+      "misc": 40,
+      "solo_rooms": 105,
+      "solo_food": 75.0,
+      "solo_transport": 45,
+      "solo_activities": 15,
+      "solo": 240.0,
+      "flights": 933,
+      "together": 900.0,
+      "ground": 1140.0,
+      "total": 2073,
+      "his_share": 1377,
+      "her_share": 696
+     }
+    },
+    {
+     "style": "Fuller",
+     "name": "The old Tokaido road and the loop; the Fuji lakes on your own",
+     "chill": 60,
+     "route": [
+      "Together: 1n Tokyo, 2n Hakone onsen inn (the loop, the Tokaido road), 1n Tokyo",
+      "Wed: she flies from Narita 19:00; you take the bus to Kawaguchiko",
+      "You: 3n Kawaguchiko (Mitsutoge ridge, Chureito)",
+      "Sat: bus + train to Narita, 17:20"
+     ],
+     "days": [
+      {
+       "t": "Fly to Tokyo",
+       "e": "Travel",
+       "who": "both",
+       "am": "Morning with the family; Airport Express from Central around 12:30.",
+       "pm": "14:55 HK Express to Narita, land 20:00.",
+       "eve": "Skyliner to Ueno (41 min), late ramen near the hotel. Leave the big bags here for Tuesday: most hotels keep them.",
+       "sleep": "Tokyo hotel (Ueno/Asakusa)",
+       "wx": "Tokyo",
+       "tr": [
+        [
+         "train",
+         "Central → HK airport (Airport Express)",
+         25
+        ],
+        [
+         "plane",
+         "HKG → NRT",
+         245
+        ],
+        [
+         "train",
+         "Narita → Ueno (Skyliner)",
+         45
+        ]
+       ],
+       "b": null
+      },
+      {
+       "t": "Senso-ji at 8, the Hakone loop",
+       "e": "Active",
+       "who": "both",
+       "am": "Senso-ji early; Romancecar to Hakone-Yumoto (85 min), Tozan train to Gora.",
+       "pm": "Cable car and ropeway over Owakudani, boat across Lake Ashi.",
+       "eve": "Inn dinner and the baths.",
+       "sleep": "Hakone onsen inn",
+       "wx": "Hakone",
+       "tr": [
+        [
+         "metro",
+         "Asakusa → Shinjuku",
+         30
+        ],
+        [
+         "train",
+         "Shinjuku → Hakone-Yumoto (Romancecar)",
+         85
+        ],
+        [
+         "cable",
+         "Gora → Owakudani → Togendai",
+         40
+        ],
+        [
+         "boat",
+         "Lake Ashi",
+         25
+        ]
+       ],
+       "b": null
+      },
+      {
+       "t": "The old Tokaido road",
+       "e": "Active",
+       "who": "both",
+       "am": "Bus to Hatajuku; walk the cobbled Tokaido road over the pass to Moto-Hakone (2h), amazake at the 400-year-old teahouse.",
+       "pm": "Hakone shrine, then the Open-Air Museum on the way back.",
+       "eve": "Inn baths.",
+       "sleep": "Hakone onsen inn",
+       "wx": "Hakone",
+       "tr": [
+        [
+         "bus",
+         "Inn → Hatajuku",
+         30
+        ],
+        [
+         "bus",
+         "Moto-Hakone → Chokoku-no-Mori",
+         40
+        ]
+       ],
+       "b": "Showers possible (40%): the stones get slippery; swap with the museum day if it rains."
+      },
+      {
+       "t": "Back to Tokyo; Meiji Jingu's festival",
+       "e": "Easy",
+       "who": "both",
+       "am": "Leave Hakone by 09:30, before the holiday traffic home.",
+       "pm": "Meiji Jingu's autumn festival (1–3 Nov): on Culture Day there are martial-arts displays, noh and gagaku on the stage, chrysanthemums along the approach, and horseback archery (yabusame). Then Harajuku's back streets.",
+       "eve": "Omoide Yokocho's yakitori alleys under the Shinjuku tracks.",
+       "sleep": "Tokyo hotel (Ueno/Asakusa)",
+       "wx": "Tokyo",
+       "tr": [
+        [
+         "train",
+         "Hakone-Yumoto → Shinjuku (Romancecar)",
+         85
+        ],
+        [
+         "metro",
+         "around Tokyo",
+         30
+        ]
+       ],
+       "b": "Showers are unlikely (30%). If it rains, the Tokyo National Museum in Ueno is open on the holiday."
+      },
+      {
+       "t": "A slow last day in Tokyo; she flies at 19:00",
+       "e": "Easy",
+       "who": "split",
+       "am": "Yanaka at 9, Ueno park; the Tokyo National Museum if you like (open Wed).",
+       "pm": "Ameyoko for lunch, Kappabashi. She takes the Skyliner from Ueno ~16:30 for HK Express 19:00. You: bus from Shinjuku to Kawaguchiko (1h55).",
+       "eve": "You: hoto in Kawaguchiko.",
+       "sleep": "You: Kawaguchiko hostel",
+       "wx": "Kawaguchiko",
+       "tr": [
+        [
+         "bus",
+         "Shinjuku → Kawaguchiko",
+         115
+        ]
+       ],
+       "b": null
+      },
+      {
+       "t": "Mitsutoge ridge",
+       "e": "Big day",
+       "who": "you",
+       "am": "Taxi or bus to the Mitsutoge trailhead, 2h30 up to Kaiun-yama (1,785 m): the whole of Fuji.",
+       "pm": "Along the ridge to Tenjoyama and down by the ropeway (5–6h total).",
+       "eve": "Onsen.",
+       "sleep": "Kawaguchiko hostel",
+       "wx": "Kawaguchiko",
+       "tr": [
+        [
+         "taxi",
+         "Kawaguchiko → Mitsutoge trailhead",
+         15
+        ],
+        [
+         "cable",
+         "Tenjoyama ropeway down",
+         5
+        ]
+       ],
+       "b": null
+      },
+      {
+       "t": "Chureito and Lake Saiko",
+       "e": "Easy",
+       "who": "you",
+       "am": "Chureito pagoda at sunrise.",
+       "pm": "Lake Saiko's forest trail and the thatched village.",
+       "eve": "Onsen.",
+       "sleep": "Kawaguchiko hostel",
+       "wx": "Kawaguchiko",
+       "tr": [
+        [
+         "train",
+         "Kawaguchiko ↔ Shimoyoshida",
+         20
+        ],
+        [
+         "bus",
+         "Lake loop bus",
+         60
+        ]
+       ],
+       "b": null
+      },
+      {
+       "t": "Fly home",
+       "e": "Travel",
+       "who": "you",
+       "am": "Bus to Shinjuku at about 09:00 (book it).",
+       "pm": "Narita Express to Narita (90 min).",
+       "eve": "Etihad 17:20 to Brussels, land Sun 06:30.",
+       "sleep": "On the plane",
+       "wx": "Kawaguchiko",
+       "tr": [
+        [
+         "bus",
+         "Kawaguchiko → Shinjuku",
+         120
+        ],
+        [
+         "train",
+         "Shinjuku → Narita (N'EX)",
+         90
+        ]
+       ],
+       "b": null
+      }
+     ],
+     "nights": [
+      {
+       "place": "Tokyo (Ueno/Asakusa) hotel double",
+       "room": 85,
+       "meals": false,
+       "solo": false
+      },
+      {
+       "place": "Hakone onsen inn, private room, breakfast",
+       "room": 120,
+       "meals": false,
+       "solo": false
+      },
+      {
+       "place": "Hakone onsen inn",
+       "room": 120,
+       "meals": false,
+       "solo": false
+      },
+      {
+       "place": "Tokyo (Ueno/Asakusa) hotel double",
+       "room": 85,
+       "meals": false,
+       "solo": false
+      },
+      {
+       "place": "Kawaguchiko hostel",
+       "room": 30,
+       "meals": false,
+       "solo": true
+      },
+      {
+       "place": "Kawaguchiko hostel",
+       "room": 30,
+       "meals": false,
+       "solo": true
+      },
+      {
+       "place": "Kawaguchiko hostel",
+       "room": 30,
+       "meals": false,
+       "solo": true
+      }
+     ],
+     "transport_pp": 88,
+     "shared": 0,
+     "activities_pp": 25,
+     "solo_transport": 60,
+     "solo_activities": 15,
+     "travel": 1105,
+     "together_travel": 795,
+     "beds": 2,
+     "solo_beds": 1,
+     "moves": 3,
+     "cost": {
+      "out": 232,
+      "her": 130,
+      "his": 571,
+      "rooms": 410,
+      "food": 224.0,
+      "transport": 176,
+      "activities": 50,
+      "misc": 40,
+      "solo_rooms": 90,
+      "solo_food": 75.0,
+      "solo_transport": 60,
+      "solo_activities": 15,
+      "solo": 240.0,
+      "flights": 933,
+      "together": 900.0,
+      "ground": 1140.0,
+      "total": 2073,
+      "his_share": 1377,
+      "her_share": 696
+     }
+    }
+   ]
+  },
+  {
+   "id": "jp-nikko",
+   "country": "Japan",
+   "region": "Tokyo + Nikko",
+   "cc": "JP",
+   "short": "Tokyo + Nikko",
+   "title": "Tokyo + Nikko: gold-leaf shrines and a mountain lake",
+   "tagline": "Two nights in Nikko: the most ornate shrines in Japan in a cedar forest, then a lake and waterfall at peak autumn colour.",
+   "food_day": 28,
+   "solo_food": 25,
+   "transport": "Tobu Limited Express from Asakusa, two minutes from the Tokyo hotel. Nikko's buses with the Tobu Nikko pass. Suica works on both.",
+   "crowds": "Iroha-zaka was at peak colour on 26 Oct and jams on weekends and holidays from 9:00: go up on Monday. The shrines are calmest at 8–9am and after 15:00.",
+   "food": [
+    "Yuba (tofu skin) in every form: Nikko's dish",
+    "Trout from Lake Chuzenji",
+    "Tokyo: ramen, Ameyoko, Omoide Yokocho",
+    "Ekiben on the Tobu train"
+   ],
+   "hikes": [
+    "Senjogahara boardwalk: Yumoto → Yudaki falls → Akanuma (3h, flat; Fuller)",
+    "Lake Chuzenji shore to the old embassy villas",
+    "Kanmangafuchi's riverside path",
+    "Mt Takao from Tokyo (your Thursday, Slow plan)"
+   ],
+   "culture": [
+    "Nikko Toshogu: carved gates, the three monkeys, the sleeping cat",
+    "Taiyuin and Futarasan",
+    "Kanmangafuchi's row of stone Jizo",
+    "Meiji Jingu's autumn festival (3 Nov)"
+   ],
+   "adventure": [
+    {
+     "name": "Toshogu at 9:00",
+     "price": "¥1,600",
+     "note": "Before the tour buses"
+    },
+    {
+     "name": "Kegon falls elevator",
+     "price": "¥570",
+     "note": "To a platform at the base of the 97 m fall"
+    },
+    {
+     "name": "Iroha-zaka in colour",
+     "price": "bus pass",
+     "note": "Peak colour on 26 Oct (Weathernews); leaves start falling around 11 Nov"
+    }
+   ],
+   "pros": [
+    "Best culture of the three",
+    "Autumn colour at its peak right now",
+    "The train leaves from Asakusa, next to the hotel",
+    "Cheapest rooms of the three"
+   ],
+   "cons": [
+    "Shrines crowded on Sunday afternoon",
+    "The Akechidaira ropeway is closed until Aug 2027",
+    "Colder: 5–15°C at the lake",
+    "Fewer evening options than Hakone"
+   ],
+   "calm": "Nikko after 16:00, when the day-trippers leave: the cedar avenue, the Jizo by the river at dusk, a quiet guesthouse.",
+   "group": "tokyo",
+   "town": "Nikko",
+   "town_card": {
+    "time": "Tobu Limited Express from Asakusa 1h50",
+    "best": "Shrines and temples, autumn colour at its peak, waterfalls",
+    "crowds": "Shrines busy from 10:00; Iroha-zaka road jams on Sun and the holiday",
+    "rain": "Shrine halls are covered; Rinnoji's treasure house; a town onsen",
+    "room": "Guesthouse near the shrines, private room ~€62"
+   },
+   "out": {
+    "route": "HKG → NRT",
+    "price": 116,
+    "status": "gf27",
+    "dep": "14:55",
+    "carrier": "HK Express",
+    "code": "TOKYO NRT",
+    "detail": "HK Express 14:55 → 20:00, nonstop 4h05 (cabin bag only; checked bag ~€30)",
+    "alt": "Haneda is closer to the city but nothing cheap after 14:00 was found on 27 Oct"
+   },
+   "her": {
+    "route": "NRT → HKG",
+    "price": 130,
+    "status": "est",
+    "time": "19:00 → 23:25",
+    "detail": "HK Express UO 647, Narita 19:00 → HK 23:25 (Skyliner from Ueno ~16:30, 41 min)",
+    "alt": "Cathay CX 549 Haneda 16:00 → 20:15 (closer airport, ~€250) · Cathay CX 505 Narita 18:10 → 22:30"
+   },
+   "his": {
+    "route": "NRT → BRU",
+    "price": 571,
+    "status": "gf27",
+    "detail": "Etihad, Sat 17:20 → Sun 06:30 Brussels via Abu Dhabi"
+   },
+   "entry": "Visa-free 90 days for you (French passport); fill in Visit Japan Web",
+   "weather": {
+    "hi": 19,
+    "lo": 11,
+    "rain": "mostly dry",
+    "note": "Tokyo mild. Takayama 2–16°C, Hirayu and Kamikochi near freezing at night; larches golden early Nov (Kamikochi closes 15 Nov). November is Fuji's clearest month.",
+    "score": 4,
+    "sky": "mostly blue (Fuji's clearest month)"
+   },
+   "scores": {
+    "hike": 3.5,
+    "nature": 4.5,
+    "food": 4,
+    "culture": 5,
+    "chill": 4.5,
+    "weather": 4.5,
+    "value": 3,
     "ease": 4.5
    },
-   "fit": 83,
+   "fit": 84,
    "fc": {
     "score": 5.0,
     "word": "Mostly dry",
@@ -2133,11 +3524,11 @@
    "options": [
     {
      "style": "Slow",
-     "name": "Three nights in Nikko; Takao and Kamakura on your own",
-     "chill": 75,
+     "name": "Tokyo, two nights in Nikko, Tokyo; Tokyo day trips on your own",
+     "chill": 80,
      "route": [
-      "Together: 1n Tokyo, 3n Nikko",
-      "Wed: Tobu back to Tokyo, she flies from Narita 19:00",
+      "Together: 1n Tokyo, 2n Nikko, 1n Tokyo",
+      "Wed: slow day in Tokyo, she flies from Narita 19:00",
       "You: 3n Tokyo (Mt Takao, Kamakura)",
       "Sat: Narita 17:20"
      ],
@@ -2146,10 +3537,10 @@
        "t": "Fly to Tokyo",
        "e": "Travel",
        "who": "both",
-       "am": "Airport Express around 12:30.",
+       "am": "Morning with the family; Airport Express from Central around 12:30.",
        "pm": "14:55 HK Express to Narita, land 20:00.",
-       "eve": "Skyliner to Ueno, ramen.",
-       "sleep": "Tokyo hotel (Asakusa)",
+       "eve": "Skyliner to Ueno (41 min), late ramen near the hotel. Leave the big bags here for Tuesday: most hotels keep them.",
+       "sleep": "Tokyo hotel (Ueno/Asakusa)",
        "wx": "Tokyo",
        "tr": [
         [
@@ -2171,11 +3562,11 @@
        "b": null
       },
       {
-       "t": "Tobu train to Nikko, the shrines",
-       "e": "Easy",
+       "t": "Senso-ji at 8, Tobu to Nikko",
+       "e": "Travel",
        "who": "both",
-       "am": "Senso-ji at 8, then the Tobu Limited Express to Nikko (1h50).",
-       "pm": "Toshogu, Taiyuin and Futarasan.",
+       "am": "Senso-ji before the crowds; Tobu Limited Express from Asakusa at about 9:00 (1h50).",
+       "pm": "Kanmangafuchi's Jizo by the river and the Shinkyo bridge; the shrines after 15:00 when the crowds thin.",
        "eve": "Yuba dinner in town.",
        "sleep": "Nikko guesthouse",
        "wx": "Nikko",
@@ -2194,54 +3585,60 @@
        "b": null
       },
       {
-       "t": "A slow day in Nikko",
+       "t": "Toshogu, then the lake",
        "e": "Easy",
        "who": "both",
-       "am": "Kanmangafuchi's Jizo and the Shinkyo bridge.",
-       "pm": "Rinnoji's treasure hall and a soak at a town onsen.",
-       "eve": "Quiet dinner.",
-       "sleep": "Nikko guesthouse",
-       "wx": "Nikko",
-       "tr": [],
-       "b": "Showers possible (40%): covered temples, a museum and an onsen."
-      },
-      {
-       "t": "Lake Chuzenji and Senjogahara",
-       "e": "Active",
-       "who": "both",
-       "am": "07:00 bus up Irohazaka before the holiday traffic; Kegon falls.",
-       "pm": "Bus to Yumoto, walk Senjogahara down to Akanuma (3h, flat).",
-       "eve": "Bus down; last night in Nikko.",
+       "am": "Toshogu at 9:00 opening, Taiyuin and Futarasan.",
+       "pm": "Bus up Iroha-zaka in colour to Lake Chuzenji; Kegon falls elevator; the lakeshore.",
+       "eve": "Town onsen.",
        "sleep": "Nikko guesthouse",
        "wx": "Nikko",
        "tr": [
         [
          "bus",
-         "Nikko → Chuzenji → Yumoto",
-         90
-        ],
-        [
-         "bus",
-         "Akanuma → Nikko",
-         60
+         "Nikko ↔ Lake Chuzenji",
+         100
         ]
        ],
-       "b": null
+       "b": "Showers possible (40%): the shrine halls are covered; swap the lake for Rinnoji's treasure house."
       },
       {
-       "t": "Back to Tokyo; she flies at 19:00",
-       "e": "Travel",
-       "who": "split",
-       "am": "Tobu back to Asakusa (1h50) at 10:00.",
-       "pm": "Lunch together; she takes the Skyliner from Ueno ~16:30 for HK Express 19:00 (lands HK 23:25).",
-       "eve": "You: hostel in Asakusa.",
-       "sleep": "You: Tokyo hostel",
+       "t": "Back to Tokyo; Meiji Jingu's festival",
+       "e": "Easy",
+       "who": "both",
+       "am": "Leave Nikko by 09:30, before the holiday traffic home.",
+       "pm": "Meiji Jingu's autumn festival (1–3 Nov): on Culture Day there are martial-arts displays, noh and gagaku on the stage, chrysanthemums along the approach, and horseback archery (yabusame). Then Harajuku's back streets.",
+       "eve": "Asakusa's Hoppy street izakaya.",
+       "sleep": "Tokyo hotel (Ueno/Asakusa)",
        "wx": "Tokyo",
        "tr": [
         [
          "train",
          "Tobu-Nikko → Asakusa",
          110
+        ],
+        [
+         "metro",
+         "around Tokyo",
+         30
+        ]
+       ],
+       "b": "Showers are unlikely (30%). If it rains, the Tokyo National Museum in Ueno is open on the holiday."
+      },
+      {
+       "t": "A slow last day in Tokyo; she flies at 19:00",
+       "e": "Easy",
+       "who": "split",
+       "am": "Yanaka at 9: temples, cats and the old shopping street; down through Ueno park, the Tokyo National Museum if you like (open Wed).",
+       "pm": "Ameyoko for lunch, then Kappabashi kitchen street. She takes the Skyliner from Ueno ~16:30 for HK Express 19:00 (lands HK 23:25).",
+       "eve": "You: check in to a hostel in Asakusa; the Sumida river at night.",
+       "sleep": "You: Tokyo hostel",
+       "wx": "Tokyo",
+       "tr": [
+        [
+         "metro",
+         "Ueno ↔ Asakusa",
+         20
         ]
        ],
        "b": null
@@ -2250,9 +3647,9 @@
        "t": "Mt Takao",
        "e": "Active",
        "who": "you",
-       "am": "Keio line to Takaosanguchi (50 min), trail 6 up.",
-       "pm": "On along the ridge to Shiroyama for Fuji, back down trail 1.",
-       "eve": "Shinjuku's Omoide Yokocho.",
+       "am": "Keio line from Shinjuku to Takaosanguchi (50 min), trail 6 up past the waterfall.",
+       "pm": "Along the ridge to Shiroyama for a view of Fuji, down trail 1 via Yakuoin.",
+       "eve": "Shimokitazawa's bars.",
        "sleep": "Tokyo hostel",
        "wx": "Tokyo",
        "tr": [
@@ -2288,7 +3685,7 @@
        "who": "you",
        "am": "Tsukiji outer market breakfast.",
        "pm": "Skyliner to Narita around 14:30.",
-       "eve": "Etihad 17:20 to Brussels, land Sun 06:30.",
+       "eve": "Etihad 17:20 to Brussels, land Sun 06:30; train to Lille about 1h30.",
        "sleep": "On the plane",
        "wx": "Tokyo",
        "tr": [
@@ -2303,7 +3700,7 @@
      ],
      "nights": [
       {
-       "place": "Tokyo (Asakusa) hotel double",
+       "place": "Tokyo (Ueno/Asakusa) hotel double",
        "room": 85,
        "meals": false,
        "solo": false
@@ -2321,34 +3718,34 @@
        "solo": false
       },
       {
-       "place": "Nikko",
-       "room": 62,
+       "place": "Tokyo (Ueno/Asakusa) hotel double",
+       "room": 85,
        "meals": false,
        "solo": false
       },
       {
-       "place": "Tokyo hostel or capsule",
+       "place": "Tokyo hostel or capsule (Asakusa)",
        "room": 35,
        "meals": false,
        "solo": true
       },
       {
-       "place": "Tokyo hostel",
+       "place": "Tokyo hostel or capsule (Asakusa)",
        "room": 35,
        "meals": false,
        "solo": true
       },
       {
-       "place": "Tokyo hostel",
+       "place": "Tokyo hostel or capsule (Asakusa)",
        "room": 35,
        "meals": false,
        "solo": true
       }
      ],
-     "transport_pp": 96,
+     "transport_pp": 82,
      "shared": 0,
-     "activities_pp": 30,
-     "solo_transport": 42,
+     "activities_pp": 25,
+     "solo_transport": 45,
      "solo_activities": 15,
      "travel": 985,
      "together_travel": 700,
@@ -2359,32 +3756,32 @@
       "out": 232,
       "her": 130,
       "his": 571,
-      "rooms": 271,
+      "rooms": 294,
       "food": 224.0,
-      "transport": 192,
-      "activities": 60,
+      "transport": 164,
+      "activities": 50,
       "misc": 40,
       "solo_rooms": 105,
       "solo_food": 75.0,
-      "solo_transport": 42,
+      "solo_transport": 45,
       "solo_activities": 15,
-      "solo": 237.0,
+      "solo": 240.0,
       "flights": 933,
-      "together": 787.0,
-      "ground": 1024.0,
-      "total": 1957,
-      "his_share": 1318,
-      "her_share": 640
+      "together": 772.0,
+      "ground": 1012.0,
+      "total": 1945,
+      "his_share": 1313,
+      "her_share": 632
      }
     },
     {
      "style": "Fuller",
-     "name": "Nikko and two lake nights at Yumoto; Takao and Hakone on your own",
+     "name": "Nikko and Senjogahara; Hakone on your own",
      "chill": 60,
      "route": [
-      "Together: 1n Tokyo, 1n Nikko, 2n Yumoto onsen inn",
-      "Wed: down to Tokyo, she flies from Narita 19:00",
-      "You: 3n Tokyo (Mt Takao, a Hakone day)",
+      "Together: 1n Tokyo, 2n Nikko (shrines, Senjogahara), 1n Tokyo",
+      "Wed: she flies from Narita 19:00; you take the Romancecar to Hakone",
+      "You: 3n Hakone (the loop, Mt Kintoki)",
       "Sat: Narita 17:20"
      ],
      "days": [
@@ -2392,10 +3789,10 @@
        "t": "Fly to Tokyo",
        "e": "Travel",
        "who": "both",
-       "am": "Airport Express around 12:30.",
+       "am": "Morning with the family; Airport Express from Central around 12:30.",
        "pm": "14:55 HK Express to Narita, land 20:00.",
-       "eve": "Skyliner to Ueno.",
-       "sleep": "Tokyo hotel",
+       "eve": "Skyliner to Ueno (41 min), late ramen near the hotel. Leave the big bags here for Tuesday: most hotels keep them.",
+       "sleep": "Tokyo hotel (Ueno/Asakusa)",
        "wx": "Tokyo",
        "tr": [
         [
@@ -2417,11 +3814,11 @@
        "b": null
       },
       {
-       "t": "Nikko's shrines",
-       "e": "Easy",
+       "t": "Senso-ji at 8, Nikko's shrines",
+       "e": "Active",
        "who": "both",
-       "am": "Tobu Limited Express to Nikko (1h50).",
-       "pm": "Toshogu, Taiyuin and Kanmangafuchi.",
+       "am": "Tobu Limited Express from Asakusa at about 9:00 (1h50).",
+       "pm": "Toshogu, Taiyuin and Futarasan after 14:00; Kanmangafuchi at dusk.",
        "eve": "Yuba dinner.",
        "sleep": "Nikko guesthouse",
        "wx": "Nikko",
@@ -2430,101 +3827,98 @@
          "train",
          "Asakusa → Tobu-Nikko",
          110
+        ],
+        [
+         "bus",
+         "station ↔ shrines",
+         15
         ]
        ],
        "b": null
       },
       {
-       "t": "Up to the lakes",
-       "e": "Easy",
-       "who": "both",
-       "am": "Bus up Irohazaka; Kegon falls and its elevator to the base.",
-       "pm": "On to Yumoto; check in early.",
-       "eve": "Sulphur onsen and dinner at the inn.",
-       "sleep": "Yumoto onsen inn",
-       "wx": "Nikko",
-       "tr": [
-        [
-         "bus",
-         "Nikko → Chuzenji → Yumoto",
-         90
-        ]
-       ],
-       "b": "Showers possible (40%): the onsen is the plan."
-      },
-      {
-       "t": "Senjogahara and the lake",
+       "t": "Senjogahara and Lake Chuzenji",
        "e": "Active",
        "who": "both",
-       "am": "Walk Yumoto → Yudaki falls → Senjogahara → Akanuma (3h).",
-       "pm": "Bus to Chuzenji, lakeshore walk.",
-       "eve": "Back to the inn's bath.",
-       "sleep": "Yumoto onsen inn",
+       "am": "Early bus to Yumoto; walk Yumoto → Yudaki falls → Senjogahara's boardwalks → Akanuma (3h, flat).",
+       "pm": "Bus down to Lake Chuzenji: Kegon falls and the lakeshore.",
+       "eve": "Town onsen.",
+       "sleep": "Nikko guesthouse",
        "wx": "Nikko",
        "tr": [
         [
          "bus",
-         "Akanuma ↔ Chuzenji ↔ Yumoto",
-         60
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Down to Tokyo; she flies at 19:00",
-       "e": "Travel",
-       "who": "split",
-       "am": "Morning bath, bus down (80 min), Tobu to Asakusa (1h50).",
-       "pm": "She takes the Skyliner ~16:30 for HK Express 19:00.",
-       "eve": "You: hostel in Asakusa.",
-       "sleep": "You: Tokyo hostel",
-       "wx": "Tokyo",
-       "tr": [
-        [
-         "bus",
-         "Yumoto → Tobu-Nikko",
+         "Nikko → Yumoto",
          80
         ],
+        [
+         "bus",
+         "Akanuma → Chuzenji → Nikko",
+         70
+        ]
+       ],
+       "b": "Showers possible (40%): the boardwalk is fine in light rain; the shrines are the back-up."
+      },
+      {
+       "t": "Back to Tokyo; Meiji Jingu's festival",
+       "e": "Easy",
+       "who": "both",
+       "am": "Leave Nikko by 09:30, before the holiday traffic home.",
+       "pm": "Meiji Jingu's autumn festival (1–3 Nov): on Culture Day there are martial-arts displays, noh and gagaku on the stage, chrysanthemums along the approach, and horseback archery (yabusame). Then Harajuku's back streets.",
+       "eve": "Asakusa's Hoppy street izakaya.",
+       "sleep": "Tokyo hotel (Ueno/Asakusa)",
+       "wx": "Tokyo",
+       "tr": [
         [
          "train",
          "Tobu-Nikko → Asakusa",
          110
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Mt Takao",
-       "e": "Active",
-       "who": "you",
-       "am": "Keio line to Takaosanguchi, trail 6 up.",
-       "pm": "Ridge to Shiroyama, down trail 1.",
-       "eve": "Omoide Yokocho.",
-       "sleep": "Tokyo hostel",
-       "wx": "Tokyo",
-       "tr": [
+        ],
         [
-         "train",
-         "Tokyo ↔ Takaosanguchi",
-         110
+         "metro",
+         "around Tokyo",
+         30
         ]
        ],
-       "b": null
+       "b": "Showers are unlikely (30%). If it rains, the Tokyo National Museum in Ueno is open on the holiday."
       },
       {
-       "t": "A day in Hakone",
-       "e": "Active",
-       "who": "you",
-       "am": "Romancecar to Hakone-Yumoto, Tozan train, cable car + ropeway over Owakudani.",
-       "pm": "Boat across Lake Ashi, back by bus + Romancecar.",
-       "eve": "Back in Tokyo.",
-       "sleep": "Tokyo hostel",
+       "t": "A slow last day in Tokyo; she flies at 19:00",
+       "e": "Easy",
+       "who": "split",
+       "am": "Yanaka at 9, Ueno park; the Tokyo National Museum if you like (open Wed).",
+       "pm": "Ameyoko for lunch, Kappabashi. She takes the Skyliner from Ueno ~16:30 for HK Express 19:00. You: Romancecar from Shinjuku to Hakone (85 min).",
+       "eve": "You: onsen and dinner in Hakone.",
+       "sleep": "You: Hakone hostel",
        "wx": "Hakone",
        "tr": [
         [
          "train",
-         "Shinjuku ↔ Hakone",
-         210
+         "Shinjuku → Hakone-Yumoto (Romancecar)",
+         85
+        ],
+        [
+         "train",
+         "Tozan train",
+         30
+        ]
+       ],
+       "b": null
+      },
+      {
+       "t": "Hakone loop",
+       "e": "Active",
+       "who": "you",
+       "am": "Tozan train up the switchbacks to Gora, cable car and ropeway over Owakudani's vents.",
+       "pm": "Boat across Lake Ashi to Moto-Hakone, Hakone shrine's torii in the water.",
+       "eve": "Onsen.",
+       "sleep": "Hakone hostel",
+       "wx": "Hakone",
+       "tr": [
+        [
+         "train",
+         "Hakone-Yumoto → Gora",
+         40
         ],
         [
          "cable",
@@ -2540,19 +3934,42 @@
        "b": null
       },
       {
+       "t": "Mt Kintoki",
+       "e": "Big day",
+       "who": "you",
+       "am": "Bus to Kintoki-jinja-iriguchi (25 min), up to the summit (1,212 m): Fuji straight ahead (3h round trip).",
+       "pm": "Down to Sengokuhara's silver-grass fields, back by bus.",
+       "eve": "Onsen.",
+       "sleep": "Hakone hostel",
+       "wx": "Hakone",
+       "tr": [
+        [
+         "bus",
+         "Hakone ↔ Kintoki trailhead",
+         50
+        ]
+       ],
+       "b": null
+      },
+      {
        "t": "Fly home",
        "e": "Travel",
        "who": "you",
-       "am": "Yanaka.",
-       "pm": "Skyliner to Narita around 14:30.",
-       "eve": "Etihad 17:20 to Brussels.",
+       "am": "Walk the old Tokaido stone road from Hatajuku early (1h).",
+       "pm": "Romancecar to Shinjuku, Narita Express to Narita (3h total), leave by 12:00.",
+       "eve": "Etihad 17:20 to Brussels, land Sun 06:30.",
        "sleep": "On the plane",
-       "wx": "Tokyo",
+       "wx": "Hakone",
        "tr": [
         [
          "train",
-         "Ueno → Narita (Skyliner)",
-         45
+         "Hakone-Yumoto → Shinjuku",
+         85
+        ],
+        [
+         "train",
+         "Shinjuku → Narita (N'EX)",
+         90
         ]
        ],
        "b": null
@@ -2560,78 +3977,78 @@
      ],
      "nights": [
       {
-       "place": "Tokyo hotel double",
+       "place": "Tokyo (Ueno/Asakusa) hotel double",
        "room": 85,
        "meals": false,
        "solo": false
       },
       {
-       "place": "Nikko guesthouse",
+       "place": "Nikko guesthouse, private room",
        "room": 62,
        "meals": false,
        "solo": false
       },
       {
-       "place": "Yumoto onsen inn, dinner + breakfast",
-       "room": 170,
-       "meals": true,
+       "place": "Nikko",
+       "room": 62,
+       "meals": false,
        "solo": false
       },
       {
-       "place": "Yumoto onsen inn",
-       "room": 170,
-       "meals": true,
+       "place": "Tokyo (Ueno/Asakusa) hotel double",
+       "room": 85,
+       "meals": false,
        "solo": false
       },
       {
-       "place": "Tokyo hostel or capsule",
+       "place": "Hakone hostel",
        "room": 35,
        "meals": false,
        "solo": true
       },
       {
-       "place": "Tokyo hostel",
+       "place": "Hakone hostel",
        "room": 35,
        "meals": false,
        "solo": true
       },
       {
-       "place": "Tokyo hostel",
+       "place": "Hakone hostel",
        "room": 35,
        "meals": false,
        "solo": true
       }
      ],
-     "transport_pp": 96,
+     "transport_pp": 85,
      "shared": 0,
      "activities_pp": 25,
-     "solo_transport": 70,
+     "solo_transport": 75,
      "solo_activities": 20,
-     "travel": 1195,
-     "together_travel": 765,
-     "beds": 3,
+     "travel": 1175,
+     "together_travel": 845,
+     "beds": 2,
      "solo_beds": 1,
      "moves": 3,
      "cost": {
       "out": 232,
       "her": 130,
       "his": 571,
-      "rooms": 487,
-      "food": 156.8,
-      "transport": 192,
+      "rooms": 294,
+      "food": 224.0,
+      "transport": 170,
       "activities": 50,
       "misc": 40,
       "solo_rooms": 105,
       "solo_food": 75.0,
-      "solo_transport": 70,
+      "solo_transport": 75,
       "solo_activities": 20,
-      "solo": 270.0,
+      "solo": 275.0,
       "flights": 933,
-      "together": 925.8,
-      "ground": 1195.8,
-      "total": 2129,
-      "his_share": 1420,
-      "her_share": 709
+      "together": 778.0,
+      "ground": 1053.0,
+      "total": 1986,
+      "his_share": 1351,
+      "her_share": 635
      }
     }
    ]
@@ -2696,6 +4113,9 @@
     "Your flight home is the priciest (€618)"
    ],
    "calm": "Nara at dawn and the Koyasan temple night together. In the Fuller plan, two nights in the Yunomine onsen village by a steaming river.",
+   "group": "other",
+   "town": null,
+   "town_card": null,
    "out": {
     "route": "HKG → KIX",
     "price": 114,
@@ -4006,6 +5426,9 @@
     "Your flight home is €612"
    ],
    "calm": "Yufuin (Slow plan, 2 nights together): mist on Lake Kinrin at 7am, a private onsen, the Yufu peak over the rice fields. In the Fuller plan, two nights in Kurokawa's river gorge.",
+   "group": "other",
+   "town": null,
+   "town_card": null,
    "out": {
     "route": "HKG → FUK",
     "price": 123,
@@ -5483,6 +6906,9 @@
     "Typhoon In-fa: recheck on 30 Oct"
    ],
    "calm": "Sun Moon Lake (Slow plan, 2 nights together): the lake at dawn before the boats start, a pagoda walk, tea at Yuchi. Alishan's cedar forest above the clouds on your own.",
+   "group": "other",
+   "town": null,
+   "town_card": null,
    "out": {
     "route": "HKG → KHH",
     "price": 84,
@@ -6797,6 +8223,9 @@
     "Typhoon In-fa: recheck on 30 Oct"
    ],
    "calm": "Dulan (Slow plan, 3 nights together): guesthouse by the sea, the sugar factory café, the black-sand beach. Then a night on Luye's tea plateau.",
+   "group": "other",
+   "town": null,
+   "town_card": null,
    "out": {
     "route": "HKG → KHH",
     "price": 106,
@@ -8102,24 +9531,24 @@
  },
  "picks": [
   {
-   "id": "tw-south",
-   "why": "Easiest and cheapest",
-   "text": "She speaks the language, Tainan is dry and warm. Together: Tainan and Sun Moon Lake. You: Alishan's railway, running again since 25 Oct."
+   "id": "jp-fuji",
+   "why": "The Fuji view",
+   "text": "Two nights by Lake Kawaguchi facing Mount Fuji. Sunday is forecast dry: the Fuji day. Busiest on the holiday."
+  },
+  {
+   "id": "jp-hakone",
+   "why": "Easiest and most relaxing",
+   "text": "85 minutes from Shinjuku, two nights in an onsen inn, and something good to do whatever the weather."
+  },
+  {
+   "id": "jp-nikko",
+   "why": "Culture and autumn colour",
+   "text": "Japan's most ornate shrines, and Iroha-zaka and Lake Chuzenji at peak colour. Leaves from Asakusa, next to the hotel."
   },
   {
    "id": "jp-kansai",
-   "why": "Best for your solo days",
-   "text": "Nara at dawn and a temple night together, then two days walking the Kumano Kodo on your own. Book Koyasan and the Kumano inns today."
-  },
-  {
-   "id": "jp-kyushu",
-   "why": "Bluest skies, her best last day",
-   "text": "Onsen towns together and the Karatsu Kunchi floats on Wed 4 Nov before her 20:00 flight; then Kurokawa and the Kuju peaks for you."
-  },
-  {
-   "id": "jp-fuji",
-   "why": "Tokyo + Fuji, done slowly",
-   "text": "Old Tokyo on foot and two days by the Fuji lakes together; Hakone or the Mitsutoge ridge for you."
+   "why": "If you'd rather skip Tokyo",
+   "text": "Nara and a temple night together, then the Kumano Kodo on your own. Taiwan stays on the page as the cheaper option."
   }
  ],
  "sources": [
@@ -8257,6 +9686,36 @@
    "Forecast for the south and east — Central Weather Administration",
    "https://www.cwa.gov.tw/V8/C/W/County/index.html",
    "ok"
+  ],
+  [
+   "Kawaguchiko maple corridor light-up — Kaibutsu blog (2026 festival)",
+   "https://kaibutsu-blog.com/fujikawaguchiko-koyo-matsuri-2026/",
+   "warn"
+  ],
+  [
+   "Kubota Itchiku Art Museum (Kawaguchiko) — Museum.or.jp",
+   "https://www.museum.or.jp/museum/3564",
+   "ok"
+  ],
+  [
+   "Tokyo National Museum — Tokyo Art Beat",
+   "https://www.tokyoartbeat.com/venue/1DC8EF86",
+   "ok"
+  ],
+  [
+   "Meiji Jingu autumn festival — Visiting Japan",
+   "https://www.visiting-japan.com/en/articles/events/e13sb-meiji-jingu-aki-taisai.htm",
+   "ok"
+  ],
+  [
+   "Autumn colour: Nikko and Hakone — Weathernews / Hankyu",
+   "https://weathernews.jp/s/koyo/spot/24105/",
+   "ok"
+  ],
+  [
+   "Kanda used-book fair (Tokyo) — Tokyo Antiquarian Booksellers",
+   "https://www.kosho.or.jp/wppost/plg_WpPost_post.php?postid=28822",
+   "warn"
   ],
   [
    "Flights out on 31 Oct — Google Flights (27 Oct)",
@@ -8457,6 +9916,54 @@
    "https://www.cwa.gov.tw/V8/C/W/County/index.html"
   ],
   [
+   "Japan",
+   "Kawaguchiko maple corridor light-up",
+   "warn",
+   "The Fujikawaguchiko autumn-leaves festival and light-up run 7–29 Nov 2026: after your days there. The corridor itself can still be walked by day.",
+   "Kaibutsu blog (2026 festival)",
+   "https://kaibutsu-blog.com/fujikawaguchiko-koyo-matsuri-2026/"
+  ],
+  [
+   "Japan",
+   "Kubota Itchiku Art Museum (Kawaguchiko)",
+   "ok",
+   "Open every day April–November, 9:30–17:30; ¥1,300. Fine for Monday.",
+   "Museum.or.jp",
+   "https://www.museum.or.jp/museum/3564"
+  ],
+  [
+   "Japan",
+   "Tokyo National Museum",
+   "ok",
+   "Closed Mondays; open Tue 3 Nov (holiday) and Wed 4 Nov, 9:30–17:00.",
+   "Tokyo Art Beat",
+   "https://www.tokyoartbeat.com/venue/1DC8EF86"
+  ],
+  [
+   "Japan",
+   "Meiji Jingu autumn festival",
+   "ok",
+   "Held 1–3 Nov every year; on 3 Nov martial-arts displays, stage performances and yabusame. 2026 times not published yet.",
+   "Visiting Japan",
+   "https://www.visiting-japan.com/en/articles/events/e13sb-meiji-jingu-aki-taisai.htm"
+  ],
+  [
+   "Japan",
+   "Autumn colour: Nikko and Hakone",
+   "ok",
+   "Iroha-zaka (Nikko) at peak on 26 Oct, leaves falling from ~11 Nov. Lake Ashi (Hakone) peaks early Nov; Owakudani and Gora mid-Nov.",
+   "Weathernews / Hankyu",
+   "https://weathernews.jp/s/koyo/spot/24105/"
+  ],
+  [
+   "Japan",
+   "Kanda used-book fair (Tokyo)",
+   "warn",
+   "23 Oct – 1 Nov 2026: ends the day you leave Tokyo for the town, so it isn't in the plans.",
+   "Tokyo Antiquarian Booksellers",
+   "https://www.kosho.or.jp/wppost/plg_WpPost_post.php?postid=28822"
+  ],
+  [
    "All",
    "Flights out on 31 Oct",
    "warn",
@@ -8484,7 +9991,7 @@
    "All",
    "Private-room prices",
    "todo",
-   "Typical rates for a private double in each place, not live quotes. Check on Booking/Agoda once you pick.",
+   "Typical rates for a private double in each place, not live quotes. To be checked live once the browser on your laptop is linked.",
    "Estimates",
    "https://www.booking.com/"
   ]
@@ -11915,6 +13422,316 @@
    "y": "A five-storey pagoda and a calm garden, with no Kyoto crowds.",
    "l": "Tennoji, Osaka; 5 min from Shitennoji-mae-Yuhigaoka metro.",
    "q": "Shitennoji, Osaka"
+  },
+  {
+   "n": "Meiji Jingu",
+   "a": [
+    "Meiji Jingu"
+   ],
+   "w": "Tokyo's great Shinto shrine to Emperor Meiji, in a planted forest.",
+   "y": "A 1 km gravel approach under 100,000 trees; its autumn festival (1–3 Nov) brings yabusame horseback archery and noh on Culture Day.",
+   "l": "Next to Harajuku station (JR Yamanote line).",
+   "q": "Meiji Jingu, Tokyo"
+  },
+  {
+   "n": "Harajuku",
+   "a": [
+    "Harajuku"
+   ],
+   "w": "Tokyo's youth-fashion district next to Meiji Jingu.",
+   "y": "Takeshita street's crowds, then the quieter back streets of Ura-Harajuku and Omotesando's architecture.",
+   "l": "JR Harajuku station.",
+   "q": "Harajuku, Tokyo"
+  },
+  {
+   "n": "Ameyoko",
+   "a": [
+    "Ameyoko"
+   ],
+   "w": "A street market under the train tracks between Ueno and Okachimachi.",
+   "y": "Street food, fruit, dried fish and cheap izakaya; loud and fun at lunchtime and after work.",
+   "l": "Exit Ueno station towards Okachimachi.",
+   "q": "Ameyoko, Tokyo"
+  },
+  {
+   "n": "Kappabashi",
+   "a": [
+    "Kappabashi"
+   ],
+   "w": "Tokyo's kitchen-supply street.",
+   "y": "Knives, ceramics and the plastic food models from restaurant windows; good small presents.",
+   "l": "Between Ueno and Asakusa, 5 min from Tawaramachi metro.",
+   "q": "Kappabashi Dougu Street, Tokyo"
+  },
+  {
+   "n": "Tokyo National Museum",
+   "a": [
+    "Tokyo National Museum"
+   ],
+   "w": "Japan's oldest and largest museum.",
+   "y": "Samurai armour, swords, screens and Buddhist sculpture; the Horyuji treasures gallery is calm and beautiful.",
+   "l": "North end of Ueno park. Closed Mondays; open Tue 3 Nov and Wed 4 Nov.",
+   "q": "Tokyo National Museum"
+  },
+  {
+   "n": "Ueno park",
+   "a": [
+    "Ueno park"
+   ],
+   "w": "A big park of temples, ponds and museums.",
+   "y": "Shinobazu pond's lotus, Toshogu's gold shrine, and the walk between Yanaka and Ameyoko.",
+   "l": "Next to Ueno station.",
+   "q": "Ueno Park, Tokyo"
+  },
+  {
+   "n": "Nakamise",
+   "a": [
+    "Nakamise"
+   ],
+   "w": "The shopping street leading to Senso-ji.",
+   "y": "Rice crackers and ningyo-yaki cakes; empty before 9am.",
+   "l": "Asakusa, from the Kaminarimon gate.",
+   "q": "Nakamise Shopping Street, Asakusa"
+  },
+  {
+   "n": "Sumida river",
+   "a": [
+    "Sumida river",
+    "Sumida"
+   ],
+   "w": "The river along Asakusa.",
+   "y": "A riverside walk with the Skytree across the water, lovely at night.",
+   "l": "Asakusa.",
+   "q": "Sumida River Walk, Asakusa"
+  },
+  {
+   "n": "Tsukiji outer market",
+   "a": [
+    "Tsukiji outer market",
+    "Tsukiji"
+   ],
+   "w": "The market streets left from Tokyo's old fish market.",
+   "y": "Sushi and tamagoyaki for breakfast; go before 10am.",
+   "l": "Tsukiji, Hibiya line.",
+   "q": "Tsukiji Outer Market"
+  },
+  {
+   "n": "Shimokitazawa",
+   "a": [
+    "Shimokitazawa"
+   ],
+   "w": "A low-rise neighbourhood of vintage shops, coffee and small bars.",
+   "y": "Tokyo's most relaxed evening.",
+   "l": "Keio Inokashira / Odakyu lines, 5 min from Shibuya or Shinjuku.",
+   "q": "Shimokitazawa, Tokyo"
+  },
+  {
+   "n": "Kamakura",
+   "a": [
+    "Kamakura",
+    "Kita-Kamakura"
+   ],
+   "w": "A seaside town of Zen temples, Japan's capital in the 1200s.",
+   "y": "The Great Buddha, Engaku-ji's cedars, and a hiking trail between them over the hills.",
+   "l": "1h south of Tokyo by JR Yokosuka line.",
+   "q": "Kamakura, Kanagawa"
+  },
+  {
+   "n": "Yuigahama",
+   "a": [
+    "Yuigahama"
+   ],
+   "w": "Kamakura's beach.",
+   "y": "Sunset over Enoshima and Fuji on clear days.",
+   "l": "15 min walk from the Great Buddha.",
+   "q": "Yuigahama Beach"
+  },
+  {
+   "n": "Engaku-ji",
+   "a": [
+    "Engaku-ji",
+    "Kencho-ji"
+   ],
+   "w": "Two of Kamakura's great Zen temples.",
+   "y": "Cedar-lined halls and gardens next to Kita-Kamakura station.",
+   "l": "Kita-Kamakura station.",
+   "q": "Engaku-ji, Kamakura"
+  },
+  {
+   "n": "Yakuoin",
+   "a": [
+    "Yakuoin",
+    "Shiroyama"
+   ],
+   "w": "The temple near Mt Takao's summit; Shiroyama is the next peak along the ridge.",
+   "y": "Tengu statues and, from Shiroyama, a view of Fuji.",
+   "l": "Mt Takao, trail 1.",
+   "q": "Yakuoin, Mt Takao"
+  },
+  {
+   "n": "Oishi park",
+   "a": [
+    "Oishi park"
+   ],
+   "w": "A flower park on the north shore of Lake Kawaguchi.",
+   "y": "The classic view of Fuji across the lake.",
+   "l": "Lake loop bus, Kawaguchiko Natural Living Center stop.",
+   "q": "Oishi Park, Fujikawaguchiko"
+  },
+  {
+   "n": "Tenjoyama",
+   "a": [
+    "Tenjoyama"
+   ],
+   "w": "The hill above Lake Kawaguchi, with a ropeway.",
+   "y": "Fuji over the lake from the top; 40 min up on foot.",
+   "l": "Next to Kawaguchiko station.",
+   "q": "Mt. Fuji Panoramic Ropeway"
+  },
+  {
+   "n": "Mitsutoge",
+   "a": [
+    "Kaiun-yama"
+   ],
+   "w": "The highest point of the Mitsutoge ridge (1,785 m).",
+   "y": "Fuji's full face across the valley.",
+   "l": "Above Kawaguchiko; 2h30 up from the trailhead.",
+   "q": "Mitsutoge Kaiunzan"
+  },
+  {
+   "n": "Mt Kintoki",
+   "a": [
+    "Mt Kintoki",
+    "Kintoki"
+   ],
+   "w": "A 1,212 m peak on Hakone's northern rim.",
+   "y": "The best Fuji view in Hakone; busy at weekends.",
+   "l": "Bus from Hakone-Yumoto or Gora to Kintoki-jinja-iriguchi.",
+   "q": "Mount Kintoki, Hakone"
+  },
+  {
+   "n": "Hatajuku",
+   "a": [
+    "Hatajuku"
+   ],
+   "w": "An old post village on the Tokaido road.",
+   "y": "Start of the cobbled stone road over the pass, and Hakone's marquetry workshops.",
+   "l": "Bus from Hakone-Yumoto, 20 min.",
+   "q": "Hatajuku, Hakone"
+  },
+  {
+   "n": "Gora",
+   "a": [
+    "Gora"
+   ],
+   "w": "A hillside village at the top of the Tozan train.",
+   "y": "Gora park, the Open-Air Museum nearby, and the cable car up to the ropeway.",
+   "l": "End of the Hakone Tozan railway.",
+   "q": "Gora, Hakone"
+  },
+  {
+   "n": "Sengokuhara",
+   "a": [
+    "Sengokuhara"
+   ],
+   "w": "A highland plain in Hakone.",
+   "y": "Silver-grass fields that glow in late-afternoon light in autumn.",
+   "l": "Bus from Gora or Togendai.",
+   "q": "Sengokuhara Susuki Grass Field"
+  },
+  {
+   "n": "Pola Museum of Art",
+   "a": [
+    "Pola Museum"
+   ],
+   "w": "An art museum in Hakone's forest.",
+   "y": "Monet, Renoir and Japanese painting; a forest walk outside. The rain plan.",
+   "l": "Bus from Gora, 15 min.",
+   "q": "Pola Museum of Art, Hakone"
+  },
+  {
+   "n": "Moto-Hakone",
+   "a": [
+    "Moto-Hakone",
+    "Hakone shrine"
+   ],
+   "w": "The village at the south end of Lake Ashi, with Hakone shrine.",
+   "y": "The red torii standing in the lake and a cedar avenue along the shore.",
+   "l": "Boat from Togendai, or bus from Hakone-Yumoto.",
+   "q": "Hakone Shrine"
+  },
+  {
+   "n": "Togendai",
+   "a": [
+    "Togendai"
+   ],
+   "w": "The north end of Lake Ashi.",
+   "y": "Where the ropeway meets the sightseeing boats.",
+   "l": "End of the Hakone Ropeway.",
+   "q": "Togendai Port, Hakone"
+  },
+  {
+   "n": "Hakone-Yumoto",
+   "a": [
+    "Hakone-Yumoto"
+   ],
+   "w": "Hakone's gateway hot-spring town.",
+   "y": "Where the Romancecar arrives; soba and onsen by the river.",
+   "l": "85 min from Shinjuku.",
+   "q": "Hakone-Yumoto Station"
+  },
+  {
+   "n": "Futarasan shrine",
+   "a": [
+    "Futarasan",
+    "Taiyuin",
+    "Rinnoji"
+   ],
+   "w": "Nikko's other shrines and temples next to Toshogu.",
+   "y": "Taiyuin is a quieter, darker twin of Toshogu; Rinnoji has a treasure house.",
+   "l": "A 5-min walk from Toshogu.",
+   "q": "Taiyuinbyo, Nikko"
+  },
+  {
+   "n": "Shinkyo bridge",
+   "a": [
+    "Shinkyo"
+   ],
+   "w": "The red lacquered bridge at the entrance to Nikko's shrines.",
+   "y": "The postcard view of Nikko, best early morning.",
+   "l": "Bottom of the shrine area.",
+   "q": "Shinkyo Bridge, Nikko"
+  },
+  {
+   "n": "Iroha-zaka",
+   "a": [
+    "Iroha-zaka"
+   ],
+   "w": "The hairpin road from Nikko up to Lake Chuzenji.",
+   "y": "Peak colour on 26 Oct; jams at weekends and holidays.",
+   "l": "Bus from Tobu-Nikko towards Chuzenji.",
+   "q": "Irohazaka, Nikko"
+  },
+  {
+   "n": "Yudaki falls",
+   "a": [
+    "Yudaki",
+    "Akanuma"
+   ],
+   "w": "A cascade below Lake Yunoko; Akanuma is the bus stop at the end of the Senjogahara walk.",
+   "y": "Start and end of the flat Senjogahara boardwalk walk.",
+   "l": "Okunikko, buses from Tobu-Nikko.",
+   "q": "Yudaki Falls, Nikko"
+  },
+  {
+   "n": "Hoppy street",
+   "a": [
+    "Hoppy street"
+   ],
+   "w": "Asakusa's row of outdoor izakaya.",
+   "y": "Beef stew, skewers and cheap beer on plastic stools.",
+   "l": "West of Senso-ji.",
+   "q": "Hoppy Street, Asakusa"
   }
  ],
  "fc_days": [

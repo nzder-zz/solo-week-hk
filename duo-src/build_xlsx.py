@@ -52,7 +52,7 @@ def build_xlsx(D, path):
     ws.column_dimensions["A"].width = 110
     lines = [
         ("Week for two after Hong Kong — together Sat 31 Oct → Wed 4 Nov, then you alone until Sat 7 Nov", BOLD),
-        ("Six trips (Japan and Taiwan) × two plans (Slow, Fuller). Private rooms while together, taxis split, no Kyoto, no bike trips, no Vietnam. She flies back to HK on Wed 4 Nov in the evening; you spend Thu 5 and Fri 6 on your own and fly home on Sat 7 Nov (single ticket).", BLACK),
+        ("Leaning to Japan: Tokyo + one smaller town (Kawaguchiko, Hakone or Nikko), with Kansai, Kyushu and Taiwan kept as other options. Each trip has two plans (Slow, Fuller). Private rooms while together, taxis split, no Kyoto, no bike trips. She flies back to HK on Wed 4 Nov in the evening; you spend Thu 5 and Fri 6 on your own and fly home on Sat 7 Nov (single ticket).", BLACK),
         ("", BLACK),
         ("How to use", BOLD),
         ("• My plan: pick a trip and a plan from the drop-downs; the costs and both shares update.", BLACK),
@@ -195,7 +195,7 @@ def build_xlsx(D, path):
     wm.column_dimensions["A"].width = 38; wm.column_dimensions["B"].width = 46
     put(wm, 1, 1, "My plan: pick from the yellow cells", BOLD)
     trips = [d["title"] for d in D["dests"]]
-    put(wm, 3, 1, "Trip"); c = put(wm, 3, 2, [d["title"] for d in D["dests"] if d["id"] == "tw-south"][0]); c.fill = YELLOW
+    put(wm, 3, 1, "Trip"); c = put(wm, 3, 2, [d["title"] for d in D["dests"] if d["id"] == "jp-hakone"][0]); c.fill = YELLOW
     put(wm, 4, 1, "Plan"); c = put(wm, 4, 2, "Slow"); c.fill = YELLOW
     for i, t in enumerate(trips, 1):
         put(wm, i, 26, t)

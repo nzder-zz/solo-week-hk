@@ -3,7 +3,9 @@
 The duo version of the planner: together Sat 31 Oct → Wed 4 Nov 2026 (she flies back to HK that evening), then you alone until your flight home on Sat 7 Nov. Japan and Taiwan only. Published at `duo/` next to the solo page, which is untouched.
 
 ## Files
-- `trips.py`: the 6 trips × 2 plans (Slow, Fuller): 4 nights together + 3 alone, room prices, transport, activities, day-by-day text.
+- `trips_tokyo.py`: Tokyo + one smaller town (Kawaguchiko, Hakone, Nikko) × 2 plans (Slow, Fuller), with the shared Tokyo days.
+- `trips.py`: the other trips (Kansai, Kyushu, Taiwan) × 2 plans: 4 nights together + 3 alone, room prices, transport, activities, day-by-day text.
+- `fc_refresh.py`: the 29 Oct forecast refresh (JMA + CWA official weekly forecasts).
 - `fares.py`: every flight and its status (`gf27` = live Google Flights fare of 27 Oct, `est` = estimate). **Refresh fares here.**
 - `checks.py`: the verification log (Typhoon Champi damage, closures, volcano levels, prices still to check).
 - `places_new.py`: place notes added for the duo trips; the rest come from `base_data.json`.

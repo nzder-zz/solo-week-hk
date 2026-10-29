@@ -5,7 +5,9 @@ Shape: together Sat 31 Oct -> Wed 4 Nov (she flies back to HK on Wed evening),
 you alone Thu 5 + Fri 6, you fly home on Sat 7 Nov."""
 import json, os
 from fares import OUT, HER, HIS, FARE_STATUS
-from trips import TRIPS
+from trips import TRIPS as OTHER_TRIPS
+from trips_tokyo import TRIPS_TOKYO
+TRIPS = TRIPS_TOKYO + OTHER_TRIPS
 from checks import CHECKS, CHECKED
 from places_new import PLACES_NEW
 
@@ -22,6 +24,24 @@ CRITERIA = [["hike", "Hiking"], ["nature", "Nature"], ["food", "Food"], ["cultur
 POINTS = {"Dry": 1, "Showers": 0.7, "Wet": 0.35, "Heavy rain": 0}
 DATES = ["Sat 31 Oct", "Sun 1 Nov", "Mon 2 Nov", "Tue 3 Nov", "Wed 4 Nov", "Thu 5 Nov", "Fri 6 Nov", "Sat 7 Nov"]
 ENTRY = {"JP": "Visa-free 90 days for you (French passport); fill in Visit Japan Web", "TW": "Visa-free 90 days for you; online arrival card"}
+
+
+TOKYO_PLAN = {
+    "stay": "Stay in Ueno or Asakusa: the Skyliner from Narita stops at Ueno, the Tobu train to Nikko leaves from Asakusa, and it's the old, walkable side of Tokyo. Same hotel on Sat and Tue nights; leave the big bags there.",
+    "days": [
+        {"when": "Sat 31 Oct, evening", "what": "Land at Narita 20:00, Skyliner to Ueno (41 min), late ramen."},
+        {"when": "Sun 1 Nov, 8:00", "what": "Senso-ji and Nakamise before the crowds, then the train or bus to the town."},
+        {"when": "Tue 3 Nov (Culture Day)", "what": "Back by lunchtime. Meiji Jingu's autumn festival: martial arts, noh and gagaku, chrysanthemums, horseback archery (yabusame). Harajuku's back streets. Evening: Omoide Yokocho's yakitori alleys in Shinjuku."},
+        {"when": "Wed 4 Nov", "what": "Yanaka's temples and old shopping street at 9, Ueno park, the Tokyo National Museum (open Wed). Ameyoko for lunch, Kappabashi. She leaves Ueno ~16:30 on the Skyliner for her 19:00 flight."},
+    ],
+    "menu": [
+        "Rain plan: the Tokyo National Museum (closed Mon, open Tue holiday and Wed), or teamLab Planets (book ahead).",
+        "Food: Tsukiji outer market breakfast, Ameyoko street food, Omoide Yokocho yakitori, a kaiten-zushi in Ueno.",
+        "Evening views: the Sumida river at night with the Skytree, or Shibuya Sky at sunset (book ahead).",
+        "Missed by a day: Kanda's used-book fair ends Sun 1 Nov.",
+    ],
+    "solo": "Your Thu–Fri: in the Slow plans you stay in Tokyo (Mt Takao, Kamakura); in the Fuller plans you go to the mountains (Hakone, or Kawaguchiko if you did Hakone together).",
+}
 
 
 def plan_cost(t, p):
@@ -115,15 +135,15 @@ def build():
             options.append(o)
         d = {k: t[k] for k in ("id", "country", "region", "cc", "short", "title", "tagline", "food_day", "solo_food",
                                "transport", "crowds", "food", "hikes", "culture", "adventure", "pros", "cons", "calm")}
-        d.update(out=dict(OUT[t["out"]]), her=dict(HER[t["her"]]), his=dict(HIS[t["his"]]), entry=ENTRY[t["cc"]], weather=clim["weather"],
+        d.update(group=t.get("group", "other"), town=t.get("town"), town_card=t.get("town_card"), out=dict(OUT[t["out"]]), her=dict(HER[t["her"]]), his=dict(HIS[t["his"]]), entry=ENTRY[t["cc"]], weather=clim["weather"],
                  scores=scores, fit=fit, fc=fc, options=options)
         dests.append(d)
 
     picks = [
-        {"id": "tw-south", "why": "Easiest and cheapest", "text": "She speaks the language, Tainan is dry and warm. Together: Tainan and Sun Moon Lake. You: Alishan's railway, running again since 25 Oct."},
-        {"id": "jp-kansai", "why": "Best for your solo days", "text": "Nara at dawn and a temple night together, then two days walking the Kumano Kodo on your own. Book Koyasan and the Kumano inns today."},
-        {"id": "jp-kyushu", "why": "Bluest skies, her best last day", "text": "Onsen towns together and the Karatsu Kunchi floats on Wed 4 Nov before her 20:00 flight; then Kurokawa and the Kuju peaks for you."},
-        {"id": "jp-fuji", "why": "Tokyo + Fuji, done slowly", "text": "Old Tokyo on foot and two days by the Fuji lakes together; Hakone or the Mitsutoge ridge for you."},
+        {"id": "jp-fuji", "why": "The Fuji view", "text": "Two nights by Lake Kawaguchi facing Mount Fuji. Sunday is forecast dry: the Fuji day. Busiest on the holiday."},
+        {"id": "jp-hakone", "why": "Easiest and most relaxing", "text": "85 minutes from Shinjuku, two nights in an onsen inn, and something good to do whatever the weather."},
+        {"id": "jp-nikko", "why": "Culture and autumn colour", "text": "Japan's most ornate shrines, and Iroha-zaka and Lake Chuzenji at peak colour. Leaves from Asakusa, next to the hotel."},
+        {"id": "jp-kansai", "why": "If you'd rather skip Tokyo", "text": "Nara and a temple night together, then the Kumano Kodo on your own. Taiwan stays on the page as the cheaper option."},
     ]
     sources = [
         ["Live fares: Google Flights", "https://www.google.com/travel/flights", "out and Saturday-home fares: 27 Oct 2026, 1 adult"],
@@ -133,6 +153,7 @@ def build():
         ["Forecast for 5–7 Nov: Open-Meteo ensemble API", "https://open-meteo.com/en/docs/ensemble-api", "ECMWF 51 runs, fetched 27 Oct 2026"],
     ] + [[f"{c[1]} — {c[4]}", c[5], c[2]] for c in CHECKS]
     return {
+        "tokyo": TOKYO_PLAN,
         "dests": dests, "dates": DATES, "criteria": CRITERIA, "weights": WEIGHTS, "picks": picks, "sources": sources,
         "checks": [list(c) for c in CHECKS], "checked": CHECKED, "places": BASE["places"] + PLACES_NEW,
         "fc_days": BASE["fc_days"], "fc_bands": BASE["fc_bands"], "fc_last": BASE["fc_last"], "fc_checked": BASE["fc_checked"],

@@ -1,6 +1,6 @@
 (function () {
   const D = JSON.parse(document.getElementById('data').textContent);
-  const S = { style: 'Slow', sort: 'fit', country: 'All' };
+  const S = { style: 'Slow', sort: 'fit', country: 'tokyo' };
   try { const s = JSON.parse(localStorage.getItem('duoweek') || '{}'); Object.assign(S, s); } catch (e) {}
   if (!['Slow', 'Fuller'].includes(S.style)) S.style = 'Slow';
   const save = () => { try { localStorage.setItem('duoweek', JSON.stringify(S)); } catch (e) {} };
@@ -31,6 +31,7 @@
 
   const opt = (d, style) => d.options.find(o => o.style === style);
   const cost = (d, o) => o.cost;
+  const rng = r => r[0] === r[1] ? eur(r[0]) : `${eur(r[0])}–${eur(r[1]).slice(1)}`;
   const range = d => { const t = d.options.map(o => cost(d, o).total); return [Math.min(...t), Math.max(...t)]; };
 
   // ---- board
@@ -49,7 +50,7 @@
     document.getElementById('picks').innerHTML = D.picks.map(p => {
       const d = D.dests.find(x => x.id === p.id), r = range(d);
       return `<a class="pick" href="#${d.id}"><span class="why">${esc(p.why)}</span><strong>${esc(d.title)}</strong>
-        <span class="meta">fit ${d.fit} · ${eur(r[0])}–${eur(r[1]).slice(1)} for two</span><p>${esc(p.text)}</p></a>`;
+        <span class="meta">fit ${d.fit} · ${rng(r)} for two</span><p>${esc(p.text)}</p></a>`;
     }).join('');
   }
 
@@ -63,6 +64,19 @@
     `<p class="chk-sum"><span class="st st-out">${cnt('out')} closed or damaged</span> <span class="st st-todo">${cnt('todo')} still to verify</span> <span class="st st-warn">${cnt('warn')} with a caveat</span> <span class="st st-ok">${cnt('ok')} fine</span></p>` +
     `<div class="chk-grid">${sorted.filter(c => c[2] === 'out' || c[2] === 'todo').map(chkCard).join('')}</div>` +
     `<details class="chk-more"><summary>Show the ${cnt('warn') + cnt('ok')} other checks</summary><div class="chk-grid">${sorted.filter(c => c[2] === 'warn' || c[2] === 'ok').map(chkCard).join('')}</div></details>`;
+
+  // ---- Tokyo + town
+  (function () {
+    const T = D.tokyo, towns = D.dests.filter(d => d.group === 'tokyo');
+    const el = document.getElementById('tokyo'); if (!el || !T) return;
+    el.innerHTML = `<div class="tk-plan"><h4>The Tokyo days (all three towns)</h4><p class="tk-stay">${pl(T.stay, 'jp-fuji')}</p>
+      <ol class="tk-days">${T.days.map(x => `<li><b>${esc(x.when)}</b><span>${pl(x.what, 'jp-fuji')}</span></li>`).join('')}</ol>
+      <h4>Swap in</h4><ul class="tk-menu">${T.menu.map(x => `<li>${pl(x, 'jp-fuji')}</li>`).join('')}</ul><p class="tk-solo">${esc(T.solo)}</p></div>
+      <div class="tk-towns">${towns.map(d => { const c = d.town_card, r = range(d); return `<a class="tk-town" href="#${d.id}">
+        <span class="why">${esc(d.town)}</span><strong>${esc((t => t.charAt(0).toUpperCase() + t.slice(1))(d.title.split(': ')[1] || d.title))}</strong>
+        <dl><dt>Getting there</dt><dd>${esc(c.time)}</dd><dt>Best for</dt><dd>${esc(c.best)}</dd><dt>Crowds</dt><dd>${esc(c.crowds)}</dd><dt>If it rains</dt><dd>${esc(c.rain)}</dd><dt>Room</dt><dd>${esc(c.room)}</dd></dl>
+        <span class="meta">fit ${d.fit} · ${rng(r)} for two · forecast ${d.fc.score}/5</span></a>`; }).join('')}</div>`;
+  })();
 
   // ---- controls
   function seg(id, key, items) {
@@ -78,10 +92,10 @@
   }
   seg('style', 'style', [['Slow', 'Slow'], ['Fuller', 'Fuller']]);
   seg('sort', 'sort', [['fit', 'Best fit'], ['cost', 'Cheapest'], ['weather', 'Best weather'], ['travel', 'Least travel']]);
-  seg('country', 'country', ['All', ...new Set(D.dests.map(d => d.country))].map(c => [c, c]));
+  seg('country', 'country', [['tokyo', 'Tokyo + town'], ['Japan', 'All Japan'], ['Taiwan', 'Taiwan'], ['All', 'Everything']]);
 
   function list() {
-    let L = D.dests.filter(d => S.country === 'All' || d.country === S.country);
+    let L = D.dests.filter(d => S.country === 'All' || (S.country === 'tokyo' ? d.group === 'tokyo' : d.country === S.country));
     const c = d => cost(d, opt(d, S.style)).total;
     if (S.sort === 'fit') L.sort((a, b) => b.fit - a.fit || c(a) - c(b));
     if (S.sort === 'cost') L.sort((a, b) => c(a) - c(b));

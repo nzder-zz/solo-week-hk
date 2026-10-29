@@ -381,3 +381,23 @@ body { margin: 0; }
 :root[data-theme="dark"] .who-split, :root[data-theme="dark"] .who-you { color: #F0B35A; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .who-split, :root:not([data-theme="light"]) .who-you { color: #F0B35A; } }
 td.fc.c-na { background: var(--soft); color: var(--muted); }
+.tk { display: grid; gap: 14px; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.4fr); }
+@media (max-width: 860px) { .tk { grid-template-columns: 1fr; } }
+.tk-plan { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 16px; display: grid; gap: 10px; align-content: start; font-size: 14px; }
+.tk-days { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; }
+.tk-days li { display: grid; gap: 2px; border-left: 3px solid var(--accent); padding-left: 10px; }
+.tk-days b { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--accent); }
+.tk-menu { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+.tk-stay, .tk-solo { color: var(--muted); }
+.tk-towns { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.tk-town { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 14px; text-decoration: none; color: var(--ink); display: grid; gap: 6px; align-content: start; font-size: 13.5px; }
+.tk-town:hover, .tk-town:focus-visible { border-color: var(--accent); }
+.tk-town .why { font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.tk-town strong { font-family: var(--f-display); font-size: 22px; line-height: 1.05; }
+.tk-town dl { margin: 0; display: grid; gap: 2px; }
+.tk-town dt { font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin-top: 4px; }
+.tk-town dd { margin: 0; }
+.tk-town .meta { font-family: var(--f-mono); font-size: 12px; color: var(--muted); margin-top: 4px; }
+.tk { grid-template-columns: 1fr; }
+.tk-towns { order: -1; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+@media (min-width: 860px) { .tk-days { grid-template-columns: 1fr 1fr; } }
