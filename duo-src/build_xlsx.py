@@ -52,11 +52,11 @@ def build_xlsx(D, path):
     ws.column_dimensions["A"].width = 110
     lines = [
         ("Week for two after Hong Kong — together Sat 31 Oct → Wed 4 Nov, then you alone until Sat 7 Nov", BOLD),
-        ("Leaning to Japan: Tokyo + one smaller town (Kawaguchiko, Hakone or Nikko), with Kansai, Kyushu and Taiwan kept as other options. Each trip has two plans (Slow, Fuller). Private rooms while together, taxis split, no Kyoto, no bike trips. She flies back to HK on Wed 4 Nov in the evening; you spend Thu 5 and Fri 6 on your own and fly home on Sat 7 Nov (single ticket).", BLACK),
+        ("Leaning to Japan: Tokyo + one smaller town (Kawaguchiko, Hakone or Nikko), with Kansai, Kyushu and Taiwan kept as other options. Each trip has one chill plan. Private rooms while together, taxis split, no Kyoto, no bike trips. She flies back to HK on Wed 4 Nov in the evening; you spend Thu 5 and Fri 6 on your own and fly home on Sat 7 Nov (single ticket).", BLACK),
         ("", BLACK),
         ("How to use", BOLD),
-        ("• My plan: pick a trip and a plan from the drop-downs; the costs and both shares update.", BLACK),
-        ("• Overview: every plan side by side.", BLACK),
+        ("• My plan: pick a trip from the drop-down; the costs and both shares update.", BLACK),
+        ("• Overview: every trip side by side.", BLACK),
         ("• Change any blue number (Flights, Rooms, Plans, Inputs, Scores): every total is a formula.", BLACK),
         ("• Checks: what was verified on 28 Oct (Typhoon Champi damage, closures, volcano levels, fares) and what is still open.", BLACK),
         ("", BLACK),
@@ -196,12 +196,12 @@ def build_xlsx(D, path):
     put(wm, 1, 1, "My plan: pick from the yellow cells", BOLD)
     trips = [d["title"] for d in D["dests"]]
     put(wm, 3, 1, "Trip"); c = put(wm, 3, 2, [d["title"] for d in D["dests"] if d["id"] == "jp-hakone"][0]); c.fill = YELLOW
-    put(wm, 4, 1, "Plan"); c = put(wm, 4, 2, "Slow"); c.fill = YELLOW
+    put(wm, 4, 1, "Plan"); c = put(wm, 4, 2, "Chill")
     for i, t in enumerate(trips, 1):
         put(wm, i, 26, t)
     wm.column_dimensions["Z"].hidden = True
     dv1 = DataValidation(type="list", formula1=f"=$Z$1:$Z${len(trips)}", allow_blank=False)
-    dv2 = DataValidation(type="list", formula1='"Slow,Fuller"', allow_blank=False)
+    dv2 = DataValidation(type="list", formula1='"Chill"', allow_blank=False)
     for dv, cell in ((dv1, "B3"), (dv2, "B4")):
         wm.add_data_validation(dv); dv.add(cell)
     put(wm, 5, 1, "Row in Plans"); put(wm, 5, 2, f'=MATCH(B3&" | "&B4,{rng("AB")},0)')

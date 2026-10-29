@@ -25,7 +25,7 @@
    "Evening views: the Sumida river at night with the Skytree, or Shibuya Sky at sunset (book ahead).",
    "Missed by a day: Kanda's used-book fair ends Sun 1 Nov."
   ],
-  "solo": "Your Thu–Fri: in the Slow plans you stay in Tokyo (Mt Takao, Kamakura); in the Fuller plans you go to the mountains (Hakone, or Kawaguchiko if you did Hakone together)."
+  "solo": "Your Thu–Fri on your own: three nights in Tokyo with easy day trips (Mt Takao, Kamakura), home from Narita on Saturday at 17:20."
  },
  "dests": [
   {
@@ -48,9 +48,9 @@
    ],
    "hikes": [
     "Tenjoyama: up on foot (40 min) or by ropeway, for Fuji over the lake",
-    "Lake Saiko shore and the Aokigahara forest paths (Fuller)",
+    "Lake Saiko's shore path by the thatched village",
     "Chureito pagoda's 398 steps at sunrise",
-    "Mt Takao from Tokyo (your Thursday, Slow plan)"
+    "Mt Takao from Tokyo (your Thursday)"
    ],
    "culture": [
     "Senso-ji and old Asakusa at 8am",
@@ -144,18 +144,17 @@
    "fc": {
     "score": 4.5,
     "word": "Mostly dry",
-    "note": "Mostly dry for Tokyo, Kawaguchiko, Hakone. 31 Oct – 4 Nov (official forecasts): no wet day; showers possible on Mon 2 Nov. Daytime cloud 61% on average. Checked 29 Oct 2026, 13:00 Hong Kong time; recheck on 30 Oct.",
+    "note": "Mostly dry for Tokyo, Kawaguchiko. 31 Oct – 4 Nov (official forecasts): no wet day; showers possible on Mon 2 Nov. Daytime cloud 59% on average. Checked 29 Oct 2026, 13:00 Hong Kong time; recheck on 30 Oct.",
     "bases": [
      "Tokyo",
-     "Kawaguchiko",
-     "Hakone"
+     "Kawaguchiko"
     ],
     "days": [
      {
       "cls": "Dry",
       "pts": 1.0,
-      "p1": 23,
-      "cc": 65,
+      "p1": 20,
+      "cc": 58,
       "md": "10-31",
       "label": "Sat 31 Oct",
       "ahead": 2,
@@ -183,17 +182,6 @@
         "med": null,
         "cls": "Dry",
         "cc": 35,
-        "src": "J"
-       },
-       {
-        "name": "Hakone",
-        "hi": null,
-        "lo": null,
-        "p1": 30,
-        "p10": null,
-        "med": null,
-        "cls": "Dry",
-        "cc": 80,
         "src": "J"
        }
       ]
@@ -225,17 +213,6 @@
         "name": "Kawaguchiko",
         "hi": 16,
         "lo": 8,
-        "p1": 20,
-        "p10": null,
-        "med": null,
-        "cls": "Dry",
-        "cc": 35,
-        "src": "J"
-       },
-       {
-        "name": "Hakone",
-        "hi": null,
-        "lo": null,
         "p1": 20,
         "p10": null,
         "med": null,
@@ -278,25 +255,14 @@
         "cls": "Showers",
         "cc": 80,
         "src": "J"
-       },
-       {
-        "name": "Hakone",
-        "hi": null,
-        "lo": null,
-        "p1": 40,
-        "p10": null,
-        "med": null,
-        "cls": "Showers",
-        "cc": 80,
-        "src": "J"
        }
       ]
      },
      {
       "cls": "Dry",
       "pts": 1.0,
-      "p1": 27,
-      "cc": 52,
+      "p1": 25,
+      "cc": 48,
       "md": "11-03",
       "label": "Tue 3 Nov",
       "ahead": 5,
@@ -325,24 +291,13 @@
         "cls": "Dry",
         "cc": 35,
         "src": "J"
-       },
-       {
-        "name": "Hakone",
-        "hi": null,
-        "lo": null,
-        "p1": 30,
-        "p10": null,
-        "med": null,
-        "cls": "Dry",
-        "cc": 60,
-        "src": "J"
        }
       ]
      },
      {
       "cls": "Dry",
-      "pts": 0.9,
-      "p1": 27,
+      "pts": 0.85,
+      "p1": 25,
       "cc": 60,
       "md": "11-04",
       "label": "Wed 4 Nov",
@@ -371,17 +326,6 @@
         "med": null,
         "cls": "Showers",
         "cc": 85,
-        "src": "J"
-       },
-       {
-        "name": "Hakone",
-        "hi": null,
-        "lo": null,
-        "p1": 30,
-        "p10": null,
-        "med": null,
-        "cls": "Dry",
-        "cc": 60,
         "src": "J"
        }
       ]
@@ -419,17 +363,6 @@
         "cls": "Showers",
         "cc": 85,
         "src": "J"
-       },
-       {
-        "name": "Hakone",
-        "hi": null,
-        "lo": null,
-        "p1": null,
-        "p10": null,
-        "med": null,
-        "cls": null,
-        "cc": null,
-        "src": null
        }
       ]
      },
@@ -466,17 +399,6 @@
         "cls": "Dry",
         "cc": 64,
         "src": "E"
-       },
-       {
-        "name": "Hakone",
-        "hi": null,
-        "lo": null,
-        "p1": null,
-        "p10": null,
-        "med": null,
-        "cls": null,
-        "cc": null,
-        "src": null
        }
       ]
      },
@@ -513,17 +435,6 @@
         "cls": "Showers",
         "cc": 54,
         "src": "E"
-       },
-       {
-        "name": "Hakone",
-        "hi": null,
-        "lo": null,
-        "p1": null,
-        "p10": null,
-        "med": null,
-        "cls": null,
-        "cc": null,
-        "src": null
        }
       ]
      }
@@ -724,111 +635,13 @@
        "lo": 7,
        "src": "E"
       }
-     ],
-     "Hakone": [
-      {
-       "md": "10-31",
-       "label": "Sat 31 Oct",
-       "p10": null,
-       "med": null,
-       "cls": "Dry",
-       "cc": 80,
-       "p1": 30,
-       "hi": null,
-       "lo": null,
-       "src": "J"
-      },
-      {
-       "md": "11-01",
-       "label": "Sun 1 Nov",
-       "p10": null,
-       "med": null,
-       "cls": "Dry",
-       "cc": 35,
-       "p1": 20,
-       "hi": null,
-       "lo": null,
-       "src": "J"
-      },
-      {
-       "md": "11-02",
-       "label": "Mon 2 Nov",
-       "p10": null,
-       "med": null,
-       "cls": "Showers",
-       "cc": 80,
-       "p1": 40,
-       "hi": null,
-       "lo": null,
-       "src": "J"
-      },
-      {
-       "md": "11-03",
-       "label": "Tue 3 Nov",
-       "p10": null,
-       "med": null,
-       "cls": "Dry",
-       "cc": 60,
-       "p1": 30,
-       "hi": null,
-       "lo": null,
-       "src": "J"
-      },
-      {
-       "md": "11-04",
-       "label": "Wed 4 Nov",
-       "p10": null,
-       "med": null,
-       "cls": "Dry",
-       "cc": 60,
-       "p1": 30,
-       "hi": null,
-       "lo": null,
-       "src": "J"
-      },
-      {
-       "md": "11-05",
-       "label": "Thu 5 Nov",
-       "p10": null,
-       "med": null,
-       "cls": null,
-       "cc": null,
-       "p1": null,
-       "hi": null,
-       "lo": null,
-       "src": null
-      },
-      {
-       "md": "11-06",
-       "label": "Fri 6 Nov",
-       "p10": null,
-       "med": null,
-       "cls": null,
-       "cc": null,
-       "p1": null,
-       "hi": null,
-       "lo": null,
-       "src": null
-      },
-      {
-       "md": "11-07",
-       "label": "Sat 7 Nov",
-       "p10": null,
-       "med": null,
-       "cls": null,
-       "cc": null,
-       "p1": null,
-       "hi": null,
-       "lo": null,
-       "src": null
-      }
      ]
     },
-    "cc": 61
+    "cc": 59
    },
    "options": [
     {
-     "style": "Slow",
+     "style": "Chill",
      "name": "Tokyo, two nights facing Fuji, Tokyo; Tokyo day trips on your own",
      "chill": 80,
      "route": [
@@ -1088,288 +901,6 @@
       "his_share": 1319,
       "her_share": 638
      }
-    },
-    {
-     "style": "Fuller",
-     "name": "Tenjoyama on foot, Saiko's forest; Hakone on your own",
-     "chill": 60,
-     "route": [
-      "Together: 1n Tokyo, 2n Kawaguchiko (Tenjoyama on foot, Saiko forest), 1n Tokyo",
-      "Wed: she flies from Narita 19:00; you take the Romancecar to Hakone",
-      "You: 3n Hakone (the loop, Mt Kintoki)",
-      "Sat: Narita 17:20"
-     ],
-     "days": [
-      {
-       "t": "Fly to Tokyo",
-       "e": "Travel",
-       "who": "both",
-       "am": "Morning with the family; Airport Express from Central around 12:30.",
-       "pm": "14:55 HK Express to Narita, land 20:00.",
-       "eve": "Skyliner to Ueno (41 min), late ramen near the hotel. Leave the big bags here for Tuesday: most hotels keep them.",
-       "sleep": "Tokyo hotel (Ueno/Asakusa)",
-       "wx": "Tokyo",
-       "tr": [
-        [
-         "train",
-         "Central → HK airport (Airport Express)",
-         25
-        ],
-        [
-         "plane",
-         "HKG → NRT",
-         245
-        ],
-        [
-         "train",
-         "Narita → Ueno (Skyliner)",
-         45
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Senso-ji at 8, up Tenjoyama on foot",
-       "e": "Active",
-       "who": "both",
-       "am": "Senso-ji before the crowds; 10:00 bus from Shinjuku to Kawaguchiko (1h55).",
-       "pm": "Walk up Tenjoyama from the lakeshore (40 min) for Fuji over the lake, ropeway down; Oishi park.",
-       "eve": "Onsen and hoto.",
-       "sleep": "Kawaguchiko guesthouse",
-       "wx": "Kawaguchiko",
-       "tr": [
-        [
-         "metro",
-         "Asakusa → Shinjuku",
-         30
-        ],
-        [
-         "bus",
-         "Shinjuku → Kawaguchiko",
-         115
-        ],
-        [
-         "cable",
-         "Tenjoyama ropeway down",
-         5
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Lake Saiko and the Aokigahara forest",
-       "e": "Active",
-       "who": "both",
-       "am": "Lake bus to Saiko: the lava-forest trail from the bat cave to the ice and wind caves (2h, sheltered under the trees).",
-       "pm": "Saiko Iyashi no Sato, then the Kubota Itchiku museum.",
-       "eve": "Early night for the sunrise.",
-       "sleep": "Kawaguchiko guesthouse",
-       "wx": "Kawaguchiko",
-       "tr": [
-        [
-         "bus",
-         "Lake loop bus",
-         70
-        ]
-       ],
-       "b": "Showers possible (40%): the forest and caves stay dry-ish; the museum is the back-up."
-      },
-      {
-       "t": "Back to Tokyo; Meiji Jingu's festival",
-       "e": "Easy",
-       "who": "both",
-       "am": "Leave the lake by 09:30, before the holiday traffic home.",
-       "pm": "Meiji Jingu's autumn festival (1–3 Nov): on Culture Day there are martial-arts displays, noh and gagaku on the stage, chrysanthemums along the approach, and horseback archery (yabusame). Then Harajuku's back streets.",
-       "eve": "Omoide Yokocho's yakitori alleys under the Shinjuku tracks.",
-       "sleep": "Tokyo hotel (Ueno/Asakusa)",
-       "wx": "Tokyo",
-       "tr": [
-        [
-         "train",
-         "Kawaguchiko ↔ Shimoyoshida (Chureito at sunrise)",
-         20
-        ],
-        [
-         "bus",
-         "Kawaguchiko → Shinjuku",
-         120
-        ],
-        [
-         "metro",
-         "around Tokyo",
-         30
-        ]
-       ],
-       "b": "Showers are unlikely (30%). If it rains, the Tokyo National Museum in Ueno is open on the holiday."
-      },
-      {
-       "t": "A slow last day in Tokyo; she flies at 19:00",
-       "e": "Easy",
-       "who": "split",
-       "am": "Yanaka at 9, Ueno park; the Tokyo National Museum if you like (open Wed).",
-       "pm": "Ameyoko for lunch, Kappabashi. She takes the Skyliner from Ueno ~16:30 for HK Express 19:00. You: Romancecar from Shinjuku to Hakone (85 min).",
-       "eve": "You: onsen and dinner in Hakone.",
-       "sleep": "You: Hakone hostel",
-       "wx": "Hakone",
-       "tr": [
-        [
-         "train",
-         "Shinjuku → Hakone-Yumoto (Romancecar)",
-         85
-        ],
-        [
-         "train",
-         "Tozan train",
-         30
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Hakone loop",
-       "e": "Active",
-       "who": "you",
-       "am": "Tozan train up the switchbacks to Gora, cable car and ropeway over Owakudani's vents.",
-       "pm": "Boat across Lake Ashi to Moto-Hakone, Hakone shrine's torii in the water.",
-       "eve": "Onsen.",
-       "sleep": "Hakone hostel",
-       "wx": "Hakone",
-       "tr": [
-        [
-         "train",
-         "Hakone-Yumoto → Gora",
-         40
-        ],
-        [
-         "cable",
-         "Gora → Owakudani → Togendai",
-         40
-        ],
-        [
-         "boat",
-         "Lake Ashi",
-         25
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Mt Kintoki",
-       "e": "Big day",
-       "who": "you",
-       "am": "Bus to Kintoki-jinja-iriguchi (25 min), up to the summit (1,212 m): Fuji straight ahead (3h round trip).",
-       "pm": "Down to Sengokuhara's silver-grass fields, back by bus.",
-       "eve": "Onsen.",
-       "sleep": "Hakone hostel",
-       "wx": "Hakone",
-       "tr": [
-        [
-         "bus",
-         "Hakone ↔ Kintoki trailhead",
-         50
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Fly home",
-       "e": "Travel",
-       "who": "you",
-       "am": "Walk the old Tokaido stone road from Hatajuku early (1h).",
-       "pm": "Romancecar to Shinjuku, Narita Express to Narita (3h total), leave by 12:00.",
-       "eve": "Etihad 17:20 to Brussels, land Sun 06:30.",
-       "sleep": "On the plane",
-       "wx": "Hakone",
-       "tr": [
-        [
-         "train",
-         "Hakone-Yumoto → Shinjuku",
-         85
-        ],
-        [
-         "train",
-         "Shinjuku → Narita (N'EX)",
-         90
-        ]
-       ],
-       "b": null
-      }
-     ],
-     "nights": [
-      {
-       "place": "Tokyo (Ueno/Asakusa) hotel double",
-       "room": 85,
-       "meals": false,
-       "solo": false
-      },
-      {
-       "place": "Kawaguchiko guesthouse, private room",
-       "room": 75,
-       "meals": false,
-       "solo": false
-      },
-      {
-       "place": "Kawaguchiko",
-       "room": 75,
-       "meals": false,
-       "solo": false
-      },
-      {
-       "place": "Tokyo (Ueno/Asakusa) hotel double",
-       "room": 85,
-       "meals": false,
-       "solo": false
-      },
-      {
-       "place": "Hakone hostel",
-       "room": 35,
-       "meals": false,
-       "solo": true
-      },
-      {
-       "place": "Hakone hostel",
-       "room": 35,
-       "meals": false,
-       "solo": true
-      },
-      {
-       "place": "Hakone hostel",
-       "room": 35,
-       "meals": false,
-       "solo": true
-      }
-     ],
-     "transport_pp": 75,
-     "shared": 0,
-     "activities_pp": 25,
-     "solo_transport": 75,
-     "solo_activities": 20,
-     "travel": 1150,
-     "together_travel": 820,
-     "beds": 2,
-     "solo_beds": 1,
-     "moves": 3,
-     "cost": {
-      "out": 232,
-      "her": 130,
-      "his": 571,
-      "rooms": 320,
-      "food": 224.0,
-      "transport": 150,
-      "activities": 50,
-      "misc": 40,
-      "solo_rooms": 105,
-      "solo_food": 75.0,
-      "solo_transport": 75,
-      "solo_activities": 20,
-      "solo": 275.0,
-      "flights": 933,
-      "together": 784.0,
-      "ground": 1059.0,
-      "total": 1992,
-      "his_share": 1354,
-      "her_share": 638
-     }
     }
    ]
   },
@@ -1393,9 +924,9 @@
    ],
    "hikes": [
     "Old Tokaido stone road: Hatajuku → Moto-Hakone (2h, under cedars)",
-    "Mt Kintoki: Fuji straight ahead (3h round trip, Fuller)",
+    "Sengokuhara's silver-grass fields (short, flat)",
     "Lake Ashi shore path to Hakone shrine",
-    "Mt Takao from Tokyo (your Thursday, Slow plan)"
+    "Mt Takao from Tokyo (your Thursday)"
    ],
    "culture": [
     "Hakone Open-Air Museum (sculpture park, Picasso pavilion)",
@@ -1481,26 +1012,25 @@
     "food": 4.5,
     "culture": 4.5,
     "chill": 5,
-    "weather": 4.25,
+    "weather": 4.5,
     "value": 2.5,
     "ease": 5
    },
-   "fit": 84,
+   "fit": 85,
    "fc": {
-    "score": 4.5,
+    "score": 5.0,
     "word": "Mostly dry",
-    "note": "Mostly dry for Tokyo, Hakone, Kawaguchiko. 31 Oct – 4 Nov (official forecasts): no wet day; showers possible on Mon 2 Nov. Daytime cloud 61% on average. Checked 29 Oct 2026, 13:00 Hong Kong time; recheck on 30 Oct.",
+    "note": "Mostly dry for Tokyo, Hakone. 31 Oct – 4 Nov (official forecasts): no wet day; showers possible on Mon 2 Nov. Daytime cloud 61% on average. Checked 29 Oct 2026, 13:00 Hong Kong time; recheck on 30 Oct.",
     "bases": [
      "Tokyo",
-     "Hakone",
-     "Kawaguchiko"
+     "Hakone"
     ],
     "days": [
      {
       "cls": "Dry",
       "pts": 1.0,
-      "p1": 23,
-      "cc": 65,
+      "p1": 30,
+      "cc": 80,
       "md": "10-31",
       "label": "Sat 31 Oct",
       "ahead": 2,
@@ -1528,17 +1058,6 @@
         "med": null,
         "cls": "Dry",
         "cc": 80,
-        "src": "J"
-       },
-       {
-        "name": "Kawaguchiko",
-        "hi": 18,
-        "lo": 9,
-        "p1": 10,
-        "p10": null,
-        "med": null,
-        "cls": "Dry",
-        "cc": 35,
         "src": "J"
        }
       ]
@@ -1570,17 +1089,6 @@
         "name": "Hakone",
         "hi": null,
         "lo": null,
-        "p1": 20,
-        "p10": null,
-        "med": null,
-        "cls": "Dry",
-        "cc": 35,
-        "src": "J"
-       },
-       {
-        "name": "Kawaguchiko",
-        "hi": 16,
-        "lo": 8,
         "p1": 20,
         "p10": null,
         "med": null,
@@ -1623,25 +1131,14 @@
         "cls": "Showers",
         "cc": 80,
         "src": "J"
-       },
-       {
-        "name": "Kawaguchiko",
-        "hi": 17,
-        "lo": 9,
-        "p1": 40,
-        "p10": null,
-        "med": null,
-        "cls": "Showers",
-        "cc": 80,
-        "src": "J"
        }
       ]
      },
      {
       "cls": "Dry",
       "pts": 1.0,
-      "p1": 27,
-      "cc": 52,
+      "p1": 30,
+      "cc": 60,
       "md": "11-03",
       "label": "Tue 3 Nov",
       "ahead": 5,
@@ -1670,25 +1167,14 @@
         "cls": "Dry",
         "cc": 60,
         "src": "J"
-       },
-       {
-        "name": "Kawaguchiko",
-        "hi": 15,
-        "lo": 8,
-        "p1": 20,
-        "p10": null,
-        "med": null,
-        "cls": "Dry",
-        "cc": 35,
-        "src": "J"
        }
       ]
      },
      {
       "cls": "Dry",
-      "pts": 0.9,
-      "p1": 27,
-      "cc": 60,
+      "pts": 1.0,
+      "p1": 25,
+      "cc": 48,
       "md": "11-04",
       "label": "Wed 4 Nov",
       "ahead": 6,
@@ -1717,25 +1203,14 @@
         "cls": "Dry",
         "cc": 60,
         "src": "J"
-       },
-       {
-        "name": "Kawaguchiko",
-        "hi": 14,
-        "lo": 6,
-        "p1": 30,
-        "p10": null,
-        "med": null,
-        "cls": "Showers",
-        "cc": 85,
-        "src": "J"
        }
       ]
      },
      {
       "cls": "Dry",
-      "pts": 0.85,
-      "p1": 40,
-      "cc": 78,
+      "pts": 1.0,
+      "p1": 31,
+      "cc": 71,
       "md": "11-05",
       "label": "Thu 5 Nov",
       "ahead": 7,
@@ -1764,25 +1239,14 @@
         "cls": null,
         "cc": null,
         "src": null
-       },
-       {
-        "name": "Kawaguchiko",
-        "hi": 12,
-        "lo": 5,
-        "p1": 50,
-        "p10": null,
-        "med": null,
-        "cls": "Showers",
-        "cc": 85,
-        "src": "J"
        }
       ]
      },
      {
       "cls": "Dry",
       "pts": 1.0,
-      "p1": 44,
-      "cc": 62,
+      "p1": 39,
+      "cc": 60,
       "md": "11-06",
       "label": "Fri 6 Nov",
       "ahead": 8,
@@ -1811,25 +1275,14 @@
         "cls": null,
         "cc": null,
         "src": null
-       },
-       {
-        "name": "Kawaguchiko",
-        "hi": 14,
-        "lo": 6,
-        "p1": 49,
-        "p10": 18,
-        "med": 0.8,
-        "cls": "Dry",
-        "cc": 64,
-        "src": "E"
        }
       ]
      },
      {
       "cls": "Dry",
-      "pts": 0.85,
-      "p1": 44,
-      "cc": 54,
+      "pts": 1.0,
+      "p1": 35,
+      "cc": 55,
       "md": "11-07",
       "label": "Sat 7 Nov",
       "ahead": 9,
@@ -1858,17 +1311,6 @@
         "cls": null,
         "cc": null,
         "src": null
-       },
-       {
-        "name": "Kawaguchiko",
-        "hi": 15,
-        "lo": 7,
-        "p1": 53,
-        "p10": 18,
-        "med": 1.0,
-        "cls": "Showers",
-        "cc": 54,
-        "src": "E"
        }
       ]
      }
@@ -2069,111 +1511,13 @@
        "lo": null,
        "src": null
       }
-     ],
-     "Kawaguchiko": [
-      {
-       "md": "10-31",
-       "label": "Sat 31 Oct",
-       "p10": null,
-       "med": null,
-       "cls": "Dry",
-       "cc": 35,
-       "p1": 10,
-       "hi": 18,
-       "lo": 9,
-       "src": "J"
-      },
-      {
-       "md": "11-01",
-       "label": "Sun 1 Nov",
-       "p10": null,
-       "med": null,
-       "cls": "Dry",
-       "cc": 35,
-       "p1": 20,
-       "hi": 16,
-       "lo": 8,
-       "src": "J"
-      },
-      {
-       "md": "11-02",
-       "label": "Mon 2 Nov",
-       "p10": null,
-       "med": null,
-       "cls": "Showers",
-       "cc": 80,
-       "p1": 40,
-       "hi": 17,
-       "lo": 9,
-       "src": "J"
-      },
-      {
-       "md": "11-03",
-       "label": "Tue 3 Nov",
-       "p10": null,
-       "med": null,
-       "cls": "Dry",
-       "cc": 35,
-       "p1": 20,
-       "hi": 15,
-       "lo": 8,
-       "src": "J"
-      },
-      {
-       "md": "11-04",
-       "label": "Wed 4 Nov",
-       "p10": null,
-       "med": null,
-       "cls": "Showers",
-       "cc": 85,
-       "p1": 30,
-       "hi": 14,
-       "lo": 6,
-       "src": "J"
-      },
-      {
-       "md": "11-05",
-       "label": "Thu 5 Nov",
-       "p10": null,
-       "med": null,
-       "cls": "Showers",
-       "cc": 85,
-       "p1": 50,
-       "hi": 12,
-       "lo": 5,
-       "src": "J"
-      },
-      {
-       "md": "11-06",
-       "label": "Fri 6 Nov",
-       "p10": 18,
-       "med": 0.8,
-       "cls": "Dry",
-       "cc": 64,
-       "p1": 49,
-       "hi": 14,
-       "lo": 6,
-       "src": "E"
-      },
-      {
-       "md": "11-07",
-       "label": "Sat 7 Nov",
-       "p10": 18,
-       "med": 1.0,
-       "cls": "Showers",
-       "cc": 54,
-       "p1": 53,
-       "hi": 15,
-       "lo": 7,
-       "src": "E"
-      }
      ]
     },
     "cc": 61
    },
    "options": [
     {
-     "style": "Slow",
+     "style": "Chill",
      "name": "Tokyo, two onsen nights in Hakone, Tokyo; Tokyo day trips on your own",
      "chill": 85,
      "route": [
@@ -2438,288 +1782,6 @@
       "his_share": 1377,
       "her_share": 696
      }
-    },
-    {
-     "style": "Fuller",
-     "name": "The old Tokaido road and the loop; the Fuji lakes on your own",
-     "chill": 60,
-     "route": [
-      "Together: 1n Tokyo, 2n Hakone onsen inn (the loop, the Tokaido road), 1n Tokyo",
-      "Wed: she flies from Narita 19:00; you take the bus to Kawaguchiko",
-      "You: 3n Kawaguchiko (Mitsutoge ridge, Chureito)",
-      "Sat: bus + train to Narita, 17:20"
-     ],
-     "days": [
-      {
-       "t": "Fly to Tokyo",
-       "e": "Travel",
-       "who": "both",
-       "am": "Morning with the family; Airport Express from Central around 12:30.",
-       "pm": "14:55 HK Express to Narita, land 20:00.",
-       "eve": "Skyliner to Ueno (41 min), late ramen near the hotel. Leave the big bags here for Tuesday: most hotels keep them.",
-       "sleep": "Tokyo hotel (Ueno/Asakusa)",
-       "wx": "Tokyo",
-       "tr": [
-        [
-         "train",
-         "Central → HK airport (Airport Express)",
-         25
-        ],
-        [
-         "plane",
-         "HKG → NRT",
-         245
-        ],
-        [
-         "train",
-         "Narita → Ueno (Skyliner)",
-         45
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Senso-ji at 8, the Hakone loop",
-       "e": "Active",
-       "who": "both",
-       "am": "Senso-ji early; Romancecar to Hakone-Yumoto (85 min), Tozan train to Gora.",
-       "pm": "Cable car and ropeway over Owakudani, boat across Lake Ashi.",
-       "eve": "Inn dinner and the baths.",
-       "sleep": "Hakone onsen inn",
-       "wx": "Hakone",
-       "tr": [
-        [
-         "metro",
-         "Asakusa → Shinjuku",
-         30
-        ],
-        [
-         "train",
-         "Shinjuku → Hakone-Yumoto (Romancecar)",
-         85
-        ],
-        [
-         "cable",
-         "Gora → Owakudani → Togendai",
-         40
-        ],
-        [
-         "boat",
-         "Lake Ashi",
-         25
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "The old Tokaido road",
-       "e": "Active",
-       "who": "both",
-       "am": "Bus to Hatajuku; walk the cobbled Tokaido road over the pass to Moto-Hakone (2h), amazake at the 400-year-old teahouse.",
-       "pm": "Hakone shrine, then the Open-Air Museum on the way back.",
-       "eve": "Inn baths.",
-       "sleep": "Hakone onsen inn",
-       "wx": "Hakone",
-       "tr": [
-        [
-         "bus",
-         "Inn → Hatajuku",
-         30
-        ],
-        [
-         "bus",
-         "Moto-Hakone → Chokoku-no-Mori",
-         40
-        ]
-       ],
-       "b": "Showers possible (40%): the stones get slippery; swap with the museum day if it rains."
-      },
-      {
-       "t": "Back to Tokyo; Meiji Jingu's festival",
-       "e": "Easy",
-       "who": "both",
-       "am": "Leave Hakone by 09:30, before the holiday traffic home.",
-       "pm": "Meiji Jingu's autumn festival (1–3 Nov): on Culture Day there are martial-arts displays, noh and gagaku on the stage, chrysanthemums along the approach, and horseback archery (yabusame). Then Harajuku's back streets.",
-       "eve": "Omoide Yokocho's yakitori alleys under the Shinjuku tracks.",
-       "sleep": "Tokyo hotel (Ueno/Asakusa)",
-       "wx": "Tokyo",
-       "tr": [
-        [
-         "train",
-         "Hakone-Yumoto → Shinjuku (Romancecar)",
-         85
-        ],
-        [
-         "metro",
-         "around Tokyo",
-         30
-        ]
-       ],
-       "b": "Showers are unlikely (30%). If it rains, the Tokyo National Museum in Ueno is open on the holiday."
-      },
-      {
-       "t": "A slow last day in Tokyo; she flies at 19:00",
-       "e": "Easy",
-       "who": "split",
-       "am": "Yanaka at 9, Ueno park; the Tokyo National Museum if you like (open Wed).",
-       "pm": "Ameyoko for lunch, Kappabashi. She takes the Skyliner from Ueno ~16:30 for HK Express 19:00. You: bus from Shinjuku to Kawaguchiko (1h55).",
-       "eve": "You: hoto in Kawaguchiko.",
-       "sleep": "You: Kawaguchiko hostel",
-       "wx": "Kawaguchiko",
-       "tr": [
-        [
-         "bus",
-         "Shinjuku → Kawaguchiko",
-         115
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Mitsutoge ridge",
-       "e": "Big day",
-       "who": "you",
-       "am": "Taxi or bus to the Mitsutoge trailhead, 2h30 up to Kaiun-yama (1,785 m): the whole of Fuji.",
-       "pm": "Along the ridge to Tenjoyama and down by the ropeway (5–6h total).",
-       "eve": "Onsen.",
-       "sleep": "Kawaguchiko hostel",
-       "wx": "Kawaguchiko",
-       "tr": [
-        [
-         "taxi",
-         "Kawaguchiko → Mitsutoge trailhead",
-         15
-        ],
-        [
-         "cable",
-         "Tenjoyama ropeway down",
-         5
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Chureito and Lake Saiko",
-       "e": "Easy",
-       "who": "you",
-       "am": "Chureito pagoda at sunrise.",
-       "pm": "Lake Saiko's forest trail and the thatched village.",
-       "eve": "Onsen.",
-       "sleep": "Kawaguchiko hostel",
-       "wx": "Kawaguchiko",
-       "tr": [
-        [
-         "train",
-         "Kawaguchiko ↔ Shimoyoshida",
-         20
-        ],
-        [
-         "bus",
-         "Lake loop bus",
-         60
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Fly home",
-       "e": "Travel",
-       "who": "you",
-       "am": "Bus to Shinjuku at about 09:00 (book it).",
-       "pm": "Narita Express to Narita (90 min).",
-       "eve": "Etihad 17:20 to Brussels, land Sun 06:30.",
-       "sleep": "On the plane",
-       "wx": "Kawaguchiko",
-       "tr": [
-        [
-         "bus",
-         "Kawaguchiko → Shinjuku",
-         120
-        ],
-        [
-         "train",
-         "Shinjuku → Narita (N'EX)",
-         90
-        ]
-       ],
-       "b": null
-      }
-     ],
-     "nights": [
-      {
-       "place": "Tokyo (Ueno/Asakusa) hotel double",
-       "room": 85,
-       "meals": false,
-       "solo": false
-      },
-      {
-       "place": "Hakone onsen inn, private room, breakfast",
-       "room": 120,
-       "meals": false,
-       "solo": false
-      },
-      {
-       "place": "Hakone onsen inn",
-       "room": 120,
-       "meals": false,
-       "solo": false
-      },
-      {
-       "place": "Tokyo (Ueno/Asakusa) hotel double",
-       "room": 85,
-       "meals": false,
-       "solo": false
-      },
-      {
-       "place": "Kawaguchiko hostel",
-       "room": 30,
-       "meals": false,
-       "solo": true
-      },
-      {
-       "place": "Kawaguchiko hostel",
-       "room": 30,
-       "meals": false,
-       "solo": true
-      },
-      {
-       "place": "Kawaguchiko hostel",
-       "room": 30,
-       "meals": false,
-       "solo": true
-      }
-     ],
-     "transport_pp": 88,
-     "shared": 0,
-     "activities_pp": 25,
-     "solo_transport": 60,
-     "solo_activities": 15,
-     "travel": 1105,
-     "together_travel": 795,
-     "beds": 2,
-     "solo_beds": 1,
-     "moves": 3,
-     "cost": {
-      "out": 232,
-      "her": 130,
-      "his": 571,
-      "rooms": 410,
-      "food": 224.0,
-      "transport": 176,
-      "activities": 50,
-      "misc": 40,
-      "solo_rooms": 90,
-      "solo_food": 75.0,
-      "solo_transport": 60,
-      "solo_activities": 15,
-      "solo": 240.0,
-      "flights": 933,
-      "together": 900.0,
-      "ground": 1140.0,
-      "total": 2073,
-      "his_share": 1377,
-      "her_share": 696
-     }
     }
    ]
   },
@@ -2742,10 +1804,10 @@
     "Ekiben on the Tobu train"
    ],
    "hikes": [
-    "Senjogahara boardwalk: Yumoto → Yudaki falls → Akanuma (3h, flat; Fuller)",
+    "Senjogahara boardwalk (3h, flat): swap it in for the lake shore on Monday if you like",
     "Lake Chuzenji shore to the old embassy villas",
     "Kanmangafuchi's riverside path",
-    "Mt Takao from Tokyo (your Thursday, Slow plan)"
+    "Mt Takao from Tokyo (your Thursday)"
    ],
    "culture": [
     "Nikko Toshogu: carved gates, the three monkeys, the sleeping cat",
@@ -2831,25 +1893,24 @@
     "food": 4,
     "culture": 5,
     "chill": 4.5,
-    "weather": 4.5,
+    "weather": 4.25,
     "value": 3,
     "ease": 4.5
    },
-   "fit": 84,
+   "fit": 83,
    "fc": {
-    "score": 5.0,
+    "score": 4.5,
     "word": "Mostly dry",
-    "note": "Mostly dry for Tokyo, Nikko, Hakone. 31 Oct – 4 Nov (official forecasts): no wet day; showers possible on Mon 2 Nov. Daytime cloud 60% on average. Checked 29 Oct 2026, 13:00 Hong Kong time; recheck on 30 Oct.",
+    "note": "Mostly dry for Tokyo, Nikko. 31 Oct – 4 Nov (official forecasts): no wet day; showers possible on Mon 2 Nov. Daytime cloud 60% on average. Checked 29 Oct 2026, 13:00 Hong Kong time; recheck on 30 Oct.",
     "bases": [
      "Tokyo",
-     "Nikko",
-     "Hakone"
+     "Nikko"
     ],
     "days": [
      {
       "cls": "Dry",
-      "pts": 0.9,
-      "p1": 33,
+      "pts": 0.85,
+      "p1": 35,
       "cc": 80,
       "md": "10-31",
       "label": "Sat 31 Oct",
@@ -2877,17 +1938,6 @@
         "p10": null,
         "med": null,
         "cls": "Showers",
-        "cc": 80,
-        "src": "J"
-       },
-       {
-        "name": "Hakone",
-        "hi": null,
-        "lo": null,
-        "p1": 30,
-        "p10": null,
-        "med": null,
-        "cls": "Dry",
         "cc": 80,
         "src": "J"
        }
@@ -2918,17 +1968,6 @@
        },
        {
         "name": "Nikko",
-        "hi": null,
-        "lo": null,
-        "p1": 20,
-        "p10": null,
-        "med": null,
-        "cls": "Dry",
-        "cc": 35,
-        "src": "J"
-       },
-       {
-        "name": "Hakone",
         "hi": null,
         "lo": null,
         "p1": 20,
@@ -2973,17 +2012,6 @@
         "cls": "Showers",
         "cc": 80,
         "src": "J"
-       },
-       {
-        "name": "Hakone",
-        "hi": null,
-        "lo": null,
-        "p1": 40,
-        "p10": null,
-        "med": null,
-        "cls": "Showers",
-        "cc": 80,
-        "src": "J"
        }
       ]
      },
@@ -3020,25 +2048,14 @@
         "cls": "Dry",
         "cc": 60,
         "src": "J"
-       },
-       {
-        "name": "Hakone",
-        "hi": null,
-        "lo": null,
-        "p1": 30,
-        "p10": null,
-        "med": null,
-        "cls": "Dry",
-        "cc": 60,
-        "src": "J"
        }
       ]
      },
      {
       "cls": "Dry",
       "pts": 1.0,
-      "p1": 23,
-      "cc": 43,
+      "p1": 20,
+      "cc": 35,
       "md": "11-04",
       "label": "Wed 4 Nov",
       "ahead": 6,
@@ -3066,17 +2083,6 @@
         "med": null,
         "cls": "Dry",
         "cc": 35,
-        "src": "J"
-       },
-       {
-        "name": "Hakone",
-        "hi": null,
-        "lo": null,
-        "p1": 30,
-        "p10": null,
-        "med": null,
-        "cls": "Dry",
-        "cc": 60,
         "src": "J"
        }
       ]
@@ -3106,17 +2112,6 @@
        },
        {
         "name": "Nikko",
-        "hi": null,
-        "lo": null,
-        "p1": null,
-        "p10": null,
-        "med": null,
-        "cls": null,
-        "cc": null,
-        "src": null
-       },
-       {
-        "name": "Hakone",
         "hi": null,
         "lo": null,
         "p1": null,
@@ -3161,17 +2156,6 @@
         "cls": null,
         "cc": null,
         "src": null
-       },
-       {
-        "name": "Hakone",
-        "hi": null,
-        "lo": null,
-        "p1": null,
-        "p10": null,
-        "med": null,
-        "cls": null,
-        "cc": null,
-        "src": null
        }
       ]
      },
@@ -3200,17 +2184,6 @@
        },
        {
         "name": "Nikko",
-        "hi": null,
-        "lo": null,
-        "p1": null,
-        "p10": null,
-        "med": null,
-        "cls": null,
-        "cc": null,
-        "src": null
-       },
-       {
-        "name": "Hakone",
         "hi": null,
         "lo": null,
         "p1": null,
@@ -3419,111 +2392,13 @@
        "lo": null,
        "src": null
       }
-     ],
-     "Hakone": [
-      {
-       "md": "10-31",
-       "label": "Sat 31 Oct",
-       "p10": null,
-       "med": null,
-       "cls": "Dry",
-       "cc": 80,
-       "p1": 30,
-       "hi": null,
-       "lo": null,
-       "src": "J"
-      },
-      {
-       "md": "11-01",
-       "label": "Sun 1 Nov",
-       "p10": null,
-       "med": null,
-       "cls": "Dry",
-       "cc": 35,
-       "p1": 20,
-       "hi": null,
-       "lo": null,
-       "src": "J"
-      },
-      {
-       "md": "11-02",
-       "label": "Mon 2 Nov",
-       "p10": null,
-       "med": null,
-       "cls": "Showers",
-       "cc": 80,
-       "p1": 40,
-       "hi": null,
-       "lo": null,
-       "src": "J"
-      },
-      {
-       "md": "11-03",
-       "label": "Tue 3 Nov",
-       "p10": null,
-       "med": null,
-       "cls": "Dry",
-       "cc": 60,
-       "p1": 30,
-       "hi": null,
-       "lo": null,
-       "src": "J"
-      },
-      {
-       "md": "11-04",
-       "label": "Wed 4 Nov",
-       "p10": null,
-       "med": null,
-       "cls": "Dry",
-       "cc": 60,
-       "p1": 30,
-       "hi": null,
-       "lo": null,
-       "src": "J"
-      },
-      {
-       "md": "11-05",
-       "label": "Thu 5 Nov",
-       "p10": null,
-       "med": null,
-       "cls": null,
-       "cc": null,
-       "p1": null,
-       "hi": null,
-       "lo": null,
-       "src": null
-      },
-      {
-       "md": "11-06",
-       "label": "Fri 6 Nov",
-       "p10": null,
-       "med": null,
-       "cls": null,
-       "cc": null,
-       "p1": null,
-       "hi": null,
-       "lo": null,
-       "src": null
-      },
-      {
-       "md": "11-07",
-       "label": "Sat 7 Nov",
-       "p10": null,
-       "med": null,
-       "cls": null,
-       "cc": null,
-       "p1": null,
-       "hi": null,
-       "lo": null,
-       "src": null
-      }
      ]
     },
     "cc": 60
    },
    "options": [
     {
-     "style": "Slow",
+     "style": "Chill",
      "name": "Tokyo, two nights in Nikko, Tokyo; Tokyo day trips on your own",
      "chill": 80,
      "route": [
@@ -3773,283 +2648,6 @@
       "his_share": 1313,
       "her_share": 632
      }
-    },
-    {
-     "style": "Fuller",
-     "name": "Nikko and Senjogahara; Hakone on your own",
-     "chill": 60,
-     "route": [
-      "Together: 1n Tokyo, 2n Nikko (shrines, Senjogahara), 1n Tokyo",
-      "Wed: she flies from Narita 19:00; you take the Romancecar to Hakone",
-      "You: 3n Hakone (the loop, Mt Kintoki)",
-      "Sat: Narita 17:20"
-     ],
-     "days": [
-      {
-       "t": "Fly to Tokyo",
-       "e": "Travel",
-       "who": "both",
-       "am": "Morning with the family; Airport Express from Central around 12:30.",
-       "pm": "14:55 HK Express to Narita, land 20:00.",
-       "eve": "Skyliner to Ueno (41 min), late ramen near the hotel. Leave the big bags here for Tuesday: most hotels keep them.",
-       "sleep": "Tokyo hotel (Ueno/Asakusa)",
-       "wx": "Tokyo",
-       "tr": [
-        [
-         "train",
-         "Central → HK airport (Airport Express)",
-         25
-        ],
-        [
-         "plane",
-         "HKG → NRT",
-         245
-        ],
-        [
-         "train",
-         "Narita → Ueno (Skyliner)",
-         45
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Senso-ji at 8, Nikko's shrines",
-       "e": "Active",
-       "who": "both",
-       "am": "Tobu Limited Express from Asakusa at about 9:00 (1h50).",
-       "pm": "Toshogu, Taiyuin and Futarasan after 14:00; Kanmangafuchi at dusk.",
-       "eve": "Yuba dinner.",
-       "sleep": "Nikko guesthouse",
-       "wx": "Nikko",
-       "tr": [
-        [
-         "train",
-         "Asakusa → Tobu-Nikko",
-         110
-        ],
-        [
-         "bus",
-         "station ↔ shrines",
-         15
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Senjogahara and Lake Chuzenji",
-       "e": "Active",
-       "who": "both",
-       "am": "Early bus to Yumoto; walk Yumoto → Yudaki falls → Senjogahara's boardwalks → Akanuma (3h, flat).",
-       "pm": "Bus down to Lake Chuzenji: Kegon falls and the lakeshore.",
-       "eve": "Town onsen.",
-       "sleep": "Nikko guesthouse",
-       "wx": "Nikko",
-       "tr": [
-        [
-         "bus",
-         "Nikko → Yumoto",
-         80
-        ],
-        [
-         "bus",
-         "Akanuma → Chuzenji → Nikko",
-         70
-        ]
-       ],
-       "b": "Showers possible (40%): the boardwalk is fine in light rain; the shrines are the back-up."
-      },
-      {
-       "t": "Back to Tokyo; Meiji Jingu's festival",
-       "e": "Easy",
-       "who": "both",
-       "am": "Leave Nikko by 09:30, before the holiday traffic home.",
-       "pm": "Meiji Jingu's autumn festival (1–3 Nov): on Culture Day there are martial-arts displays, noh and gagaku on the stage, chrysanthemums along the approach, and horseback archery (yabusame). Then Harajuku's back streets.",
-       "eve": "Asakusa's Hoppy street izakaya.",
-       "sleep": "Tokyo hotel (Ueno/Asakusa)",
-       "wx": "Tokyo",
-       "tr": [
-        [
-         "train",
-         "Tobu-Nikko → Asakusa",
-         110
-        ],
-        [
-         "metro",
-         "around Tokyo",
-         30
-        ]
-       ],
-       "b": "Showers are unlikely (30%). If it rains, the Tokyo National Museum in Ueno is open on the holiday."
-      },
-      {
-       "t": "A slow last day in Tokyo; she flies at 19:00",
-       "e": "Easy",
-       "who": "split",
-       "am": "Yanaka at 9, Ueno park; the Tokyo National Museum if you like (open Wed).",
-       "pm": "Ameyoko for lunch, Kappabashi. She takes the Skyliner from Ueno ~16:30 for HK Express 19:00. You: Romancecar from Shinjuku to Hakone (85 min).",
-       "eve": "You: onsen and dinner in Hakone.",
-       "sleep": "You: Hakone hostel",
-       "wx": "Hakone",
-       "tr": [
-        [
-         "train",
-         "Shinjuku → Hakone-Yumoto (Romancecar)",
-         85
-        ],
-        [
-         "train",
-         "Tozan train",
-         30
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Hakone loop",
-       "e": "Active",
-       "who": "you",
-       "am": "Tozan train up the switchbacks to Gora, cable car and ropeway over Owakudani's vents.",
-       "pm": "Boat across Lake Ashi to Moto-Hakone, Hakone shrine's torii in the water.",
-       "eve": "Onsen.",
-       "sleep": "Hakone hostel",
-       "wx": "Hakone",
-       "tr": [
-        [
-         "train",
-         "Hakone-Yumoto → Gora",
-         40
-        ],
-        [
-         "cable",
-         "Gora → Owakudani → Togendai",
-         40
-        ],
-        [
-         "boat",
-         "Lake Ashi",
-         25
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Mt Kintoki",
-       "e": "Big day",
-       "who": "you",
-       "am": "Bus to Kintoki-jinja-iriguchi (25 min), up to the summit (1,212 m): Fuji straight ahead (3h round trip).",
-       "pm": "Down to Sengokuhara's silver-grass fields, back by bus.",
-       "eve": "Onsen.",
-       "sleep": "Hakone hostel",
-       "wx": "Hakone",
-       "tr": [
-        [
-         "bus",
-         "Hakone ↔ Kintoki trailhead",
-         50
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Fly home",
-       "e": "Travel",
-       "who": "you",
-       "am": "Walk the old Tokaido stone road from Hatajuku early (1h).",
-       "pm": "Romancecar to Shinjuku, Narita Express to Narita (3h total), leave by 12:00.",
-       "eve": "Etihad 17:20 to Brussels, land Sun 06:30.",
-       "sleep": "On the plane",
-       "wx": "Hakone",
-       "tr": [
-        [
-         "train",
-         "Hakone-Yumoto → Shinjuku",
-         85
-        ],
-        [
-         "train",
-         "Shinjuku → Narita (N'EX)",
-         90
-        ]
-       ],
-       "b": null
-      }
-     ],
-     "nights": [
-      {
-       "place": "Tokyo (Ueno/Asakusa) hotel double",
-       "room": 85,
-       "meals": false,
-       "solo": false
-      },
-      {
-       "place": "Nikko guesthouse, private room",
-       "room": 62,
-       "meals": false,
-       "solo": false
-      },
-      {
-       "place": "Nikko",
-       "room": 62,
-       "meals": false,
-       "solo": false
-      },
-      {
-       "place": "Tokyo (Ueno/Asakusa) hotel double",
-       "room": 85,
-       "meals": false,
-       "solo": false
-      },
-      {
-       "place": "Hakone hostel",
-       "room": 35,
-       "meals": false,
-       "solo": true
-      },
-      {
-       "place": "Hakone hostel",
-       "room": 35,
-       "meals": false,
-       "solo": true
-      },
-      {
-       "place": "Hakone hostel",
-       "room": 35,
-       "meals": false,
-       "solo": true
-      }
-     ],
-     "transport_pp": 85,
-     "shared": 0,
-     "activities_pp": 25,
-     "solo_transport": 75,
-     "solo_activities": 20,
-     "travel": 1175,
-     "together_travel": 845,
-     "beds": 2,
-     "solo_beds": 1,
-     "moves": 3,
-     "cost": {
-      "out": 232,
-      "her": 130,
-      "his": 571,
-      "rooms": 294,
-      "food": 224.0,
-      "transport": 170,
-      "activities": 50,
-      "misc": 40,
-      "solo_rooms": 105,
-      "solo_food": 75.0,
-      "solo_transport": 75,
-      "solo_activities": 20,
-      "solo": 275.0,
-      "flights": 933,
-      "together": 778.0,
-      "ground": 1053.0,
-      "total": 1986,
-      "his_share": 1351,
-      "her_share": 635
-     }
     }
    ]
   },
@@ -4074,8 +2672,7 @@
    "hikes": [
     "Kasuga primeval-forest trail, Nara (2h)",
     "Kumano Kodo: Takijiri → Chikatsuyu (14 km)",
-    "Kumano Kodo: Hosshinmon-oji → Hongu Taisha (7 km)",
-    "Kumano Kodo: Chikatsuyu → Hongu (25 km, Fuller)"
+    "Kumano Kodo: Hosshinmon-oji → Hongu Taisha (7 km)"
    ],
    "culture": [
     "Todai-ji's Great Buddha",
@@ -4112,7 +2709,7 @@
     "Kumano and Koyasan rooms book out: reserve today",
     "Your flight home is the priciest (€618)"
    ],
-   "calm": "Nara at dawn and the Koyasan temple night together. In the Fuller plan, two nights in the Yunomine onsen village by a steaming river.",
+   "calm": "Nara at dawn and the Koyasan temple night together. Then the Kumano Kodo on your own, ending in the Yunomine onsen village.",
    "group": "other",
    "town": null,
    "town_card": null,
@@ -4847,7 +3444,7 @@
    },
    "options": [
     {
-     "style": "Slow",
+     "style": "Chill",
      "name": "Nara, a temple night, Osaka; the Kumano Kodo on your own",
      "chill": 70,
      "route": [
@@ -5101,268 +3698,6 @@
       "his_share": 1452,
       "her_share": 615
      }
-    },
-    {
-     "style": "Fuller",
-     "name": "Koyasan and two Kumano nights together; the long trail on your own",
-     "chill": 55,
-     "route": [
-      "Together: 1n Osaka, 1n Koyasan temple, 2n Yunomine",
-      "Wed: she heads to Kansai for 17:20",
-      "You: 2n Yunomine (Chikatsuyu → Hongu), 1n Osaka",
-      "Sat: Kansai 19:05"
-     ],
-     "days": [
-      {
-       "t": "Fly to Osaka",
-       "e": "Travel",
-       "who": "both",
-       "am": "Airport Express around 12:15.",
-       "pm": "14:45 HK Express to Kansai, land 19:20.",
-       "eve": "Nankai to Namba, late takoyaki.",
-       "sleep": "Osaka hotel (Namba)",
-       "wx": "Osaka",
-       "tr": [
-        [
-         "train",
-         "Central → HK airport (Airport Express)",
-         25
-        ],
-        [
-         "plane",
-         "HKG → KIX",
-         215
-        ],
-        [
-         "train",
-         "Kansai → Namba",
-         40
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Up to Koyasan",
-       "e": "Travel",
-       "who": "both",
-       "am": "Nankai Namba → Gokurakubashi (1h30), cable car up.",
-       "pm": "Danjo Garan, Kongobu-ji; check in by 15:00.",
-       "eve": "Shojin dinner, Okunoin by lantern light.",
-       "sleep": "Koyasan shukubo",
-       "wx": "Koyasan",
-       "tr": [
-        [
-         "train",
-         "Namba → Gokurakubashi",
-         90
-        ],
-        [
-         "cable",
-         "Cable car + bus",
-         20
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Koyasan to Kumano",
-       "e": "Travel",
-       "who": "both",
-       "am": "Fire ceremony at 6, then trains via Hashimoto and Wakayama to Kii-Tanabe (about 3h).",
-       "pm": "Bus to Kumano Hongu (2h); check in at Yunomine.",
-       "eve": "Inn dinner, Tsuboyu bath.",
-       "sleep": "Yunomine minshuku",
-       "wx": "Kumano Hongu",
-       "tr": [
-        [
-         "train",
-         "Koyasan → Kii-Tanabe",
-         200
-        ],
-        [
-         "bus",
-         "Kii-Tanabe → Hongu",
-         120
-        ]
-       ],
-       "b": "Rain is possible (50%): a travel day is the right use of it."
-      },
-      {
-       "t": "Kumano Kodo into Hongu",
-       "e": "Active",
-       "who": "both",
-       "am": "Bus to Hosshinmon-oji, walk 7 km of the Nakahechi to Hongu Taisha.",
-       "pm": "Oyunohara and the giant torii.",
-       "eve": "Back to the inn's bath.",
-       "sleep": "Yunomine minshuku",
-       "wx": "Kumano Hongu",
-       "tr": [
-        [
-         "bus",
-         "Yunomine → Hosshinmon-oji",
-         30
-        ],
-        [
-         "bus",
-         "Hongu → Yunomine",
-         15
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "She leaves for Kansai; Dainichi-goe",
-       "e": "Easy",
-       "who": "split",
-       "am": "She takes the 09:30 bus to Kii-Tanabe and the train to Kansai (5h total) for HK Express 17:20.",
-       "pm": "You: Dainichi-goe over the hill (3.4 km) and Kawayu, where you dig your own pool in the river.",
-       "eve": "Back to the inn.",
-       "sleep": "You: Yunomine minshuku",
-       "wx": "Kumano Hongu",
-       "tr": [
-        [
-         "bus",
-         "Yunomine ↔ Kawayu",
-         20
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "The long one: Chikatsuyu → Hongu",
-       "e": "Big day",
-       "who": "you",
-       "am": "Early bus to Chikatsuyu.",
-       "pm": "Walk the Nakahechi all the way to Hongu (25 km, 8–9h).",
-       "eve": "Bath and dinner.",
-       "sleep": "Yunomine minshuku",
-       "wx": "Kumano Hongu",
-       "tr": [
-        [
-         "bus",
-         "Hongu → Chikatsuyu",
-         60
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Back to Osaka",
-       "e": "Travel",
-       "who": "you",
-       "am": "Bus to Kii-Tanabe (2h), Kuroshio to Tennoji (2h15).",
-       "pm": "Shinsekai.",
-       "eve": "Kushikatsu.",
-       "sleep": "Osaka hostel",
-       "wx": "Osaka",
-       "tr": [
-        [
-         "bus",
-         "Hongu → Kii-Tanabe",
-         120
-        ],
-        [
-         "train",
-         "Kii-Tanabe → Osaka",
-         135
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Fly home",
-       "e": "Travel",
-       "who": "you",
-       "am": "Nakazakicho's lanes.",
-       "pm": "Nankai to Kansai (40 min) around 16:00.",
-       "eve": "Cathay 19:05 via HK, land Paris Sun 07:45.",
-       "sleep": "On the plane",
-       "wx": "Osaka",
-       "tr": [
-        [
-         "train",
-         "Namba → Kansai",
-         40
-        ]
-       ],
-       "b": null
-      }
-     ],
-     "nights": [
-      {
-       "place": "Osaka (Namba) hotel double",
-       "room": 68,
-       "meals": false,
-       "solo": false
-      },
-      {
-       "place": "Koyasan shukubo, dinner + breakfast",
-       "room": 158,
-       "meals": true,
-       "solo": false
-      },
-      {
-       "place": "Yunomine minshuku, dinner + breakfast",
-       "room": 147,
-       "meals": true,
-       "solo": false
-      },
-      {
-       "place": "Yunomine",
-       "room": 147,
-       "meals": true,
-       "solo": false
-      },
-      {
-       "place": "Yunomine minshuku, dinner + breakfast",
-       "room": 80,
-       "meals": true,
-       "solo": true
-      },
-      {
-       "place": "Yunomine",
-       "room": 80,
-       "meals": true,
-       "solo": true
-      },
-      {
-       "place": "Osaka hostel",
-       "room": 30,
-       "meals": false,
-       "solo": true
-      }
-     ],
-     "transport_pp": 95,
-     "shared": 0,
-     "activities_pp": 15,
-     "solo_transport": 63,
-     "solo_activities": 10,
-     "travel": 1130,
-     "together_travel": 775,
-     "beds": 3,
-     "solo_beds": 2,
-     "moves": 3,
-     "cost": {
-      "out": 228,
-      "her": 120,
-      "his": 618,
-      "rooms": 520,
-      "food": 123.19999999999999,
-      "transport": 190,
-      "activities": 30,
-      "misc": 40,
-      "solo_rooms": 190,
-      "solo_food": 45.0,
-      "solo_transport": 63,
-      "solo_activities": 10,
-      "solo": 308.0,
-      "flights": 966,
-      "together": 903.2,
-      "ground": 1211.2,
-      "total": 2177,
-      "his_share": 1492,
-      "her_share": 686
-     }
     }
    ]
   },
@@ -5425,7 +3760,7 @@
     "Kurokawa inns are pricey, even alone",
     "Your flight home is €612"
    ],
-   "calm": "Yufuin (Slow plan, 2 nights together): mist on Lake Kinrin at 7am, a private onsen, the Yufu peak over the rice fields. In the Fuller plan, two nights in Kurokawa's river gorge.",
+   "calm": "Yufuin (2 nights together): mist on Lake Kinrin at 7am, a private onsen, the Yufu peak over the rice fields. Then Kurokawa's river gorge on your own.",
    "group": "other",
    "town": null,
    "town_card": null,
@@ -6347,7 +4682,7 @@
    },
    "options": [
     {
-     "style": "Slow",
+     "style": "Chill",
      "name": "Fukuoka, Yufuin and the Kunchi; Kurokawa and Kuju on your own",
      "chill": 70,
      "route": [
@@ -6592,257 +4927,6 @@
       "his_share": 1435,
       "her_share": 610
      }
-    },
-    {
-     "style": "Fuller",
-     "name": "Kurokawa, Kuju, Yufuin and the Kunchi; Fukuoka on your own",
-     "chill": 55,
-     "route": [
-      "Together: 1n Fukuoka, 2n Kurokawa (Kuju hike), 1n Yufuin",
-      "Wed: Karatsu Kunchi, she flies from Fukuoka 20:00",
-      "You: 3n Fukuoka (Dazaifu, Mt Homan, Nokonoshima)",
-      "Sat: Fukuoka 16:35"
-     ],
-     "days": [
-      {
-       "t": "Fly to Fukuoka",
-       "e": "Travel",
-       "who": "both",
-       "am": "Airport Express around 10:30.",
-       "pm": "12:55 HK Express, land 17:00.",
-       "eve": "Yatai at Nakasu.",
-       "sleep": "Fukuoka hotel",
-       "wx": "Fukuoka",
-       "tr": [
-        [
-         "train",
-         "Central → HK airport (Airport Express)",
-         25
-        ],
-        [
-         "plane",
-         "HKG → FUK",
-         185
-        ],
-        [
-         "metro",
-         "Airport → Hakata",
-         5
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Bus to Kurokawa",
-       "e": "Travel",
-       "who": "both",
-       "am": "Highway bus Fukuoka → Kurokawa (2h30).",
-       "pm": "Onsen-hopping with the wooden pass.",
-       "eve": "Kaiseki dinner at the inn.",
-       "sleep": "Kurokawa ryokan",
-       "wx": "Kurokawa",
-       "tr": [
-        [
-         "bus",
-         "Fukuoka → Kurokawa",
-         150
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "A slow day in the gorge",
-       "e": "Easy",
-       "who": "both",
-       "am": "Covered baths and the river paths.",
-       "pm": "Kurokawa's cafés.",
-       "eve": "Inn dinner.",
-       "sleep": "Kurokawa ryokan",
-       "wx": "Kurokawa",
-       "tr": [],
-       "b": "Rain is possible (50%): onsen is the plan."
-      },
-      {
-       "t": "Kuju, then Yufuin",
-       "e": "Big day",
-       "who": "both",
-       "am": "Shared taxi to Makinoto pass; bags sent ahead to Yufuin by takkyubin.",
-       "pm": "Up to Nakadake (1,791 m), down to Chojabaru (5–6h); bus to Yufuin (confirm the time).",
-       "eve": "Late dinner.",
-       "sleep": "Yufuin guesthouse",
-       "wx": "Kuju",
-       "tr": [
-        [
-         "taxi",
-         "Kurokawa → Makinoto pass",
-         25
-        ],
-        [
-         "bus",
-         "Chojabaru → Yufuin",
-         60
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Karatsu Kunchi; she flies at 20:00",
-       "e": "Active",
-       "who": "split",
-       "am": "Lake Kinrin at 7, bus to Hakata (2h15), JR to Karatsu.",
-       "pm": "The floats parade; she takes the train to Fukuoka airport for 20:00.",
-       "eve": "You: back to Hakata.",
-       "sleep": "You: Fukuoka hostel",
-       "wx": "Fukuoka",
-       "tr": [
-        [
-         "bus",
-         "Yufuin → Hakata",
-         135
-        ],
-        [
-         "train",
-         "Fukuoka → Karatsu → Fukuoka",
-         170
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Dazaifu and Mt Homan",
-       "e": "Active",
-       "who": "you",
-       "am": "Train to Dazaifu, Tenmangu.",
-       "pm": "Climb Mt Homan (3h round trip).",
-       "eve": "Ramen.",
-       "sleep": "Fukuoka hostel",
-       "wx": "Fukuoka",
-       "tr": [
-        [
-         "train",
-         "Fukuoka ↔ Dazaifu",
-         60
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Nokonoshima island",
-       "e": "Easy",
-       "who": "you",
-       "am": "Ferry from Meinohama (10 min): island paths and sea views.",
-       "pm": "Ohori park and the castle ruins.",
-       "eve": "Motsunabe.",
-       "sleep": "Fukuoka hostel",
-       "wx": "Fukuoka",
-       "tr": [
-        [
-         "bus",
-         "Hakata ↔ Meinohama",
-         60
-        ],
-        [
-         "boat",
-         "Nokonoshima ferry",
-         20
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Fly home",
-       "e": "Travel",
-       "who": "you",
-       "am": "Tenjin's coffee shops.",
-       "pm": "Subway to the airport at 14:30 (5 min).",
-       "eve": "Cathay 16:35 via HK, land Paris Sun 07:45.",
-       "sleep": "On the plane",
-       "wx": "Fukuoka",
-       "tr": [
-        [
-         "metro",
-         "Hakata → airport",
-         5
-        ]
-       ],
-       "b": null
-      }
-     ],
-     "nights": [
-      {
-       "place": "Fukuoka (Hakata) hotel double",
-       "room": 62,
-       "meals": false,
-       "solo": false
-      },
-      {
-       "place": "Kurokawa ryokan, dinner + breakfast",
-       "room": 181,
-       "meals": true,
-       "solo": false
-      },
-      {
-       "place": "Kurokawa",
-       "room": 181,
-       "meals": true,
-       "solo": false
-      },
-      {
-       "place": "Yufuin guesthouse",
-       "room": 79,
-       "meals": false,
-       "solo": false
-      },
-      {
-       "place": "Fukuoka hostel",
-       "room": 25,
-       "meals": false,
-       "solo": true
-      },
-      {
-       "place": "Fukuoka hostel",
-       "room": 25,
-       "meals": false,
-       "solo": true
-      },
-      {
-       "place": "Fukuoka hostel",
-       "room": 25,
-       "meals": false,
-       "solo": true
-      }
-     ],
-     "transport_pp": 82,
-     "shared": 58,
-     "activities_pp": 15,
-     "solo_transport": 17,
-     "solo_activities": 15,
-     "travel": 900,
-     "together_travel": 755,
-     "beds": 3,
-     "solo_beds": 1,
-     "moves": 3,
-     "cost": {
-      "out": 246,
-      "her": 130,
-      "his": 612,
-      "rooms": 503,
-      "food": 145.6,
-      "transport": 222,
-      "activities": 30,
-      "misc": 40,
-      "solo_rooms": 75,
-      "solo_food": 75.0,
-      "solo_transport": 17,
-      "solo_activities": 15,
-      "solo": 182.0,
-      "flights": 988,
-      "together": 940.6,
-      "ground": 1122.6,
-      "total": 2111,
-      "his_share": 1387,
-      "her_share": 723
-     }
     }
    ]
   },
@@ -6905,7 +4989,7 @@
     "Her flight back at 21:00 lands 22:40",
     "Typhoon In-fa: recheck on 30 Oct"
    ],
-   "calm": "Sun Moon Lake (Slow plan, 2 nights together): the lake at dawn before the boats start, a pagoda walk, tea at Yuchi. Alishan's cedar forest above the clouds on your own.",
+   "calm": "Sun Moon Lake (2 nights together): the lake at dawn before the boats start, a pagoda walk, tea at Yuchi. Alishan's cedar forest above the clouds on your own.",
    "group": "other",
    "town": null,
    "town_card": null,
@@ -7655,7 +5739,7 @@
    },
    "options": [
     {
-     "style": "Slow",
+     "style": "Chill",
      "name": "Tainan and Sun Moon Lake; Alishan on your own",
      "chill": 75,
      "route": [
@@ -7909,257 +5993,6 @@
       "his_share": 1007,
       "her_share": 481
      }
-    },
-    {
-     "style": "Fuller",
-     "name": "Tainan, Alishan and Sun Moon Lake together; Shuishe and Tainan on your own",
-     "chill": 60,
-     "route": [
-      "Together: 1n Tainan, 2n Alishan, 1n Sun Moon Lake",
-      "Wed: she heads to Kaohsiung for 21:00",
-      "You: 1n Sun Moon Lake (Shuishe Mountain), 2n Tainan",
-      "Sat: Kaohsiung 14:45"
-     ],
-     "days": [
-      {
-       "t": "Fly to Kaohsiung, on to Tainan",
-       "e": "Travel",
-       "who": "both",
-       "am": "Airport Express around 16:30.",
-       "pm": "18:50 HK Express, land 20:15.",
-       "eve": "Taxi to Tainan.",
-       "sleep": "Tainan B&B",
-       "wx": "Tainan",
-       "tr": [
-        [
-         "train",
-         "Central → HK airport (Airport Express)",
-         25
-        ],
-        [
-         "plane",
-         "HKG → KHH",
-         85
-        ],
-        [
-         "taxi",
-         "Kaohsiung airport → Tainan",
-         50
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Tainan, then the forest railway",
-       "e": "Travel",
-       "who": "both",
-       "am": "Beef soup breakfast, Chihkan tower.",
-       "pm": "Train to Chiayi (40 min), Alishan Forest Railway up (2h30).",
-       "eve": "Dinner in the village.",
-       "sleep": "Alishan hotel",
-       "wx": "Alishan",
-       "tr": [
-        [
-         "train",
-         "Tainan → Chiayi",
-         40
-        ],
-        [
-         "train",
-         "Alishan Forest Railway",
-         150
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Alishan's forest",
-       "e": "Easy",
-       "who": "both",
-       "am": "Giant-tree trail and the two ponds.",
-       "pm": "Oolong tasting; if it rains, the visitor centre and a long lunch.",
-       "eve": "Early night for the sunrise.",
-       "sleep": "Alishan hotel",
-       "wx": "Alishan",
-       "tr": [],
-       "b": null
-      },
-      {
-       "t": "Sunrise, over the mountains to the lake",
-       "e": "Travel",
-       "who": "both",
-       "am": "Zhushan sunrise train at about 05:00.",
-       "pm": "Bus 6739 Alishan → Sun Moon Lake (about 3h30; confirm it runs).",
-       "eve": "Ita Thao at dusk.",
-       "sleep": "Sun Moon Lake guesthouse",
-       "wx": "Sun Moon Lake",
-       "tr": [
-        [
-         "train",
-         "Zhushan line",
-         30
-        ],
-        [
-         "bus",
-         "Alishan → Sun Moon Lake",
-         210
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Ci'en pagoda; she leaves at noon",
-       "e": "Easy",
-       "who": "split",
-       "am": "Ci'en pagoda at dawn, a boat across.",
-       "pm": "She takes the bus to Taichung HSR and on to Kaohsiung for 21:00. You: e-bike round the lake.",
-       "eve": "Thao dinner.",
-       "sleep": "You: Sun Moon Lake guesthouse",
-       "wx": "Sun Moon Lake",
-       "tr": [
-        [
-         "boat",
-         "Lake boat",
-         30
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Shuishe Mountain, down to Tainan",
-       "e": "Big day",
-       "who": "you",
-       "am": "Shuishe Mountain trail (5h), the peak over the lake.",
-       "pm": "Bus to Taichung HSR, HSR to Tainan (2h30).",
-       "eve": "Shennong Street at night.",
-       "sleep": "Tainan hostel",
-       "wx": "Tainan",
-       "tr": [
-        [
-         "bus",
-         "Sun Moon Lake → Taichung HSR",
-         100
-        ],
-        [
-         "train",
-         "Taichung → Tainan HSR",
-         40
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Mangroves and the sea",
-       "e": "Easy",
-       "who": "you",
-       "am": "Sicao mangrove tunnel boat.",
-       "pm": "Sunset on Yuguang island.",
-       "eve": "Garden night market (Fri).",
-       "sleep": "Tainan hostel",
-       "wx": "Tainan",
-       "tr": [
-        [
-         "taxi",
-         "Tainan ↔ Sicao",
-         30
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Fly home",
-       "e": "Travel",
-       "who": "you",
-       "am": "Last beef soup.",
-       "pm": "Train + MRT to Kaohsiung airport by 12:30 (1h).",
-       "eve": "China Airlines + Qatar 14:45, land Paris Sun 06:35.",
-       "sleep": "On the plane",
-       "wx": "Tainan",
-       "tr": [
-        [
-         "train",
-         "Tainan → Kaohsiung airport",
-         60
-        ]
-       ],
-       "b": null
-      }
-     ],
-     "nights": [
-      {
-       "place": "Tainan B&B",
-       "room": 49,
-       "meals": false,
-       "solo": false
-      },
-      {
-       "place": "Alishan hotel double",
-       "room": 110,
-       "meals": false,
-       "solo": false
-      },
-      {
-       "place": "Alishan",
-       "room": 110,
-       "meals": false,
-       "solo": false
-      },
-      {
-       "place": "Sun Moon Lake guesthouse",
-       "room": 77,
-       "meals": false,
-       "solo": false
-      },
-      {
-       "place": "Sun Moon Lake guesthouse, single",
-       "room": 45,
-       "meals": false,
-       "solo": true
-      },
-      {
-       "place": "Tainan hostel",
-       "room": 18,
-       "meals": false,
-       "solo": true
-      },
-      {
-       "place": "Tainan hostel",
-       "room": 18,
-       "meals": false,
-       "solo": true
-      }
-     ],
-     "transport_pp": 62,
-     "shared": 30,
-     "activities_pp": 25,
-     "solo_transport": 35,
-     "solo_activities": 8,
-     "travel": 850,
-     "together_travel": 620,
-     "beds": 3,
-     "solo_beds": 2,
-     "moves": 3,
-     "cost": {
-      "out": 168,
-      "her": 85,
-      "his": 370,
-      "rooms": 346,
-      "food": 144.0,
-      "transport": 154,
-      "activities": 50,
-      "misc": 40,
-      "solo_rooms": 81,
-      "solo_food": 45.0,
-      "solo_transport": 35,
-      "solo_activities": 8,
-      "solo": 169.0,
-      "flights": 623,
-      "together": 734.0,
-      "ground": 903.0,
-      "total": 1526,
-      "his_share": 990,
-      "her_share": 536
-     }
     }
    ]
   },
@@ -8170,7 +6003,7 @@
    "cc": "TW",
    "short": "Taiwan · quiet east",
    "title": "Taiwan's quiet east: Dulan by the sea, Luye's tea hills",
-   "tagline": "Slow days on the Pacific and a tea plateau together; then Tainan's food or Mt Dulan on your own. The calmest trip on the list.",
+   "tagline": "Slow days on the Pacific and a tea plateau together; then Tainan's food on your own. The calmest trip on the list.",
    "food_day": 16,
    "solo_food": 15,
    "transport": "Trains on the South-link line (Kaohsiung ↔ Taitung) and taxis up the coast. Highway 9 at Duoliang lost a lane to Champi's waves: take the train, which is unaffected.",
@@ -8179,7 +6012,7 @@
     "Amis cooking in Dulan: wild greens, grilled fish",
     "Taitung: Lin's dumplings, Chishang rice boxes",
     "Luye red oolong tea",
-    "Tainan's beef soup and shrimp rolls (your solo days, Slow plan)"
+    "Tainan's beef soup and shrimp rolls (your solo days)"
    ],
    "hikes": [
     "Mt Dulan, the Amis sacred peak (4–5h)",
@@ -8195,9 +6028,9 @@
    ],
    "adventure": [
     {
-     "name": "Tandem paragliding at Luye Highland",
-     "price": "~NT$3,000 each",
-     "note": "Depends on the wind; book with free cancellation (Fuller plan)"
+     "name": "Tea tasting on Luye Highland",
+     "price": "~NT$300",
+     "note": "Red oolong at a family tea farm, with the Rift Valley below"
     },
     {
      "name": "Jinzun cliffs",
@@ -8222,7 +6055,7 @@
     "A 3h train to Kaohsiung on her last day",
     "Typhoon In-fa: recheck on 30 Oct"
    ],
-   "calm": "Dulan (Slow plan, 3 nights together): guesthouse by the sea, the sugar factory café, the black-sand beach. Then a night on Luye's tea plateau.",
+   "calm": "Dulan (3 nights together): guesthouse by the sea, the sugar factory café, the black-sand beach. Then a night on Luye's tea plateau.",
    "group": "other",
    "town": null,
    "town_card": null,
@@ -8972,7 +6805,7 @@
    },
    "options": [
     {
-     "style": "Slow",
+     "style": "Chill",
      "name": "Dulan and Luye together; Tainan on your own",
      "chill": 85,
      "route": [
@@ -9215,262 +7048,6 @@
       "his_share": 888,
       "her_share": 470
      }
-    },
-    {
-     "style": "Fuller",
-     "name": "Coast, tea and paragliding together; Mt Dulan on your own",
-     "chill": 65,
-     "route": [
-      "Together: 2n Dulan, 2n Luye (paragliding)",
-      "Wed: she takes the train to Kaohsiung for 21:00",
-      "You: 2n Dulan (Mt Dulan), 1n Kaohsiung",
-      "Sat: Kaohsiung 14:45"
-     ],
-     "days": [
-      {
-       "t": "Fly to Kaohsiung, train to the coast",
-       "e": "Travel",
-       "who": "both",
-       "am": "Airport Express around 10:30.",
-       "pm": "12:45 HK Express, train to Taitung.",
-       "eve": "Taxi to Dulan.",
-       "sleep": "Dulan guesthouse",
-       "wx": "Dulan",
-       "tr": [
-        [
-         "train",
-         "Central → HK airport (Airport Express)",
-         25
-        ],
-        [
-         "plane",
-         "HKG → KHH",
-         85
-        ],
-        [
-         "train",
-         "Kaohsiung → Taitung",
-         120
-        ],
-        [
-         "taxi",
-         "Taitung → Dulan",
-         30
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Jinzun and the coast",
-       "e": "Easy",
-       "who": "both",
-       "am": "Jinzun cliffs, a surf lesson if calm.",
-       "pm": "Xiaoyeliu.",
-       "eve": "Sugar factory.",
-       "sleep": "Dulan guesthouse",
-       "wx": "Dulan",
-       "tr": [
-        [
-         "taxi",
-         "Dulan ↔ Jinzun",
-         50
-        ]
-       ],
-       "b": "Long swells from Typhoon In-fa (1–3 Nov): no surf lesson; watch from the cliff café."
-      },
-      {
-       "t": "Up to Luye",
-       "e": "Travel",
-       "who": "both",
-       "am": "Taxi to Taitung, train to Luye.",
-       "pm": "Luye Highland lanes, a tea farm.",
-       "eve": "Sunset.",
-       "sleep": "Luye B&B",
-       "wx": "Luye",
-       "tr": [
-        [
-         "taxi",
-         "Dulan → Taitung",
-         30
-        ],
-        [
-         "train",
-         "Taitung → Luye",
-         25
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Paragliding over the Rift Valley",
-       "e": "Active",
-       "who": "both",
-       "am": "Tandem flights in the calm morning air.",
-       "pm": "Brown Avenue by bike.",
-       "eve": "Tea farm dinner.",
-       "sleep": "Luye B&B",
-       "wx": "Luye",
-       "tr": [
-        [
-         "train",
-         "Luye ↔ Chishang",
-         60
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "She heads to Kaohsiung; you back to the sea",
-       "e": "Travel",
-       "who": "split",
-       "am": "Together to Taitung station; she takes the train to Kaohsiung (3h) for HK Express 21:00.",
-       "pm": "You: taxi back up the coast to Dulan.",
-       "eve": "Sugar factory.",
-       "sleep": "You: Dulan guesthouse",
-       "wx": "Dulan",
-       "tr": [
-        [
-         "train",
-         "Luye → Taitung",
-         25
-        ],
-        [
-         "taxi",
-         "Taitung → Dulan",
-         30
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Mt Dulan",
-       "e": "Big day",
-       "who": "you",
-       "am": "Up the Amis sacred peak from the village (4–5h).",
-       "pm": "Swim if the flags allow.",
-       "eve": "Grilled fish.",
-       "sleep": "Dulan guesthouse",
-       "wx": "Dulan",
-       "tr": [],
-       "b": null
-      },
-      {
-       "t": "Train to Kaohsiung",
-       "e": "Travel",
-       "who": "you",
-       "am": "Bus to Taitung, train to Kaohsiung (2h).",
-       "pm": "Pier-2 and Cijin island.",
-       "eve": "Ruifeng night market.",
-       "sleep": "Kaohsiung hostel",
-       "wx": "Tainan",
-       "tr": [
-        [
-         "bus",
-         "Dulan → Taitung",
-         30
-        ],
-        [
-         "train",
-         "Taitung → Kaohsiung",
-         120
-        ]
-       ],
-       "b": null
-      },
-      {
-       "t": "Fly home",
-       "e": "Travel",
-       "who": "you",
-       "am": "Lotus pond.",
-       "pm": "MRT to the airport by 12:30.",
-       "eve": "China Airlines + Qatar 14:45, land Paris Sun 06:35.",
-       "sleep": "On the plane",
-       "wx": "Tainan",
-       "tr": [
-        [
-         "metro",
-         "Kaohsiung → airport",
-         20
-        ]
-       ],
-       "b": null
-      }
-     ],
-     "nights": [
-      {
-       "place": "Dulan guesthouse",
-       "room": 55,
-       "meals": false,
-       "solo": false
-      },
-      {
-       "place": "Dulan",
-       "room": 55,
-       "meals": false,
-       "solo": false
-      },
-      {
-       "place": "Luye B&B (breakfast)",
-       "room": 66,
-       "meals": false,
-       "solo": false
-      },
-      {
-       "place": "Luye",
-       "room": 66,
-       "meals": false,
-       "solo": false
-      },
-      {
-       "place": "Dulan guesthouse, single",
-       "room": 35,
-       "meals": false,
-       "solo": true
-      },
-      {
-       "place": "Dulan",
-       "room": 35,
-       "meals": false,
-       "solo": true
-      },
-      {
-       "place": "Kaohsiung hostel",
-       "room": 20,
-       "meals": false,
-       "solo": true
-      }
-     ],
-     "transport_pp": 39,
-     "shared": 70,
-     "activities_pp": 90,
-     "solo_transport": 41,
-     "solo_activities": 0,
-     "travel": 650,
-     "together_travel": 480,
-     "beds": 2,
-     "solo_beds": 2,
-     "moves": 3,
-     "cost": {
-      "out": 212,
-      "her": 85,
-      "his": 370,
-      "rooms": 242,
-      "food": 128.0,
-      "transport": 148,
-      "activities": 180,
-      "misc": 40,
-      "solo_rooms": 90,
-      "solo_food": 45.0,
-      "solo_transport": 41,
-      "solo_activities": 0,
-      "solo": 176.0,
-      "flights": 667,
-      "together": 738.0,
-      "ground": 914.0,
-      "total": 1581,
-      "his_share": 1021,
-      "her_share": 560
-     }
     }
    ]
   }
@@ -9620,11 +7197,6 @@
   [
    "Bus Kurokawa → Fukuoka airport — Kurokawa Onsen tourism association (where to check)",
    "https://www.kurokawaonsen.or.jp/",
-   "todo"
-  ],
-  [
-   "Bus 6739 Alishan ↔ Sun Moon Lake — NOWnews",
-   "https://www.nownews.com/news/6794109",
    "todo"
   ],
   [
@@ -9799,7 +7371,7 @@
    "Taiwan",
    "Bus 7329 Chiayi HSR → Alishan",
    "warn",
-   "Listed as running (Chiayi HSR station ⇌ Alishan, also the Taiwan Tourist Shuttle Alishan A line); times not confirmed. Used on your solo Wednesday (Slow south plan).",
+   "Listed as running (Chiayi HSR station ⇌ Alishan, also the Taiwan Tourist Shuttle Alishan A line); times not confirmed. Used on your solo Wednesday (south Taiwan).",
    "Funtime",
    "https://www.funtime.com.tw/blog/funtime/alishan-route"
   ],
@@ -9807,17 +7379,9 @@
    "Japan",
    "Bus Kurokawa → Fukuoka airport",
    "todo",
-   "Times not confirmed (Kyushu Slow plan, your Saturday). Check on the bus operator's site.",
+   "Times not confirmed (Kyushu, your Saturday). Check on the bus operator's site.",
    "Kurokawa Onsen tourism association (where to check)",
    "https://www.kurokawaonsen.or.jp/"
-  ],
-  [
-   "Taiwan",
-   "Bus 6739 Alishan ↔ Sun Moon Lake",
-   "todo",
-   "Listed in 2026 sources; timetable not confirmed. Used together on Tue 3 Nov in the Fuller south plan: check with the operator.",
-   "NOWnews",
-   "https://www.nownews.com/news/6794109"
   ],
   [
    "All",
@@ -9887,7 +7451,7 @@
    "Japan",
    "Kumano Kodo trail conditions",
    "todo",
-   "The official trail-conditions page could not be loaded today. Check it before booking the Fuller Kansai plan.",
+   "The official trail-conditions page could not be loaded today. Check it before your Kumano days (Kansai).",
    "Tanabe City Kumano Tourism Bureau",
    "https://www.tb-kumano.jp/en/kumano-kodo/conditions/"
   ],

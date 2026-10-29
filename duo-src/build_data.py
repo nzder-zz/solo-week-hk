@@ -40,7 +40,7 @@ TOKYO_PLAN = {
         "Evening views: the Sumida river at night with the Skytree, or Shibuya Sky at sunset (book ahead).",
         "Missed by a day: Kanda's used-book fair ends Sun 1 Nov.",
     ],
-    "solo": "Your Thu–Fri: in the Slow plans you stay in Tokyo (Mt Takao, Kamakura); in the Fuller plans you go to the mountains (Hakone, or Kawaguchiko if you did Hakone together).",
+    "solo": "Your Thu–Fri on your own: three nights in Tokyo with easy day trips (Mt Takao, Kamakura), home from Narita on Saturday at 17:20.",
 }
 
 

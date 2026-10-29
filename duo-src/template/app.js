@@ -1,8 +1,8 @@
 (function () {
   const D = JSON.parse(document.getElementById('data').textContent);
-  const S = { style: 'Slow', sort: 'fit', country: 'tokyo' };
+  const S = { style: 'Chill', sort: 'fit', country: 'tokyo' };
   try { const s = JSON.parse(localStorage.getItem('duoweek') || '{}'); Object.assign(S, s); } catch (e) {}
-  if (!['Slow', 'Fuller'].includes(S.style)) S.style = 'Slow';
+  S.style = 'Chill';
   const save = () => { try { localStorage.setItem('duoweek', JSON.stringify(S)); } catch (e) {} };
   const eur = n => '€' + Math.round(n).toLocaleString('en-GB');
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -90,7 +90,6 @@
       render();
     });
   }
-  seg('style', 'style', [['Slow', 'Slow'], ['Fuller', 'Fuller']]);
   seg('sort', 'sort', [['fit', 'Best fit'], ['cost', 'Cheapest'], ['weather', 'Best weather'], ['travel', 'Least travel']]);
   seg('country', 'country', [['tokyo', 'Tokyo + town'], ['Japan', 'All Japan'], ['Taiwan', 'Taiwan'], ['All', 'Everything']]);
 
@@ -107,7 +106,7 @@
   // ---- chart
   const tip = document.getElementById('tip');
   function tipHtml(d, p) {
-    return `<b>${esc(d.short)} · ${S.style}</b>
+    return `<b>${esc(d.short)}</b>
       <div class="tl"><span>Flights out (×2)</span><span>${eur(p.out)}</span></div>
       <div class="tl"><span>Her flight back (Wed)</span><span>${eur(p.her)}</span></div>
       <div class="tl"><span>Your flight home (Sat)</span><span>${eur(p.his)}</span></div>
@@ -125,7 +124,7 @@
     const pct = v => (100 * v / max);
     const step = max > 2000 ? 1000 : 500;
     const ticks = []; for (let v = 0; v <= max; v += step) ticks.push(v);
-    document.getElementById('chart-sub').textContent = `For the two of you, ${S.style} plan, including your three nights alone. Hover or tap a bar for the split.`;
+    document.getElementById('chart-sub').textContent = `For the two of you, including your three nights alone. Hover or tap a bar for the split.`;
     const rows = document.getElementById('rows');
     rows.innerHTML = L.map(d => {
       const o = opt(d, S.style), p = cost(d, o);
@@ -240,7 +239,7 @@
         <p class="bd">Flights ${eur(p.flights)} · together: rooms ${eur(p.rooms)}, food ${eur(p.food)}, transport ${eur(p.transport)}, activities + misc ${eur(p.activities + p.misc)} · your days alone ${eur(p.solo)}. You ${eur(p.his_share)}, her ${eur(p.her_share)}.</p>
         <span class="opt-go">${on ? 'Day by day below ↓' : 'See it day by day'}</span></div>`;
     }).join('');
-    return `<p class="pick-hint">Tap a plan to read it day by day.</p><div class="opts">${opts}</div><div class="dbd" id="dbd-${d.id}">${dayByDay(d, d.options.find(o => o.style === chosen))}</div>`;
+    return `<div class="opts">${opts}</div><div class="dbd" id="dbd-${d.id}">${dayByDay(d, d.options.find(o => o.style === chosen))}</div>`;
   }
   function roomsPanel(d) {
     return `<div class="rooms">${d.options.map(o => `<div><h4>${esc(o.style)} · ${esc(o.name)}</h4><table class="plain"><thead><tr><th>Night</th><th>Where</th><th class="r">Room</th></tr></thead><tbody>${
@@ -248,7 +247,7 @@
     }<tr><td></td><td><b>4 nights together</b></td><td class="r"><b>${eur(o.cost.rooms)}</b></td></tr><tr><td></td><td><b>3 nights on your own</b></td><td class="r"><b>${eur(o.cost.solo_rooms)}</b></td></tr></tbody></table></div>`).join('')}
       <p class="fc-note">Typical prices for the cheapest decent private double while you're together, and a hostel bed or single room on your own (estimates, not quotes).</p></div>`;
   }
-  function tabList() { return [['plans', '2 plans, day by day'], ['rooms', 'Rooms'], ['fc', 'Forecast'], ['todo', 'Things to do'], ['prac', 'Scores & practical']]; }
+  function tabList() { return [['plans', 'Day by day'], ['rooms', 'Rooms'], ['fc', 'Forecast'], ['todo', 'Things to do'], ['prac', 'Scores & practical']]; }
   function dossier(d) {
     const sel = opt(d, S.style), sp = cost(d, sel), r = range(d);
     const tab = tabState[d.id] || 'plans';
@@ -264,7 +263,7 @@
       <div class="trip-head"><span class="cc">${d.cc}</span>
         <div><p class="eyebrow">${esc(d.country)} · ${esc(d.region)}</p><h3>${esc(d.title)}</h3><p class="tag">${esc(d.tagline)}</p></div>
         <div class="nums"><div><span class="n fitpill">${d.fit}</span><span class="l">fit / 100</span></div>
-          <div><span class="n">${eur(sp.total)}</span><span class="l">${S.style}, for two</span><span class="rg">you ${eur(sp.his_share)} · her ${eur(sp.her_share)}</span></div></div></div>
+          <div><span class="n">${eur(sp.total)}</span><span class="l">for two</span><span class="rg">you ${eur(sp.his_share)} · her ${eur(sp.her_share)}</span></div></div></div>
       <dl class="facts">
         <div><dt>Out · Sat 31 Oct · both</dt><dd><span class="price">${eur(d.out.price)}</span> each · ${esc(d.out.route)} ${fs(d.out.status)}<small>${esc(d.out.detail)}</small></dd></div>
         <div><dt>Her · Wed 4 Nov → HK</dt><dd><span class="price">${eur(d.her.price)}</span> ${esc(d.her.route)} ${fs(d.her.status)}<small>${esc(d.her.detail)}</small></dd></div>
