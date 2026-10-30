@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en" data-page="fuji-trip">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>%%TITLE%%</title>
+<meta name="description" content="Day-by-day plan for Tokyo + Kawaguchiko, 31 Oct – 7 Nov 2026: forecast, timetables, maps and swaps. Works offline.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#1B2A41">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0F151D">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Fuji trip">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+<link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+<style>
+/*%%FONTS%%*/
+:root {
+  --bg: #F1F3F6; --surface: #FFFFFF; --ink: #14202E; --muted: #5A6676; --line: #D9DEE6; --soft: #F6F8FA;
+  --accent: #C23B22; --accent-soft: #FBE9E5; --indigo: #1B2A41; --indigo-ink: #EEF2F8; --snow: #FFFFFF;
+  --together: #2F5D9A; --you: #B7791F; --good: #1C7A47;
+  --sun: #E5A21E; --cloud: #8E9AAB; --rain: #3D7BD0;
+  --f-display: "Big Shoulders Display", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --f-body: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --r: 10px;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0F151D; --surface: #17202B; --ink: #E8EDF3; --muted: #A2AEBD; --line: #2A3645; --soft: #1B2531;
+  --accent: #F07A5E; --accent-soft: #3A211C; --indigo: #0A1018; --indigo-ink: #E8EDF3; --snow: #DDE6F2;
+  --together: #7FA8E0; --you: #E3A84F; --good: #5CCB8E; --sun: #E8B04A; --cloud: #7D8898; --rain: #6FA2EA; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #0F151D; --surface: #17202B; --ink: #E8EDF3; --muted: #A2AEBD; --line: #2A3645; --soft: #1B2531;
+  --accent: #F07A5E; --accent-soft: #3A211C; --indigo: #0A1018; --indigo-ink: #E8EDF3; --snow: #DDE6F2;
+  --together: #7FA8E0; --you: #E3A84F; --good: #5CCB8E; --sun: #E8B04A; --cloud: #7D8898; --rain: #6FA2EA; color-scheme: dark; }
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 15.5px; line-height: 1.5; -webkit-text-size-adjust: 100%; }
+.wrap { max-width: 860px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3 { font-family: var(--f-display); font-weight: 800; letter-spacing: .01em; line-height: 1.02; margin: 0; text-wrap: balance; }
+h2 { font-size: 30px; text-transform: uppercase; margin-bottom: 4px; }
+p { margin: 0; }
+a { color: var(--accent); }
+button { font: inherit; color: inherit; cursor: pointer; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.mono { font-family: var(--f-mono); }
+.muted { color: var(--muted); }
+
+/* hero */
+.hero { background: var(--indigo); color: var(--indigo-ink); padding: calc(20px + env(safe-area-inset-top, 0px)) 0 0; overflow: hidden; }
+.hero .sub { font-family: var(--f-mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; opacity: .8; }
+.hero h1 { font-size: clamp(44px, 11vw, 76px); text-transform: uppercase; margin: 6px 0 10px; }
+.hero h1 span { color: var(--accent); }
+.hero .lede { max-width: 60ch; opacity: .92; }
+.hero svg.fuji { display: block; width: 100%; height: 70px; margin-top: 14px; }
+.jump { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+.jump a { color: var(--indigo-ink); border: 1px solid rgba(255,255,255,.28); border-radius: 999px; padding: 5px 12px; font-size: 13.5px; text-decoration: none; }
+
+/* sticky week strip */
+.strip-bar { position: sticky; top: 0; z-index: 5; background: var(--bg); border-bottom: 1px solid var(--line); padding-top: env(safe-area-inset-top, 0px); }
+.strip { display: flex; gap: 6px; overflow-x: auto; padding: 8px 0; scrollbar-width: none; }
+.strip::-webkit-scrollbar { display: none; }
+.strip a { flex: 0 0 auto; min-width: 74px; text-decoration: none; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 5px 8px; font-size: 12px; line-height: 1.25; }
+.strip a b { display: block; font-size: 12.5px; }
+.strip a .w { display: flex; align-items: center; gap: 4px; font-family: var(--f-mono); font-size: 11.5px; margin-top: 2px; }
+.strip a .dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: 4px; vertical-align: 1px; }
+.strip a.on { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
+
+section { padding: 26px 0 6px; }
+.sec-note { color: var(--muted); font-size: 14px; margin-bottom: 12px; }
+
+/* forecast */
+.fc { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 14px 16px; }
+.fc ul { margin: 8px 0 10px; padding-left: 18px; }
+.fc li { margin: 4px 0; }
+.src { font-size: 12.5px; color: var(--muted); }
+
+/* day cards */
+.day { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); margin: 14px 0; overflow: hidden; }
+.day-head { display: grid; grid-template-columns: 1fr auto; gap: 8px; align-items: start; padding: 14px 16px 10px; border-bottom: 1px solid var(--line); background: var(--soft); }
+.day-date { font-family: var(--f-display); font-weight: 800; font-size: 28px; text-transform: uppercase; line-height: 1; }
+.day-where { font-size: 14px; color: var(--muted); margin-top: 3px; }
+.who { display: inline-block; font-size: 11.5px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; border-radius: 4px; padding: 1px 6px; margin-left: 6px; vertical-align: 2px; color: #fff; }
+.who.together { background: var(--together); } .who.you { background: var(--you); } .who.split { background: linear-gradient(90deg, var(--together) 50%, var(--you) 50%); }
+.wx { text-align: right; font-family: var(--f-mono); font-size: 12.5px; white-space: nowrap; }
+.wx .ic { display: inline-flex; vertical-align: middle; }
+.wx .pop { display: block; margin-top: 2px; }
+.wx .pop.wet { color: var(--rain); font-weight: 600; }
+.vers { display: flex; gap: 6px; flex-wrap: wrap; padding: 10px 16px 0; }
+.vers button { border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 4px 11px; font-size: 13px; }
+.vers button[aria-pressed="true"] { background: var(--ink); color: var(--surface); border-color: var(--ink); }
+.vers button .star { color: var(--accent); margin-right: 3px; }
+.vers button[aria-pressed="true"] .star { color: inherit; }
+.day-body { padding: 10px 16px 14px; }
+.day-title { font-family: var(--f-display); font-weight: 700; font-size: 23px; line-height: 1.1; }
+.why { font-size: 14px; color: var(--muted); margin-top: 3px; }
+.picked { font-size: 12.5px; margin-top: 6px; color: var(--accent); }
+.picked button { background: none; border: 0; padding: 0; text-decoration: underline; color: inherit; }
+ol.steps { list-style: none; margin: 10px 0 0; padding: 0; }
+ol.steps li { display: grid; grid-template-columns: 70px 1fr; gap: 10px; padding: 7px 0; border-top: 1px dashed var(--line); }
+ol.steps li:first-child { border-top: 0; }
+ol.steps .t { font-family: var(--f-mono); font-size: 12.5px; color: var(--muted); padding-top: 2px; }
+.watch { margin-top: 10px; background: var(--accent-soft); border-radius: 8px; padding: 8px 10px; font-size: 14px; }
+.bed { margin-top: 10px; font-size: 13.5px; color: var(--muted); }
+.bed b { color: var(--ink); font-weight: 600; }
+
+/* chips */
+.pl { display: inline; border: 0; background: none; padding: 0; color: var(--ink); font-weight: 600; text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.pl svg { width: 12px; height: 12px; vertical-align: -1px; margin-right: 2px; color: var(--accent); }
+.lk { display: inline-flex; align-items: center; gap: 4px; font-size: 12.5px; font-weight: 600; text-decoration: none; color: var(--accent); border: 1px solid currentColor; border-radius: 999px; padding: 1px 9px; margin: 2px 2px 2px 0; white-space: nowrap; vertical-align: 1px; }
+.lk svg { width: 12px; height: 12px; }
+.lk.book { color: var(--good); }
+.lk.info { color: var(--together); }
+
+/* cards: ideas, beds, links */
+.cards { display: grid; gap: 10px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 12px 14px; }
+.card h3 { font-family: var(--f-body); font-size: 15.5px; font-weight: 700; margin-bottom: 4px; }
+.card .meta { font-size: 13px; color: var(--muted); }
+.opts { margin: 8px 0 0; padding: 0; list-style: none; }
+.opts li { padding: 5px 0; border-top: 1px dashed var(--line); font-size: 14px; }
+.tag { font-family: var(--f-mono); font-size: 11px; text-transform: uppercase; letter-spacing: .05em; border: 1px solid var(--line); border-radius: 4px; padding: 0 5px; margin-left: 6px; color: var(--muted); }
+.lgroup h3 { margin-top: 6px; }
+.lgroup .lk { margin: 3px 4px 3px 0; }
+.check { list-style: none; padding: 0; margin: 0; }
+.check li { display: flex; gap: 10px; align-items: flex-start; padding: 8px 0; border-top: 1px dashed var(--line); }
+.check li:first-child { border-top: 0; }
+.check input { width: 18px; height: 18px; margin-top: 2px; accent-color: var(--good); flex: 0 0 auto; }
+.check li.done span { color: var(--muted); text-decoration: line-through; }
+
+footer { padding: 28px 0 calc(40px + env(safe-area-inset-bottom, 0px)); font-size: 13px; color: var(--muted); }
+footer a { color: var(--muted); }
+
+/* place sheet */
+.sheet-bg { position: fixed; inset: 0; background: rgba(5,10,18,.45); z-index: 20; display: none; }
+.sheet { position: fixed; left: 0; right: 0; bottom: 0; z-index: 21; background: var(--surface); border-radius: 16px 16px 0 0; padding: 18px max(18px, env(safe-area-inset-left, 0px)) calc(18px + env(safe-area-inset-bottom, 0px)); max-width: 620px; margin: 0 auto; transform: translateY(110%); transition: transform .2s ease; box-shadow: 0 -8px 30px rgba(0,0,0,.2); }
+.sheet.open { transform: none; }
+.sheet h3 { font-family: var(--f-display); font-size: 26px; }
+.sheet p { margin: 6px 0 14px; }
+.sheet .row { display: flex; gap: 8px; flex-wrap: wrap; }
+.sheet .row a, .sheet .row button { flex: 1 1 140px; text-align: center; padding: 10px; border-radius: 8px; font-weight: 600; text-decoration: none; border: 1px solid var(--line); background: var(--soft); color: var(--ink); }
+.sheet .row a.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+@media (prefers-reduced-motion: reduce) { .sheet { transition: none; } html { scroll-behavior: auto; } }
+@media (min-width: 640px) { .cards.two { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 420px) { ol.steps li { grid-template-columns: 58px 1fr; gap: 8px; } .day-date { font-size: 25px; } }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <p class="sub" id="sub"></p>
+    <h1>Tokyo <span>+</span> Kawaguchiko</h1>
+    <p class="lede" id="lede"></p>
+    <nav class="jump" aria-label="Sections">
+      <a href="#days">Day by day</a><a href="#forecast">Forecast</a><a href="#beds">Beds</a><a href="#links">Timetables</a><a href="#todo">To do</a>
+    </nav>
+  </div>
+  <svg class="fuji" viewBox="0 0 400 70" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+    <path d="M0 70 L120 70 L185 14 Q200 4 215 14 L280 70 L400 70 Z" fill="var(--bg)" opacity=".16"/>
+    <path d="M178 20 L185 14 Q200 4 215 14 L222 20 L212 26 L204 21 L196 27 L188 22 Z" fill="var(--snow)" opacity=".9"/>
+    <path d="M0 70 L0 58 Q100 50 200 60 T400 56 L400 70 Z" fill="var(--bg)"/>
+  </svg>
+</header>
+
+<div class="strip-bar"><div class="wrap"><nav class="strip" id="strip" aria-label="Days"></nav></div></div>
+
+<main>
+  <section id="forecast"><div class="wrap">
+    <h2>Forecast</h2>
+    <div class="fc" id="fc"></div>
+  </div></section>
+
+  <section id="days"><div class="wrap">
+    <h2>Day by day</h2>
+    <p class="sec-note">★ marks the plan. Tap another version to swap it on this phone; tap a <u>place</u> for its note and the map.</p>
+    <div id="daylist"></div>
+  </div></section>
+
+  <section id="ideas"><div class="wrap">
+    <h2>Ideas and swaps</h2>
+    <div class="cards two" id="idealist"></div>
+  </div></section>
+
+  <section id="beds"><div class="wrap">
+    <h2>Beds</h2>
+    <p class="sec-note">Shortlist from Booking.com, 30 Oct; prices are the whole stay for two unless marked. Tell me which one you book and I'll pin it.</p>
+    <div class="cards" id="bedlist"></div>
+  </div></section>
+
+  <section id="links"><div class="wrap">
+    <h2>Timetables and bookings</h2>
+    <div class="cards" id="linklist"></div>
+  </div></section>
+
+  <section id="todo"><div class="wrap">
+    <h2>To do before Sunday</h2>
+    <div class="card"><ul class="check" id="checklist"></ul></div>
+  </div></section>
+</main>
+
+<footer><div class="wrap">
+  <p>Updated %%UPDATED%%. <span id="offline">Checking offline copy…</span></p>
+  <p style="margin-top:6px"><a href="../duo/">All the trips for two</a> · <a href="../">The solo plans</a></p>
+</div></footer>
+
+<div class="sheet-bg" id="sheetbg"></div>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-h" hidden>
+  <h3 id="sheet-h"></h3><p id="sheet-p"></p>
+  <div class="row"><a id="sheet-map" class="primary" target="_blank" rel="noopener">Open in Maps</a><a id="sheet-dir" target="_blank" rel="noopener">Directions</a><button id="sheet-x" type="button">Close</button></div>
+</div>
+
+<script id="data" type="application/json">%%DATA%%</script>
+<script>
+(function () {
+  var D = JSON.parse(document.getElementById('data').textContent);
+  var $ = function (id) { return document.getElementById(id); };
+  var store = {
+    get: function (k) { try { return localStorage.getItem('fuji:' + k); } catch (e) { return null; } },
+    set: function (k, v) { try { if (v === null) localStorage.removeItem('fuji:' + k); else localStorage.setItem('fuji:' + k, v); } catch (e) {} }
+  };
+  function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+  var PIN = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M6 0.8a3.7 3.7 0 0 0-3.7 3.7C2.3 7.3 6 11.2 6 11.2s3.7-3.9 3.7-6.7A3.7 3.7 0 0 0 6 .8Zm0 5a1.3 1.3 0 1 1 0-2.6 1.3 1.3 0 0 1 0 2.6Z" fill="currentColor"/></svg>';
+  var ICON = {
+    tt: '<svg viewBox="0 0 12 12" aria-hidden="true"><circle cx="6" cy="6" r="4.8" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M6 3.2V6l2 1.3" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>',
+    book: '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M1.5 3.5h9v2a1 1 0 0 0 0 2v2h-9v-2a1 1 0 0 0 0-2z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>',
+    info: '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M4.5 2h5.5v5.5M10 2 4 8M8 10H2V4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+  };
+  function sky(k) {
+    var sun = '<circle cx="9" cy="9" r="4" fill="var(--sun)"/>';
+    var cloud = function (x, y, c) { return '<path d="M' + x + ' ' + y + 'a3.6 3.6 0 0 1 7-1.2 2.8 2.8 0 1 1 .8 5.5H' + (x + 1) + 'a2.2 2.2 0 0 1-1-4.3Z" fill="' + c + '"/>'; };
+    var drops = '<path d="M8 17.5l-1 2.2M11.5 17.5l-1 2.2M15 17.5l-1 2.2" stroke="var(--rain)" stroke-width="1.6" stroke-linecap="round"/>';
+    var body = { sun: sun, suncloud: sun + cloud(9, 12, 'var(--cloud)'), cloudsun: '<circle cx="7" cy="7" r="3.2" fill="var(--sun)"/>' + cloud(6, 11, 'var(--cloud)'),
+      cloud: cloud(5, 10, 'var(--cloud)'), rain: cloud(5, 9, 'var(--cloud)') + drops }[k] || '';
+    return '<svg width="22" height="22" viewBox="0 0 22 22" role="img" aria-label="' + k + '">' + body + '</svg>';
+  }
+  var SKY = { sun: 'Sunny', suncloud: 'Sun, some cloud', cloudsun: 'Cloud, sunny spells', cloud: 'Cloudy', rain: 'Cloud, showers' };
+  function mapsUrl(p) { return 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(p.q); }
+  function dirUrl(p) { return 'https://www.google.com/maps/dir/?api=1&travelmode=transit&destination=' + encodeURIComponent(p.q); }
+  function link(id) {
+    var l = D.links[id]; if (!l) return '';
+    return '<a class="lk ' + l.kind + '" href="' + esc(l.url) + '" target="_blank" rel="noopener">' + ICON[l.kind] + esc(l.label) + '</a>';
+  }
+  function place(id) {
+    var p = D.places[id]; if (!p) return esc(id);
+    return '<button type="button" class="pl" data-place="' + id + '">' + PIN + esc(p.name) + '</button>';
+  }
+  function rich(s) {
+    return esc(s).replace(/\[\[([a-z0-9_]+)\]\]/g, function (_, id) { return place(id); })
+                 .replace(/\{\{([a-z0-9_]+)\}\}/g, function (_, id) { return link(id); });
+  }
+  var WHO = { together: 'Together', you: 'You', split: 'Together → you' };
+  var WHOC = { together: 'var(--together)', you: 'var(--you)', split: 'var(--together)' };
+
+  $('sub').textContent = D.trip.sub;
+  $('lede').textContent = D.trip.lede;
+
+  // week strip
+  $('strip').innerHTML = D.days.map(function (d) {
+    var w = d.wx ? sky(d.wx.sky).replace('width="22" height="22"', 'width="16" height="16"') + d.wx.pop + '%' + (d.wx.rough ? '~' : '') : '';
+    return '<a href="#' + d.id + '" data-day="' + d.id + '"><b>' + esc(d.date.replace(/ (Oct|Nov)$/, '')) + '</b><span class="dot" style="background:' + WHOC[d.who] + '"></span>' +
+      esc(d.where.split(' · ')[0].split(' → ')[0]) + '<span class="w">' + w + '</span></a>';
+  }).join('');
+
+  // forecast
+  $('fc').innerHTML = '<ul>' + D.fc_summary.map(function (s) { return '<li>' + rich(s) + '</li>'; }).join('') + '</ul>' +
+    '<p class="src">' + esc(D.fc_meta.source) + ' (fetched ' + esc(D.fc_meta.fetched) + '). Tokyo and the Fuji lakes are separate forecasts; "~" = rough model value. </p>' +
+    '<p style="margin-top:6px">' + D.fc_meta.links.map(link).join(' ') + '</p>';
+
+  // days
+  function chosen(d) {
+    var mine = store.get('choice:' + d.id);
+    return d.versions.some(function (v) { return v.key === mine; }) ? mine : d.choice;
+  }
+  function renderDay(d) {
+    var key = chosen(d);
+    var v = d.versions.filter(function (x) { return x.key === key; })[0];
+    var wx = d.wx ? '<span class="ic">' + sky(d.wx.sky) + '</span> ' + d.wx.lo + '–' + d.wx.hi + '°' +
+      '<span class="pop' + (d.wx.pop >= 40 ? ' wet' : '') + '">rain ' + d.wx.pop + '%' + (d.wx.rough ? ' ~' : '') + '</span>' +
+      '<span class="muted" style="font-size:11px">' + esc(SKY[d.wx.sky] || '') + (d.fc === 'kawa' ? ' · lake' : ' · Tokyo') + '</span>' : '';
+    var tabs = d.versions.length > 1 ? '<div class="vers" role="group" aria-label="Versions of this day">' + d.versions.map(function (x) {
+      return '<button type="button" data-day="' + d.id + '" data-v="' + x.key + '" aria-pressed="' + (x.key === key) + '">' +
+        (x.key === d.choice ? '<span class="star">★</span>' : '') + esc(x.label) + '</button>';
+    }).join('') + '</div>' : '';
+    var picked = key !== d.choice ? '<p class="picked">Swapped on this phone. <button type="button" data-reset="' + d.id + '">Back to the plan</button></p>' : '';
+    return '<div class="day-head"><div><div class="day-date">' + esc(d.date) + '<span class="who ' + d.who + '">' + WHO[d.who] + '</span></div>' +
+      '<div class="day-where">' + esc(d.where) + '</div></div><div class="wx">' + wx + '</div></div>' + tabs +
+      '<div class="day-body"><div class="day-title">' + esc(v.title) + '</div>' + (v.why ? '<p class="why">' + rich(v.why) + '</p>' : '') + picked +
+      '<ol class="steps">' + v.steps.map(function (s) { return '<li><span class="t">' + esc(s[0]) + '</span><span>' + rich(s[1]) + '</span></li>'; }).join('') + '</ol>' +
+      (v.watch ? '<p class="watch">' + rich(v.watch) + '</p>' : '') +
+      '<p class="bed">Sleep: <b>' + esc(d.bed) + '</b></p></div>';
+  }
+  $('daylist').innerHTML = D.days.map(function (d) { return '<article class="day" id="' + d.id + '">' + renderDay(d) + '</article>'; }).join('');
+  $('daylist').addEventListener('click', function (e) {
+    var b = e.target.closest('button[data-v]'), r = e.target.closest('button[data-reset]');
+    var id = b ? b.getAttribute('data-day') : r ? r.getAttribute('data-reset') : null;
+    if (!id) return;
+    var d = D.days.filter(function (x) { return x.id === id; })[0];
+    store.set('choice:' + id, b && b.getAttribute('data-v') !== d.choice ? b.getAttribute('data-v') : null);
+    $(id).innerHTML = renderDay(d);
+  });
+
+  // ideas, beds, links, checklist
+  $('idealist').innerHTML = D.ideas.map(function (i) { return '<div class="card"><h3>' + esc(i[0]) + '</h3><p>' + rich(i[1]) + '</p></div>'; }).join('');
+  $('bedlist').innerHTML = D.beds.map(function (b) {
+    return '<div class="card"><h3>' + esc(b.nights) + '<span class="tag">' + esc(b.status) + '</span></h3><p class="meta">' + esc(b.where) + '. ' + esc(b.note) + '</p>' +
+      '<ul class="opts">' + b.options.map(function (o) { return '<li>' + place(o) + ' <span class="muted">' + esc(D.places[o].note) + '</span></li>'; }).join('') + '</ul></div>';
+  }).join('');
+  var groups = [['tt', 'Timetables'], ['book', 'Bookings'], ['info', 'Forecast and info']];
+  $('linklist').innerHTML = groups.map(function (g) {
+    var ids = Object.keys(D.links).filter(function (k) { return D.links[k].kind === g[0]; });
+    return '<div class="card lgroup"><h3>' + g[1] + '</h3><p>' + ids.map(link).join(' ') + '</p></div>';
+  }).join('');
+  var done = {}; try { done = JSON.parse(store.get('done') || '{}'); } catch (e) {}
+  $('checklist').innerHTML = D.checklist.map(function (c, i) {
+    return '<li class="' + (done[i] ? 'done' : '') + '"><input type="checkbox" id="c' + i + '" data-i="' + i + '"' + (done[i] ? ' checked' : '') +
+      ' aria-label="Done"><span>' + rich(c) + '</span></li>';
+  }).join('');
+  $('checklist').addEventListener('change', function (e) {
+    var i = e.target.getAttribute('data-i'); if (i === null) return;
+    done[i] = e.target.checked; e.target.parentNode.className = e.target.checked ? 'done' : '';
+    store.set('done', JSON.stringify(done));
+  });
+
+  // place sheet
+  var sheet = $('sheet'), bg = $('sheetbg'), last = null;
+  function openPlace(id, from) {
+    var p = D.places[id]; last = from;
+    $('sheet-h').textContent = p.name; $('sheet-p').textContent = p.note;
+    $('sheet-map').href = mapsUrl(p); $('sheet-dir').href = dirUrl(p);
+    sheet.hidden = false; bg.style.display = 'block';
+    requestAnimationFrame(function () { sheet.classList.add('open'); $('sheet-map').focus(); });
+  }
+  function closeSheet() {
+    sheet.classList.remove('open'); bg.style.display = 'none';
+    setTimeout(function () { sheet.hidden = true; }, 200); if (last) last.focus();
+  }
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest('.pl'); if (b) { openPlace(b.getAttribute('data-place'), b); }
+  });
+  bg.addEventListener('click', closeSheet); $('sheet-x').addEventListener('click', closeSheet);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !sheet.hidden) closeSheet(); });
+
+  // highlight today in the strip (Japan time)
+  try {
+    var md = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Tokyo', month: '2-digit', day: '2-digit' }).format(new Date());
+    var map = { '10-31': 'sat31', '11-01': 'sun1', '11-02': 'mon2', '11-03': 'tue3', '11-04': 'wed4', '11-05': 'thu5', '11-06': 'fri6', '11-07': 'sat7' };
+    var today = map[md.replace('/', '-')];
+    if (today) { var a = document.querySelector('.strip a[data-day="' + today + '"]'); if (a) { a.classList.add('on'); a.querySelector('b').textContent += ' · today'; } }
+  } catch (e) {}
+
+  // offline copy
+  var off = $('offline');
+  if (!('serviceWorker' in navigator)) { off.textContent = 'This browser cannot keep an offline copy.'; return; }
+  navigator.serviceWorker.register('./sw.js', { scope: './' }).then(function () { return navigator.serviceWorker.ready; })
+    .then(function () { off.textContent = 'Saved for offline use.'; })
+    .catch(function () { off.textContent = 'Offline copy not saved yet: open the page once while online.'; });
+  // An older main-page worker may have stored this page in place of the main page: put the main page back.
+  if (window.caches && navigator.onLine) {
+    caches.keys().then(function (keys) {
+      keys.filter(function (k) { return k.indexOf('solo-week-') === 0; }).forEach(function (k) {
+        caches.open(k).then(function (c) {
+          var main = new URL('../index.html', location.href).href;
+          c.match(main).then(function (hit) {
+            if (!hit) return;
+            hit.clone().text().then(function (t) {
+              if (t.indexOf('data-page="fuji-trip"') !== -1) {
+                fetch(new URL('../', location.href).href, { cache: 'no-store' }).then(function (r) { if (r.ok) c.put(main, r); });
+              }
+            });
+          });
+        });
+      });
+    }).catch(function () {});
+  }
+})();
+</script>
+</body>
+</html>

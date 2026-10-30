@@ -44,8 +44,8 @@ self.addEventListener('fetch', event => {
   const req = event.request;
   if (req.method !== 'GET' || new URL(req.url).origin !== self.location.origin) return;
   const url = new URL(req.url);
-  // The duo page (duo/) has its own worker and cache: leave its requests alone.
-  if (url.pathname.includes('/duo/')) return;
+  // The duo page (duo/) and the trip page (fuji/) have their own workers and caches: leave their requests alone.
+  if (url.pathname.includes('/duo/') || url.pathname.includes('/fuji/')) return;
   const isPage = req.mode === 'navigate' || url.pathname.endsWith('/') || url.pathname.endsWith('index.html');
   event.respondWith(caches.open(CACHE).then(cache => {
     const fresh = fetch(req).then(res => {

@@ -20,3 +20,6 @@ Prices and the forecast were checked on 22–23 Oct 2026. Nothing is booked.
 
 ## Week for two
 A separate version for the two of you (together 31 Oct → 4 Nov, then solo until 7 Nov) lives in [`duo/`](duo/), built from `duo-src/`. It works offline the same way. This solo page is unchanged.
+
+## Tokyo + Kawaguchiko (chosen trip)
+The day-by-day plan for the trip you picked lives in [`fuji/`](fuji/), built from `fuji-src/` (see its README to change a day). It has its own offline copy.
