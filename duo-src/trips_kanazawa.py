@@ -17,13 +17,14 @@ KZ_DAY2 = D("Kanazawa by bike: garden, market, samurai lanes", "Active", "both",
             "Machi-nori bike-share (bus + bike day ticket ¥2,000 in the 'Norimasshi Kanazawa' app): Kenrokuen at 8:00 opening (maples turning), the castle park next door.",
             "Ride to Omicho market for a seafood lunch (kaisendon), then the 21st Century Museum (open Sunday) and Nagamachi's samurai lanes. Everything is 5–10 minutes apart by bike, mostly flat.",
             "Kazue-machi's riverside teahouses at dusk; drop the bikes at any port.", "Kanazawa hotel", "Kanazawa",
-            [], "Sunday is the dry day (30%), so the ride is today. If it rains, the same loop by the city bus (the ticket covers both).")
+            [], "Sunday is the least wet day you have together here (40% showers on the 30 Oct forecast; Monday 60%). If it rains, the same loop by the city bus: the ticket covers both.")
 
 TRIPS_KANAZAWA = [
 # ---------------------------------------------------------------- Kanazawa & around
 {
  "id": "jp-kanazawa", "group": "kanazawa", "town": "Kanazawa", "country": "Japan", "region": "Kanazawa, Shirakawa-go & Yamanaka Onsen", "cc": "JP", "short": "Kanazawa & around",
  "title": "Kanazawa & around: gardens by bike and an onsen ryokan",
+ "bike": "Machi-nori bike-share round the city (Sun)",
  "tagline": "Three nights in Kanazawa (a bike-share day between the garden, the market and the samurai lanes), then a Yamanaka onsen ryokan. Shirakawa-go moves to your solo ride.",
  "out": "kmq", "her": "kix_kaga", "his": "tokyo", "climate_of": "jp-kanazawa",
  "food_day": 28, "solo_food": 25,
@@ -71,6 +72,7 @@ TRIPS_KANAZAWA = [
 {
  "id": "jp-kanazawa-tokyo", "group": "kanazawa", "town": "Kanazawa + Tokyo", "country": "Japan", "region": "Kanazawa, then Tokyo", "cc": "JP", "short": "Kanazawa + Tokyo",
  "title": "Kanazawa + Tokyo: the old city, then the big one",
+ "bike": "Machi-nori bike-share round the city (Sun)",
  "tagline": "Fly straight to Kanazawa for two nights of gardens, teahouses and seafood, then the shinkansen to Tokyo for Meiji Jingu's festival and a slow last day.",
  "out": "kmq", "her": "tokyo", "his": "tokyo", "climate_of": "jp-kanazawa",
  "food_day": 28, "solo_food": 25,

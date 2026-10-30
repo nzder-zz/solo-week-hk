@@ -40,7 +40,8 @@ TRIPS_TOKYO = [
 {
  "id": "jp-fuji", "group": "tokyo", "town": "Kawaguchiko", "country": "Japan", "region": "Tokyo + Lake Kawaguchi (Mount Fuji)", "cc": "JP", "short": "Tokyo + Kawaguchiko",
  "title": "Tokyo + Kawaguchiko: Mount Fuji across the lake",
- "tagline": "Two nights by a lake facing Mount Fuji, with onsen and a thatched village, bracketed by old Tokyo and Meiji Jingu's festival.",
+ "tagline": "Two nights by Lake Kawaguchi facing Mount Fuji: an e-bike ride along the shore, a kimono museum, an onsen; old Tokyo either side.",
+ "bike": "E-bikes along the lake to Oishi park (Sun)",
  "out": "tokyo", "her": "tokyo", "his": "tokyo", "climate_of": "jp-fuji",
  "food_day": 28, "solo_food": 25,
  "town_card": {"time": "Bus from Shinjuku 1h55", "best": "Mount Fuji views, an easy e-bike ride along the lake, an onsen", "crowds": "Busy Sun and Tue (holiday) at Chureito and Oishi park; mornings are calm", "rain": "The Kubota Itchiku kimono museum (open daily in Nov) and an onsen", "room": "Lake guesthouse, private room ~€75"},
@@ -79,6 +80,7 @@ TRIPS_TOKYO = [
  "id": "jp-hakone", "group": "tokyo", "town": "Hakone", "country": "Japan", "region": "Tokyo + Hakone", "cc": "JP", "short": "Tokyo + Hakone",
  "title": "Tokyo + Hakone: onsen, a crater valley and Lake Ashi",
  "tagline": "Two nights at a hot-spring inn in the hills: an open-air museum, the ropeway over steaming vents, gardens a short walk away.",
+ "bike": None,
  "out": "tokyo", "her": "tokyo", "his": "tokyo", "climate_of": "jp-fuji",
  "food_day": 28, "solo_food": 25,
  "town_card": {"time": "Romancecar from Shinjuku 85 min", "best": "Onsen inns, a varied loop (train, cable car, ropeway, boat), art", "crowds": "Busy loop on Sun and the holiday; go early, ride it on Monday", "rain": "The Open-Air Museum, the Pola Museum, the inn's baths", "room": "Small onsen inn, private room with breakfast ~€120"},
@@ -115,6 +117,7 @@ TRIPS_TOKYO = [
 {
  "id": "jp-nikko", "group": "tokyo", "town": "Nikko", "country": "Japan", "region": "Tokyo + Nikko", "cc": "JP", "short": "Tokyo + Nikko",
  "title": "Tokyo + Nikko: gold-leaf shrines and a mountain lake",
+ "bike": None,
  "tagline": "Two nights in Nikko, all on foot: the most ornate shrines in Japan in a cedar forest, a riverside path of stone Jizo, autumn colour.",
  "out": "tokyo", "her": "tokyo", "his": "tokyo", "climate_of": "jp-fuji",
  "food_day": 28, "solo_food": 25,

@@ -24,7 +24,10 @@ HK_DEP = ["train", "Central → HK airport (Airport Express)", 25]
 TRIPS = [
 # ---------------------------------------------------------------- Kansai without Kyoto
 {
- "id": "jp-kansai", "country": "Japan", "region": "Nara, Asuka & Kumano", "cc": "JP", "short": "Japan · Nara & Kumano",
+ "id": "jp-kansai", "group": "other", "country": "Japan",
+ "bike": "E-bikes through Asuka's rice fields (Tue)",
+ "town": "Nara (Kansai)",
+ "town_card": {"time": "Fly HK → Kansai 14:45, bus to Nara 1h35", "best": "Japan's oldest temples and the deer, one hotel for all four nights"}, "region": "Nara, Asuka & Kumano", "cc": "JP", "short": "Japan · Nara & Kumano",
  "title": "Nara slow, Asuka by bike & the Kumano Kodo (no Kyoto)",
  "tagline": "Four nights in one Nara hotel: the deer and the Great Buddha at dawn, a bike day through Asuka's rice fields and ancient tombs; then the Kumano Kodo on your own.",
  "out": "kix", "her": "kix", "his": "kix", "climate_of": "jp-kansai",
@@ -49,14 +52,14 @@ TRIPS = [
               S("Kii-Tanabe guesthouse", 35), S("Chikatsuyu minshuku, dinner + breakfast", 85, True), S("Yunomine minshuku, dinner + breakfast", 80, True)],
    "transport_pp": 35, "shared": 0, "activities_pp": 30, "solo_transport": 84, "solo_activities": 10,
    "days": [
-    D("Fly to Osaka, bus to Nara", "Travel", "both", "Airport Express around 12:15.", "14:45 HK Express to Kansai, land 19:20.", "Limousine bus to Nara (1h35); late dinner near Kintetsu-Nara.", "Nara hotel", "Osaka",
+    D("Fly to Osaka, bus to Nara", "Travel", "both", "Airport Express around 12:15.", "14:45 HK Express to Kansai, land 19:20.", "Limousine bus to Nara (1h35); late dinner near Kintetsu-Nara.", "Nara hotel", "Nara",
       [HK_DEP, ["plane", "HKG → KIX", 215], ["bus", "Kansai → Nara", 95]]),
-    D("Nara at dawn", "Easy", "both", "Todai-ji at 7:30 opening; the deer, Nigatsu-do's balcony view.", "Kasuga Taisha's lanterns and the primeval-forest path, then Isuien garden.", "Kakinoha-zushi and sake in Naramachi.", "Nara hotel", "Osaka",
+    D("Nara at dawn", "Easy", "both", "Todai-ji at 7:30 opening; the deer, Nigatsu-do's balcony view.", "Kasuga Taisha's lanterns and the primeval-forest path, then Isuien garden.", "Kakinoha-zushi and sake in Naramachi.", "Nara hotel", "Nara",
       []),
-    D("A slow, rainy day in Nara", "Easy", "both", "Kofuku-ji's national treasure hall (open daily) and its five-storey pagoda.", "Naramachi's old merchant houses, Harushika sake tasting, cafés.", "Sento, then an izakaya.", "Nara hotel", "Osaka",
+    D("A slow, rainy day in Nara", "Easy", "both", "Kofuku-ji's national treasure hall (open daily) and its five-storey pagoda.", "Naramachi's old merchant houses, Harushika sake tasting, cafés.", "Sento, then an izakaya.", "Nara hotel", "Nara",
       [], "Rain likely (50%): today is all indoors or a few minutes' walk."),
     D("Asuka by bike", "Active", "both", "Kintetsu to Asuka (about 1h, change at Yamato-Saidaiji and Kashihara-jingu-mae); e-bikes in front of the station (~¥1,700, cash).",
-      "Asuka-dera's 1,400-year-old Buddha, the Ishibutai stone tomb, the Inabuchi rice terraces, the view from Amakashi hill (about 15 km of quiet lanes).", "Back to Nara; dinner near the hotel.", "Nara hotel", "Osaka",
+      "Asuka-dera's 1,400-year-old Buddha, the Ishibutai stone tomb, the Inabuchi rice terraces, the view from Amakashi hill (about 15 km of quiet lanes).", "Back to Nara; dinner near the hotel.", "Nara hotel", "Nara",
       [["train", "Nara ↔ Asuka (Kintetsu)", 120]], "The dry day (20%), and the holiday crowds stay in Nara and Kyoto, not in Asuka."),
     D("Kasuga's forest; bus to Kansai together", "Travel", "split", "A last walk in Kasuga's forest and Nara park.", "13:30 limousine bus to Kansai together (1h35). She: HK Express 17:20 (lands HK 21:00). You: train to Hineno (10 min), Kuroshio express to Kii-Tanabe (1h30).", "You: Tanabe's izakaya street.", "You: Kii-Tanabe guesthouse", "Osaka",
       [["bus", "Nara → Kansai airport", 95], ["train", "Kansai → Hineno → Kii-Tanabe", 100]]),
@@ -70,7 +73,10 @@ TRIPS = [
  ]},
 # ---------------------------------------------------------------- Kyushu
 {
- "id": "jp-kyushu", "country": "Japan", "region": "Fukuoka, Yufuin & Kurokawa", "cc": "JP", "short": "Japan · Kyushu",
+ "id": "jp-kyushu", "group": "other", "country": "Japan",
+ "bike": "Seaside park ride outside Fukuoka (Sun)",
+ "town": "Kyushu",
+ "town_card": {"time": "Fly HK → Fukuoka 12:55, 5 min to Hakata", "best": "Food stalls, a seaside ride, two nights in an onsen town"}, "region": "Fukuoka, Yufuin & Kurokawa", "cc": "JP", "short": "Japan · Kyushu",
  "title": "Kyushu: Fukuoka by the sea and Yufuin's onsen",
  "tagline": "Fukuoka's food stalls and a bike ride through a seaside park, then two nights in Yufuin's hot springs; Kurokawa and the Kuju peaks on your own.",
  "out": "fuk", "her": "fuk", "his": "fuk", "climate_of": "jp-kyushu",
@@ -116,7 +122,10 @@ TRIPS = [
  ]},
 # ---------------------------------------------------------------- Taiwan south
 {
- "id": "tw-south", "country": "Taiwan", "region": "Tainan, Sun Moon Lake & Alishan", "cc": "TW", "short": "Taiwan · south",
+ "id": "tw-south", "group": "taiwan", "country": "Taiwan",
+ "bike": "Bikes to Anping (Sun), e-bikes round Sun Moon Lake (Tue)",
+ "town": "Taiwan · south",
+ "town_card": {"time": "Fly HK → Kaohsiung 18:50 (1h25), taxi to Tainan 50 min", "best": "Street food and temples, a mountain lake; she speaks the language; sunny all week"}, "region": "Tainan, Sun Moon Lake & Alishan", "cc": "TW", "short": "Taiwan · south",
  "title": "Tainan food, Sun Moon Lake & Alishan",
  "tagline": "Eat your way round Taiwan's oldest city and two days on a mountain lake together; then the Alishan forest on your own. Untouched by Typhoon Champi.",
  "out": "khh", "her": "khh", "his": "khh", "climate_of": "tw-south",
@@ -161,7 +170,10 @@ TRIPS = [
  ]},
 # ---------------------------------------------------------------- Taiwan east
 {
- "id": "tw-east", "country": "Taiwan", "region": "Taitung: Dulan & Luye", "cc": "TW", "short": "Taiwan · quiet east",
+ "id": "tw-east", "group": "taiwan", "country": "Taiwan",
+ "bike": None,
+ "town": "Taiwan · east",
+ "town_card": {"time": "Fly HK → Kaohsiung 12:45, train + taxi to Dulan (2h30)", "best": "The quietest: a surf village on the Pacific, then a tea plateau"}, "region": "Taitung: Dulan & Luye", "cc": "TW", "short": "Taiwan · quiet east",
  "title": "Taiwan's quiet east: Dulan by the sea, Luye's tea hills",
  "tagline": "Slow days on the Pacific and a tea plateau together; then Tainan's food on your own. The calmest trip on the list.",
  "out": "khh_early", "her": "khh", "his": "khh", "climate_of": "tw-east",

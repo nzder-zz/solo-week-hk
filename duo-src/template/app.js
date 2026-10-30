@@ -65,17 +65,34 @@
     `<div class="chk-grid">${sorted.filter(c => c[2] === 'out' || c[2] === 'todo').map(chkCard).join('')}</div>` +
     `<details class="chk-more"><summary>Show the ${cnt('warn') + cnt('ok')} other checks</summary><div class="chk-grid">${sorted.filter(c => c[2] === 'warn' || c[2] === 'ok').map(chkCard).join('')}</div></details>`;
 
-  // ---- Tokyo + town
+  // ---- overview of every trip (grouped), then the shared Tokyo days
   (function () {
-    const T = D.tokyo, towns = D.dests.filter(d => d.town_card);
-    const el = document.getElementById('tokyo'); if (!el || !T) return;
-    el.innerHTML = `<div class="tk-plan"><h4>The Tokyo days (Kawaguchiko, Hakone, Nikko; Kanazawa + Tokyo has the same Tue and Wed)</h4><p class="tk-stay">${pl(T.stay, 'jp-fuji')}</p>
+    const T = D.tokyo;
+    const el = document.getElementById('tokyo'); if (!el) return;
+    const GROUPS = [['tokyo', 'Tokyo + one smaller town'], ['kanazawa', 'Kanazawa'], ['taiwan', 'Taiwan'], ['other', 'Also in Japan']];
+    const card = d => { const c = d.town_card || {}, r = range(d), o = d.options[0];
+      const title = (t => t.charAt(0).toUpperCase() + t.slice(1))(d.title.split(': ')[1] || d.title);
+      return `<a class="tk-town" href="#${d.id}" data-go="${d.id}">
+        <span class="why">${esc(d.town || d.short)}</span><strong>${esc(title)}</strong>
+        <p class="tk-blurb">${esc(d.tagline)}</p>
+        <dl>${c.time ? `<dt>Getting there</dt><dd>${esc(c.time)}</dd>` : ''}${c.best ? `<dt>Best for</dt><dd>${esc(c.best)}</dd>` : ''}<dt>Bike day</dt><dd>${d.bike ? esc(d.bike) : 'None (on foot)'}</dd></dl>
+        <div class="tk-stats"><span><b>${fmtH(o.together_travel)}</b> travel together</span><span><b>${rng(r)}</b> for two</span><span>forecast <b>${d.fc.score}/5</b></span><span>fit <b>${d.fit}</b></span></div></a>`; };
+    el.innerHTML = GROUPS.map(([g, label]) => { const L = D.dests.filter(d => d.group === g).sort((a, b) => b.fit - a.fit);
+        return L.length ? `<div class="tk-group"><h4>${esc(label)}</h4><div class="tk-towns">${L.map(card).join('')}</div></div>` : ''; }).join('') +
+      (T ? `<div class="tk-plan"><h4>The Tokyo days (Kawaguchiko, Hakone, Nikko; Kanazawa + Tokyo has the same Tue and Wed)</h4><p class="tk-stay">${pl(T.stay, 'jp-fuji')}</p>
       <ol class="tk-days">${T.days.map(x => `<li><b>${esc(x.when)}</b><span>${pl(x.what, 'jp-fuji')}</span></li>`).join('')}</ol>
-      <h4>Swap in</h4><ul class="tk-menu">${T.menu.map(x => `<li>${pl(x, 'jp-fuji')}</li>`).join('')}</ul><p class="tk-solo">${esc(T.solo)}</p></div>
-      <div class="tk-towns">${towns.map(d => { const c = d.town_card, r = range(d); return `<a class="tk-town" href="#${d.id}">
-        <span class="why">${esc(d.town)}</span><strong>${esc((t => t.charAt(0).toUpperCase() + t.slice(1))(d.title.split(': ')[1] || d.title))}</strong>
-        <dl><dt>Getting there</dt><dd>${esc(c.time)}</dd><dt>Best for</dt><dd>${esc(c.best)}</dd><dt>Crowds</dt><dd>${esc(c.crowds)}</dd><dt>If it rains</dt><dd>${esc(c.rain)}</dd><dt>Room</dt><dd>${esc(c.room)}</dd></dl>
-        <span class="meta">fit ${d.fit} · ${rng(r)} for two · forecast ${d.fc.score}/5</span></a>`; }).join('')}</div>`;
+      <h4>Swap in</h4><ul class="tk-menu">${T.menu.map(x => `<li>${pl(x, 'jp-fuji')}</li>`).join('')}</ul><p class="tk-solo">${esc(T.solo)}</p></div>` : '');
+    el.addEventListener('click', e => {
+      const a = e.target.closest('a.tk-town'); if (!a || e.target.closest('.pl')) return;
+      e.preventDefault();
+      const id = a.dataset.go;
+      if (!document.getElementById(id)) {
+        S.country = 'All'; save();
+        document.querySelectorAll('#country button').forEach(x => x.setAttribute('aria-pressed', x.dataset.v === 'All'));
+        render();
+      }
+      go(id);
+    });
   })();
 
   // ---- controls
@@ -94,7 +111,7 @@
   seg('country', 'country', [['tokyo', 'Shortlist'], ['Japan', 'All Japan'], ['Taiwan', 'Taiwan'], ['All', 'Everything']]);
 
   function list() {
-    let L = D.dests.filter(d => S.country === 'All' || (S.country === 'tokyo' ? (d.group === 'tokyo' || d.group === 'kanazawa') : d.country === S.country));
+    let L = D.dests.filter(d => S.country === 'All' || (S.country === 'tokyo' ? ['tokyo', 'kanazawa', 'taiwan'].includes(d.group) : d.country === S.country));
     const c = d => cost(d, opt(d, S.style)).total;
     if (S.sort === 'fit') L.sort((a, b) => b.fit - a.fit || c(a) - c(b));
     if (S.sort === 'cost') L.sort((a, b) => c(a) - c(b));
@@ -178,7 +195,7 @@
     document.getElementById('fc-table').innerHTML = fcHead() + `<tbody>${rows}</tbody>`;
   }
   function fcPanel(d) {
-    const rows = d.fc.bases.map(b => `<tr><th class="rowh" scope="row">${esc(b)}</th>${d.fc.per_base[b].map(x => fcCell(x.cls, `${b} ${x.label}`, x.hi, x.lo, x.p1, x.md > D.fc_last,
+    const rows = d.fc.bases.map(b => `<tr><th class="rowh" scope="row">${esc(b)}</th>${d.fc.per_base[b].map(x => fcCell(x.cls, `${b} ${x.label}`, x.hi, x.lo, x.p1, x.src === 'E',
       `<b>${esc(b)} · ${esc(x.label)}</b><div class="tl"><span>Source</span><span>${SRC[x.src] || '—'}</span></div><div class="tl"><span>High / low</span><span>${temps(x.hi, x.lo)}</span></div><div class="tl"><span>Chance of rain</span><span>${pct(x.p1)}</span></div>${x.med !== null && x.med !== undefined ? `<div class="tl"><span>Typical amount</span><span>${x.med} mm</span></div>` : ''}`, x.cc)).join('')}</tr>`).join('');
     return `<p class="fc-note">${esc(d.fc.note)}</p><div class="fc-wrap"><table class="fc">${fcHead()}<tbody>${rows}</tbody></table></div>`;
   }
@@ -204,7 +221,7 @@
     if (!wx || !d.fc.per_base[wx] || !D.fc_days[i]) return '';
     const md = D.fc_days[i].md, x = d.fc.per_base[wx].find(y => y.md === md);
     if (!x || !x.cls) return '';
-    const rough = md > D.fc_last;
+    const rough = x.src === 'E';
     return `<span class="wxchip c-${slug(x.cls)}${rough ? ' rough' : ''}" title="${esc(wx)}: ${SRC[x.src] || ''}, ${SKY[skyKey(x.cc)]}"><i class="sk sk-${skyKey(x.cc)}"></i>${esc(wx)} · ${short(x.cls)}${x.p1 !== null && x.p1 !== undefined ? ' ' + x.p1 + '%' : ''}${x.hi !== null && x.hi !== undefined ? ` · ${x.hi}°/${x.lo}°` : ''}</span>`;
   }
   function trCol(x) {

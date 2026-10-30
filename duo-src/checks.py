@@ -1,6 +1,6 @@
 # Verification log: what was checked, the result, and where. Shown on the page and in the spreadsheet.
 # status: ok = checked and fine · warn = open but with a caveat · out = closed/damaged, kept out of the plans · todo = not yet verified
-CHECKED = "29 Oct 2026"
+CHECKED = "30 Oct 2026"
 
 CHECKS = [
     # Typhoon Champi (23–24 Oct)
@@ -23,8 +23,8 @@ CHECKS = [
     ("Japan", "Buses Yufuin → Fukuoka airport and Yufuin → Kurokawa", "todo", "Times not confirmed (Kyushu: her Wednesday bus, your ride to Kurokawa). Check on the bus operators' sites, and that her bus stops at the international terminal.",
      "Kurokawa Onsen tourism association (where to check)", "https://www.kurokawaonsen.or.jp/"),
     # Typhoon In-fa
-    ("All", "Typhoon In-fa", "warn", "29 Oct: moving west far south of Japan, turning north near the Ogasawara islands around 1 Nov, then west again; no effect forecast on mainland Japan or Taiwan's weather. Recheck on 30 Oct.",
-     "Weathernews (29 Oct, 09:00 JST)", "https://weathernews.jp/news/202610/290091/"),
+    ("All", "Typhoon In-fa", "warn", "30 Oct: very strong, reaching the Ogasawara islands on 31 Oct and slowing there until about 4 Nov; track after that uncertain. No direct hit on mainland Japan expected, but its moist air may make rain heavier after 4 Nov (your solo days). No effect on Taiwan's weather.",
+     "tenki.jp (30 Oct, 06:12)", "https://tenki.jp/forecaster/a_aoyama/2026/10/30/41143.html"),
     ("Taiwan", "East-coast swells from In-fa (1–3 Nov)", "warn", "Taiwan's weather agency expects long swells on the east coast (Taitung, Green Island, Lanyu) and the Hengchun peninsula from 1 to 3 Nov: no swimming or rock-walking at the waterline in Dulan.",
      "Next Apple (29 Oct)", "https://news.nextapple.com/life/20261029/59A1E16D715E51BAA6313EE8979D0F43"),
     # Japan
@@ -44,9 +44,9 @@ CHECKS = [
      "Tanabe City Kumano Tourism Bureau", "https://www.tb-kumano.jp/en/kumano-kodo/conditions/"),
     ("Japan", "Karatsu Kunchi", "warn", "Held 2–4 Nov, but dropped from the Kyushu plan on 29 Oct to save about 5 hours of travel on her last day.",
      "Japan Travel / JNTO", "https://ja.japantravel.com/saga/karatsu-kunchi-festival/32010"),
-    ("Japan", "Mon 2 Nov / Tue 3 Nov", "warn", "29 Oct JMA forecasts: Mon 2 Nov cloudy with a 40–60% chance of rain (low confidence), no longer heavy rain; dry around it. Tue 3 Nov is a national holiday (Culture Day): busy at the sights.",
-     "Japan Meteorological Agency weekly forecasts", "https://www.jma.go.jp/bosai/forecast/"),
-    ("Taiwan", "Forecast for the south and east", "ok", "29 Oct CWA weekly forecast: Tainan, Chiayi, Nantou sunny with some cloud 31 Oct – 4 Nov; Taitung brief showers Mon night – Tue 3 Nov.",
+    ("Japan", "Mon 2 Nov / Tue 3 Nov", "warn", "30 Oct JMA forecasts: Mon 2 Nov is the wet day (40–70% rain, Fukuoka 70%); Sun 1 and Tue 3 mostly dry; Thu 5 showery (50%). Kanazawa is wetter: 70% on Sat 31 Oct, 40% Sun, 60% Mon. Tue 3 Nov is a national holiday (Culture Day).",
+     "Japan Meteorological Agency weekly forecasts (30 Oct 11:00)", "https://www.jma.go.jp/bosai/forecast/"),
+    ("Taiwan", "Forecast for the south and east", "ok", "30 Oct CWA weekly forecast: Tainan, Chiayi, Nantou sunny with some cloud every day to 5 Nov (29–31°C). Taitung: brief rain on Sat 31 and again Tue 3 – Thu 5 Nov.",
      "Central Weather Administration", "https://www.cwa.gov.tw/V8/C/W/County/index.html"),
     ("Japan", "Kawaguchiko maple corridor light-up", "warn", "The Fujikawaguchiko autumn-leaves festival and light-up run 7–29 Nov 2026: after your days there. The corridor itself can still be walked by day.",
      "Kaibutsu blog (2026 festival)", "https://kaibutsu-blog.com/fujikawaguchiko-koyo-matsuri-2026/"),

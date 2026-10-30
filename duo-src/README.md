@@ -6,7 +6,7 @@ The duo version of the planner: together Sat 31 Oct → Wed 4 Nov 2026 (she flie
 - `trips_tokyo.py`: Tokyo + one smaller town (Kawaguchiko, Hakone, Nikko) with one chill plan each (the Fuller plans were removed on 29 Oct), and the shared Tokyo days.
 - `trips_kanazawa.py`: Kanazawa & around (bike-share day, Yamanaka ryokan; Shirakawa-go on your solo ride) and Kanazawa + Tokyo, one chill plan each.
 - `trips.py`: the other trips (Kansai, Kyushu, Taiwan), one chill plan each: 4 nights together + 3 alone, room prices, transport, activities, day-by-day text.
-- `fc_refresh.py`: the 29 Oct forecast refresh (JMA + CWA official weekly forecasts).
+- `fc_refresh.py`: forecast refresh from the official weekly forecasts (JMA + CWA); last run 30 Oct.
 - `fares.py`: every flight and its status (`gf27` = live Google Flights fare of 27 Oct, `est` = estimate). **Refresh fares here.**
 - `checks.py`: the verification log (Typhoon Champi damage, closures, volcano levels, prices still to check).
 - `places_new.py`: place notes added for the duo trips; the rest come from `base_data.json`.

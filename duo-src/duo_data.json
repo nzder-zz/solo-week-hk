@@ -35,7 +35,7 @@
    "cc": "JP",
    "short": "Tokyo + Kawaguchiko",
    "title": "Tokyo + Kawaguchiko: Mount Fuji across the lake",
-   "tagline": "Two nights by a lake facing Mount Fuji, with onsen and a thatched village, bracketed by old Tokyo and Meiji Jingu's festival.",
+   "tagline": "Two nights by Lake Kawaguchi facing Mount Fuji: an e-bike ride along the shore, a kimono museum, an onsen; old Tokyo either side.",
    "food_day": 28,
    "solo_food": 25,
    "transport": "Highway bus Shinjuku ↔ Kawaguchiko (book on highwaybus.com), the lake loop buses (2-day pass ¥2,000), Suica in Tokyo.",
@@ -97,6 +97,7 @@
     "rain": "The Kubota Itchiku kimono museum (open daily in Nov) and an onsen",
     "room": "Lake guesthouse, private room ~€75"
    },
+   "bike": "E-bikes along the lake to Oishi park (Sun)",
    "out": {
     "route": "HKG → NRT",
     "price": 116,
@@ -144,7 +145,7 @@
    "fc": {
     "score": 4.5,
     "word": "Mostly dry",
-    "note": "Mostly dry for Tokyo, Kawaguchiko. 31 Oct – 4 Nov (official forecasts): no wet day; showers possible on Mon 2 Nov. Daytime cloud 59% on average. Checked 29 Oct 2026, 13:00 Hong Kong time; recheck on 30 Oct.",
+    "note": "Mostly dry for Tokyo, Kawaguchiko. Official forecasts: no wet day; showers possible on Mon 2 Nov, Thu 5 Nov. Daytime cloud 53% on average. Checked 30 Oct 2026, 15:00 Hong Kong time.",
     "bases": [
      "Tokyo",
      "Kawaguchiko"
@@ -153,11 +154,11 @@
      {
       "cls": "Dry",
       "pts": 1.0,
-      "p1": 20,
-      "cc": 58,
+      "p1": 10,
+      "cc": 28,
       "md": "10-31",
       "label": "Sat 31 Oct",
-      "ahead": 2,
+      "ahead": 1,
       "hi": 24,
       "lo": 14,
       "scored": true,
@@ -166,11 +167,11 @@
         "name": "Tokyo",
         "hi": 24,
         "lo": 14,
-        "p1": 30,
+        "p1": 10,
         "p10": null,
         "med": null,
         "cls": "Dry",
-        "cc": 80,
+        "cc": 35,
         "src": "J"
        },
        {
@@ -181,7 +182,7 @@
         "p10": null,
         "med": null,
         "cls": "Dry",
-        "cc": 35,
+        "cc": 20,
         "src": "J"
        }
       ]
@@ -193,15 +194,15 @@
       "cc": 35,
       "md": "11-01",
       "label": "Sun 1 Nov",
-      "ahead": 3,
-      "hi": 20,
-      "lo": 12,
+      "ahead": 2,
+      "hi": 21,
+      "lo": 14,
       "scored": true,
       "bases": [
        {
         "name": "Tokyo",
-        "hi": 20,
-        "lo": 12,
+        "hi": 21,
+        "lo": 14,
         "p1": 20,
         "p10": null,
         "med": null,
@@ -225,19 +226,19 @@
      {
       "cls": "Showers",
       "pts": 0.7,
-      "p1": 40,
-      "cc": 80,
+      "p1": 45,
+      "cc": 82,
       "md": "11-02",
       "label": "Mon 2 Nov",
-      "ahead": 4,
-      "hi": 22,
-      "lo": 15,
+      "ahead": 3,
+      "hi": 21,
+      "lo": 14,
       "scored": true,
       "bases": [
        {
         "name": "Tokyo",
-        "hi": 22,
-        "lo": 15,
+        "hi": 21,
+        "lo": 14,
         "p1": 40,
         "p10": null,
         "med": null,
@@ -249,11 +250,11 @@
         "name": "Kawaguchiko",
         "hi": 17,
         "lo": 9,
-        "p1": 40,
+        "p1": 50,
         "p10": null,
         "med": null,
         "cls": "Showers",
-        "cc": 80,
+        "cc": 85,
         "src": "J"
        }
       ]
@@ -261,24 +262,24 @@
      {
       "cls": "Dry",
       "pts": 1.0,
-      "p1": 25,
-      "cc": 48,
+      "p1": 20,
+      "cc": 35,
       "md": "11-03",
       "label": "Tue 3 Nov",
-      "ahead": 5,
-      "hi": 20,
-      "lo": 13,
+      "ahead": 4,
+      "hi": 22,
+      "lo": 14,
       "scored": true,
       "bases": [
        {
         "name": "Tokyo",
-        "hi": 20,
-        "lo": 13,
-        "p1": 30,
+        "hi": 22,
+        "lo": 14,
+        "p1": 20,
         "p10": null,
         "med": null,
         "cls": "Dry",
-        "cc": 60,
+        "cc": 35,
         "src": "J"
        },
        {
@@ -296,20 +297,20 @@
      },
      {
       "cls": "Dry",
-      "pts": 0.85,
+      "pts": 1.0,
       "p1": 25,
-      "cc": 60,
+      "cc": 48,
       "md": "11-04",
       "label": "Wed 4 Nov",
-      "ahead": 6,
-      "hi": 18,
-      "lo": 11,
+      "ahead": 5,
+      "hi": 19,
+      "lo": 12,
       "scored": true,
       "bases": [
        {
         "name": "Tokyo",
-        "hi": 18,
-        "lo": 11,
+        "hi": 19,
+        "lo": 12,
         "p1": 20,
         "p10": null,
         "med": null,
@@ -324,34 +325,34 @@
         "p1": 30,
         "p10": null,
         "med": null,
-        "cls": "Showers",
-        "cc": 85,
+        "cls": "Dry",
+        "cc": 60,
         "src": "J"
        }
       ]
      },
      {
-      "cls": "Dry",
-      "pts": 0.85,
-      "p1": 40,
-      "cc": 78,
+      "cls": "Showers",
+      "pts": 0.7,
+      "p1": 50,
+      "cc": 85,
       "md": "11-05",
       "label": "Thu 5 Nov",
-      "ahead": 7,
+      "ahead": 6,
       "hi": 15,
-      "lo": 8,
-      "scored": false,
+      "lo": 11,
+      "scored": true,
       "bases": [
        {
         "name": "Tokyo",
         "hi": 15,
-        "lo": 8,
-        "p1": 31,
-        "p10": 6,
-        "med": 0.0,
-        "cls": "Dry",
-        "cc": 71,
-        "src": "E"
+        "lo": 11,
+        "p1": 50,
+        "p10": null,
+        "med": null,
+        "cls": "Showers",
+        "cc": 85,
+        "src": "J"
        },
        {
         "name": "Kawaguchiko",
@@ -369,36 +370,36 @@
      {
       "cls": "Dry",
       "pts": 1.0,
-      "p1": 44,
-      "cc": 62,
+      "p1": 30,
+      "cc": 60,
       "md": "11-06",
       "label": "Fri 6 Nov",
-      "ahead": 8,
-      "hi": 16,
-      "lo": 9,
-      "scored": false,
+      "ahead": 7,
+      "hi": 21,
+      "lo": 13,
+      "scored": true,
       "bases": [
        {
         "name": "Tokyo",
-        "hi": 16,
-        "lo": 9,
-        "p1": 39,
-        "p10": 12,
-        "med": 0.6,
+        "hi": 21,
+        "lo": 13,
+        "p1": 30,
+        "p10": null,
+        "med": null,
         "cls": "Dry",
         "cc": 60,
-        "src": "E"
+        "src": "J"
        },
        {
         "name": "Kawaguchiko",
         "hi": 14,
         "lo": 6,
-        "p1": 49,
-        "p10": 18,
-        "med": 0.8,
+        "p1": 30,
+        "p10": null,
+        "med": null,
         "cls": "Dry",
-        "cc": 64,
-        "src": "E"
+        "cc": 60,
+        "src": "J"
        }
       ]
      },
@@ -409,7 +410,7 @@
       "cc": 54,
       "md": "11-07",
       "label": "Sat 7 Nov",
-      "ahead": 9,
+      "ahead": 8,
       "hi": 17,
       "lo": 10,
       "scored": false,
@@ -447,8 +448,8 @@
        "p10": null,
        "med": null,
        "cls": "Dry",
-       "cc": 80,
-       "p1": 30,
+       "cc": 35,
+       "p1": 10,
        "hi": 24,
        "lo": 14,
        "src": "J"
@@ -461,8 +462,8 @@
        "cls": "Dry",
        "cc": 35,
        "p1": 20,
-       "hi": 20,
-       "lo": 12,
+       "hi": 21,
+       "lo": 14,
        "src": "J"
       },
       {
@@ -473,8 +474,8 @@
        "cls": "Showers",
        "cc": 80,
        "p1": 40,
-       "hi": 22,
-       "lo": 15,
+       "hi": 21,
+       "lo": 14,
        "src": "J"
       },
       {
@@ -483,10 +484,10 @@
        "p10": null,
        "med": null,
        "cls": "Dry",
-       "cc": 60,
-       "p1": 30,
-       "hi": 20,
-       "lo": 13,
+       "cc": 35,
+       "p1": 20,
+       "hi": 22,
+       "lo": 14,
        "src": "J"
       },
       {
@@ -497,33 +498,33 @@
        "cls": "Dry",
        "cc": 35,
        "p1": 20,
-       "hi": 18,
-       "lo": 11,
+       "hi": 19,
+       "lo": 12,
        "src": "J"
       },
       {
        "md": "11-05",
        "label": "Thu 5 Nov",
-       "p10": 6,
-       "med": 0.0,
-       "cls": "Dry",
-       "cc": 71,
-       "p1": 31,
+       "p10": null,
+       "med": null,
+       "cls": "Showers",
+       "cc": 85,
+       "p1": 50,
        "hi": 15,
-       "lo": 8,
-       "src": "E"
+       "lo": 11,
+       "src": "J"
       },
       {
        "md": "11-06",
        "label": "Fri 6 Nov",
-       "p10": 12,
-       "med": 0.6,
+       "p10": null,
+       "med": null,
        "cls": "Dry",
        "cc": 60,
-       "p1": 39,
-       "hi": 16,
-       "lo": 9,
-       "src": "E"
+       "p1": 30,
+       "hi": 21,
+       "lo": 13,
+       "src": "J"
       },
       {
        "md": "11-07",
@@ -545,7 +546,7 @@
        "p10": null,
        "med": null,
        "cls": "Dry",
-       "cc": 35,
+       "cc": 20,
        "p1": 10,
        "hi": 18,
        "lo": 9,
@@ -569,8 +570,8 @@
        "p10": null,
        "med": null,
        "cls": "Showers",
-       "cc": 80,
-       "p1": 40,
+       "cc": 85,
+       "p1": 50,
        "hi": 17,
        "lo": 9,
        "src": "J"
@@ -592,8 +593,8 @@
        "label": "Wed 4 Nov",
        "p10": null,
        "med": null,
-       "cls": "Showers",
-       "cc": 85,
+       "cls": "Dry",
+       "cc": 60,
        "p1": 30,
        "hi": 14,
        "lo": 6,
@@ -614,14 +615,14 @@
       {
        "md": "11-06",
        "label": "Fri 6 Nov",
-       "p10": 18,
-       "med": 0.8,
+       "p10": null,
+       "med": null,
        "cls": "Dry",
-       "cc": 64,
-       "p1": 49,
+       "cc": 60,
+       "p1": 30,
        "hi": 14,
        "lo": 6,
-       "src": "E"
+       "src": "J"
       },
       {
        "md": "11-07",
@@ -637,7 +638,7 @@
       }
      ]
     },
-    "cc": 59
+    "cc": 53
    },
    "options": [
     {
@@ -970,6 +971,7 @@
     "rain": "The Open-Air Museum, the Pola Museum, the inn's baths",
     "room": "Small onsen inn, private room with breakfast ~€120"
    },
+   "bike": null,
    "out": {
     "route": "HKG → NRT",
     "price": 116,
@@ -1009,15 +1011,15 @@
     "food": 4.5,
     "culture": 4.5,
     "chill": 5,
-    "weather": 4.5,
+    "weather": 4.25,
     "value": 2.5,
     "ease": 5
    },
-   "fit": 85,
+   "fit": 84,
    "fc": {
-    "score": 5.0,
+    "score": 4.5,
     "word": "Mostly dry",
-    "note": "Mostly dry for Tokyo, Hakone. 31 Oct – 4 Nov (official forecasts): no wet day; showers possible on Mon 2 Nov. Daytime cloud 61% on average. Checked 29 Oct 2026, 13:00 Hong Kong time; recheck on 30 Oct.",
+    "note": "Mostly dry for Tokyo, Hakone. Official forecasts: no wet day; showers possible on Mon 2 Nov, Thu 5 Nov. Daytime cloud 55% on average. Checked 30 Oct 2026, 15:00 Hong Kong time.",
     "bases": [
      "Tokyo",
      "Hakone"
@@ -1026,11 +1028,11 @@
      {
       "cls": "Dry",
       "pts": 1.0,
-      "p1": 30,
-      "cc": 80,
+      "p1": 15,
+      "cc": 28,
       "md": "10-31",
       "label": "Sat 31 Oct",
-      "ahead": 2,
+      "ahead": 1,
       "hi": 24,
       "lo": 14,
       "scored": true,
@@ -1039,22 +1041,22 @@
         "name": "Tokyo",
         "hi": 24,
         "lo": 14,
-        "p1": 30,
+        "p1": 10,
         "p10": null,
         "med": null,
         "cls": "Dry",
-        "cc": 80,
+        "cc": 35,
         "src": "J"
        },
        {
         "name": "Hakone",
         "hi": null,
         "lo": null,
-        "p1": 30,
+        "p1": 20,
         "p10": null,
         "med": null,
         "cls": "Dry",
-        "cc": 80,
+        "cc": 20,
         "src": "J"
        }
       ]
@@ -1066,15 +1068,15 @@
       "cc": 35,
       "md": "11-01",
       "label": "Sun 1 Nov",
-      "ahead": 3,
-      "hi": 20,
-      "lo": 12,
+      "ahead": 2,
+      "hi": 21,
+      "lo": 14,
       "scored": true,
       "bases": [
        {
         "name": "Tokyo",
-        "hi": 20,
-        "lo": 12,
+        "hi": 21,
+        "lo": 14,
         "p1": 20,
         "p10": null,
         "med": null,
@@ -1098,19 +1100,19 @@
      {
       "cls": "Showers",
       "pts": 0.7,
-      "p1": 40,
-      "cc": 80,
+      "p1": 45,
+      "cc": 82,
       "md": "11-02",
       "label": "Mon 2 Nov",
-      "ahead": 4,
-      "hi": 22,
-      "lo": 15,
+      "ahead": 3,
+      "hi": 21,
+      "lo": 14,
       "scored": true,
       "bases": [
        {
         "name": "Tokyo",
-        "hi": 22,
-        "lo": 15,
+        "hi": 21,
+        "lo": 14,
         "p1": 40,
         "p10": null,
         "med": null,
@@ -1122,11 +1124,119 @@
         "name": "Hakone",
         "hi": null,
         "lo": null,
-        "p1": 40,
+        "p1": 50,
         "p10": null,
         "med": null,
         "cls": "Showers",
-        "cc": 80,
+        "cc": 85,
+        "src": "J"
+       }
+      ]
+     },
+     {
+      "cls": "Dry",
+      "pts": 1.0,
+      "p1": 25,
+      "cc": 48,
+      "md": "11-03",
+      "label": "Tue 3 Nov",
+      "ahead": 4,
+      "hi": 22,
+      "lo": 14,
+      "scored": true,
+      "bases": [
+       {
+        "name": "Tokyo",
+        "hi": 22,
+        "lo": 14,
+        "p1": 20,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 35,
+        "src": "J"
+       },
+       {
+        "name": "Hakone",
+        "hi": null,
+        "lo": null,
+        "p1": 30,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 60,
+        "src": "J"
+       }
+      ]
+     },
+     {
+      "cls": "Dry",
+      "pts": 1.0,
+      "p1": 25,
+      "cc": 48,
+      "md": "11-04",
+      "label": "Wed 4 Nov",
+      "ahead": 5,
+      "hi": 19,
+      "lo": 12,
+      "scored": true,
+      "bases": [
+       {
+        "name": "Tokyo",
+        "hi": 19,
+        "lo": 12,
+        "p1": 20,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 35,
+        "src": "J"
+       },
+       {
+        "name": "Hakone",
+        "hi": null,
+        "lo": null,
+        "p1": 30,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 60,
+        "src": "J"
+       }
+      ]
+     },
+     {
+      "cls": "Showers",
+      "pts": 0.7,
+      "p1": 50,
+      "cc": 85,
+      "md": "11-05",
+      "label": "Thu 5 Nov",
+      "ahead": 6,
+      "hi": 15,
+      "lo": 11,
+      "scored": true,
+      "bases": [
+       {
+        "name": "Tokyo",
+        "hi": 15,
+        "lo": 11,
+        "p1": 50,
+        "p10": null,
+        "med": null,
+        "cls": "Showers",
+        "cc": 85,
+        "src": "J"
+       },
+       {
+        "name": "Hakone",
+        "hi": null,
+        "lo": null,
+        "p1": 50,
+        "p10": null,
+        "med": null,
+        "cls": "Showers",
+        "cc": 85,
         "src": "J"
        }
       ]
@@ -1136,16 +1246,16 @@
       "pts": 1.0,
       "p1": 30,
       "cc": 60,
-      "md": "11-03",
-      "label": "Tue 3 Nov",
-      "ahead": 5,
-      "hi": 20,
+      "md": "11-06",
+      "label": "Fri 6 Nov",
+      "ahead": 7,
+      "hi": 21,
       "lo": 13,
       "scored": true,
       "bases": [
        {
         "name": "Tokyo",
-        "hi": 20,
+        "hi": 21,
         "lo": 13,
         "p1": 30,
         "p10": null,
@@ -1170,119 +1280,11 @@
      {
       "cls": "Dry",
       "pts": 1.0,
-      "p1": 25,
-      "cc": 48,
-      "md": "11-04",
-      "label": "Wed 4 Nov",
-      "ahead": 6,
-      "hi": 18,
-      "lo": 11,
-      "scored": true,
-      "bases": [
-       {
-        "name": "Tokyo",
-        "hi": 18,
-        "lo": 11,
-        "p1": 20,
-        "p10": null,
-        "med": null,
-        "cls": "Dry",
-        "cc": 35,
-        "src": "J"
-       },
-       {
-        "name": "Hakone",
-        "hi": null,
-        "lo": null,
-        "p1": 30,
-        "p10": null,
-        "med": null,
-        "cls": "Dry",
-        "cc": 60,
-        "src": "J"
-       }
-      ]
-     },
-     {
-      "cls": "Dry",
-      "pts": 1.0,
-      "p1": 31,
-      "cc": 71,
-      "md": "11-05",
-      "label": "Thu 5 Nov",
-      "ahead": 7,
-      "hi": 15,
-      "lo": 8,
-      "scored": false,
-      "bases": [
-       {
-        "name": "Tokyo",
-        "hi": 15,
-        "lo": 8,
-        "p1": 31,
-        "p10": 6,
-        "med": 0.0,
-        "cls": "Dry",
-        "cc": 71,
-        "src": "E"
-       },
-       {
-        "name": "Hakone",
-        "hi": null,
-        "lo": null,
-        "p1": null,
-        "p10": null,
-        "med": null,
-        "cls": null,
-        "cc": null,
-        "src": null
-       }
-      ]
-     },
-     {
-      "cls": "Dry",
-      "pts": 1.0,
-      "p1": 39,
-      "cc": 60,
-      "md": "11-06",
-      "label": "Fri 6 Nov",
-      "ahead": 8,
-      "hi": 16,
-      "lo": 9,
-      "scored": false,
-      "bases": [
-       {
-        "name": "Tokyo",
-        "hi": 16,
-        "lo": 9,
-        "p1": 39,
-        "p10": 12,
-        "med": 0.6,
-        "cls": "Dry",
-        "cc": 60,
-        "src": "E"
-       },
-       {
-        "name": "Hakone",
-        "hi": null,
-        "lo": null,
-        "p1": null,
-        "p10": null,
-        "med": null,
-        "cls": null,
-        "cc": null,
-        "src": null
-       }
-      ]
-     },
-     {
-      "cls": "Dry",
-      "pts": 1.0,
       "p1": 35,
       "cc": 55,
       "md": "11-07",
       "label": "Sat 7 Nov",
-      "ahead": 9,
+      "ahead": 8,
       "hi": 17,
       "lo": 10,
       "scored": false,
@@ -1320,8 +1322,8 @@
        "p10": null,
        "med": null,
        "cls": "Dry",
-       "cc": 80,
-       "p1": 30,
+       "cc": 35,
+       "p1": 10,
        "hi": 24,
        "lo": 14,
        "src": "J"
@@ -1334,8 +1336,8 @@
        "cls": "Dry",
        "cc": 35,
        "p1": 20,
-       "hi": 20,
-       "lo": 12,
+       "hi": 21,
+       "lo": 14,
        "src": "J"
       },
       {
@@ -1346,8 +1348,8 @@
        "cls": "Showers",
        "cc": 80,
        "p1": 40,
-       "hi": 22,
-       "lo": 15,
+       "hi": 21,
+       "lo": 14,
        "src": "J"
       },
       {
@@ -1356,10 +1358,10 @@
        "p10": null,
        "med": null,
        "cls": "Dry",
-       "cc": 60,
-       "p1": 30,
-       "hi": 20,
-       "lo": 13,
+       "cc": 35,
+       "p1": 20,
+       "hi": 22,
+       "lo": 14,
        "src": "J"
       },
       {
@@ -1370,33 +1372,33 @@
        "cls": "Dry",
        "cc": 35,
        "p1": 20,
-       "hi": 18,
-       "lo": 11,
+       "hi": 19,
+       "lo": 12,
        "src": "J"
       },
       {
        "md": "11-05",
        "label": "Thu 5 Nov",
-       "p10": 6,
-       "med": 0.0,
-       "cls": "Dry",
-       "cc": 71,
-       "p1": 31,
+       "p10": null,
+       "med": null,
+       "cls": "Showers",
+       "cc": 85,
+       "p1": 50,
        "hi": 15,
-       "lo": 8,
-       "src": "E"
+       "lo": 11,
+       "src": "J"
       },
       {
        "md": "11-06",
        "label": "Fri 6 Nov",
-       "p10": 12,
-       "med": 0.6,
+       "p10": null,
+       "med": null,
        "cls": "Dry",
        "cc": 60,
-       "p1": 39,
-       "hi": 16,
-       "lo": 9,
-       "src": "E"
+       "p1": 30,
+       "hi": 21,
+       "lo": 13,
+       "src": "J"
       },
       {
        "md": "11-07",
@@ -1418,8 +1420,8 @@
        "p10": null,
        "med": null,
        "cls": "Dry",
-       "cc": 80,
-       "p1": 30,
+       "cc": 20,
+       "p1": 20,
        "hi": null,
        "lo": null,
        "src": "J"
@@ -1442,8 +1444,8 @@
        "p10": null,
        "med": null,
        "cls": "Showers",
-       "cc": 80,
-       "p1": 40,
+       "cc": 85,
+       "p1": 50,
        "hi": null,
        "lo": null,
        "src": "J"
@@ -1477,24 +1479,24 @@
        "label": "Thu 5 Nov",
        "p10": null,
        "med": null,
-       "cls": null,
-       "cc": null,
-       "p1": null,
+       "cls": "Showers",
+       "cc": 85,
+       "p1": 50,
        "hi": null,
        "lo": null,
-       "src": null
+       "src": "J"
       },
       {
        "md": "11-06",
        "label": "Fri 6 Nov",
        "p10": null,
        "med": null,
-       "cls": null,
-       "cc": null,
-       "p1": null,
+       "cls": "Dry",
+       "cc": 60,
+       "p1": 30,
        "hi": null,
        "lo": null,
-       "src": null
+       "src": "J"
       },
       {
        "md": "11-07",
@@ -1510,7 +1512,7 @@
       }
      ]
     },
-    "cc": 61
+    "cc": 55
    },
    "options": [
     {
@@ -1843,6 +1845,7 @@
     "rain": "Shrine halls are covered; Rinnoji's treasure house; a town onsen",
     "room": "Guesthouse near the shrines, private room ~€62"
    },
+   "bike": null,
    "out": {
     "route": "HKG → NRT",
     "price": 116,
@@ -1890,7 +1893,7 @@
    "fc": {
     "score": 4.5,
     "word": "Mostly dry",
-    "note": "Mostly dry for Tokyo, Nikko. 31 Oct – 4 Nov (official forecasts): no wet day; showers possible on Mon 2 Nov. Daytime cloud 60% on average. Checked 29 Oct 2026, 13:00 Hong Kong time; recheck on 30 Oct.",
+    "note": "Mostly dry for Tokyo, Nikko. Official forecasts: no wet day; showers possible on Mon 2 Nov, Thu 5 Nov. Daytime cloud 52% on average. Checked 30 Oct 2026, 15:00 Hong Kong time.",
     "bases": [
      "Tokyo",
      "Nikko"
@@ -1898,12 +1901,12 @@
     "days": [
      {
       "cls": "Dry",
-      "pts": 0.85,
-      "p1": 35,
-      "cc": 80,
+      "pts": 1.0,
+      "p1": 10,
+      "cc": 28,
       "md": "10-31",
       "label": "Sat 31 Oct",
-      "ahead": 2,
+      "ahead": 1,
       "hi": 24,
       "lo": 14,
       "scored": true,
@@ -1912,22 +1915,22 @@
         "name": "Tokyo",
         "hi": 24,
         "lo": 14,
-        "p1": 30,
+        "p1": 10,
         "p10": null,
         "med": null,
         "cls": "Dry",
-        "cc": 80,
+        "cc": 35,
         "src": "J"
        },
        {
         "name": "Nikko",
         "hi": null,
         "lo": null,
-        "p1": 40,
+        "p1": 10,
         "p10": null,
         "med": null,
-        "cls": "Showers",
-        "cc": 80,
+        "cls": "Dry",
+        "cc": 20,
         "src": "J"
        }
       ]
@@ -1939,15 +1942,15 @@
       "cc": 35,
       "md": "11-01",
       "label": "Sun 1 Nov",
-      "ahead": 3,
-      "hi": 20,
-      "lo": 12,
+      "ahead": 2,
+      "hi": 21,
+      "lo": 14,
       "scored": true,
       "bases": [
        {
         "name": "Tokyo",
-        "hi": 20,
-        "lo": 12,
+        "hi": 21,
+        "lo": 14,
         "p1": 20,
         "p10": null,
         "med": null,
@@ -1975,15 +1978,15 @@
       "cc": 80,
       "md": "11-02",
       "label": "Mon 2 Nov",
-      "ahead": 4,
-      "hi": 22,
-      "lo": 15,
+      "ahead": 3,
+      "hi": 21,
+      "lo": 14,
       "scored": true,
       "bases": [
        {
         "name": "Tokyo",
-        "hi": 22,
-        "lo": 15,
+        "hi": 21,
+        "lo": 14,
         "p1": 40,
         "p10": null,
         "med": null,
@@ -2007,18 +2010,126 @@
      {
       "cls": "Dry",
       "pts": 1.0,
-      "p1": 30,
-      "cc": 60,
+      "p1": 20,
+      "cc": 35,
       "md": "11-03",
       "label": "Tue 3 Nov",
+      "ahead": 4,
+      "hi": 22,
+      "lo": 14,
+      "scored": true,
+      "bases": [
+       {
+        "name": "Tokyo",
+        "hi": 22,
+        "lo": 14,
+        "p1": 20,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 35,
+        "src": "J"
+       },
+       {
+        "name": "Nikko",
+        "hi": null,
+        "lo": null,
+        "p1": 20,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 35,
+        "src": "J"
+       }
+      ]
+     },
+     {
+      "cls": "Dry",
+      "pts": 1.0,
+      "p1": 20,
+      "cc": 35,
+      "md": "11-04",
+      "label": "Wed 4 Nov",
       "ahead": 5,
-      "hi": 20,
+      "hi": 19,
+      "lo": 12,
+      "scored": true,
+      "bases": [
+       {
+        "name": "Tokyo",
+        "hi": 19,
+        "lo": 12,
+        "p1": 20,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 35,
+        "src": "J"
+       },
+       {
+        "name": "Nikko",
+        "hi": null,
+        "lo": null,
+        "p1": 20,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 35,
+        "src": "J"
+       }
+      ]
+     },
+     {
+      "cls": "Showers",
+      "pts": 0.7,
+      "p1": 50,
+      "cc": 85,
+      "md": "11-05",
+      "label": "Thu 5 Nov",
+      "ahead": 6,
+      "hi": 15,
+      "lo": 11,
+      "scored": true,
+      "bases": [
+       {
+        "name": "Tokyo",
+        "hi": 15,
+        "lo": 11,
+        "p1": 50,
+        "p10": null,
+        "med": null,
+        "cls": "Showers",
+        "cc": 85,
+        "src": "J"
+       },
+       {
+        "name": "Nikko",
+        "hi": null,
+        "lo": null,
+        "p1": 50,
+        "p10": null,
+        "med": null,
+        "cls": "Showers",
+        "cc": 85,
+        "src": "J"
+       }
+      ]
+     },
+     {
+      "cls": "Dry",
+      "pts": 1.0,
+      "p1": 30,
+      "cc": 60,
+      "md": "11-06",
+      "label": "Fri 6 Nov",
+      "ahead": 7,
+      "hi": 21,
       "lo": 13,
       "scored": true,
       "bases": [
        {
         "name": "Tokyo",
-        "hi": 20,
+        "hi": 21,
         "lo": 13,
         "p1": 30,
         "p10": null,
@@ -2043,119 +2154,11 @@
      {
       "cls": "Dry",
       "pts": 1.0,
-      "p1": 20,
-      "cc": 35,
-      "md": "11-04",
-      "label": "Wed 4 Nov",
-      "ahead": 6,
-      "hi": 18,
-      "lo": 11,
-      "scored": true,
-      "bases": [
-       {
-        "name": "Tokyo",
-        "hi": 18,
-        "lo": 11,
-        "p1": 20,
-        "p10": null,
-        "med": null,
-        "cls": "Dry",
-        "cc": 35,
-        "src": "J"
-       },
-       {
-        "name": "Nikko",
-        "hi": null,
-        "lo": null,
-        "p1": 20,
-        "p10": null,
-        "med": null,
-        "cls": "Dry",
-        "cc": 35,
-        "src": "J"
-       }
-      ]
-     },
-     {
-      "cls": "Dry",
-      "pts": 1.0,
-      "p1": 31,
-      "cc": 71,
-      "md": "11-05",
-      "label": "Thu 5 Nov",
-      "ahead": 7,
-      "hi": 15,
-      "lo": 8,
-      "scored": false,
-      "bases": [
-       {
-        "name": "Tokyo",
-        "hi": 15,
-        "lo": 8,
-        "p1": 31,
-        "p10": 6,
-        "med": 0.0,
-        "cls": "Dry",
-        "cc": 71,
-        "src": "E"
-       },
-       {
-        "name": "Nikko",
-        "hi": null,
-        "lo": null,
-        "p1": null,
-        "p10": null,
-        "med": null,
-        "cls": null,
-        "cc": null,
-        "src": null
-       }
-      ]
-     },
-     {
-      "cls": "Dry",
-      "pts": 1.0,
-      "p1": 39,
-      "cc": 60,
-      "md": "11-06",
-      "label": "Fri 6 Nov",
-      "ahead": 8,
-      "hi": 16,
-      "lo": 9,
-      "scored": false,
-      "bases": [
-       {
-        "name": "Tokyo",
-        "hi": 16,
-        "lo": 9,
-        "p1": 39,
-        "p10": 12,
-        "med": 0.6,
-        "cls": "Dry",
-        "cc": 60,
-        "src": "E"
-       },
-       {
-        "name": "Nikko",
-        "hi": null,
-        "lo": null,
-        "p1": null,
-        "p10": null,
-        "med": null,
-        "cls": null,
-        "cc": null,
-        "src": null
-       }
-      ]
-     },
-     {
-      "cls": "Dry",
-      "pts": 1.0,
       "p1": 35,
       "cc": 55,
       "md": "11-07",
       "label": "Sat 7 Nov",
-      "ahead": 9,
+      "ahead": 8,
       "hi": 17,
       "lo": 10,
       "scored": false,
@@ -2193,8 +2196,8 @@
        "p10": null,
        "med": null,
        "cls": "Dry",
-       "cc": 80,
-       "p1": 30,
+       "cc": 35,
+       "p1": 10,
        "hi": 24,
        "lo": 14,
        "src": "J"
@@ -2207,8 +2210,8 @@
        "cls": "Dry",
        "cc": 35,
        "p1": 20,
-       "hi": 20,
-       "lo": 12,
+       "hi": 21,
+       "lo": 14,
        "src": "J"
       },
       {
@@ -2219,8 +2222,8 @@
        "cls": "Showers",
        "cc": 80,
        "p1": 40,
-       "hi": 22,
-       "lo": 15,
+       "hi": 21,
+       "lo": 14,
        "src": "J"
       },
       {
@@ -2229,10 +2232,10 @@
        "p10": null,
        "med": null,
        "cls": "Dry",
-       "cc": 60,
-       "p1": 30,
-       "hi": 20,
-       "lo": 13,
+       "cc": 35,
+       "p1": 20,
+       "hi": 22,
+       "lo": 14,
        "src": "J"
       },
       {
@@ -2243,33 +2246,33 @@
        "cls": "Dry",
        "cc": 35,
        "p1": 20,
-       "hi": 18,
-       "lo": 11,
+       "hi": 19,
+       "lo": 12,
        "src": "J"
       },
       {
        "md": "11-05",
        "label": "Thu 5 Nov",
-       "p10": 6,
-       "med": 0.0,
-       "cls": "Dry",
-       "cc": 71,
-       "p1": 31,
+       "p10": null,
+       "med": null,
+       "cls": "Showers",
+       "cc": 85,
+       "p1": 50,
        "hi": 15,
-       "lo": 8,
-       "src": "E"
+       "lo": 11,
+       "src": "J"
       },
       {
        "md": "11-06",
        "label": "Fri 6 Nov",
-       "p10": 12,
-       "med": 0.6,
+       "p10": null,
+       "med": null,
        "cls": "Dry",
        "cc": 60,
-       "p1": 39,
-       "hi": 16,
-       "lo": 9,
-       "src": "E"
+       "p1": 30,
+       "hi": 21,
+       "lo": 13,
+       "src": "J"
       },
       {
        "md": "11-07",
@@ -2290,9 +2293,9 @@
        "label": "Sat 31 Oct",
        "p10": null,
        "med": null,
-       "cls": "Showers",
-       "cc": 80,
-       "p1": 40,
+       "cls": "Dry",
+       "cc": 20,
+       "p1": 10,
        "hi": null,
        "lo": null,
        "src": "J"
@@ -2327,8 +2330,8 @@
        "p10": null,
        "med": null,
        "cls": "Dry",
-       "cc": 60,
-       "p1": 30,
+       "cc": 35,
+       "p1": 20,
        "hi": null,
        "lo": null,
        "src": "J"
@@ -2350,24 +2353,24 @@
        "label": "Thu 5 Nov",
        "p10": null,
        "med": null,
-       "cls": null,
-       "cc": null,
-       "p1": null,
+       "cls": "Showers",
+       "cc": 85,
+       "p1": 50,
        "hi": null,
        "lo": null,
-       "src": null
+       "src": "J"
       },
       {
        "md": "11-06",
        "label": "Fri 6 Nov",
        "p10": null,
        "med": null,
-       "cls": null,
-       "cc": null,
-       "p1": null,
+       "cls": "Dry",
+       "cc": 60,
+       "p1": 30,
        "hi": null,
        "lo": null,
-       "src": null
+       "src": "J"
       },
       {
        "md": "11-07",
@@ -2383,7 +2386,7 @@
       }
      ]
     },
-    "cc": 60
+    "cc": 52
    },
    "options": [
     {
@@ -2705,6 +2708,7 @@
     "rain": "Kanazawa is used to it: museums, teahouses, the market, the ryokan",
     "room": "Kanazawa hotel ~€75; Yamanaka ryokan with dinner ~€190"
    },
+   "bike": "Machi-nori bike-share round the city (Sun)",
    "out": {
     "route": "HKG → KMQ",
     "price": 205,
@@ -2752,7 +2756,7 @@
    "fc": {
     "score": 4.0,
     "word": "Some showers",
-    "note": "Some showers for Kanazawa, Yamanaka Onsen, Shirakawa-go, Takayama, Tokyo. 31 Oct – 4 Nov (official forecasts): wet on Mon 2 Nov; showers possible on Sat 31 Oct, Tue 3 Nov. Daytime cloud 63% on average. Checked 29 Oct 2026, 13:00 Hong Kong time; recheck on 30 Oct.",
+    "note": "Some showers for Kanazawa, Yamanaka Onsen, Shirakawa-go, Takayama, Tokyo. Official forecasts: wet on Mon 2 Nov; showers possible on Sat 31 Oct, Thu 5 Nov. Daytime cloud 66% on average. Checked 30 Oct 2026, 15:00 Hong Kong time.",
     "bases": [
      "Kanazawa",
      "Yamanaka Onsen",
@@ -2763,21 +2767,21 @@
     "days": [
      {
       "cls": "Showers",
-      "pts": 0.62,
-      "p1": 46,
-      "cc": 82,
+      "pts": 0.74,
+      "p1": 42,
+      "cc": 55,
       "md": "10-31",
       "label": "Sat 31 Oct",
-      "ahead": 2,
-      "hi": 20,
-      "lo": 12,
+      "ahead": 1,
+      "hi": 21,
+      "lo": 13,
       "scored": true,
       "bases": [
        {
         "name": "Kanazawa",
-        "hi": 20,
-        "lo": 12,
-        "p1": 60,
+        "hi": 21,
+        "lo": 13,
+        "p1": 70,
         "p10": null,
         "med": null,
         "cls": "Wet",
@@ -2788,7 +2792,7 @@
         "name": "Yamanaka Onsen",
         "hi": 18,
         "lo": 11,
-        "p1": 60,
+        "p1": 70,
         "p10": null,
         "med": null,
         "cls": "Wet",
@@ -2799,17 +2803,53 @@
         "name": "Shirakawa-go",
         "hi": 15,
         "lo": 8,
-        "p1": 40,
+        "p1": 30,
         "p10": null,
         "med": null,
-        "cls": "Showers",
-        "cc": 80,
+        "cls": "Dry",
+        "cc": 35,
         "src": "J"
        },
        {
         "name": "Takayama",
         "hi": 16,
         "lo": 7,
+        "p1": 30,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 35,
+        "src": "J"
+       },
+       {
+        "name": "Tokyo",
+        "hi": 24,
+        "lo": 14,
+        "p1": 10,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 35,
+        "src": "J"
+       }
+      ]
+     },
+     {
+      "cls": "Dry",
+      "pts": 0.88,
+      "p1": 32,
+      "cc": 59,
+      "md": "11-01",
+      "label": "Sun 1 Nov",
+      "ahead": 2,
+      "hi": 19,
+      "lo": 11,
+      "scored": true,
+      "bases": [
+       {
+        "name": "Kanazawa",
+        "hi": 19,
+        "lo": 11,
         "p1": 40,
         "p10": null,
         "med": null,
@@ -2818,78 +2858,42 @@
         "src": "J"
        },
        {
-        "name": "Tokyo",
-        "hi": 24,
-        "lo": 14,
-        "p1": 30,
-        "p10": null,
-        "med": null,
-        "cls": "Dry",
-        "cc": 80,
-        "src": "J"
-       }
-      ]
-     },
-     {
-      "cls": "Dry",
-      "pts": 1.0,
-      "p1": 24,
-      "cc": 45,
-      "md": "11-01",
-      "label": "Sun 1 Nov",
-      "ahead": 3,
-      "hi": 19,
-      "lo": 10,
-      "scored": true,
-      "bases": [
-       {
-        "name": "Kanazawa",
-        "hi": 19,
-        "lo": 10,
-        "p1": 30,
-        "p10": null,
-        "med": null,
-        "cls": "Dry",
-        "cc": 60,
-        "src": "J"
-       },
-       {
         "name": "Yamanaka Onsen",
         "hi": 16,
         "lo": 10,
-        "p1": 30,
+        "p1": 40,
         "p10": null,
         "med": null,
-        "cls": "Dry",
-        "cc": 60,
+        "cls": "Showers",
+        "cc": 80,
         "src": "J"
        },
        {
         "name": "Shirakawa-go",
         "hi": 16,
         "lo": 6,
-        "p1": 20,
+        "p1": 30,
         "p10": null,
         "med": null,
         "cls": "Dry",
-        "cc": 35,
+        "cc": 50,
         "src": "J"
        },
        {
         "name": "Takayama",
         "hi": 16,
         "lo": 5,
-        "p1": 20,
+        "p1": 30,
         "p10": null,
         "med": null,
         "cls": "Dry",
-        "cc": 35,
+        "cc": 50,
         "src": "J"
        },
        {
         "name": "Tokyo",
-        "hi": 20,
-        "lo": 12,
+        "hi": 21,
+        "lo": 14,
         "p1": 20,
         "p10": null,
         "med": null,
@@ -2906,15 +2910,15 @@
       "cc": 84,
       "md": "11-02",
       "label": "Mon 2 Nov",
-      "ahead": 4,
+      "ahead": 3,
       "hi": 18,
-      "lo": 13,
+      "lo": 14,
       "scored": true,
       "bases": [
        {
         "name": "Kanazawa",
         "hi": 18,
-        "lo": 13,
+        "lo": 14,
         "p1": 60,
         "p10": null,
         "med": null,
@@ -2957,8 +2961,8 @@
        },
        {
         "name": "Tokyo",
-        "hi": 22,
-        "lo": 15,
+        "hi": 21,
+        "lo": 14,
         "p1": 40,
         "p10": null,
         "med": null,
@@ -2969,21 +2973,21 @@
       ]
      },
      {
-      "cls": "Showers",
-      "pts": 0.76,
-      "p1": 38,
-      "cc": 76,
+      "cls": "Dry",
+      "pts": 0.88,
+      "p1": 32,
+      "cc": 63,
       "md": "11-03",
       "label": "Tue 3 Nov",
-      "ahead": 5,
-      "hi": 16,
-      "lo": 10,
+      "ahead": 4,
+      "hi": 17,
+      "lo": 11,
       "scored": true,
       "bases": [
        {
         "name": "Kanazawa",
-        "hi": 16,
-        "lo": 10,
+        "hi": 17,
+        "lo": 11,
         "p1": 40,
         "p10": null,
         "med": null,
@@ -3006,27 +3010,234 @@
         "name": "Shirakawa-go",
         "hi": 14,
         "lo": 5,
-        "p1": 40,
+        "p1": 30,
         "p10": null,
         "med": null,
-        "cls": "Showers",
-        "cc": 80,
+        "cls": "Dry",
+        "cc": 60,
         "src": "J"
        },
        {
         "name": "Takayama",
         "hi": 14,
         "lo": 4,
-        "p1": 40,
+        "p1": 30,
         "p10": null,
         "med": null,
-        "cls": "Showers",
-        "cc": 80,
+        "cls": "Dry",
+        "cc": 60,
         "src": "J"
        },
        {
         "name": "Tokyo",
-        "hi": 20,
+        "hi": 22,
+        "lo": 14,
+        "p1": 20,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 35,
+        "src": "J"
+       }
+      ]
+     },
+     {
+      "cls": "Dry",
+      "pts": 1.0,
+      "p1": 28,
+      "cc": 55,
+      "md": "11-04",
+      "label": "Wed 4 Nov",
+      "ahead": 5,
+      "hi": 17,
+      "lo": 9,
+      "scored": true,
+      "bases": [
+       {
+        "name": "Kanazawa",
+        "hi": 17,
+        "lo": 9,
+        "p1": 30,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 60,
+        "src": "J"
+       },
+       {
+        "name": "Yamanaka Onsen",
+        "hi": 14,
+        "lo": 7,
+        "p1": 30,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 60,
+        "src": "J"
+       },
+       {
+        "name": "Shirakawa-go",
+        "hi": 13,
+        "lo": 4,
+        "p1": 30,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 60,
+        "src": "J"
+       },
+       {
+        "name": "Takayama",
+        "hi": 13,
+        "lo": 2,
+        "p1": 30,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 60,
+        "src": "J"
+       },
+       {
+        "name": "Tokyo",
+        "hi": 19,
+        "lo": 12,
+        "p1": 20,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 35,
+        "src": "J"
+       }
+      ]
+     },
+     {
+      "cls": "Showers",
+      "pts": 0.7,
+      "p1": 50,
+      "cc": 85,
+      "md": "11-05",
+      "label": "Thu 5 Nov",
+      "ahead": 6,
+      "hi": 18,
+      "lo": 12,
+      "scored": true,
+      "bases": [
+       {
+        "name": "Kanazawa",
+        "hi": 18,
+        "lo": 12,
+        "p1": 50,
+        "p10": null,
+        "med": null,
+        "cls": "Showers",
+        "cc": 85,
+        "src": "J"
+       },
+       {
+        "name": "Yamanaka Onsen",
+        "hi": 15,
+        "lo": 7,
+        "p1": 50,
+        "p10": null,
+        "med": null,
+        "cls": "Showers",
+        "cc": 85,
+        "src": "J"
+       },
+       {
+        "name": "Shirakawa-go",
+        "hi": 15,
+        "lo": 3,
+        "p1": 50,
+        "p10": null,
+        "med": null,
+        "cls": "Showers",
+        "cc": 85,
+        "src": "J"
+       },
+       {
+        "name": "Takayama",
+        "hi": 14,
+        "lo": 2,
+        "p1": 50,
+        "p10": null,
+        "med": null,
+        "cls": "Showers",
+        "cc": 85,
+        "src": "J"
+       },
+       {
+        "name": "Tokyo",
+        "hi": 15,
+        "lo": 11,
+        "p1": 50,
+        "p10": null,
+        "med": null,
+        "cls": "Showers",
+        "cc": 85,
+        "src": "J"
+       }
+      ]
+     },
+     {
+      "cls": "Dry",
+      "pts": 0.88,
+      "p1": 38,
+      "cc": 70,
+      "md": "11-06",
+      "label": "Fri 6 Nov",
+      "ahead": 7,
+      "hi": 19,
+      "lo": 13,
+      "scored": true,
+      "bases": [
+       {
+        "name": "Kanazawa",
+        "hi": 19,
+        "lo": 13,
+        "p1": 50,
+        "p10": null,
+        "med": null,
+        "cls": "Showers",
+        "cc": 85,
+        "src": "J"
+       },
+       {
+        "name": "Yamanaka Onsen",
+        "hi": 16,
+        "lo": 8,
+        "p1": 50,
+        "p10": null,
+        "med": null,
+        "cls": "Showers",
+        "cc": 85,
+        "src": "J"
+       },
+       {
+        "name": "Shirakawa-go",
+        "hi": 15,
+        "lo": 4,
+        "p1": 30,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 60,
+        "src": "J"
+       },
+       {
+        "name": "Takayama",
+        "hi": 15,
+        "lo": 3,
+        "p1": 30,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 60,
+        "src": "J"
+       },
+       {
+        "name": "Tokyo",
+        "hi": 21,
         "lo": 13,
         "p1": 30,
         "p10": null,
@@ -3040,218 +3251,11 @@
      {
       "cls": "Dry",
       "pts": 1.0,
-      "p1": 24,
-      "cc": 55,
-      "md": "11-04",
-      "label": "Wed 4 Nov",
-      "ahead": 6,
-      "hi": 18,
-      "lo": 9,
-      "scored": true,
-      "bases": [
-       {
-        "name": "Kanazawa",
-        "hi": 18,
-        "lo": 9,
-        "p1": 30,
-        "p10": null,
-        "med": null,
-        "cls": "Dry",
-        "cc": 60,
-        "src": "J"
-       },
-       {
-        "name": "Yamanaka Onsen",
-        "hi": 14,
-        "lo": 7,
-        "p1": 30,
-        "p10": null,
-        "med": null,
-        "cls": "Dry",
-        "cc": 60,
-        "src": "J"
-       },
-       {
-        "name": "Shirakawa-go",
-        "hi": 13,
-        "lo": 4,
-        "p1": 20,
-        "p10": null,
-        "med": null,
-        "cls": "Dry",
-        "cc": 60,
-        "src": "J"
-       },
-       {
-        "name": "Takayama",
-        "hi": 13,
-        "lo": 2,
-        "p1": 20,
-        "p10": null,
-        "med": null,
-        "cls": "Dry",
-        "cc": 60,
-        "src": "J"
-       },
-       {
-        "name": "Tokyo",
-        "hi": 18,
-        "lo": 11,
-        "p1": 20,
-        "p10": null,
-        "med": null,
-        "cls": "Dry",
-        "cc": 35,
-        "src": "J"
-       }
-      ]
-     },
-     {
-      "cls": "Dry",
-      "pts": 1.0,
-      "p1": 36,
-      "cc": 55,
-      "md": "11-05",
-      "label": "Thu 5 Nov",
-      "ahead": 7,
-      "hi": 15,
-      "lo": 6,
-      "scored": false,
-      "bases": [
-       {
-        "name": "Kanazawa",
-        "hi": 15,
-        "lo": 6,
-        "p1": 45,
-        "p10": 10,
-        "med": 0.6,
-        "cls": "Dry",
-        "cc": 51,
-        "src": "E"
-       },
-       {
-        "name": "Yamanaka Onsen",
-        "hi": 15,
-        "lo": 7,
-        "p1": 43,
-        "p10": 10,
-        "med": 0.2,
-        "cls": "Dry",
-        "cc": 43,
-        "src": "E"
-       },
-       {
-        "name": "Shirakawa-go",
-        "hi": 15,
-        "lo": 3,
-        "p1": 35,
-        "p10": 8,
-        "med": 0.0,
-        "cls": "Dry",
-        "cc": 56,
-        "src": "E"
-       },
-       {
-        "name": "Takayama",
-        "hi": 14,
-        "lo": 2,
-        "p1": 25,
-        "p10": 8,
-        "med": 0.0,
-        "cls": "Dry",
-        "cc": 53,
-        "src": "E"
-       },
-       {
-        "name": "Tokyo",
-        "hi": 15,
-        "lo": 8,
-        "p1": 31,
-        "p10": 6,
-        "med": 0.0,
-        "cls": "Dry",
-        "cc": 71,
-        "src": "E"
-       }
-      ]
-     },
-     {
-      "cls": "Dry",
-      "pts": 1.0,
-      "p1": 33,
-      "cc": 50,
-      "md": "11-06",
-      "label": "Fri 6 Nov",
-      "ahead": 8,
-      "hi": 17,
-      "lo": 7,
-      "scored": false,
-      "bases": [
-       {
-        "name": "Kanazawa",
-        "hi": 17,
-        "lo": 7,
-        "p1": 35,
-        "p10": 6,
-        "med": 0.2,
-        "cls": "Dry",
-        "cc": 48,
-        "src": "E"
-       },
-       {
-        "name": "Yamanaka Onsen",
-        "hi": 16,
-        "lo": 8,
-        "p1": 35,
-        "p10": 12,
-        "med": 0.4,
-        "cls": "Dry",
-        "cc": 45,
-        "src": "E"
-       },
-       {
-        "name": "Shirakawa-go",
-        "hi": 15,
-        "lo": 4,
-        "p1": 31,
-        "p10": 6,
-        "med": 0.2,
-        "cls": "Dry",
-        "cc": 54,
-        "src": "E"
-       },
-       {
-        "name": "Takayama",
-        "hi": 15,
-        "lo": 3,
-        "p1": 25,
-        "p10": 6,
-        "med": 0.0,
-        "cls": "Dry",
-        "cc": 45,
-        "src": "E"
-       },
-       {
-        "name": "Tokyo",
-        "hi": 16,
-        "lo": 9,
-        "p1": 39,
-        "p10": 12,
-        "med": 0.6,
-        "cls": "Dry",
-        "cc": 60,
-        "src": "E"
-       }
-      ]
-     },
-     {
-      "cls": "Dry",
-      "pts": 1.0,
       "p1": 41,
       "cc": 55,
       "md": "11-07",
       "label": "Sat 7 Nov",
-      "ahead": 9,
+      "ahead": 8,
       "hi": 18,
       "lo": 8,
       "scored": false,
@@ -3323,9 +3327,9 @@
        "med": null,
        "cls": "Wet",
        "cc": 85,
-       "p1": 60,
-       "hi": 20,
-       "lo": 12,
+       "p1": 70,
+       "hi": 21,
+       "lo": 13,
        "src": "J"
       },
       {
@@ -3333,11 +3337,11 @@
        "label": "Sun 1 Nov",
        "p10": null,
        "med": null,
-       "cls": "Dry",
-       "cc": 60,
-       "p1": 30,
+       "cls": "Showers",
+       "cc": 80,
+       "p1": 40,
        "hi": 19,
-       "lo": 10,
+       "lo": 11,
        "src": "J"
       },
       {
@@ -3349,7 +3353,7 @@
        "cc": 85,
        "p1": 60,
        "hi": 18,
-       "lo": 13,
+       "lo": 14,
        "src": "J"
       },
       {
@@ -3360,8 +3364,8 @@
        "cls": "Showers",
        "cc": 80,
        "p1": 40,
-       "hi": 16,
-       "lo": 10,
+       "hi": 17,
+       "lo": 11,
        "src": "J"
       },
       {
@@ -3372,33 +3376,33 @@
        "cls": "Dry",
        "cc": 60,
        "p1": 30,
-       "hi": 18,
+       "hi": 17,
        "lo": 9,
        "src": "J"
       },
       {
        "md": "11-05",
        "label": "Thu 5 Nov",
-       "p10": 10,
-       "med": 0.6,
-       "cls": "Dry",
-       "cc": 51,
-       "p1": 45,
-       "hi": 15,
-       "lo": 6,
-       "src": "E"
+       "p10": null,
+       "med": null,
+       "cls": "Showers",
+       "cc": 85,
+       "p1": 50,
+       "hi": 18,
+       "lo": 12,
+       "src": "J"
       },
       {
        "md": "11-06",
        "label": "Fri 6 Nov",
-       "p10": 6,
-       "med": 0.2,
-       "cls": "Dry",
-       "cc": 48,
-       "p1": 35,
-       "hi": 17,
-       "lo": 7,
-       "src": "E"
+       "p10": null,
+       "med": null,
+       "cls": "Showers",
+       "cc": 85,
+       "p1": 50,
+       "hi": 19,
+       "lo": 13,
+       "src": "J"
       },
       {
        "md": "11-07",
@@ -3421,7 +3425,7 @@
        "med": null,
        "cls": "Wet",
        "cc": 85,
-       "p1": 60,
+       "p1": 70,
        "hi": 18,
        "lo": 11,
        "src": "J"
@@ -3431,9 +3435,9 @@
        "label": "Sun 1 Nov",
        "p10": null,
        "med": null,
-       "cls": "Dry",
-       "cc": 60,
-       "p1": 30,
+       "cls": "Showers",
+       "cc": 80,
+       "p1": 40,
        "hi": 16,
        "lo": 10,
        "src": "J"
@@ -3477,26 +3481,26 @@
       {
        "md": "11-05",
        "label": "Thu 5 Nov",
-       "p10": 10,
-       "med": 0.2,
-       "cls": "Dry",
-       "cc": 43,
-       "p1": 43,
+       "p10": null,
+       "med": null,
+       "cls": "Showers",
+       "cc": 85,
+       "p1": 50,
        "hi": 15,
        "lo": 7,
-       "src": "E"
+       "src": "J"
       },
       {
        "md": "11-06",
        "label": "Fri 6 Nov",
-       "p10": 12,
-       "med": 0.4,
-       "cls": "Dry",
-       "cc": 45,
-       "p1": 35,
+       "p10": null,
+       "med": null,
+       "cls": "Showers",
+       "cc": 85,
+       "p1": 50,
        "hi": 16,
        "lo": 8,
-       "src": "E"
+       "src": "J"
       },
       {
        "md": "11-07",
@@ -3517,9 +3521,9 @@
        "label": "Sat 31 Oct",
        "p10": null,
        "med": null,
-       "cls": "Showers",
-       "cc": 80,
-       "p1": 40,
+       "cls": "Dry",
+       "cc": 35,
+       "p1": 30,
        "hi": 15,
        "lo": 8,
        "src": "J"
@@ -3530,8 +3534,8 @@
        "p10": null,
        "med": null,
        "cls": "Dry",
-       "cc": 35,
-       "p1": 20,
+       "cc": 50,
+       "p1": 30,
        "hi": 16,
        "lo": 6,
        "src": "J"
@@ -3553,9 +3557,9 @@
        "label": "Tue 3 Nov",
        "p10": null,
        "med": null,
-       "cls": "Showers",
-       "cc": 80,
-       "p1": 40,
+       "cls": "Dry",
+       "cc": 60,
+       "p1": 30,
        "hi": 14,
        "lo": 5,
        "src": "J"
@@ -3567,7 +3571,7 @@
        "med": null,
        "cls": "Dry",
        "cc": 60,
-       "p1": 20,
+       "p1": 30,
        "hi": 13,
        "lo": 4,
        "src": "J"
@@ -3575,26 +3579,26 @@
       {
        "md": "11-05",
        "label": "Thu 5 Nov",
-       "p10": 8,
-       "med": 0.0,
-       "cls": "Dry",
-       "cc": 56,
-       "p1": 35,
+       "p10": null,
+       "med": null,
+       "cls": "Showers",
+       "cc": 85,
+       "p1": 50,
        "hi": 15,
        "lo": 3,
-       "src": "E"
+       "src": "J"
       },
       {
        "md": "11-06",
        "label": "Fri 6 Nov",
-       "p10": 6,
-       "med": 0.2,
+       "p10": null,
+       "med": null,
        "cls": "Dry",
-       "cc": 54,
-       "p1": 31,
+       "cc": 60,
+       "p1": 30,
        "hi": 15,
        "lo": 4,
-       "src": "E"
+       "src": "J"
       },
       {
        "md": "11-07",
@@ -3615,9 +3619,9 @@
        "label": "Sat 31 Oct",
        "p10": null,
        "med": null,
-       "cls": "Showers",
-       "cc": 80,
-       "p1": 40,
+       "cls": "Dry",
+       "cc": 35,
+       "p1": 30,
        "hi": 16,
        "lo": 7,
        "src": "J"
@@ -3628,8 +3632,8 @@
        "p10": null,
        "med": null,
        "cls": "Dry",
-       "cc": 35,
-       "p1": 20,
+       "cc": 50,
+       "p1": 30,
        "hi": 16,
        "lo": 5,
        "src": "J"
@@ -3651,9 +3655,9 @@
        "label": "Tue 3 Nov",
        "p10": null,
        "med": null,
-       "cls": "Showers",
-       "cc": 80,
-       "p1": 40,
+       "cls": "Dry",
+       "cc": 60,
+       "p1": 30,
        "hi": 14,
        "lo": 4,
        "src": "J"
@@ -3665,7 +3669,7 @@
        "med": null,
        "cls": "Dry",
        "cc": 60,
-       "p1": 20,
+       "p1": 30,
        "hi": 13,
        "lo": 2,
        "src": "J"
@@ -3673,26 +3677,26 @@
       {
        "md": "11-05",
        "label": "Thu 5 Nov",
-       "p10": 8,
-       "med": 0.0,
-       "cls": "Dry",
-       "cc": 53,
-       "p1": 25,
+       "p10": null,
+       "med": null,
+       "cls": "Showers",
+       "cc": 85,
+       "p1": 50,
        "hi": 14,
        "lo": 2,
-       "src": "E"
+       "src": "J"
       },
       {
        "md": "11-06",
        "label": "Fri 6 Nov",
-       "p10": 6,
-       "med": 0.0,
+       "p10": null,
+       "med": null,
        "cls": "Dry",
-       "cc": 45,
-       "p1": 25,
+       "cc": 60,
+       "p1": 30,
        "hi": 15,
        "lo": 3,
-       "src": "E"
+       "src": "J"
       },
       {
        "md": "11-07",
@@ -3714,8 +3718,8 @@
        "p10": null,
        "med": null,
        "cls": "Dry",
-       "cc": 80,
-       "p1": 30,
+       "cc": 35,
+       "p1": 10,
        "hi": 24,
        "lo": 14,
        "src": "J"
@@ -3728,8 +3732,8 @@
        "cls": "Dry",
        "cc": 35,
        "p1": 20,
-       "hi": 20,
-       "lo": 12,
+       "hi": 21,
+       "lo": 14,
        "src": "J"
       },
       {
@@ -3740,8 +3744,8 @@
        "cls": "Showers",
        "cc": 80,
        "p1": 40,
-       "hi": 22,
-       "lo": 15,
+       "hi": 21,
+       "lo": 14,
        "src": "J"
       },
       {
@@ -3750,10 +3754,10 @@
        "p10": null,
        "med": null,
        "cls": "Dry",
-       "cc": 60,
-       "p1": 30,
-       "hi": 20,
-       "lo": 13,
+       "cc": 35,
+       "p1": 20,
+       "hi": 22,
+       "lo": 14,
        "src": "J"
       },
       {
@@ -3764,33 +3768,33 @@
        "cls": "Dry",
        "cc": 35,
        "p1": 20,
-       "hi": 18,
-       "lo": 11,
+       "hi": 19,
+       "lo": 12,
        "src": "J"
       },
       {
        "md": "11-05",
        "label": "Thu 5 Nov",
-       "p10": 6,
-       "med": 0.0,
-       "cls": "Dry",
-       "cc": 71,
-       "p1": 31,
+       "p10": null,
+       "med": null,
+       "cls": "Showers",
+       "cc": 85,
+       "p1": 50,
        "hi": 15,
-       "lo": 8,
-       "src": "E"
+       "lo": 11,
+       "src": "J"
       },
       {
        "md": "11-06",
        "label": "Fri 6 Nov",
-       "p10": 12,
-       "med": 0.6,
+       "p10": null,
+       "med": null,
        "cls": "Dry",
        "cc": 60,
-       "p1": 39,
-       "hi": 16,
-       "lo": 9,
-       "src": "E"
+       "p1": 30,
+       "hi": 21,
+       "lo": 13,
+       "src": "J"
       },
       {
        "md": "11-07",
@@ -3806,7 +3810,7 @@
       }
      ]
     },
-    "cc": 63
+    "cc": 66
    },
    "options": [
     {
@@ -3858,7 +3862,7 @@
        "sleep": "Kanazawa hotel",
        "wx": "Kanazawa",
        "tr": [],
-       "b": "Sunday is the dry day (30%), so the ride is today. If it rains, the same loop by the city bus (the ticket covers both)."
+       "b": "Sunday is the least wet day you have together here (40% showers on the 30 Oct forecast; Monday 60%). If it rains, the same loop by the city bus: the ticket covers both."
       },
       {
        "t": "A slow, rainy day in Kanazawa",
@@ -4138,6 +4142,7 @@
     "rain": "The shinkansen day is the showery Monday",
     "room": "Kanazawa hotel ~€75; Tokyo hotel ~€85"
    },
+   "bike": "Machi-nori bike-share round the city (Sun)",
    "out": {
     "route": "HKG → KMQ",
     "price": 205,
@@ -4177,15 +4182,15 @@
     "food": 5,
     "culture": 5,
     "chill": 4,
-    "weather": 3.75,
+    "weather": 3.5,
     "value": 2.5,
     "ease": 4.5
    },
-   "fit": 76,
+   "fit": 75,
    "fc": {
-    "score": 4.5,
-    "word": "Mostly dry",
-    "note": "Mostly dry for Kanazawa, Tokyo. 31 Oct – 4 Nov (official forecasts): wet on Mon 2 Nov; showers possible on Sat 31 Oct. Daytime cloud 62% on average. Checked 29 Oct 2026, 13:00 Hong Kong time; recheck on 30 Oct.",
+    "score": 4.0,
+    "word": "Some showers",
+    "note": "Some showers for Kanazawa, Tokyo. Official forecasts: wet on Mon 2 Nov; showers possible on Sat 31 Oct, Thu 5 Nov. Daytime cloud 65% on average. Checked 30 Oct 2026, 15:00 Hong Kong time.",
     "bases": [
      "Kanazawa",
      "Tokyo"
@@ -4194,20 +4199,20 @@
      {
       "cls": "Showers",
       "pts": 0.68,
-      "p1": 45,
-      "cc": 82,
+      "p1": 40,
+      "cc": 60,
       "md": "10-31",
       "label": "Sat 31 Oct",
-      "ahead": 2,
-      "hi": 20,
-      "lo": 12,
+      "ahead": 1,
+      "hi": 21,
+      "lo": 13,
       "scored": true,
       "bases": [
        {
         "name": "Kanazawa",
-        "hi": 20,
-        "lo": 12,
-        "p1": 60,
+        "hi": 21,
+        "lo": 13,
+        "p1": 70,
         "p10": null,
         "med": null,
         "cls": "Wet",
@@ -4218,42 +4223,42 @@
         "name": "Tokyo",
         "hi": 24,
         "lo": 14,
-        "p1": 30,
+        "p1": 10,
         "p10": null,
         "med": null,
         "cls": "Dry",
-        "cc": 80,
+        "cc": 35,
         "src": "J"
        }
       ]
      },
      {
       "cls": "Dry",
-      "pts": 1.0,
-      "p1": 25,
-      "cc": 48,
+      "pts": 0.85,
+      "p1": 30,
+      "cc": 58,
       "md": "11-01",
       "label": "Sun 1 Nov",
-      "ahead": 3,
+      "ahead": 2,
       "hi": 19,
-      "lo": 10,
+      "lo": 11,
       "scored": true,
       "bases": [
        {
         "name": "Kanazawa",
         "hi": 19,
-        "lo": 10,
-        "p1": 30,
+        "lo": 11,
+        "p1": 40,
         "p10": null,
         "med": null,
-        "cls": "Dry",
-        "cc": 60,
+        "cls": "Showers",
+        "cc": 80,
         "src": "J"
        },
        {
         "name": "Tokyo",
-        "hi": 20,
-        "lo": 12,
+        "hi": 21,
+        "lo": 14,
         "p1": 20,
         "p10": null,
         "med": null,
@@ -4270,15 +4275,15 @@
       "cc": 82,
       "md": "11-02",
       "label": "Mon 2 Nov",
-      "ahead": 4,
+      "ahead": 3,
       "hi": 18,
-      "lo": 13,
+      "lo": 14,
       "scored": true,
       "bases": [
        {
         "name": "Kanazawa",
         "hi": 18,
-        "lo": 13,
+        "lo": 14,
         "p1": 60,
         "p10": null,
         "med": null,
@@ -4288,8 +4293,8 @@
        },
        {
         "name": "Tokyo",
-        "hi": 22,
-        "lo": 15,
+        "hi": 21,
+        "lo": 14,
         "p1": 40,
         "p10": null,
         "med": null,
@@ -4302,19 +4307,19 @@
      {
       "cls": "Dry",
       "pts": 0.85,
-      "p1": 35,
-      "cc": 70,
+      "p1": 30,
+      "cc": 58,
       "md": "11-03",
       "label": "Tue 3 Nov",
-      "ahead": 5,
-      "hi": 16,
-      "lo": 10,
+      "ahead": 4,
+      "hi": 17,
+      "lo": 11,
       "scored": true,
       "bases": [
        {
         "name": "Kanazawa",
-        "hi": 16,
-        "lo": 10,
+        "hi": 17,
+        "lo": 11,
         "p1": 40,
         "p10": null,
         "med": null,
@@ -4324,7 +4329,115 @@
        },
        {
         "name": "Tokyo",
-        "hi": 20,
+        "hi": 22,
+        "lo": 14,
+        "p1": 20,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 35,
+        "src": "J"
+       }
+      ]
+     },
+     {
+      "cls": "Dry",
+      "pts": 1.0,
+      "p1": 25,
+      "cc": 48,
+      "md": "11-04",
+      "label": "Wed 4 Nov",
+      "ahead": 5,
+      "hi": 17,
+      "lo": 9,
+      "scored": true,
+      "bases": [
+       {
+        "name": "Kanazawa",
+        "hi": 17,
+        "lo": 9,
+        "p1": 30,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 60,
+        "src": "J"
+       },
+       {
+        "name": "Tokyo",
+        "hi": 19,
+        "lo": 12,
+        "p1": 20,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 35,
+        "src": "J"
+       }
+      ]
+     },
+     {
+      "cls": "Showers",
+      "pts": 0.7,
+      "p1": 50,
+      "cc": 85,
+      "md": "11-05",
+      "label": "Thu 5 Nov",
+      "ahead": 6,
+      "hi": 18,
+      "lo": 12,
+      "scored": true,
+      "bases": [
+       {
+        "name": "Kanazawa",
+        "hi": 18,
+        "lo": 12,
+        "p1": 50,
+        "p10": null,
+        "med": null,
+        "cls": "Showers",
+        "cc": 85,
+        "src": "J"
+       },
+       {
+        "name": "Tokyo",
+        "hi": 15,
+        "lo": 11,
+        "p1": 50,
+        "p10": null,
+        "med": null,
+        "cls": "Showers",
+        "cc": 85,
+        "src": "J"
+       }
+      ]
+     },
+     {
+      "cls": "Dry",
+      "pts": 0.85,
+      "p1": 40,
+      "cc": 72,
+      "md": "11-06",
+      "label": "Fri 6 Nov",
+      "ahead": 7,
+      "hi": 19,
+      "lo": 13,
+      "scored": true,
+      "bases": [
+       {
+        "name": "Kanazawa",
+        "hi": 19,
+        "lo": 13,
+        "p1": 50,
+        "p10": null,
+        "med": null,
+        "cls": "Showers",
+        "cc": 85,
+        "src": "J"
+       },
+       {
+        "name": "Tokyo",
+        "hi": 21,
         "lo": 13,
         "p1": 30,
         "p10": null,
@@ -4338,119 +4451,11 @@
      {
       "cls": "Dry",
       "pts": 1.0,
-      "p1": 25,
-      "cc": 48,
-      "md": "11-04",
-      "label": "Wed 4 Nov",
-      "ahead": 6,
-      "hi": 18,
-      "lo": 9,
-      "scored": true,
-      "bases": [
-       {
-        "name": "Kanazawa",
-        "hi": 18,
-        "lo": 9,
-        "p1": 30,
-        "p10": null,
-        "med": null,
-        "cls": "Dry",
-        "cc": 60,
-        "src": "J"
-       },
-       {
-        "name": "Tokyo",
-        "hi": 18,
-        "lo": 11,
-        "p1": 20,
-        "p10": null,
-        "med": null,
-        "cls": "Dry",
-        "cc": 35,
-        "src": "J"
-       }
-      ]
-     },
-     {
-      "cls": "Dry",
-      "pts": 1.0,
-      "p1": 38,
-      "cc": 61,
-      "md": "11-05",
-      "label": "Thu 5 Nov",
-      "ahead": 7,
-      "hi": 15,
-      "lo": 6,
-      "scored": false,
-      "bases": [
-       {
-        "name": "Kanazawa",
-        "hi": 15,
-        "lo": 6,
-        "p1": 45,
-        "p10": 10,
-        "med": 0.6,
-        "cls": "Dry",
-        "cc": 51,
-        "src": "E"
-       },
-       {
-        "name": "Tokyo",
-        "hi": 15,
-        "lo": 8,
-        "p1": 31,
-        "p10": 6,
-        "med": 0.0,
-        "cls": "Dry",
-        "cc": 71,
-        "src": "E"
-       }
-      ]
-     },
-     {
-      "cls": "Dry",
-      "pts": 1.0,
-      "p1": 37,
-      "cc": 54,
-      "md": "11-06",
-      "label": "Fri 6 Nov",
-      "ahead": 8,
-      "hi": 17,
-      "lo": 7,
-      "scored": false,
-      "bases": [
-       {
-        "name": "Kanazawa",
-        "hi": 17,
-        "lo": 7,
-        "p1": 35,
-        "p10": 6,
-        "med": 0.2,
-        "cls": "Dry",
-        "cc": 48,
-        "src": "E"
-       },
-       {
-        "name": "Tokyo",
-        "hi": 16,
-        "lo": 9,
-        "p1": 39,
-        "p10": 12,
-        "med": 0.6,
-        "cls": "Dry",
-        "cc": 60,
-        "src": "E"
-       }
-      ]
-     },
-     {
-      "cls": "Dry",
-      "pts": 1.0,
       "p1": 40,
       "cc": 54,
       "md": "11-07",
       "label": "Sat 7 Nov",
-      "ahead": 9,
+      "ahead": 8,
       "hi": 18,
       "lo": 8,
       "scored": false,
@@ -4489,9 +4494,9 @@
        "med": null,
        "cls": "Wet",
        "cc": 85,
-       "p1": 60,
-       "hi": 20,
-       "lo": 12,
+       "p1": 70,
+       "hi": 21,
+       "lo": 13,
        "src": "J"
       },
       {
@@ -4499,11 +4504,11 @@
        "label": "Sun 1 Nov",
        "p10": null,
        "med": null,
-       "cls": "Dry",
-       "cc": 60,
-       "p1": 30,
+       "cls": "Showers",
+       "cc": 80,
+       "p1": 40,
        "hi": 19,
-       "lo": 10,
+       "lo": 11,
        "src": "J"
       },
       {
@@ -4515,7 +4520,7 @@
        "cc": 85,
        "p1": 60,
        "hi": 18,
-       "lo": 13,
+       "lo": 14,
        "src": "J"
       },
       {
@@ -4526,8 +4531,8 @@
        "cls": "Showers",
        "cc": 80,
        "p1": 40,
-       "hi": 16,
-       "lo": 10,
+       "hi": 17,
+       "lo": 11,
        "src": "J"
       },
       {
@@ -4538,33 +4543,33 @@
        "cls": "Dry",
        "cc": 60,
        "p1": 30,
-       "hi": 18,
+       "hi": 17,
        "lo": 9,
        "src": "J"
       },
       {
        "md": "11-05",
        "label": "Thu 5 Nov",
-       "p10": 10,
-       "med": 0.6,
-       "cls": "Dry",
-       "cc": 51,
-       "p1": 45,
-       "hi": 15,
-       "lo": 6,
-       "src": "E"
+       "p10": null,
+       "med": null,
+       "cls": "Showers",
+       "cc": 85,
+       "p1": 50,
+       "hi": 18,
+       "lo": 12,
+       "src": "J"
       },
       {
        "md": "11-06",
        "label": "Fri 6 Nov",
-       "p10": 6,
-       "med": 0.2,
-       "cls": "Dry",
-       "cc": 48,
-       "p1": 35,
-       "hi": 17,
-       "lo": 7,
-       "src": "E"
+       "p10": null,
+       "med": null,
+       "cls": "Showers",
+       "cc": 85,
+       "p1": 50,
+       "hi": 19,
+       "lo": 13,
+       "src": "J"
       },
       {
        "md": "11-07",
@@ -4586,8 +4591,8 @@
        "p10": null,
        "med": null,
        "cls": "Dry",
-       "cc": 80,
-       "p1": 30,
+       "cc": 35,
+       "p1": 10,
        "hi": 24,
        "lo": 14,
        "src": "J"
@@ -4600,8 +4605,8 @@
        "cls": "Dry",
        "cc": 35,
        "p1": 20,
-       "hi": 20,
-       "lo": 12,
+       "hi": 21,
+       "lo": 14,
        "src": "J"
       },
       {
@@ -4612,8 +4617,8 @@
        "cls": "Showers",
        "cc": 80,
        "p1": 40,
-       "hi": 22,
-       "lo": 15,
+       "hi": 21,
+       "lo": 14,
        "src": "J"
       },
       {
@@ -4622,10 +4627,10 @@
        "p10": null,
        "med": null,
        "cls": "Dry",
-       "cc": 60,
-       "p1": 30,
-       "hi": 20,
-       "lo": 13,
+       "cc": 35,
+       "p1": 20,
+       "hi": 22,
+       "lo": 14,
        "src": "J"
       },
       {
@@ -4636,33 +4641,33 @@
        "cls": "Dry",
        "cc": 35,
        "p1": 20,
-       "hi": 18,
-       "lo": 11,
+       "hi": 19,
+       "lo": 12,
        "src": "J"
       },
       {
        "md": "11-05",
        "label": "Thu 5 Nov",
-       "p10": 6,
-       "med": 0.0,
-       "cls": "Dry",
-       "cc": 71,
-       "p1": 31,
+       "p10": null,
+       "med": null,
+       "cls": "Showers",
+       "cc": 85,
+       "p1": 50,
        "hi": 15,
-       "lo": 8,
-       "src": "E"
+       "lo": 11,
+       "src": "J"
       },
       {
        "md": "11-06",
        "label": "Fri 6 Nov",
-       "p10": 12,
-       "med": 0.6,
+       "p10": null,
+       "med": null,
        "cls": "Dry",
        "cc": 60,
-       "p1": 39,
-       "hi": 16,
-       "lo": 9,
-       "src": "E"
+       "p1": 30,
+       "hi": 21,
+       "lo": 13,
+       "src": "J"
       },
       {
        "md": "11-07",
@@ -4678,7 +4683,7 @@
       }
      ]
     },
-    "cc": 62
+    "cc": 65
    },
    "options": [
     {
@@ -4730,7 +4735,7 @@
        "sleep": "Kanazawa hotel",
        "wx": "Kanazawa",
        "tr": [],
-       "b": "Sunday is the dry day (30%), so the ride is today. If it rains, the same loop by the city bus (the ticket covers both)."
+       "b": "Sunday is the least wet day you have together here (40% showers on the 30 Oct forecast; Monday 60%). If it rains, the same loop by the city bus: the ticket covers both."
       },
       {
        "t": "Shinkansen to Tokyo, Asakusa",
@@ -4987,8 +4992,12 @@
    ],
    "calm": "Nara at dawn and dusk, when the day-trippers have gone, four nights in the same place, and one bike day through Asuka's fields.",
    "group": "other",
-   "town": null,
-   "town_card": null,
+   "town": "Nara (Kansai)",
+   "town_card": {
+    "time": "Fly HK → Kansai 14:45, bus to Nara 1h35",
+    "best": "Japan's oldest temples and the deer, one hotel for all four nights"
+   },
+   "bike": "E-bikes through Asuka's rice fields (Tue)",
    "out": {
     "route": "HKG → KIX",
     "price": 114,
@@ -5036,8 +5045,9 @@
    "fc": {
     "score": 4.5,
     "word": "Mostly dry",
-    "note": "Mostly dry for Osaka, Kumano Hongu. 31 Oct – 4 Nov (official forecasts): no wet day; showers possible on Mon 2 Nov. Daytime cloud 56% on average. Checked 29 Oct 2026, 13:00 Hong Kong time; recheck on 30 Oct.",
+    "note": "Mostly dry for Nara, Osaka, Kumano Hongu. Official forecasts: wet on Mon 2 Nov; showers possible on Thu 5 Nov. Daytime cloud 52% on average. Checked 30 Oct 2026, 15:00 Hong Kong time.",
     "bases": [
+     "Nara",
      "Osaka",
      "Kumano Hongu"
     ],
@@ -5045,35 +5055,140 @@
      {
       "cls": "Dry",
       "pts": 1.0,
-      "p1": 20,
-      "cc": 70,
+      "p1": 7,
+      "cc": 35,
       "md": "10-31",
       "label": "Sat 31 Oct",
-      "ahead": 2,
+      "ahead": 1,
       "hi": 22,
-      "lo": 15,
+      "lo": 12,
       "scored": true,
       "bases": [
+       {
+        "name": "Nara",
+        "hi": 22,
+        "lo": 12,
+        "p1": 10,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 35,
+        "src": "J"
+       },
        {
         "name": "Osaka",
         "hi": 22,
         "lo": 15,
-        "p1": 30,
+        "p1": 10,
         "p10": null,
         "med": null,
         "cls": "Dry",
-        "cc": 80,
+        "cc": 35,
         "src": "J"
        },
        {
         "name": "Kumano Hongu",
         "hi": 21,
         "lo": 12,
+        "p1": 0,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 35,
+        "src": "J"
+       }
+      ]
+     },
+     {
+      "cls": "Dry",
+      "pts": 1.0,
+      "p1": 10,
+      "cc": 35,
+      "md": "11-01",
+      "label": "Sun 1 Nov",
+      "ahead": 2,
+      "hi": 21,
+      "lo": 11,
+      "scored": true,
+      "bases": [
+       {
+        "name": "Nara",
+        "hi": 21,
+        "lo": 11,
         "p1": 10,
         "p10": null,
         "med": null,
         "cls": "Dry",
-        "cc": 60,
+        "cc": 35,
+        "src": "J"
+       },
+       {
+        "name": "Osaka",
+        "hi": 21,
+        "lo": 14,
+        "p1": 10,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 35,
+        "src": "J"
+       },
+       {
+        "name": "Kumano Hongu",
+        "hi": 21,
+        "lo": 10,
+        "p1": 10,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 35,
+        "src": "J"
+       }
+      ]
+     },
+     {
+      "cls": "Wet",
+      "pts": 0.35,
+      "p1": 60,
+      "cc": 85,
+      "md": "11-02",
+      "label": "Mon 2 Nov",
+      "ahead": 3,
+      "hi": 20,
+      "lo": 13,
+      "scored": true,
+      "bases": [
+       {
+        "name": "Nara",
+        "hi": 20,
+        "lo": 13,
+        "p1": 60,
+        "p10": null,
+        "med": null,
+        "cls": "Wet",
+        "cc": 85,
+        "src": "J"
+       },
+       {
+        "name": "Osaka",
+        "hi": 21,
+        "lo": 16,
+        "p1": 60,
+        "p10": null,
+        "med": null,
+        "cls": "Wet",
+        "cc": 85,
+        "src": "J"
+       },
+       {
+        "name": "Kumano Hongu",
+        "hi": 22,
+        "lo": 12,
+        "p1": 60,
+        "p10": null,
+        "med": null,
+        "cls": "Wet",
+        "cc": 85,
         "src": "J"
        }
       ]
@@ -5083,17 +5198,28 @@
       "pts": 1.0,
       "p1": 20,
       "cc": 35,
-      "md": "11-01",
-      "label": "Sun 1 Nov",
-      "ahead": 3,
-      "hi": 22,
-      "lo": 13,
+      "md": "11-03",
+      "label": "Tue 3 Nov",
+      "ahead": 4,
+      "hi": 20,
+      "lo": 11,
       "scored": true,
       "bases": [
        {
+        "name": "Nara",
+        "hi": 20,
+        "lo": 11,
+        "p1": 20,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 35,
+        "src": "J"
+       },
+       {
         "name": "Osaka",
-        "hi": 22,
-        "lo": 13,
+        "hi": 21,
+        "lo": 14,
         "p1": 20,
         "p10": null,
         "med": null,
@@ -5103,13 +5229,60 @@
        },
        {
         "name": "Kumano Hongu",
-        "hi": 21,
+        "hi": 20,
         "lo": 10,
         "p1": 20,
         "p10": null,
         "med": null,
         "cls": "Dry",
         "cc": 35,
+        "src": "J"
+       }
+      ]
+     },
+     {
+      "cls": "Dry",
+      "pts": 1.0,
+      "p1": 30,
+      "cc": 60,
+      "md": "11-04",
+      "label": "Wed 4 Nov",
+      "ahead": 5,
+      "hi": 20,
+      "lo": 9,
+      "scored": true,
+      "bases": [
+       {
+        "name": "Nara",
+        "hi": 20,
+        "lo": 9,
+        "p1": 30,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 60,
+        "src": "J"
+       },
+       {
+        "name": "Osaka",
+        "hi": 21,
+        "lo": 12,
+        "p1": 30,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 60,
+        "src": "J"
+       },
+       {
+        "name": "Kumano Hongu",
+        "hi": 18,
+        "lo": 9,
+        "p1": 30,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 60,
         "src": "J"
        }
       ]
@@ -5119,17 +5292,28 @@
       "pts": 0.7,
       "p1": 50,
       "cc": 85,
-      "md": "11-02",
-      "label": "Mon 2 Nov",
-      "ahead": 4,
-      "hi": 21,
-      "lo": 15,
+      "md": "11-05",
+      "label": "Thu 5 Nov",
+      "ahead": 6,
+      "hi": 19,
+      "lo": 12,
       "scored": true,
       "bases": [
        {
+        "name": "Nara",
+        "hi": 19,
+        "lo": 12,
+        "p1": 50,
+        "p10": null,
+        "med": null,
+        "cls": "Showers",
+        "cc": 85,
+        "src": "J"
+       },
+       {
         "name": "Osaka",
-        "hi": 21,
-        "lo": 15,
+        "hi": 20,
+        "lo": 14,
         "p1": 50,
         "p10": null,
         "med": null,
@@ -5139,8 +5323,8 @@
        },
        {
         "name": "Kumano Hongu",
-        "hi": 22,
-        "lo": 12,
+        "hi": 18,
+        "lo": 9,
         "p1": 50,
         "p10": null,
         "med": null,
@@ -5153,29 +5337,40 @@
      {
       "cls": "Dry",
       "pts": 1.0,
-      "p1": 25,
-      "cc": 48,
-      "md": "11-03",
-      "label": "Tue 3 Nov",
-      "ahead": 5,
-      "hi": 20,
-      "lo": 13,
+      "p1": 20,
+      "cc": 35,
+      "md": "11-06",
+      "label": "Fri 6 Nov",
+      "ahead": 7,
+      "hi": 21,
+      "lo": 12,
       "scored": true,
       "bases": [
        {
-        "name": "Osaka",
-        "hi": 20,
-        "lo": 13,
-        "p1": 30,
+        "name": "Nara",
+        "hi": 21,
+        "lo": 12,
+        "p1": 20,
         "p10": null,
         "med": null,
         "cls": "Dry",
-        "cc": 60,
+        "cc": 35,
+        "src": "J"
+       },
+       {
+        "name": "Osaka",
+        "hi": 21,
+        "lo": 15,
+        "p1": 20,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 35,
         "src": "J"
        },
        {
         "name": "Kumano Hongu",
-        "hi": 20,
+        "hi": 19,
         "lo": 10,
         "p1": 20,
         "p10": null,
@@ -5183,114 +5378,6 @@
         "cls": "Dry",
         "cc": 35,
         "src": "J"
-       }
-      ]
-     },
-     {
-      "cls": "Dry",
-      "pts": 1.0,
-      "p1": 25,
-      "cc": 60,
-      "md": "11-04",
-      "label": "Wed 4 Nov",
-      "ahead": 6,
-      "hi": 20,
-      "lo": 12,
-      "scored": true,
-      "bases": [
-       {
-        "name": "Osaka",
-        "hi": 20,
-        "lo": 12,
-        "p1": 20,
-        "p10": null,
-        "med": null,
-        "cls": "Dry",
-        "cc": 60,
-        "src": "J"
-       },
-       {
-        "name": "Kumano Hongu",
-        "hi": 18,
-        "lo": 9,
-        "p1": 30,
-        "p10": null,
-        "med": null,
-        "cls": "Dry",
-        "cc": 60,
-        "src": "J"
-       }
-      ]
-     },
-     {
-      "cls": "Dry",
-      "pts": 0.85,
-      "p1": 32,
-      "cc": 62,
-      "md": "11-05",
-      "label": "Thu 5 Nov",
-      "ahead": 7,
-      "hi": 17,
-      "lo": 9,
-      "scored": false,
-      "bases": [
-       {
-        "name": "Osaka",
-        "hi": 17,
-        "lo": 9,
-        "p1": 14,
-        "p10": 12,
-        "med": 0.0,
-        "cls": "Dry",
-        "cc": 39,
-        "src": "E"
-       },
-       {
-        "name": "Kumano Hongu",
-        "hi": 18,
-        "lo": 9,
-        "p1": 50,
-        "p10": null,
-        "med": null,
-        "cls": "Showers",
-        "cc": 85,
-        "src": "J"
-       }
-      ]
-     },
-     {
-      "cls": "Dry",
-      "pts": 1.0,
-      "p1": 30,
-      "cc": 42,
-      "md": "11-06",
-      "label": "Fri 6 Nov",
-      "ahead": 8,
-      "hi": 18,
-      "lo": 9,
-      "scored": false,
-      "bases": [
-       {
-        "name": "Osaka",
-        "hi": 18,
-        "lo": 9,
-        "p1": 24,
-        "p10": 12,
-        "med": 0.0,
-        "cls": "Dry",
-        "cc": 43,
-        "src": "E"
-       },
-       {
-        "name": "Kumano Hongu",
-        "hi": 19,
-        "lo": 10,
-        "p1": 35,
-        "p10": 18,
-        "med": 0.0,
-        "cls": "Dry",
-        "cc": 41,
-        "src": "E"
        }
       ]
      },
@@ -5301,11 +5388,22 @@
       "cc": 48,
       "md": "11-07",
       "label": "Sat 7 Nov",
-      "ahead": 9,
-      "hi": 19,
-      "lo": 10,
+      "ahead": 8,
+      "hi": null,
+      "lo": null,
       "scored": false,
       "bases": [
+       {
+        "name": "Nara",
+        "hi": null,
+        "lo": null,
+        "p1": null,
+        "p10": null,
+        "med": null,
+        "cls": null,
+        "cc": null,
+        "src": null
+       },
        {
         "name": "Osaka",
         "hi": 19,
@@ -5332,6 +5430,104 @@
      }
     ],
     "per_base": {
+     "Nara": [
+      {
+       "md": "10-31",
+       "label": "Sat 31 Oct",
+       "p10": null,
+       "med": null,
+       "cls": "Dry",
+       "cc": 35,
+       "p1": 10,
+       "hi": 22,
+       "lo": 12,
+       "src": "J"
+      },
+      {
+       "md": "11-01",
+       "label": "Sun 1 Nov",
+       "p10": null,
+       "med": null,
+       "cls": "Dry",
+       "cc": 35,
+       "p1": 10,
+       "hi": 21,
+       "lo": 11,
+       "src": "J"
+      },
+      {
+       "md": "11-02",
+       "label": "Mon 2 Nov",
+       "p10": null,
+       "med": null,
+       "cls": "Wet",
+       "cc": 85,
+       "p1": 60,
+       "hi": 20,
+       "lo": 13,
+       "src": "J"
+      },
+      {
+       "md": "11-03",
+       "label": "Tue 3 Nov",
+       "p10": null,
+       "med": null,
+       "cls": "Dry",
+       "cc": 35,
+       "p1": 20,
+       "hi": 20,
+       "lo": 11,
+       "src": "J"
+      },
+      {
+       "md": "11-04",
+       "label": "Wed 4 Nov",
+       "p10": null,
+       "med": null,
+       "cls": "Dry",
+       "cc": 60,
+       "p1": 30,
+       "hi": 20,
+       "lo": 9,
+       "src": "J"
+      },
+      {
+       "md": "11-05",
+       "label": "Thu 5 Nov",
+       "p10": null,
+       "med": null,
+       "cls": "Showers",
+       "cc": 85,
+       "p1": 50,
+       "hi": 19,
+       "lo": 12,
+       "src": "J"
+      },
+      {
+       "md": "11-06",
+       "label": "Fri 6 Nov",
+       "p10": null,
+       "med": null,
+       "cls": "Dry",
+       "cc": 35,
+       "p1": 20,
+       "hi": 21,
+       "lo": 12,
+       "src": "J"
+      },
+      {
+       "md": "11-07",
+       "label": "Sat 7 Nov",
+       "p10": null,
+       "med": null,
+       "cls": null,
+       "cc": null,
+       "p1": null,
+       "hi": null,
+       "lo": null,
+       "src": null
+      }
+     ],
      "Osaka": [
       {
        "md": "10-31",
@@ -5339,8 +5535,8 @@
        "p10": null,
        "med": null,
        "cls": "Dry",
-       "cc": 80,
-       "p1": 30,
+       "cc": 35,
+       "p1": 10,
        "hi": 22,
        "lo": 15,
        "src": "J"
@@ -5352,9 +5548,9 @@
        "med": null,
        "cls": "Dry",
        "cc": 35,
-       "p1": 20,
-       "hi": 22,
-       "lo": 13,
+       "p1": 10,
+       "hi": 21,
+       "lo": 14,
        "src": "J"
       },
       {
@@ -5362,11 +5558,11 @@
        "label": "Mon 2 Nov",
        "p10": null,
        "med": null,
-       "cls": "Showers",
+       "cls": "Wet",
        "cc": 85,
-       "p1": 50,
+       "p1": 60,
        "hi": 21,
-       "lo": 15,
+       "lo": 16,
        "src": "J"
       },
       {
@@ -5375,10 +5571,10 @@
        "p10": null,
        "med": null,
        "cls": "Dry",
-       "cc": 60,
-       "p1": 30,
-       "hi": 20,
-       "lo": 13,
+       "cc": 35,
+       "p1": 20,
+       "hi": 21,
+       "lo": 14,
        "src": "J"
       },
       {
@@ -5388,34 +5584,34 @@
        "med": null,
        "cls": "Dry",
        "cc": 60,
-       "p1": 20,
-       "hi": 20,
+       "p1": 30,
+       "hi": 21,
        "lo": 12,
        "src": "J"
       },
       {
        "md": "11-05",
        "label": "Thu 5 Nov",
-       "p10": 12,
-       "med": 0.0,
-       "cls": "Dry",
-       "cc": 39,
-       "p1": 14,
-       "hi": 17,
-       "lo": 9,
-       "src": "E"
+       "p10": null,
+       "med": null,
+       "cls": "Showers",
+       "cc": 85,
+       "p1": 50,
+       "hi": 20,
+       "lo": 14,
+       "src": "J"
       },
       {
        "md": "11-06",
        "label": "Fri 6 Nov",
-       "p10": 12,
-       "med": 0.0,
+       "p10": null,
+       "med": null,
        "cls": "Dry",
-       "cc": 43,
-       "p1": 24,
-       "hi": 18,
-       "lo": 9,
-       "src": "E"
+       "cc": 35,
+       "p1": 20,
+       "hi": 21,
+       "lo": 15,
+       "src": "J"
       },
       {
        "md": "11-07",
@@ -5437,8 +5633,8 @@
        "p10": null,
        "med": null,
        "cls": "Dry",
-       "cc": 60,
-       "p1": 10,
+       "cc": 35,
+       "p1": 0,
        "hi": 21,
        "lo": 12,
        "src": "J"
@@ -5450,7 +5646,7 @@
        "med": null,
        "cls": "Dry",
        "cc": 35,
-       "p1": 20,
+       "p1": 10,
        "hi": 21,
        "lo": 10,
        "src": "J"
@@ -5460,9 +5656,9 @@
        "label": "Mon 2 Nov",
        "p10": null,
        "med": null,
-       "cls": "Showers",
+       "cls": "Wet",
        "cc": 85,
-       "p1": 50,
+       "p1": 60,
        "hi": 22,
        "lo": 12,
        "src": "J"
@@ -5506,14 +5702,14 @@
       {
        "md": "11-06",
        "label": "Fri 6 Nov",
-       "p10": 18,
-       "med": 0.0,
+       "p10": null,
+       "med": null,
        "cls": "Dry",
-       "cc": 41,
-       "p1": 35,
+       "cc": 35,
+       "p1": 20,
        "hi": 19,
        "lo": 10,
-       "src": "E"
+       "src": "J"
       },
       {
        "md": "11-07",
@@ -5529,7 +5725,7 @@
       }
      ]
     },
-    "cc": 56
+    "cc": 52
    },
    "options": [
     {
@@ -5551,7 +5747,7 @@
        "pm": "14:45 HK Express to Kansai, land 19:20.",
        "eve": "Limousine bus to Nara (1h35); late dinner near Kintetsu-Nara.",
        "sleep": "Nara hotel",
-       "wx": "Osaka",
+       "wx": "Nara",
        "tr": [
         [
          "train",
@@ -5579,7 +5775,7 @@
        "pm": "Kasuga Taisha's lanterns and the primeval-forest path, then Isuien garden.",
        "eve": "Kakinoha-zushi and sake in Naramachi.",
        "sleep": "Nara hotel",
-       "wx": "Osaka",
+       "wx": "Nara",
        "tr": [],
        "b": null
       },
@@ -5591,7 +5787,7 @@
        "pm": "Naramachi's old merchant houses, Harushika sake tasting, cafés.",
        "eve": "Sento, then an izakaya.",
        "sleep": "Nara hotel",
-       "wx": "Osaka",
+       "wx": "Nara",
        "tr": [],
        "b": "Rain likely (50%): today is all indoors or a few minutes' walk."
       },
@@ -5603,7 +5799,7 @@
        "pm": "Asuka-dera's 1,400-year-old Buddha, the Ishibutai stone tomb, the Inabuchi rice terraces, the view from Amakashi hill (about 15 km of quiet lanes).",
        "eve": "Back to Nara; dinner near the hotel.",
        "sleep": "Nara hotel",
-       "wx": "Osaka",
+       "wx": "Nara",
        "tr": [
         [
          "train",
@@ -5842,8 +6038,12 @@
    ],
    "calm": "Yufuin (2 nights together): mist on Lake Kinrin at 7am, a private onsen, the Yufu peak over the rice fields. Before that, an easy ride along the sea in Fukuoka.",
    "group": "other",
-   "town": null,
-   "town_card": null,
+   "town": "Kyushu",
+   "town_card": {
+    "time": "Fly HK → Fukuoka 12:55, 5 min to Hakata",
+    "best": "Food stalls, a seaside ride, two nights in an onsen town"
+   },
+   "bike": "Seaside park ride outside Fukuoka (Sun)",
    "out": {
     "route": "HKG → FUK",
     "price": 123,
@@ -5891,7 +6091,7 @@
    "fc": {
     "score": 4.5,
     "word": "Mostly dry",
-    "note": "Mostly dry for Fukuoka, Yufuin, Kurokawa, Kuju. 31 Oct – 4 Nov (official forecasts): no wet day; showers possible on Mon 2 Nov. Daytime cloud 46% on average. Checked 29 Oct 2026, 13:00 Hong Kong time; recheck on 30 Oct.",
+    "note": "Mostly dry for Fukuoka, Yufuin, Kurokawa, Kuju. Official forecasts: wet on Mon 2 Nov; showers possible on Thu 5 Nov. Daytime cloud 48% on average. Checked 30 Oct 2026, 15:00 Hong Kong time.",
     "bases": [
      "Fukuoka",
      "Yufuin",
@@ -5902,11 +6102,11 @@
      {
       "cls": "Dry",
       "pts": 1.0,
-      "p1": 15,
-      "cc": 28,
+      "p1": 8,
+      "cc": 20,
       "md": "10-31",
       "label": "Sat 31 Oct",
-      "ahead": 2,
+      "ahead": 1,
       "hi": 23,
       "lo": 15,
       "scored": true,
@@ -5915,11 +6115,11 @@
         "name": "Fukuoka",
         "hi": 23,
         "lo": 15,
-        "p1": 20,
+        "p1": 10,
         "p10": null,
         "med": null,
         "cls": "Dry",
-        "cc": 35,
+        "cc": 20,
         "src": "J"
        },
        {
@@ -5937,11 +6137,11 @@
         "name": "Kurokawa",
         "hi": 17,
         "lo": 7,
-        "p1": 20,
+        "p1": 0,
         "p10": null,
         "med": null,
         "cls": "Dry",
-        "cc": 35,
+        "cc": 20,
         "src": "J"
        },
        {
@@ -5960,20 +6160,20 @@
      {
       "cls": "Dry",
       "pts": 1.0,
-      "p1": 22,
+      "p1": 12,
       "cc": 41,
       "md": "11-01",
       "label": "Sun 1 Nov",
-      "ahead": 3,
+      "ahead": 2,
       "hi": 24,
-      "lo": 13,
+      "lo": 14,
       "scored": true,
       "bases": [
        {
         "name": "Fukuoka",
         "hi": 24,
-        "lo": 13,
-        "p1": 30,
+        "lo": 14,
+        "p1": 20,
         "p10": null,
         "med": null,
         "cls": "Dry",
@@ -5984,7 +6184,7 @@
         "name": "Yufuin",
         "hi": 20,
         "lo": 10,
-        "p1": 20,
+        "p1": 10,
         "p10": null,
         "med": null,
         "cls": "Dry",
@@ -5995,7 +6195,7 @@
         "name": "Kurokawa",
         "hi": 18,
         "lo": 7,
-        "p1": 20,
+        "p1": 10,
         "p10": null,
         "med": null,
         "cls": "Dry",
@@ -6006,7 +6206,7 @@
         "name": "Kuju",
         "hi": 16,
         "lo": 5,
-        "p1": 20,
+        "p1": 10,
         "p10": null,
         "med": null,
         "cls": "Dry",
@@ -6016,22 +6216,22 @@
       ]
      },
      {
-      "cls": "Showers",
-      "pts": 0.61,
-      "p1": 52,
+      "cls": "Wet",
+      "pts": 0.35,
+      "p1": 62,
       "cc": 85,
       "md": "11-02",
       "label": "Mon 2 Nov",
-      "ahead": 4,
+      "ahead": 3,
       "hi": 22,
-      "lo": 14,
+      "lo": 17,
       "scored": true,
       "bases": [
        {
         "name": "Fukuoka",
         "hi": 22,
-        "lo": 14,
-        "p1": 60,
+        "lo": 17,
+        "p1": 70,
         "p10": null,
         "med": null,
         "cls": "Wet",
@@ -6042,10 +6242,10 @@
         "name": "Yufuin",
         "hi": 19,
         "lo": 10,
-        "p1": 50,
+        "p1": 60,
         "p10": null,
         "med": null,
-        "cls": "Showers",
+        "cls": "Wet",
         "cc": 85,
         "src": "J"
        },
@@ -6053,10 +6253,10 @@
         "name": "Kurokawa",
         "hi": 18,
         "lo": 7,
-        "p1": 50,
+        "p1": 60,
         "p10": null,
         "med": null,
-        "cls": "Showers",
+        "cls": "Wet",
         "cc": 85,
         "src": "J"
        },
@@ -6064,10 +6264,10 @@
         "name": "Kuju",
         "hi": 16,
         "lo": 5,
-        "p1": 50,
+        "p1": 60,
         "p10": null,
         "med": null,
-        "cls": "Showers",
+        "cls": "Wet",
         "cc": 85,
         "src": "J"
        }
@@ -6076,24 +6276,24 @@
      {
       "cls": "Dry",
       "pts": 1.0,
-      "p1": 22,
-      "cc": 41,
+      "p1": 20,
+      "cc": 35,
       "md": "11-03",
       "label": "Tue 3 Nov",
-      "ahead": 5,
-      "hi": 19,
-      "lo": 13,
+      "ahead": 4,
+      "hi": 21,
+      "lo": 15,
       "scored": true,
       "bases": [
        {
         "name": "Fukuoka",
-        "hi": 19,
-        "lo": 13,
-        "p1": 30,
+        "hi": 21,
+        "lo": 15,
+        "p1": 20,
         "p10": null,
         "med": null,
         "cls": "Dry",
-        "cc": 60,
+        "cc": 35,
         "src": "J"
        },
        {
@@ -6138,15 +6338,15 @@
       "cc": 35,
       "md": "11-04",
       "label": "Wed 4 Nov",
-      "ahead": 6,
-      "hi": 20,
-      "lo": 13,
+      "ahead": 5,
+      "hi": 21,
+      "lo": 14,
       "scored": true,
       "bases": [
        {
         "name": "Fukuoka",
-        "hi": 20,
-        "lo": 13,
+        "hi": 21,
+        "lo": 14,
         "p1": 20,
         "p10": null,
         "med": null,
@@ -6190,27 +6390,27 @@
       ]
      },
      {
-      "cls": "Dry",
-      "pts": 0.85,
-      "p1": 24,
-      "cc": 53,
+      "cls": "Showers",
+      "pts": 0.7,
+      "p1": 40,
+      "cc": 80,
       "md": "11-05",
       "label": "Thu 5 Nov",
-      "ahead": 7,
-      "hi": 18,
-      "lo": 9,
-      "scored": false,
+      "ahead": 6,
+      "hi": 22,
+      "lo": 15,
+      "scored": true,
       "bases": [
        {
         "name": "Fukuoka",
-        "hi": 18,
-        "lo": 9,
-        "p1": 4,
-        "p10": 0,
-        "med": 0.0,
-        "cls": "Dry",
-        "cc": 22,
-        "src": "E"
+        "hi": 22,
+        "lo": 15,
+        "p1": 40,
+        "p10": null,
+        "med": null,
+        "cls": "Showers",
+        "cc": 80,
+        "src": "J"
        },
        {
         "name": "Yufuin",
@@ -6227,12 +6427,12 @@
         "name": "Kurokawa",
         "hi": 14,
         "lo": 4,
-        "p1": 12,
-        "p10": 0,
-        "med": 0.0,
-        "cls": "Dry",
-        "cc": 29,
-        "src": "E"
+        "p1": 40,
+        "p10": null,
+        "med": null,
+        "cls": "Showers",
+        "cc": 80,
+        "src": "J"
        },
        {
         "name": "Kuju",
@@ -6250,58 +6450,58 @@
      {
       "cls": "Dry",
       "pts": 1.0,
-      "p1": 18,
-      "cc": 30,
+      "p1": 20,
+      "cc": 35,
       "md": "11-06",
       "label": "Fri 6 Nov",
-      "ahead": 8,
-      "hi": 19,
-      "lo": 10,
-      "scored": false,
+      "ahead": 7,
+      "hi": 21,
+      "lo": 15,
+      "scored": true,
       "bases": [
        {
         "name": "Fukuoka",
-        "hi": 19,
-        "lo": 10,
-        "p1": 18,
-        "p10": 4,
-        "med": 0.0,
+        "hi": 21,
+        "lo": 15,
+        "p1": 20,
+        "p10": null,
+        "med": null,
         "cls": "Dry",
-        "cc": 23,
-        "src": "E"
+        "cc": 35,
+        "src": "J"
        },
        {
         "name": "Yufuin",
         "hi": 17,
         "lo": 8,
-        "p1": 24,
-        "p10": 8,
-        "med": 0.0,
+        "p1": 20,
+        "p10": null,
+        "med": null,
         "cls": "Dry",
-        "cc": 36,
-        "src": "E"
+        "cc": 35,
+        "src": "J"
        },
        {
         "name": "Kurokawa",
         "hi": 15,
         "lo": 5,
-        "p1": 16,
-        "p10": 4,
-        "med": 0.0,
+        "p1": 20,
+        "p10": null,
+        "med": null,
         "cls": "Dry",
-        "cc": 31,
-        "src": "E"
+        "cc": 35,
+        "src": "J"
        },
        {
         "name": "Kuju",
         "hi": 13,
         "lo": 3,
-        "p1": 16,
-        "p10": 4,
-        "med": 0.0,
+        "p1": 20,
+        "p10": null,
+        "med": null,
         "cls": "Dry",
-        "cc": 31,
-        "src": "E"
+        "cc": 35,
+        "src": "J"
        }
       ]
      },
@@ -6312,7 +6512,7 @@
       "cc": 54,
       "md": "11-07",
       "label": "Sat 7 Nov",
-      "ahead": 9,
+      "ahead": 8,
       "hi": 20,
       "lo": 11,
       "scored": false,
@@ -6372,8 +6572,8 @@
        "p10": null,
        "med": null,
        "cls": "Dry",
-       "cc": 35,
-       "p1": 20,
+       "cc": 20,
+       "p1": 10,
        "hi": 23,
        "lo": 15,
        "src": "J"
@@ -6385,9 +6585,9 @@
        "med": null,
        "cls": "Dry",
        "cc": 60,
-       "p1": 30,
+       "p1": 20,
        "hi": 24,
-       "lo": 13,
+       "lo": 14,
        "src": "J"
       },
       {
@@ -6397,9 +6597,9 @@
        "med": null,
        "cls": "Wet",
        "cc": 85,
-       "p1": 60,
+       "p1": 70,
        "hi": 22,
-       "lo": 14,
+       "lo": 17,
        "src": "J"
       },
       {
@@ -6408,10 +6608,10 @@
        "p10": null,
        "med": null,
        "cls": "Dry",
-       "cc": 60,
-       "p1": 30,
-       "hi": 19,
-       "lo": 13,
+       "cc": 35,
+       "p1": 20,
+       "hi": 21,
+       "lo": 15,
        "src": "J"
       },
       {
@@ -6422,33 +6622,33 @@
        "cls": "Dry",
        "cc": 35,
        "p1": 20,
-       "hi": 20,
-       "lo": 13,
+       "hi": 21,
+       "lo": 14,
        "src": "J"
       },
       {
        "md": "11-05",
        "label": "Thu 5 Nov",
-       "p10": 0,
-       "med": 0.0,
-       "cls": "Dry",
-       "cc": 22,
-       "p1": 4,
-       "hi": 18,
-       "lo": 9,
-       "src": "E"
+       "p10": null,
+       "med": null,
+       "cls": "Showers",
+       "cc": 80,
+       "p1": 40,
+       "hi": 22,
+       "lo": 15,
+       "src": "J"
       },
       {
        "md": "11-06",
        "label": "Fri 6 Nov",
-       "p10": 4,
-       "med": 0.0,
+       "p10": null,
+       "med": null,
        "cls": "Dry",
-       "cc": 23,
-       "p1": 18,
-       "hi": 19,
-       "lo": 10,
-       "src": "E"
+       "cc": 35,
+       "p1": 20,
+       "hi": 21,
+       "lo": 15,
+       "src": "J"
       },
       {
        "md": "11-07",
@@ -6483,7 +6683,7 @@
        "med": null,
        "cls": "Dry",
        "cc": 35,
-       "p1": 20,
+       "p1": 10,
        "hi": 20,
        "lo": 10,
        "src": "J"
@@ -6493,9 +6693,9 @@
        "label": "Mon 2 Nov",
        "p10": null,
        "med": null,
-       "cls": "Showers",
+       "cls": "Wet",
        "cc": 85,
-       "p1": 50,
+       "p1": 60,
        "hi": 19,
        "lo": 10,
        "src": "J"
@@ -6539,14 +6739,14 @@
       {
        "md": "11-06",
        "label": "Fri 6 Nov",
-       "p10": 8,
-       "med": 0.0,
+       "p10": null,
+       "med": null,
        "cls": "Dry",
-       "cc": 36,
-       "p1": 24,
+       "cc": 35,
+       "p1": 20,
        "hi": 17,
        "lo": 8,
-       "src": "E"
+       "src": "J"
       },
       {
        "md": "11-07",
@@ -6568,8 +6768,8 @@
        "p10": null,
        "med": null,
        "cls": "Dry",
-       "cc": 35,
-       "p1": 20,
+       "cc": 20,
+       "p1": 0,
        "hi": 17,
        "lo": 7,
        "src": "J"
@@ -6581,7 +6781,7 @@
        "med": null,
        "cls": "Dry",
        "cc": 35,
-       "p1": 20,
+       "p1": 10,
        "hi": 18,
        "lo": 7,
        "src": "J"
@@ -6591,9 +6791,9 @@
        "label": "Mon 2 Nov",
        "p10": null,
        "med": null,
-       "cls": "Showers",
+       "cls": "Wet",
        "cc": 85,
-       "p1": 50,
+       "p1": 60,
        "hi": 18,
        "lo": 7,
        "src": "J"
@@ -6625,26 +6825,26 @@
       {
        "md": "11-05",
        "label": "Thu 5 Nov",
-       "p10": 0,
-       "med": 0.0,
-       "cls": "Dry",
-       "cc": 29,
-       "p1": 12,
+       "p10": null,
+       "med": null,
+       "cls": "Showers",
+       "cc": 80,
+       "p1": 40,
        "hi": 14,
        "lo": 4,
-       "src": "E"
+       "src": "J"
       },
       {
        "md": "11-06",
        "label": "Fri 6 Nov",
-       "p10": 4,
-       "med": 0.0,
+       "p10": null,
+       "med": null,
        "cls": "Dry",
-       "cc": 31,
-       "p1": 16,
+       "cc": 35,
+       "p1": 20,
        "hi": 15,
        "lo": 5,
-       "src": "E"
+       "src": "J"
       },
       {
        "md": "11-07",
@@ -6679,7 +6879,7 @@
        "med": null,
        "cls": "Dry",
        "cc": 35,
-       "p1": 20,
+       "p1": 10,
        "hi": 16,
        "lo": 5,
        "src": "J"
@@ -6689,9 +6889,9 @@
        "label": "Mon 2 Nov",
        "p10": null,
        "med": null,
-       "cls": "Showers",
+       "cls": "Wet",
        "cc": 85,
-       "p1": 50,
+       "p1": 60,
        "hi": 16,
        "lo": 5,
        "src": "J"
@@ -6735,14 +6935,14 @@
       {
        "md": "11-06",
        "label": "Fri 6 Nov",
-       "p10": 4,
-       "med": 0.0,
+       "p10": null,
+       "med": null,
        "cls": "Dry",
-       "cc": 31,
-       "p1": 16,
+       "cc": 35,
+       "p1": 20,
        "hi": 13,
        "lo": 3,
-       "src": "E"
+       "src": "J"
       },
       {
        "md": "11-07",
@@ -6758,7 +6958,7 @@
       }
      ]
     },
-    "cc": 46
+    "cc": 48
    },
    "options": [
     {
@@ -7066,9 +7266,13 @@
     "Typhoon In-fa: recheck on 30 Oct"
    ],
    "calm": "Sun Moon Lake (2 nights together): the lake at dawn before the boats start, a pagoda walk, tea at Yuchi. Alishan's cedar forest above the clouds on your own.",
-   "group": "other",
-   "town": null,
-   "town_card": null,
+   "group": "taiwan",
+   "town": "Taiwan · south",
+   "town_card": {
+    "time": "Fly HK → Kaohsiung 18:50 (1h25), taxi to Tainan 50 min",
+    "best": "Street food and temples, a mountain lake; she speaks the language; sunny all week"
+   },
+   "bike": "Bikes to Anping (Sun), e-bikes round Sun Moon Lake (Tue)",
    "out": {
     "route": "HKG → KHH",
     "price": 84,
@@ -7108,15 +7312,15 @@
     "food": 5,
     "culture": 4.5,
     "chill": 4,
-    "weather": 4.25,
+    "weather": 4.5,
     "value": 4.5,
     "ease": 5
    },
-   "fit": 87,
+   "fit": 88,
    "fc": {
-    "score": 4.5,
+    "score": 5.0,
     "word": "Mostly dry",
-    "note": "Mostly dry for Tainan, Sun Moon Lake, Alishan. 31 Oct – 4 Nov (official forecasts): no wet day; no showers forecast. Daytime cloud 42% on average. Checked 29 Oct 2026, 13:00 Hong Kong time; recheck on 30 Oct.",
+    "note": "Mostly dry for Tainan, Sun Moon Lake, Alishan. Official forecasts: no wet day; no showers forecast. Daytime cloud 39% on average. Checked 30 Oct 2026, 15:00 Hong Kong time.",
     "bases": [
      "Tainan",
      "Sun Moon Lake",
@@ -7130,7 +7334,7 @@
       "cc": 35,
       "md": "10-31",
       "label": "Sat 31 Oct",
-      "ahead": 2,
+      "ahead": 1,
       "hi": 29,
       "lo": 24,
       "scored": true,
@@ -7177,14 +7381,14 @@
       "cc": 35,
       "md": "11-01",
       "label": "Sun 1 Nov",
-      "ahead": 3,
-      "hi": 29,
+      "ahead": 2,
+      "hi": 30,
       "lo": 24,
       "scored": true,
       "bases": [
        {
         "name": "Tainan",
-        "hi": 29,
+        "hi": 30,
         "lo": 24,
         "p1": null,
         "p10": null,
@@ -7224,7 +7428,7 @@
       "cc": 35,
       "md": "11-02",
       "label": "Mon 2 Nov",
-      "ahead": 4,
+      "ahead": 3,
       "hi": 30,
       "lo": 24,
       "scored": true,
@@ -7268,18 +7472,18 @@
       "cls": "Dry",
       "pts": 1.0,
       "p1": null,
-      "cc": 40,
+      "cc": 35,
       "md": "11-03",
       "label": "Tue 3 Nov",
-      "ahead": 5,
+      "ahead": 4,
       "hi": 29,
-      "lo": 23,
+      "lo": 24,
       "scored": true,
       "bases": [
        {
         "name": "Tainan",
         "hi": 29,
-        "lo": 23,
+        "lo": 24,
         "p1": null,
         "p10": null,
         "med": null,
@@ -7306,7 +7510,7 @@
         "p10": null,
         "med": null,
         "cls": "Dry",
-        "cc": 50,
+        "cc": 35,
         "src": "C"
        }
       ]
@@ -7318,14 +7522,14 @@
       "cc": 35,
       "md": "11-04",
       "label": "Wed 4 Nov",
-      "ahead": 6,
-      "hi": 28,
+      "ahead": 5,
+      "hi": 29,
       "lo": 24,
       "scored": true,
       "bases": [
        {
         "name": "Tainan",
-        "hi": 28,
+        "hi": 29,
         "lo": 24,
         "p1": null,
         "p10": null,
@@ -7359,49 +7563,49 @@
       ]
      },
      {
-      "cls": "Showers",
-      "pts": 0.68,
-      "p1": 62,
-      "cc": 57,
+      "cls": "Dry",
+      "pts": 1.0,
+      "p1": null,
+      "cc": 35,
       "md": "11-05",
       "label": "Thu 5 Nov",
-      "ahead": 7,
-      "hi": 30,
-      "lo": 21,
-      "scored": false,
+      "ahead": 6,
+      "hi": 29,
+      "lo": 24,
+      "scored": true,
       "bases": [
        {
         "name": "Tainan",
-        "hi": 30,
-        "lo": 21,
-        "p1": 37,
-        "p10": 0,
-        "med": 0.2,
+        "hi": 29,
+        "lo": 24,
+        "p1": null,
+        "p10": null,
+        "med": null,
         "cls": "Dry",
-        "cc": 44,
-        "src": "E"
+        "cc": 35,
+        "src": "C"
        },
        {
         "name": "Sun Moon Lake",
         "hi": 25,
         "lo": 16,
-        "p1": 53,
-        "p10": 4,
-        "med": 1.0,
-        "cls": "Showers",
-        "cc": 51,
-        "src": "E"
+        "p1": null,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 35,
+        "src": "C"
        },
        {
         "name": "Alishan",
         "hi": 15,
         "lo": 7,
-        "p1": 96,
-        "p10": 29,
-        "med": 6.8,
-        "cls": "Wet",
-        "cc": 75,
-        "src": "E"
+        "p1": null,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 35,
+        "src": "C"
        }
       ]
      },
@@ -7412,7 +7616,7 @@
       "cc": 51,
       "md": "11-06",
       "label": "Fri 6 Nov",
-      "ahead": 8,
+      "ahead": 7,
       "hi": 30,
       "lo": 21,
       "scored": false,
@@ -7459,7 +7663,7 @@
       "cc": 50,
       "md": "11-07",
       "label": "Sat 7 Nov",
-      "ahead": 9,
+      "ahead": 8,
       "hi": 30,
       "lo": 21,
       "scored": false,
@@ -7523,7 +7727,7 @@
        "cls": "Dry",
        "cc": 35,
        "p1": null,
-       "hi": 29,
+       "hi": 30,
        "lo": 24,
        "src": "C",
        "w": "晴時多雲"
@@ -7550,7 +7754,7 @@
        "cc": 35,
        "p1": null,
        "hi": 29,
-       "lo": 23,
+       "lo": 24,
        "src": "C",
        "w": "晴時多雲"
       },
@@ -7562,7 +7766,7 @@
        "cls": "Dry",
        "cc": 35,
        "p1": null,
-       "hi": 28,
+       "hi": 29,
        "lo": 24,
        "src": "C",
        "w": "晴時多雲"
@@ -7570,14 +7774,15 @@
       {
        "md": "11-05",
        "label": "Thu 5 Nov",
-       "p10": 0,
-       "med": 0.2,
+       "p10": null,
+       "med": null,
        "cls": "Dry",
-       "cc": 44,
-       "p1": 37,
-       "hi": 30,
-       "lo": 21,
-       "src": "E"
+       "cc": 35,
+       "p1": null,
+       "hi": 29,
+       "lo": 24,
+       "src": "C",
+       "w": "晴時多雲"
       },
       {
        "md": "11-06",
@@ -7673,14 +7878,15 @@
       {
        "md": "11-05",
        "label": "Thu 5 Nov",
-       "p10": 4,
-       "med": 1.0,
-       "cls": "Showers",
-       "cc": 51,
-       "p1": 53,
+       "p10": null,
+       "med": null,
+       "cls": "Dry",
+       "cc": 35,
+       "p1": null,
        "hi": 25,
        "lo": 16,
-       "src": "E"
+       "src": "C",
+       "w": "晴時多雲"
       },
       {
        "md": "11-06",
@@ -7753,12 +7959,12 @@
        "p10": null,
        "med": null,
        "cls": "Dry",
-       "cc": 50,
+       "cc": 35,
        "p1": null,
        "hi": 17,
        "lo": 8,
        "src": "C",
-       "w": "多雲時晴"
+       "w": "晴時多雲"
       },
       {
        "md": "11-04",
@@ -7776,14 +7982,15 @@
       {
        "md": "11-05",
        "label": "Thu 5 Nov",
-       "p10": 29,
-       "med": 6.8,
-       "cls": "Wet",
-       "cc": 75,
-       "p1": 96,
+       "p10": null,
+       "med": null,
+       "cls": "Dry",
+       "cc": 35,
+       "p1": null,
        "hi": 15,
        "lo": 7,
-       "src": "E"
+       "src": "C",
+       "w": "晴時多雲"
       },
       {
        "md": "11-06",
@@ -7811,7 +8018,7 @@
       }
      ]
     },
-    "cc": 42
+    "cc": 39
    },
    "options": [
     {
@@ -8134,9 +8341,13 @@
     "Typhoon In-fa: recheck on 30 Oct"
    ],
    "calm": "Dulan (3 nights together): guesthouse by the sea, the sugar factory café, the black-sand beach. Then a night on Luye's tea plateau.",
-   "group": "other",
-   "town": null,
-   "town_card": null,
+   "group": "taiwan",
+   "town": "Taiwan · east",
+   "town_card": {
+    "time": "Fly HK → Kaohsiung 12:45, train + taxi to Dulan (2h30)",
+    "best": "The quietest: a surf village on the Pacific, then a tea plateau"
+   },
+   "bike": null,
    "out": {
     "route": "HKG → KHH",
     "price": 106,
@@ -8176,15 +8387,15 @@
     "food": 4,
     "culture": 3.5,
     "chill": 5,
-    "weather": 4.5,
+    "weather": 4.25,
     "value": 4.5,
     "ease": 4.5
    },
-   "fit": 83,
+   "fit": 82,
    "fc": {
-    "score": 5.0,
+    "score": 4.5,
     "word": "Mostly dry",
-    "note": "Mostly dry for Dulan, Luye, Tainan. 31 Oct – 4 Nov (official forecasts): no wet day; showers possible on Tue 3 Nov. Daytime cloud 50% on average. Checked 29 Oct 2026, 13:00 Hong Kong time; recheck on 30 Oct.",
+    "note": "Mostly dry for Dulan, Luye, Tainan. Official forecasts: no wet day; showers possible on Sat 31 Oct, Tue 3 Nov, Wed 4 Nov, Thu 5 Nov. Daytime cloud 56% on average. Checked 30 Oct 2026, 15:00 Hong Kong time.",
     "bases": [
      "Dulan",
      "Luye",
@@ -8192,26 +8403,26 @@
     ],
     "days": [
      {
-      "cls": "Dry",
-      "pts": 1.0,
+      "cls": "Showers",
+      "pts": 0.8,
       "p1": null,
-      "cc": 35,
+      "cc": 68,
       "md": "10-31",
       "label": "Sat 31 Oct",
-      "ahead": 2,
-      "hi": 30,
-      "lo": 23,
+      "ahead": 1,
+      "hi": 29,
+      "lo": 22,
       "scored": true,
       "bases": [
        {
         "name": "Dulan",
-        "hi": 30,
-        "lo": 23,
+        "hi": 29,
+        "lo": 22,
         "p1": null,
         "p10": null,
         "med": null,
-        "cls": "Dry",
-        "cc": 35,
+        "cls": "Showers",
+        "cc": 85,
         "src": "C"
        },
        {
@@ -8221,8 +8432,8 @@
         "p1": null,
         "p10": null,
         "med": null,
-        "cls": "Dry",
-        "cc": 35,
+        "cls": "Showers",
+        "cc": 85,
         "src": "C"
        },
        {
@@ -8242,23 +8453,23 @@
       "cls": "Dry",
       "pts": 1.0,
       "p1": null,
-      "cc": 35,
+      "cc": 65,
       "md": "11-01",
       "label": "Sun 1 Nov",
-      "ahead": 3,
-      "hi": 31,
+      "ahead": 2,
+      "hi": 30,
       "lo": 23,
       "scored": true,
       "bases": [
        {
         "name": "Dulan",
-        "hi": 31,
+        "hi": 30,
         "lo": 23,
         "p1": null,
         "p10": null,
         "med": null,
         "cls": "Dry",
-        "cc": 35,
+        "cc": 80,
         "src": "C"
        },
        {
@@ -8269,12 +8480,12 @@
         "p10": null,
         "med": null,
         "cls": "Dry",
-        "cc": 35,
+        "cc": 80,
         "src": "C"
        },
        {
         "name": "Tainan",
-        "hi": 29,
+        "hi": 30,
         "lo": 24,
         "p1": null,
         "p10": null,
@@ -8292,15 +8503,15 @@
       "cc": 35,
       "md": "11-02",
       "label": "Mon 2 Nov",
-      "ahead": 4,
-      "hi": 31,
-      "lo": 24,
+      "ahead": 3,
+      "hi": 30,
+      "lo": 23,
       "scored": true,
       "bases": [
        {
         "name": "Dulan",
-        "hi": 31,
-        "lo": 24,
+        "hi": 30,
+        "lo": 23,
         "p1": null,
         "p10": null,
         "med": null,
@@ -8336,10 +8547,104 @@
       "cls": "Showers",
       "pts": 0.8,
       "p1": null,
-      "cc": 65,
+      "cc": 58,
       "md": "11-03",
       "label": "Tue 3 Nov",
+      "ahead": 4,
+      "hi": 30,
+      "lo": 24,
+      "scored": true,
+      "bases": [
+       {
+        "name": "Dulan",
+        "hi": 30,
+        "lo": 24,
+        "p1": null,
+        "p10": null,
+        "med": null,
+        "cls": "Showers",
+        "cc": 70,
+        "src": "C"
+       },
+       {
+        "name": "Luye",
+        "hi": 25,
+        "lo": 19,
+        "p1": null,
+        "p10": null,
+        "med": null,
+        "cls": "Showers",
+        "cc": 70,
+        "src": "C"
+       },
+       {
+        "name": "Tainan",
+        "hi": 29,
+        "lo": 24,
+        "p1": null,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 35,
+        "src": "C"
+       }
+      ]
+     },
+     {
+      "cls": "Showers",
+      "pts": 0.8,
+      "p1": null,
+      "cc": 58,
+      "md": "11-04",
+      "label": "Wed 4 Nov",
       "ahead": 5,
+      "hi": 30,
+      "lo": 24,
+      "scored": true,
+      "bases": [
+       {
+        "name": "Dulan",
+        "hi": 30,
+        "lo": 24,
+        "p1": null,
+        "p10": null,
+        "med": null,
+        "cls": "Showers",
+        "cc": 70,
+        "src": "C"
+       },
+       {
+        "name": "Luye",
+        "hi": 24,
+        "lo": 18,
+        "p1": null,
+        "p10": null,
+        "med": null,
+        "cls": "Showers",
+        "cc": 70,
+        "src": "C"
+       },
+       {
+        "name": "Tainan",
+        "hi": 29,
+        "lo": 24,
+        "p1": null,
+        "p10": null,
+        "med": null,
+        "cls": "Dry",
+        "cc": 35,
+        "src": "C"
+       }
+      ]
+     },
+     {
+      "cls": "Showers",
+      "pts": 0.8,
+      "p1": null,
+      "cc": 58,
+      "md": "11-05",
+      "label": "Thu 5 Nov",
+      "ahead": 6,
       "hi": 29,
       "lo": 24,
       "scored": true,
@@ -8352,70 +8657,23 @@
         "p10": null,
         "med": null,
         "cls": "Showers",
-        "cc": 80,
+        "cc": 70,
         "src": "C"
        },
        {
         "name": "Luye",
         "hi": 25,
-        "lo": 19,
+        "lo": 18,
         "p1": null,
         "p10": null,
         "med": null,
         "cls": "Showers",
-        "cc": 80,
+        "cc": 70,
         "src": "C"
        },
        {
         "name": "Tainan",
         "hi": 29,
-        "lo": 23,
-        "p1": null,
-        "p10": null,
-        "med": null,
-        "cls": "Dry",
-        "cc": 35,
-        "src": "C"
-       }
-      ]
-     },
-     {
-      "cls": "Dry",
-      "pts": 1.0,
-      "p1": null,
-      "cc": 65,
-      "md": "11-04",
-      "label": "Wed 4 Nov",
-      "ahead": 6,
-      "hi": 28,
-      "lo": 23,
-      "scored": true,
-      "bases": [
-       {
-        "name": "Dulan",
-        "hi": 28,
-        "lo": 23,
-        "p1": null,
-        "p10": null,
-        "med": null,
-        "cls": "Dry",
-        "cc": 80,
-        "src": "C"
-       },
-       {
-        "name": "Luye",
-        "hi": 24,
-        "lo": 18,
-        "p1": null,
-        "p10": null,
-        "med": null,
-        "cls": "Dry",
-        "cc": 80,
-        "src": "C"
-       },
-       {
-        "name": "Tainan",
-        "hi": 28,
         "lo": 24,
         "p1": null,
         "p10": null,
@@ -8430,57 +8688,10 @@
       "cls": "Dry",
       "pts": 1.0,
       "p1": 29,
-      "cc": 61,
-      "md": "11-05",
-      "label": "Thu 5 Nov",
-      "ahead": 7,
-      "hi": 27,
-      "lo": 20,
-      "scored": false,
-      "bases": [
-       {
-        "name": "Dulan",
-        "hi": 27,
-        "lo": 20,
-        "p1": 25,
-        "p10": 2,
-        "med": 0.4,
-        "cls": "Dry",
-        "cc": 69,
-        "src": "E"
-       },
-       {
-        "name": "Luye",
-        "hi": 25,
-        "lo": 18,
-        "p1": 25,
-        "p10": 2,
-        "med": 0.4,
-        "cls": "Dry",
-        "cc": 69,
-        "src": "E"
-       },
-       {
-        "name": "Tainan",
-        "hi": 30,
-        "lo": 21,
-        "p1": 37,
-        "p10": 0,
-        "med": 0.2,
-        "cls": "Dry",
-        "cc": 44,
-        "src": "E"
-       }
-      ]
-     },
-     {
-      "cls": "Dry",
-      "pts": 1.0,
-      "p1": 29,
       "cc": 51,
       "md": "11-06",
       "label": "Fri 6 Nov",
-      "ahead": 8,
+      "ahead": 7,
       "hi": 27,
       "lo": 20,
       "scored": false,
@@ -8527,7 +8738,7 @@
       "cc": 53,
       "md": "11-07",
       "label": "Sat 7 Nov",
-      "ahead": 9,
+      "ahead": 8,
       "hi": 27,
       "lo": 19,
       "scored": false,
@@ -8575,13 +8786,13 @@
        "label": "Sat 31 Oct",
        "p10": null,
        "med": null,
-       "cls": "Dry",
-       "cc": 35,
+       "cls": "Showers",
+       "cc": 85,
        "p1": null,
-       "hi": 30,
-       "lo": 23,
+       "hi": 29,
+       "lo": 22,
        "src": "C",
-       "w": "晴時多雲"
+       "w": "陰時多雲短暫雨"
       },
       {
        "md": "11-01",
@@ -8589,12 +8800,12 @@
        "p10": null,
        "med": null,
        "cls": "Dry",
-       "cc": 35,
+       "cc": 80,
        "p1": null,
-       "hi": 31,
+       "hi": 30,
        "lo": 23,
        "src": "C",
-       "w": "晴時多雲"
+       "w": "多雲時陰"
       },
       {
        "md": "11-02",
@@ -8604,8 +8815,8 @@
        "cls": "Dry",
        "cc": 35,
        "p1": null,
-       "hi": 31,
-       "lo": 24,
+       "hi": 30,
+       "lo": 23,
        "src": "C",
        "w": "晴時多雲"
       },
@@ -8615,37 +8826,38 @@
        "p10": null,
        "med": null,
        "cls": "Showers",
-       "cc": 80,
+       "cc": 70,
        "p1": null,
-       "hi": 29,
+       "hi": 30,
        "lo": 24,
        "src": "C",
-       "w": "多雲時陰短暫陣雨"
+       "w": "多雲短暫雨"
       },
       {
        "md": "11-04",
        "label": "Wed 4 Nov",
        "p10": null,
        "med": null,
-       "cls": "Dry",
-       "cc": 80,
+       "cls": "Showers",
+       "cc": 70,
        "p1": null,
-       "hi": 28,
-       "lo": 23,
+       "hi": 30,
+       "lo": 24,
        "src": "C",
-       "w": "多雲時陰"
+       "w": "多雲短暫雨"
       },
       {
        "md": "11-05",
        "label": "Thu 5 Nov",
-       "p10": 2,
-       "med": 0.4,
-       "cls": "Dry",
-       "cc": 69,
-       "p1": 25,
-       "hi": 27,
-       "lo": 20,
-       "src": "E"
+       "p10": null,
+       "med": null,
+       "cls": "Showers",
+       "cc": 70,
+       "p1": null,
+       "hi": 29,
+       "lo": 24,
+       "src": "C",
+       "w": "多雲短暫雨"
       },
       {
        "md": "11-06",
@@ -8678,13 +8890,13 @@
        "label": "Sat 31 Oct",
        "p10": null,
        "med": null,
-       "cls": "Dry",
-       "cc": 35,
+       "cls": "Showers",
+       "cc": 85,
        "p1": null,
        "hi": 27,
        "lo": 19,
        "src": "C",
-       "w": "晴時多雲"
+       "w": "陰時多雲短暫雨"
       },
       {
        "md": "11-01",
@@ -8692,12 +8904,12 @@
        "p10": null,
        "med": null,
        "cls": "Dry",
-       "cc": 35,
+       "cc": 80,
        "p1": null,
        "hi": 27,
        "lo": 19,
        "src": "C",
-       "w": "晴時多雲"
+       "w": "多雲時陰"
       },
       {
        "md": "11-02",
@@ -8718,37 +8930,38 @@
        "p10": null,
        "med": null,
        "cls": "Showers",
-       "cc": 80,
+       "cc": 70,
        "p1": null,
        "hi": 25,
        "lo": 19,
        "src": "C",
-       "w": "多雲時陰短暫陣雨"
+       "w": "多雲短暫雨"
       },
       {
        "md": "11-04",
        "label": "Wed 4 Nov",
        "p10": null,
        "med": null,
-       "cls": "Dry",
-       "cc": 80,
+       "cls": "Showers",
+       "cc": 70,
        "p1": null,
        "hi": 24,
        "lo": 18,
        "src": "C",
-       "w": "多雲時陰"
+       "w": "多雲短暫雨"
       },
       {
        "md": "11-05",
        "label": "Thu 5 Nov",
-       "p10": 2,
-       "med": 0.4,
-       "cls": "Dry",
-       "cc": 69,
-       "p1": 25,
+       "p10": null,
+       "med": null,
+       "cls": "Showers",
+       "cc": 70,
+       "p1": null,
        "hi": 25,
        "lo": 18,
-       "src": "E"
+       "src": "C",
+       "w": "多雲短暫雨"
       },
       {
        "md": "11-06",
@@ -8797,7 +9010,7 @@
        "cls": "Dry",
        "cc": 35,
        "p1": null,
-       "hi": 29,
+       "hi": 30,
        "lo": 24,
        "src": "C",
        "w": "晴時多雲"
@@ -8824,7 +9037,7 @@
        "cc": 35,
        "p1": null,
        "hi": 29,
-       "lo": 23,
+       "lo": 24,
        "src": "C",
        "w": "晴時多雲"
       },
@@ -8836,7 +9049,7 @@
        "cls": "Dry",
        "cc": 35,
        "p1": null,
-       "hi": 28,
+       "hi": 29,
        "lo": 24,
        "src": "C",
        "w": "晴時多雲"
@@ -8844,14 +9057,15 @@
       {
        "md": "11-05",
        "label": "Thu 5 Nov",
-       "p10": 0,
-       "med": 0.2,
+       "p10": null,
+       "med": null,
        "cls": "Dry",
-       "cc": 44,
-       "p1": 37,
-       "hi": 30,
-       "lo": 21,
-       "src": "E"
+       "cc": 35,
+       "p1": null,
+       "hi": 29,
+       "lo": 24,
+       "src": "C",
+       "w": "晴時多雲"
       },
       {
        "md": "11-06",
@@ -8879,7 +9093,7 @@
       }
      ]
     },
-    "cc": 50
+    "cc": 56
    },
    "options": [
     {
@@ -9203,9 +9417,9 @@
    "text": "An e-bike ride along Lake Kawaguchi's flat north shore on the dry Sunday, with Fuji across the water; the kimono museum and an onsen for the showery Monday."
   },
   {
-   "id": "jp-kansai",
-   "why": "One hotel, a bike day",
-   "text": "Four nights in the same Nara hotel and an e-bike day through Asuka's rice terraces; the Kumano Kodo on your own afterwards."
+   "id": "tw-south",
+   "why": "Sunniest and cheapest",
+   "text": "Sunny every day to 5 Nov on the 30 Oct forecast, €1,488 for two, and she speaks the language: Tainan's food, bikes to Anping, e-bikes round Sun Moon Lake."
   }
  ],
  "sources": [
@@ -9280,8 +9494,8 @@
    "todo"
   ],
   [
-   "Typhoon In-fa — Weathernews (29 Oct, 09:00 JST)",
-   "https://weathernews.jp/news/202610/290091/",
+   "Typhoon In-fa — tenki.jp (30 Oct, 06:12)",
+   "https://tenki.jp/forecaster/a_aoyama/2026/10/30/41143.html",
    "warn"
   ],
   [
@@ -9330,7 +9544,7 @@
    "warn"
   ],
   [
-   "Mon 2 Nov / Tue 3 Nov — Japan Meteorological Agency weekly forecasts",
+   "Mon 2 Nov / Tue 3 Nov — Japan Meteorological Agency weekly forecasts (30 Oct 11:00)",
    "https://www.jma.go.jp/bosai/forecast/",
    "warn"
   ],
@@ -9512,9 +9726,9 @@
    "All",
    "Typhoon In-fa",
    "warn",
-   "29 Oct: moving west far south of Japan, turning north near the Ogasawara islands around 1 Nov, then west again; no effect forecast on mainland Japan or Taiwan's weather. Recheck on 30 Oct.",
-   "Weathernews (29 Oct, 09:00 JST)",
-   "https://weathernews.jp/news/202610/290091/"
+   "30 Oct: very strong, reaching the Ogasawara islands on 31 Oct and slowing there until about 4 Nov; track after that uncertain. No direct hit on mainland Japan expected, but its moist air may make rain heavier after 4 Nov (your solo days). No effect on Taiwan's weather.",
+   "tenki.jp (30 Oct, 06:12)",
+   "https://tenki.jp/forecaster/a_aoyama/2026/10/30/41143.html"
   ],
   [
    "Taiwan",
@@ -9592,15 +9806,15 @@
    "Japan",
    "Mon 2 Nov / Tue 3 Nov",
    "warn",
-   "29 Oct JMA forecasts: Mon 2 Nov cloudy with a 40–60% chance of rain (low confidence), no longer heavy rain; dry around it. Tue 3 Nov is a national holiday (Culture Day): busy at the sights.",
-   "Japan Meteorological Agency weekly forecasts",
+   "30 Oct JMA forecasts: Mon 2 Nov is the wet day (40–70% rain, Fukuoka 70%); Sun 1 and Tue 3 mostly dry; Thu 5 showery (50%). Kanazawa is wetter: 70% on Sat 31 Oct, 40% Sun, 60% Mon. Tue 3 Nov is a national holiday (Culture Day).",
+   "Japan Meteorological Agency weekly forecasts (30 Oct 11:00)",
    "https://www.jma.go.jp/bosai/forecast/"
   ],
   [
    "Taiwan",
    "Forecast for the south and east",
    "ok",
-   "29 Oct CWA weekly forecast: Tainan, Chiayi, Nantou sunny with some cloud 31 Oct – 4 Nov; Taitung brief showers Mon night – Tue 3 Nov.",
+   "30 Oct CWA weekly forecast: Tainan, Chiayi, Nantou sunny with some cloud every day to 5 Nov (29–31°C). Taitung: brief rain on Sat 31 and again Tue 3 – Thu 5 Nov.",
    "Central Weather Administration",
    "https://www.cwa.gov.tw/V8/C/W/County/index.html"
   ],
@@ -9757,7 +9971,7 @@
    "https://www.booking.com/"
   ]
  ],
- "checked": "29 Oct 2026",
+ "checked": "30 Oct 2026",
  "places": [
   {
    "n": "Taipei",
@@ -13559,58 +13773,58 @@
   {
    "md": "10-31",
    "label": "Sat 31 Oct",
-   "ahead": 2
+   "ahead": 1
   },
   {
    "md": "11-01",
    "label": "Sun 1 Nov",
-   "ahead": 3
+   "ahead": 2
   },
   {
    "md": "11-02",
    "label": "Mon 2 Nov",
-   "ahead": 4
+   "ahead": 3
   },
   {
    "md": "11-03",
    "label": "Tue 3 Nov",
-   "ahead": 5
+   "ahead": 4
   },
   {
    "md": "11-04",
    "label": "Wed 4 Nov",
-   "ahead": 6
+   "ahead": 5
   },
   {
    "md": "11-05",
    "label": "Thu 5 Nov",
-   "ahead": 7
+   "ahead": 6
   },
   {
    "md": "11-06",
    "label": "Fri 6 Nov",
-   "ahead": 8
+   "ahead": 7
   },
   {
    "md": "11-07",
    "label": "Sat 7 Nov",
-   "ahead": 9
+   "ahead": 8
   }
  ],
  "fc_bands": [
   {
    "g": 0,
-   "n": 5,
-   "label": "Official forecasts of 28–29 Oct (JMA, CWA)"
+   "n": 7,
+   "label": "Official forecasts of 30 Oct (JMA, CWA; Taiwan to 5 Nov)"
   },
   {
    "g": 1,
-   "n": 3,
-   "label": "27 Oct model run (rough)"
+   "n": 1,
+   "label": "27 Oct model (rough)"
   }
  ],
- "fc_last": "11-04",
- "fc_checked": "29 Oct 2026, 13:00 Hong Kong time",
+ "fc_last": "11-06",
+ "fc_checked": "30 Oct 2026, 15:00 Hong Kong time",
  "fare_status": {
   "gf27": "Live fare, Google Flights 27 Oct",
   "est": "Estimate: schedule checked 28 Oct, price not yet live-checked"

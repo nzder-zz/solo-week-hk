@@ -91,7 +91,7 @@ def forecast(t):
                    "cc": round(sum(r["cc"] for r in known) / len(known))}
         else:
             day = {"cls": None, "pts": None, "p1": None, "cc": None}
-        day.update(md=fd["md"], label=fd["label"], ahead=fd["ahead"], hi=rows[0]["hi"], lo=rows[0]["lo"], scored=fd["md"] <= last, bases=rows)
+        day.update(md=fd["md"], label=fd["label"], ahead=fd["ahead"], hi=rows[0]["hi"], lo=rows[0]["lo"], scored=all(r["src"] in ("J", "C") for r in rows if r["cls"]), bases=rows)
         days.append(day)
     scored = [d for d in days if d["cls"]]
     score = round(sum(d["pts"] for d in scored) / len(scored) * 5 * 2) / 2
@@ -100,13 +100,13 @@ def forecast(t):
     firm = [d for d in days if d["scored"] and d["cls"]]
     wet = [d["label"] for d in firm if d["cls"] in ("Wet", "Heavy rain")]
     show = [d["label"] for d in firm if d["cls"] == "Showers"]
-    note = f"{word} for {', '.join(bases)}. 31 Oct – 4 Nov (official forecasts): "
+    note = f"{word} for {', '.join(bases)}. Official forecasts: "
     note += (f"wet on {', '.join(wet)}; " if wet else "no wet day; ")
     note += (f"showers possible on {', '.join(show)}. " if show else "no showers forecast. ")
     late = [d for d in days if not d["scored"] and d["cls"] in ("Wet", "Heavy rain")]
     if late:
-        note += f"5–7 Nov (27 Oct model run, rough): wet on {', '.join(d['label'] for d in late)}. "
-    note += f"Daytime cloud {cc}% on average. Checked {BASE['fc_checked']}; recheck on 30 Oct."
+        note += f"Later days (27 Oct model run, rough): wet on {', '.join(d['label'] for d in late)}. "
+    note += f"Daytime cloud {cc}% on average. Checked {BASE['fc_checked']}."
     return {"score": score, "word": word, "note": note, "bases": bases, "days": days, "per_base": per_base, "cc": cc}
 
 
@@ -138,7 +138,7 @@ def build():
             options.append(o)
         d = {k: t[k] for k in ("id", "country", "region", "cc", "short", "title", "tagline", "food_day", "solo_food",
                                "transport", "crowds", "food", "hikes", "culture", "adventure", "pros", "cons", "calm")}
-        d.update(group=t.get("group", "other"), town=t.get("town"), town_card=t.get("town_card"), out=dict(OUT[t["out"]]), her=dict(HER[t["her"]]), his=dict(HIS[t["his"]]), entry=ENTRY[t["cc"]], weather=clim["weather"],
+        d.update(group=t.get("group", "other"), town=t.get("town"), town_card=t.get("town_card"), bike=t.get("bike"), out=dict(OUT[t["out"]]), her=dict(HER[t["her"]]), his=dict(HIS[t["his"]]), entry=ENTRY[t["cc"]], weather=clim["weather"],
                  scores=scores, fit=fit, fc=fc, options=options)
         dests.append(d)
 
@@ -146,7 +146,7 @@ def build():
         {"id": "jp-kanazawa", "why": "Least travel together", "text": "Under an hour of transport together after the flight: Kanazawa by bike-share on the dry Sunday, then a Yamanaka onsen ryokan. Shirakawa-go moves to your solo bus ride."},
         {"id": "jp-hakone", "why": "Easiest and most relaxing", "text": "85 minutes from Shinjuku, two nights in an onsen inn, gardens a short walk away. Too hilly for a bike, but nothing far."},
         {"id": "jp-fuji", "why": "Fuji by bike", "text": "An e-bike ride along Lake Kawaguchi's flat north shore on the dry Sunday, with Fuji across the water; the kimono museum and an onsen for the showery Monday."},
-        {"id": "jp-kansai", "why": "One hotel, a bike day", "text": "Four nights in the same Nara hotel and an e-bike day through Asuka's rice terraces; the Kumano Kodo on your own afterwards."},
+        {"id": "tw-south", "why": "Sunniest and cheapest", "text": "Sunny every day to 5 Nov on the 30 Oct forecast, €1,488 for two, and she speaks the language: Tainan's food, bikes to Anping, e-bikes round Sun Moon Lake."},
     ]
     sources = [
         ["Live fares: Google Flights", "https://www.google.com/travel/flights", "out and Saturday-home fares: 27 Oct 2026, 1 adult"],

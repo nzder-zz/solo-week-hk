@@ -52,7 +52,7 @@ def build_xlsx(D, path):
     ws.column_dimensions["A"].width = 110
     lines = [
         ("Week for two after Hong Kong — together Sat 31 Oct → Wed 4 Nov, then you alone until Sat 7 Nov", BOLD),
-        ("Leaning to Japan: Tokyo + one smaller town (Kawaguchiko, Hakone or Nikko), with Kansai, Kyushu and Taiwan kept as other options. Each trip has one chill plan. Private rooms while together, taxis split, no Kyoto, no bike trips. She flies back to HK on Wed 4 Nov in the evening; you spend Thu 5 and Fri 6 on your own and fly home on Sat 7 Nov (single ticket).", BLACK),
+        ("Shortlist: Tokyo + one smaller town (Kawaguchiko, Hakone or Nikko), Kanazawa (alone or with Tokyo) or Taiwan (south or east); Kansai and Kyushu kept as other options. Each trip has one chill plan. Private rooms while together, taxis split, no Kyoto, no bike trips. She flies back to HK on Wed 4 Nov in the evening; you spend Thu 5 and Fri 6 on your own and fly home on Sat 7 Nov (single ticket).", BLACK),
         ("", BLACK),
         ("How to use", BOLD),
         ("• My plan: pick a trip from the drop-down; the costs and both shares update.", BLACK),
