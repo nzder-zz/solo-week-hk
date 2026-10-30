@@ -1,6 +1,6 @@
 // Offline support for the Tokyo + Kawaguchiko page: every file is cached on first visit, then served from the cache.
 // The cache name changes with the content, so a new version replaces the old one on the next online visit.
-const CACHE = 'fuji-trip-14dc372804';
+const CACHE = 'fuji-trip-93a389d5c2';
 const ASSETS = [
   "./",
   "index.html",
