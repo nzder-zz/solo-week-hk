@@ -7,7 +7,7 @@
 # - Text markers: [[place_id]] = a map chip (PLACES), {{link_id}} = a timetable/booking chip (LINKS).
 # Then: python3 fuji-src/build.py  (writes fuji/index.html, fuji/sw.js, fuji/manifest.webmanifest).
 
-UPDATED = "2 Nov 2026, 07:00 JST"
+UPDATED = "2 Nov 2026, 08:45 JST"
 
 TRIP = {
     "title": "Tokyo + Kawaguchiko",
@@ -29,33 +29,33 @@ CHOICE = {
 }
 
 # ------------------------------------------------------------------ forecast
-# 2 Nov 07:00 JST run: JMA JSON could not be fetched this run (permission prompt timed out), so numbers are from
-# tenki.jp 10-day pages (JMA-based): Fujikawaguchiko (19430) 2 Nov 00:00 JST, Tokyo week page 1 Nov 23:00 JST.
+# 2 Nov 08:45 JST re-run (user asked): JMA JSON fetched (report 1 Nov 17:00 JST). Lake temps kept from tenki.jp where JMA
+# only gives Kofu. Today's hourly (tenki.jp): dry until ~10:00, light rain ~11:00-16:00 (about 1 mm/h), dry from 17:00.
 # sky: sun | suncloud | cloud | cloudsun | rain
 FC_META = {
-    "source": "tenki.jp (JMA not reachable this run), lake 2 Nov 00:00 JST, Tokyo 1 Nov 23:00 JST",
-    "fetched": "2 Nov, 07:00 JST",
+    "source": "JMA, 1 Nov 17:00 JST",
+    "fetched": "2 Nov, 08:45 JST",
     "links": ["jma_tokyo", "jma_yamanashi", "fuji_cam"],
 }
 FORECAST = {
     "tokyo": {
-        "10-31": ("suncloud", 40, 13, 25), "11-01": ("cloudsun", 30, 13, 21), "11-02": ("rain", 80, 13, 21),
-        "11-03": ("suncloud", 40, 12, 20), "11-04": ("rain", 80, 12, 16), "11-05": ("rain", 90, 11, 17),
-        "11-06": ("cloudsun", 40, 14, 23), "11-07": ("cloud", 30, 13, 17),
+        "10-31": ("suncloud", 40, 13, 25), "11-01": ("cloudsun", 30, 13, 21), "11-02": ("rain", 70, 13, 21),
+        "11-03": ("suncloud", 20, 13, 20), "11-04": ("cloud", 40, 13, 19), "11-05": ("rain", 70, 12, 16),
+        "11-06": ("cloudsun", 30, 14, 22), "11-07": ("suncloud", 20, 12, 20),
     },
     "kawa": {
-        "10-31": ("suncloud", 50, 10, 19), "11-01": ("cloudsun", 30, 4, 16), "11-02": ("rain", 80, 6, 16),
-        "11-03": ("suncloud", 40, 7, 16), "11-04": ("rain", 80, 7, 14), "11-05": ("rain", 90, 9, 16),
-        "11-06": ("sun", 40, 10, 21),
+        "10-31": ("suncloud", 50, 10, 19), "11-01": ("cloudsun", 30, 4, 16), "11-02": ("rain", 70, 6, 17),
+        "11-03": ("suncloud", 20, 7, 16), "11-04": ("cloud", 40, 7, 14), "11-05": ("rain", 70, 7, 13),
+        "11-06": ("suncloud", 20, 10, 21),
     },
 }
 FC_SUMMARY = [
-    "Mon 2 is still a rain day (80%, showers between sunny spells): the wet-day plan fits. The \"heavy\" version is an option if it pours.",
-    "Tue 3 is sun then cloud (40%): hike Chureito/Arakurayama early, then take the train to Tokyo.",
-    "Wed 4 has turned wet (80% in Tokyo, rain later in the day): plan indoor time for the afternoon.",
-    "Thu 5 is the wettest day (90%, rain then clearing, 17°C): keep it as the rainy-Tokyo day.",
-    "Fri 6 is still the best day (40%, sunny spells, 23°C): good for Mt Takao.",
-    "Typhoon In-fa: weakening far south-east of Japan (about 22°N 144°E, near-stationary); no mainland impact forecast.",
+    "Mon 2: dry until about 10:00, then light rain (about 1 mm/h) from 11:00 to 16:00. Fuji is hidden. Do the shrine walk first, then the museum and the onsen. No need for the \"heavy\" version.",
+    "Tue 3 looks clear (20%): best chance to see Fuji. Hike Chureito/Arakurayama early, then take the train to Tokyo.",
+    "Wed 4 is cloudy (40% in Tokyo): fine for the walking day.",
+    "Thu 5 is the wet one (70%, 16°C): keep it as the rainy-Tokyo day.",
+    "Fri 6 is good (30%, 22°C): Mt Takao.",
+    "Typhoon In-fa: weakening far south-east of Japan; no mainland impact forecast.",
 ]
 
 # ------------------------------------------------------------------ links (timetables, bookings, info)
