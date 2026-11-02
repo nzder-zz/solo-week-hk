@@ -7,12 +7,12 @@
 # - Text markers: [[place_id]] = a map chip (PLACES), {{link_id}} = a timetable/booking chip (LINKS).
 # Then: python3 fuji-src/build.py  (writes fuji/index.html, fuji/sw.js, fuji/manifest.webmanifest).
 
-UPDATED = "2 Nov 2026, 19:00 JST"
+UPDATED = "2 Nov 2026, 21:30 JST"
 
 TRIP = {
     "title": "Tokyo + Kawaguchiko",
     "sub": "Sat 31 Oct → Sat 7 Nov 2026",
-    "lede": "Together: one night in Nihonbashi, two by Lake Kawaguchi facing Mount Fuji, one in Asakusa. "
+    "lede": "Together: one night in Nihonbashi, two by Lake Kawaguchi facing Mount Fuji, one by Tokyo Tower in Shiba. "
             "She flies back to Hong Kong on Wed 4 Nov; you stay three more nights in Tokyo and fly home on Sat 7.",
 }
 
@@ -50,7 +50,7 @@ FORECAST = {
     },
 }
 FC_SUMMARY = [
-    "Tue 3: sunny morning (Tokyo 10% am), clouds from the afternoon (lake 40%). Do the Chureito/Arakurayama hike early for Fuji, then the train to Tokyo.",
+    "Tue 3: sunny morning (Tokyo 10% am), clouds from the afternoon (lake 40%). Do the Chureito/Arakurayama hike early for Fuji, then the 14:24 bus from Shimoyoshida to Tokyo.",
     "Wed 4 got wetter: rain likely in Tokyo (70%, 16°C), mostly later in the day. Take an umbrella; keep indoor options for the afternoon.",
     "Thu 5 is the wet one (80%): rain in the morning, clearing later. Keep it as the rainy-Tokyo day.",
     "Fri 6 is the best day (20%, 23°C): Mt Takao. No swap needed.",
@@ -79,6 +79,10 @@ LINKS = {
     "jma_yamanashi": ("JMA forecast: Yamanashi (Fuji lakes)", "https://www.jma.go.jp/bosai/forecast/#area_type=offices&area_code=190000", "info"),
     "fuji_cam": ("Fuji live cameras (is it out?)", "https://www.fujigoko.tv/", "info"),
     "meiji": ("Meiji Jingu", "https://www.meijijingu.or.jp/en/", "info"),
+    "pkmn": ("Pokémon Centers in Tokyo (hours, 2026 guide)", "https://www.japan-pop-now.com/articles/pokemon-center-tokyo-complete-guide-2026", "info"),
+    "umi": ("Ginza Umi on Tabelog", "https://tabelog.com/en/tokyo/A1301/A130101/13295533", "info"),
+    "royal_jalan": ("Fuji Royal Hotel (Jalan)", "https://www.jalan.net/yad329958/", "info"),
+    "fujisanbike": ("fujisanbike prices", "https://fujisanbike.com/menu", "book"),
 }
 
 # ------------------------------------------------------------------ places (each gets a Google Maps link)
@@ -106,6 +110,15 @@ PLACES = {
     "kiyosumi": ("Kiyosumi Garden", "Kiyosumi Garden", "Stroll garden with stepping stones over the pond."),
     "tsukiji": ("Tsukiji Outer Market", "Tsukiji Outer Market", "Breakfast stalls: tamagoyaki, sushi, grilled scallops. Go by 9."),
     "shimokita": ("Shimokitazawa", "Shimokitazawa Station", "Small bars, vintage shops."),
+    "h_koko": ("KOKO Hotel Shimbashi Onarimon", "KOKO HOTEL Shimbashi Onarimon, 6-20-8 Shimbashi, Minato City, Tokyo", "Tue night (booked). Check-in 15:00, check-out 11:00, keeps bags. ~6 min to Daimon (Asakusa + Oedo lines), ~5 min to Onarimon, ~10 min to JR Shimbashi."),
+    "daimon": ("Daimon Station", "Daimon Station Tokyo", "Toei Asakusa line (Nihombashi, Asakusa, straight to Narita and Haneda) and Oedo line (straight to Shinjuku)."),
+    "hamamatsucho": ("Hamamatsucho Station", "Hamamatsucho Station", "JR Yamanote line to Shibuya (~20 min); monorail to Haneda."),
+    "zojoji": ("Zojo-ji", "Zojo-ji Temple", "Big temple with Tokyo Tower right behind it; rows of jizo statues."),
+    "tokyotower": ("Tokyo Tower", "Tokyo Tower", "Lit up from sunset to midnight; best seen from Zojo-ji or Shiba Park."),
+    "shibuya": ("Shibuya crossing", "Shibuya Scramble Crossing", "The famous crossing, outside the Hachiko exit."),
+    "pkmn_shibuya": ("Pokémon Center Shibuya", "Pokemon Center Shibuya Parco", "Shibuya Parco 6F, 5 min from Hachiko exit. 10:00–21:00."),
+    "pkmn_dx": ("Pokémon Center Tokyo DX", "Pokemon Center Tokyo DX Nihombashi Takashimaya", "Nihombashi Takashimaya East 5F, by Nihombashi station (Asakusa line). From 10:30. Pokémon Café next door needs a reservation."),
+    "umi": ("Ginza Umi (銀座 海味)", "銀座 海味 7-10-8 Ginza", "Sushi, booked Tue 21:00. 7-10-8 Ginza, 3 min from Ginza / Higashi-Ginza. Sets ¥25,000 / ¥35,000 pp + 10% service; cards only."),
     # Mt Takao
     "takaosanguchi": ("Takaosanguchi Station", "Takaosanguchi Station", "Keio line from Shinjuku, about 50 min."),
     "takao_shiroyama": ("Shiroyama summit", "Shiroyama Takao", "Teahouse with a Fuji view, 25 min past Takao's summit."),
@@ -135,8 +148,9 @@ PLACES = {
     "arakurayama": ("Mt Arakurayama summit", "Arakurayama Fujiyoshida summit observation", "Trail behind the pagoda; small platform at 1,180 m with Fuji views."),
     "honcho": ("Honcho-dori", "Honcho Street Fujiyoshida", "Retro shopping street with Fuji at the end of it."),
     "udon": ("Yoshida udon", "Yoshida udon near Shimoyoshida Station", "Fujiyoshida's firm, chewy udon; most shops open lunch only."),
+    "chuodo_shimo": ("Chuo Expressway Shimoyoshida bus stop", "Chuodo Shimo Yoshida bus stop", "Highway bus stop (中央道下吉田): ~11 min walk from Shimoyoshida station, ~22 min from the pagoda. Stairs up to the expressway; board on the Tokyo-bound side. The gate is there to keep animals out, not closed."),
     # Beds (shortlist of 30 Oct, Booking.com)
-    "h_royal": ("Royal Hotel Kawaguchiko", "Royal Hotel Kawaguchiko", "Lake + Fuji view Japanese room €227 / €334 half board; onsen."),
+    "h_royal": ("Fuji Royal Hotel Kawaguchiko", "Fuji Royal Hotel Kawaguchiko, 6713-22 Funatsu", "Booked, Sun 1 – Tue 3. South shore by the Ohashi bridge; onsen. Check-in 15:00, check-out 10:00. Free shuttle to the station 08:30–10:00. Tel 0555-73-2228."),
     "h_yamagisi": ("Yamagisi Ryokan", "Yamagisi Ryokan Kawaguchiko", "Japanese room €299 / €344 breakfast; lake-view open-air onsen."),
     "h_kawahotel": ("Kawaguchiko Hotel", "Kawaguchiko Hotel", "Lake + mountain view €406 / €470 breakfast; hot spring."),
     "h_maruei": ("Maruei ryokan", "Maruei Kawaguchiko", "Kaiseki dinner + breakfast €828; Fuji-view open-air bath; 9.1."),
@@ -180,9 +194,9 @@ DAYS = [
     "steps": [
      ("07:05", "Check out. Toei Shinjuku line from [[bakuroyokoyama]] to Shinjuku (about 20 min, no change), then 8 min on foot to [[busta]] (4F, south exit side)."),
      ("08:00", "Morning bus from [[busta]] to [[kawa_stn]], about 1h45 (¥2,200, reserved seats). {{bus_tt}} {{bus_book_sun}}"),
-     ("10:00", "Leave the bags at the hotel or in the station lockers."),
+     ("10:00", "Leave the bags at [[h_royal]] (south shore, ~20 min walk or the Red line bus). {{royal_jalan}}"),
      ("11:00", "Early hoto lunch at [[hoto]] before the queue."),
-     ("12:00", "E-bikes from [[bike_sora]] or [[bike_fujisan]] (book; about ¥3,000–4,000 each). Over the bridge and along the flat north shore to [[oishi]]: Fuji across the water, about 6 km each way, 2–3h with stops."),
+     ("13:30", "E-bikes from [[bike_fujisan]], next door to the hotel (¥3,000 each, back by 17:00). {{fujisanbike}} Over the Ohashi bridge and along the flat north shore to [[oishi]]: Fuji across the water, about 6–7 km each way."),
      ("16:00", "Bikes back before dark (sunset ~16:40). Hotel onsen, quiet dinner."),
     ],
     "watch": "The maple corridor light-up only starts on 7 Nov. Sunday afternoon is busy at Oishi Park; it thins out after 15:00."},
@@ -237,57 +251,50 @@ DAYS = [
     ]},
   }},
 
- {"id": "tue3", "date": "Tue 3 Nov", "md": "11-03", "fc": "kawa", "where": "Fujiyoshida → Tokyo · Asakusa", "who": "together",
-  "bed": "Asakusa / Kuramae hotel",
+ {"id": "tue3", "date": "Tue 3 Nov", "md": "11-03", "fc": "kawa", "where": "Fujiyoshida → Tokyo · Shiba", "who": "together",
+  "bed": "KOKO Hotel Shimbashi Onarimon (booked)",
   "versions": {
-   "main": {"label": "Plan", "title": "Sengen shrine hike, then the train to Tokyo",
-    "why": "Clear morning (20%), and Fuji is sharpest early. Culture Day holiday: be at the pagoda by 8.",
+   "main": {"label": "Plan", "title": "Chureito hike, the 14:24 bus, Tokyo Tower, Shibuya, sushi in Ginza",
+    "why": "Clear morning (Fuji sharpest early), bus booked from Shimoyoshida 14:24, dinner booked at 21:00. Culture Day holiday: busy everywhere.",
     "steps": [
-     ("07:00", "Check out, leave the bags at the hotel. Fujikyu train from [[kawa_stn]] to [[shimoyoshida]], 15 min."),
-     ("07:45", "Walk 15–20 min to [[arakura]]; climb the 398 steps to [[chureito]] for Fuji behind the pagoda."),
-     ("08:30", "The little hike: the trail behind the pagoda up to [[arakurayama]] (1,180 m, steep in places, well signed). About 2h up and back. Good shoes."),
-     ("11:00", "Down through [[honcho]], the retro street with Fuji at the end. Lunch: [[udon]]."),
-     ("12:45", "Train back to Kawaguchiko, collect the bags."),
-     ("14:08", "Fuji Excursion 32 from Kawaguchiko (Shimoyoshida 14:21), Shinjuku 16:06. Reserved seats: book now, it's a holiday. {{fujiexc_tt}} {{ekinet}}"),
-     ("16:30", "Metro to Asakusa, check in."),
-     ("19:00", "[[sensoji]] lit up and almost empty; dinner on [[hoppy]]."),
+     ("08:00", "Breakfast at [[h_royal]] (08:00–08:30). Check out with all the bags: you don't come back to the lake."),
+     ("08:45", "Free hotel shuttle to [[kawa_stn]], then the Fujikyu train to [[shimoyoshida]], about 15 min. {{fujikyu_up}}"),
+     ("09:30", "Bags in the coin lockers at [[shimoyoshida]] (only a few; if full, the convenience store across the road). Walk 15–20 min to [[arakura]], up the 398 steps to [[chureito]]."),
+     ("10:15", "Trail behind the pagoda to [[arakurayama]] (1,180 m) and back, about 1h30–2h. Good shoes."),
+     ("12:15", "Down through [[honcho]]. Lunch: [[udon]] (lunch only; holiday queues)."),
+     ("13:45", "Collect the bags; walk 11 min to [[chuodo_shimo]], Tokyo-bound side, stairs up. Be there by 14:10."),
+     ("14:24", "Highway bus to [[busta]], due 15:55 (holiday traffic can add time). Show the ticket on the phone."),
+     ("15:55", "Oedo line from Shinjuku (5–10 min walk inside the station) straight to [[daimon]], ~20 min. Check in at [[h_koko]], drop the bags."),
+     ("17:00", "[[zojoji]] and [[tokyotower]], lit up just after sunset."),
+     ("18:00", "JR Yamanote from [[hamamatsucho]] to Shibuya (~20 min): [[shibuya]], [[pkmn_shibuya]] first (closes 21:00), then shopping. {{pkmn}}"),
+     ("20:20", "Ginza line from Shibuya straight to Ginza (~16 min), then 3 min on foot."),
+     ("21:00", "Dinner at [[umi]] (booked). {{umi}}"),
+     ("22:45", "Back: Asakusa line Higashi-Ginza → [[daimon]] (2 stops), a short taxi, or ~25 min on foot."),
     ],
-    "watch": "Holiday traffic back to Tokyo is heavy on the expressway in the afternoon: that's why this is the train, not the bus. If the 14:08 is full, the 14:58 (Shinjuku 16:58)."},
-   "short": {"label": "Short + Meiji festival", "title": "Pagoda only, then Meiji Jingu's festival",
-    "why": "Skip the summit, be in Tokyo for the last day of the autumn festival.",
+    "watch": "The bus ticket link is kept in the private trip notes, not on this public page. If Shimoyoshida's lockers are full, carry the bags on the short pagoda walk only and skip the summit."},
+   "late": {"label": "If the bus is late", "title": "Shibuya first, Tokyo Tower after dinner",
+    "why": "If holiday traffic gets you to Shinjuku after ~17:00.",
     "steps": [
-     ("07:00", "Train to [[shimoyoshida]] with the bags."),
-     ("07:45", "[[arakura]] and the steps to [[chureito]], back down by 9."),
-     ("09:30", "Fujikyu train to Otsuki, JR to Shinjuku (about 1h45 in all). {{fujikyu_up}}"),
-     ("12:00", "[[meiji]]: Culture Day performances on the last festival day, chrysanthemums along the approach. {{meiji}}"),
-     ("15:00", "[[catstreet]] down to Shibuya, then Asakusa to check in."),
-    ],
-    "watch": "No locker check done at Shimoyoshida: travel light, or send the big bags ahead (see Ideas)."},
-   "bus": {"label": "Bus back instead", "title": "Sengen hike, then the bus",
-    "why": "Cheaper, but holiday traffic can add an hour or more.",
-    "steps": [
-     ("07:00", "Train to [[shimoyoshida]]; [[chureito]] and [[arakurayama]] (see Plan)."),
-     ("11:30", "Lunch, back to the lake for the bags."),
-     ("13:00", "Bus from [[kawa_stn]] to [[busta]]; book early. {{bus_tt}} {{highwaybus}}"),
+     ("Arrival", "Oedo line to [[daimon]], drop the bags at [[h_koko]]."),
+     ("Then", "JR from [[hamamatsucho]] to Shibuya: [[pkmn_shibuya]] (closes 21:00), [[shibuya]]."),
+     ("20:20", "Ginza line to Ginza for [[umi]] at 21:00."),
+     ("22:45", "Walk back past [[tokyotower]] (lit until midnight) and [[zojoji]]."),
     ]},
   }},
 
- {"id": "wed4", "date": "Wed 4 Nov", "md": "11-04", "fc": "tokyo", "where": "Tokyo · Asakusa", "who": "split",
+ {"id": "wed4", "date": "Wed 4 Nov", "md": "11-04", "fc": "tokyo", "where": "Tokyo · Nihombashi · Asakusa", "who": "split",
   "bed": "You: Asakusa hostel, night 1 of 3",
   "versions": {
-   "main": {"label": "Plan", "title": "Slow last day together; she flies back",
+   "main": {"label": "Plan", "title": "Pokémon Center, Senso-ji, then Narita for her 16:55 flight",
+    "why": "All on one line (Toei Asakusa) and it runs to Narita. Rain likely: most of this is covered.",
     "steps": [
-     ("08:00", "[[sensoji]] and Nakamise before the crowds."),
-     ("09:30", "To [[yanaka]]: temples, cats, the old shopping street. Down through [[uenopark]]."),
-     ("12:30", "Lunch at [[ameyoko]], then [[kappabashi]]."),
-     ("Afternoon", "She heads to the airport (flight time to add). From Asakusa there are direct trains to both Narita and Haneda; Skyliner from Ueno for Narita. {{skyliner}} {{keikyu}}"),
-     ("Evening", "You: check in to the hostel; the Sumida river at night."),
-    ]},
-   "meiji": {"label": "Harajuku day", "title": "Meiji Jingu and Harajuku, then the airport",
-    "steps": [
-     ("09:00", "[[meiji]] in the morning calm."),
-     ("11:00", "[[catstreet]] to Shibuya; lunch."),
-     ("Afternoon", "She heads to the airport. {{skyliner}} {{keikyu}}"),
+     ("09:00", "[[zojoji]] and [[tokyotower]] by day."),
+     ("10:00", "Check out of [[h_koko]] with the bags. Asakusa line from [[daimon]] to Nihombashi (~8 min)."),
+     ("10:30", "[[pkmn_dx]] when it opens. {{pkmn}}"),
+     ("11:30", "Asakusa line on to Asakusa (~10 min). Bags in the station lockers; [[sensoji]], Nakamise, lunch; [[kappabashi]] if there's time."),
+     ("13:30", "She leaves Asakusa on the Access Express to Narita (~1h; some trains need a change at Oshiage or Aoto). Check the terminal on her ticket. {{access_exp}}"),
+     ("16:55", "Her flight to Hong Kong from Narita (at the airport by ~14:45)."),
+     ("Evening", "You: check in to the Asakusa hostel; the Sumida river at night."),
     ]},
   }},
 
@@ -298,7 +305,7 @@ DAYS = [
     "why": "Showers likely (50%) and only 15°C.",
     "steps": [
      ("09:30", "[[tnm]] in Ueno (open Thu)."),
-     ("12:30", "Lunch at [[ginza_depa]]."),
+     ("12:30", "Lunch at [[ameyoko]] (moved from Wednesday) or [[ginza_depa]]."),
      ("14:30", "[[teamlab]] (book a slot)."),
      ("18:00", "A long soak at [[laqua]]."),
     ]},
@@ -351,10 +358,10 @@ DAYS = [
 BEDS = [
  {"nights": "Sat 31 Oct · 1 night", "where": "Higashi-nihombashi (Nihonbashi)", "status": "Booked",
   "options": ["h_apa_hn"], "note": "Direct trains from both airports; 20 min to Shinjuku for Sunday's bus."},
- {"nights": "Sun 1 – Tue 3 Nov · 2 nights", "where": "Kawaguchiko", "status": "Shortlist",
-  "options": ["h_royal", "h_yamagisi", "h_kawahotel", "h_maruei"], "note": "Konanso, Mizno, Asafuji and Fuji Lake Hotel sold out on Booking."},
- {"nights": "Tue 3 Nov · 1 night", "where": "Asakusa / Kuramae", "status": "Shortlist",
-  "options": ["h_focus", "h_apa_asakusa", "h_enhouse"], "note": "Direct trains from Asakusa to both airports. Tonight's APA (Higashi-nihombashi) is on the same line, 3 stops away, if you'd rather go back to it."},
+ {"nights": "Sun 1 – Tue 3 Nov · 2 nights", "where": "Kawaguchiko, south shore", "status": "Booked",
+  "options": ["h_royal"], "note": "Onsen; breakfast 08:00–08:30; free shuttle to the station in the morning."},
+ {"nights": "Tue 3 Nov · 1 night", "where": "Shiba / Daimon, by Tokyo Tower", "status": "Booked",
+  "options": ["h_koko"], "note": "Tokyo Tower and Zojo-ji on foot; Asakusa line from Daimon to Nihombashi, Asakusa and Narita."},
  {"nights": "Wed 4 – Sat 7 Nov · 3 nights (you)", "where": "Asakusa", "status": "Shortlist",
   "options": ["h_wasabi", "h_samurai"], "note": "Private single: APA Asakusa ~€277 for 3 nights."},
 ]
@@ -370,11 +377,10 @@ IDEAS = [
 ]
 
 CHECKLIST = [
- "Book the Sunday bus (or Fuji Excursion seats): {{bus_book_sun}}",
- "Book Tuesday's Fuji Excursion 32 (14:08 Kawaguchiko → Shinjuku): {{ekinet}}",
- "Book e-bikes for Sunday 12:00 ([[bike_sora]] or [[bike_fujisan]]); the station shop is closed on weekends.",
- "Lock the Kawaguchiko and Asakusa beds (Saturday is booked).",
- "Add her flight time (Wed) and your flight home (Sat).",
+ "Tue: bus ticket on the phone (Chuo Expressway Shimoyoshida 14:24 → Busta 15:55).",
+ "Tue: dinner at Ginza Umi 21:00, cards only.",
+ "Check her Narita terminal (Wed 16:55).",
+ "Book your Asakusa bed for Wed–Sat.",
+ "Add your flight home time (Sat).",
  "Suica on the phone for metro, trains and buses.",
- "Warm layer: mornings 6–9°C at the lake.",
 ]
