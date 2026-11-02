@@ -7,7 +7,7 @@
 # - Text markers: [[place_id]] = a map chip (PLACES), {{link_id}} = a timetable/booking chip (LINKS).
 # Then: python3 fuji-src/build.py  (writes fuji/index.html, fuji/sw.js, fuji/manifest.webmanifest).
 
-UPDATED = "2 Nov 2026, 21:45 JST"
+UPDATED = "3 Nov 2026, 07:00 JST"
 
 TRIP = {
     "title": "Tokyo + Kawaguchiko",
@@ -29,12 +29,12 @@ CHOICE = {
 }
 
 # ------------------------------------------------------------------ forecast
-# 2 Nov 19:00 JST run: JMA JSON could not be fetched this run (no access), so numbers come from
-# tenki.jp (Fuji-Kawaguchiko 10-day, 2 Nov 00:00) and weathernews (Tokyo Chiyoda week, ~2 Nov 17:40).
+# 3 Nov 07:00 JST run: JMA JSON could not be fetched this run (no access), so numbers come from
+# tenki.jp (Fuji-Kawaguchiko 10-day, 3 Nov 01:00) and weathernews (Tokyo Chiyoda week, ~2 Nov 17:40).
 # sky: sun | suncloud | cloud | cloudsun | rain
 FC_META = {
-    "source": "tenki.jp 2 Nov 00:00 + weathernews 2 Nov 17:40 JST (JMA unreachable)",
-    "fetched": "2 Nov, 19:00 JST",
+    "source": "tenki.jp 3 Nov 01:00 + weathernews 2 Nov 17:40 JST (JMA unreachable)",
+    "fetched": "3 Nov, 07:00 JST",
     "links": ["jma_tokyo", "jma_yamanashi", "fuji_cam"],
 }
 FORECAST = {
@@ -45,16 +45,16 @@ FORECAST = {
     },
     "kawa": {
         "10-31": ("suncloud", 50, 10, 19), "11-01": ("cloudsun", 30, 4, 16), "11-02": ("rain", 70, 6, 17),
-        "11-03": ("suncloud", 40, 7, 16), "11-04": ("rain", 80, 7, 14), "11-05": ("rain", 90, 9, 16),
-        "11-06": ("sun", 40, 10, 21),
+        "11-03": ("cloudsun", 40, 7, 16), "11-04": ("rain", 80, 7, 13), "11-05": ("rain", 90, 8, 15),
+        "11-06": ("suncloud", 40, 11, 21),
     },
 }
 FC_SUMMARY = [
-    "Tue 3: sunny morning (Tokyo 10% am), clouds from the afternoon (lake 40%). Do the Chureito/Arakurayama hike early for Fuji, then the 14:24 bus from Shimoyoshida to Tokyo.",
-    "Wed 4 got wetter: rain likely in Tokyo (70%, 16°C), mostly later in the day. Take an umbrella; keep indoor options for the afternoon.",
+    "Tue 3 (today): clear early, cloud building from late morning (lake 40%, Tokyo 10% am / 40% pm). Do the Chureito/Arakurayama hike first thing for Fuji views, then the 14:24 bus from Shimoyoshida to Tokyo.",
+    "Wed 4: rain likely in Tokyo (70%, 16°C), heavier later in the day. Take an umbrella; keep the afternoon indoors.",
     "Thu 5 is the wet one (80%): rain in the morning, clearing later. Keep it as the rainy-Tokyo day.",
     "Fri 6 is the best day (20%, 23°C): Mt Takao. No swap needed.",
-    "Typhoon In-fa: strong but stalled far south-east of Japan (about 750 km from Tokyo); no mainland impact forecast.",
+    "Typhoon In-fa: weakened to a severe tropical storm about 600 km south of Tokyo and fading; no mainland impact forecast.",
 ]
 
 # ------------------------------------------------------------------ links (timetables, bookings, info)
