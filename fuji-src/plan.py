@@ -7,7 +7,7 @@
 # - Text markers: [[place_id]] = a map chip (PLACES), {{link_id}} = a timetable/booking chip (LINKS).
 # Then: python3 fuji-src/build.py  (writes fuji/index.html, fuji/sw.js, fuji/manifest.webmanifest).
 
-UPDATED = "2 Nov 2026, 21:30 JST"
+UPDATED = "2 Nov 2026, 21:45 JST"
 
 TRIP = {
     "title": "Tokyo + Kawaguchiko",
@@ -108,6 +108,7 @@ PLACES = {
     "ginza_depa": ("Ginza Mitsukoshi food hall", "Ginza Mitsukoshi", "Depachika: the basement food hall."),
     "laqua": ("Spa LaQua", "Spa LaQua Tokyo Dome City", "Big onsen spa in central Tokyo, open late."),
     "kiyosumi": ("Kiyosumi Garden", "Kiyosumi Garden", "Stroll garden with stepping stones over the pond."),
+    "hnd_t3": ("Haneda Airport Terminal 3", "Haneda Airport Terminal 3", "International terminal. Vietnam Airlines check-in; be there 2h before."),
     "tsukiji": ("Tsukiji Outer Market", "Tsukiji Outer Market", "Breakfast stalls: tamagoyaki, sushi, grilled scallops. Go by 9."),
     "shimokita": ("Shimokitazawa", "Shimokitazawa Station", "Small bars, vintage shops."),
     "h_koko": ("KOKO Hotel Shimbashi Onarimon", "KOKO HOTEL Shimbashi Onarimon, 6-20-8 Shimbashi, Minato City, Tokyo", "Tue night (booked). Check-in 15:00, check-out 11:00, keeps bags. ~6 min to Daimon (Asakusa + Oedo lines), ~5 min to Onarimon, ~10 min to JR Shimbashi."),
@@ -342,15 +343,20 @@ DAYS = [
     ]},
   }},
 
- {"id": "sat7", "date": "Sat 7 Nov", "md": "11-07", "fc": "tokyo", "where": "Tokyo → home", "who": "you",
-  "bed": "On the plane",
+ {"id": "sat7", "date": "Sat 7 Nov", "md": "11-07", "fc": "tokyo", "where": "Tokyo → Haneda → Hanoi → Paris", "who": "you",
+  "bed": "On the plane (lands Paris CDG Sun 8, 06:30)",
   "versions": {
-   "main": {"label": "Plan", "title": "Fly home",
+   "main": {"label": "Plan", "title": "Tsukiji breakfast, then Haneda T3 for VN385 at 16:35",
+    "why": "Vietnam Airlines, one ticket: Haneda T3 16:35 → Hanoi 20:50, Hanoi 23:40 → Paris CDG T2C 06:30 Sun 8. Bags checked through.",
     "steps": [
-     ("08:00", "Breakfast at [[tsukiji]]."),
-     ("13:30", "Skyliner from Ueno to Narita (41 min). {{skyliner}}"),
-     ("17:20", "Your flight home (time from the booking to add here). Land Sun 8 Nov, train to Lille."),
-    ]},
+     ("08:00", "Breakfast at [[tsukiji]]: Asakusa line from Asakusa to Higashi-Ginza (~12 min), then 5 min on foot."),
+     ("10:30", "Back to the hostel, pack, check out."),
+     ("13:30", "From Asakusa, Asakusa line trains run through onto Keikyu to [[hnd_t3]] (~45 min; some need a change at Sengakuji). {{keikyu}}"),
+     ("14:30", "Check in at Haneda Terminal 3 (Vietnam Airlines): one checked bag (Economy Lite), ask for it to go through to Paris."),
+     ("16:35", "VN385 to Hanoi (6h15), lands 20:50. Stay airside at Noi Bai T2 for VN19 at 23:40."),
+     ("Sun 06:30", "Land at Paris CDG Terminal 2C. TGV from the airport station (Aéroport CDG 2 TGV) to Lille Europe, about 1h."),
+    ],
+    "watch": "Hanoi connection is 2h50 on the same ticket. If the bag isn't tagged to CDG at Haneda, ask before you leave the desk."},
   }},
 ]
 
@@ -381,6 +387,6 @@ CHECKLIST = [
  "Tue: dinner at Ginza Umi 21:00, cards only.",
  "Check her Narita terminal (Wed 16:55).",
  "Book your Asakusa bed for Wed–Sat.",
- "Add your flight home time (Sat).",
+ "Sat: Haneda T3 by 14:30 for VN385 16:35 (via Hanoi, Paris CDG Sun 06:30).",
  "Suica on the phone for metro, trains and buses.",
 ]
