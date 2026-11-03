@@ -7,7 +7,7 @@
 # - Text markers: [[place_id]] = a map chip (PLACES), {{link_id}} = a timetable/booking chip (LINKS).
 # Then: python3 fuji-src/build.py  (writes fuji/index.html, fuji/sw.js, fuji/manifest.webmanifest).
 
-UPDATED = "3 Nov 2026, 19:00 JST"
+UPDATED = "4 Nov 2026, 07:00 JST"
 
 TRIP = {
     "title": "Tokyo + Kawaguchiko",
@@ -29,32 +29,32 @@ CHOICE = {
 }
 
 # ------------------------------------------------------------------ forecast
-# 3 Nov 19:00 JST run: JMA JSON not fetchable from this run, so Tokyo comes from Yahoo!天気 (JMA data,
-# short-term 3 Nov 17:00, weekly 15:00) and the lake from tenki.jp (Kawaguchiko 10-day, 3 Nov 17:00).
+# 4 Nov 07:00 JST run: JMA JSON not fetchable from this run, so Tokyo comes from tenki.jp weekly
+# (Chiyoda, 4 Nov 01:00) and the lake from weathernews (Fujikawaguchiko 2-week list).
 # sky: sun | suncloud | cloud | cloudsun | rain
 FC_META = {
-    "source": "JMA via Yahoo 3 Nov 17:00 (Tokyo) + tenki.jp 3 Nov 17:00 (lake) JST",
-    "fetched": "3 Nov, 19:00 JST",
+    "source": "tenki.jp 4 Nov 01:00 (Tokyo) + weathernews (lake) JST",
+    "fetched": "4 Nov, 07:00 JST",
     "links": ["jma_tokyo", "jma_yamanashi", "fuji_cam"],
 }
 FORECAST = {
     "tokyo": {
         "10-31": ("suncloud", 40, 13, 25), "11-01": ("cloudsun", 30, 13, 21), "11-02": ("rain", 70, 13, 21),
-        "11-03": ("cloud", 10, 12, 20), "11-04": ("rain", 50, 13, 17), "11-05": ("rain", 90, 11, 17),
-        "11-06": ("cloudsun", 20, 15, 26), "11-07": ("suncloud", 10, 11, 20),
+        "11-03": ("cloud", 10, 12, 20), "11-04": ("rain", 70, 12, 16), "11-05": ("rain", 90, 11, 17),
+        "11-06": ("cloudsun", 30, 14, 25), "11-07": ("cloudsun", 30, 13, 19),
     },
     "kawa": {
         "10-31": ("suncloud", 50, 10, 19), "11-01": ("cloudsun", 30, 4, 16), "11-02": ("rain", 70, 6, 17),
-        "11-03": ("cloud", 40, 5, 14), "11-04": ("rain", 90, 7, 13), "11-05": ("rain", 90, 8, 17),
-        "11-06": ("sun", 20, 11, 21),
+        "11-03": ("cloud", 40, 5, 14), "11-04": ("rain", 70, 5, 12), "11-05": ("rain", 80, 9, 18),
+        "11-06": ("suncloud", 20, 8, 22),
     },
 }
 FC_SUMMARY = [
-    "Wed 4: dry morning in Tokyo (10–20%), rain from the evening (50% after 18:00, 17°C). Fine for her trip to the airport; carry an umbrella for the evening.",
+    "Wed 4: cloudy, rain from the afternoon (70%, 16°C). Leave early for the airport run; take an umbrella.",
     "Thu 5 is the wet one (90%, 17°C): rain at times all day. Keep it as the rainy-Tokyo day.",
-    "Fri 6 is the best day (20%, warm at 26°C): Mt Takao. No swap needed.",
-    "Sat 7: fine for the flight home (10%, 20°C).",
-    "Typhoon In-fa: severe tropical storm about 590 km south of Tokyo (3 Nov), drifting slowly; no direct impact on Tokyo forecast.",
+    "Fri 6 is the best day (30%, warm at 25°C, clearing): Mt Takao. No swap needed.",
+    "Sat 7: cloudy then clear (30%, 19°C). Fine for the flight home.",
+    "Typhoon In-fa: weakening, about 650 km south of Tokyo (4 Nov), final advisories issued; no impact on Tokyo.",
 ]
 
 # ------------------------------------------------------------------ links (timetables, bookings, info)
