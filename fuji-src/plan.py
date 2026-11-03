@@ -260,9 +260,9 @@ DAYS = [
     "steps": [
      ("08:00", "Breakfast at [[h_royal]] (08:00–08:30). Check out with all the bags: you don't come back to the lake."),
      ("08:45", "Free hotel shuttle to [[kawa_stn]], then the Fujikyu train to [[shimoyoshida]], about 15 min. {{fujikyu_up}}"),
-     ("09:30", "Bags in the coin lockers at [[shimoyoshida]] (only a few; if full, the convenience store across the road). Walk 15–20 min to [[arakura]], up the 398 steps to [[chureito]]."),
-     ("10:15", "Trail behind the pagoda to [[arakurayama]] (1,180 m) and back, about 1h30–2h. Good shoes."),
-     ("12:15", "Down through [[honcho]]. Lunch: [[udon]] (lunch only; holiday queues)."),
+     ("10:15", "Arrive [[shimoyoshida]] (train 45 min later than planned). Bags in the coin lockers (only a few; if full, the convenience store across the road). Buy onigiri there as a backup lunch. Walk 15–20 min to [[arakura]], up the 398 steps to [[chureito]] by ~10:50; photos, 15 min max."),
+     ("11:05", "Trail behind the pagoda towards [[arakurayama]] (1,180 m). Turn back at 12:00 wherever you are. Good shoes."),
+     ("12:35", "Down through [[honcho]] (~12:35–13:05). Lunch: [[udon]] if the queue is short; if there's a queue or it's after 13:00, eat the onigiri."),
      ("13:45", "Collect the bags; walk 11 min to [[chuodo_shimo]], Tokyo-bound side, stairs up. Be there by 14:10."),
      ("14:24", "Highway bus to [[busta]], due 15:55 (holiday traffic can add time). Show the ticket on the phone."),
      ("15:55", "Oedo line from Shinjuku (5–10 min walk inside the station) straight to [[daimon]], ~20 min. Check in at [[h_koko]], drop the bags."),
