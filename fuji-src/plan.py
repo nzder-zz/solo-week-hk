@@ -7,7 +7,7 @@
 # - Text markers: [[place_id]] = a map chip (PLACES), {{link_id}} = a timetable/booking chip (LINKS).
 # Then: python3 fuji-src/build.py  (writes fuji/index.html, fuji/sw.js, fuji/manifest.webmanifest).
 
-UPDATED = "4 Nov 2026, 07:00 JST"
+UPDATED = "4 Nov 2026, 17:50 JST"
 
 TRIP = {
     "title": "Tokyo + Kawaguchiko",
@@ -100,6 +100,11 @@ PLACES = {
     "kappabashi": ("Kappabashi", "Kappabashi Dougu Street", "Kitchen-tool street: knives, ceramics, plastic food samples."),
     "yanaka": ("Yanaka Ginza", "Yanaka Ginza", "Old shopping street, temples and cats; the 'Yuyake dandan' steps."),
     "uenopark": ("Ueno Park", "Ueno Park", "Ponds, temples, museums."),
+    "mitsukoshimae": ("Mitsukoshimae Station", "Mitsukoshimae Station", "Ginza line, ~13 min from Asakusa; Mitsukoshi is 1 min from the exit."),
+    "mitsukoshi_nb": ("Nihombashi Mitsukoshi main store", "Nihombashi Mitsukoshi Main Store", "Japan's first department store (began 1673 as a kimono shop). Most floors 10:00–19:00; basement food hall and 1F to 19:30."),
+    "coredo": ("Coredo Muromachi", "Coredo Muromachi", "Across from Mitsukoshi: Japanese knives, dashi, crafts."),
+    "itoya": ("Itoya Ginza", "Ginza Itoya", "12-floor stationery store with the red paper clip: paper, pens, travel, home. Mon–Sat to 20:00."),
+    "akebonoyu": ("Akebono-yu", "Akebono-yu Asakusa", "Edo-period public bath in Asakusa. 6:00–9:00 and 11:00–1:00, closed 1st and 3rd Fri. ¥550."),
     "tnm": ("Tokyo National Museum", "Tokyo National Museum", "Best collection of Japanese art; closed Mondays."),
     "ameyoko": ("Ameyoko", "Ameyoko Shopping Street", "Market street under the tracks: street food, cheap lunches."),
     "meiji": ("Meiji Jingu", "Meiji Jingu", "Forest shrine next to Harajuku. Autumn festival 1–3 Nov."),
@@ -284,9 +289,9 @@ DAYS = [
   }},
 
  {"id": "wed4", "date": "Wed 4 Nov", "md": "11-04", "fc": "tokyo", "where": "Tokyo · Nihombashi · Asakusa", "who": "split",
-  "bed": "You: Asakusa hostel, night 1 of 3",
+  "bed": "You: Asakusa hotel, night 1 of 3",
   "versions": {
-   "main": {"label": "Plan", "title": "Pokémon Center, Senso-ji, then Narita for her 16:55 flight",
+   "main": {"label": "Plan", "title": "Pokémon Center, Senso-ji, her 16:55 flight; your evening in Nihombashi and Ginza",
     "why": "All on one line (Toei Asakusa) and it runs to Narita. Rain likely: most of this is covered.",
     "steps": [
      ("09:00", "[[zojoji]] and [[tokyotower]] by day."),
@@ -295,12 +300,19 @@ DAYS = [
      ("11:30", "Asakusa line on to Asakusa (~10 min). Bags in the station lockers; [[sensoji]], Nakamise, lunch; [[kappabashi]] if there's time."),
      ("13:30", "She leaves Asakusa on the Access Express to Narita (~1h; some trains need a change at Oshiage or Aoto). Check the terminal on her ticket. {{access_exp}}"),
      ("16:55", "Her flight to Hong Kong from Narita (at the airport by ~14:45)."),
-     ("Evening", "You: check in to the Asakusa hostel; the Sumida river at night."),
+     ("Afternoon", "You: check in to the Asakusa hotel and rest."),
+     ("17:45", "Ginza line from Asakusa to [[mitsukoshimae]] (~13 min)."),
+     ("18:00", "[[mitsukoshi_nb]]: upper floors first (close 19:00), food hall last (19:30). Then [[coredo]] across the road."),
+     ("18:40", "Ginza line 3 stops to Ginza (~5 min)."),
+     ("18:50", "[[itoya]] until about 19:35 (closes 20:00)."),
+     ("19:35", "Ginza line straight back to Asakusa (~18 min)."),
+     ("~20:00", "[[sensoji]] lit up: halls closed, grounds open and quiet; look at the painted Nakamise shutters. Dinner on [[hoppy]] or a bento from the Mitsukoshi food hall."),
+     ("Later", "Optional: [[akebonoyu]], an old local bath open until 1:00."),
     ]},
   }},
 
  {"id": "thu5", "date": "Thu 5 Nov", "md": "11-05", "fc": "tokyo", "where": "Tokyo", "who": "you",
-  "bed": "Asakusa hostel, night 2 of 3",
+  "bed": "Asakusa hotel, night 2 of 3",
   "versions": {
    "main": {"label": "Rainy Tokyo", "title": "Museum, food hall, digital art, a hot bath",
     "why": "Showers likely (50%) and only 15°C.",
@@ -319,7 +331,7 @@ DAYS = [
   }},
 
  {"id": "fri6", "date": "Fri 6 Nov", "md": "11-06", "fc": "tokyo", "where": "Tokyo · Mt Takao", "who": "you",
-  "bed": "Asakusa hostel, night 3 of 3",
+  "bed": "Asakusa hotel, night 3 of 3",
   "versions": {
    "main": {"label": "Plan", "title": "Mt Takao hike",
     "why": "The drier of your solo days (30%).",
@@ -339,7 +351,7 @@ DAYS = [
    "lazy": {"label": "Lazy day", "title": "Gardens and coffee in Kuramae",
     "steps": [
      ("10:00", "[[kiyosumi]]."),
-     ("13:00", "Kuramae cafés and small shops, [[kappabashi]] if you missed it."),
+     ("13:00", "Kuramae cafés and small craft shops (most close 18:00–19:00), [[kappabashi]] if you missed it."),
     ]},
   }},
 
@@ -350,7 +362,7 @@ DAYS = [
     "why": "Vietnam Airlines, one ticket: Haneda T3 16:35 → Hanoi 20:50, Hanoi 23:40 → Paris CDG T2C 06:30 Sun 8. Bags checked through.",
     "steps": [
      ("08:00", "Breakfast at [[tsukiji]]: Asakusa line from Asakusa to Higashi-Ginza (~12 min), then 5 min on foot."),
-     ("10:30", "Back to the hostel, pack, check out."),
+     ("10:30", "Back to the hotel, pack, check out."),
      ("13:30", "From Asakusa, Asakusa line trains run through onto Keikyu to [[hnd_t3]] (~45 min; some need a change at Sengakuji). {{keikyu}}"),
      ("14:30", "Check in at Haneda Terminal 3 (Vietnam Airlines): one checked bag (Economy Lite), ask for it to go through to Paris."),
      ("16:35", "VN385 to Hanoi (6h15), lands 20:50. Stay airside at Noi Bai T2 for VN19 at 23:40."),
