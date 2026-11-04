@@ -7,7 +7,7 @@
 # - Text markers: [[place_id]] = a map chip (PLACES), {{link_id}} = a timetable/booking chip (LINKS).
 # Then: python3 fuji-src/build.py  (writes fuji/index.html, fuji/sw.js, fuji/manifest.webmanifest).
 
-UPDATED = "4 Nov 2026, 18:45 JST"
+UPDATED = "5 Nov 2026, 06:45 JST"
 
 TRIP = {
     "title": "Tokyo + Kawaguchiko",
@@ -29,19 +29,19 @@ CHOICE = {
 }
 
 # ------------------------------------------------------------------ forecast
-# 4 Nov 19:00 JST run: JMA JSON still not fetchable; tenki.jp weekly (Chiyoda, 4 Nov 01:00) unchanged,
-# weathernews Tokyo hourly confirms Thu 5 rain ends ~14:00. Lake values left as they were (trip is past the lake).
+# 5 Nov 07:00 JST run: JMA JSON not fetchable; tenki.jp Chiyoda (4 Nov 14:00). Thu 5 rain peaks in the morning
+# (slots 90/80/40/60%). Lake values left as they were (trip is past the lake).
 # sky: sun | suncloud | cloud | cloudsun | rain
 FC_META = {
-    "source": "tenki.jp 4 Nov 01:00 (Tokyo) + weathernews (lake) JST",
-    "fetched": "4 Nov, 19:00 JST",
+    "source": "tenki.jp 4 Nov 14:00 (Tokyo) JST",
+    "fetched": "5 Nov, 07:00 JST",
     "links": ["jma_tokyo", "jma_yamanashi", "fuji_cam"],
 }
 FORECAST = {
     "tokyo": {
         "10-31": ("suncloud", 40, 13, 25), "11-01": ("cloudsun", 30, 13, 21), "11-02": ("rain", 70, 13, 21),
-        "11-03": ("cloud", 10, 12, 20), "11-04": ("rain", 70, 12, 16), "11-05": ("rain", 90, 11, 17),
-        "11-06": ("cloudsun", 30, 14, 25), "11-07": ("cloudsun", 30, 13, 19),
+        "11-03": ("cloud", 10, 12, 20), "11-04": ("rain", 70, 12, 16), "11-05": ("rain", 90, 11, 18),
+        "11-06": ("suncloud", 30, 14, 25), "11-07": ("cloudsun", 30, 13, 20),
     },
     "kawa": {
         "10-31": ("suncloud", 50, 10, 19), "11-01": ("cloudsun", 30, 4, 16), "11-02": ("rain", 70, 6, 17),
@@ -50,11 +50,10 @@ FORECAST = {
     },
 }
 FC_SUMMARY = [
-    "Tonight (Wed 4): rain this evening (70–90%). Umbrella for Nihombashi/Ginza/Senso-ji.",
-    "Thu 5 is the wet day (90%, 11–17°C). Rain from the night until about 2 pm, then drying. Keep it as the rainy-Tokyo day; outdoor bits late afternoon.",
-    "Fri 6 is the best day (30%, 14–25°C, clearing): Mt Takao. No swap needed.",
-    "Sat 7: cloudy then sunny (30%, 13–19°C). Fine for the flight home.",
-    "Typhoon In-fa: weak, about 650 km south of Tokyo, no impact expected.",
+    "Thu 5 is the wet day (90%, 11–18°C). Heaviest rain this morning (possibly heavy, roads flooding), easing after midday. Keep it as the rainy-Tokyo day; go out late afternoon.",
+    "Fri 6 is the best day (30%, 14–25°C, sunny spells): Mt Takao. No swap needed.",
+    "Sat 7: cloudy then sunny (30%, 13–20°C). Fine for the flight home.",
+    "Typhoon In-fa (No. 31): passing near the Ogasawara islands today, far south of Tokyo. It boosts this morning's rain; no impact after that.",
 ]
 
 # ------------------------------------------------------------------ links (timetables, bookings, info)
