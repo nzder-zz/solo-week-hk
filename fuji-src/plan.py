@@ -7,7 +7,7 @@
 # - Text markers: [[place_id]] = a map chip (PLACES), {{link_id}} = a timetable/booking chip (LINKS).
 # Then: python3 fuji-src/build.py  (writes fuji/index.html, fuji/sw.js, fuji/manifest.webmanifest).
 
-UPDATED = "4 Nov 2026, 17:50 JST"
+UPDATED = "4 Nov 2026, 17:55 JST"
 
 TRIP = {
     "title": "Tokyo + Kawaguchiko",
@@ -164,6 +164,7 @@ PLACES = {
     "h_apa_asakusa": ("APA Asakusa Ekimae", "APA Hotel Asakusa Ekimae", "€51, free cancellation."),
     "h_enhouse": ("EN The HOUSE Asakusa Nitenmon", "EN The HOUSE Asakusa Nitenmon", "€94, 9.5."),
     "h_wasabi": ("Hostel Wasabi Asakusa", "Hostel Wasabi Asakusa", "Dorm, 3 nights €62 with breakfast, free cancellation."),
+    "h_tamayura": ("Tamayura Hotel Asakusa (玉響ホテル浅草)", "Tamayura Hotel Asakusa, 2-6-8 Komagata, Taito City, Tokyo", "Booked, Wed 4 – Sat 7. 2 min from Asakusa station exit A2 (Ginza + Toei Asakusa lines); 5 min from Kuramae (Oedo line)."),
     "h_samurai": ("Guest House Tokyo Samurai", "Guest House Tokyo Samurai", "Dorm, 3 nights €58."),
 }
 
@@ -289,7 +290,7 @@ DAYS = [
   }},
 
  {"id": "wed4", "date": "Wed 4 Nov", "md": "11-04", "fc": "tokyo", "where": "Tokyo · Nihombashi · Asakusa", "who": "split",
-  "bed": "You: Asakusa hotel, night 1 of 3",
+  "bed": "You: Tamayura Hotel Asakusa, night 1 of 3",
   "versions": {
    "main": {"label": "Plan", "title": "Pokémon Center, Senso-ji, her 16:55 flight; your evening in Nihombashi and Ginza",
     "why": "All on one line (Toei Asakusa) and it runs to Narita. Rain likely: most of this is covered.",
@@ -301,18 +302,19 @@ DAYS = [
      ("13:30", "She leaves Asakusa on the Access Express to Narita (~1h; some trains need a change at Oshiage or Aoto). Check the terminal on her ticket. {{access_exp}}"),
      ("16:55", "Her flight to Hong Kong from Narita (at the airport by ~14:45)."),
      ("Afternoon", "You: check in to the Asakusa hotel and rest."),
-     ("17:45", "Ginza line from Asakusa to [[mitsukoshimae]] (~13 min)."),
+     ("17:45", "2 min in the rain to Asakusa station (exit A2), Ginza line to [[mitsukoshimae]] (~13 min). Mitsukoshi and Coredo connect straight to the station underground: no umbrella needed there."),
      ("18:00", "[[mitsukoshi_nb]]: upper floors first (close 19:00), food hall last (19:30). Then [[coredo]] across the road."),
      ("18:40", "Ginza line 3 stops to Ginza (~5 min)."),
-     ("18:50", "[[itoya]] until about 19:35 (closes 20:00)."),
+     ("18:50", "[[itoya]] until about 19:35 (closes 20:00). Use exit A13: about 1 min outside."),
      ("19:35", "Ginza line straight back to Asakusa (~18 min)."),
      ("~20:00", "[[sensoji]] lit up: halls closed, grounds open and quiet; look at the painted Nakamise shutters. Dinner on [[hoppy]] or a bento from the Mitsukoshi food hall."),
+     ("If pouring", "Skip Senso-ji tonight (5–10 min walk, all outdoors) and see it lit on Friday night instead. Eat in Nihombashi before leaving (Mitsukoshi restaurant floors 9–10F, to 22:00), then straight back: 2 min from the station to the hotel."),
      ("Later", "Optional: [[akebonoyu]], an old local bath open until 1:00."),
     ]},
   }},
 
  {"id": "thu5", "date": "Thu 5 Nov", "md": "11-05", "fc": "tokyo", "where": "Tokyo", "who": "you",
-  "bed": "Asakusa hotel, night 2 of 3",
+  "bed": "Tamayura Hotel Asakusa, night 2 of 3",
   "versions": {
    "main": {"label": "Rainy Tokyo", "title": "Museum, food hall, digital art, a hot bath",
     "why": "Showers likely (50%) and only 15°C.",
@@ -331,7 +333,7 @@ DAYS = [
   }},
 
  {"id": "fri6", "date": "Fri 6 Nov", "md": "11-06", "fc": "tokyo", "where": "Tokyo · Mt Takao", "who": "you",
-  "bed": "Asakusa hotel, night 3 of 3",
+  "bed": "Tamayura Hotel Asakusa, night 3 of 3",
   "versions": {
    "main": {"label": "Plan", "title": "Mt Takao hike",
     "why": "The drier of your solo days (30%).",
@@ -380,8 +382,8 @@ BEDS = [
   "options": ["h_royal"], "note": "Onsen; breakfast 08:00–08:30; free shuttle to the station in the morning."},
  {"nights": "Tue 3 Nov · 1 night", "where": "Shiba / Daimon, by Tokyo Tower", "status": "Booked",
   "options": ["h_koko"], "note": "Tokyo Tower and Zojo-ji on foot; Asakusa line from Daimon to Nihombashi, Asakusa and Narita."},
- {"nights": "Wed 4 – Sat 7 Nov · 3 nights (you)", "where": "Asakusa", "status": "Shortlist",
-  "options": ["h_wasabi", "h_samurai"], "note": "Private single: APA Asakusa ~€277 for 3 nights."},
+ {"nights": "Wed 4 – Sat 7 Nov · 3 nights (you)", "where": "Asakusa (Komagata)", "status": "Booked",
+  "options": ["h_tamayura"], "note": "2 min from Asakusa station (exit A2): direct Asakusa-line trains to Haneda on Saturday."},
 ]
 
 # ------------------------------------------------------------------ ideas to drop in anywhere
@@ -397,8 +399,6 @@ IDEAS = [
 CHECKLIST = [
  "Tue: bus ticket on the phone (Chuo Expressway Shimoyoshida 14:24 → Busta 15:55).",
  "Tue: dinner at Ginza Umi 21:00, cards only.",
- "Check her Narita terminal (Wed 16:55).",
- "Book your Asakusa bed for Wed–Sat.",
  "Sat: Haneda T3 by 14:30 for VN385 16:35 (via Hanoi, Paris CDG Sun 06:30).",
  "Suica on the phone for metro, trains and buses.",
 ]
