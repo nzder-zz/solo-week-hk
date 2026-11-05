@@ -100,6 +100,9 @@ section { padding: 26px 0 6px; }
 ol.steps { list-style: none; margin: 10px 0 0; padding: 0; }
 ol.steps li { display: grid; grid-template-columns: 70px 1fr; gap: 10px; padding: 7px 0; border-top: 1px dashed var(--line); }
 ol.steps li:first-child { border-top: 0; }
+ol.steps li.now { background: var(--surface); box-shadow: inset 3px 0 0 var(--accent); border-radius: 6px; padding-left: 8px; margin-left: -8px; }
+ol.steps li.now .t { color: var(--accent); font-weight: 700; }
+ol.steps li.now .t::after { content: 'Now'; display: block; font-size: 10.5px; text-transform: uppercase; letter-spacing: .06em; }
 ol.steps .t { font-family: var(--f-mono); font-size: 12.5px; color: var(--muted); padding-top: 2px; }
 .watch { margin-top: 10px; background: var(--accent-soft); border-radius: 8px; padding: 8px 10px; font-size: 14px; }
 .bed { margin-top: 10px; font-size: 13.5px; color: var(--muted); }
@@ -304,6 +307,7 @@ footer a { color: var(--muted); }
     var d = D.days.filter(function (x) { return x.id === id; })[0];
     store.set('choice:' + id, b && b.getAttribute('data-v') !== d.choice ? b.getAttribute('data-v') : null);
     $(id).innerHTML = renderDay(d);
+    markNow();
   });
 
   // ideas, beds, links, checklist
@@ -359,6 +363,44 @@ footer a { color: var(--muted); }
     var today = map[md.replace('/', '-')];
     if (today) { var a = document.querySelector('.strip a[data-day="' + today + '"]'); if (a) { a.classList.add('on'); a.querySelector('b').textContent += ' · today'; } }
   } catch (e) {}
+
+  // open at the current day and step (Japan time)
+  var DAYMAP = { '10-31': 'sat31', '11-01': 'sun1', '11-02': 'mon2', '11-03': 'tue3', '11-04': 'wed4', '11-05': 'thu5', '11-06': 'fri6', '11-07': 'sat7' };
+  function jstNow() {
+    var parts = {};
+    new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Tokyo', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' })
+      .formatToParts(new Date()).forEach(function (x) { parts[x.type] = x.value; });
+    return { md: parts.month + '-' + parts.day, min: (+parts.hour) * 60 + (+parts.minute) };
+  }
+  function markNow() {
+    try {
+      var n = jstNow(), id = DAYMAP[n.md];
+      document.querySelectorAll('ol.steps li.now').forEach(function (li) { li.classList.remove('now'); });
+      if (!id || !$(id)) return null;
+      var hit = null;
+      $(id).querySelectorAll('ol.steps li').forEach(function (li) {
+        var m = li.querySelector('.t').textContent.trim().match(/^~?(\d{1,2}):(\d{2})$/);
+        if (m && (+m[1]) * 60 + (+m[2]) <= n.min) hit = li;
+      });
+      if (hit) hit.classList.add('now');
+      return hit || $(id);
+    } catch (e) { return null; }
+  }
+  function goNow() {
+    var el = markNow(); if (!el) return;
+    var s = $('strip'), a = document.querySelector('.strip a.on');
+    if (s && a) s.scrollLeft = a.offsetLeft - (s.clientWidth - a.offsetWidth) / 2;
+    var bar = document.querySelector('.strip-bar');
+    var y = el.getBoundingClientRect().top + window.pageYOffset - (bar ? bar.offsetHeight : 0) - 12;
+    window.scrollTo({ top: Math.max(0, y), behavior: 'instant' });
+  }
+  if (!location.hash) { goNow(); setTimeout(goNow, 300); } else { markNow(); }
+  var hiddenAt = 0;
+  document.addEventListener('visibilitychange', function () {
+    if (document.hidden) { hiddenAt = Date.now(); return; }
+    if (hiddenAt && Date.now() - hiddenAt > 10 * 60 * 1000) goNow(); else markNow();
+  });
+  setInterval(markNow, 60 * 1000);
 
   // offline copy
   var off = $('offline');
