@@ -7,7 +7,7 @@
 # - Text markers: [[place_id]] = a map chip (PLACES), {{link_id}} = a timetable/booking chip (LINKS).
 # Then: python3 fuji-src/build.py  (writes fuji/index.html, fuji/sw.js, fuji/manifest.webmanifest).
 
-UPDATED = "5 Nov 2026, 18:45 JST"
+UPDATED = "6 Nov 2026, 00:40 JST"
 
 TRIP = {
     "title": "Tokyo + Kawaguchiko",
@@ -24,7 +24,7 @@ CHOICE = {
     "tue3": "main",
     "wed4": "main",
     "thu5": "evening",
-    "fri6": "west",
+    "fri6": "late",
     "sat7": "meiji",
 }
 
@@ -51,7 +51,7 @@ FORECAST = {
 }
 FC_SUMMARY = [
     "Thu 5: the rain is over. Cloudy and drying out this evening (40% then 20%): good for Senso-ji tonight.",
-    "Fri 6 is the best day (20%, 13–25°C, sun and cloud, dry afternoon): Mt Takao, Shinjuku Gyoen, Shibuya Sky at sunset.",
+    "Fri 6 is the best day (20%, 13–25°C, sun and cloud, dry afternoon): Shinjuku Gyoen, Shibuya, Shibuya Sky at sunset.",
     "Sat 7: sunny spells, 20%, 12–20°C. Fine for Meiji Jingu and the flight home.",
     "Typhoon In-fa (No. 31): heading out east of Japan, a normal low by Sat. No impact on Tokyo.",
 ]
@@ -182,6 +182,10 @@ PLACES = {
     "ak_hareruya2": ("Hareruya 2 Akihabara Tower", "Hareruya 2 Akihabara Tower Store", "A whole building of Pokémon cards (opened early 2026): packs, singles, a 150-seat play area. ~5 min from the station."),
     "motoyama": ("Yakiniku Motoyama Akihabara", "Yakiniku Motoyama Akihabara, 3-34-3 Kanda Sakumacho, Chiyoda City, Tokyo", "Yakiniku with Kobe beef and A5 Japanese Black, ~3 min from Akihabara station (east side). 16:00–23:00, last order 22:30. Average ~¥8,000 per person. Tel 03-6284-3728. Order a Kobe plate to taste, then A5 wagyu to fill up."),
     "suehirocho": ("Suehirocho Station", "Suehirocho Station", "Ginza line, ~8 min from Asakusa; the north end of Akihabara's main street (Chuo-dori)."),
+    "shinjuku_gyoemmae_st": ("Shinjuku-gyoemmae station", "Shinjuku-gyoemmae Station", "Marunouchi line; 5 min to the garden's Shinjuku gate."),
+    "isetan": ("Isetan Shinjuku", "Isetan Shinjuku", "Department store: big food hall in B1, restaurant floors on 7F."),
+    "miyashita": ("Miyashita Park", "Miyashita Park Shibuya", "Rooftop park over shops and cafés, 3 min from Shibuya station. Free."),
+    "nezu": ("Nezu Shrine", "Nezu Shrine", "Quiet shrine with a small tunnel of red torii and a pond. Free; ~10 min walk to Yanaka."),
     "gyoen": ("Shinjuku Gyoen", "Shinjuku Gyoen National Garden", "Big garden: Japanese, English and French sections. Chrysanthemum show 1–15 Nov; open every day until 15 Nov. 9:00–16:30, last entry 16:00. ¥500."),
     "shibuya_sky": ("Shibuya Sky", "Shibuya Sky", "Open-air roof of Shibuya Scramble Square, 230 m. 10:00–22:30, last entry 21:20; sunset slots sell out, book. The roof can close in strong wind or rain."),
     "takeshita": ("Takeshita Street", "Takeshita Street Harajuku", "Harajuku's pop street: crêpes, fashion, kawaii shops. Shops open ~10:00–11:00."),
@@ -393,10 +397,28 @@ DAYS = [
     ]},
   }},
 
- {"id": "fri6", "date": "Fri 6 Nov", "md": "11-06", "fc": "tokyo", "where": "Tokyo · Mt Takao", "who": "you",
+ {"id": "fri6", "date": "Fri 6 Nov", "md": "11-06", "fc": "tokyo", "where": "Tokyo · Shinjuku · Shibuya · Akihabara", "who": "you",
   "bed": "Tamayura Hotel Asakusa, night 3 of 3",
   "versions": {
-   "west": {"label": "Plan", "title": "Mt Takao, Shinjuku Gyoen, Shibuya Sky at sunset, then Akihabara and Kobe beef",
+   "late": {"label": "Plan", "title": "Sleep in, Shinjuku Gyoen, an easy Shibuya afternoon, Shibuya Sky at sunset, Akihabara and Kobe beef",
+    "why": "Changed 6 Nov 00:40: late night, so no 07:30 start and no 1h45 to Takao. Shinjuku Gyoen is the nature part; the afternoon is shopping and chill.",
+    "steps": [
+     ("Morning", "Sleep in. Breakfast near the hotel."),
+     ("09:45", "Ginza line from Asakusa to Akasaka-mitsuke, change to the Marunouchi line to [[shinjuku_gyoemmae_st]] (~35 min), 5 min on foot to the Shinjuku gate."),
+     ("10:15", "[[gyoen]]: chrysanthemum show (1–15 Nov), the Japanese garden and autumn colour, matcha at the Rakuu-tei tea house. 2–2.5 h. {{gyoen}}"),
+     ("12:30", "Lunch in Shinjuku: [[isetan]] food hall (B1) or its restaurant floors."),
+     ("13:45", "JR Yamanote line Shinjuku → Shibuya (7 min)."),
+     ("14:00", "Shibuya Parco 6F: [[pkmn_shibuya]], Nintendo Tokyo, Jump Shop, Capcom Store. {{pkmn}} [[shibuya_loft]] for paper kits."),
+     ("15:15", "Chill at [[miyashita]]: rooftop park, coffee, a sit-down."),
+     ("16:15", "[[shibuya_sky]]: sunset ~16:40, then the city lights. Book a slot around 16:00–16:20 this morning. {{shibuya_sky}}"),
+     ("17:45", "[[shibuya]] crossing on foot."),
+     ("18:15", "Ginza line from Shibuya towards Asakusa, get off at [[suehirocho]] (~25 min)."),
+     ("18:45", "[[akiba]]: you're early enough for [[ak_mandarake]] and [[ak_radiokaikan]] (close ~20:00), then [[ak_animate]], [[ak_gamers]], [[ak_hareruya2]]; [[ak_yodobashi]] games floor (6F) to 22:00."),
+     ("20:30", "Dinner: Kobe beef yakiniku at [[motoyama]] (avg ~¥8,000 ≈ €45; last order 22:30)."),
+     ("~22:00", "Ginza line from Suehirocho to Asakusa (~8 min)."),
+    ],
+    "watch": "Shibuya Sky isn't booked yet and sunset slots sell out: if it's full, Miyashita Park's roof is free. Up early and want more green? [[nezu]] and [[yanaka]] (~20 min from Asakusa) before Shinjuku, or [[kiyosumi]] (~15 min)."},
+   "west": {"label": "Takao (old plan)", "title": "Mt Takao, Shinjuku Gyoen, Shibuya Sky at sunset, then Akihabara and Kobe beef",
     "why": "The dry day (30%). A full day but not rushed: take the cable car up to save your legs, and skip the onsen to keep the afternoon.",
     "steps": [
      ("07:30", "Asakusa line from Asakusa to Higashi-nihombashi, walk underground to [[bakuroyokoyama]], Toei Shinjuku line to Shinjuku (~35 min). Keio line to [[takaosanguchi]] (~50 min)."),
