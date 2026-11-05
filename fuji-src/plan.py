@@ -7,7 +7,7 @@
 # - Text markers: [[place_id]] = a map chip (PLACES), {{link_id}} = a timetable/booking chip (LINKS).
 # Then: python3 fuji-src/build.py  (writes fuji/index.html, fuji/sw.js, fuji/manifest.webmanifest).
 
-UPDATED = "5 Nov 2026, 18:50 JST"
+UPDATED = "5 Nov 2026, 18:45 JST"
 
 TRIP = {
     "title": "Tokyo + Kawaguchiko",
@@ -29,19 +29,19 @@ CHOICE = {
 }
 
 # ------------------------------------------------------------------ forecast
-# 5 Nov 07:00 JST run: JMA JSON not fetchable; tenki.jp Chiyoda (4 Nov 14:00). Thu 5 rain peaks in the morning
-# (slots 90/80/40/60%). Lake values left as they were (trip is past the lake).
+# 5 Nov 19:00 JST run: JMA forecast JSON not fetchable; tenki.jp Chiyoda (5 Nov 03:00) + JMA overview (5 Nov 04:43).
+# Lake values left as they were (trip is past the lake).
 # sky: sun | suncloud | cloud | cloudsun | rain
 FC_META = {
-    "source": "tenki.jp 4 Nov 14:00 (Tokyo) JST",
-    "fetched": "5 Nov, 07:00 JST",
+    "source": "tenki.jp 5 Nov 03:00 (Tokyo) JST",
+    "fetched": "5 Nov, 19:00 JST",
     "links": ["jma_tokyo", "jma_yamanashi", "fuji_cam"],
 }
 FORECAST = {
     "tokyo": {
         "10-31": ("suncloud", 40, 13, 25), "11-01": ("cloudsun", 30, 13, 21), "11-02": ("rain", 70, 13, 21),
         "11-03": ("cloud", 10, 12, 20), "11-04": ("rain", 70, 12, 16), "11-05": ("rain", 90, 11, 18),
-        "11-06": ("suncloud", 30, 14, 25), "11-07": ("cloudsun", 30, 13, 20),
+        "11-06": ("suncloud", 20, 13, 25), "11-07": ("suncloud", 20, 12, 20),
     },
     "kawa": {
         "10-31": ("suncloud", 50, 10, 19), "11-01": ("cloudsun", 30, 4, 16), "11-02": ("rain", 70, 6, 17),
@@ -50,10 +50,10 @@ FORECAST = {
     },
 }
 FC_SUMMARY = [
-    "Thu 5 is the wet day (90%, 11–18°C). Heaviest rain this morning, easing after midday: Akihabara is indoors, Senso-ji tonight is a short walk.",
-    "Fri 6 is the best day (30%, 14–25°C, sunny spells): Mt Takao, Shinjuku Gyoen, Shibuya Sky at sunset.",
-    "Sat 7: cloudy then sunny (30%, 13–20°C). Fine for the flight home.",
-    "Typhoon In-fa (No. 31): passing near the Ogasawara islands today, far south of Tokyo. It boosts this morning's rain; no impact after that.",
+    "Thu 5: the rain is over. Cloudy and drying out this evening (40% then 20%): good for Senso-ji tonight.",
+    "Fri 6 is the best day (20%, 13–25°C, sun and cloud, dry afternoon): Mt Takao, Shinjuku Gyoen, Shibuya Sky at sunset.",
+    "Sat 7: sunny spells, 20%, 12–20°C. Fine for Meiji Jingu and the flight home.",
+    "Typhoon In-fa (No. 31): heading out east of Japan, a normal low by Sat. No impact on Tokyo.",
 ]
 
 # ------------------------------------------------------------------ links (timetables, bookings, info)
