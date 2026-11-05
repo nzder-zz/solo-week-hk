@@ -42,6 +42,10 @@ for d in P.DAYS:
 
 for i, (t, txt) in enumerate(P.IDEAS):
     scan(txt, f"idea {i}")
+for g, ids in P.AKIBA:
+    for pid in ids:
+        if pid not in P.PLACES:
+            errors.append(f"akiba {g}: {pid} not in PLACES")
 for i, txt in enumerate(P.CHECKLIST):
     scan(txt, f"checklist {i}")
 for b in P.BEDS:
@@ -61,7 +65,7 @@ data = {
     "days": days,
     "places": {k: {"name": v[0], "q": v[1], "note": v[2]} for k, v in P.PLACES.items()},
     "links": {k: {"label": v[0], "url": v[1], "kind": v[2]} for k, v in P.LINKS.items()},
-    "beds": P.BEDS, "ideas": [list(x) for x in P.IDEAS], "checklist": P.CHECKLIST,
+    "beds": P.BEDS, "akiba": [list(x) for x in P.AKIBA], "akiba_note": P.AKIBA_NOTE, "ideas": [list(x) for x in P.IDEAS], "checklist": P.CHECKLIST,
 }
 blob = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 

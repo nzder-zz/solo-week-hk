@@ -153,7 +153,7 @@ footer a { color: var(--muted); }
     <h1>Tokyo <span>+</span> Kawaguchiko</h1>
     <p class="lede" id="lede"></p>
     <nav class="jump" aria-label="Sections">
-      <a href="#days">Day by day</a><a href="#forecast">Forecast</a><a href="#beds">Beds</a><a href="#links">Timetables</a><a href="#todo">To do</a>
+      <a href="#days">Day by day</a><a href="#forecast">Forecast</a><a href="#akiba">Akihabara</a><a href="#beds">Beds</a><a href="#links">Timetables</a><a href="#todo">To do</a>
     </nav>
   </div>
   <svg class="fuji" viewBox="0 0 400 70" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
@@ -175,6 +175,12 @@ footer a { color: var(--muted); }
     <h2>Day by day</h2>
     <p class="sec-note">★ marks the plan. Tap another version to swap it on this phone; tap a <u>place</u> for its note and the map.</p>
     <div id="daylist"></div>
+  </div></section>
+
+  <section id="akiba"><div class="wrap">
+    <h2>Akihabara shops</h2>
+    <p class="sec-note" id="akibanote"></p>
+    <div class="cards two" id="akibalist"></div>
   </div></section>
 
   <section id="ideas"><div class="wrap">
@@ -301,6 +307,11 @@ footer a { color: var(--muted); }
   });
 
   // ideas, beds, links, checklist
+  $('akibanote').textContent = D.akiba_note;
+  $('akibalist').innerHTML = D.akiba.map(function (g) {
+    return '<div class="card"><h3>' + esc(g[0]) + '</h3><ul class="opts">' + g[1].map(function (o) {
+      return '<li>' + place(o) + ' <span class="muted">' + esc(D.places[o].note) + '</span></li>'; }).join('') + '</ul></div>';
+  }).join('');
   $('idealist').innerHTML = D.ideas.map(function (i) { return '<div class="card"><h3>' + esc(i[0]) + '</h3><p>' + rich(i[1]) + '</p></div>'; }).join('');
   $('bedlist').innerHTML = D.beds.map(function (b) {
     return '<div class="card"><h3>' + esc(b.nights) + '<span class="tag">' + esc(b.status) + '</span></h3><p class="meta">' + esc(b.where) + '. ' + esc(b.note) + '</p>' +

@@ -7,7 +7,7 @@
 # - Text markers: [[place_id]] = a map chip (PLACES), {{link_id}} = a timetable/booking chip (LINKS).
 # Then: python3 fuji-src/build.py  (writes fuji/index.html, fuji/sw.js, fuji/manifest.webmanifest).
 
-UPDATED = "5 Nov 2026, 10:05 JST"
+UPDATED = "5 Nov 2026, 18:50 JST"
 
 TRIP = {
     "title": "Tokyo + Kawaguchiko",
@@ -23,9 +23,9 @@ CHOICE = {
     "mon2": "main",
     "tue3": "main",
     "wed4": "main",
-    "thu5": "museums",
-    "fri6": "main",
-    "sat7": "main",
+    "thu5": "evening",
+    "fri6": "west",
+    "sat7": "meiji",
 }
 
 # ------------------------------------------------------------------ forecast
@@ -50,8 +50,8 @@ FORECAST = {
     },
 }
 FC_SUMMARY = [
-    "Thu 5 is the wet day (90%, 11–18°C). Heaviest rain this morning (possibly heavy, roads flooding), easing after midday. Keep it as the rainy-Tokyo day; go out late afternoon.",
-    "Fri 6 is the best day (30%, 14–25°C, sunny spells): Mt Takao. No swap needed.",
+    "Thu 5 is the wet day (90%, 11–18°C). Heaviest rain this morning, easing after midday: Akihabara is indoors, Senso-ji tonight is a short walk.",
+    "Fri 6 is the best day (30%, 14–25°C, sunny spells): Mt Takao, Shinjuku Gyoen, Shibuya Sky at sunset.",
     "Sat 7: cloudy then sunny (30%, 13–20°C). Fine for the flight home.",
     "Typhoon In-fa (No. 31): passing near the Ogasawara islands today, far south of Tokyo. It boosts this morning's rain; no impact after that.",
 ]
@@ -82,6 +82,8 @@ LINKS = {
     "umi": ("Ginza Umi on Tabelog", "https://tabelog.com/en/tokyo/A1301/A130101/13295533", "info"),
     "royal_jalan": ("Fuji Royal Hotel (Jalan)", "https://www.jalan.net/yad329958/", "info"),
     "fujisanbike": ("fujisanbike prices", "https://fujisanbike.com/menu", "book"),
+    "shibuya_sky": ("Shibuya Sky: book a time slot", "https://www.shibuya-scramble-square.com/sky/", "book"),
+    "gyoen": ("Shinjuku Gyoen (hours, fees)", "https://www.env.go.jp/en/garden/shinjukugyoen/", "info"),
 }
 
 # ------------------------------------------------------------------ places (each gets a Google Maps link)
@@ -173,6 +175,29 @@ PLACES = {
     "h_wasabi": ("Hostel Wasabi Asakusa", "Hostel Wasabi Asakusa", "Dorm, 3 nights €62 with breakfast, free cancellation."),
     "h_tamayura": ("Tamayura Hotel Asakusa (玉響ホテル浅草)", "Tamayura Hotel Asakusa, 2-6-8 Komagata, Taito City, Tokyo", "Booked, Wed 4 – Sat 7. 2 min from Asakusa station exit A2 (Ginza + Toei Asakusa lines); 5 min from Kuramae (Oedo line)."),
     "h_samurai": ("Guest House Tokyo Samurai", "Guest House Tokyo Samurai", "Dorm, 3 nights €58."),
+    # Thu 5 evening / Fri 6 west / Sat 7 Meiji
+    "akiba": ("Akihabara", "Akihabara Electric Town", "Anime, manga and games district. Most shops open 10:00–11:00 and close 20:00–21:00; Yodobashi to 22:00."),
+    "suehirocho": ("Suehirocho Station", "Suehirocho Station", "Ginza line, ~8 min from Asakusa; the north end of Akihabara's main street (Chuo-dori)."),
+    "gyoen": ("Shinjuku Gyoen", "Shinjuku Gyoen National Garden", "Big garden: Japanese, English and French sections. Chrysanthemum show 1–15 Nov; open every day until 15 Nov. 9:00–16:30, last entry 16:00. ¥500."),
+    "shibuya_sky": ("Shibuya Sky", "Shibuya Sky", "Open-air roof of Shibuya Scramble Square, 230 m. 10:00–22:30, last entry 21:20; sunset slots sell out, book. The roof can close in strong wind or rain."),
+    "takeshita": ("Takeshita Street", "Takeshita Street Harajuku", "Harajuku's pop street: crêpes, fashion, kawaii shops. Shops open ~10:00–11:00."),
+    "omotesando_st": ("Omotesando Station", "Omotesando Station", "Ginza line, ~33 min from Asakusa (the line runs straight through). Meiji Jingu ~15 min on foot along Omotesando avenue."),
+    # Akihabara shops
+    "ak_animate": ("Animate Akihabara", "Animate Akihabara", "Biggest official anime-goods chain. Reopened bigger in Aug 2026: character goods in Building 1, game goods in the ANNEX, gacha floors in the ANNEX (B1/1F)."),
+    "ak_gamers": ("Akihabara Gamers main store", "AKIHABARA Gamers Main Store", "Seven floors of new manga, light novels, Blu-rays and goods for this season's anime. Despite the name, mostly anime and manga."),
+    "ak_cultures": ("Akiba Cultures Zone", "Akiba Cultures Zone", "Building of small shops: anime goods, figures, idol merch, cards."),
+    "ak_shosen": ("Shosen Book Tower", "Shosen Book Tower Akihabara", "Eight floors of new books: manga on 6F–7F, light novels on 8F, English-translated manga on 6F."),
+    "ak_melon": ("Melonbooks Akihabara", "Melonbooks Akihabara", "Doujinshi (fan-made manga) and indie goods; adult section kept apart."),
+    "ak_radiokaikan": ("Akihabara Radio Kaikan", "Akihabara Radio Kaikan", "The 10-floor hobby tower by the station: figure shops (amiami and others), model kits, trading cards, gacha. Closes ~20:00."),
+    "ak_kotobukiya": ("Kotobukiya Akihabara", "Kotobukiya Akihabara", "The figure maker's own store: scale figures and plastic kits, with display models."),
+    "ak_tamashii": ("Tamashii Nations Store Tokyo", "TAMASHII NATIONS STORE TOKYO Akihabara", "Bandai's figure showroom and shop: Dragon Ball, One Piece, Gundam, Kamen Rider figures on display."),
+    "ak_mandarake": ("Mandarake Complex", "Mandarake Complex Akihabara", "Eight floors of second-hand manga, anime goods, figures and cels; each floor a category. 12:00–20:00. Skip the retro-game floor."),
+    "ak_lashinbang": ("Lashinbang Akihabara", "Lashinbang Akihabara", "Second-hand anime goods (acrylic stands, badges, figures) at low prices; there's also the new AKIBA DEEP BASE branch."),
+    "ak_surugaya": ("Surugaya Akihabara", "Surugaya Akihabara", "Used games, figures, cards and manga, usually cheaper than elsewhere; good for recent Switch/PS games."),
+    "ak_yodobashi": ("Yodobashi Akiba", "Yodobashi Akiba", "Huge electronics store by the station's east side; game floor with new Switch and PlayStation titles, consoles, toys and plastic kits. Open to 22:00: the last stop."),
+    "ak_sofmap": ("Sofmap Akihabara", "Sofmap Akihabara main store", "Games, consoles and game goods across several buildings on Chuo-dori; used games too."),
+    "ak_gigo": ("GiGO Akihabara", "GiGO Akihabara 1", "Arcades: crane games for anime prizes downstairs, rhythm and fighting games (current ones) upstairs."),
+    "ak_gacha": ("Akihabara Gachapon Kaikan", "Akihabara Gachapon Kaikan", "Hundreds of capsule-toy machines (¥200–500 a go): anime, games, odd stuff."),
 }
 
 # ------------------------------------------------------------------ the days
@@ -323,7 +348,17 @@ DAYS = [
  {"id": "thu5", "date": "Thu 5 Nov", "md": "11-05", "fc": "tokyo", "where": "Tokyo", "who": "you",
   "bed": "Tamayura Hotel Asakusa, night 2 of 3",
   "versions": {
-   "museums": {"label": "Plan", "title": "Pelican breakfast, Edo-Tokyo Museum and Hokusai in Ryogoku, Zen treasures at the Tokyo National Museum",
+   "evening": {"label": "Plan", "title": "Ryogoku museums and origami, then Akihabara and Senso-ji at night",
+    "why": "Changed 5 Nov evening: the Tokyo National Museum is dropped. Akihabara first because its shops close 20:00–21:00; Senso-ji stays lit until ~23:00.",
+    "steps": [
+     ("Done", "Breakfast at [[pelican]], [[edohaku]], chanko lunch in [[ryogoku]], the origami museum."),
+     ("18:15", "2 min to Asakusa station (exit A2), Ginza line to [[suehirocho]] (~8 min), 5 min on foot into [[akiba]]. Or the Tsukuba Express from its own Asakusa station (~10 min walk) to Akihabara in 4 min."),
+     ("18:35", "Early closers first: [[ak_mandarake]] and [[ak_radiokaikan]] (~20:00). Then [[ak_animate]], [[ak_gamers]], a [[ak_gigo]] arcade. Full shop list in the Akihabara section below."),
+     ("20:00", "Dinner in Akihabara. [[ak_yodobashi]] is open to 22:00 for a last look at games."),
+     ("20:50", "Ginza line back to Asakusa."),
+     ("21:00", "[[sensoji]] lit up: quiet grounds and the painted Nakamise shutters. 5 min walk back to the hotel."),
+    ]},
+   "museums": {"label": "Morning plan (old)", "title": "Pelican breakfast, Edo-Tokyo Museum and Hokusai in Ryogoku, Zen treasures at the Tokyo National Museum",
     "why": "Chosen 5 Nov morning. Rain heaviest this morning, easing after midday: all indoors, short hops on the Oedo line and JR.",
     "steps": [
      ("10:00", "Breakfast at [[pelican]] (morning menu until 11:00, queue likely). If the line is too long: [[fuglen]]."),
@@ -354,7 +389,21 @@ DAYS = [
  {"id": "fri6", "date": "Fri 6 Nov", "md": "11-06", "fc": "tokyo", "where": "Tokyo · Mt Takao", "who": "you",
   "bed": "Tamayura Hotel Asakusa, night 3 of 3",
   "versions": {
-   "main": {"label": "Plan", "title": "Mt Takao hike",
+   "west": {"label": "Plan", "title": "Mt Takao, Shinjuku Gyoen chrysanthemums, Shibuya Sky at sunset",
+    "why": "The dry day (30%). A full day but not rushed: take the cable car up to save your legs, and skip the onsen to keep the afternoon.",
+    "steps": [
+     ("07:30", "Asakusa line from Asakusa to Higashi-nihombashi, walk underground to [[bakuroyokoyama]], Toei Shinjuku line to Shinjuku (~35 min). Keio line to [[takaosanguchi]] (~50 min)."),
+     ("09:00", "Cable car up (or Trail 6 on foot if you feel fresh), [[yakuoin]], the summit. On to [[takao_shiroyama]] for Fuji only if you're early (adds ~50 min there and back)."),
+     ("11:30", "Down by Trail 1 or the cable car; soba lunch by the station."),
+     ("12:45", "Keio line back to Shinjuku (~50 min)."),
+     ("14:00", "[[gyoen]]: chrysanthemum show (1–15 Nov) and autumn colour. Last entry 16:00, gates close 16:30. {{gyoen}}"),
+     ("15:45", "Back to Shinjuku station, JR Yamanote to Shibuya (7 min)."),
+     ("16:15", "[[shibuya_sky]]: sunset ~16:40, then the city lights. Book a slot around 16:00–16:20. {{shibuya_sky}}"),
+     ("18:00", "[[shibuya]] on foot; dinner in Shibuya."),
+     ("~20:00", "Ginza line straight back to Asakusa (~33 min; it ends there)."),
+    ],
+    "watch": "If the roof is closed for wind, the indoor 46F deck stays open. If Takao runs late, drop Shinjuku Gyoen rather than rushing."},
+   "main": {"label": "Takao + onsen", "title": "Mt Takao hike",
     "why": "The drier of your solo days (30%).",
     "steps": [
      ("08:00", "Keio line from Shinjuku to [[takaosanguchi]] (about 50 min)."),
@@ -379,7 +428,21 @@ DAYS = [
  {"id": "sat7", "date": "Sat 7 Nov", "md": "11-07", "fc": "tokyo", "where": "Tokyo → Haneda → Hanoi → Paris", "who": "you",
   "bed": "On the plane (lands Paris CDG Sun 8, 06:30)",
   "versions": {
-   "main": {"label": "Plan", "title": "Tsukiji breakfast, then Haneda T3 for VN385 at 16:35",
+   "meiji": {"label": "Plan", "title": "Meiji Jingu and Harajuku, then Haneda T3 for VN385 at 16:35",
+    "why": "Vietnam Airlines, one ticket: Haneda T3 16:35 → Hanoi 20:50, Hanoi 23:40 → Paris CDG T2C 06:30 Sun 8. Bags checked through.",
+    "steps": [
+     ("08:00", "Check out; leave the bag at the hotel front desk."),
+     ("08:10", "Ginza line from Asakusa to [[omotesando_st]] (~33 min), then 15 min on foot up Omotesando avenue."),
+     ("08:55", "[[meiji]]: the forest path to the main shrine, calm in the morning."),
+     ("10:00", "[[takeshita]] as the shops open, then [[catstreet]] or Omotesando; early lunch."),
+     ("11:45", "Ginza line from Omotesando back to Asakusa; collect the bag."),
+     ("13:30", "From Asakusa, Asakusa line trains run through onto Keikyu to [[hnd_t3]] (~45 min; some need a change at Sengakuji). {{keikyu}}"),
+     ("14:30", "Check in at Haneda Terminal 3 (Vietnam Airlines): one checked bag (Economy Lite), ask for it to go through to Paris."),
+     ("16:35", "VN385 to Hanoi (6h15), lands 20:50. Stay airside at Noi Bai T2 for VN19 at 23:40."),
+     ("Sun 06:30", "Land at Paris CDG Terminal 2C. TGV from the airport station (Aéroport CDG 2 TGV) to Lille Europe, about 1h."),
+    ],
+    "watch": "Hanoi connection is 2h50 on the same ticket. If the bag isn't tagged to CDG at Haneda, ask before you leave the desk."},
+   "main": {"label": "Tsukiji breakfast", "title": "Tsukiji breakfast, then Haneda T3 for VN385 at 16:35",
     "why": "Vietnam Airlines, one ticket: Haneda T3 16:35 → Hanoi 20:50, Hanoi 23:40 → Paris CDG T2C 06:30 Sun 8. Bags checked through.",
     "steps": [
      ("08:00", "Breakfast at [[tsukiji]]: Asakusa line from Asakusa to Higashi-Ginza (~12 min), then 5 min on foot."),
@@ -415,7 +478,19 @@ IDEAS = [
  ("Maple corridor", "Colour is coming in early November, but the light-up and festival start on 7 Nov. {{maple_col}}"),
 ]
 
+# ------------------------------------------------------------------ Akihabara shops (anime, manga, modern games; no retro)
+AKIBA_NOTE = ("Most shops open 10:00–11:00 and close 20:00–21:00; Yodobashi to 22:00. "
+              "Left out on purpose: retro-game shops (Super Potato, BEEP, Trader). Toranoana closed in Akihabara in 2022.")
+AKIBA = [
+ ("Anime goods (new)", ["ak_animate", "ak_gamers", "ak_cultures"]),
+ ("Manga", ["ak_shosen", "ak_melon"]),
+ ("Figures and Gunpla", ["ak_radiokaikan", "ak_kotobukiya", "ak_tamashii"]),
+ ("Second-hand (cheaper)", ["ak_mandarake", "ak_lashinbang", "ak_surugaya"]),
+ ("Video games, arcades, gacha", ["ak_yodobashi", "ak_sofmap", "ak_gigo", "ak_gacha"]),
+]
+
 CHECKLIST = [
+ "Fri: book a Shibuya Sky slot around 16:00–16:20 (sunset ~16:40). {{shibuya_sky}}",
  "Tue: bus ticket on the phone (Chuo Expressway Shimoyoshida 14:24 → Busta 15:55).",
  "Tue: dinner at Ginza Umi 21:00, cards only.",
  "Sat: Haneda T3 by 14:30 for VN385 16:35 (via Hanoi, Paris CDG Sun 06:30).",
