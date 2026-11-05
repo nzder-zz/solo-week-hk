@@ -7,7 +7,7 @@
 # - Text markers: [[place_id]] = a map chip (PLACES), {{link_id}} = a timetable/booking chip (LINKS).
 # Then: python3 fuji-src/build.py  (writes fuji/index.html, fuji/sw.js, fuji/manifest.webmanifest).
 
-UPDATED = "5 Nov 2026, 06:45 JST"
+UPDATED = "5 Nov 2026, 10:05 JST"
 
 TRIP = {
     "title": "Tokyo + Kawaguchiko",
@@ -23,7 +23,7 @@ CHOICE = {
     "mon2": "main",
     "tue3": "main",
     "wed4": "main",
-    "thu5": "main",
+    "thu5": "museums",
     "fri6": "main",
     "sat7": "main",
 }
@@ -104,7 +104,15 @@ PLACES = {
     "coredo": ("Coredo Muromachi", "Coredo Muromachi", "Across from Mitsukoshi: Japanese knives, dashi, crafts."),
     "itoya": ("Itoya Ginza", "Ginza Itoya", "12-floor stationery store with the red paper clip: paper, pens, travel, home. Mon–Sat to 20:00."),
     "akebonoyu": ("Akebono-yu", "Akebono-yu Asakusa", "Edo-period public bath in Asakusa. 6:00–9:00 and 11:00–1:00, closed 1st and 3rd Fri. ¥550."),
-    "tnm": ("Tokyo National Museum", "Tokyo National Museum", "Best collection of Japanese art; closed Mondays."),
+    "tnm": ("Tokyo National Museum", "Tokyo National Museum", "Best collection of Japanese art; closed Mondays. Thu 9:30–17:00 (last entry 16:30). Daitokuji Zen treasures in the Heiseikan to 6 Dec (¥2,300 same-day, includes the main collection); Hiroshige in the Main Building to 20 Dec (¥1,500)."),
+    "pelican": ("Pelican Café", "Pelican Cafe, 3-9-11 Kotobuki, Taito City, Tokyo", "Café of the Pelican bakery (since 1942): charcoal-grilled thick toast, ham-katsu sandwich. Breakfast menu 9:00–11:00; about 20 seats, expect a queue. Closed Sundays and holidays. ~7 min walk from the hotel."),
+    "fuglen": ("Fuglen Asakusa", "Fuglen Asakusa, 2-6-15 Asakusa, Taito City, Tokyo", "Oslo coffee bar, open from 8:00. Waffle with brown cheese, sour cream and berry jam ¥670."),
+    "kuramae_st": ("Kuramae Station (Oedo line)", "Kuramae Station Oedo Line", "Oedo line: 1 stop to Ryogoku. Exit A7 is ~5 min from the hotel."),
+    "edohaku": ("Edo-Tokyo Museum", "Edo-Tokyo Museum Ryogoku", "Reopened 31 Mar 2026 after a 4-year renovation: walk-through Edo streets, life-size buildings, 400 years of Tokyo. Next to Ryogoku station (Oedo line). 9:30–17:30. Special show 'The Toyotomi Brothers' to 8 Nov (¥2,100 same-day)."),
+    "hokusai": ("Sumida Hokusai Museum", "Sumida Hokusai Museum", "10th-anniversary 'Best of' show to 23 Nov: favourites, never-shown works and new buys. 9:30–17:30, ¥1,500. ~10 min walk from the Edo-Tokyo Museum."),
+    "ryogoku": ("Ryogoku (chanko lunch)", "chanko nabe Ryogoku", "Sumo district: chanko nabe, the wrestlers' hot pot, many places around the station."),
+    "nmwa": ("National Museum of Western Art", "National Museum of Western Art Tokyo", "Next to the Tokyo National Museum. Turner, mostly from the Tate, to 21 Feb."),
+    "nact": ("National Art Center, Tokyo", "The National Art Center Tokyo", "Roppongi, ~40 min away. Louvre Renaissance (incl. Leonardo's 'La Belle Ferronnière') and Shojo Manga Infinity. 10:00–18:00."),
     "ameyoko": ("Ameyoko", "Ameyoko Shopping Street", "Market street under the tracks: street food, cheap lunches."),
     "meiji": ("Meiji Jingu", "Meiji Jingu", "Forest shrine next to Harajuku. Autumn festival 1–3 Nov."),
     "catstreet": ("Cat Street, Harajuku", "Cat Street Harajuku", "Quiet back street to Shibuya, small shops."),
@@ -315,7 +323,19 @@ DAYS = [
  {"id": "thu5", "date": "Thu 5 Nov", "md": "11-05", "fc": "tokyo", "where": "Tokyo", "who": "you",
   "bed": "Tamayura Hotel Asakusa, night 2 of 3",
   "versions": {
-   "main": {"label": "Rainy Tokyo", "title": "Museum, food hall, digital art, a hot bath",
+   "museums": {"label": "Plan", "title": "Pelican breakfast, Edo-Tokyo Museum and Hokusai in Ryogoku, Zen treasures at the Tokyo National Museum",
+    "why": "Chosen 5 Nov morning. Rain heaviest this morning, easing after midday: all indoors, short hops on the Oedo line and JR.",
+    "steps": [
+     ("10:00", "Breakfast at [[pelican]] (morning menu until 11:00, queue likely). If the line is too long: [[fuglen]]."),
+     ("11:00", "Walk to [[kuramae_st]], Oedo line 1 stop to Ryogoku. [[edohaku]]: the Toyotomi Brothers show (ends 8 Nov) and the permanent Edo-to-Tokyo floors."),
+     ("13:00", "Chanko nabe lunch in [[ryogoku]]."),
+     ("14:00", "[[hokusai]] (~1h). Skip it if you want more time at the Tokyo National Museum."),
+     ("15:00", "JR Sobu line Ryogoku → Akihabara, change to the Yamanote or Keihin-Tohoku line → Ueno (~15 min), then 10 min on foot."),
+     ("15:15", "[[tnm]]: Daitokuji Zen treasures in the Heiseikan (shown together for the first time in 41 years). Add Hiroshige in the Main Building if you have time. Closes 17:00."),
+     ("17:00", "Dinner at [[ameyoko]], or Ginza line straight back to Asakusa (5 min)."),
+     ("Other options", "Turner at [[nmwa]] (next door). Louvre Renaissance and Shojo Manga at [[nact]] (far). Mori Art Museum is closed until 12 Nov."),
+    ]},
+   "main": {"label": "Old: rainy Tokyo", "title": "Museum, food hall, digital art, a hot bath",
     "why": "Showers likely (50%) and only 15°C.",
     "steps": [
      ("09:30", "[[tnm]] in Ueno (open Thu)."),
