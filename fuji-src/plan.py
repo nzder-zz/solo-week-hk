@@ -178,6 +178,9 @@ PLACES = {
     # Thu 5 evening / Fri 6 west / Sat 7 Meiji
     "akiba": ("Akihabara", "Akihabara Electric Town", "Anime, manga and games district. Most shops open 10:00–11:00 and close 20:00–21:00; Yodobashi to 22:00."),
     "azumabashi": ("Azuma Bridge", "Azumabashi Bridge Asakusa", "Red bridge over the Sumida, 5 min from Senso-ji: the lit Skytree and the Asahi building across the river."),
+    "shibuya_loft": ("Shibuya Loft", "Shibuya Loft", "Stationery and craft floors: paper kits, Paper Theater, washi."),
+    "ak_hareruya2": ("Hareruya 2 Akihabara Tower", "Hareruya 2 Akihabara Tower Store", "A whole building of Pokémon cards (opened early 2026): packs, singles, a 150-seat play area. ~5 min from the station."),
+    "motoyama": ("Yakiniku Motoyama Akihabara", "Yakiniku Motoyama Akihabara, 3-34-3 Kanda Sakumacho, Chiyoda City, Tokyo", "Yakiniku with Kobe beef and A5 Japanese Black, ~3 min from Akihabara station (east side). 16:00–23:00, last order 22:30. Average ~¥8,000 per person. Tel 03-6284-3728. Order a Kobe plate to taste, then A5 wagyu to fill up."),
     "suehirocho": ("Suehirocho Station", "Suehirocho Station", "Ginza line, ~8 min from Asakusa; the north end of Akihabara's main street (Chuo-dori)."),
     "gyoen": ("Shinjuku Gyoen", "Shinjuku Gyoen National Garden", "Big garden: Japanese, English and French sections. Chrysanthemum show 1–15 Nov; open every day until 15 Nov. 9:00–16:30, last entry 16:00. ¥500."),
     "shibuya_sky": ("Shibuya Sky", "Shibuya Sky", "Open-air roof of Shibuya Scramble Square, 230 m. 10:00–22:30, last entry 21:20; sunset slots sell out, book. The roof can close in strong wind or rain."),
@@ -393,7 +396,7 @@ DAYS = [
  {"id": "fri6", "date": "Fri 6 Nov", "md": "11-06", "fc": "tokyo", "where": "Tokyo · Mt Takao", "who": "you",
   "bed": "Tamayura Hotel Asakusa, night 3 of 3",
   "versions": {
-   "west": {"label": "Plan", "title": "Mt Takao, Shinjuku Gyoen chrysanthemums, Shibuya Sky at sunset",
+   "west": {"label": "Plan", "title": "Mt Takao, Shinjuku Gyoen, Shibuya Sky at sunset, then Akihabara and Kobe beef",
     "why": "The dry day (30%). A full day but not rushed: take the cable car up to save your legs, and skip the onsen to keep the afternoon.",
     "steps": [
      ("07:30", "Asakusa line from Asakusa to Higashi-nihombashi, walk underground to [[bakuroyokoyama]], Toei Shinjuku line to Shinjuku (~35 min). Keio line to [[takaosanguchi]] (~50 min)."),
@@ -403,10 +406,13 @@ DAYS = [
      ("14:00", "[[gyoen]]: chrysanthemum show (1–15 Nov) and autumn colour. Last entry 16:00, gates close 16:30. {{gyoen}}"),
      ("15:45", "Back to Shinjuku station, JR Yamanote to Shibuya (7 min)."),
      ("16:15", "[[shibuya_sky]]: sunset ~16:40, then the city lights. Book a slot around 16:00–16:20. {{shibuya_sky}}"),
-     ("18:00", "[[shibuya]] on foot; dinner in Shibuya."),
-     ("~20:00", "Ginza line straight back to Asakusa (~33 min; it ends there)."),
+     ("17:45", "[[shibuya]] on foot, then [[pkmn_shibuya]] (to 21:00): the newest card sets at the normal price, no store card needed. {{pkmn}} [[shibuya_loft]] next door for paper kits."),
+     ("18:45", "Ginza line from Shibuya towards Asakusa, get off at [[suehirocho]] (~25 min): Akihabara is on the way home."),
+     ("19:15", "[[ak_animate]], [[ak_gamers]] (close ~21:00), [[ak_hareruya2]] for Pokémon cards if still open; [[ak_yodobashi]] games floor (6F) to 22:00."),
+     ("20:30", "Dinner: Kobe beef yakiniku at [[motoyama]] (avg ~¥8,000 ≈ €45; last order 22:30)."),
+     ("~22:00", "Ginza line from Suehirocho to Asakusa (~8 min)."),
     ],
-    "watch": "If the roof is closed for wind, the indoor 46F deck stays open. If Takao runs late, drop Shinjuku Gyoen rather than rushing."},
+    "watch": "If the roof is closed for wind, the indoor 46F deck stays open. If Takao runs late, drop Shinjuku Gyoen rather than rushing. Mandarake and Radio Kaikan close ~20:00: you'll miss them tonight."},
    "main": {"label": "Takao + onsen", "title": "Mt Takao hike",
     "why": "The drier of your solo days (30%).",
     "steps": [
