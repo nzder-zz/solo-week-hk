@@ -7,7 +7,7 @@
 # - Text markers: [[place_id]] = a map chip (PLACES), {{link_id}} = a timetable/booking chip (LINKS).
 # Then: python3 fuji-src/build.py  (writes fuji/index.html, fuji/sw.js, fuji/manifest.webmanifest).
 
-UPDATED = "6 Nov 2026, 06:45 JST"
+UPDATED = "6 Nov 2026, 13:45 JST"
 
 TRIP = {
     "title": "Tokyo + Kawaguchiko",
@@ -51,9 +51,9 @@ FORECAST = {
     },
 }
 FC_SUMMARY = [
-    "Fri 6: warm (14–25°C) and dry by day (10% until 18:00). Shinjuku Gyoen, Shibuya and Shibuya Sky at sunset are fine.",
+    "Fri 6: warm (14–25°C) and dry by day (10% until 18:00). Shinjuku Gyoen and the Shibuya sunset from the Parco rooftop are fine.",
     "Showers may come back this evening (50% after 18:00). Take an umbrella for Akihabara and dinner at Motoyama.",
-    "Sat 7: cloudy early, then clear. 30% at most, dry afternoon, 12–21°C. Fine for Meiji Jingu and the flight home.",
+    "Sat 7: cloudy early, then clear. 30% at most, dry afternoon, 12–21°C. Fine for Meiji Jingu, Shibuya Sky at 10:20 and the flight home.",
     "Typhoon In-fa: no longer in the forecasts. No impact on Tokyo.",
 ]
 
@@ -188,7 +188,10 @@ PLACES = {
     "miyashita": ("Miyashita Park", "Miyashita Park Shibuya", "Rooftop park over shops and cafés, 3 min from Shibuya station. Free."),
     "nezu": ("Nezu Shrine", "Nezu Shrine", "Quiet shrine with a small tunnel of red torii and a pond. Free; ~10 min walk to Yanaka."),
     "gyoen": ("Shinjuku Gyoen", "Shinjuku Gyoen National Garden", "Big garden: Japanese, English and French sections. Chrysanthemum show 1–15 Nov; open every day until 15 Nov. 9:00–16:30, last entry 16:00. ¥500."),
-    "shibuya_sky": ("Shibuya Sky", "Shibuya Sky", "Open-air roof of Shibuya Scramble Square, 230 m. 10:00–22:30, last entry 21:20; sunset slots sell out, book. The roof can close in strong wind or rain."),
+    "shibuya_sky": ("Shibuya Sky", "Shibuya Sky", "Open-air roof of Shibuya Scramble Square, 230 m. BOOKED: Sat 7 Nov, entry 10:20–10:39 (QR code in your Gmail; take your passport, ID may be checked). Entrance on 14F. No time limit inside, no re-entry. If the roof is closed for wind, the indoor 46F deck stays open."),
+    "alpen": ("Alpen TOKYO", "Alpen TOKYO Shinjuku", "Big sports and outdoor store, Unica Bldg, 3-23-7 Shinjuku (east exit). B2–8F: Sports Depo, Alpen Outdoors. Weekdays 11:00–22:00. Tax-free over ¥5,000 with passport."),
+    "parco_roof": ("Shibuya Parco rooftop", "Shibuya Parco Rooftop Park", "Free rooftop park on 10F of Shibuya Parco: city view at sunset, no booking. Hours not checked."),
+    "fukuras": ("Shibuya Fukuras rooftop", "Shibuya Fukuras Shibuniwa", "Free rooftop garden on 17F of Shibuya Fukuras, 2 min from the station. Backup sunset spot."),
     "takeshita": ("Takeshita Street", "Takeshita Street Harajuku", "Harajuku's pop street: crêpes, fashion, kawaii shops. Shops open ~10:00–11:00."),
     "omotesando_st": ("Omotesando Station", "Omotesando Station", "Ginza line, ~33 min from Asakusa (the line runs straight through). Meiji Jingu ~15 min on foot along Omotesando avenue."),
     # Akihabara shops
@@ -401,24 +404,21 @@ DAYS = [
  {"id": "fri6", "date": "Fri 6 Nov", "md": "11-06", "fc": "tokyo", "where": "Tokyo · Shinjuku · Shibuya · Akihabara", "who": "you",
   "bed": "Tamayura Hotel Asakusa, night 3 of 3",
   "versions": {
-   "late": {"label": "Plan", "title": "Sleep in, Shinjuku Gyoen, an easy Shibuya afternoon, Shibuya Sky at sunset, Akihabara and Kobe beef",
-    "why": "Changed 6 Nov 00:40: late night, so no 07:30 start and no 1h45 to Takao. Shinjuku Gyoen is the nature part; the afternoon is shopping and chill.",
+   "late": {"label": "Plan", "title": "Shinjuku Gyoen, a duffel at Alpen, Shibuya at sunset from the Parco rooftop, Akihabara and Kobe beef",
+    "why": "Re-timed 6 Nov 13:30: Shibuya Sky was sold out all day, so it moved to Saturday 10:20 (booked) and today's sunset is from the free Parco rooftop. Everything after the garden runs about an hour later.",
     "steps": [
-     ("Morning", "Sleep in. Breakfast near the hotel."),
-     ("09:45", "Ginza line from Asakusa to Akasaka-mitsuke, change to the Marunouchi line to [[shinjuku_gyoemmae_st]] (~35 min), 5 min on foot to the Shinjuku gate."),
-     ("10:15", "[[gyoen]]: chrysanthemum show (1–15 Nov), the Japanese garden and autumn colour, matcha at the Rakuu-tei tea house. 2–2.5 h. {{gyoen}}"),
-     ("12:30", "Lunch in Shinjuku: [[isetan]] food hall (B1) or its restaurant floors."),
-     ("13:45", "JR Yamanote line Shinjuku → Shibuya (7 min)."),
-     ("14:00", "Shibuya Parco 6F: [[pkmn_shibuya]], Nintendo Tokyo, Jump Shop, Capcom Store. {{pkmn}} [[shibuya_loft]] for paper kits."),
-     ("15:15", "Chill at [[miyashita]]: rooftop park, coffee, a sit-down."),
-     ("16:15", "[[shibuya_sky]]: sunset ~16:40, then the city lights. Book a slot around 16:00–16:20 this morning. {{shibuya_sky}}"),
-     ("17:45", "[[shibuya]] crossing on foot."),
-     ("18:15", "Ginza line from Shibuya towards Asakusa, get off at [[suehirocho]] (~25 min)."),
-     ("18:45", "[[akiba]]: you're early enough for [[ak_mandarake]] and [[ak_radiokaikan]] (close ~20:00), then [[ak_animate]], [[ak_gamers]], [[ak_hareruya2]]; [[ak_yodobashi]] games floor (6F) to 22:00."),
+     ("10:15", "[[gyoen]]: chrysanthemum show (1–15 Nov), the Japanese garden and autumn colour, matcha at the Rakuu-tei tea house. {{gyoen}}"),
+     ("13:45", "Walk ~10 min to [[alpen]]: a duffel for the checked bag (1 piece, ≤158 cm total). Tax-free with passport over ¥5,000."),
+     ("14:30", "Late lunch at [[isetan]] (2 min away): food hall (B1) or the restaurant floors."),
+     ("15:30", "JR Yamanote line Shinjuku → Shibuya (7 min)."),
+     ("16:15", "[[parco_roof]]: sunset ~16:40, then the city lights. Free, no booking. Backup: [[fukuras]]."),
+     ("17:00", "Shibuya Parco 6F: [[pkmn_shibuya]], Nintendo Tokyo, Jump Shop, Capcom Store. {{pkmn}} Then [[shibuya_loft]] for paper kits."),
+     ("18:30", "[[shibuya]] crossing on foot, then Ginza line towards Asakusa, get off at [[suehirocho]] (~25 min)."),
+     ("19:00", "[[akiba]]: [[ak_animate]], [[ak_gamers]] (close ~21:00), [[ak_hareruya2]]; [[ak_yodobashi]] games floor (6F) to 22:00."),
      ("20:30", "Dinner: Kobe beef yakiniku at [[motoyama]] (avg ~¥8,000 ≈ €45; last order 22:30)."),
      ("~22:00", "Ginza line from Suehirocho to Asakusa (~8 min)."),
     ],
-    "watch": "Shibuya Sky isn't booked yet and sunset slots sell out: if it's full, Miyashita Park's roof is free. Up early and want more green? [[nezu]] and [[yanaka]] (~20 min from Asakusa) before Shinjuku, or [[kiyosumi]] (~15 min)."},
+    "watch": "Mandarake and Radio Kaikan close ~20:00: you'll probably miss them tonight. [[miyashita]] (free rooftop park) only if there's time left. Showers possible after 18:00: take an umbrella."},
    "west": {"label": "Takao (old plan)", "title": "Mt Takao, Shinjuku Gyoen, Shibuya Sky at sunset, then Akihabara and Kobe beef",
     "why": "The dry day (30%). A full day but not rushed: take the cable car up to save your legs, and skip the onsen to keep the afternoon.",
     "steps": [
@@ -461,14 +461,16 @@ DAYS = [
  {"id": "sat7", "date": "Sat 7 Nov", "md": "11-07", "fc": "tokyo", "where": "Tokyo → Haneda → Hanoi → Paris", "who": "you",
   "bed": "On the plane (lands Paris CDG Sun 8, 06:30)",
   "versions": {
-   "meiji": {"label": "Plan", "title": "Meiji Jingu and Harajuku, then Haneda T3 for VN385 at 16:35",
-    "why": "Vietnam Airlines, one ticket: Haneda T3 16:35 → Hanoi 20:50, Hanoi 23:40 → Paris CDG T2C 06:30 Sun 8. Bags checked through.",
+   "meiji": {"label": "Plan", "title": "Meiji Jingu, Cat Street, Shibuya Sky at 10:20, then Haneda T3 for VN385 at 16:35",
+    "why": "Shibuya Sky booked 6 Nov for 10:20–10:39 entry. Vietnam Airlines, one ticket: Haneda T3 16:35 → Hanoi 20:50, Hanoi 23:40 → Paris CDG T2C 06:30 Sun 8. Bags checked through.",
     "steps": [
      ("08:00", "Check out; leave the bag at the hotel front desk."),
      ("08:10", "Ginza line from Asakusa to [[omotesando_st]] (~33 min), then 15 min on foot up Omotesando avenue."),
      ("08:55", "[[meiji]]: the forest path to the main shrine, calm in the morning."),
-     ("10:00", "[[takeshita]] as the shops open, then [[catstreet]] or Omotesando; early lunch."),
-     ("11:45", "Ginza line from Omotesando back to Asakusa; collect the bag."),
+     ("09:40", "[[takeshita]] (most shops not open yet), then walk [[catstreet]] down to Shibuya (~15 min)."),
+     ("10:20", "[[shibuya_sky]]: BOOKED, enter on 14F of Scramble Square between 10:20 and 10:39. QR code from your Gmail, passport in your pocket. About an hour up there."),
+     ("11:20", "Ginza line from Shibuya straight to Asakusa (~30 min)."),
+     ("12:00", "Lunch in Asakusa, then collect the bag at the hotel."),
      ("13:30", "From Asakusa, Asakusa line trains run through onto Keikyu to [[hnd_t3]] (~45 min; some need a change at Sengakuji). {{keikyu}}"),
      ("14:30", "Check in at Haneda Terminal 3 (Vietnam Airlines): one checked bag (Economy Lite), ask for it to go through to Paris."),
      ("16:35", "VN385 to Hanoi (6h15), lands 20:50. Stay airside at Noi Bai T2 for VN19 at 23:40."),
@@ -523,7 +525,7 @@ AKIBA = [
 ]
 
 CHECKLIST = [
- "Fri: book a Shibuya Sky slot around 16:00–16:20 (sunset ~16:40). {{shibuya_sky}}",
+ "Sat: Shibuya Sky booked, entry 10:20–10:39 on 14F. QR code in Gmail, take your passport.",
  "Tue: bus ticket on the phone (Chuo Expressway Shimoyoshida 14:24 → Busta 15:55).",
  "Tue: dinner at Ginza Umi 21:00, cards only.",
  "Sat: Haneda T3 by 14:30 for VN385 16:35 (via Hanoi, Paris CDG Sun 06:30).",
