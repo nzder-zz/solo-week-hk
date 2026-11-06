@@ -7,7 +7,7 @@
 # - Text markers: [[place_id]] = a map chip (PLACES), {{link_id}} = a timetable/booking chip (LINKS).
 # Then: python3 fuji-src/build.py  (writes fuji/index.html, fuji/sw.js, fuji/manifest.webmanifest).
 
-UPDATED = "6 Nov 2026, 13:45 JST"
+UPDATED = "6 Nov 2026, 18:40 JST"
 
 TRIP = {
     "title": "Tokyo + Kawaguchiko",
@@ -29,20 +29,19 @@ CHOICE = {
 }
 
 # ------------------------------------------------------------------ forecast
-# 6 Nov 07:00 JST run: JMA forecast JSON not fetchable (permission); tenki.jp Chiyoda (6 Nov 03:00).
-# Fri 6 rain % = max of the slots still ahead (06-24), the 60% was the 00-06 slot.
-# Lake values left as they were (trip is past the lake).
+# 6 Nov 19:00 JST run: JMA Tokyo JSON 6 Nov 17:00 (Yamanashi file not fetchable; lake values left, trip is past the lake).
+# Fri 6 rain % = the 18-24 slot still ahead.
 # sky: sun | suncloud | cloud | cloudsun | rain
 FC_META = {
-    "source": "tenki.jp 6 Nov 03:00 (Tokyo) JST",
-    "fetched": "6 Nov, 07:00 JST",
+    "source": "JMA, 6 Nov 17:00 JST",
+    "fetched": "6 Nov, 19:00 JST",
     "links": ["jma_tokyo", "jma_yamanashi", "fuji_cam"],
 }
 FORECAST = {
     "tokyo": {
         "10-31": ("suncloud", 40, 13, 25), "11-01": ("cloudsun", 30, 13, 21), "11-02": ("rain", 70, 13, 21),
         "11-03": ("cloud", 10, 12, 20), "11-04": ("rain", 70, 12, 16), "11-05": ("rain", 90, 11, 18),
-        "11-06": ("suncloud", 50, 14, 25), "11-07": ("cloudsun", 30, 12, 21),
+        "11-06": ("suncloud", 10, 14, 25), "11-07": ("sun", 0, 13, 21),
     },
     "kawa": {
         "10-31": ("suncloud", 50, 10, 19), "11-01": ("cloudsun", 30, 4, 16), "11-02": ("rain", 70, 6, 17),
@@ -51,9 +50,8 @@ FORECAST = {
     },
 }
 FC_SUMMARY = [
-    "Fri 6: warm (14–25°C) and dry by day (10% until 18:00). Shinjuku Gyoen and the Shibuya sunset from the Parco rooftop are fine.",
-    "Showers may come back this evening (50% after 18:00). Take an umbrella for Akihabara and dinner at Motoyama.",
-    "Sat 7: cloudy early, then clear. 30% at most, dry afternoon, 12–21°C. Fine for Meiji Jingu, Shibuya Sky at 10:20 and the flight home.",
+    "Fri 6 evening: clear with some cloud, only 10% rain now. Akihabara and dinner at Motoyama should stay dry.",
+    "Sat 7: sunny all day, 0% rain, 13–21°C. Ideal for Meiji Jingu, Shibuya Sky at 10:20 and the flight home.",
     "Typhoon In-fa: no longer in the forecasts. No impact on Tokyo.",
 ]
 
