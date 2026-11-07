@@ -25,7 +25,7 @@ CHOICE = {
     "wed4": "main",
     "thu5": "evening",
     "fri6": "late",
-    "sat7": "meiji",
+    "sat7": "late",
 }
 
 # ------------------------------------------------------------------ forecast
@@ -51,7 +51,7 @@ FORECAST = {
 }
 FC_SUMMARY = [
     "Fri 6 evening: clear with some cloud, only 10% rain now. Akihabara and dinner at Motoyama should stay dry.",
-    "Sat 7: sunny all day, 0% rain, 13–21°C. Ideal for Meiji Jingu, Shibuya Sky at 10:20 and the flight home.",
+    "Sat 7: sunny all day, 0% rain, 13–21°C. Ideal for Shibuya Sky at 10:20, Meiji Jingu and the flight home.",
     "Typhoon In-fa: no longer in the forecasts. No impact on Tokyo.",
 ]
 
@@ -186,6 +186,7 @@ PLACES = {
     "miyashita": ("Miyashita Park", "Miyashita Park Shibuya", "Rooftop park over shops and cafés, 3 min from Shibuya station. Free."),
     "nezu": ("Nezu Shrine", "Nezu Shrine", "Quiet shrine with a small tunnel of red torii and a pond. Free; ~10 min walk to Yanaka."),
     "gyoen": ("Shinjuku Gyoen", "Shinjuku Gyoen National Garden", "Big garden: Japanese, English and French sections. Chrysanthemum show 1–15 Nov; open every day until 15 Nov. 9:00–16:30, last entry 16:00. ¥500."),
+    "ulala": ("Kobe Beef Yakiniku Ulala Shibuya (神戸牛焼肉 すき焼き 麗 渋谷店)", "Kobe Yakiniku Sukiyaki Ulala Shibuya, 3-15-4 Shibuya, Shibuya City, Tokyo", "Certified Kobe beef shop, one-person yakiniku style (your own grill and set), so ~45 min is enough. 1F Aros Shibuya, ~4 min from Shibuya station (south side). Saturday 12:00–23:00. Wagyu lunch sets from ¥1,250; Kobe sets cost more (Kobe OMAKASE set). Cards accepted. Tel 03-6427-2917. Reviews are mixed on meat quality: order a Kobe set, not the cheap wagyu one."),
     "shibuya_sky": ("Shibuya Sky", "Shibuya Sky", "Open-air roof of Shibuya Scramble Square, 230 m. BOOKED: Sat 7 Nov, entry 10:20–10:39 (QR code in your Gmail; take your passport, ID may be checked). Entrance on 14F. No time limit inside, no re-entry. If the roof is closed for wind, the indoor 46F deck stays open."),
     "alpen": ("Alpen TOKYO", "Alpen TOKYO Shinjuku", "Big sports and outdoor store, Unica Bldg, 3-23-7 Shinjuku (east exit). B2–8F: Sports Depo, Alpen Outdoors. Weekdays 11:00–22:00. Tax-free over ¥5,000 with passport."),
     "parco_roof": ("Shibuya Parco rooftop", "Shibuya Parco Rooftop Park", "Free rooftop park on 10F of Shibuya Parco: city view at sunset, no booking. Hours not checked."),
@@ -459,7 +460,23 @@ DAYS = [
  {"id": "sat7", "date": "Sat 7 Nov", "md": "11-07", "fc": "tokyo", "where": "Tokyo → Haneda → Hanoi → Paris", "who": "you",
   "bed": "On the plane (lands Paris CDG Sun 8, 06:30)",
   "versions": {
-   "meiji": {"label": "Plan", "title": "Meiji Jingu, Cat Street, Shibuya Sky at 10:20, then Haneda T3 for VN385 at 16:35",
+   "late": {"label": "Plan (leave 09:00)", "title": "Shibuya Sky at 10:20, Meiji Jingu, Kobe beef lunch in Shibuya, then Haneda T3 for VN385 at 16:35",
+    "why": "Re-planned 7 Nov 09:25: leaving the hotel at 09:00, bag left at Tamayura. Shibuya Sky first (fixed slot), Meiji Jingu after, then the Kobe beef missed on Friday as lunch. Takeshita St and Cat Street dropped.",
+    "steps": [
+     ("09:00", "Leave the hotel (bag stays at the front desk). Ginza line from Asakusa straight to Shibuya, the end of the line (~32 min)."),
+     ("09:35", "Shibuya crossing, coffee, [[miyashita]] if you have time."),
+     ("10:20", "[[shibuya_sky]]: BOOKED, enter on 14F of Scramble Square between 10:20 and 10:39 (be there by 10:35). QR code from your Gmail, passport in your pocket. About an hour up there."),
+     ("11:20", "JR Yamanote line Shibuya → Harajuku (2 min), then ~10 min on foot to the main shrine of [[meiji]]."),
+     ("12:05", "Back to Harajuku station, JR to Shibuya (2 min), ~5 min walk south."),
+     ("12:20", "Kobe beef lunch at [[ulala]] (opens 12:00 on Saturdays). Solo grill, ~45 min."),
+     ("13:10", "Ginza line from Shibuya straight to Asakusa (~32 min). Collect the bag at the hotel."),
+     ("13:55", "From Asakusa, Asakusa line trains run through onto Keikyu to [[hnd_t3]] (~45 min; some need a change at Sengakuji). {{keikyu}}"),
+     ("14:40", "Check in at Haneda Terminal 3 (Vietnam Airlines): one checked bag (Economy Lite), ask for it to go through to Paris."),
+     ("16:35", "VN385 to Hanoi (6h15), lands 20:50. Stay airside at Noi Bai T2 for VN19 at 23:40."),
+     ("Sun 06:30", "Land at Paris CDG Terminal 2C. TGV from the airport station (Aéroport CDG 2 TGV) to Lille Europe, about 1h."),
+    ],
+    "watch": "Don't leave Asakusa later than ~14:00. If lunch runs late, skip Meiji Jingu next time you're short; or eat at the airport. Hanoi connection is 2h50 on the same ticket; check the bag is tagged to CDG."},
+   "meiji": {"label": "Early start (08:00)", "title": "Meiji Jingu, Cat Street, Shibuya Sky at 10:20, then Haneda T3 for VN385 at 16:35",
     "why": "Shibuya Sky booked 6 Nov for 10:20–10:39 entry. Vietnam Airlines, one ticket: Haneda T3 16:35 → Hanoi 20:50, Hanoi 23:40 → Paris CDG T2C 06:30 Sun 8. Bags checked through.",
     "steps": [
      ("08:00", "Check out; leave the bag at the hotel front desk."),
